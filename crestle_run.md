@@ -34,7 +34,7 @@ Checking connectivity... done.
 Checking out files: 100% (110/110), done.
 nbuser@jupyter:~/courses$
 ```
-And, now my notebook works!  :boom:
+And, now my [Lesson 1 notebook](https://s.users.crestle.com/u-fqnc8t2x12/notebooks/courses/fastai/courses/dl1/lesson1.ipynb) works!  :boom:
 
 
 
