@@ -1,9 +1,12 @@
 # AWS fastami GPU Image Setup
 fastai.ai Part 1 v2  
 
+---
+## Part I - Setting up AMI
+
 AMI (Amazon Machine Image):  a template for how your computer is created
 
-### Getting Started
+### Step 0:  Getting Started
 Log into AWS Console:  http://console.aws.amazon.com/  
 Select Service:  **EC2**  
 Launch Instance
@@ -25,18 +28,22 @@ Note:  you have already created a keypair in the past.  Use one of those.  For m
 
 **And, voila! We have just created a new computer on AWS that we can log into :boom:**
 
-### Connect:  log into our AWS computer
-* Get the Public IP address of your AWS computer
-* `ssh` in to instance from your local computer.  Ensure you are in your `.ssh` directory.  
+---
+## Part II  - Logging into our AWS Computer
+
+### Connect:  log into our AWS computer  
+
+#### Syntax for logging in and setting up tunnel for Jupyter Notebook
+Note 1:  Ensure you are in your `.ssh` directory.  
+Note 2:  you will put **your Public IP address** where mine is.  
+Note 3:  This part `-L8888:localhost:8888` connects Jupyter Notebook from AWS to your computer.  
+
 >my current path
 ```bash
 pwd
 /Users/reshamashaikh/.ssh
 ```
-
-#### Syntax for logging in and setting up tunnel for Jupyter Notebook
-Note 1:  you will put **your Public IP address** where mine is.  
-Note 2:  This part `-L8888:localhost:8888` connects Jupyter Notebook from AWS to your computer.  
+>my syntax for loggin in 
 ```
 ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888  
 ```
@@ -61,13 +68,19 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 (fastai) ubuntu@ip-172-31-10-243:~$ 
 ```
 
-
-### 
+### Working on our AWS Computer
+list what files are loaded on the AWS computer:  
+```ls```  
+>my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~$ ls
 data  fastai  src
 (fastai) ubuntu@ip-172-31-10-243:~$
 ```
+
+`cd` into the **fastai** repo  
+```cd fastai```  
+>my example
 ```
 (fastai) ubuntu@ip-172-31-10-243:~$ cd fastai
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ ls -alt
@@ -85,7 +98,10 @@ drwxrwxr-x  4 ubuntu ubuntu  4096 Nov  1 21:30 courses
 -rw-rw-r--  1 ubuntu ubuntu   280 Nov  1 21:30 README.md
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
-```git pull```
+
+**Update** the **fastai** repo  
+```git pull```  
+>my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ git pull
 remote: Counting objects: 21, done.
@@ -116,9 +132,27 @@ Fast-forward
  create mode 100644 courses/dl1/excel/layers_example.xlsx
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
-Do this once a month:  
-This will make sure that the most recent libraries are there.  
-```conda env update```
+
+**Update** the **conda** libraries (do this once a month.)
+```conda env update``` 
+
+**Optional**
+* check which version of python is running
+  * ```python --version```
+* check which python path is being used
+  * ```which python```
+* see what packages are installed
+  * ```pip list --format=legacy```
+  
+>my example
+```bash
+(fastai) ubuntu@ip-172-31-10-243:~/fastai$ python --version
+Python 3.6.3 :: Anaconda, Inc.
+(fastai) ubuntu@ip-172-31-10-243:~/fastai$ which python
+/home/ubuntu/src/anaconda3/envs/fastai/bin/python
+(fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
+```
+
 
 Get into Jupyter Notebook  
 ```jupyter notebook```
@@ -140,7 +174,7 @@ Get into Jupyter Notebook
 [I 17:01:49.931 NotebookApp] 302 GET /?token=04089b6ccf89e723321097c9089ab52550f408c86f533608 (127.0.0.1) 0.58ms
 ```
 
-Go into my URL:   
+Go to my URL:   
 
 http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
 
@@ -148,19 +182,9 @@ This notebook is running on AWS GPU machine.
 This costs $0.90 / hour.  (and $3-4 per month for storage.)
 Remember to shut the notebook down!  (Stop Instance.)
 
-```bash
-(fastai) ubuntu@ip-172-31-10-243:~/fastai$ python --version
-Python 3.6.3 :: Anaconda, Inc.
-(fastai) ubuntu@ip-172-31-10-243:~/fastai$ which python
-/home/ubuntu/src/anaconda3/envs/fastai/bin/python
-(fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
-```
 
 
-pip list --format=legacy
-
-
-## Workflow
+### Workflow
 I opened the [Lesson 1 notebook](http://localhost:8888/notebooks/courses/dl1/lesson1.ipynb), made a copy with the name `tmp-reshama-lesson1.ipynb` and was able to run all the code! :boom:
 
 
