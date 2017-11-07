@@ -23,7 +23,7 @@ Launch Instance
 #### Step 2b:  Select keypair
 Note:  you have already created a keypair in the past.  Use one of those.  For more specific instructions, see section "Create a Keypair."
 
-**And, voila! We have just created a new computer on AWS that we can log into :boom:  **
+**And, voila! We have just created a new computer on AWS that we can log into :boom:**
 
 #### Finish:  log into our AWS instance
 * Get the PublicIP address of your AWS computer
