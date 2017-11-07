@@ -16,7 +16,7 @@ Launch Instance
 * Search:  `fastai`
 * Select this image (for region N. Virginia):  `fastai-part1v2-p2 - ami-c6ac1cbc`  
 
-**Note:  this AMI is available in a number of regions.  Check your local region first.  If it's not available, check next closest region. **
+**NOTE:  this AMI is available in a number of regions.  Check your local region first.  If it's not available, check next closest region.**
 
 
 ### Step 2:  Choose an Instance Type
