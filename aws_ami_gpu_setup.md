@@ -41,6 +41,26 @@ Note 2:  This part `-L8888:localhost:8888` connects Jupyter Notebook from AWS to
 ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888  
 ```
 
+>my example
+```
+~/.ssh
+▶ ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888       
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+2 packages can be updated.
+0 updates are security updates.
+
+*** System restart required ***
+(fastai) ubuntu@ip-172-31-10-243:~$ 
+```
+
 
 ### 
 ```bash
@@ -96,27 +116,12 @@ Fast-forward
  create mode 100644 courses/dl1/excel/layers_example.xlsx
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
+Do this once a month
+
+```conda env update```
 
 
->my example
-```
-~/.ssh
-▶ ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888       
-Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-
-  Get cloud support with Ubuntu Advantage Cloud Guest:
-    http://www.ubuntu.com/business/services/cloud
-
-2 packages can be updated.
-0 updates are security updates.
-
-*** System restart required ***
-(fastai) ubuntu@ip-172-31-10-243:~$ 
-```
 
 
 
