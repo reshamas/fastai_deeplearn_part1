@@ -30,6 +30,23 @@ Note:  you have already created a keypair in the past.  Use one of those.  For m
 * `ssh` in to instance from your local computer
 >my example
 ```bash
+▶ ssh -i "aws_fastai_gpu.pem" ubuntu@ec2-54-175-101-64.compute-1.amazonaws.com
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+2 packages can be updated.
+0 updates are security updates.
+
+*** System restart required ***
+
+(fastai) ubuntu@ip-172-31-10-243:~$ 
+```
 
 
 
