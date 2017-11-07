@@ -160,8 +160,8 @@ Python 3.6.3 :: Anaconda, Inc.
 pip list --format=legacy
 
 
-
-And, now my [Lesson 1 notebook](https://s.users.crestle.com/u-fqnc8t2x12/notebooks/courses/fastai/courses/dl1/lesson1.ipynb) works!  :boom:
+## Workflow
+I opened the [Lesson 1 notebook](http://localhost:8888/notebooks/courses/dl1/lesson1.ipynb), made a copy with the name `tmp-reshama-lesson1.ipynb` and was able to run all the code! :boom:
 
 
 
