@@ -43,7 +43,7 @@ Note 3:  This part `-L8888:localhost:8888` connects Jupyter Notebook from AWS to
 pwd
 /Users/reshamashaikh/.ssh
 ```
->my syntax for loggin in 
+>my syntax for logging in 
 ```
 ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888  
 ```
@@ -133,7 +133,7 @@ Fast-forward
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
 
-**Update** the **conda** libraries (do this once a month.)
+**Update** the **conda** libraries (do this once a month.)  
 ```conda env update``` 
 
 **Optional**
@@ -153,9 +153,10 @@ Python 3.6.3 :: Anaconda, Inc.
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
 
-
-Get into Jupyter Notebook  
+---
+## Part III - Jupyter Notebook  
 ```jupyter notebook```
+>my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ jupyter notebook
 [I 17:00:22.985 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
@@ -174,14 +175,13 @@ Get into Jupyter Notebook
 [I 17:01:49.931 NotebookApp] 302 GET /?token=04089b6ccf89e723321097c9089ab52550f408c86f533608 (127.0.0.1) 0.58ms
 ```
 
-Go to my URL:   
+### Go to my URL for Jupyter Notebook 
 
 http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
 
 This notebook is running on AWS GPU machine.   
 This costs $0.90 / hour.  (and $3-4 per month for storage.)
-Remember to shut the notebook down!  (Stop Instance.)
-
+**Remember to shut the notebook down!  (Stop Instance.)**
 
 
 ### Workflow
