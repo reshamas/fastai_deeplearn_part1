@@ -31,10 +31,8 @@ Note:  you have already created a keypair in the past.  Use one of those.  For m
 ---
 ## Part II  - Logging into our AWS Computer
 
-### Connect:  log into our AWS computer  
-
 #### Syntax for logging in and setting up tunnel for Jupyter Notebook
-Note 1:  Ensure you are in your `.ssh` directory.  
+Note 1:  Ensure you are in your `.ssh` directory on your local computer. 
 Note 2:  you will put **your Public IP address** where mine is.  
 Note 3:  This part `-L8888:localhost:8888` connects Jupyter Notebook from AWS to your computer.  
 
@@ -155,6 +153,7 @@ Python 3.6.3 :: Anaconda, Inc.
 
 ---
 ## Part III - Jupyter Notebook  
+Launch Jupyter Notebook 
 ```jupyter notebook```
 >my example
 ```bash
