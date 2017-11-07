@@ -116,9 +116,48 @@ Fast-forward
  create mode 100644 courses/dl1/excel/layers_example.xlsx
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
-Do this once a month
-
+Do this once a month:  
+This will make sure that the most recent libraries are there.  
 ```conda env update```
+
+Get into Jupyter Notebook  
+```jupyter notebook```
+```bash
+(fastai) ubuntu@ip-172-31-10-243:~/fastai$ jupyter notebook
+[I 17:00:22.985 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 17:00:30.584 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.8
+[I 17:00:30.950 NotebookApp] Serving notebooks from local directory: /home/ubuntu/fastai
+[I 17:00:30.950 NotebookApp] 0 active kernels
+[I 17:00:30.950 NotebookApp] The Jupyter Notebook is running at:
+[I 17:00:30.950 NotebookApp] http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
+[I 17:00:30.950 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 17:00:30.951 NotebookApp] No web browser found: could not locate runnable browser.
+[C 17:00:30.951 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
+[I 17:01:49.931 NotebookApp] 302 GET /?token=04089b6ccf89e723321097c9089ab52550f408c86f533608 (127.0.0.1) 0.58ms
+```
+
+Go into my URL:   
+
+http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
+
+This notebook is running on AWS GPU machine.   
+This costs $0.90 / hour.  (and $3-4 per month for storage.)
+Remember to shut the notebook down!  (Stop Instance.)
+
+```bash
+(fastai) ubuntu@ip-172-31-10-243:~/fastai$ python --version
+Python 3.6.3 :: Anaconda, Inc.
+(fastai) ubuntu@ip-172-31-10-243:~/fastai$ which python
+/home/ubuntu/src/anaconda3/envs/fastai/bin/python
+(fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
+```
+
+
+pip list --format=legacy
 
 
 
