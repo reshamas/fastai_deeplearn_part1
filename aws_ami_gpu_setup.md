@@ -177,7 +177,7 @@ Launch Jupyter Notebook
 [I 17:01:49.931 NotebookApp] 302 GET /?token=04089b6ccf89e723321097c9089ab52550f408c86f533608 (127.0.0.1) 0.58ms
 ```
 
-### Go to my URL for Jupyter Notebook 
+### Going to "MY URL" for Jupyter Notebook 
 
 http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
 
