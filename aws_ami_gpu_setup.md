@@ -104,7 +104,7 @@ drwxrwxr-x  4 ubuntu ubuntu  4096 Nov  1 21:30 courses
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
 
-**Update** the **fastai** repo  
+ :heavy_exclamation_mark: **Update** the **fastai** repo  
 ```git pull```  
 >my example
 ```bash
@@ -187,7 +187,7 @@ http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
 **Note:** you will want to edit the above url with **YOUR TOKEN**.  
   
 This notebook is running on AWS GPU machine.   
-This costs $0.90 per hour  (and $3-4 per month for storage).  
+This costs $0.90 per hour  (and $3-4 per month for storage) :moneybag:  
 **:boom: Remember to shut the notebook down!  (Stop Instance.) :boom:**  
 
 
