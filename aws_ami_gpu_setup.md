@@ -74,7 +74,7 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 ```
 
 ### Working on our AWS Computer
-list what files are loaded on the AWS computer:  
+List what files are loaded on the AWS computer:  
 ```ls```  
 >my example
 ```bash
