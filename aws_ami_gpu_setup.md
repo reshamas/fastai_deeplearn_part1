@@ -18,7 +18,11 @@ Launch Instance
 * Select this image (for region N. Virginia):  `fastai-part1v2-p2 - ami-c6ac1cbc`  
 
 **NOTE:  this AMI is available in a number of regions.  Check your local region first.  If it's not available, check next closest region.**
-
+- Oregon: ami-8c4288f4
+- Sydney: ami-39ec055b
+- Mumbai: ami-c53975aa
+- N. Virginia: ami-c6ac1cbc
+- Ireland: ami-b93c9ec0
 
 ### Step 2:  Choose an Instance Type
 (Note:  it is the kind of computer we want to use.)  
