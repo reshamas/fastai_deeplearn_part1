@@ -6,6 +6,7 @@
 
 [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) by Vishnu Subramanian (April 2017)
 
+[Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa)
 
 ## Publications
 
