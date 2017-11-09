@@ -8,5 +8,5 @@
 # Publications
 
 [What’s your ML Test Score? A rubric for ML
-production systems]https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45742.pdf  (NIPS 2016)  
+production systems](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45742.pdf)  (NIPS 2016)  
 
