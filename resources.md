@@ -13,6 +13,7 @@
 [What’s your ML Test Score? A rubric for ML
 production systems](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45742.pdf)  (NIPS 2016)  
 
+[ADAM:  A Method for Stochastic Optimization](https://arxiv.org/pdf/1412.6980.pdf) (ICLR 2015)
 
 
 ## Videos
