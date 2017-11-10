@@ -194,5 +194,7 @@ This costs $0.90 per hour  (and $3-4 per month for storage) :moneybag:
 ### Workflow
 I opened the [Lesson 1 notebook](http://localhost:8888/notebooks/courses/dl1/lesson1.ipynb), made a copy with the name `tmp-reshama-lesson1.ipynb` and was able to run all the code! :boom:
 
+### Note on Tmux
+On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while selecting to copy to your local clipboard.
 
 
