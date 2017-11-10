@@ -17,7 +17,7 @@ Select Service:  `EC2`
 * Search:  `fastai`
 * Select this image (for region N. Virginia):  `fastai-part1v2-p2 - ami-c6ac1cbc`  
 
-**NOTE:  this AMI is available in a number of regions.  Check your local region first.  If it's not available, check next closest region.**
+**NOTE:**  this AMI is available in a number of regions.  Check your local region first.  If it's not available, check next closest region.
 - Oregon: ami-8c4288f4
 - Sydney: ami-39ec055b
 - Mumbai: ami-c53975aa
