@@ -8,6 +8,8 @@
 
 [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa)
 
+[Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
+
 ## Publications
 
 [What’s your ML Test Score? A rubric for ML
