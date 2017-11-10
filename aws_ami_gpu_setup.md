@@ -9,7 +9,7 @@ AMI (Amazon Machine Image):  a template for how your computer is created
 
 ### Step 0:  Getting Started
 Log into AWS Console:  http://console.aws.amazon.com/  
-Select Service:  **EC2**  
+Select Service:  `EC2`
 `Launch Instance`
 
 ### Step 1:  Choose an Amazon Machine Image (AMI)
