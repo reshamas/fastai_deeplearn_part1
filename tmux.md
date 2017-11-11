@@ -13,6 +13,7 @@
 ### Purpose
 * Lets you tile window panes in a command-line environment.
 * This in turn allows you to run, or keep an eye on, multiple programs within one terminal.
+* **:key: With tmux, you can leave scripts running for a while, and it doesn’t matter if the terminal closes or you lose your internet connection for a moment; the script is running in the background**
 
 ### Resource
 [Tmux: A Gentle Introduction to tmux](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340) by [Alek Shnayder](https://alekshnayder.com)
