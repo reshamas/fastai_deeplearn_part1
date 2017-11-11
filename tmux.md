@@ -1,23 +1,33 @@
 # tmux on AWS
 
-## Purpose
+[Part 1.  Background](#section-a)  
+[Part 2.  Getting Set Up](#section-b)  
+[Part 3.  Using tmux](#section-c)  
+[Part 4.  Use tmux, Exit AWS, log back in](#section-d)  
+[Part 5.  tmux:  Summary of Primary Commands](#section-e)  
+
+
+## <a name="section-a"></a>Part 1.  Background
+
+
+### Purpose
 * Lets you tile window panes in a command-line environment.
 * This in turn allows you to run, or keep an eye on, multiple programs within one terminal.
 
-## Resource
-[Tmux: A Gentle Introduction to tmux](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
+### Resource
+[Tmux: A Gentle Introduction to tmux](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340) by [Alek Shnayder](https://alekshnayder.com)
 * Installation
 * Getting In & Getting Out
 * Managing Panes
 * Custom Themes
 
 ---
-## Getting Set Up
+## <a name="section-b"></a>Part 2.  Getting Set Up
 
 #### Step 1:  A Background
 Note 1:  I am using fastai deep learning AMI  
 Note 2:  tmux is already installed.  
-Note 3:  On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while selecting to copy to your local clipboard.  
+Note 3:  **On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while selecting to copy to your local clipboard.**  
 Note 4:  If tmux is not installed, see the Resource above for instructions.
 
 #### Step 2:  Log into AWS Instance
@@ -56,7 +66,8 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 
 ---
 
-## Using tmux
+## <a name="section-c"></a>Part 3.  Using tmux
+
 ### See what version of tmux is running
 ```tmux -V```
 >my example
@@ -125,8 +136,9 @@ This will detach the current session and return you to your normal shell.  You c
 no server running on /tmp/tmux-1000/default
 (fastai) ubuntu@ip-172-31-10-243:~$ 
 ```
+
 ---
-## Use tmux, Exit AWS, log back in
+## <a name="section-d"></a>Part 4.  Use tmux, Exit AWS, log back in
 
 ### Start a tmux session on AWS
 ```tmux ls```  
@@ -157,10 +169,8 @@ Connection to 54.164.78.42 closed.
 Note:  The tmux session is still running!
 
 ---
-
-## tmux:  Summary of Primary Commands
+## <a name="section-e"></a>Part 5.  tmux:  Summary of Primary Commands
 ![tmux_summary](images/tmux_summary.png)
-
 
 
 
