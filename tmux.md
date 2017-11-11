@@ -77,6 +77,14 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 tmux 2.1
 ```
 
+### tmux help commands
+```ctrl+b ?```   
+```<kbd>ctrl-b</kbd>```
+>my example
+```bash
+
+```
+
 ### See what tmux sessions are running
 ```tmux ls```  
 >my example
