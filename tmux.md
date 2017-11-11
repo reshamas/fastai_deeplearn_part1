@@ -79,7 +79,7 @@ tmux 2.1
 
 ### tmux help commands
 ```ctrl+b ?```   
-```<kbd>ctrl-b</kbd>```
+<kbd>ctrl-b</kbd>
 >my example
 ```bash
 
