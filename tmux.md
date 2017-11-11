@@ -83,7 +83,7 @@ tmux 2.1
 (fastai) ubuntu@ip-172-31-10-243:~$ tmux ls
 error connecting to /tmp/tmux-1000/default (No such file or directory)
 ```
-Note:  right now, I have not tmux sessions running.  
+Note:  right now, I have no tmux sessions running.  
 
 
 ### tmux:  start a tmux session
