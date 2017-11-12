@@ -1,9 +1,9 @@
 # Kaggle CLI
 
-Kaggle CLI Wiki
-* http://wiki.fast.ai/index.php/Kaggle_CLI
+#### Kaggle CLI Wiki
+http://wiki.fast.ai/index.php/Kaggle_CLI
 
-Note:  need to accept competition rules  
+#### Note:  need to accept competition rules  
 https://www.kaggle.com/c/dogs-vs-cats/rules
 
 SYNTAX:
