@@ -159,7 +159,7 @@ Python 3.6.3 :: Anaconda, Inc.
 
 ---
 ## Part III - Jupyter Notebook  
-Launch Jupyter Notebook 
+Launch Jupyter Notebook  
 <kbd> jupyter notebook </kbd>  
 >my example
 ```bash
