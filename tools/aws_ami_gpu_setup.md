@@ -138,15 +138,15 @@ Fast-forward
 ```
 
 **Update** the **conda** libraries (do this once a month.)  
-```conda env update``` 
+<kbd> conda env update </kbd>   
 
 **Optional**
 * check which version of python is running
-  * ```python --version```
+  * <kbd> python --version </kbd>
 * check which python path is being used
-  * ```which python```
+  * <kbd> which python </kbd>
 * see what packages are installed
-  * ```pip list --format=legacy```
+  * <kbd> pip list --format=legacy </kbd>
   
 >my example
 ```bash
@@ -160,7 +160,7 @@ Python 3.6.3 :: Anaconda, Inc.
 ---
 ## Part III - Jupyter Notebook  
 Launch Jupyter Notebook 
-```jupyter notebook```
+<kbd> jupyter notebook </kbd>  
 >my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ jupyter notebook
