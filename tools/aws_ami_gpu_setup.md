@@ -49,6 +49,7 @@ pwd
 /Users/reshamashaikh/.ssh
 ```
 >my syntax for logging in  
+
 <kbd> ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888  </kbd>  
 
 
