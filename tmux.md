@@ -111,14 +111,14 @@ Note:  A green bar will appear at the bottom
 <kbd> ctrl+b [then arrow up/down/side] </kbd>
 
 ### tmux:  MAGIC command
-<kbd> ctrl+b </kbd>
-This is the **key** prompt for using tmux.  
+<kbd> ctrl+b </kbd>  
+:key: This is the **key** prompt for using tmux.  
 
 ### tmux: kill current pane
 <kbd> ctrl+b x </kbd>  
 
 ### tmux: detach session
-This will detach the current session and return you to your normal shell.  You can exit AWS with tmux running in background, and ssh into the instance again.  
+This will detach the current session and return you to your normal shell.  You can exit AWS with tmux running in background, and `ssh` into the instance again.  
 <kbd> ctrl+b  d </kbd> 
 
 ### tmux:  list sessions from normal shell
