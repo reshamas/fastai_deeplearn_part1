@@ -33,3 +33,7 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 * [The wonderful and terrifying implications of computers that can learn](https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn) (Ted Talk by Jeremy Howard 2014)
 
 * [Ian Goodfellow - Numerical Computation for Deep Learning - AI With The Best Oct 14-15, 2017](https://www.youtube.com/watch?v=XlYD8jn1ayE&t=5m40s)
+
+## To Explore Later
+
+[byobu](http://byobu.co) Byobu is a GPLv3 open source text-based window manager and terminal multiplexer.
