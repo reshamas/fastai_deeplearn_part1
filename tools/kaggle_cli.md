@@ -5,8 +5,10 @@ Kaggle CLI Wiki:  http://wiki.fast.ai/index.php/Kaggle_CLI
 Note:  need to accept competition rules
 https://www.kaggle.com/c/dogs-vs-cats/rules
 
-SYNTAX:  > kg config -g -u 'username' -p 'password' -c 'competition'
+SYNTAX:
+<kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>
 
+```bash
 ubuntu@ip-10-0-0-13:~$ kg config -g -u 'reshamashaikh' -p 'xxx' -c ‘dogs-vs-cats’
 ubuntu@ip-10-0-0-13:~$ kg download
 
@@ -84,13 +86,14 @@ ubuntu@ip-10-0-0-13:~/nbs/data$
 ubuntu@ip-10-0-0-13:~/nbs/data$ ls test1 | wc -l
 12500
 ubuntu@ip-10-0-0-13:~/nbs/data$ 
+```
 
 Jeremy’s Setup
 Good to copy 100 or so the sample directory; enough to check that the scripts are working
 
 Advice 1:  Separate TEST data into VALIDATION
 TASK:  move 1000 each dogs / cats into valid 
-
+```bash
 > ls valid/cats/ | wc -l
 1000
 > ls valid/dogs/ | wc -l
@@ -105,3 +108,4 @@ Advice 2:  Do all of your work on sample data
 8
 > ls sample/valid/cats | wc -l
 4
+```
