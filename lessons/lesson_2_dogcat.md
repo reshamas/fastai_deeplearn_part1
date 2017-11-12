@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=4mwdySNmtYs
 
 ---
 
-`16:30` start of Lesson 2 
+`19:00` start of Lesson 2 
 
 
 
