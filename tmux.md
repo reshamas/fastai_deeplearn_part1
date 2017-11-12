@@ -93,10 +93,7 @@ tmux 2.1
 
 ### tmux help commands 
 <kbd> ctrl+b ? </kbd>  
->my example
-```bash
 
-```
 
 ### See what tmux sessions are running
 <kbd> tmux ls </kbd>  
