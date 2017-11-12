@@ -11,4 +11,4 @@
 
 ## Technical Tools
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
-* [tmux on AWS](tmux.md)
+* [tmux on AWS](tools/tmux.md)
