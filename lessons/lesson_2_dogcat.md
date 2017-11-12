@@ -3,6 +3,9 @@
 
 [fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
 
+https://www.youtube.com/watch?v=4mwdySNmtYs  
+
+`15:0` start of Lesson 2  
 `01:47` Teams info  
 * what do you want to get out of deep learning
 * share forum IDs
