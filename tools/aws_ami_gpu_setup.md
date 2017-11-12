@@ -48,7 +48,7 @@ Note 3:  This part `-L8888:localhost:8888` connects Jupyter Notebook from AWS to
 pwd
 /Users/reshamashaikh/.ssh
 ```
->my syntax for logging in 
+>my syntax for logging in  
 <kbd> ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888  </kbd>  
 
 
