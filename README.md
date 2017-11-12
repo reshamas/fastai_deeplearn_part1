@@ -10,5 +10,10 @@
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
 * [tmux on AWS](tools/tmux.md)
 
+### Wiki's
+* [Wiki thread: Intro workshop](http://forums.fast.ai/t/wiki-thread-intro-workshop/6537)
+* [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)
+* [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)
+
 ## Other Resources
 * [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
