@@ -146,7 +146,10 @@ This will detach the current session and return you to your normal shell.  You c
 
 
 ### tmux: kill tmux server, along will ALL sessions
-<kbd> tmux kill-server </kbd>
+<kbd> tmux ls </kbd>  
+<kbd> tmux kill-server </kbd>  
+<kbd> tmux ls </kbd>  
+
 >my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~$ tmux ls
