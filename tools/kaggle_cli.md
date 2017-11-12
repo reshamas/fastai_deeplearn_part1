@@ -18,7 +18,9 @@ sampleSubmission.csv N/A% |                                                     
 Warning: download url for file sampleSubmission.csv resolves to an html document rather than a downloadable file. 
 Is it possible you have not accepted the competition's rules on the kaggle website?
 ```
-### Accept Competition Rules, then Download
+### Accept Competition Rules, then Download  
+#### accepted competition rules here:  https://www.kaggle.com/c/dogs-vs-cats/rules  
+#### then, download data
 <kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>
 
 ```bash
