@@ -10,6 +10,10 @@
 
 * [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
 
+# Lessons
+
+* [Case Study: A world class image classifier for dogs and cats (err.., anything)](https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e) by Apil Tamang
+
 ## Publications
 
 * [What’s your ML Test Score? A rubric for ML
