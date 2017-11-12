@@ -169,6 +169,7 @@ no server running on /tmp/tmux-1000/default
 <kbd> tmux ls </kbd>  
 <kbd> exit </kbd>  
 
+>my example  
 ```
 (fastai) ubuntu@ip-172-31-10-243:~$ tmux ls
 no server running on /tmp/tmux-1000/default
@@ -185,6 +186,7 @@ Connection to 54.164.78.42 closed.
 ### Log back into AWS & Confirm tmux session is still running
 <kbd> ssh -i aws_fastai_gpu.pem ubuntu@54.164.78.42 -L8888:localhost:8888 </kbd>  
 <kbd> tmux ls </kbd>  
+>my example  
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~$ tmux ls
 0: 1 windows (created Sat Nov 11 15:52:31 2017) [159x38]
