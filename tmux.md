@@ -64,6 +64,19 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 
 (fastai) ubuntu@ip-172-31-10-243:~$ 
 ```
+update packages  
+<kdb> sudo apt-get update </kbd>   
+>my example  
+```bash
+(fastai) ubuntu@ip-172-31-10-243:~$ sudo apt-get update
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates InRelease
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu xenial-security InRelease                                                               
+Hit:5 http://ppa.launchpad.net/openjdk-r/ppa/ubuntu xenial InRelease                                                            
+Reading package lists... Done                     
+(fastai) ubuntu@ip-172-31-10-243:~$
+```
 
 ---
 
