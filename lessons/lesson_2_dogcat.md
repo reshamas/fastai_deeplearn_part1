@@ -5,9 +5,11 @@
 
 https://www.youtube.com/watch?v=4mwdySNmtYs  
 
+[Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)
+
 ---
 
-`15:00` start of Lesson 2 
+`16:30` start of Lesson 2 
 
 
 
