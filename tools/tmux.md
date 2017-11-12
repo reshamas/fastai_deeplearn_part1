@@ -109,7 +109,7 @@ Note:  right now, I have no tmux sessions running.
 <kbd> tmux </kbd>  
 Note:  A green bar will appear at the bottom  
 
-![tmux start](images/tmux_start.png)
+![tmux start](../images/tmux_start.png)
 
 
 ### tmux: create a second window (horizontal)
@@ -196,7 +196,7 @@ Note:  The tmux session is still running!
 
 ---
 ## <a name="section-e"></a>Part 5.  tmux:  Summary of Primary Commands
-![tmux_summary](images/tmux_summary.png)
+![tmux_summary](../images/tmux_summary.png)
 
 
 
