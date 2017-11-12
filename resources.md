@@ -8,9 +8,13 @@
 
 * [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa)
 
+## Blogs
+
 * [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
 
-# Lessons
+* [An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035)
+
+## Lessons
 
 * [Case Study: A world class image classifier for dogs and cats (err.., anything)](https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e) by Apil Tamang
 
