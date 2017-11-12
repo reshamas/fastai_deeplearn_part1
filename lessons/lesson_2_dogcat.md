@@ -32,6 +32,7 @@ And more...
 - Set earlier layers to 3x-10x lower learning rate than next higher layer
 - Train full network with cycle_mult=2 until over-fitting
 
+`02:04` pick up here  
 
 
 
