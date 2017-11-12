@@ -58,11 +58,11 @@ ubuntu@ip-10-0-0-13:~/data$
 ```
 
 ### Unzip Files
-You will need to install and use unzip to unzip.
+You will need to install and use `unzip` to unzip files.
 
 <kbd> sudo apt install unzip </kbd>  
 <kbd> unzip train.zip </kbd>  
-<kdb> unzip -q test.zip </kbd>
+<kbd> unzip -q test.zip </kbd>  (Note:  `-q` means to unzip quietly, suppressing the printing)  
 
 ```bash
 ubuntu@ip-10-0-0-13:~/nbs/data$ ls train/dogs/dog.1.jpg
