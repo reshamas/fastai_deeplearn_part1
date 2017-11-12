@@ -4,5 +4,5 @@
 
 [tmux on AWS](tmux.md)
 
-[Resource (Blogs Written by fastai Fellows / Research Papers, etc)](resources.md)  
+[Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
 
