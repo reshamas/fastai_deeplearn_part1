@@ -5,7 +5,9 @@
 
 https://www.youtube.com/watch?v=4mwdySNmtYs  
 
-`15:0` start of Lesson 2 
+---
+
+`15:00` start of Lesson 2 
 
 
 
