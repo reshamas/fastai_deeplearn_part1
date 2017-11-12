@@ -49,9 +49,8 @@ pwd
 /Users/reshamashaikh/.ssh
 ```
 >my syntax for logging in 
-```
-ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888  
-```
+<kbd> ssh -i aws_fastai_gpu.pem ubuntu@54.175.101.64 -L8888:localhost:8888  </kbd>  
+
 
 >my example
 ```
@@ -75,7 +74,7 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 
 ### Working on our AWS Computer
 List what files are loaded on the AWS computer:  
-```ls```  
+<kbd> ls </kbd>  
 >my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~$ ls
@@ -84,7 +83,7 @@ data  fastai  src
 ```
 
 `cd` into the **fastai** repo  
-```cd fastai```  
+<kbd> cd fastai </kbd>   
 >my example
 ```
 (fastai) ubuntu@ip-172-31-10-243:~$ cd fastai
@@ -105,7 +104,7 @@ drwxrwxr-x  4 ubuntu ubuntu  4096 Nov  1 21:30 courses
 ```
 
  :heavy_exclamation_mark: **Update** the **fastai** repo  
-```git pull```  
+<kbd> git pull </kbd>  
 >my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ git pull
