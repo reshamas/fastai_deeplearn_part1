@@ -3,7 +3,7 @@
 [Part 1.  Background](#section-a)  
 [Part 2.  Getting Set Up](#section-b)  
 [Part 3.  Using tmux](#section-c)  
-[Part 4.  Use tmux, Exit AWS, log back in](#section-d)  
+[Part 4.  Use tmux, Exit AWS, Log back in to AWS](#section-d)  
 [Part 5.  tmux:  Summary of Primary Commands](#section-e)  
 
 
@@ -161,7 +161,7 @@ no server running on /tmp/tmux-1000/default
 ```
 
 ---
-## <a name="section-d"></a>Part 4.  Use tmux, Exit AWS, log back in
+## <a name="section-d"></a>Part 4.  Use tmux, Exit AWS, Log back in to AWS
 
 ### Start a tmux session on AWS
 <kbd> tmux ls </kbd>  
