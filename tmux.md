@@ -39,7 +39,7 @@ Note 2:  Ensure I am in the appropriate directory
 pwd
 /Users/reshamashaikh/.ssh
 ```
->my syntax for logging in 
+>my syntax for logging in  
 <kbd> ssh -i aws_fastai_gpu.pem ubuntu@54.164.78.42 -L8888:localhost:8888  </kbd>  
 >my example
 ```bash
@@ -69,21 +69,21 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 
 ### See what version of tmux is running
 <kbd> tmux -V </kbd>
->my example
+>my example  
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~$ tmux -V
 tmux 2.1
 ```
 
 ### tmux help commands 
-<kbd> ctrl-b ? </kbd>
+<kbd> ctrl+b ? </kbd>  
 >my example
 ```bash
 
 ```
 
 ### See what tmux sessions are running
-<kbd> tmux ls </kbd>
+<kbd> tmux ls </kbd>  
 >my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~$ tmux ls
@@ -120,7 +120,8 @@ This will detach the current session and return you to your normal shell.  You c
 <kbd> ctrl+b  d </kbd> 
 
 ### tmux:  list sessions from normal shell
-<kbd> tmux ls </kbd> 
+<kbd> tmux ls </kbd>  
+>my example
 ```bash
 (fastai) ubuntu@ip-172-31-10-243:~$ tmux ls
 0: 1 windows (created Sat Nov 11 15:31:41 2017) [159x38]
@@ -149,6 +150,7 @@ no server running on /tmp/tmux-1000/default
 ### Start a tmux session on AWS
 <kbd> tmux ls </kbd>  
 <kbd> tmux </kbd>  
+<kbd> tmux ls </kbd>  
 <kbd> exit </kbd>  
 
 ```
