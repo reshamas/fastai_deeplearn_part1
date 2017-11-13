@@ -11,6 +11,8 @@ https://www.youtube.com/watch?v=4mwdySNmtYs
 
 `19:00` start of Lesson 2 
 
+`01:33` to `01:45` break
+
 
 
 
