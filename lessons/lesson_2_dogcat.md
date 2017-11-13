@@ -20,7 +20,11 @@ https://www.youtube.com/watch?v=4mwdySNmtYs
 `01:55` back to lecture, meeting at USF  
 * study groups
 
-`01:57:30` back to lecture  
+`01:57` back to DL lecture  
+
+`02:42` discuss AWS fast.ai AMI  
+
+---
 
 ### Confusion Matrix
 * What was the actual truth?  Of the thousand actual cats, how many did we predict as cats?
@@ -42,8 +46,7 @@ And more...
 - Set earlier layers to 3x-10x lower learning rate than next higher layer
 - Train full network with cycle_mult=2 until over-fitting
 
----
-`02:04` pick up here  
+  
 
 
 
