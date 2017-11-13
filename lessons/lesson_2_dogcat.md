@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=4mwdySNmtYs
 `01:55` back to lecture, meeting at USF  
 * study groups
 
-`01:57` back to DL lecture  
+`01:57` back to DL lecture  * start here...
 
 `02:42` discuss AWS fast.ai AMI  
 
