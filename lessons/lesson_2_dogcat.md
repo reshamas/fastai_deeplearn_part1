@@ -13,17 +13,10 @@ https://www.youtube.com/watch?v=4mwdySNmtYs
 
 `01:33` to `01:45` break
 
-
-
-
-
-
----
-
 `01:47` Teams info  
 * what do you want to get out of deep learning
 * share forum IDs
-
+  
 `01:55` back to lecture, meeting at USF  
 * study groups
 
