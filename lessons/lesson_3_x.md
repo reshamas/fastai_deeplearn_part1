@@ -9,3 +9,9 @@
 * dog breed
 * planet:  [lesson2-image_models.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)  
 
+## Notes
+
+### Quick Dogs vs Cats
+`precompute=True` when we use precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.  
+
+`bn.freeze` 
