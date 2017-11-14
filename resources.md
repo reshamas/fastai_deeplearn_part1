@@ -19,6 +19,8 @@
 
 * [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
 
+* [Visualizing Learning rate vs Batch size (Neural Nets basics using Fast.ai tools)](https://miguel-data-sc.github.io/2017-11-05-first/) by Miguel (Nov 2017)
+
 ## Blogs
 
 * [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
