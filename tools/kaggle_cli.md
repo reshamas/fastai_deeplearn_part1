@@ -1,13 +1,30 @@
 # Kaggle CLI
 (**CLI** = **C**ommand **L**ine **I**nterface)  
 
-#### Kaggle CLI Wiki
-http://wiki.fast.ai/index.php/Kaggle_CLI
+## Resource
+[Kaggle CLI Wiki](http://wiki.fast.ai/index.php/Kaggle_CLI)
 
-#### Note:  need to accept competition rules  
+---
+
+## [Kaggle Competition Datasets](https://www.kaggle.com/datasets)
+Note 1:  You must have a Kaggle user ID and password.  If you logged in to Kaggle using FB or LI, you'll have to reset your password, as that is needed for command line access to the data.  
+
+Note 2:  Pick a competition, and ensure you have **accepted the rules** of that competition.  Otherwise, you will not be able to download the data using the CLI.
+
+
+
+#### Step 1:  Identify the competition I will use
+https://www.kaggle.com/c/dogs-vs-cats
+
+#### Step 2:  Accept competition rules  
 https://www.kaggle.com/c/dogs-vs-cats/rules
 
-<kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>
+#### Step 3:  Download data (try 1)
+Syntax:  
+<kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
+
+Note:  Here's an example of warning message I receive when I tried to download data before accepting the rules of the competition:  
+>my example
 ```bash
 ubuntu@ip-10-0-0-13:~$ kg config -g -u 'reshamashaikh' -p 'xxx' -c dogs-vs-cats
 ubuntu@ip-10-0-0-13:~$ kg download
@@ -19,11 +36,14 @@ sampleSubmission.csv N/A% |                                                     
 Warning: download url for file sampleSubmission.csv resolves to an html document rather than a downloadable file. 
 Is it possible you have not accepted the competition's rules on the kaggle website?
 ```
-### Accept Competition Rules, then Download  
-#### accepted competition rules here:  https://www.kaggle.com/c/dogs-vs-cats/rules  
-#### then, download data
-<kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>
-
+#### Step 4:  Dowload data (try 2)
+Note 1:  I have accepted the competition rules; will try downloading again  
+<kbd> ls </kbd>  
+<kbd> mkdir data </kbd>  
+<kdb> cd data </kbd>  
+<kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
+<kbd> kg download </kbd>  
+>my example
 ```bash
 ubuntu@ip-10-0-0-13:~$ kg config -g -u 'reshamashaikh' -p 'xxx' -c dogs-vs-cats
 ubuntu@ip-10-0-0-13:~$ ls
