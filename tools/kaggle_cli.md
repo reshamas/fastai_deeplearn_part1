@@ -1,4 +1,5 @@
 # Kaggle CLI
+**CLI** = **C**ommand **L**ine **I**nterface  
 
 #### Kaggle CLI Wiki
 http://wiki.fast.ai/index.php/Kaggle_CLI
