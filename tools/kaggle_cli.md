@@ -13,13 +13,13 @@ Note 2:  Pick a competition, and ensure you have **accepted the rules** of that 
 
 
 
-#### Step 1:  Identify the competition I will use
+### Step 1:  Identify the competition I will use
 https://www.kaggle.com/c/dogs-vs-cats
 
-#### Step 2:  Accept competition rules  
+### Step 2:  Accept competition rules  
 https://www.kaggle.com/c/dogs-vs-cats/rules
 
-#### Step 3:  Set up data directory 
+### Step 3:  Set up data directory 
 <kbd> ls </kbd>  
 <kbd> mkdir data </kbd>  
 <kbd> cd data </kbd>  
@@ -31,7 +31,7 @@ ubuntu@ip-10-0-0-13:~$ mkdir data
 ubuntu@ip-10-0-0-13:~$ cd data
 ```
 
-#### Step 4a:  Download data (try 1)
+### Step 4a:  Download data (try 1)
 Syntax:  
 <kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
 
@@ -49,7 +49,7 @@ Warning: download url for file sampleSubmission.csv resolves to an html document
 Is it possible you have not accepted the competition's rules on the kaggle website?
 ```
 
-#### Step 4b:  Dowload data (try 2)
+### Step 4b:  Dowload data (try 2)
 Note 1:  I have accepted the competition rules; will try downloading again   
 <kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
 <kbd> kg download </kbd>  
@@ -71,7 +71,7 @@ downloading https://www.kaggle.com/c/dogs-vs-cats/download/train.zip
 
 train.zip 100% |#############################################################################################################################| Time: 0:00:17  31.4 MiB/s
 ```
-#### look at data that was downloaded
+### Step 5:  Look at data that was downloaded
 <kbd> ls -alt </kdb>  
 ```bash
 ubuntu@ip-10-0-0-13:~/data$ ls -alt
@@ -84,8 +84,8 @@ drwxr-xr-x 22 ubuntu ubuntu      4096 Nov  4 18:23 ..
 ubuntu@ip-10-0-0-13:~/data$ 
 ```
 
-### Unzip Files
-You will need to install and use `unzip` to unzip files.
+### Step 6:  Unzip Files
+Note 1:  You will need to install and use `unzip` to unzip files.
 
 <kbd> sudo apt install unzip </kbd>  
 <kbd> unzip train.zip </kbd>  
