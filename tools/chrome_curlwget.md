@@ -14,3 +14,4 @@ wget --header="Host: storage.googleapis.com" --header="User-Agent: Mozilla/5.0 (
 ![chrome_curlwget](../images/chrome_curlwget.png)
 
 
+<img src="../images/chrome_curlwget.png" alt="Drawing" style="width: 100px;"/>
