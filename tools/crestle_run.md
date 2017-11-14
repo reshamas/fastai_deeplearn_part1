@@ -12,8 +12,12 @@ b)  Hit `New Terminal`
 c)  `ls`  
 d)  `cd courses`  
 e)  `ls`  (you'll see the fastai course there)  
-f)  `rm -rf fastai`  (delete this old version)  
-g)  `git clone https://github.com/fastai/fastai.git`  (clone, get updated course files)  
+  
+f)  `git pull` (update repo)
+  
+OR, if you run into errors because you have added files to the repository, etc., this is a quick fix:  
+g)  `rm -rf fastai`  (delete this old version)  
+h)  `git clone https://github.com/fastai/fastai.git`  (clone, get updated course files)  
 
 >my example
 ```bash
