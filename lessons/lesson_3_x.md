@@ -6,3 +6,4 @@ https://www.youtube.com/watch?v=nhEQrzf1pIQ
 [Wiki: Lesson 3](http://forums.fast.ai/t/wiki-lesson-3/7809)  
 
 [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
+
