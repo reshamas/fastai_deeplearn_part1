@@ -9,6 +9,7 @@
 ## Technical Tools
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
 * [tmux on AWS](tools/tmux.md)
+* [Kaggle CLI](tools/kaggle_cli.md)
 
 ### Wiki's
 * [Wiki thread: Intro workshop](http://forums.fast.ai/t/wiki-thread-intro-workshop/6537)
