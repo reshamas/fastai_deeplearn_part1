@@ -8,6 +8,9 @@
 Check to see if `kaggle-cli` is installed:  
 <kbd> kaggle-cli --version </kbd>  
 
+Install `kaggle-cli`:  
+<kbd> pip install kaggle-cli </kbd>   
+
 May need to **update package** if you run into errors:  
 <kbd> pip install kaggle-cli --upgrade </kbd>
 
