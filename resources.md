@@ -11,7 +11,7 @@
 
 ### Resnet
 * [Decoding the ResNet architecture](http://teleported.in/posts/decoding-resnet-architecture/) by Anand Saha   
-* [Yet Another ResNet Tutorial (or not)]https://medium.com/@apiltamang/yet-another-resnet-tutorial-or-not-f6dd9515fcd7) by Apil Tamang
+* [Yet Another ResNet Tutorial (or not)](https://medium.com/@apiltamang/yet-another-resnet-tutorial-or-not-f6dd9515fcd7) by Apil Tamang
 
 ### PyTorch
 * [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) by Vishnu Subramanian (April 2017)
