@@ -1,5 +1,12 @@
 # Resources
 
+## Lessons
+
+* [Lesson 2: Case Study - A world class image classifier for dogs and cats (err.., anything)](https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e) by Apil Tamang
+
+* [Lesson 2 Notes](http://forums.fast.ai/t/deeplearning-lecnotes2/7515/2) by Tim Lee
+
+
 ## Blogs Written by fastai Fellows
 
 * [Decoding the ResNet architecture](http://teleported.in/posts/decoding-resnet-architecture/) by Anand Saha   
@@ -8,17 +15,14 @@
 
 * [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa)
 
+* [Estimating an Optimal Learning Rate For a Deep Neural Network](https://medium.com/@surmenok/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) by Pavel Surmenok
+
 ## Blogs
 
 * [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
 
 * [An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035)
 
-## Lessons
-
-* [Lesson 2: Case Study - A world class image classifier for dogs and cats (err.., anything)](https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e) by Apil Tamang
-
-* [Lesson 2 Notes](http://forums.fast.ai/t/deeplearning-lecnotes2/7515/2) by Tim Lee
 
 ## Publications
 
