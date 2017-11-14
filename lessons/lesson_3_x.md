@@ -14,4 +14,11 @@
 ### Quick Dogs vs Cats
 `precompute=True` when we use precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.  
 
-`bn.freeze` 
+`learn.unfreeze()`    
+
+`bn.freeze`
+
+`learn.bn.freeze` If you're using a bigger, deeper model like resnet50 or resnext101, on a dataset that is very similar to ImageNet; This line should be aded.  This causes the batch normalization moving averages to not be updated.
+
+
+`TTA` Test Time Augmentation - use to ensure we get the best predictions we can.  
