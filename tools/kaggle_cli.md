@@ -40,7 +40,7 @@ Is it possible you have not accepted the competition's rules on the kaggle websi
 Note 1:  I have accepted the competition rules; will try downloading again  
 <kbd> ls </kbd>  
 <kbd> mkdir data </kbd>  
-<kdb> cd data </kbd>  
+<kbd> cd data </kbd>  
 <kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
 <kbd> kg download </kbd>  
 >my example
