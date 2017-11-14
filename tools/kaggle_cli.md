@@ -4,6 +4,14 @@
 ## Resource
 [Kaggle CLI Wiki](http://wiki.fast.ai/index.php/Kaggle_CLI)
 
+## Installation
+Check to see if `kaggle-cli` is installed:  
+<kbd> kaggle-cli --version </kbd>  
+
+May need to **update package** if you run into errors:  
+<kbd> pip install kaggle-cli --upgrade </kbd>
+
+
 ---
 
 ## [Kaggle Competition Datasets](https://www.kaggle.com/datasets)
