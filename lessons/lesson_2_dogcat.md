@@ -1,11 +1,11 @@
 # Lesson 2 Notes (CNN, dogs/cats)
 (06-Nov-2017, live)
 
-[fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
-
 https://www.youtube.com/watch?v=4mwdySNmtYs  
 
-[Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)
+[Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)  
+
+[fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
 
 ---
 
