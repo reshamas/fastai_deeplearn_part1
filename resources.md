@@ -17,6 +17,8 @@
 
 * [Estimating an Optimal Learning Rate For a Deep Neural Network](https://medium.com/@surmenok/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) by Pavel Surmenok
 
+* [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
+
 ## Blogs
 
 * [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
