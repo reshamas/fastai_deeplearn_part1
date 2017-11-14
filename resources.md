@@ -22,8 +22,7 @@
 * [Estimating an Optimal Learning Rate For a Deep Neural Network](https://medium.com/@surmenok/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) by Pavel Surmenok
 
 ### and More
-* [Do smoother areas of the error surface lead to better generalization?](https://medium.com/@radekosmulski/do-smoother-areas-of-the-error-surface-lead-to-better-generalization-b5f93b9edf5b) by Radek
-  * An experiment inspired by the first lecture of the fast.ai MOOC
+* [Do smoother areas of the error surface lead to better generalization? (An experiment inspired by the first lecture of the fast.ai MOOC)](https://medium.com/@radekosmulski/do-smoother-areas-of-the-error-surface-lead-to-better-generalization-b5f93b9edf5b) by Radek
 
 * [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa) by Wayde Gilliam
 
@@ -44,7 +43,7 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 
 * [ADAM:  A Method for Stochastic Optimization](https://arxiv.org/pdf/1412.6980.pdf) (ICLR 2015)
 
-* [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186) (WACV 2017)
+* [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186) (WACV 2017) by Leslie Smith
 
 
 ## Videos
