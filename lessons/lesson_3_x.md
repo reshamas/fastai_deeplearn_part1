@@ -1,7 +1,7 @@
 # Lesson 3
 (13-Nov-2017, live)
 
-https://www.youtube.com/watch?v=_VpaKaMyjqI 
+[Lesson 3 live stream](https://www.youtube.com/watch?v=_VpaKaMyjqI) 
 
 [Wiki: Lesson 3](http://forums.fast.ai/t/wiki-lesson-3/7809)  
 
