@@ -18,6 +18,8 @@
 * [Estimating an Optimal Learning Rate For a Deep Neural Network](https://medium.com/@surmenok/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) by Pavel Surmenok
 
 * [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
+* [Do smoother areas of the error surface lead to better generalization?](https://medium.com/@radekosmulski/do-smoother-areas-of-the-error-surface-lead-to-better-generalization-b5f93b9edf5b) by Radek
+  * An experiment inspired by the first lecture of the fast.ai MOOC
 
 * [Visualizing Learning rate vs Batch size (Neural Nets basics using Fast.ai tools)](https://miguel-data-sc.github.io/2017-11-05-first/) by Miguel (Nov 2017)
 
