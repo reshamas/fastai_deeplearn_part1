@@ -6,5 +6,6 @@ https://www.youtube.com/watch?v=_VpaKaMyjqI
 [Wiki: Lesson 3](http://forums.fast.ai/t/wiki-lesson-3/7809)  
 
 ## Notebooks Used
-[lesson2-image_models.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)  
+* dog breed
+* planet:  [lesson2-image_models.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)  
 
