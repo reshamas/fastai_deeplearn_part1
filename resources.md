@@ -23,6 +23,9 @@
 
 * [Visualizing Learning rate vs Batch size (Neural Nets basics using Fast.ai tools)](https://miguel-data-sc.github.io/2017-11-05-first/) by Miguel (Nov 2017)
 
+* [Convolutional Neural Network in 5 minutes](https://medium.com/@init_27/convolutional-neural-network-in-5-minutes-8f867eb9ca39) by Sanyam Bhutani
+
+
 ## Blogs
 
 * [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
