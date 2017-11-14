@@ -22,3 +22,7 @@
 
 
 `TTA` Test Time Augmentation - use to ensure we get the best predictions we can.  
+
+fastai library sits on top of PyTorch.  
+
+[`keras_lesson1.ipynb`](https://github.com/fastai/fastai/blob/master/courses/dl1/keras_lesson1.ipynb)  
