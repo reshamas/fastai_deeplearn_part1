@@ -19,24 +19,7 @@ https://www.kaggle.com/c/dogs-vs-cats
 #### Step 2:  Accept competition rules  
 https://www.kaggle.com/c/dogs-vs-cats/rules
 
-#### Step 3:  Download data (try 1)
-Syntax:  
-<kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
-
-Note:  Here's an example of warning message I receive when I tried to download data before accepting the rules of the competition:  
->my example
-```bash
-ubuntu@ip-10-0-0-13:~$ kg config -g -u 'reshamashaikh' -p 'xxx' -c dogs-vs-cats
-ubuntu@ip-10-0-0-13:~$ kg download
-Starting new HTTPS connection (1): www.kaggle.com
-downloading https://www.kaggle.com/c/dogs-vs-cats/download/sampleSubmission.csv
-
-sampleSubmission.csv N/A% |                                                                                                                   | ETA:  --:--:--   0.0 s/B
-
-Warning: download url for file sampleSubmission.csv resolves to an html document rather than a downloadable file. 
-Is it possible you have not accepted the competition's rules on the kaggle website?
-```
-#### Step 4:  Set up data directory 
+#### Step 3:  Set up data directory 
 <kbd> ls </kbd>  
 <kbd> mkdir data </kbd>  
 <kbd> cd data </kbd>  
@@ -48,13 +31,31 @@ ubuntu@ip-10-0-0-13:~$ mkdir data
 ubuntu@ip-10-0-0-13:~$ cd data
 ```
 
-#### Step 5:  Dowload data (try 2)
+#### Step 4a:  Download data (try 1)
+Syntax:  
+<kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
+
+Note:  Here's an example of warning message I receive when I tried to download data before accepting the rules of the competition:  
+>my example
+```bash
+ubuntu@ip-10-0-0-13:~/data$ kg config -g -u 'reshamashaikh' -p 'xxx' -c dogs-vs-cats
+ubuntu@ip-10-0-0-13:~/data$ kg download
+Starting new HTTPS connection (1): www.kaggle.com
+downloading https://www.kaggle.com/c/dogs-vs-cats/download/sampleSubmission.csv
+
+sampleSubmission.csv N/A% |                                                                                                                   | ETA:  --:--:--   0.0 s/B
+
+Warning: download url for file sampleSubmission.csv resolves to an html document rather than a downloadable file. 
+Is it possible you have not accepted the competition's rules on the kaggle website?
+```
+
+#### Step 4b:  Dowload data (try 2)
 Note 1:  I have accepted the competition rules; will try downloading again   
 <kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
 <kbd> kg download </kbd>  
 >my example
 ```bash
-ubuntu@ip-10-0-0-13:~$ kg config -g -u 'reshamashaikh' -p 'xxx' -c dogs-vs-cats
+ubuntu@ip-10-0-0-13:~/data$ kg config -g -u 'reshamashaikh' -p 'xxx' -c dogs-vs-cats
 ubuntu@ip-10-0-0-13:~/data$ kg download
 Starting new HTTPS connection (1): www.kaggle.com
 downloading https://www.kaggle.com/c/dogs-vs-cats/download/sampleSubmission.csv
