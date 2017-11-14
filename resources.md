@@ -9,19 +9,23 @@
 
 ## Blogs Written by fastai Fellows
 
+### Resnet
 * [Decoding the ResNet architecture](http://teleported.in/posts/decoding-resnet-architecture/) by Anand Saha   
+* [Yet Another ResNet Tutorial (or not)]https://medium.com/@apiltamang/yet-another-resnet-tutorial-or-not-f6dd9515fcd7) by Apil Tamang
 
+### PyTorch
 * [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) by Vishnu Subramanian (April 2017)
+* [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
 
-* [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa) by Wayde Gilliam
-
+### Learning Rate
+* [Visualizing Learning rate vs Batch size (Neural Nets basics using Fast.ai tools)](https://miguel-data-sc.github.io/2017-11-05-first/) by Miguel (Nov 2017)
 * [Estimating an Optimal Learning Rate For a Deep Neural Network](https://medium.com/@surmenok/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) by Pavel Surmenok
 
-* [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
+### and More
 * [Do smoother areas of the error surface lead to better generalization?](https://medium.com/@radekosmulski/do-smoother-areas-of-the-error-surface-lead-to-better-generalization-b5f93b9edf5b) by Radek
   * An experiment inspired by the first lecture of the fast.ai MOOC
 
-* [Visualizing Learning rate vs Batch size (Neural Nets basics using Fast.ai tools)](https://miguel-data-sc.github.io/2017-11-05-first/) by Miguel (Nov 2017)
+* [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa) by Wayde Gilliam
 
 * [Convolutional Neural Network in 5 minutes](https://medium.com/@init_27/convolutional-neural-network-in-5-minutes-8f867eb9ca39) by Sanyam Bhutani
 
