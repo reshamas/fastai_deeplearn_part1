@@ -42,6 +42,7 @@ ubuntu@ip-10-0-0-13:~$ cd data
 ### Step 4a:  Download data (try 1)
 Syntax:  
 <kbd> config -g -u 'username' -p 'password' -c 'competition' </kbd>  
+<kbd> kg download </kbd>  
 
 Note:  Here's an example of warning message I receive when I tried to download data before accepting the rules of the competition:  
 >my example
