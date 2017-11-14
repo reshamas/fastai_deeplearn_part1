@@ -27,6 +27,8 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 
 * [ADAM:  A Method for Stochastic Optimization](https://arxiv.org/pdf/1412.6980.pdf) (ICLR 2015)
 
+* [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186) (WACV 2017)
+
 
 ## Videos
 
