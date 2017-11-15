@@ -3,7 +3,6 @@
 ## Lessons
 
 * [Lesson 2: Case Study - A world class image classifier for dogs and cats (err.., anything)](https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e) by Apil Tamang
-
 * [Lesson 2 Notes](http://forums.fast.ai/t/deeplearning-lecnotes2/7515/2) by Tim Lee
 * [Lesson 3 Notes](http://forums.fast.ai/t/deeplearning-lecnotes3/7866) by Tim Lee
 
@@ -50,6 +49,8 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 ## Videos
 
 * [The wonderful and terrifying implications of computers that can learn](https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn) (Ted Talk by Jeremy Howard 2014)
+
+* [A Visual and Intuitive Understanding of Deep Learning](https://www.youtube.com/embed/Oqm9vsf_hvU?autoplay=1&feature=oembed&wmode=opaque) Otavio Good of Google, AI Conf SF Sep 2017
 
 * [Ian Goodfellow - Numerical Computation for Deep Learning - AI With The Best Oct 14-15, 2017](https://www.youtube.com/watch?v=XlYD8jn1ayE&t=5m40s)
 
