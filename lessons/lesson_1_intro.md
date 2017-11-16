@@ -1,6 +1,6 @@
 # Lesson 1 - Intro
 
-(30-Oct-2017, live)
+(30-Oct-2017, live)  
 [Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
 [Section 2](https://www.youtube.com/watch?v=ZDq5OXsLO3U)  
 
