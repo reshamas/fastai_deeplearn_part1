@@ -1,4 +1,16 @@
-# Lesson 1
+# Lesson 1 - Intro
+
+(30-Oct-2017, live)
+[Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
+[Section 2](https://www.youtube.com/watch?v=ZDq5OXsLO3U)  
+
+[Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)  
+
+## Notebooks Used  
+
+[fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
+
+---
 
 ## ImageNet
 First step is to use a pre-trained model.
