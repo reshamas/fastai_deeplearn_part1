@@ -4,7 +4,7 @@
 [Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
 [Section 2](https://www.youtube.com/watch?v=ZDq5OXsLO3U)  
 
-[Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)  
+[Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)  
 
 ## Notebooks Used  
 
