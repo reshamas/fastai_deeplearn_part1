@@ -42,6 +42,21 @@ Being recorded and will become a fastai MOOC.
 * [Paperspace](https://www.paperspace.com)
 * [AWS](https://aws.amazon.com/console/)
 
+## Deep Learning
+* Deep learning is a particular way of doing machine learning
+* [Arthur Samuels](https://en.wikipedia.org/wiki/Arthur_Samuel)
+  * he invented machine learning
+  * rather than programming, step-by-step, give the computer *examples*
+    * let the computer figure out the problem by giving it examples
+  * let computer play checkers against itself thousands of times; it figured out which parameters worked the best
+  * Samuel **Checkers-playing** Program appears to be the world's first self-learning program, and as such a very early demonstration of the fundamental concept of artificial intelligence (AI)
+  * he worked at Bell Labs and IBM, then Stanford Univ
+  
+
+### Machine Learning
+
+
+
 ## [ImageNet](http://www.image-net.org)
 First step is to use a pre-trained model.  
 
