@@ -1,4 +1,4 @@
-# Lesson 1 - Intro
+# Lesson 1:  Intro
 
 (30-Oct-2017, live)  
 [Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
