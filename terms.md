@@ -1,4 +1,4 @@
-# Terms / Acronyms
+# Deep Learning Terms
 
 TFMS = ? transform  
 
