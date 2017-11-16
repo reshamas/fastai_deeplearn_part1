@@ -31,7 +31,9 @@ In-person Info:  [Deep Learning Certificate Part I](https://www.usfca.edu/data-i
 Being recorded and will become a fastai MOOC.  
 
 ### Platforms
-* [Crestle, built by Anurag Goel](https://www.crestle.com)
+* [Crestle](https://www.crestle.com) built by [Anurag Goel](https://www.linkedin.com/in/anuragoel/)  
+* [Paperspace](https://www.paperspace.com)
+* [AWS](https://aws.amazon.com/console/)
 
 ## [ImageNet](http://www.image-net.org)
 First step is to use a pre-trained model.  
