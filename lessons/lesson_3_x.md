@@ -1,4 +1,4 @@
-# Lesson 3
+# Lesson 3:  xxx
 (13-Nov-2017, live)
 
 [Lesson 3 live stream](https://www.youtube.com/watch?v=9C06ZPF8Uuc&feature=youtu.be) 
