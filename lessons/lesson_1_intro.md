@@ -10,7 +10,6 @@
 [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)  
 
 ### Notebooks Used  
-
 [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
 
 --- 
@@ -29,7 +28,7 @@ In-person Info:  [Deep Learning Certificate Part I](https://www.usfca.edu/data-i
 
 Being recorded and will become a fastai MOOC.  
 
-## ImageNet
+## [ImageNet](http://www.image-net.org)
 First step is to use a pre-trained model.  
 
 ### Pre-trained Model:  
@@ -45,12 +44,12 @@ First step is to use a pre-trained model.
 * Each year, the winner make source code / weights available
 
 ## 3 Things that Give Us Modern Deep Learning
-- Infinitely Flexible Functions
-- Way to train the parameters
-- Fast and scalable
+1. Infinitely Flexible Functions
+2. Way to train the parameters
+3. Fast and scalable
 
 ## Winners of ImageNet
-[9 Deep Learning Papers](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
+[9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
 
 ### Architectures
 - 2017 Nasnet, Google ? 
