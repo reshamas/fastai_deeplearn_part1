@@ -23,6 +23,11 @@ In-person Info:  [Deep Learning Certificate Part I](https://www.usfca.edu/data-i
 * [Rachel Thomas](https://www.usfca.edu/data-institute/about-us/researchers), Researcher in Residence
 * [Jeremy Howard](https://www.usfca.edu/data-institute/about-us/researchers), Distinguished Scholar in Deep Learning
 
+* 200 students in room at USF
+* 100 Masters' students upstairs at USF
+* 400 International Fellows, via livestream
+
+Being recorded and will become a fastai MOOC.  
 
 ## ImageNet
 First step is to use a pre-trained model.  
