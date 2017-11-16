@@ -30,7 +30,14 @@ In-person Info:  [Deep Learning Certificate Part I](https://www.usfca.edu/data-i
 
 Being recorded and will become a fastai MOOC.  
 
-### Platforms
+#### Teams
+* teams of 6 people
+* get help with stuff
+
+## Python
+* using Python 3.6
+
+## Platforms
 * [Crestle](https://www.crestle.com) built by [Anurag Goel](https://www.linkedin.com/in/anuragoel/)  
 * [Paperspace](https://www.paperspace.com)
 * [AWS](https://aws.amazon.com/console/)
