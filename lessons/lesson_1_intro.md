@@ -8,23 +8,26 @@
 
 ## Notebooks Used  
 
-[fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
+[lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
 
 ---
 
+Intro by [David Uminsky](https://www.usfca.edu/faculty/david-uminsky), Director of Data Institute of USF.  
+
 ## ImageNet
-First step is to use a pre-trained model.
-Pre-trained Model:  
-Someone has already come along, downloaded millions of images off of the internet
-Built a deep learning model that has learned to recognize the contents of those images
-Nearly always, with these pre-trained models, they use ImageNet dataset
-ImageNet has most respected annual computer vision competition (winners are Google, Microsoft)
-32,000+ categories
-Folks that create these pre-trained networks basically download large subset of images from ImageNet
-Shortcomings of ImageNet Dataset
-ImageNet is carefully curated so that photo has one main item in it
-For us, this is a suitable dataset
-Each year, the winner make source code / weights available
+First step is to use a pre-trained model.  
+
+### Pre-trained Model:  
+* Someone has already come along, downloaded millions of images off of the internet
+* Built a deep learning model that has learned to recognize the contents of those images
+* Nearly always, with these pre-trained models, they use ImageNet dataset
+* ImageNet has most respected annual computer vision competition (winners are Google, Microsoft)
+  * 32,000+ categories
+* Folks that create these pre-trained networks basically download large subset of images from ImageNet
+* Shortcomings of ImageNet Dataset
+  * ImageNet is carefully curated so that photo has one main item in it
+  * For us, this is a suitable dataset
+* Each year, the winner make source code / weights available
 
 ## 3 Things that Give Us Modern Deep Learning
 - Infinitely Flexible Functions
@@ -33,7 +36,6 @@ Each year, the winner make source code / weights available
 
 ## Winners of ImageNet
 [9 Deep Learning Papers](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
-
 
 ### Architectures
 - 2017 Nasnet, Google ? 
@@ -46,8 +48,6 @@ Each year, the winner make source code / weights available
    * Excellent for the problems that differ (like satellite imagery vs simple photos)
 - 2013 ZF Net, NYU (Matthew Zeiler and Rob Fergus)
 - 2012 AlexNet, Stanford
-
-
 
 
 ### Layers
