@@ -17,11 +17,13 @@
 ## USF
 In-person Info:  [Deep Learning Certificate Part I](https://www.usfca.edu/data-institute/certificates/deep-learning-part-one)  
 
+### Staff
 * Intro by [David Uminsky](https://www.usfca.edu/faculty/david-uminsky), Director of Data Institute of USF 
 * [Yannet Interian](https://www.usfca.edu/faculty/yannet-interian), Assistant Professor USF
 * [Rachel Thomas](https://www.usfca.edu/data-institute/about-us/researchers), Researcher in Residence
 * [Jeremy Howard](https://www.usfca.edu/data-institute/about-us/researchers), Distinguished Scholar in Deep Learning
 
+### Classroom
 * 200 students in room at USF
 * 100 Masters' students upstairs at USF
 * 400 International Fellows, via livestream
