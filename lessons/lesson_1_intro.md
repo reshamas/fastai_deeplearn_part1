@@ -63,7 +63,7 @@ First step is to use a pre-trained model.
 3. Fast and scalable
 
 ## Winners of ImageNet
-[9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
+:key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
 
 ### Architectures
 - 2017 Nasnet, Google ? 
