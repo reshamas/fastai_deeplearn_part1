@@ -1,5 +1,17 @@
-# Lesson 1:  Deep Learning
+# Lesson 1b:  Deep Learning
+(30-Oct-2017, live)  
 
+### Video
+* [Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
+* [Section 2](https://www.youtube.com/watch?v=ZDq5OXsLO3U)  
+
+### Wiki
+[Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)  
+
+### Notebooks Used  
+[lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
+
+--- 
 
 ## 3 Things that Give Us Modern Deep Learning
 1. Infinitely Flexible Functions
