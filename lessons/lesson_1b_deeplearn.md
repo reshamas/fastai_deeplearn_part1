@@ -1,4 +1,4 @@
-# Lesson 1b:  Deep Learning
+# Lesson 1b:  CNN
 (30-Oct-2017, live)  
 
 ### Video
@@ -12,6 +12,75 @@
 [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
 
 --- 
+
+## CNN (Convolutional Neural Networks)
+* the most important architecture for deep learning
+* some researchers in the field think it's the only architecture we need
+* the other main architectures we'll look at in this course are:
+  * Recurrent Neural Network
+  * Fully Connected Neural Networks
+* **State of the art** approach in many, if not most areas:  image recognition, NLP, computer vision, speech recognition.
+* this will be our focus:  best architecture for vast majority of applications
+* basic structure of the CNN is the convolution
+
+## [Convolution](https://en.wikipedia.org/wiki/Convolution)
+In mathematics (and, in particular, functional analysis) convolution is a mathematical operation on two functions (f and g) to produce a third function, that is typically viewed as a modified version of one of the original functions, giving the integral of the pointwise multiplication of the two functions as a function of the amount that one of the original functions is translated.
+
+This site explains it well visually:  
+http://setosa.io/ev/image-kernels/
+
+### How a Picture Becomes Numerical Data
+* an image is made up of pixels
+* each pixel is represented by a number from 0 to 255
+  * White = 255
+  * Black = 0 (small numbers, close to )
+* we’re working with this matrix of numbers
+
+#### Convolution
+We take some set of pixels
+We multiply the pixels by some set of values (filter) and sum that up
+White areas have high numbers; black areas have low numbers
+
+Let's walk through applying the following 3x3 sharpen kernel to the image of a face from above.  
+AKA:  filter, pre-defined convolution filter
+* any 3x3 matrix used to multiply a 3x3 area is called a kernel and the operation itself is called a convolution
+
+Creates an EDGE DETECTOR
+
+- it is a linear operation, only does multiplication and additions
+- finds interesting features in image, like edges
+
+What if we took convolutions and stacked them up, on top of each other? 
+- We would have convolutions of convolutions, taking output of a convolution and input-ing it into another convolution?  
+- That would actually *not be* interesting, because we're doing a linear function to another linear function.
+- What *is* interesting, is if we put a **non-linear** function in between.
+
+Example of non-linear function:  
+* sigmoid
+
+Michael Nielsen's [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com):    
+http://neuralnetworksanddeeplearning.com/chap4.html
+
+[Universal Approximation Theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem)  
+In the mathematical theory of artificial neural networks, the universal approximation theorem states[1] that a feed-forward network with a single hidden layer containing a finite number of neurons (i.e., a multilayer perceptron), can approximate continuous functions on compact subsets of Rn, under mild assumptions on the activation function. The theorem thus states that simple neural networks can represent a wide variety of interesting functions when given appropriate parameters; however, it does not touch upon the algorithmic learnability of those parameters.
+
+Neural Network is:  
+- linear function followed by some sort of non-linearity
+- we can repeat that a few times
+
+A common type of non-linearity:  ReLU (Rectified Linear Unit)  
+`max(0, x)`  
+- multiply numbers (kernel by a fixed frame)
+- add the numbers up
+- put thru non-linearity (ReLU):  set negative number to 0, leave positive number as is
+
+## Filters
+- can find edges, diagonals, corners
+- vertical lines in the middle, left
+- can find checkerboard patterns, edges of flowers, bits of text
+- each layer finds multiplicatively more complex features
+- dogs heads, unicycle wheels
+
 
 
 
@@ -82,29 +151,4 @@ Why not do all data at once?
 Only has a certain amount of memory:  about 2-12 GB of memory; our dataset will not fit into that
 It’s not necessary to put all the data in to run it.
  
-## CNN
-The most important architecture for deep learning.
-State of the art approach in most areas, image recognition, NLP, computer vision, speech recognition.
-Best architecture for vast majority of applications
-Basic structure is the convolution
 
-
-http://setosa.io/ev/image-kernels/
-
-
-The other architecture is Recurrent Neural Network.
-Fully Connected NN
-
-Each pixel is represented by a number from 0 to 255
-White = 255
-Black =small number, close to 0
-We’re working with this matrix of numbers.
-
-Let's walk through applying the following 3x3 sharpen kernel to the image of a face from above.
-AKA:  filter
-
-Convolution
-We take some set of pixels
-We multiply the pixels by some set of values (filter) and sum that up
-White areas have high numbers; black areas have low numbers
-Creates an EDGE DETECTOR
