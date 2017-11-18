@@ -103,6 +103,8 @@ First step is to use a pre-trained model.
   * For us, this is a suitable dataset
 * Each year, the winner make source code / weights available
 
+---
+
 ## 3 Things that Give Us Modern Deep Learning
 1. Infinitely Flexible Functions
 2. Way to train the parameters
