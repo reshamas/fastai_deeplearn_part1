@@ -103,13 +103,15 @@ Using notebook [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/cour
 
 We're using:  [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb) which is Image Classification with CNN 'Dogs vs Cats'
 
-### fastai library
+## fastai library
 - `from fastai.imports imports import *` this imports a whole lot of other libraries
 - has a bunch of deep learning libraries, it wraps around a lot of libraries
 - the main library it is using is PyTorch
 - all functions in fastai library are about 3-4 lines of code; they are short and designed to be understandable
 
 See [notes on Juypter Notebook](/tools/jupyter_notebook.md) in tools directory.
+
+** add in notes for setting up data in directory
 
 ## Winners of ImageNet
 :key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
