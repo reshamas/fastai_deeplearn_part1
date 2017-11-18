@@ -147,6 +147,7 @@ array([0,0,0,...1,1,1])
 - can look at "most incorrect"
 - can look at "most uncertain predictions", sorted by how close to 0.5 the probability is
 
+### Building a CNN
 ```python
 arch=resnet34
 data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
@@ -159,8 +160,25 @@ learn.fit(0.01, 3)
     - may have heard that choosing architectures and hyperparameters takes a long time to learn.  This is largely UNTRUE.
 We need to know 3 things:  
 1.  architecture
-2.  `learn.fit(0.01, 3)` --> 0.01 = learning rate
-3.  `learn.fit(0.01, 3)` --> 3  = number of epochs
+2.  `learn.fit(0.01, 3)` --> **0.01** = learning rate
+3.  `learn.fit(0.01, 3)` --> **3**  = number of epochs
+
+- We've already figured out automatically all the other things you need (hyperparameters, etc) for you.  Turns out everything you need to choose are things that you can either automate or provide guidance on.  
+- Computer vision - **resnet34** is the one to start with, and probably end with.  it is fast and accurate.  If you can't get a good result with resnet34, something else is probably wrong
+- Number of Epochs - how many times do you want your algorithm to go through your images and read them?  **Start with 1**.  If that doesn't work, then run more.
+- Learning Rate - this is the only one that is complex to pick.  With gradient descent, can pick out which direction to move downhill and take a small step in that direction.  Mathematically, we take the derivative of the function.  Learning rate is what do you multiply the derivative by.  
+- Figuring out the learning rate has been the biggest challenge for practitioners.  
+
+### Learning Rate
+This researcher wrote a paper that shows a reliable way to set the learning rate every time:  
+* [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186) (WACV 2017) by Leslie Smith
+* The learning rate determines how quickly or how slowly you want to update the weights (or parameters). Learning rate is one of the most difficult parameters to set, because it significantly affect model performance.
+* We first create a new learner, since we want to know how to set the learning rate for a new (untrained) model.
+```bash
+learn = ConvLearner.pretrained(arch, data, precompute=True)
+```
+```bash
+lrf=learn.lr_find()```
 
 
 ## Winners of ImageNet
