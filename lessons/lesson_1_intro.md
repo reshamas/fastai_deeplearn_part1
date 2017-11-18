@@ -47,15 +47,25 @@ Being recorded and will become a fastai MOOC.
 * [Arthur Samuels](https://en.wikipedia.org/wiki/Arthur_Samuel)
   * he invented machine learning
   * rather than programming, step-by-step, give the computer *examples*
-    * let the computer figure out the problem by giving it examples
+    * **let the computer figure out the problem by giving it examples**
   * let computer play checkers against itself thousands of times; it figured out which parameters worked the best
-  * Samuel **Checkers-playing** Program appears to be the world's first self-learning program, and as such a very early demonstration of the fundamental concept of artificial intelligence (AI)
+  * Samuel **Checkers-playing** Program appears to be the world's first self-learning program, and as such a very early demonstration of the fundamental concept of artificial intelligence (AI); 1962
   * he worked at Bell Labs and IBM, then Stanford Univ
   
-
 ### Machine Learning
+#### Example:  ML Algorithm in Predicting Breast Cancer Survival Based on Pathology Slides
+* start with pictures of breast cancer slides
+* work with computer scientists, pathologists worked together to determine features that would predict who would survive or not, based on slides
+* process of building model can take some time (many years); can pass data into ML algorithm, such as logistic regression; regression can determine which sets of features separate out the 2 classes
+* this can work well, but requires a lot of experts and requires the feature data
+* this ML algorithm was more accurate at predicting breast cancer survival than human pathologists 
 
+#### Examples of ML Uses, Thanks to Deep Learning
+* gmail, generates automatic responses to emails.
+* skype, translate to different languages, in real time
 
+#### Future Work
+How do we get computers and humans to work better together?   
 
 ## [ImageNet](http://www.image-net.org)
 First step is to use a pre-trained model.  
