@@ -178,7 +178,11 @@ This researcher wrote a paper that shows a reliable way to set the learning rate
 learn = ConvLearner.pretrained(arch, data, precompute=True)
 ```
 ```bash
-lrf=learn.lr_find()```
+lrf=learn.lr_find()
+learn.sched.plot_lr()
+```
+What it does, each iteration (dataset once), looks at a few images at a time (mini-batch), starts very small, and increases it over time.  Plot of loss (error) against the learning rate.  
+- Pick the largest learning rate where it is clearly getting better.  
 
 
 ## Winners of ImageNet
