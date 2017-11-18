@@ -87,6 +87,15 @@ What's next?
 - There are so many functions.
 - GPUs can do networks at scale; can do billions of operations a second.
 
+Note:  most students spend lecture listening, then watch the lecture during the week and follow along with code.
+
+## GPUs
+- we need an NVIDIA GPU.  An NVIDIA GPUs support CUDA.  CUDA is a particular way of doing compution on GPU that is not limited to computer games, but general purpose computations.
+- most laptops do not have NVIDIA GPUs.
+- we need to access computers that access NVIDIA GPUs or computer specifically designed for deep learning.
+
+## [Crestle](crestle.com)
+Using notebook [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb):  Image classification with Convolutional Neural Networks
 
 ## Winners of ImageNet
 :key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
