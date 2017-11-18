@@ -9,8 +9,18 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 * great experimentation environment
 
 
-## Notebook Commands
+## Notebook Commands / Shortcuts
 * <kbd> Shift + Enter </kbd> to run cell  
+* <kbd> Shift + Tab </kbd>  First time pressing:  tells you what parameters to pass 
+* <kbd> Shift + Tab </kbd> Press 3 times:  gives additional info about method
+
+### Select multiple cells
+<kbd> ESC + </kbd>    <kbd> Shift+K  </kbd>  extend select cells above  
+<kbd> ESC + </kbd>    <kbd> Shift+ :arrow_up: </kbd>  extend select cells above  
+
+<kbd> ESC + </kbd>   <kbd> Shift+ ???  </kbd>  extend select cells below  
+<kbd> ESC + </kbd>   <kbd> Shift+ :arrow_down: </kbd>  extend select cells below  
+
 
 ## Notebook Source Code Access
 * <kbd> ? </kbd>  look at documentation for code
