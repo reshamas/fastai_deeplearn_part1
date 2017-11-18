@@ -75,6 +75,11 @@ Being recorded and will become a fastai MOOC.
 #### Future Work
 How do we get computers and humans to work better together?   
 
+#### Societal Implications
+* [The wonderful and terrifying implications of computers that can learn](https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn) (Ted Talk by Jeremy Howard 2014)
+* ML / DL algorithms need to be in the hands of practioners who understand the economics / implications of the algorithms.  
+* practioners who understand societal implications; what kind of problems should be solved; what does a good solution look like...
+
 #### Goal of This Course
 * that people from all different backgrounds will use deep learning to solve problems
 
