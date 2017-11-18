@@ -81,7 +81,11 @@ A common type of non-linearity:  ReLU (Rectified Linear Unit)
 - each layer finds multiplicatively more complex features
 - dogs heads, unicycle wheels
 
-
+What's next?  
+- Nothing, that's it.
+- Neural nets can approximate any function.
+- There are so many functions.
+- GPUs can do networks at scale; can do billions of operations a second.
 
 
 ## Winners of ImageNet
