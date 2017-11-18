@@ -66,6 +66,7 @@ Being recorded and will become a fastai MOOC.
 * At Google, every single part of the company uses deep learning
 * [DeepMind AI Reduces Google Data Centre Cooling Bill by 40%](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/)
 * [Baidu’s Deep-Learning System is better at English and Mandarin Speech Recognition than most people](https://www.nextbigfuture.com/2015/12/baidus-deep-learning-system-is-better.html)
+* [How Google's AlphaGo Beat a Go World Champion](https://www.theatlantic.com/technology/archive/2016/03/the-invisible-opponent/475611/)
 
 #### Future Work
 How do we get computers and humans to work better together?   
