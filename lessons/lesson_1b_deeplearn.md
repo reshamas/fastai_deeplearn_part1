@@ -96,6 +96,11 @@ Note:  most students spend lecture listening, then watch the lecture during the 
 
 ## [Crestle](crestle.com)
 Using notebook [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb):  Image classification with Convolutional Neural Networks
+- make sure instance is "GPU enabled"
+- we're paying about $0.50 per hour
+
+Jupyter Notebook - in data science survey of 16K data scientists, Jupyter Notebook came up as 3rd most important self-reported tool for data science.  
+
 
 ## Winners of ImageNet
 :key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
