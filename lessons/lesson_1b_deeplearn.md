@@ -99,7 +99,7 @@ Using notebook [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/cour
 - make sure instance is "GPU enabled"
 - we're paying about $0.50 per hour
 
-Jupyter Notebook - in data science survey of 16K data scientists, Jupyter Notebook came up as 3rd most important self-reported tool for data science.  
+Jupyter Notebook - in [Kaggle data science survey](https://www.kaggle.com/surveys/2017) of 16K data scientists, Jupyter Notebook came up as 3rd most important self-reported tool for data science.  
 
 
 ## Winners of ImageNet
