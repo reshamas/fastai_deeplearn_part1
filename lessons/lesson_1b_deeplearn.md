@@ -111,7 +111,29 @@ We're using:  [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/cours
 
 See [notes on Juypter Notebook](/tools/jupyter_notebook.md) in tools directory.
 
+## Setting up the data
+* data needs to be in its folder by class
+
 ** add in notes for setting up data in directory
+
+## Results
+- With 20K images and 7 seconds, we were able to create a state-of-the-art classifier.  
+- When people say you need Google-scale data or Google-scale infrastructure for deep learning, it's kind of meaningless.  
+What they really mean is if you're working on exactly same problem, and using the exact same algorithm, at exactly the same time, if they train on more GPUs with more data for longer than you did, they will get a slightly better result.  
+- But, if you want to get a good result on your problem, you can do it using a single GPU using a short time.  
+- In this course, we will get a state-of-the-art results using a single GPU in a few seconds, minutes, maybe a couple of hours.
+
+Note:  
+- Crestle is a bit slower, the first time you run it.  It's also running on an older GPU.
+- Jeremy is running it on a $600 GPU.  
+
+### Model
+- You can learn a lot about a dataset by analyzing what the model tells you.  
+- Common complaint about deep learning is it's a black box.  That's definitely not true.  We can look at pictures and see what our model is looking at.  
+
+This is the label for data:  
+`data.val_y`  
+
 
 ## Winners of ImageNet
 :key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
