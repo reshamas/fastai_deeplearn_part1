@@ -14,14 +14,44 @@
 --- 
 
 ## Deep Learning
-* Deep learning is a way of doing machine learning
-* give machine data, examples and having it figure out the problem that is represented in the examples
+* deep learning is a way of doing machine learning
+* way of giving machine data (examples) and having it figure out the problem that is represented in those examples
 
-## What We Are Looking For:  Something That Has These 3 Properties
+## What We Are Looking For:  Something That Has 3 Properties
 (3 Things that Give Us Modern Deep Learning)  
+We are looking for a **mathematical function** that is *so flexible* that it can solve any given problem.  
 1. Infinitely Flexible Functions
-2. Way to train the parameters
+2. All-Purpose Parameter Fitting (way to train the parameters)
+  * things can fit hundreds of millions of parameters
 3. Fast and scalable
+
+Example of limitation:  linear regression is limited by the fact it can only represent linear functions.  
+
+Deep Learning has all 3 of above properties.  
+* functional form:  neural network
+* multiple layers allows more complex relationships
+* parameters of neural network can be found using gradient descent
+
+### Gradient Descent
+* approach works well in practice; local minima are "equivalent" in practice
+* different optimization techniques determine how quickly we can find the way down.
+
+### Key discoveries thru Theoretical Side
+* Very, very simple architectures of neural network and very, very simple methods of gradient descent work best in most situations.  
+* We'll learn how every step works, using simple math.  
+
+### Fast and Scalable:  Made Possible by GPUs
+* GPU = Graphical Processing Unit
+* GPUs are used in video games
+* Huge industry of video games accidentally built for us what we need to do deep learning
+* GPUs are useful and needed for deep learning
+* GPUs are 10x faster than CPUs
+* Best hardware for deep learning:  NVIDIA GTX-1080 Ti for ~ $600
+
+## Art of Learning
+* [A Mathematician's Lament](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf) by Paul Lockhart (25 pages)
+* [40 Years of Teaching Thinking: Revolution, Evolution, and What Next?](https://www.youtube.com/watch?v=-nmt1atA6ag) video, 2011
+
 
 ## Winners of ImageNet
 :key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
