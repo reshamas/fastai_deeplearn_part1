@@ -1,4 +1,4 @@
-# Lesson 1:  Intro
+# Lesson 1a:  Intro
 
 (30-Oct-2017, live)  
 
