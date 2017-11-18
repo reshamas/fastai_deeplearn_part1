@@ -37,12 +37,12 @@ http://setosa.io/ev/image-kernels/
 * we’re working with this matrix of numbers
 
 #### Convolution
-We take some set of pixels
-We multiply the pixels by some set of values (filter) and sum that up
-White areas have high numbers; black areas have low numbers
+- We take some set of pixels
+- We multiply the pixels by some set of values (filter) and sum that up
+- White areas have high numbers; black areas have low numbers
 
 Let's walk through applying the following 3x3 sharpen kernel to the image of a face from above.  
-AKA:  filter, pre-defined convolution filter
+AKA:  filter, pre-defined convolution filter  
 * any 3x3 matrix used to multiply a 3x3 area is called a kernel and the operation itself is called a convolution
 
 Creates an EDGE DETECTOR
