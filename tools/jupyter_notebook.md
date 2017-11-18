@@ -24,11 +24,11 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 
 ## Notebook Source Code Access
 * <kbd> ? </kbd>  look at documentation for code
-  * Example:  `?ImageClassifierData.from_paths`
+  * Example: <kbd> ?ImageClassifierData.from_paths </kbd>
 * <kbd> ?? </kbd>  look at source code
-  * Example:  `??ImageClassifierData.from_paths`
+  * Example:  <kbd> ??ImageClassifierData.from_paths </kbd>
 * type:  function name, then <kbd>Shift + Enter </kbd> to find out where a particular function or class comes from 
-  * Example of Input:  `ImageClassifierData` <kbd>Shift + Enter </kbd>
+  * Example of Input:  <kbd> ImageClassifierData </kbd> <kbd>Shift + Enter </kbd>
   * Example of Output: `fastai.dataset.ImageClassifierData`
   
   
