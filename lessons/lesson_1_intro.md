@@ -63,9 +63,15 @@ Being recorded and will become a fastai MOOC.
 #### Examples of ML Uses, Thanks to Deep Learning
 * gmail, generates automatic responses to emails.
 * skype, translate to different languages, in real time
+* At Google, every single part of the company uses deep learning
+* [DeepMind AI Reduces Google Data Centre Cooling Bill by 40%](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/)
+* [Baidu’s Deep-Learning System is better at English and Mandarin Speech Recognition than most people](https://www.nextbigfuture.com/2015/12/baidus-deep-learning-system-is-better.html)
 
 #### Future Work
 How do we get computers and humans to work better together?   
+
+#### Goal of This Course
+* that people from all different backgrounds will use deep learning to solve problems
 
 ## [ImageNet](http://www.image-net.org)
 First step is to use a pre-trained model.  
