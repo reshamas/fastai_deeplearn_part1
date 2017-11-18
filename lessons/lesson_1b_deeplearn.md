@@ -99,8 +99,17 @@ Using notebook [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/cour
 - make sure instance is "GPU enabled"
 - we're paying about $0.50 per hour
 
-Jupyter Notebook - in [Kaggle data science survey](https://www.kaggle.com/surveys/2017) of 16K data scientists, Jupyter Notebook came up as 3rd most important self-reported tool for data science.  
+:key: **Note:**  Remember to <kbd>git pull </kbd> when in Crestle to ensure we're using the latest version of the repo.  
 
+We're using:  [lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb) which is Image Classification with CNN 'Dogs vs Cats'
+
+### fastai library
+- `from fastai.imports imports import *` this imports a whole lot of other libraries
+- has a bunch of deep learning libraries, it wraps around a lot of libraries
+- the main library it is using is PyTorch
+- all functions in fastai library are about 3-4 lines of code; they are short and designed to be understandable
+
+See [notes on Juypter Notebook](/tools/jupyter_notebook.md) in tools directory.
 
 ## Winners of ImageNet
 :key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
