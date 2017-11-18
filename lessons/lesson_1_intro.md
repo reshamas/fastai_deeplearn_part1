@@ -67,6 +67,10 @@ Being recorded and will become a fastai MOOC.
 * [DeepMind AI Reduces Google Data Centre Cooling Bill by 40%](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/)
 * [Baidu’s Deep-Learning System is better at English and Mandarin Speech Recognition than most people](https://www.nextbigfuture.com/2015/12/baidus-deep-learning-system-is-better.html)
 * [How Google's AlphaGo Beat a Go World Champion](https://www.theatlantic.com/technology/archive/2016/03/the-invisible-opponent/475611/)
+* [Splunk and Tensorflow for Security: Catching the...](https://www.splunk.com/blog/2017/04/18/deep-learning-with-splunk-and-tensorflow-for-security-catching-the-fraudster-in-neural-networks-with-behavioral-biometrics.html)
+  * took mouse movements on web pages, turned them into pictures, tracking where mouse moved.  
+  * fed data into convolutional neural network
+  * used for fraud detection
 
 #### Future Work
 How do we get computers and humans to work better together?   
