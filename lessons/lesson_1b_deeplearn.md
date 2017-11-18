@@ -13,7 +13,12 @@
 
 --- 
 
-## 3 Things that Give Us Modern Deep Learning
+## Deep Learning
+* Deep learning is a way of doing machine learning
+* give machine data, examples and having it figure out the problem that is represented in the examples
+
+## What We Are Looking For:  Something That Has These 3 Properties
+(3 Things that Give Us Modern Deep Learning)  
 1. Infinitely Flexible Functions
 2. Way to train the parameters
 3. Fast and scalable
