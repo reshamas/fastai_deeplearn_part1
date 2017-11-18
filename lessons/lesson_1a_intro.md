@@ -9,9 +9,6 @@
 ### Wiki
 [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)  
 
-### Notebooks Used  
-[lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
-
 --- 
 
 ## USF
