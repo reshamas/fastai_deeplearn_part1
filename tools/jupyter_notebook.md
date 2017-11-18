@@ -27,7 +27,7 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 * type: <kbd> function name </kbd>, then <kbd>Shift + Enter </kbd> to find out where a particular function or class comes from 
   * Example of Input:  <kbd> ImageClassifierData </kbd> <kbd>Shift + Enter </kbd>
   * Example of Output: `fastai.dataset.ImageClassifierData`
-* type:  <kbd> within function </kbd>, then <kbd>Shift + Tab </kbd> shows parameters that the function can take, also shows default parameter options
+* Within function, <kbd>Shift + Tab </kbd> shows parameters that the function can take, also shows default parameter options
 
   
   
