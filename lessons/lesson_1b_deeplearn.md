@@ -58,6 +58,29 @@ Deep Learning has all 3 of above properties.
 ## Work
 * will need to put in 10 hours a week (in addition to lecture time)
 * spend time **RUNNING THE CODE** (rather than researching the theory)
+* create blog posts 
+
+## The Test of Whether You Can Understand
+* Deep Learning is about solving problems
+  * if you can't turned it into code, you can't solve the problem.  
+* You can code / build something with it
+* You can explain / teach it to someone else
+  * Write a blog post
+  * Help others who have questions
+  
+## Portfolio
+* people are hired based on their portfolio (not USF DL certificate)
+* GitHub projects, blog posts --> **can get hired based on portfolio**
+* write down what you are learning in a form that other people can understand
+
+## Goal
+* main goal is not to help you move to a deep learning job
+* continue doing what you're doing and bring deep learning to that
+* examples:  medicine, journalism, dairy farming
+* opportunities to change society
+* focus:  help you be a great practitioner of deep learning
+* opportunity - doing things differently
+* come up with a project idea
 
 
 ## Winners of ImageNet
