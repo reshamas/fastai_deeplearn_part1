@@ -80,6 +80,11 @@ How do we get computers and humans to work better together?
 * ML / DL algorithms need to be in the hands of practioners who understand the economics / implications of the algorithms.  
 * practioners who understand societal implications; what kind of problems should be solved; what does a good solution look like...
 
+#### Jeremy's Work
+* [Enlitic](https://www.enlitic.com)
+* [Exponential Medicine: Deep Learning AI Better Than Your Doctor at Finding Cancer](https://singularityhub.com/2015/11/11/exponential-medicine-deep-learning-ai-better-than-your-doctor-at-finding-cancer/)
+
+
 #### Goal of This Course
 * that people from all different backgrounds will use deep learning to solve problems
 
