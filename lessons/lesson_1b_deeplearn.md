@@ -50,7 +50,7 @@ Deep Learning has all 3 of above properties.
 
 ## Art of Learning
 * [A Mathematician's Lament](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf) by Paul Lockhart (25 pages)
-* [40 Years of Teaching Thinking: Revolution, Evolution, and What Next?](https://www.youtube.com/watch?v=-nmt1atA6ag) video, 2011
+* [40 Years of Teaching Thinking: Revolution, Evolution, and What Next?](https://www.youtube.com/watch?v=-nmt1atA6ag) video, 2011 (1 hr 12 min)
 
 
 ## Winners of ImageNet
