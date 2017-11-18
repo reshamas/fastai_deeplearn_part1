@@ -132,7 +132,35 @@ Note:
 - Common complaint about deep learning is it's a black box.  That's definitely not true.  We can look at pictures and see what our model is looking at.  
 
 This is the label for data:  
-`data.val_y`  
+`data.val_y`  label for the validation set  
+```bash
+array([0,0,0,...1,1,1])
+```
+`data.classes`  0=cats and 1=dogs; can have as many categories as you like
+```bash
+['cats', 'dogs']
+```
+### Data Cleaning  
+- we can look at data that are incorrectly classified
+- Approach:  build model, find out what data needs to be cleaned.  
+- we can look at "most correct dogs", "most correct cats"
+- can look at "most incorrect"
+- can look at "most uncertain predictions", sorted by how close to 0.5 the probability is
+
+```python
+arch=resnet34
+data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
+learn = ConvLearner.pretrained(arch, data, precompute=True)
+learn.fit(0.01, 3)
+```
+`resnet34` - architecture of convolutional neural network  
+    - a bunch of different architectures
+    - in practice, we need to pick one
+    - may have heard that choosing architectures and hyperparameters takes a long time to learn.  This is largely UNTRUE.
+We need to know 3 things:  
+1.  architecture
+2.  `learn.fit(0.01, 3)` --> 0.01 = learning rate
+3.  `learn.fit(0.01, 3)` --> 3  = number of epochs
 
 
 ## Winners of ImageNet
