@@ -52,6 +52,13 @@ Deep Learning has all 3 of above properties.
 * [A Mathematician's Lament](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf) by Paul Lockhart (25 pages)
 * [40 Years of Teaching Thinking: Revolution, Evolution, and What Next?](https://www.youtube.com/watch?v=-nmt1atA6ag) video, 2011 (1 hr 12 min)
 
+## Projects Done
+* [How HBO’s Silicon Valley built “Not Hotdog” with mobile TensorFlow, Keras & React Native](https://medium.com/@timanglade/how-hbos-silicon-valley-built-not-hotdog-with-mobile-tensorflow-keras-react-native-ef03260747f3) by Tim Anglade
+
+## Work
+* will need to put in 10 hours a week (in addition to lecture time)
+* spend time **RUNNING THE CODE** (rather than researching the theory)
+
 
 ## Winners of ImageNet
 :key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
@@ -120,7 +127,7 @@ Why not do all data at once?
 Only has a certain amount of memory:  about 2-12 GB of memory; our dataset will not fit into that
 It’s not necessary to put all the data in to run it.
  
-CNN
+## CNN
 The most important architecture for deep learning.
 State of the art approach in most areas, image recognition, NLP, computer vision, speech recognition.
 Best architecture for vast majority of applications
