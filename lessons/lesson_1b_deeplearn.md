@@ -38,9 +38,9 @@ Jeremy will not be talking about TensorFlow in this course.  It’s still very e
 It does cool things, but not the kind of things uncool people need access to.
 
 #### Theano
-Around much longer
-Easier to use
-Does NOT use multi-GPUs, but does everything else well
+* has been around much longer
+* easier to use
+* eoes NOT use multi-GPUs, but does everything else well
 
 #### Keras
 If you build something in Keras, and you get to a point where it’s working great, want an extra 5%, it’s a simple configuration change to change backend to TensorFlow
