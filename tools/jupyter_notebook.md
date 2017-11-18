@@ -15,11 +15,11 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 * <kbd> Shift + Tab </kbd> Press 3 times:  gives additional info about method
 
 ### Select multiple cells
-<kbd> ESC + </kbd>    <kbd> Shift+K  </kbd>  extend select cells above  
-<kbd> ESC + </kbd>    <kbd> Shift+ :arrow_up: </kbd>  extend select cells above  
+<kbd> ESC </kbd>    <kbd> Shift+K  </kbd>  extend select cells above  
+<kbd> ESC </kbd>    <kbd> Shift+ :arrow_up: </kbd>  extend select cells above  
 
-<kbd> ESC + </kbd>   <kbd> Shift+ ???  </kbd>  extend select cells below  
-<kbd> ESC + </kbd>   <kbd> Shift+ :arrow_down: </kbd>  extend select cells below  
+<kbd> ESC </kbd>   <kbd> Shift+ ???  </kbd>  extend select cells below  
+<kbd> ESC </kbd>   <kbd> Shift+ :arrow_down: </kbd>  extend select cells below  
 
 
 ## Notebook Source Code Access
