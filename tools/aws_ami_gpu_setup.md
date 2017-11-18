@@ -138,6 +138,9 @@ Fast-forward
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
 
+Note 1:  The fastai repo is available in your home directory, in the `fastai` folder.  
+Note 2:  The dogscats dataset is already there for you, and the data folder is linked to ~/data.
+
 **Update** the **conda** libraries (do this once a month.)  
 <kbd> conda env update </kbd>   
 
