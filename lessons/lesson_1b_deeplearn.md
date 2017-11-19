@@ -184,6 +184,54 @@ learn.sched.plot_lr()
 What it does, each iteration (dataset once), looks at a few images at a time (mini-batch), starts very small, and increases it over time.  Plot of loss (error) against the learning rate.  
 - Pick the largest learning rate where it is clearly getting better.  
 
+### Memory Issues
+- Your GPU has a certain amount of memory on it.  
+- If we try to pass in too many images at a time, it will run out of memory.
+```python
+arch=resnet34
+data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
+learn = ConvLearner.pretrained(arch, data, precompute=True)
+learn.fit(0.01, 3)
+```
+- number of images we pass in at a time is called batch size.
+- Jeremy: 11 GB RAM
+- AWS, Crestle:  12 GB RAM
+
+If you're using a GPU with less space, you may get errors; you will need to use a smaller batch size. Can change `bs` from 64 to 32.  
+In Jupyter Notebook:  hit Shift + Tab, aftere `(arch, sz), `
+change bs=32
+Error is:  CUDA error
+Change **batch size** and **restart kernel**.
+Once the Jupyter Notebook has one GPU error, use it does not recover gracefully from it.  
+
+## Homework
+- use Jupyter Notebook, play with it
+- can use Crestle (cheap if you don't use GPU switch), can play with Jupyter Notebook on Crestle
+- make sure you can run all the steps in Crestle
+- try to look at some pictures
+- try different learning rates, how much slower is it? is it slower?
+
+## Next Week
+#### Data Augmentation
+- each time that the algorithm sees a cat picture, it will see a slightly different version of the picture.  (Example:  cats)
+  - photo slightly to left, to right, flipped image
+  - change image each time so algorithm gets different version of it, so it can recognize it in different versions
+- to add data augmentation, just need to add these 2 parameters
+  - `aug_tfms = transforms_side_on, max_zoom=1.1`
+```python
+tfms = tfms_from_model(resnet34, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
+```
+
+
+
+
+Epoch Number
+Col 1:  loss on training
+Col 2:  loss on validation
+Col 3:  accuracy
+
+
+
 
 ## Winners of ImageNet
 :key: [9 Deep Learning Papers - Need to Know](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)
