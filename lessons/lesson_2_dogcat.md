@@ -156,6 +156,8 @@ Notebook to follow: [lesson1-rxt50.ipynb](https://github.com/fastai/fastai/blob/
 dataset:  planet  
 [lesson2-image_models](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)
 
+## AWS fastami Image
+Instructions are here: [aws_ami_gpu_setup.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
 
 
 
