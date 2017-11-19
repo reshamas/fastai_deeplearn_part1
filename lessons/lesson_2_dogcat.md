@@ -68,6 +68,17 @@ tfms = tfms_from_model(resnet34, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
 - With keras, code from last year’s course, is 2-3x longer, which means more opportunities for mistakes
 - So, fastai built this library to make it easier to get state-of-the-art results
 - Using this library made it so much more productive.
+- were able to add in other papers 
+- not only does fastai let us do things easier than other approach, it has more sophisticated stuff behind the scene
+- fastai library has been released, open source
+- behind the scenes, it is creating PyTorch models which can be exported
+- if you're doing something on mobile, you'll need to use TensorFlow
+- every year, the libraries that are available and the best change
+- main thing to get out of this course is to get the **concepts**
+  - learning rate
+  - how to learning rate annealing
+  - why differential learning rates are important
+  - stochastic gradident descent with restart
 
 
 ## SGDR (Stochastic Gradient Descent with Restarts)
