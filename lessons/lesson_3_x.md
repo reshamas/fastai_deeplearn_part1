@@ -9,6 +9,16 @@
 * dog breed
 * planet:  [lesson2-image_models.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)  
 
+--
+## Resources
+
+### AWS AMI Setup
+Step-by-step instructions are here: [aws_ami_gpu_setup.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
+
+### Using tmux on AWS
+Step-by-step instructions here [tmux.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/tmux.md)
+
+
 ## Notes
 
 ### Quick Dogs vs Cats
