@@ -122,12 +122,17 @@ And more...
 
 ### precompute=True
 * started with a pre-trained network; found activations with rich features; then we add a couple of layers at the end, which start off random
-* with freeze and `precompute=True`, all we are learning is the couple of layers we've added
+* with freeze (frozen by default) and `precompute=True`, all we are learning is the couple of layers we've added
 * with `precompute=True`, we actually precalculate how much does this image have the features such as eyeballs, face, etc.
 * **data augmentation** doesn't do anything with precompute=True because we're actually showing the same exact activations every time.
 * we can then set `precompute=False`, which means it is still only training the last couple of layers, but **data augmentation** is now working because it is going through and re-calculating all the activations from scratch 
 * finally, when we unfreeze, we can go back and change the earlier convolutional filters
 * having precompute=True initially makes it faster, 10x faster.  It doesn't impact the accuracy.  It's just a shortcut.
+
+* if you're showing the algorithm less images each time, then it is calculating the gradient with less images, and is less accurate
+* if making batch size smaller, making algorithm more volatile; impacts the optimal learning rate.  
+* if you're changing the batch size by much, can reduce the learning rate by a bit.
+
 
 
 
