@@ -58,11 +58,17 @@ Here’s an example. Let’s say you wanted to create a symbolic link in your De
 
 [How to Create and Use Symbolic Links (aka Symlinks) on a Mac](https://www.howtogeek.com/297721/how-to-create-and-use-symbolic-links-aka-symlinks-on-a-mac/)
 
-
+In Linux, can do <kbd> ls -l dir_name </kbd> to see what the symlinks point to
 
 ---
+## Quick Dogs vs Cats
+This code imports all the fastai libraries:  
+```python
+from fastai.conv_learner import *
+PATH = "data/dogscats/"
+sz=224; bs=48
+```
 
-### Quick Dogs vs Cats
 `precompute=True` when we use precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.  
 
 `learn.unfreeze()`    
