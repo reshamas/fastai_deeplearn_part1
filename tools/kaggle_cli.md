@@ -25,7 +25,9 @@ Note 2:  Pick a competition, and ensure you have **accepted the rules** of that 
 
 
 ### Step 1:  Identify the competition I will use
-https://www.kaggle.com/c/dogs-vs-cats
+https://www.kaggle.com/c/dogs-vs-cats   
+
+**Note:**  the competition name can be found in the url; here it is **dogs-vs-cats**
 
 ### Step 2:  Accept competition rules  
 https://www.kaggle.com/c/dogs-vs-cats/rules
