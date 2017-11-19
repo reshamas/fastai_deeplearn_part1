@@ -30,6 +30,7 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
   * Example of Input:  <kbd> ImageClassifierData </kbd> <kbd>Shift + Enter </kbd>
   * Example of Output: `fastai.dataset.ImageClassifierData`
 * Within function, <kbd>Shift + Tab </kbd> shows parameters that the function can take, also shows default parameter options
+* `object`, then <kbd> Tab </kbd> shows all the options for that object or function
 
   
   
