@@ -12,7 +12,7 @@
   - VGG’s simpler approach is not much less accurate than others
   - For teaching purposes, it is pretty State of the art AND easy to understand
   - Excellent for the problems that differ (like satellite imagery vs simple photos)
-  - AlexNet, 2012 (Stanford)
+- AlexNet, 2012 (Stanford)
 
 
 
