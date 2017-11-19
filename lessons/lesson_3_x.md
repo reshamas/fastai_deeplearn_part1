@@ -37,10 +37,15 @@ List of blogs can be found here:  [resources.md](https://github.com/reshamas/fas
 
 ## Learning How to Download Data
 - Kaggle
-- other places
+- other places on internet
 
+### Kaggle CLI (command line interface)
 Instructions on using `kaggle-cli`:  [kaggle_cli.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/kaggle_cli.md)  
 Kaggle Competition:  [Planet: Understanding the Amazon from Space](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space)
+
+### Chrome curlwget
+Instructions on using Chrome curlwget:  [chrome_curlwget](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/chrome_curlwget.md)
+
 
 ### Quick Dogs vs Cats
 `precompute=True` when we use precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.  
