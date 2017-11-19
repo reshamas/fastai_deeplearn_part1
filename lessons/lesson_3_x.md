@@ -9,7 +9,8 @@
 * dog breed
 * planet:  [lesson2-image_models.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)  
 
---
+---
+
 ## Resources
 
 ### AWS AMI Setup
