@@ -1,4 +1,5 @@
-# Lesson 1b:  CNN
+# Lesson 1b:  CNN and Technical Tools
+
 (30-Oct-2017, live)  
 
 ### Video
