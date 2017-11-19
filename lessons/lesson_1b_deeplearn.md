@@ -210,6 +210,8 @@ Once the Jupyter Notebook has one GPU error, use it does not recover gracefully 
 - make sure you can run all the steps in Crestle
 - try to look at some pictures
 - try different learning rates, how much slower is it? is it slower?
+- can look at Lesson 2, which looks at satellite images, which has multiple labels (hazy primary, agriculture clear primary water)
+
 
 ## Next Week
 #### Data Augmentation
