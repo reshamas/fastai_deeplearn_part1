@@ -58,6 +58,4 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 
 * [Ian Goodfellow - Numerical Computation for Deep Learning - AI With The Best Oct 14-15, 2017](https://www.youtube.com/watch?v=XlYD8jn1ayE&t=5m40s)
 
-## To Explore Later
 
-[byobu](http://byobu.co) Byobu is a GPLv3 open source text-based window manager and terminal multiplexer.
