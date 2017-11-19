@@ -20,9 +20,6 @@ ImageNet is carefully curated so that photo has one main item in it
 
 ## Architectures: Winners of ImageNet
 
-[The 9 Deep Learning Papers You Need To Know About (Understanding CNNs Part 3)](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html) 
-- winners of ImageNet
-
 - **ResNet**, 2016 (Microsoft)
 - **GoogLeNet**, 2015, Inception module
 - **VGG Net**, 2014 (Oxford Univ group)
@@ -32,6 +29,9 @@ ImageNet is carefully curated so that photo has one main item in it
   - Excellent for the problems that differ (like satellite imagery vs simple photos)
 - **ZF Net**, 2013 (Matthew Zeiler and Rob Fergus from NYU)
 - **AlexNet**, 2012 (Stanford)
+
+## Reference
+[The 9 Deep Learning Papers You Need To Know About (Understanding CNNs Part 3)](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html) 
 
 
 
