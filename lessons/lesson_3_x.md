@@ -35,7 +35,11 @@ List of blogs can be found here:  [resources.md](https://github.com/reshamas/fas
 7. CNN Image in Depth
 8. Language RNN in Depth
 
-## 
+## Learning How to Download Data
+- Kaggle
+- other places
+
+Instructions on using `kaggle-cli`:  [kaggle_cli.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/kaggle_cli.md)  
 Kaggle Competition:  [Planet: Understanding the Amazon from Space](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space)
 
 ### Quick Dogs vs Cats
