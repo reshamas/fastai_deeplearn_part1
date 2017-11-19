@@ -83,7 +83,7 @@ data  fastai  src
 (fastai) ubuntu@ip-172-31-10-243:~$
 ```
 
-`cd` into the **fastai** repo  
+#### `cd` into the **fastai** repo  
 <kbd> cd fastai </kbd>   
 >my example
 ```
@@ -104,7 +104,7 @@ drwxrwxr-x  4 ubuntu ubuntu  4096 Nov  1 21:30 courses
 (fastai) ubuntu@ip-172-31-10-243:~/fastai$ 
 ```
 
- :heavy_exclamation_mark: **Update** the **fastai** repo  
+#### :heavy_exclamation_mark: **Update** the **fastai** repo  
 <kbd> git pull </kbd>  
 >my example
 ```bash
