@@ -43,6 +43,8 @@ A Jupyter Widget
 [ 1.       0.02605  0.01836  0.99365]                         
 [ 2.       0.02189  0.0196   0.99316]
 ```
+## precompute = True
+
 ## Data Augmentation
 ```python
 tfms = tfms_from_model(resnet34, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
