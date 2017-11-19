@@ -117,6 +117,18 @@ And more...
 * starting training on a few epochs with small size `sz=224` and then pass in a larger size of images and continue training.  This is another way to get state-of-the-art results.  Increase size to 299. If I overfit with 224 size, then I'm not overfitting with 299.  This method is an effective way to avoid overfitting.
 * 
 
+#### Note
+* the best way to deal with unbalanced data is to make copies of the rare cases
+
+### precompute=True
+* started with a pre-trained network; found activations with rich features; then we add a couple of layers at the end, which start off random
+* with freeze and `precompute=True`, all we are learning is the couple of layers we've added
+* with `precompute=True`, we actually precalculate how much does this image have the features such as eyeballs, face, etc.
+* **data augmentation** doesn't do anything with precompute=True because we're actually showing the same exact activations every time.
+* we can then set `precompute=False`, which means it is still only training the last couple of layers, but **data augmentation** is now working because it is going through and re-calculating all the activations from scratch 
+* finally, when we unfreeze, we can go back and change the earlier convolutional filters
+* having precompute=True initially makes it faster, 10x faster.  It doesn't impact the accuracy.  It's just a shortcut.
+
 
 
 
