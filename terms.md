@@ -1,6 +1,6 @@
 # Deep Learning Terms
 
-TFMS = ? transform  
+`tfms` = transformations  
 
 TTA = Test Time Augmentation  
 
