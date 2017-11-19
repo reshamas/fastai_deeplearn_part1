@@ -192,8 +192,10 @@ http://localhost:8888/?token=04089b6ccf89e723321097c9089ab52550f408c86f533608
 http://localhost:8888/?token=<kbd>token_url </kbd>
   
 This notebook is running on AWS GPU machine.   
-This costs $0.90 per hour  (and $3-4 per month for storage) :moneybag:  
-**:boom: Remember to shut the notebook down!  (Stop Instance.) :boom:**  
+The **p2 instance** costs **$0.90 per hour**  :moneybag:  
+The **p3 instance** costs **$3.00 per hour** :moneybag: :moneybag: :moneybag:  
+Storage:  ~ $3-4 per month for storing data files    
+### :boom: Remember to shut the notebook down!  (Stop Instance.) :boom:**  
 
 
 ### Workflow
