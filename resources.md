@@ -45,6 +45,7 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 
 * [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186) (WACV 2017) by Leslie Smith
 
+* [Fixing Weight Decay Regularization in Adam](https://arxiv.org/abs/1711.05101) Ilya Loshchilov, Frank Hutter (Submitted on 14 Nov 2017)
 
 ## Videos
 
