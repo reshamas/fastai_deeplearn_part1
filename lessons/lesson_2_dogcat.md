@@ -10,6 +10,20 @@ https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be
 [fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
 
 ---
+
+## Learning Rate
+- how quickly will we zone in on the solution
+- we take the gradient, which is how steep is it at this point, and we multiply it by some number, which is the running rate.
+- if that number is small, we will get closer, slowly
+- if we take a number too big, we could be far from our minimum
+- if our loss is spinning off into infinity, most likely our learning rate is too high
+- Wouldn't it be nice if there was a way to figure out the best learning rate?
+
+10^-1 = 0.10 = 1e-1
+10^-2 = 0.001 = 1e-2
+10^-3 = 0.001 = 1e-3
+
+
 ```python
 arch=resnet34
 data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
