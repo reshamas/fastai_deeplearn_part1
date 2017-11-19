@@ -52,6 +52,10 @@ tfms = tfms_from_model(resnet34, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
 - data augmentation is not exactly creating new data, but it's a different way of looking at it for the convolutional neural network
 - 
 
+## Learning Rate Annealing
+
+## TTA (Test Time Augmentation)
+
 
 ## SGDR (Stochastic Gradient Descent with Restarts)
 
