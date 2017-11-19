@@ -46,6 +46,15 @@ Kaggle Competition:  [Planet: Understanding the Amazon from Space](https://www.k
 ### Chrome CurlWget
 Instructions on using Chrome CurlWget:  [chrome_curlwget](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/chrome_curlwget.md)
 
+## Setting up data directory
+- fastai library assumes data is in a subdirectory where notebook is:  `PATH = "data/dogscats"`
+- you might want to put the data somewhere else, such as your home directory
+- you can put data anywhere you like, and use symlinks
+
+
+
+
+---
 
 ### Quick Dogs vs Cats
 `precompute=True` when we use precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.  
