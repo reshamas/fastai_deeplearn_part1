@@ -1,4 +1,4 @@
-# Deep Learning Terms
+# fastai & Deep Learning Terms
 
 `bs` = batch size  
 `sz` = size (of photo)  
