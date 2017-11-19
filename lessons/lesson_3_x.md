@@ -26,10 +26,10 @@ List of blogs can be found here:  [resources.md](https://github.com/reshamas/fas
 ## Where We Go From Here
 1. CNN Image Intro
 2. Structured Neural Net Intro
-  - logistics, finance
+   - logistics, finance
 3. Language RNN Intro
 4. Collaborative Filtering Intro
-  - recommendation systems
+   - recommendation systems
 5. Collaborative Filtering In-depth
 6. Structured Neural Net in Depth
 7. CNN Image in Depth
