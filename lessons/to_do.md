@@ -5,3 +5,11 @@
   - cycle_len
   - cycle_mult
   - resizing
+
+
+## Competitions
+
+* [Kaggle](https://www.kaggle.com/competitions)
+* [crowdAI](https://www.crowdai.org)  
+* [Space Apps Challenges](https://2017.spaceappschallenge.org/challenges/)
+
