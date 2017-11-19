@@ -1,4 +1,5 @@
-# Lesson 2:  CNN, dogs/cats 
+# Lesson 2:  resnet34, resnext50
+
 (06-Nov-2017, live)
 
 https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be
@@ -7,7 +8,9 @@ https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be
 [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)  
 
 ## Notebooks Used 
-[fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
+* dogscats resnet34:  [fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
+* dogscats resnext50 architecture:  [lesson1-rxt50.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1-rxt50.ipynb)
+* Satellite Imagery (planet dataset):  [lesson2-image_models](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)
 
 ---
 
@@ -108,6 +111,7 @@ And more...
 - Set earlier layers to 3x-10x lower learning rate than next higher layer
 - Train full network with cycle_mult=2 until over-fitting
 
+---
 ## Dataset 2:  Dog Breed Competition
 * can set `sz=64`, use small size photo in beginning to get model running, and then increase the size
 * most ImageNet models are trained on 224x224 or 299x299 sized images.  Images in that range will work well with these algorithms.
@@ -133,7 +137,24 @@ And more...
 * if making batch size smaller, making algorithm more volatile; impacts the optimal learning rate.  
 * if you're changing the batch size by much, can reduce the learning rate by a bit.
 
+## Architectures
+* different ways of putting together what size convolutional filters, how they're connected to each other
+* different architectures have different numbers of layers, size of kernels, number of filters
 
+### Architecture Types
+* resnet34 - great starting point, and often a good finishing point, doesn't have too many parameters, works well with small datasets
+* resnext - 2nd place winner in last year's ImageNet competition.  
+  - can put a number at end to put how big it is
+  - resnext50 - next step after resnet34
+    - takes twice as long to run as resnet34
+    - takes 2-3x the memory as resnet34
+    - Ex: dogs/cats data took 20 minutes to train on resnext50
+    
+Notebook to follow: [lesson1-rxt50.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1-rxt50.ipynb)
+    
+## Dataset 3:  Satellite Imagery
+dataset:  planet  
+[lesson2-image_models](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)
 
 
 
