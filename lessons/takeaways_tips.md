@@ -8,4 +8,5 @@
 ## Tips
 
 ### Errors
-1.  Delete `tmp` directory an rerun
+1.  Delete `tmp` directory and rerun
+2.  CUDA memory error:  reduce batch size and **RESTART kernel**!
