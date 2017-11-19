@@ -11,8 +11,18 @@ https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be
 
 ---
 
- 
----
+
+
+Col 0:  Epoch Number
+Col 1:  loss on training
+Col 2:  loss on validation
+Col 3:  accuracy
+```
+A Jupyter Widget
+[ 0.       0.03597  0.01879  0.99365]                         
+[ 1.       0.02605  0.01836  0.99365]                         
+[ 2.       0.02189  0.0196   0.99316]
+```
 
 ### Confusion Matrix
 * What was the actual truth?  Of the thousand actual cats, how many did we predict as cats?
