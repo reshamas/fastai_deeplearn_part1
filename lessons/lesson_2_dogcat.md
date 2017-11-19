@@ -10,13 +10,18 @@ https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be
 [fast.ai DL lesson1.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb)  
 
 ---
-
-
-
+```python
+arch=resnet34
+data = ImageClassifierData.from_paths(PATH, tfms=tfms_from_model(arch, sz))
+learn = ConvLearner.pretrained(arch, data, precompute=True)
+learn.fit(0.01, 3)
+```
+```text
 Col 0:  Epoch Number
 Col 1:  loss on training
 Col 2:  loss on validation
 Col 3:  accuracy
+```
 ```
 A Jupyter Widget
 [ 0.       0.03597  0.01879  0.99365]                         
