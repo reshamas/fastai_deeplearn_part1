@@ -109,6 +109,15 @@ And more...
 - Train full network with cycle_mult=2 until over-fitting
 
 ## Dataset 2:  Dog Breed Competition
+* can set `sz=64`, use small size photo in beginning to get model running, and then increase the size
+* most ImageNet models are trained on 224x224 or 299x299 sized images.  Images in that range will work well with these algorithms.
+* **epoch** - number of passes thru the data
+* **cycle** - however many epochs you say is in that cycle
+* if **cycle** is 1, then cycle and epoch are the same
+* starting training on a few epochs with small size `sz=224` and then pass in a larger size of images and continue training.  This is another way to get state-of-the-art results.  Increase size to 299. If I overfit with 224 size, then I'm not overfitting with 299.  This method is an effective way to avoid overfitting.
+* 
+
+
 
 
 
