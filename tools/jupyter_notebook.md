@@ -8,6 +8,8 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 * can put pictures, videos, html tables, interactive widgets
 * great experimentation environment
 
+## Help
+<kbd> h </kbd> shows the list of shortcuts
 
 ## Notebook Commands / Shortcuts
 * <kbd> Shift + Enter </kbd> to run cell  
