@@ -1,5 +1,5 @@
 # [fast.ai](http://www.fast.ai) Deep Learning Part 1 v2
-(Oct-Dec 2017)  
+**Oct - Dec 2017**  
 
 ## Course Links
 * [GitHub: fastai](https://github.com/fastai/fastai) (public)
