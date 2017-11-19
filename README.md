@@ -16,6 +16,10 @@
 * [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)
 * [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)
 * [Wiki: Lesson 3](http://forums.fast.ai/t/wiki-lesson-3/7809)
+* [Wiki: Lesson 4]()
+* [Wiki: Lesson 5]()
+* [Wiki: Lesson 6]()
+* [Wiki: Lesson 7]()
 
 
 ## Other Resources
