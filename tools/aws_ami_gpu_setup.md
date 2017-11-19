@@ -195,7 +195,7 @@ This notebook is running on AWS GPU machine.
 The **p2 instance** costs **$0.90 per hour**  :moneybag:  
 The **p3 instance** costs **$3.00 per hour** :moneybag: :moneybag: :moneybag:  
 Storage:  ~ $3-4 per month for storing data files    
-### :boom: Remember to shut the notebook down!  (Stop Instance.) :boom:**  
+### :red_circle: Remember to shut the notebook down! :moneybag:    (Stop Instance.) :red_circle:
 
 
 ### Workflow
