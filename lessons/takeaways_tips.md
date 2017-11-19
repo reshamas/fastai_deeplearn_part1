@@ -9,4 +9,7 @@
 # Solving Errors
 1.  Do `git pull` of [fastai library](https://github.com/fastai/fastai).  Updates may sort out some errors.
 2.  Delete `tmp` directory and rerun
-3.  CUDA memory error:  reduce batch size and **RESTART kernel**!
+3.  CUDA out of memory error:  
+    - interrupt kernel
+    - reduce batch size
+    - **RESTART kernel**!
