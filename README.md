@@ -7,6 +7,8 @@
 * [GitHub: fastai](https://github.com/fastai/fastai) (public)
 
 ## [Lesson Notes](lessons/) 
+* [Lesson 1a: Course Intro](lessons/lesson_1a_course_intro.md)
+* [Lesson 1b: CNN and resnet Architecture](lessons/lesson_1b_cnn_tools.md)
 
 
 ## [Technical Tools](tools/)
