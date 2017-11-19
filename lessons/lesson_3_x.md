@@ -26,13 +26,17 @@ List of blogs can be found here:  [resources.md](https://github.com/reshamas/fas
 ## Where We Go From Here
 1. CNN Image Intro
 2. Structured Neural Net Intro
+  - logistics, finance
 3. Language RNN Intro
 4. Collaborative Filtering Intro
+  - recommendation systems
 5. Collaborative Filtering In-depth
 6. Structured Neural Net in Depth
 7. CNN Image in Depth
 8. Language RNN in Depth
 
+## 
+Kaggle Competition:  [Planet: Understanding the Amazon from Space](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space)
 
 ### Quick Dogs vs Cats
 `precompute=True` when we use precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.  
