@@ -6,6 +6,9 @@
 * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg) (private)
 * [GitHub: fastai](https://github.com/fastai/fastai) (public)
 
+## [Lesson Notes](lessons/) 
+
+
 ## [Technical Tools](tools/)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
 * [tmux on AWS](tools/tmux.md)
