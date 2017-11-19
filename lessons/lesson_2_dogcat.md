@@ -1,7 +1,8 @@
 # Lesson 2:  CNN, dogs/cats 
 (06-Nov-2017, live)
 
-https://www.youtube.com/watch?v=4mwdySNmtYs  
+https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be
+
 
 [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)  
 
@@ -10,21 +11,7 @@ https://www.youtube.com/watch?v=4mwdySNmtYs
 
 ---
 
-`19:00` start of Lesson 2 
-
-`01:33` to `01:45` break
-
-`01:47` Teams info  
-* what do you want to get out of deep learning
-* share forum IDs
-  
-`01:55` back to lecture, meeting at USF  
-* study groups
-
-`01:57` back to DL lecture  * start here...
-
-`02:42` discuss AWS fast.ai AMI  
-
+ 
 ---
 
 ### Confusion Matrix
