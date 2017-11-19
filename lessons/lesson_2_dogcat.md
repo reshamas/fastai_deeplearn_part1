@@ -52,9 +52,22 @@ tfms = tfms_from_model(resnet34, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
 - data augmentation is not exactly creating new data, but it's a different way of looking at it for the convolutional neural network
 - 
 
+## Unfreeze Layers
+
 ## Learning Rate Annealing
 
 ## TTA (Test Time Augmentation)
+
+## fastai library
+- open source
+- sits on top of PyTorch
+- PyTorch is fairly new; was not able to use Keras or TensorFlow
+- PyTorch is not easy to use.
+- So, created a library on top of PyTorch.
+- PyTorch didn’t seem suitable for new deep learners
+- With keras, code from last year’s course, is 2-3x longer, which means more opportunities for mistakes
+- So, fastai built this library to make it easier to get state-of-the-art results
+- Using this library made it so much more productive.
 
 
 ## SGDR (Stochastic Gradient Descent with Restarts)
