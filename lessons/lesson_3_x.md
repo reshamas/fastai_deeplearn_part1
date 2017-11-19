@@ -11,7 +11,7 @@
 
 ---
 
-## Resources
+## Technical Resources
 
 #### AWS AMI Setup
 Step-by-step instructions are here: [aws_ami_gpu_setup.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
@@ -35,17 +35,19 @@ List of blogs can be found here:  [resources.md](https://github.com/reshamas/fas
 7. CNN Image in Depth
 8. Language RNN in Depth
 
+---
 ## Learning How to Download Data
 - Kaggle
 - other places on internet
 
-### Kaggle CLI (command line interface)
+#### Kaggle CLI (command line interface)
 Instructions on using `kaggle-cli`:  [kaggle_cli.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/kaggle_cli.md)  
 Kaggle Competition:  [Planet: Understanding the Amazon from Space](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space)
 
-### Chrome CurlWget
+#### Chrome CurlWget
 Instructions on using Chrome CurlWget:  [chrome_curlwget](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/chrome_curlwget.md)
 
+---
 ## Setting up data directory
 - fastai library assumes data is in a subdirectory where notebook is:  `PATH = "data/dogscats"`
 - you might want to put the data somewhere else, such as your home directory
