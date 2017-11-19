@@ -22,7 +22,17 @@ Step-by-step instructions here [tmux.md](https://github.com/reshamas/fastai_deep
 #### Blogs
 List of blogs can be found here:  [resources.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/resources.md)
 
-## Notes
+---
+## Where We Go From Here
+1. CNN Image Intro
+2. Structured Neural Net Intro
+3. Language RNN Intro
+4. Collaborative Filtering Intro
+5. Collaborative Filtering In-depth
+6. Structured Neural Net in Depth
+7. CNN Image in Depth
+8. Language RNN in Depth
+
 
 ### Quick Dogs vs Cats
 `precompute=True` when we use precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.  
