@@ -19,10 +19,11 @@ https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be
 - if our loss is spinning off into infinity, most likely our learning rate is too high
 - Wouldn't it be nice if there was a way to figure out the best learning rate?
 
+```text
 10^-1 = 0.10 = 1e-1
 10^-2 = 0.001 = 1e-2
 10^-3 = 0.001 = 1e-3
-
+```
 
 ```python
 arch=resnet34
