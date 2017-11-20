@@ -154,7 +154,7 @@ learn.bn_freeze(True)
 metrics.log_loss(y, np.exp(log_preds)), accuracy(log_preds, y)
 ```
 
-## Using Other Libraries
+## Comparing fastai to Keras with TensorFlow
 - fastai library sits on top of PyTorch.  
 - keras sits on top of a variety of backends:  TensorFlow, MxNet, Microsoft CNTK
 
@@ -190,6 +190,40 @@ If you want to run this notebook, install as follows, since it is not part of th
 
 Deploying on Mobile:  
 - Pytorch on mobile situation is early, may want to use TensorFlow
+- will take work to get state-of-the-art results
+
+what fastai library contains that is not in keras:  
+- stochastic gradient with restart
+- differential learning rates
+- batch norm freezing
+
+Keras and TensorFlow are not difficult to handle; would take a couple of days to learn.  
+Google is interested in getting fastai library ported to TensorFlow.  
+
+--
+## Dog Breeds
+- assignment from last week, try to do everything you've seen already, but do it on the dog breeds dataset
+- last few minutes of last week:  code presented on how to look at data, classes, how big the images are, etc.  
+
+### How to Submit to Kaggle
+Every Kaggle competition has an "Evaluation" section with instructions.  
+For dog breed, it is here:  
+https://www.kaggle.com/c/dog-breed-identification#evaluation  
+
+#### Submission File
+For each image in the test set, you must predict a probability for each of the different breeds. The file should contain a header and have the following format:
+```text
+id,affenpinscher,afghan_hound,..,yorkshire_terrier
+000621fb3cbb32d8935728e48679680e,0.0083,0.0,...,0.0083
+etc.
+```
+
+
+
+
+
+
+
 
 
 
