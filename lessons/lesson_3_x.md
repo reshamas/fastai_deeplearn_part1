@@ -233,8 +233,51 @@ data.test_ds.fnames
 ## CNN Behind the Scenes
 
 * [A Visual and Intuitive Understanding of Deep Learning](https://www.youtube.com/embed/Oqm9vsf_hvU?autoplay=1&feature=oembed&wmode=opaque) Otavio Good of Google, AI Conf SF Sep 2017
+* [mnist data](http://yann.lecun.com/exdb/mnist/) - we'll look at this dataset in more detail later
 
 * [spreadsheets for example on CNN](https://github.com/fastai/fastai/tree/master/courses/dl1/excel)
+* [conv-example (download spreadsheet from GH](https://github.com/fastai/fastai/blob/master/courses/dl1/excel/conv-example.xlsx)
+   - every pixel is a number between 0 and 1.  (or sometimes 0 to 255)
+   - by the time we get to PyTorch, we convert it to floats, so a number between 0 and 1
+   - when Jeremey says activation, he means **a number**, a number that is calculated by taking some numbers from the input and applying some kind of linear operation, in this case a convolutional kernel, to calculate an output
+   - max (0, x) --> Rectified Linear Unit = ReLU
+   - 
+   
+#### Filter / Kernel   
+top edge filter:  
+```text
+1 1 1
+0 0 0
+-1 -1 -1
+``` 
+left edge filter:
+```text
+1 0 -1
+1 0 -1
+1 0 -1
+```
+- PyTorch does not store as two separate 9-digit arrays.  It stores it as a **tensor**.  A tensor is an array with more dimensions.  (can also call it an array).  Tensor allows us to stack each of these filters together
+- filter and kernel means the same thing here, a 3x3 matrix or slice of 3-dimensional tensor 
+- each filter has created a **layer**, a hidden layer
+
+Next filter will contain 2 of these kernels: 
+**filter 1/2**  
+```text
+0.5 0.3 0.3
+0.9 -0.5 0
+0.8 0 -0.7
+```
+```text
+0.8 0.4 -0.5
+0.6 0.4 0.3
+0.3 0.7 0.6
+```
+
+
+
+
+
+
 
 
 
