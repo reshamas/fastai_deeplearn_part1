@@ -200,7 +200,7 @@ what fastai library contains that is not in keras:
 Keras and TensorFlow are not difficult to handle; would take a couple of days to learn.  
 Google is interested in getting fastai library ported to TensorFlow.  
 
---
+---
 ## Dog Breeds
 - assignment from last week, try to do everything you've seen already, but do it on the dog breeds dataset
 - last few minutes of last week:  code presented on how to look at data, classes, how big the images are, etc.  
@@ -212,11 +212,28 @@ https://www.kaggle.com/c/dog-breed-identification#evaluation
 
 #### Submission File
 For each image in the test set, you must predict a probability for each of the different breeds. The file should contain a header and have the following format:
+ID, probabilities of each of the dog breeds  
 ```text
 id,affenpinscher,afghan_hound,..,yorkshire_terrier
 000621fb3cbb32d8935728e48679680e,0.0083,0.0,...,0.0083
 etc.
 ```
+
+In our object, there is: 
+```python
+data.classes
+```
+```python
+data.test_ds.fnames
+```
+[RS:  add notes later]
+
+---
+## CNN Behind the Scenes
+
+* [A Visual and Intuitive Understanding of Deep Learning](https://www.youtube.com/embed/Oqm9vsf_hvU?autoplay=1&feature=oembed&wmode=opaque) Otavio Good of Google, AI Conf SF Sep 2017
+
+* [spreadsheets for example on CNN](https://github.com/fastai/fastai/tree/master/courses/dl1/excel)
 
 
 
