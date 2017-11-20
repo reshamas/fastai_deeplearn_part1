@@ -272,6 +272,18 @@ Next filter will contain 2 of these kernels:
 0.6 0.4 0.3
 0.3 0.7 0.6
 ```
+- shouldn't think of this as **2 3x3 kernels**, but 1 **2x3x3 kernel**
+- over time, you want to start getting comfortable with idea of higher dimensional linear combinations
+- conceptually, just stack it in your mind
+- Jeffrey Hinton, in his 2012 neural nets Coursera class, has tips on how computer scientists deal with high dimensional space
+- an **architecture** means how big is your kernel at layer 1, how many filters are in your kernel at layer 1
+- an **activation** is an output from input times the kernel
+- we give names to layers:  conv1, conv2, etc
+- **maxpool** a 2x2 maxpooling will **half** the resolution, both height and width (over non-overlapping cells)
+- **activation** take every single output from maxpool, and give them a **weight**, multiply them, and we get a **sum product**
+- 
+
+
 
 
 
