@@ -281,7 +281,21 @@ Next filter will contain 2 of these kernels:
 - we give names to layers:  conv1, conv2, etc
 - **maxpool** a 2x2 maxpooling will **half** the resolution, both height and width (over non-overlapping cells)
 - **activation** take every single output from maxpool, and give them a **weight**, multiply them, and we get a **sum product**
+- this is called a **fully connected layer**
+- `01:03`:  architectures that make haeavy use of fully convolutional layers can have a lot of weights that take a lot of time; they may have trouble with overfitting and they can be slow
+- we'll look at **VGG** architecture, has up to 19 layers.  first successful deep architecture.  VGG contains a fully connected layer.  Has 4,096 activations connected to a hidden layer with 4,096.  300 million weights of which 250 million are within fully connected layers
+- resnet and resnext do not have a lot of fully connected layers behind the scenes
+- R, G, B:  
+- Kaggle iceberg competition, satellite with 2 channels
+
+`01:08:45` after break  
+What happens next?  After fully connected layer?  
+In practice, if we want to calculate which of the 10 digits we're looking at, the single digit is not enough.
+- We would have 10 sets of fully connected weights.
+- last layer has no ReLU, so we can have negatives
 - 
+
+
 
 
 
