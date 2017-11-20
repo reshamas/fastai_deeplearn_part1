@@ -6,7 +6,7 @@
 [Wiki: Lesson 3](http://forums.fast.ai/t/wiki-lesson-3/7809)  
 
 ## Notebooks Used
-* dog breed
+* dogs vs cats [lesson1-rxt50](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1-rxt50.ipynb)
 * planet:  [lesson2-image_models.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)  
 
 ---
@@ -64,6 +64,8 @@ In Linux, can do <kbd> ls -l dir_name </kbd> to see what the symlinks point to
 
 ---
 ## Quick Dogs vs Cats
+* dogs vs cats [lesson1-rxt50](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1-rxt50.ipynb)
+
 This code imports all the fastai libraries:  
 ```python
 from fastai.conv_learner import *
@@ -71,16 +73,74 @@ PATH = "data/dogscats/"
 sz=224; bs=48
 ```
 
-`precompute=True` when we use precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.  
+#### `precompute=True` / data augmentation
+```python
+sz=299
+arch=resnet50
+bs=28
+```
+```python
+tfms = tfms_from_model(arch, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
+data = ImageClassifierData.from_paths(PATH, tfms=tfms, bs=bs, num_workers=4)
+#learn = ConvLearner.pretrained(arch, data, precompute=True, ps=0.5)
+learn = ConvLearner.pretrained(arch, data)
+%time learn.fit(1e-2, 3, cycle_len=1)
+```
+- something that makes model step faster
+- if you're confused about this, exclude this step. it's a shortcut which caches intermediate steps which don't have to be calculated each time.
+- when we are using precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.
+- if you ask for data augmentation and have `precompute=True`, it doesn't actually do any data augmentation, because it is using the cached non-augmented activations
 
-`learn.unfreeze()`    
+#### Unfreezing    
+`learn.unfreeze()`
+- now unfreeze so we can train the whole thing
 
-`bn.freeze`
+`learn.bn_freeze`  
+- If you're using a bigger, deeper model like resnet50 or resnext101, on a dataset that is very similar to ImageNet; This line should be added when you unfreeze.  This causes the batch normalization moving averages to not be updated. (more in second half of course)
+- not supported by another library, but turns out to be important
 
-`learn.bn_freeze` If you're using a bigger, deeper model like resnet50 or resnext101, on a dataset that is very similar to ImageNet; This line should be aded.  This causes the batch normalization moving averages to not be updated.
+#### Re-train Network After Unfreezing
+After unfreezing, train another epoch:   
+```python
+learn.unfreeze()
+learn.bn_freeze
+%time learn.fit([1e-5, 1e-4, 1e-3], 1, cycle_len=1)
+```
 
-
+#### Test Time Augmentation
 `TTA` Test Time Augmentation - use to ensure we get the best predictions we can.  
+```python
+%time log_preds, y = learn.TTA()
+metrics.log_loss(y, np.exp(log_preds)), accuracy(log_preds, y)
+```
+
+## Summary of Steps
+When you a try a new dataset, these are the minimum steps to take.  
+```python
+from fastai.conv_learner import *
+PATH = "data/dogscats/"
+```
+```python
+arch=resnet50
+sz=224
+bs=64
+```
+```python
+tfms = tfms_from_model(arch, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
+data = ImageClassifierData.from_paths(PATH, tfms=tfms, bs=bs)
+learn = ConvLearner.pretrained(arch, data)
+%time learn.fit(1e-2, 3, cycle_len=1)
+```
+```python
+learn.unfreeze()
+learn.bn_freeze(True)
+%time learn.fit([1e-5, 1e-4, 1e-3], 1, cycle_len=1)
+```
+```python
+%time log_preds, y = learn.TTA()
+metrics.log_loss(y, np.exp(log_preds)), accuracy(log_preds, y)
+```
+
 
 fastai library sits on top of PyTorch.  
 
