@@ -12,6 +12,7 @@
 ---
 
 ## Technical Resources
+Repository:  https://github.com/reshamas/fastai_deeplearn_part1
 
 #### AWS AMI Setup
 Step-by-step instructions are here: [aws_ami_gpu_setup.md](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/aws_ami_gpu_setup.md)
