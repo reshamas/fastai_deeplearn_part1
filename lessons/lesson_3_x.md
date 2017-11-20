@@ -73,6 +73,12 @@ PATH = "data/dogscats/"
 sz=224; bs=48
 ```
 
+#### Learning Rate Finder
+This step assumes you have run the learning rate finder:  
+```python
+%time learn.fit(1e-2, 3, cycle_len=1)
+```
+
 #### `precompute=True` / data augmentation
 ```python
 sz=299
@@ -115,7 +121,13 @@ metrics.log_loss(y, np.exp(log_preds)), accuracy(log_preds, y)
 ```
 
 ## Summary of Steps
-When you a try a new dataset, these are the minimum steps to take.  
+Assuming:  
+- you have run the learning rate finder
+- data is set up in the director structure
+- 
+
+#### When you a try a new dataset, these are the minimum steps to take.  
+
 ```python
 from fastai.conv_learner import *
 PATH = "data/dogscats/"
