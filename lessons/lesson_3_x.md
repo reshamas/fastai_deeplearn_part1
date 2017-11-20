@@ -8,7 +8,7 @@
 ## Notebooks Used
 * dogs vs cats [lesson1-rxt50](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1-rxt50.ipynb)
 * planet:  [lesson2-image_models.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson2-image_models.ipynb)  
-
+* dogs vs cats using keras library:  [`keras_lesson1.ipynb`](https://github.com/fastai/fastai/blob/master/courses/dl1/keras_lesson1.ipynb)  
 ---
 
 ## Technical Resources
@@ -160,5 +160,36 @@ metrics.log_loss(y, np.exp(log_preds)), accuracy(log_preds, y)
 
 dogs vs cats using keras library:  [`keras_lesson1.ipynb`](https://github.com/fastai/fastai/blob/master/courses/dl1/keras_lesson1.ipynb)  
 - Jeremy has attempted to replicate parts of lesson 1 in keras
+
+#### Keras code
+- import a bunch of libraries
+- keras also has standard directory structure for image data:  training, valid
+- specify what batch size to use
+- we need to use much, much more code; each part of code has many things we need to set
+- data generation:  specify type of data augmentation, normalization (fastai says whatever resnet50 requires)
+- no standard set of best data augmentation parameters
+- class mode, specify binary or multiclass
+- need to do data generator for validation set
+- with validation set, it's vital that data are not shuffled, but with training, they should be shuffled
+- keras does not have resnet34
+- keras, need to manually construct the layers
+- in keras, need to compile model (not needed in fastai or pytorch, we know what is a good loss to use)
+- no concept of automatically freezing layers
+- need to tell it how many batches per epoch
+- much more code, so more opportunities for error
+- no concept of layer groups, differential learning rates or partial unfreezing
+- manually had to define which layers to fine tune, then recompile model
+- LOT MORE CODE & PERFORMANCE IS DIFFERENT
+
+#### Comparison of Results:  
+keras:  97% after 4 epochs, 8 minutes  
+fastai:  99.5% on validation, 4-5 minutes
+
+If you want to run this notebook, install as follows, since it is not part of the fastai environment:  
+```pip install tensorflow-gpu keras```  
+
+Deploying on Mobile:  
+- Pytorch on mobile situation is early, may want to use TensorFlow
+
 
 
