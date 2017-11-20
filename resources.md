@@ -31,6 +31,7 @@
 
 * [Convolutional Neural Network in 5 minutes](https://medium.com/@init_27/convolutional-neural-network-in-5-minutes-8f867eb9ca39) by Sanyam Bhutani
 
+* [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73)
 
 ## Blogs
 
