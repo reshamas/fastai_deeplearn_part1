@@ -121,9 +121,9 @@ from fastai.conv_learner import *
 PATH = "data/dogscats/"
 ```
 ```python
-arch=resnet50
-sz=224
-bs=64
+arch = resnet50
+sz = 224
+bs = 64
 ```
 ```python
 tfms = tfms_from_model(arch, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
