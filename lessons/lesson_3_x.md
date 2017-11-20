@@ -101,9 +101,10 @@ learn = ConvLearner.pretrained(arch, data)
 `learn.unfreeze()`
 - now unfreeze so we can train the whole thing
 
-`learn.bn_freeze`  
+`learn.bn_freeze`  Batch Norm Unfreeze
 - If you're using a bigger, deeper model like resnet50 or resnext101, on a dataset that is very similar to ImageNet; This line should be added when you unfreeze.  This causes the batch normalization moving averages to not be updated. (more in second half of course)
 - not supported by another library, but turns out to be important
+- if you are using an architecuture with larger than 34 suffix (resnet50, resnext101), and you're training dataset with photos similar to ImageNet (normal photos, normal size, object in middle of photo and takes up most of frame), then you should add `bn_freeze`.  If in doubt, try with and without it.  
 
 #### Re-train Network After Unfreezing
 After unfreezing, train another epoch:   
@@ -153,7 +154,11 @@ learn.bn_freeze(True)
 metrics.log_loss(y, np.exp(log_preds)), accuracy(log_preds, y)
 ```
 
+## Using Other Libraries
+- fastai library sits on top of PyTorch.  
+- keras sits on top of a variety of backends:  TensorFlow, MxNet, Microsoft CNTK
 
-fastai library sits on top of PyTorch.  
+dogs vs cats using keras library:  [`keras_lesson1.ipynb`](https://github.com/fastai/fastai/blob/master/courses/dl1/keras_lesson1.ipynb)  
+- Jeremy has attempted to replicate parts of lesson 1 in keras
 
-[`keras_lesson1.ipynb`](https://github.com/fastai/fastai/blob/master/courses/dl1/keras_lesson1.ipynb)  
+
