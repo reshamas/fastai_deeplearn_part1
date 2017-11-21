@@ -5,6 +5,7 @@
 * [Lesson 2: Case Study - A world class image classifier for dogs and cats (err.., anything)](https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e) by Apil Tamang
 * [Lesson 2 Notes](http://forums.fast.ai/t/deeplearning-lecnotes2/7515/2) by Tim Lee
 * [Lesson 3 Notes](http://forums.fast.ai/t/deeplearning-lecnotes3/7866) by Tim Lee
+* [Lesson 4 Notes](http://forums.fast.ai/t/deeplearning-lec4notes/8146) by Tim Lee
 
 
 ## Blogs Written by fastai Fellows
