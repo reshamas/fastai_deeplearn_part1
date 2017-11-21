@@ -4,5 +4,6 @@
 `sz` = size (of photo)  
 `tfms` = transformations  
 
-TTA = Test Time Augmentation  
+SoTA : State-of-the-Art  
+TTA : Test Time Augmentation  
 
