@@ -8,11 +8,12 @@
 * [Lesson 4 Notes](http://forums.fast.ai/t/deeplearning-lec4notes/8146) by Tim Lee
 
 
-## Blogs Written by fastai Fellows
+## Blogs Written by (or recommended by) fastai Fellows 
 
 ### Resnet
 * [Decoding the ResNet architecture](http://teleported.in/posts/decoding-resnet-architecture/) by Anand Saha   
 * [Yet Another ResNet Tutorial (or not)](https://medium.com/@apiltamang/yet-another-resnet-tutorial-or-not-f6dd9515fcd7) by Apil Tamang
+* [An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035)
 
 ### PyTorch
 * [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) by Vishnu Subramanian (April 2017)
@@ -29,23 +30,17 @@
 ### Kaggle
 * [FastAI Kaggle Starter Kit ](https://www.kaggle.com/timolee/fastai-kaggle-starter-kit-lb-0-33) by Tim Lee
 
+### Jupyter Notebook 
+* [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
+
 ### and More
 * [Do smoother areas of the error surface lead to better generalization? (An experiment inspired by the first lecture of the fast.ai MOOC)](https://medium.com/@radekosmulski/do-smoother-areas-of-the-error-surface-lead-to-better-generalization-b5f93b9edf5b) by Radek
 
 * [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa) by Wayde Gilliam
 
-
-
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73)
 
-## Blogs
-
-* [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
-
-* [An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035)
-
-
-## Publications
+## Research Publications
 
 * [What’s your ML Test Score? A rubric for ML
 production systems](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45742.pdf)  (NIPS 2016)  
