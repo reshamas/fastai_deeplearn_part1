@@ -22,6 +22,10 @@
 * [Visualizing Learning rate vs Batch size (Neural Nets basics using Fast.ai tools)](https://miguel-data-sc.github.io/2017-11-05-first/) by Miguel (Nov 2017)
 * [Estimating an Optimal Learning Rate For a Deep Neural Network](https://medium.com/@surmenok/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) by Pavel Surmenok
 
+### CNN
+* [Convolutional Neural Network in 5 minutes](https://medium.com/@init_27/convolutional-neural-network-in-5-minutes-8f867eb9ca39) by Sanyam Bhutani
+* [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)
+
 ### Kaggle
 * [FastAI Kaggle Starter Kit ](https://www.kaggle.com/timolee/fastai-kaggle-starter-kit-lb-0-33) by Tim Lee
 
@@ -30,7 +34,7 @@
 
 * [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa) by Wayde Gilliam
 
-* [Convolutional Neural Network in 5 minutes](https://medium.com/@init_27/convolutional-neural-network-in-5-minutes-8f867eb9ca39) by Sanyam Bhutani
+
 
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73)
 
