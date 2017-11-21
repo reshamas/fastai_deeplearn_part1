@@ -51,6 +51,8 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 
 * [Fixing Weight Decay Regularization in Adam](https://arxiv.org/abs/1711.05101) Ilya Loshchilov, Frank Hutter (Submitted on 14 Nov 2017)
 
+* [Learning Distributed Representations of Concepts](http://www.cs.toronto.edu/~hinton/absps/families.pdf) Geoffrey Hinton, 1986
+
 ## Videos
 
 * [The wonderful and terrifying implications of computers that can learn](https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn) (Ted Talk by Jeremy Howard 2014)
