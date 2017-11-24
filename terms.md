@@ -5,6 +5,7 @@
 `bs` = batch size  
 `sz` = size (of photo)  
 `tfms` = transformations  
+`wds` = weight decays  
 
 ---
 # Deep Learning Terms
