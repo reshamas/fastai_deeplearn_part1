@@ -48,11 +48,11 @@ NN = noun
 VBD = verb
 ```
 
-#### IE (Information Extraction)
+### IE (Information Extraction)
 IE turns the unstructured information embedded in texts into structured data. 
 
 
-#### IOB
+### IOB (Inside, Outside, Beginning)
 ```
 The most widespread file representation uses IOB tags:
 IOB = Inside-Outside-Begininning
@@ -110,7 +110,7 @@ a class of artificial neural network where connections between units form a dire
 * dropping some neurons in a layer
 
 ### Reinforcement Learning
-???
+
 
 ### ReLU
 Rectified Linear Unit (ReLU) activation function, which is zero when x &lt 0 and then linear with slope 1 when x &gt 0. 
