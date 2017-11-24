@@ -18,7 +18,8 @@ git pull
 conda env update
 conda update --all 
 ```
-2.  Delete `tmp` directory and rerun
+2.  Delete `tmp` directory and rerun  
+
 3.  CUDA out of memory error:  
     - interrupt kernel
     - reduce batch size
