@@ -10,6 +10,10 @@ Livestream:  https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be
 ---
 
 ## Blogs to Review
+* [Improving the way we work with learning rate](https://techburst.io/improving-the-way-we-work-with-learning-rate-5e99554f163b) Vitaly Bushaev
+* [Cyclical Learning Rate Technique](http://teleported.in/posts/cyclic-learning-rate/) Anand Saha
+* [Exploring Stochastic Gradient Descent with Restarts (SGDR)](https://medium.com/38th-street-studios/exploring-stochastic-gradient-descent-with-restarts-sgdr-fa206c38a74e) Mark Hoffman (nice intro level)
+* [Transfer Learning using differential learning rates](https://towardsdatascience.com/transfer-learning-using-differential-learning-rates-638455797f00) Manikanta Yadunanda
 
 
 ## Dropout
