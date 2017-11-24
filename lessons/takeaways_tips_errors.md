@@ -5,6 +5,7 @@
 
 2.  **Image Sizes** are generally at 224x224 and 299x299, which are the sizes that imagenet models are generally trained at. You get best results if you use the same as the original training size. Since people don’t tend to mention what size was used originally, you can try using both with something like dogs v cats and see which works better. More recent models seem to generally use 299.
 
+3.  **Rare Cases**  You can replicate the rare classes to make them more balanced. Never throw away data!
 
 # Solving Errors
 1.  Do `git pull` of [fastai library](https://github.com/fastai/fastai).  Updates may sort out some errors.
