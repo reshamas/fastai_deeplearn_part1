@@ -40,6 +40,8 @@
 
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73)
 
+* [Fun with small image data-sets](https://medium.com/@nikhil.b.k_13958/fun-with-small-image-data-sets-8c83d95d0159) by Nikil B
+
 ## Research Publications
 
 * [What’s your ML Test Score? A rubric for ML
