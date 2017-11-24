@@ -21,6 +21,7 @@ cd fastai/
 
 
 ## Step 4:  Create the virtual environment
+This step installs all of the dependencies.  
 ```conda
 conda env create -f environment.yml
 ```
