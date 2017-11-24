@@ -16,4 +16,5 @@
 * [Kaggle](https://www.kaggle.com/competitions)
 * [crowdAI](https://www.crowdai.org)  
 * [Space Apps Challenges](https://2017.spaceappschallenge.org/challenges/)
+* [Datahacks](https://datahack.analyticsvidhya.com/contest/practice-problem-age-detection/)
 
