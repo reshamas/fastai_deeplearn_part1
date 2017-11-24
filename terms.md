@@ -1,7 +1,7 @@
 # fastai & Deep Learning & Other Terms
 
 ---
-# fastai
+# fastai Terms
 `bs` = batch size  
 `sz` = size (of photo)  
 `tfms` = transformations  
