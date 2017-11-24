@@ -7,6 +7,10 @@
 
 3.  **Rare Cases**  You can replicate the rare classes to make them more balanced. Never throw away data!
 
+# Best Practices
+
+1.  When opening a notebook in fastai library, make a copy with the prefix **tmp**.  "tmp" files are included in fastai repo's [.gitignore](https://github.com/fastai/fastai/blob/master/.gitignore)
+
 # Solving Errors
 1.  Do `git pull` of [fastai library](https://github.com/fastai/fastai).  Updates may sort out some errors.
 ```bash
