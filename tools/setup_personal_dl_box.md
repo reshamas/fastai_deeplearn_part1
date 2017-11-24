@@ -7,7 +7,7 @@ https://conda.io/docs/user-guide/tasks/manage-python.html
 
 
 ## Step 2: Clone the fastai library
-```python
+```bash
 git clone https://github.com/fastai/fastai.git
 ```
 
@@ -26,7 +26,7 @@ conda env create -f environment.yml
 ```
 
 ## Step 5:  Activate virtual environment 
-```
+```bash
 source activate fastai
 ```
 You need to do that step every time you login. Or else put it in your `.bashrc` file
