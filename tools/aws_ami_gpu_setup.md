@@ -28,7 +28,6 @@ Select Service:  `EC2`
 (Note:  it is the kind of computer we want to use.)  
 * Filter by:  `GPU Compute`
 * Select:  `p2.xlarge`   (this is the cheapeast, reasonably effective for deep learning type of instance available)
-  - Note: you can select `p3` instance which is faster, but also costs more. :moneybag: :moneybag: :moneybag:  
 * Select: `Review and Launch` at bottom
 
 #### Step 2b:  Select keypair
