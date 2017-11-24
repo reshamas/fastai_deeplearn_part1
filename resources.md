@@ -24,6 +24,7 @@
 * [Visualizing Learning rate vs Batch size (Neural Nets basics using Fast.ai tools)](https://miguel-data-sc.github.io/2017-11-05-first/) Miguel (Nov 2017)
 * [Estimating an Optimal Learning Rate For a Deep Neural Network](https://medium.com/@surmenok/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) Pavel Surmenok
 * [Cyclical Learning Rate Technique](http://teleported.in/posts/cyclic-learning-rate/) Anand Saha
+* [Transfer Learning using differential learning rates](https://towardsdatascience.com/transfer-learning-using-differential-learning-rates-638455797f00) Manikanta Yadunanda
 
 
 ### CNN
@@ -45,6 +46,7 @@
 
 * [Fun with small image data-sets](https://medium.com/@nikhil.b.k_13958/fun-with-small-image-data-sets-8c83d95d0159) Nikil B
 * [Structured Deep Learning](https://medium.com/@keremturgutlu/structured-deep-learning-b8ca4138b848) Kerem Turgutlu 
+* [Exploring Stochastic Gradient Descent with Restarts (SGDR)](https://medium.com/38th-street-studios/exploring-stochastic-gradient-descent-with-restarts-sgdr-fa206c38a74e) Mark Hoffman
 
 ## Research Publications
 
