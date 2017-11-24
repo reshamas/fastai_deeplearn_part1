@@ -348,6 +348,10 @@ learn.fit(lr, 3, cycle_len = 1, cycle_mult = 2)
 
 #### Sigmoid
 
+---
+## Structured Data
+- Unstructured data:  images, audio, natural language text
+- Structured data:  profit/loss statement, data in a spreadsheet, info about FB user, each column is structurally quite different (sex, zip code)
 
 
 
