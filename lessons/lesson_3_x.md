@@ -389,6 +389,15 @@ Lightweight, minimal API: make pushing data frames in and out of memory as simpl
 Language agnostic: Feather files are the same whether written by Python or R code. Other languages can read and write Feather files, too.
 High read and write performance. When possible, Feather operations should be bound by local disk performance.
 
+## Next Week
+- we'll go through steps in the lesson3-ross.ipynb notebook
+- learn to split columns in 2 types:  categorical and continuous
+   - Example:  Store ID 1 and 2 are not numerically related to each other, they are categories.  Day of Week also categorical.  Will do 1-hot encoding
+   - distance of competitor is continuous
+- try to enter as many kaggle competitions as possible
+
+   
+   
 
 
 
