@@ -1,4 +1,4 @@
-# Lesson 4:  
+# Lesson 4:  Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro
 (20-Nov-2017, live)  
 
 Livestream:  https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be
@@ -16,6 +16,9 @@ Livestream:  https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be
 * [Transfer Learning using differential learning rates](https://towardsdatascience.com/transfer-learning-using-differential-learning-rates-638455797f00) Manikanta Yadunanda
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73) Arjun Rajkumar (technology plus its implications)
 
+Just jump in and write a technical post.
 
 ## Dropout
+- looking at Kaggle [dog breed competition](https://www.kaggle.com/c/dog-breed-identification)
+- 
 
