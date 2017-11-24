@@ -22,9 +22,7 @@ All the cookies, headers needed to download header are saved in the syntax.  Als
 Option 1:  `data` directory could be a sub-directory of where your Jupyter Notebook is located.  
 Option 2:  Use symlinks
 
-## Resources
-
-[How to Create and Use Symbolic Links (aka Symlinks) on a Mac](https://www.howtogeek.com/297721/how-to-create-and-use-symbolic-links-aka-symlinks-on-a-mac/) (Mar 2017)
+)
 
 
 
