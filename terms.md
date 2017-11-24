@@ -8,9 +8,13 @@
 
 ---
 # Deep Learning Terms
-SoTA : State-of-the-Art  
-TTA : Test Time Augmentation  
-epoch:  is a complete pass through a given dataset.
+
+### SoTA (State-of-the-Art)
+
+### TTA (Test Time Augmentation)
+
+### Epoch
+An epoch is a complete pass through a given dataset.
 
 ---
 # Unix
