@@ -1,4 +1,4 @@
-# Setting Up Personal DL Computer
+# Setting Up a Personal Deep Learning Computer
 These are steps to replicate the AWS AMI setup on your own computer (assuming you have CUDA GPUs, etc)  
 
 ## Step 1: Install Anaconda Python 3.6
