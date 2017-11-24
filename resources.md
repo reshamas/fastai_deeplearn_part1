@@ -23,6 +23,8 @@
 * [Improving the way we work with learning rate](https://techburst.io/improving-the-way-we-work-with-learning-rate-5e99554f163b) Vitaly Bushaev
 * [Visualizing Learning rate vs Batch size (Neural Nets basics using Fast.ai tools)](https://miguel-data-sc.github.io/2017-11-05-first/) Miguel (Nov 2017)
 * [Estimating an Optimal Learning Rate For a Deep Neural Network](https://medium.com/@surmenok/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) Pavel Surmenok
+* [Cyclical Learning Rate Technique](http://teleported.in/posts/cyclic-learning-rate/) Anand Saha
+
 
 ### CNN
 * [Convolutional Neural Network in 5 minutes](https://medium.com/@init_27/convolutional-neural-network-in-5-minutes-8f867eb9ca39) Sanyam Bhutani
