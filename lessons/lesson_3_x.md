@@ -352,6 +352,45 @@ learn.fit(lr, 3, cycle_len = 1, cycle_mult = 2)
 ## Structured Data
 - Unstructured data:  images, audio, natural language text
 - Structured data:  profit/loss statement, data in a spreadsheet, info about FB user, each column is structurally quite different (sex, zip code)
+- structured data is what makes the world go around, though it is not presented at fancy conferences
+
+### Grocery Store Competition
+#### Current Ecuador grocery store competition
+* [Corporación Favorita Grocery Sales Forecasting](https://www.kaggle.com/c/favorita-grocery-sales-forecasting)
+* this is current, so we won't work on it as a group
+
+#### Former German grocery store competition
+- Kaggle competition:  [Rossman Store Sales](https://www.kaggle.com/c/rossmann-store-sales)
+- Jupyter notebook:  [lesson3-rossman.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb)
+
+**Reminder:** **update repo** `git pull` and from time to time, **update conda**
+```bash
+git pull
+conda env update
+conda update --all 
+```
+
+### Pandas
+recommended book:  [Python for Data Analysis](http://wesmckinney.com/pages/book.html) by Wes McKinney, 2nd Edition  
+- 2nd edition release Sep 2017
+- author of Pandas
+- covers numpy, scipy, matplotlib, scikit-learn, iPython, Jupyter
+
+### 
+- structured data is generally shared as a csv file
+- To get the Rossman data:  On AWS, we can do `wget http://files.fast.ai/part2/lesson14/rossman.tgz` 
+- code tha tis in the notebook is from 3rd place winner:  [lesson3-rossman.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb)  
+- 
+
+### [What is Feather?](http://blog.cloudera.com/blog/2016/03/feather-a-fast-on-disk-format-for-data-frames-for-r-and-python-powered-by-apache-arrow/)  
+Feather is a fast, lightweight, and easy-to-use binary file format for storing data frames. It has a few specific design goals:
+
+Lightweight, minimal API: make pushing data frames in and out of memory as simple as possible
+Language agnostic: Feather files are the same whether written by Python or R code. Other languages can read and write Feather files, too.
+High read and write performance. When possible, Feather operations should be bound by local disk performance.
+
+
+
 
 
 
