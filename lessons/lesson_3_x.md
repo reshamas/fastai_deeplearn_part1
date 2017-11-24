@@ -328,16 +328,23 @@ plt.imshow(data.val_ds.denorm(to_np(x))[0]*1.4);
 - save model:  `learn.save(f'{sz})`
 - train for a while
 - increase size:  `sz=128` (double the size)
-- 
+- xxx
 - End with TTA:  
    - `tta = learn.TTA()`
    - `f2(*tta)`
-
 - used `metrics=[f2]` rather than `metrics=[accuracy]` 
 - **f2** particular way of weighing false positives and false negatives
-- 
+
 
 Note:  inputs * weights = activations  
+
+#### Differential Learning Rates
+```bash 
+lr = 0.2
+learn.fit(lr, 3, cycle_len = 1, cycle_mult = 2)
+```
+- there is a concept called **layer groups**
+- type `learn.summary()` to get detailed info on layers
 
 #### Sigmoid
 
