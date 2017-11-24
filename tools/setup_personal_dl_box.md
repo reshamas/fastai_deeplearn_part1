@@ -1,5 +1,7 @@
 # Setting Up a Personal Deep Learning Computer
-These are steps to replicate the AWS AMI setup on your own computer (assuming you have NVIDIA CUDA GPUs (1080 Ti) , etc)  
+These are steps to replicate the AWS AMI setup on your own computer (assuming you have NVIDIA CUDA GPUs)  
+Recommended hardware:  NVIDIA GTX-1080 Ti  
+
 
 ## Step 1: Install Anaconda Python 3.6
 Python version should be 3.6+  
@@ -22,12 +24,12 @@ cd fastai/
 
 ## Step 4:  Create the virtual environment
 This step installs all of the dependencies.  
-```conda
+```bash
 conda env create -f environment.yml
 ```
 
 ## Step 5:  Activate virtual environment 
+Do this step every time you login. Or else put it in your `.bashrc` file.  
 ```bash
 source activate fastai
 ```
-You need to do that step every time you login. Or else put it in your `.bashrc` file
