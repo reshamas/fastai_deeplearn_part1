@@ -7,7 +7,7 @@ https://conda.io/docs/user-guide/tasks/manage-python.html
 
 
 ## Step 2: Clone the fastai library
-```bash
+```git
 git clone https://github.com/fastai/fastai.git
 ```
 
@@ -21,7 +21,7 @@ cd fastai/
 
 
 ## Step 4:  Create the virtual environment
-```bash
+```conda
 conda env create -f environment.yml
 ```
 
