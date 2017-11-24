@@ -11,7 +11,8 @@
 * [Lesson 1a: Course Intro](lessons/lesson_1a_course_intro.md)
 * [Lesson 1b: CNN and resnet Architecture](lessons/lesson_1b_cnn_tools.md)
 * [Lesson 2: resnet34, resnext50](lessons/lesson_2_resnet34_resnext50.md)
-* [Lesson 3: xxx](lessons/)
+* [Lesson 3: CNN Image Intro](lessons/)
+* [Lesson 4: Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro](lessons/)
 
 
 ## [Technical Tools](tools/)
