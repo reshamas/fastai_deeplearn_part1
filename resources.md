@@ -41,6 +41,7 @@
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73)
 
 * [Fun with small image data-sets](https://medium.com/@nikhil.b.k_13958/fun-with-small-image-data-sets-8c83d95d0159) by Nikil B
+* [Structured Deep Learning](https://medium.com/@keremturgutlu/structured-deep-learning-b8ca4138b848) by Kerem Turgutlu 
 
 ## Research Publications
 
