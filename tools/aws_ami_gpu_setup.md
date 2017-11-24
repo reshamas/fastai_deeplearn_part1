@@ -141,8 +141,9 @@ Fast-forward
 Note 1:  The fastai repo is available in your home directory, in the `fastai` folder.  
 Note 2:  The dogscats dataset is already there for you, and the data folder is linked to ~/data.
 
-**Update** the **conda** libraries (do this once a month.)  
+**Update** the **conda** libraries (do this once a month, or if you run into errors)  
 <kbd> conda env update </kbd>   
+<kbd> conda update --all </kbd> 
 
 **Optional**
 * check which version of python is running
