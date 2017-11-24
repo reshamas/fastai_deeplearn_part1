@@ -295,10 +295,51 @@ In practice, if we want to calculate which of the 10 digits we're looking at, th
 - last layer has no ReLU, so we can have negatives
 - 
 
+#### Logarithms
 
+ln(x/y) = ln(x) - ln(y)
 
+ln(x) = y   ----> e^y = x  
 
+log_a(b) = ln(b) - ln(a)  
 
+#### Planet Competition
+
+Note:  Since images are matrices of numbers, and if the image looks washed-out, you can multiple it by a number, say 1.4:  
+```python
+plt.imshow(data.val_ds.denorm(to_np(x))[0]*1.4);
+```
+- these images are not at all like ImageNet
+- vast majority of images we will use involving CNN will **not** be like ImageNet:  medical imaging, classifying different kinds of steel tube, figuring out if a weld will break or now, satellite images, etc.
+- good to experiment with planet competition
+- planet image data starts off 256 x 256
+- resize it to 64 (wouldn't do this for cats / dogs because we start off with pretrained ImageNet data, it starts off nearly perfect.  most ImageNet models are trained on 224 x 224, or 299 x 299)
+- There's nothing like satellite images ImageNet; some layers are helpful (finding edges, textures, repeating patterns
+
+#### Training Planet Competition Data
+- start with `sz = 64`
+- 
+- grab some data
+- built model
+- found out what learning rate to use
+- needed to fit last layer before it started out flattening out
+- then unfreeze:  `learn.unfreeze()`
+- `learn.fit(lrs, 3, cycle_len=1, cycle_mult=2)`
+- save model:  `learn.save(f'{sz})`
+- train for a while
+- increase size:  `sz=128` (double the size)
+- 
+- End with TTA:  
+   - `tta = learn.TTA()`
+   - `f2(*tta)`
+
+- used `metrics=[f2]` rather than `metrics=[accuracy]` 
+- **f2** particular way of weighing false positives and false negatives
+- 
+
+Note:  inputs * weights = activations  
+
+#### Sigmoid
 
 
 
