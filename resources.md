@@ -16,7 +16,7 @@
 * [An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035) Vincent Fung
 
 ### PyTorch
-* [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) by Vishnu Subramanian (April 2017)
+* [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) Vishnu Subramanian (April 2017)
 * [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
 
 ### Learning Rate
