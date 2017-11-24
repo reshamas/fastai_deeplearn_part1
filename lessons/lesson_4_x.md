@@ -15,6 +15,7 @@ Notebook:  [lesson3-rossman](https://github.com/fastai/fastai/blob/master/course
 * [Exploring Stochastic Gradient Descent with Restarts (SGDR)](https://medium.com/38th-street-studios/exploring-stochastic-gradient-descent-with-restarts-sgdr-fa206c38a74e) Mark Hoffman (nice intro level)
 * [Transfer Learning using differential learning rates](https://towardsdatascience.com/transfer-learning-using-differential-learning-rates-638455797f00) Manikanta Yadunanda
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73) Arjun Rajkumar (technology plus its implications)
+* [**Rachel Thomas**:  How (and why) to create a good validation set](http://www.fast.ai/2017/11/13/validation-sets/)
 
 Just jump in and write a technical post.
 
