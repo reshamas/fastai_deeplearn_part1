@@ -61,5 +61,19 @@ type learner object, and you can see the layers:
 - has been critical in making modern deep learning work because it solved the problem of **generalization** for us
 - dropout is about 3-4 years old now
 - Before **dropout**, if we tried to train a model with lots of parameters and you were overfitting, and you had tried data augmentation or more data, you were stuck; Geoffrey Hinton came up with dropout idea, loosely inspired by how brain works
+- p = 0.01 not so effective
+- p = 0.99 not so effective, would kill your accuracy; high p vals generalize well, but lower training accuracy
+
+Why is that early in training, my validation losses are better than my training losses?  
+- when we look at validation set, we turn off **dropout**  
+
+Do you have to do anything to accommodate that we are throwing away some activations via dropout?  
+- PyTorch behind the scenes, if p = 0.5, throws away the activations, but it doubles the activations that are there, so the average activation does not change  
+
+Can run model 2 ways, one with `ps=0.0` and another with `ps=0.5`.  Compare models, one with dropout and one without, and see results.  
+
+
+
+
 
 
