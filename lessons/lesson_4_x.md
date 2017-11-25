@@ -143,6 +143,14 @@ df, y, nas, mapper = proc_df(joined_samp, 'Sales', do_scale=True)
 yl = np.log(y)
 ```
 
+## Embedding
+- would build an embedding matrix for each categorical feature of the data
+- it is called `emb_szs`
+- setting up initial embeddings
+  - randomized
+  - pretrained
+- idea of embedding is actually what's called a **distributed representation**, fundamental concept of neural network
+
 
 
 
