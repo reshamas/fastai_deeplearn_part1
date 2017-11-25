@@ -46,8 +46,9 @@ type learner object, and you can see the layers:
 - `(5): Droput (p = 0.5)`
 - `(6): Linear (512 -> 120)` takes 512 activations, puts thru new matrix multiplier (512 x 120), outputs 120
 - `(7): LogSoftmax () `  
+
 `)`
 
-<img src="../images/softmax.png" align="left" height="40" width="180" >   <br> <br>
+<img src="../images/softmax.png" align="left" height="140" width="400" >   <br> <br>
 
 
