@@ -103,6 +103,7 @@ Which vars are categorical and which are continuous is a modeling decision you g
 - if it starts off as continuous, such as day of week, you get to decide
 - if continuous in data --> you get to pick
   - things like Year, it often works better to make it categorical
+- continous vars: are actual floating point numbers
   
 ```python
 cat_vars = ['Store', 'DayOfWeek', 'Year', 'Month', 'Day', 'StateHoliday', 'CompetitionMonthsOpen',
