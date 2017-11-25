@@ -19,7 +19,35 @@ Notebook:  [lesson3-rossman](https://github.com/fastai/fastai/blob/master/course
 
 Just jump in and write a technical post.
 
+## Topics to Cover in this Lesson
+* Structured neural net info
+  - building models on database tables
+* Language RNN Intro
+  - NLP
+* Collaborative Filtering Info
+  - recommendation systems
+
+### Focus on this lesson 
+- here's the software to do it
+- in the next few lessons, we'll get into more details behind scences
+- also, we'll look at the details of computer vision
+
 ## Dropout
 - looking at Kaggle [dog breed competition](https://www.kaggle.com/c/dog-breed-identification)
 - 
+type learner object, and you can see the layers:  
+`learn`  
+`Sequential (`
+- `(0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True)` we'll do this later
+- `(1): Droput (p = 0.5)` 
+- `(2): Linear (1024 -> 512)`  linear layer, matrix multiplier.  1024 rows and 512 columns; take in 1024 activations and spit out 512 activations  
+- `(3): ReLU ()`  replace negatives with 0
+- `(4): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True)` we'll do this later
+- `(5): Droput (p = 0.5)`
+- `(6): Linear (512 -> 120)` takes 512 activations, puts thru new matrix multiplier (512 x 120), outputs 120
+- `(7): LogSoftmax () `  
+`)`
+
+<img src="../images/softmax.png" align="left" height="40" width="180" >   <br> <br>
+
 
