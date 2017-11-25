@@ -49,6 +49,6 @@ type learner object, and you can see the layers:
 
 `)`
 
-<img src="../images/softmax.png" align="left" height="140" width="400" >   <br> <br>
+<img src="../images/softmax.png" align="left" height="280" width="700" >   <br> <br>
 
 
