@@ -7,8 +7,25 @@
 * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg) (private)
 * [some fastai files](http://files.fast.ai)
 
+## Wiki's
+* [Wiki thread: Intro workshop](http://forums.fast.ai/t/wiki-thread-intro-workshop/6537)
+* [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)
+* [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)
+* [Wiki: Lesson 3](http://forums.fast.ai/t/wiki-lesson-3/7809)
+* [Wiki: Lesson 4](http://forums.fast.ai/t/wiki-lesson-4/8112)
+* [Wiki: Lesson 5]
+* [Wiki: Lesson 6]
+* [Wiki: Lesson 7]
 
-## [Lesson Notes](lessons/) 
+## Livestreams
+* Livestream:  Lesson 1
+  - [Livestream: Lesson 1, Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
+  - [Livestream: Lesson 1, Section 2](https://www.youtube.com/watch?v=ZDq5OXsLO3U)  
+* [Livestream: Lesson 2](https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be)
+* [Livestream: Lesson 3](https://www.youtube.com/watch?v=9C06ZPF8Uuc&feature=youtu.be) 
+* [Livestream: Lesson 4](https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be)
+
+## [My Lesson Notes](lessons/) 
 * Lesson 1
   - [Lesson 1a: Course Intro](lessons/lesson_1a_course_intro.md)
   - [Lesson 1b: CNN and resnet Architecture](lessons/lesson_1b_cnn_tools.md)
@@ -22,17 +39,6 @@
 * [tmux on AWS](tools/tmux.md)
 * [Kaggle CLI](tools/kaggle_cli.md)
 * [Jupyter Notebook](tools/jupyter_notebook.md)
-
-### Wiki's
-* [Wiki thread: Intro workshop](http://forums.fast.ai/t/wiki-thread-intro-workshop/6537)
-* [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)
-* [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)
-* [Wiki: Lesson 3](http://forums.fast.ai/t/wiki-lesson-3/7809)
-* [Wiki: Lesson 4](http://forums.fast.ai/t/wiki-lesson-4/8112)
-* [Wiki: Lesson 5]
-* [Wiki: Lesson 6]
-* [Wiki: Lesson 7]
-
 
 ## Other Resources
 * [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
