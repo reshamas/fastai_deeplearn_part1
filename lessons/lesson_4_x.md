@@ -132,6 +132,13 @@ for v in contin_vars:
     joined_test[v] = joined_test[v].astype('float32')
 ```
 
+`proc_df` this is part of fastai library;  "process dataframe"  
+```python
+df, y, nas, mapper = proc_df(joined_samp, 'Sales', do_scale=True)
+yl = np.log(y)
+```
+
+
 
 
 
