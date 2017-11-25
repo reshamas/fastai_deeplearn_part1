@@ -72,6 +72,24 @@ Do you have to do anything to accommodate that we are throwing away some activat
 
 Can run model 2 ways, one with `ps=0.0` and another with `ps=0.5`.  Compare models, one with dropout and one without, and see results.  
 
+You always need 1 linear layer: to connect input with the output.  
+`xtra_fc=[ ]` can pass a list of many of the fully connected layers to be  
+`xtra_fc=[ ]` passing in an empty list means there will be only 1 fully connected layer  
+If we have:  
+```python
+learn = ConvLearner.pretrained(arch, data, ps=0., precompute=True, xtra_fc=[] )
+learn.fit(1e-2, 3)
+```  
+`learn`  
+output is:  
+```
+Sequential (
+(0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True)
+(1): Linear (1024 -> 512)
+(2): LogSoftmax ()
+```
+
+
 
 
 
