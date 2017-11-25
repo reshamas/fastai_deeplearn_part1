@@ -32,7 +32,8 @@ Just jump in and write a technical post.
 - in the next few lessons, we'll get into more details behind scences
 - also, we'll look at the details of computer vision
 
-## Dropout
+---
+# Dropout
 - looking at Kaggle [dog breed competition](https://www.kaggle.com/c/dog-breed-identification)
 - 
 type learner object, and you can see the layers:  
@@ -75,19 +76,34 @@ Can run model 2 ways, one with `ps=0.0` and another with `ps=0.5`.  Compare mode
 You always need 1 linear layer: to connect input with the output.  
 `xtra_fc=[ ]` can pass a list of many of the fully connected layers to be  
 `xtra_fc=[ ]` passing in an empty list means there will be only 1 fully connected layer  
-If we have:  
+If we have dropout = 0 (`ps=0`) and no extra fully connected layers (`xtra_fc=[]`):  
 ```python
 learn = ConvLearner.pretrained(arch, data, ps=0., precompute=True, xtra_fc=[] )
-learn.fit(1e-2, 3)
+learn.fit(1e-2, 3) 
+learn
 ```  
-`learn`  
-output is:  
+output is this.  It is the minimal possible top model.    
 ```
 Sequential (
 (0): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True)
 (1): Linear (1024 -> 512)
 (2): LogSoftmax ()
-```
+```  
+Note:  with bigger models, (resnet34 has few parameters) like resnet50, you will need more dropout.  
+Q:  Is there a way to see if the data is being overfit?  
+A:  Yes, when the training error loss is much lower than the validation error loss.  
+
+---
+# Structured Data Problem
+Notebook:  [lesson3-rossman](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb)
+
+### Categorical and Continuous
+Which vars are categorical and which are continuous is a modeling decision you get to make.  
+- if categorical age or week 
+- if continuous in data --> you get to pick
+
+
+
 
 
 
