@@ -41,7 +41,7 @@
 * [Do smoother areas of the error surface lead to better generalization? (An experiment inspired by the first lecture of the fast.ai MOOC)](https://medium.com/@radekosmulski/do-smoother-areas-of-the-error-surface-lead-to-better-generalization-b5f93b9edf5b) Radek
 * [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa) Wayde Gilliam
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73) Arjun Rajkumar
-* [Fun with small image data-sets](https://medium.com/@nikhil.b.k_13958/fun-with-small-image-data-sets-8c83d95d0159) Nikil B
+* [Fun with small image data-sets](https://medium.com/@nikhil.b.k_13958/fun-with-small-image-data-sets-8c83d95d0159) Nikhil B
 * [Structured Deep Learning](https://medium.com/@keremturgutlu/structured-deep-learning-b8ca4138b848) Kerem Turgutlu 
 * [Exploring Stochastic Gradient Descent with Restarts (SGDR)](https://medium.com/38th-street-studios/exploring-stochastic-gradient-descent-with-restarts-sgdr-fa206c38a74e) Mark Hoffman
 
