@@ -99,8 +99,24 @@ Notebook:  [lesson3-rossman](https://github.com/fastai/fastai/blob/master/course
 
 ### Categorical and Continuous
 Which vars are categorical and which are continuous is a modeling decision you get to make.  
-- if categorical age or week 
+- if categorical, have to call it categorical
+- if it starts off as continuous, such as day of week, you get to decide
 - if continuous in data --> you get to pick
+  - things like Year, it often works better to make it categorical
+  
+```python
+cat_vars = ['Store', 'DayOfWeek', 'Year', 'Month', 'Day', 'StateHoliday', 'CompetitionMonthsOpen',
+    'Promo2Weeks', 'StoreType', 'Assortment', 'PromoInterval', 'CompetitionOpenSinceYear', 'Promo2SinceYear',
+    'State', 'Week', 'Events', 'Promo_fw', 'Promo_bw', 'StateHoliday_fw', 'StateHoliday_bw',
+    'SchoolHoliday_fw', 'SchoolHoliday_bw']
+
+contin_vars = ['CompetitionDistance', 'Max_TemperatureC', 'Mean_TemperatureC', 'Min_TemperatureC',
+   'Max_Humidity', 'Mean_Humidity', 'Min_Humidity', 'Max_Wind_SpeedKm_h', 
+   'Mean_Wind_SpeedKm_h', 'CloudCover', 'trend', 'trend_DE',
+   'AfterStateHoliday', 'BeforeStateHoliday', 'Promo', 'SchoolHoliday']
+
+n = len(joined); n
+```
 
 
 
