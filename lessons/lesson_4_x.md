@@ -51,4 +51,15 @@ type learner object, and you can see the layers:
 
 <img src="../images/softmax.png" align="left" height="280" width="700" >   <br> <br>
 
+### Dropout of p = 0.5
+- p = probability of deleting the cell
+- notice that when half the activations are randomly deleted, it doesn't really change the output 
+- the act of randomly throwing away half the activations has an interesting result
+- each minibatch, we throw away a different random part of activations in that layer
+- throwing the activation randomly away forces it to **not overfit**
+- it forces it to work even if half the activations are randomly thrown away
+- has been critical in making modern deep learning work because it solved the problem of **generalization** for us
+- dropout is about 3-4 years old now
+- Before **dropout**, if we tried to train a model with lots of parameters and you were overfitting, and you had tried data augmentation or more data, you were stuck; Geoffrey Hinton came up with dropout idea, loosely inspired by how brain works
+
 
