@@ -99,11 +99,12 @@ Notebook:  [lesson3-rossman](https://github.com/fastai/fastai/blob/master/course
 
 ### Categorical and Continuous
 Which vars are categorical and which are continuous is a modeling decision you get to make.  
-- if categorical, have to call it categorical
+- if categorical in data --> have to call it categorical
+- **cardinality** is how many levels are in a category, (ex: cardinality for days of week is 7)
 - if it starts off as continuous, such as day of week, you get to decide
 - if continuous in data --> you get to pick
   - things like Year, it often works better to make it categorical
-- continous vars: are actual floating point numbers
+- continous vars: are actual floating point numbers; hard to make these categorical because they have many, many levels
   
 ```python
 cat_vars = ['Store', 'DayOfWeek', 'Year', 'Month', 'Day', 'StateHoliday', 'CompetitionMonthsOpen',
@@ -118,8 +119,18 @@ contin_vars = ['CompetitionDistance', 'Max_TemperatureC', 'Mean_TemperatureC', '
 
 n = len(joined); n
 ```
+Jeremy so far has not binned continuous variables.  Though, a paper came out this week to the contrary.  Requires further research.  
 
+PyTorch expects continuous to be type float32.  
+```python
+for v in cat_vars: joined[v] = joined[v].astype('category').cat.as_ordered()
 
+apply_cats(joined_test, joined)
+
+for v in contin_vars:
+    joined[v] = joined[v].astype('float32')
+    joined_test[v] = joined_test[v].astype('float32')
+```
 
 
 
