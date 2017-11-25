@@ -132,7 +132,12 @@ for v in contin_vars:
     joined_test[v] = joined_test[v].astype('float32')
 ```
 
-`proc_df` this is part of fastai library;  "process dataframe"  
+#### process dataframe
+- `proc_df` this is part of fastai library;  "process dataframe"  
+- pull Sales out of dataframe and sets it as y variable
+- `do_scale=True` Scaling - neural nets really like input data to be ~N(0, 1)
+- `nas` handles missing values; continuous - replace missing with median
+- 
 ```python
 df, y, nas, mapper = proc_df(joined_samp, 'Sales', do_scale=True)
 yl = np.log(y)
