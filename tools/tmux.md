@@ -118,6 +118,8 @@ Note:  A green bar will appear at the bottom
 ### tmux: create a third window (vertical)
 <kbd> ctrl+b % </kbd>
 
+**Note:**  type ctrl+b then let go, and then type %
+
 ### tmux:  navigate between windows
 <kbd> ctrl+b [then arrow up/down/side] </kbd>
 
