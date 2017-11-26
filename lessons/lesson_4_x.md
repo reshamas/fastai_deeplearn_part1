@@ -5,8 +5,9 @@
  
 [Wiki: Lesson 4](http://forums.fast.ai/t/wiki-lesson-4/8112)
 
-Notebook:  [lesson3-rossman](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb)
-
+Notebook:  
+* [lesson3-rossman](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb)
+* [lang_model-arxiv.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lang_model-arxiv.ipynb)
 ---
 
 ## Blogs to Review
@@ -151,6 +152,10 @@ yl = np.log(y)
   - pretrained
 - idea of embedding is actually what's called a **distributed representation**, fundamental concept of neural network
 
+## NLP
+Language Modeling - build a model where given a few words of a sentence, predict what the next few words will be.
+
+Notebook:  https://github.com/fastai/fastai/blob/master/courses/dl1/lang_model-arxiv.ipynb
 
 
 
