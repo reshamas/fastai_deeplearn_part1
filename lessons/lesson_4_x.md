@@ -157,6 +157,17 @@ Language Modeling - build a model where given a few words of a sentence, predict
 
 Notebook:  https://github.com/fastai/fastai/blob/master/courses/dl1/lang_model-arxiv.ipynb
 
+Arxiv:  https://arxiv.org  
+most popular pre-print server; has lots of academic papers   
+
+`import torchtext`  
+Torchtext is PyTorch's NLP.  
+`bptt` back prop through time  
+
+## Next Week
+Collaborative Filtering:  https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb
+
+
 
 
 
