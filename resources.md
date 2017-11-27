@@ -1,7 +1,7 @@
 # Resources
 
 ## Lessons
-* [Lesson 1 Notes](http://forums.fast.ai/t/deeplearning-lec1notes/7089) Tim Lee
+* [Lesson 1 Notes](http://forums.fast.ai/t/deeplearning-lec1notes/7089) Tim Lee [(Tim's GitHub repo)](https://github.com/timdavidlee/learning-deep/tree/master/deeplearning1)
 * [Lesson 2: Case Study - A world class image classifier for dogs and cats (err.., anything)](https://medium.com/@apiltamang/case-study-a-world-class-image-classifier-for-dogs-and-cats-err-anything-9cf39ee4690e) Apil Tamang
 * [Lesson 2 Notes](http://forums.fast.ai/t/deeplearning-lecnotes2/7515/2) Tim Lee
 * [Lesson 3 Notes](http://forums.fast.ai/t/deeplearning-lecnotes3/7866) Tim Lee
