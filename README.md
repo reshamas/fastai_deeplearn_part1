@@ -24,6 +24,9 @@
 * [Livestream: Lesson 2](https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be)
 * [Livestream: Lesson 3](https://www.youtube.com/watch?v=9C06ZPF8Uuc&feature=youtu.be) 
 * [Livestream: Lesson 4](https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be)
+* [Livestream: Lesson 5]()
+* [Livestream: Lesson 6]()
+* [Livestream: Lesson 7]()
 
 ## [My Lesson Notes](lessons/) 
 * Lesson 1
