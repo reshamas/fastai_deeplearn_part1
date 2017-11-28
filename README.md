@@ -5,7 +5,7 @@
 ## About
 
 ### Contact Info
-Presenter:  Reshama Shaikh  
+Reshama Shaikh  
 LinkedIn:  https://www.linkedin.com/in/reshamas   
 Twitter:  https://twitter.com/reshamas  
 GitHub:  https://github.com/reshamas  
