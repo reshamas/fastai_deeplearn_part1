@@ -14,8 +14,10 @@
 * Theano (Pascal Lamblin and Yoshua Bengio), library retired in Fall 2017
 * Torch (Lua-based)
 
+![dl table](../images/dl_libraries.png)
+
 <br>
-<img src="../images/dl_libraries.png" align="left"   >   
+<img src="/../images/dl_libraries.png" align="left"   >   
 <br>
 <br> 
  
