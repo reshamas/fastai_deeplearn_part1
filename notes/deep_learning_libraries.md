@@ -1,18 +1,25 @@
 # Deep Learning Libraries
 
-* Caffe (Berkeley)
-* Caffe2 (Facebook)
-* DeepLearning4J (Skymind in SF); Java, can use with Apache Hadoop and Apache Spark
-* fastai (USF)
+* TensorFlow (Google)
 * Keras (Google); is an open source neural network library written in Python. It is capable of running on top of MXNet, Deeplearning4j, Tensorflow, CNTK or Theano
-* Microsoft Cognitive Toolkis (CNTK)
-* MXNet (Amazon)
-* Pyro (Uber)
+* Caffe (Berkeley)
+* Theano (Pascal Lamblin and Yoshua Bengio), library retired in Fall 2017
 * PyTorch (Facebook)
 * Sonnet (Google)
-* TensorFlow (Google)
-* Theano (Pascal Lamblin and Yoshua Bengio), library retired in Fall 2017
+* MXNet (Amazon)
 * Torch (Lua-based)
+* Microsoft Cognitive Toolkit (CNTK)
+* DLIB (C++ library)
+* Caffe2 (Facebook)
+* Chainer (Preferred Networks, Japan)
+* Paddlepaddle (Baidu, China)
+* DeepLearning4J (Skymind in SF); Java, can use with Apache Hadoop and Apache Spark
+* Lasagne ( lightweight library used to construct and train networks in Theano)
+
+And more:  
+* fastai (USF)
+* Pyro (Uber)
+
 
 ![dl table](../images/dl_libraries.png)
  
