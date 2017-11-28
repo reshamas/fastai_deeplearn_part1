@@ -29,17 +29,6 @@ An epoch is a complete pass through a given dataset.
 ### Stochastic gradient descent (SGD)
 Stochastic gradient descent (often shortened to SGD), also known as incremental gradient descent, is a stochastic approximation of the gradient descent optimization and iterative method for minimizing an objective function that is written as a sum of differentiable functions. In other words, SGD tries to find minima or maxima by iteration.
 
-
-
-
-
-
----
-
----
-
-# Deep Learning Terms
-
 ### ANN  (Artificial Neural Network)
 
 ### CNN / ConvNet (Convolutional Neural Network)
@@ -49,7 +38,7 @@ is a type of feed-forward artificial neural network in which the connectivity pa
 CUDA is a parallel computing platform and application programming interface (API) model created by Nvidia. ... When it was first introduced by Nvidia, the name CUDA was an acronym for Compute Unified Device Architecture, but Nvidia subsequently dropped the use of the acronym.
 
 ### GloVe
-Global vectors
+GloVe is an unsupervised learning algorithm for obtaining vector representations for words. Training is performed on aggregated global word-word co-occurrence statistics from a corpus, and the resulting representations showcase interesting linear substructures of the word vector space.
 
 ### RNN  (Recurrent Neural Network)
 a class of artificial neural network where connections between units form a directed cycle. This creates an internal state of the network which allows it to exhibit dynamic temporal behavior. Unlike feedforward neural networks, RNNs can use their internal memory to process arbitrary sequences of inputs. 
