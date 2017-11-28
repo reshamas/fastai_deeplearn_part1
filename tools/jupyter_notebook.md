@@ -32,9 +32,10 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 * Within function, <kbd>Shift + Tab </kbd> shows parameters that the function can take, also shows default parameter options
 * `object`, then <kbd> Tab </kbd> shows all the options for that object or function
 
-  
-  
-
+## Convert your notebooks to .md 
+```bash
+jupyter nbconvert --to <output format> <input notebook>  
+```
 
 
 ---
