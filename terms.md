@@ -22,26 +22,16 @@ An epoch is a complete pass through a given dataset.
 - Adam takes 3 hyperparameters: the learning rate, the decay rate of 1st-order moment, and the decay rate of 2nd-order moment
 - [ADAM: A Method for Stochastic Optimization](https://theberkeleyview.wordpress.com/2015/11/19/berkeleyview-for-adam-a-method-for-stochastic-optimization/)
 
+### Stochastic gradient descent (SGD)
+Stochastic gradient descent (often shortened to SGD), also known as incremental gradient descent, is a stochastic approximation of the gradient descent optimization and iterative method for minimizing an objective function that is written as a sum of differentiable functions. In other words, SGD tries to find minima or maxima by iteration.
+
 ---
 # Unix
 scp :  secure copy  
 
 ---
 
-# Deep Learning Libraries
-* Caffe (Berkeley)
-* Caffe2 (Facebook)
-* DeepLearning4J (Skymind in SF); Java, can use with Apache Hadoop and Apache Spark
-* fastai
-* Keras (Google); is an open source neural network library written in Python. It is capable of running on top of MXNet, Deeplearning4j, Tensorflow, CNTK or Theano
-* Microsoft Cognitive Toolkis (CNTK)
-* Michelangelo (Uber); an internal ML-as-a-service platform 
-* MXNet (Amazon)
-* PyTorch (Facebook)
-* Sonnet (Google)
-* TensorFlow (Google)
-* Theano (Pascal Lamblin and Yoshua Bengio), library retired in Fall 2017
-* Torch (Lua-based)
+
 
 ### References
 - [Full Ranking List](https://github.com/thedataincubator/data-science-blogs/blob/master/output/DL_libraries_final_Rankings.csv)
