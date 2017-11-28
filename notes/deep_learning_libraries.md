@@ -15,7 +15,8 @@
 * Torch (Lua-based)
 
 <br>
-<img src="../images/dl_libraries.png" align="left" height="100" width="200" >   
+<img src="../images/dl_libraries.png" align="left"   >   
+<br>
 <br> 
  
 ---
