@@ -29,13 +29,6 @@ Stochastic gradient descent (often shortened to SGD), also known as incremental 
 # Unix
 scp :  secure copy  
 
----
-
-
-
-### References
-- [Full Ranking List](https://github.com/thedataincubator/data-science-blogs/blob/master/output/DL_libraries_final_Rankings.csv)
-- [Ranking Popular Deep Learning Libraries for Data Science](https://blog.thedataincubator.com/2017/10/ranking-popular-deep-learning-libraries-for-data-science/) Oct 2017
 
 
 
