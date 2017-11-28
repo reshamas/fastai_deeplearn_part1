@@ -9,6 +9,10 @@ NN = noun
 VBD = verb
 ```
 
+### BLEU (bilingual evaluation understudy) 
+is an algorithm for evaluating the quality of text which has been machine-translated from one natural language to another. Quality is considered to be the correspondence between a machine's output and that of a human: "the closer a machine translation is to a professional human translation, the better it is" – this is the central idea behind BLEU.[1][2] BLEU was one of the first metrics to achieve a high correlation with human judgements of quality,[3][4] and remains one of the most popular automated and inexpensive metrics.
+
+
 ### IE (Information Extraction)
 IE turns the unstructured information embedded in texts into structured data. 
 
@@ -39,6 +43,12 @@ find and classify semantic relations among the entities discovered in a given te
 
 ### Event Detection and Classification
 find and classify the events in which the entities are participating
+
+
+### GloVe
+GloVe is an unsupervised learning algorithm for obtaining vector representations for words. Training is performed on aggregated global word-word co-occurrence statistics from a corpus, and the resulting representations showcase interesting linear substructures of the word vector space.
+
+
 
 ### Temporal Expression Detection
 * tells us that our sample text contains the temporal expressions *Friday* and *Thursday*
