@@ -1,6 +1,21 @@
 # [fast.ai](http://www.fast.ai) Deep Learning Part 1 v2
 **Oct - Dec 2017**  
 
+#### Contact Info
+Presenter:  Reshama Shaikh  
+LinkedIn:  https://www.linkedin.com/in/reshamas   
+Twitter:  https://twitter.com/reshamas  
+GitHub:  https://github.com/reshamas  
+Email:   rs2715@stern.nyu.edu  
+
+#### About Me
+* Data Scientist (Statistician, MBA)
+* Organizer of WiMLDS meetup group
+     - [NYC Women in Machine Learning & Data Science](http://www.meetup.com/NYC-Women-in-Machine-Learning-Data-Science/)
+     - http://wimlds.org/
+* Organizer of [NYC PyLadies meetup group](https://www.meetup.com/NYC-PyLadies/)
+
+---
 ## Course Links
 * [GitHub: fastai](https://github.com/fastai/fastai) (public)
 * [Discourse:  part1-v2](http://forums.fast.ai/c/part1-v2) (private)
