@@ -13,3 +13,9 @@
 * TensorFlow (Google)
 * Theano (Pascal Lamblin and Yoshua Bengio), library retired in Fall 2017
 * Torch (Lua-based)
+
+---
+
+## References
+- [Full Ranking List](https://github.com/thedataincubator/data-science-blogs/blob/master/output/DL_libraries_final_Rankings.csv)
+- [Ranking Popular Deep Learning Libraries for Data Science](https://blog.thedataincubator.com/2017/10/ranking-popular-deep-learning-libraries-for-data-science/) Oct 2017
