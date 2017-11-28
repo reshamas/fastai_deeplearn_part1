@@ -33,9 +33,7 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 * `object`, then <kbd> Tab </kbd> shows all the options for that object or function
 
 ## Convert your notebooks to .md 
-```bash
-jupyter nbconvert --to <output format> <input notebook>  
-```
+<kbd> jupyter nbconvert --to <output format> <input notebook>  </kbd>
 
 
 ---
