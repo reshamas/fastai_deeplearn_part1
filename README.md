@@ -53,7 +53,9 @@ Email:   rs2715@stern.nyu.edu
 * [Lesson 2: resnet34, resnext50](lessons/lesson_2_resnet34_resnext50.md)
 * [Lesson 3: CNN Image Intro](lessons/)
 * [Lesson 4: Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro](lessons/)
-
+* [Livestream: Lesson 5]
+* [Livestream: Lesson 6]
+* [Livestream: Lesson 7]
 
 ## [Technical Tools](tools/)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
