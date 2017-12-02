@@ -15,6 +15,9 @@
 * [Yet Another ResNet Tutorial (or not)](https://medium.com/@apiltamang/yet-another-resnet-tutorial-or-not-f6dd9515fcd7) Apil Tamang
 * [An Overview of ResNet and its Variants](https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035) Vincent Fung
 
+### Stuctured Deep Learning
+* [Structured Deep Learning](https://towardsdatascience.com/structured-deep-learning-b8ca4138b848) Kerem Turgutlu (Masters' student at USF)
+
 ### PyTorch
 * [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) Vishnu Subramanian (April 2017)
 * [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
@@ -42,8 +45,11 @@
 * [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa) Wayde Gilliam
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73) Arjun Rajkumar
 * [Fun with small image data-sets](https://medium.com/@nikhil.b.k_13958/fun-with-small-image-data-sets-8c83d95d0159) Nikhil B
+* [Fun with small image data-sets (Part 2)](https://medium.com/@nikhil.b.k_13958/fun-with-small-image-data-sets-part-2-54d683ca8c96) Nikhil B
 * [Structured Deep Learning](https://medium.com/@keremturgutlu/structured-deep-learning-b8ca4138b848) Kerem Turgutlu 
 * [Exploring Stochastic Gradient Descent with Restarts (SGDR)](https://medium.com/38th-street-studios/exploring-stochastic-gradient-descent-with-restarts-sgdr-fa206c38a74e) Mark Hoffman
+* [How do We Train Neural Networks?](https://towardsdatascience.com/how-do-we-train-neural-networks-edd985562b73) Vitaly Bushev
+
 
 ## Research Publications
 
