@@ -48,13 +48,14 @@ Can use this data later:
 ### Matrix Factorization
 - we're not going to start with neural network, because there is a simple way to work on these problems
 - doing "shallow learning" in excel spreadsheet
+- using top 15 raters and top 15 movies rated
 - for each cell of userID by movieID, there is a corresponding 1x5 row, and a 5x1 column (initially, the numbers are random)
 - then, via Solver, we set the **Objective Function** to be the **Root MSE**
 - if you've done linear algebra, this is matrix decomposition
 - we can use gradient descent to solve
 - Jeremy prefers to think of it from an intuitive point of view; 
 
-#### Example
+### Working the Example in Excel
 - for userID 27, movieID 72
 - for movieID 72, (Example: Lord of the Rings, Part 1) random weights might represent:  
   - how much is it scifi and fantasy
@@ -70,6 +71,17 @@ Can use this data later:
   - these "factors", we call them **latent factors**, we've assumed we can think of movie ratings this way
   - then we use **gradient descent** to find some numbers that work
 - this is collaborating filtering using **probabilistic matrix factorization**
+- next, we will implement in Python, and run it on the whole dataset
+- the weight vectors are **embedding matrices**
+- how do we decide on the dimensionality of our embedding matrix?  
+  - We have no idea and we have to try a few things and see what works
+  - underlying concept is you need to pick an embedding dimensionality which is enough to reflect the true complexity of this causal system, but not so big that you have too many parameters, or it could take forever to run, or be overfit
+- What does it mean if factor is negative?  Means it is not dialogue driven; for user, a dislike
+- Q: if we have a new movie or new user, do we have to retrain the model?
+  - A:  not a straighforward answer to that, time permitting, we'll come to that.  would need a new movie/user model
+  
+### Working the Example in Python
+
 
  
 
