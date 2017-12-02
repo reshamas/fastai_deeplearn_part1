@@ -33,13 +33,45 @@ Notebooks:  [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/mast
 - will try not to use fastai library
 
 ## Collaborative Filtering
-Movie Lens Dataset:  [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb)
+- Movie Lens Dataset:  [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb)  
+- Excel file is here:  https://github.com/fastai/fastai/blob/master/courses/dl1/excel/collab_filter.xlsx
 
-We will use 3 columns of data:  
+We will use 3 columns of data:   
 - userId (categorica)
 - movieId (categorical)
 - rating (continous, dependent var)
 
+Can use this data later:  
+- movie title
+- genre
+
+### Matrix Factorization
+- we're not going to start with neural network, because there is a simple way to work on these problems
+- doing "shallow learning" in excel spreadsheet
+- for each cell of userID by movieID, there is a corresponding 1x5 row, and a 5x1 column (initially, the numbers are random)
+- then, via Solver, we set the **Objective Function** to be the **Root MSE**
+- if you've done linear algebra, this is matrix decomposition
+- we can use gradient descent to solve
+- Jeremy prefers to think of it from an intuitive point of view; 
+
+#### Example
+- for userID 27, movieID 72
+- for movieID 72, (Example: Lord of the Rings, Part 1) random weights might represent:  
+  - how much is it scifi and fantasy
+  - how recent a movie
+  - how much special effects
+  - how dialogue driven is it?
+  - etc
+- for userID 27
+  - how much does the user like scifi and fantasy?
+  - how much does the user like dialogue driven movies?
+  - etc
+- The problem is, we don't have that information.  So we're starting with random
+  - these "factors", we call them **latent factors**, we've assumed we can think of movie ratings this way
+  - then we use **gradient descent** to find some numbers that work
+- this is collaborating filtering using **probabilistic matrix factorization**
+
+ 
 
 
 
