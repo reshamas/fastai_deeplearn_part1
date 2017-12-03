@@ -146,8 +146,33 @@ A:
 #### [Initialization Of Deep Networks Case of Rectifiers](http://www.jefkine.com/deep/2016/08/08/initialization-of-deep-networks-case-of-rectifiers/)  
 Mathematics Behind Neural Network Weights Initialization - Part Three: In this third of a three part series of posts, we will attempt to go through the weight initialization algorithms as developed by various researchers taking into account influences derived from the evolution of neural network architecture and the activation function in particular.
    
+#### Back to PyTorch Model
+```python
+class EmbeddingDot(nn.Module):
+    def __init__(self, n_users, n_movies):
+        super().__init__()
+        self.u = nn.Embedding(n_users, n_factors)
+        self.m = nn.Embedding(n_movies, n_factors)
+        self.u.weight.data.uniform_(0,0.05)
+        self.m.weight.data.uniform_(0,0.05)
+        
+    def forward(self, cats, conts):
+        users,movies = cats[:,0],cats[:,1]
+        u,m = self.u(users),self.m(movies)
+        return (u*m).sum(1)
+```
 
-
+This PyToch notation here means:  
+- `self.u` is an instance of the embedding class
+- `self.u.weight` is an attribute of `self.u` which contains the actual embedding matrix
+- the actual embedding matrix is not a tensor, it is a variable
+- a variable is exactly the same as a tensor, that is, it supports the exact same operations, but it also does **automatic differentiation**
+- to pull the tensor out of a variable, you get its data attribute:  `self.u.weight.data` --> so, this is now the tensor of the weight matrix of the of the `self.` you're embedding
+- you can stick an underscore `-`, and it does it **in-place** 
+```python
+        self.u.weight.data.uniform_(0,0.05)
+        self.m.weight.data.uniform_(0,0.05)
+```
  
 
 
