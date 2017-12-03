@@ -55,7 +55,7 @@ Can use this data later:
 - we can use gradient descent to solve
 - Jeremy prefers to think of it from an intuitive point of view; 
 
-### Working the Example in Excel
+### Working the Collaborating Filtering Example in Excel
 - for userID 27, movieID 72
 - for movieID 72, (Example: Lord of the Rings, Part 1) random weights might represent:  
   - how much is it scifi and fantasy
@@ -80,7 +80,44 @@ Can use this data later:
 - Q: if we have a new movie or new user, do we have to retrain the model?
   - A:  not a straighforward answer to that, time permitting, we'll come to that.  would need a new movie/user model
   
-### Working the Example in Python
+### Working the Collaborating Filtering Example in Python
+- get validation set, use random indices
+- `wd=2e-4` = weight decays; in ML, it is **L2 Regularization**
+- `n_factors=50` how big an embedding matrix we are choosing
+- `cf = CollabFilterDataset.from_csv(path, 'ratings.csv', 'userId', 'movieId', 'rating')` --> path, file, rows (users), columns (items), rating
+- which other movies are similar to users who liked it
+- which other people are similar who liked this movie
+- `learn = cf.get_learner(n_factors, val_idxs, 64, opt_fn=optim.Adam)` 
+   - `n_factors` = size of embedding matrix
+   - `val_idxs`  = what validation set indexes to use
+   - batch size = 64 here
+   - `opt_fn=optim.Adam` = what optimizer to use
+   - fit the model:  `learn.fit(1e-2, 2, wds=wd, cycle_len=1, cycle_mult=2)`
+- plots are in seaborn - plotting library that sits on top of matplotlib
+
+### Dot Product Example in PyTorch
+- dot product is the vector version
+- can create a tensor in PyTorch version
+
+```python
+a = T([[1.,2],[3,4]])
+b = T([[2.,2],[10,10]])
+a,b
+```
+- PyTorch module:
+  - uses Pythonic way of doing things
+  - can use as a layer in a neural net
+  - PyTorch uses Python OO (Object Oriented) way of doing things, defining classes, etc.
+  - a function which we'll be able to take a derivative of, stack on top of each other, etc.
+- TensorFlow
+  - has its own syntax
+- `def forward()` 
+- `def backward()`
+
+
+   
+   
+   
 
 
  
