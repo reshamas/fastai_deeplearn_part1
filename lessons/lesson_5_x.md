@@ -163,17 +163,22 @@ class EmbeddingDot(nn.Module):
 ```
 
 This PyToch notation here means:  
-- `self.u` is an instance of the embedding class
-- `self.u.weight` is an attribute of `self.u` which contains the actual embedding matrix
-- the actual embedding matrix is not a tensor, it is a variable
-- a variable is exactly the same as a tensor, that is, it supports the exact same operations, but it also does **automatic differentiation**
-- to pull the tensor out of a variable, you get its data attribute:  `self.u.weight.data` --> so, this is now the tensor of the weight matrix of the of the `self.` you're embedding
-- you can stick an underscore `-`, and it does it **in-place** 
+
 ```python
         self.u.weight.data.uniform_(0,0.05)
         self.m.weight.data.uniform_(0,0.05)
 ```
- 
+
+- `self.u` is an instance of the embedding class
+- `self.u.weight` is an attribute of `self.u` which contains the actual embedding matrix
+- the actual embedding matrix is not a tensor, it is a variable
+- a variable is exactly the same as a tensor, that is, it supports the exact same operations, but it also does **automatic differentiation**
+- to pull the tensor out of a variable, you get its data attribute:  `self.u.weight.data` --> so, this is now the tensor of the weight matrix of the of the `self.` embedding
+- something that's really handy to know is that all of the tensor functions in PyTorch, you can stick an underscore `_` at the end, and that means does it **in-place** 
+- `self.u.weight.data.uniform_(0,0.05)` create a uniform random number of an appropriate size for this tensor and don't return it but actually fill in that matrix in-place
+- here is the **Non in-place version:**  `self.u.weight.data.uniform = self.u.weight.data.uniform_(0,0.05)`
+
+**Note:**  PyToch can do mini-batch at a time with pretty much everything that we can get really easy speed up.  We don't have to write any loops on our own.  If you ever do loop through your mini-batch manually, you don't get GPU acceleration.   
 
 
 
