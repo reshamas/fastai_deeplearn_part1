@@ -131,6 +131,11 @@ a,b
   
   model(a,b)
   ```
+```bash
+  6
+ 70
+ [torch.FloatTensor of size 2]
+```
 
 Q:  Can you use fastai library for *very large* datasets, for collaborative filtering
 A:  
