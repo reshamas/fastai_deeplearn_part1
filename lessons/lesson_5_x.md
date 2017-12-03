@@ -95,6 +95,14 @@ Can use this data later:
    - fit the model:  `learn.fit(1e-2, 2, wds=wd, cycle_len=1, cycle_mult=2)`
 - plots are in seaborn - plotting library that sits on top of matplotlib
 
+#### Classifier
+Q:  if recommendation system is 0 / 1?  
+A:  
+- need to use a classifier instead of regressor
+- not in fastai library yet
+- change activation function to be sigmoid, criterion (loss function) to cross entropy rather than RSME
+
+
 ### Dot Product Example in PyTorch
 - dot product is the vector version
 - can create a tensor in PyTorch version
@@ -108,14 +116,30 @@ a,b
   - uses Pythonic way of doing things
   - can use as a layer in a neural net
   - PyTorch uses Python OO (Object Oriented) way of doing things, defining classes, etc.
+  - all PyTorch modules are written in Python OO
   - a function which we'll be able to take a derivative of, stack on top of each other, etc.
 - TensorFlow
   - has its own syntax
 - `def forward()` 
-- `def backward()`
+- gradients are backwards calculations, we don't have to calculate that
+- that's it, that's how we create a custom PyTorch layer
+  ```python
+  class DotProduct(nn.Module):
+    def forward(self, u, m): return (u*m).sum(1)
+  
+  model=DotProduct()
+  
+  model(a,b)
+  ```
 
+Q:  Can you use fastai library for *very large* datasets, for collaborative filtering
+A:  
+- yes, absolutely, it uses mini-batch stochastic gradient descent 
+- this version will create a pandas dataframe, which needs to live in memory
+- can easily get 5 to 12 Gig instances on AWS, if you have CSV file > 5-12 Gig, then you'll have to save it as big ?hols array or save as a Dask dataframe
 
-   
+#### 
+
    
    
 
