@@ -178,8 +178,27 @@ This PyToch notation here means:
 - `self.u.weight.data.uniform_(0,0.05)` create a uniform random number of an appropriate size for this tensor and don't return it but actually fill in that matrix in-place
 - here is the **Non in-place version:**  `self.u.weight.data.uniform = self.u.weight.data.uniform_(0,0.05)`
 
-**Note:**  PyToch can do mini-batch at a time with pretty much everything that we can get really easy speed up.  We don't have to write any loops on our own.  If you ever do loop through your mini-batch manually, you don't get GPU acceleration.   
+**Note:**  PyToch can do mini-batch at a time with pretty much everything that we can get really easy speed up.  We don't have to write any loops on our own.  If you ever do loop through your mini-batch manually, you don't get GPU acceleration.   (*don't use for-loops here*)
 
+Type `??fit` to find out what this function does:  `fit(model, data, 3, opt, F.mse_loss)`  
 
+class break at 58:33  
+
+This is where the code is:  [model.py](https://github.com/fastai/fastai/blob/master/fastai/model.py)  
+```python
+    for epoch in tnrange(epochs, desc='Epoch'):
+        stepper.reset(True)
+        t = tqdm(iter(data.trn_dl), leave=False, total=len(data.trn_dl))
+        for (*x,y) in t:
+            batch_num += 1
+            for cb in callbacks: cb.on_batch_begin()
+            loss = stepper.step(V(x),V(y))
+            avg_loss = avg_loss * avg_mom + loss * (1-avg_mom)
+            debias_loss = avg_loss / (1 - avg_mom**batch_num)
+            t.set_postfix(loss=debias_loss)
+            stop=False
+            for cb in callbacks: stop = stop or cb.on_batch_end(debias_loss)
+            if stop: return
+ ```
 
 
