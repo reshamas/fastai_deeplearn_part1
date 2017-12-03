@@ -143,9 +143,8 @@ A:
 - this version will create a pandas dataframe, which needs to live in memory
 - can easily get 5 to 12 Gig instances on AWS, if you have CSV file > 5-12 Gig, then you'll have to save it as big ?hols array or save as a Dask dataframe
 
-#### 
-
-   
+#### [Initialization Of Deep Networks Case of Rectifiers](http://www.jefkine.com/deep/2016/08/08/initialization-of-deep-networks-case-of-rectifiers/)  
+Mathematics Behind Neural Network Weights Initialization - Part Three: In this third of a three part series of posts, we will attempt to go through the weight initialization algorithms as developed by various researchers taking into account influences derived from the evolution of neural network architecture and the activation function in particular.
    
 
 
