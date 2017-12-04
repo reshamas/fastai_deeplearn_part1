@@ -60,6 +60,11 @@ Both Curse of Dimensionality & No Free Lunch are largely false.
 - but, in the real world, that's not true; some techniques **do work**
 - ensembles of decision trees works well
 
+### sklearn
+- RandomForestRegressor is part of `sklearn`, `scikit learn`
+- Scikit learn is not the best, but perfectly good at nearly everything; popular library
+- next part of course (with Yannet), will look at different kind of decision tree ensemble, called Gradient Boosting Trees, XGBoost which is better than gradient boosting trees in scikit learn
+
 
 
 
