@@ -206,4 +206,9 @@ A: put rating through sigmoid function (which has range (0, 1) and multiply by 5
 ```python
 import torch.nn.functional as F
 ```
-
+`.cuda()` is we tell it manually to use the GPU
+```python
+wd=1e-4
+model = EmbeddingNet(n_users, n_movies).cuda()
+opt = optim.Adam(model.parameters(), 1e-2, weight_decay=wd)
+```
