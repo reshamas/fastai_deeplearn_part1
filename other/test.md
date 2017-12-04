@@ -120,5 +120,25 @@ In the future we can simply read it from this fast format.
 ```python
 df_raw = pd.read_feather('tmp/bulldozers-raw')
 ```
+## Run Random Forest
+- serial number (numbers): random forest works fine with these ID numbers that are not really continuous
+- random forests are trivially parellelizable
+- means it will split up data across CPUs and linearly scale
+- `n_jobs=-1` means create a separate job for each CPU that you have
+
+### Kaggle Competition
+- generally speaking, if you're in the top half of a Kaggle competition, you're doing well
+- so, here, with no thinking and using the defaults of the algorithm (random forest), we're in the top quarter of the competition
+- random forests are insanely powerful
+
+### HW
+- take as many Kaggle competitions as you can
+- try this process with Pandas set up
+- 
+
+
+
+
+
 
 
