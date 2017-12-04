@@ -24,11 +24,11 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 ## Notebook Source Code Access
 
 ### to look at documentation for code (or function)
-* <kbd> ? </kbd> + <kbd> function_name </kbd>  
+* <kbd> ? </kbd> + <kbd> function name </kbd>  
   * Example: <kbd> ?ImageClassifierData.from_paths </kbd>
   
 ### to look at source code for a function
-* <kbd> ?? </kbd>  look at source code
+* <kbd> ?? </kbd>  + <kbd> function name </kbd>   
   * Example:  <kbd> ??ImageClassifierData.from_paths </kbd>
 
 ### to find out where a particular function or class comes from
