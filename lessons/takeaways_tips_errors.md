@@ -24,3 +24,8 @@ conda update --all
     - interrupt kernel
     - reduce batch size
     - **RESTART kernel**!
+
+# Debugging
+Note from Jeremy:  
+Immediately after you get the error, type %debug in a cell to enter the debugger. Then use the standard python debugger commands to follow your code to see what’s happening. 
+
