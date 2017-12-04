@@ -32,7 +32,7 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
   * Example:  <kbd> ??ImageClassifierData.from_paths </kbd>
 
 ### to find out where a particular function or class comes from
-* type: <kbd> function name </kbd>, then <kbd>Shift + Enter </kbd>  
+* <kbd> function name </kbd>, then <kbd>Shift + Enter </kbd>  
   * Example of Input:  <kbd> ImageClassifierData </kbd> <kbd>Shift + Enter </kbd>
   * Example of Output: `fastai.dataset.ImageClassifierData`
 
