@@ -1,5 +1,11 @@
 
 # try 1 - random forests
+
+
+Notebook:  [lesson1-rf.ipynb](https://github.com/fastai/fastai/blob/master/courses/ml1/lesson1-rf.ipynb)  
+
+---
+
 https://www.kaggle.com/c/bluebook-for-bulldozers
 
 - ML should help us understand a dataset, not just make predictions about it.
@@ -65,7 +71,20 @@ Both Curse of Dimensionality & No Free Lunch are largely false.
 - Scikit learn is not the best, but perfectly good at nearly everything; popular library
 - next part of course (with Yannet), will look at different kind of decision tree ensemble, called Gradient Boosting Trees, XGBoost which is better than gradient boosting trees in scikit learn
 
+`from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier`  
+- RandomForestRegressor - predicts continuous variables  
+- RandomForestClassifier - predicts categorical variable
 
+## Convert to Pandas Categories
+The categorical variables are currently stored as strings, which is inefficient, and doesn't provide the numeric coding required for a random forest. Therefore we call train_cats to convert strings to pandas categories.  
+This is a fastai library function:  
+`train_cats(df_raw)`  
 
-
-
+## re-order Pandas categories
+```python
+df_raw.UsageBand.cat.categories
+Out[9]:
+Index(['High', 'Low', 'Medium'], dtype='object')
+In [10]:
+df_raw.UsageBand.cat.set_categories(['High', 'Medium', 'Low'], ordered=True, inplace=True)
+```
