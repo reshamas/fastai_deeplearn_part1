@@ -201,4 +201,7 @@ This is where the code is:  [model.py](https://github.com/fastai/fastai/blob/mas
             if stop: return
  ```
 
+```python
+import torch.nn.functional as F
+```
 
