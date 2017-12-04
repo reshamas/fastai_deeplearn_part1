@@ -11,3 +11,5 @@ If you use a Python variable inside a Jupyter shell command, need to put it insi
 
 #### list number of lines in a file
 `wc -l file.csv`  
+  
+`-h` makes many commands more readable.
