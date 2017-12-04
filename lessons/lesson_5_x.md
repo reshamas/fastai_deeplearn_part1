@@ -216,5 +216,6 @@ opt = optim.Adam(model.parameters(), 1e-2, weight_decay=wd)
 ### Looking at Code
 [column_data.py](https://github.com/fastai/fastai/blob/master/fastai/column_data.py)
 
+## Neural Net version of Collaborative Filtering
 
 
