@@ -201,7 +201,8 @@ This is where the code is:  [model.py](https://github.com/fastai/fastai/blob/mas
             if stop: return
 ```
 Q: what if we want to squish the ratings between 0 and 5?  
-A: put rating through sigmoid function (which has range (0, 1) and multiply by 5; or multiply by 4 and add 1)
+A: put rating through sigmoid function (which has range (0, 1) and multiply by 5; or multiply by 4 and add 1)  
+Note:  it is good practice to do this, set range between (min_rating, max_rating).  
 
 ```python
 import torch.nn.functional as F
@@ -212,3 +213,8 @@ wd=1e-4
 model = EmbeddingNet(n_users, n_movies).cuda()
 opt = optim.Adam(model.parameters(), 1e-2, weight_decay=wd)
 ```
+### Looking at Code
+[column_data.py](https://github.com/fastai/fastai/blob/master/fastai/column_data.py)
+
+
+
