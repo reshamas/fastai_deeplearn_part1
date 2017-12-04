@@ -105,3 +105,20 @@ Drive_System                0.739829
 Enclosure                   0.000810
 ```  
 
+## save to feather format
+- But let's save this file for now, since it's already in format can we be stored and accessed efficiently.
+- saves to disk the same way it appears in RAM
+- **feather** is fairly new
+- fastest way to save to disk and fastest way to read it back  
+```python
+os.makedirs('tmp', exist_ok=True)
+df_raw.to_feather('tmp/bulldozers-raw')
+```  
+So, then we don't have to re-run everything from start of notebook.  
+#### Pre-processing
+In the future we can simply read it from this fast format.
+```python
+df_raw = pd.read_feather('tmp/bulldozers-raw')
+```
+
+
