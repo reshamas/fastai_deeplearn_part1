@@ -47,6 +47,19 @@ output:
 - it's a great place to start
 - if your random forest doesn't work, it's a sign there is something wrong with the data
 
+Both Curse of Dimensionality & No Free Lunch are largely false.  
+
+#### Curse of Dimensionality - idea that the more columns you have, it creates more columns that are empty; that the more dimensions you have, the more they sit on the edge; in theory, distance between points is much less meaningful.  
+- points **do** still have distance from each other
+- in the 90's, theory took over machine learning
+- we lost a decade of real practical development with these theories
+- in practice, building models on lots and lots of columns works well
+
+#### No Free Lunch Theorem
+- there is no type of model that works well for any kind of dataset
+- but, in the real world, that's not true; some techniques **do work**
+- ensembles of decision trees works well
+
 
 
 
