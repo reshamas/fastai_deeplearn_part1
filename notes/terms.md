@@ -8,10 +8,6 @@
 `wds` = weight decays  
 
 ---
-# Unix
-scp :  secure copy  
-
----
 # Deep Learning Terms
 
 ### SoTA (State-of-the-Art)
