@@ -1,5 +1,5 @@
 
-# try 1
+# try 1 - random forests
 https://www.kaggle.com/c/bluebook-for-bulldozers
 
 - ML should help us understand a dataset, not just make predictions about it.
@@ -30,4 +30,24 @@ df_raw = pd.read_csv(f'{PATH}Train.csv', low_memory=False,
 `f'Hello {name.upper()}, you are {age}'`  
 output:  
 >Hello, Jeremy, you are 43  
+
+### Random Forest
+- universal machine learning technique
+- way of predicting something of any kind (dog/cat, price)
+- can predict a categorical or continuous variable
+- columns can be of any kind (pixel data, zip codes, revenues)
+- in general, it doesn't overfit
+- easy to stop it from overfitting
+- don't need a separate validation set
+- has few, if any statistical assumptions
+  - doesn't assume data is normally distributed
+  - doesn't assume relationships are linear
+  - don't need to specify interactions
+- requires few pieces of feature engineering (don't have to take log of data)
+- it's a great place to start
+- if your random forest doesn't work, it's a sign there is something wrong with the data
+
+
+
+
 
