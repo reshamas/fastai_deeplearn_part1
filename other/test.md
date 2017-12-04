@@ -90,3 +90,18 @@ df_raw.UsageBand.cat.set_categories(['High', 'Medium', 'Low'], ordered=True, inp
 ```  
 In the background, the code is 0, 1, 2 for the categories which is what is used in Random Forest.  -1 is assigned to NA.
 
+## get percent of missing values for each column
+We're still not quite done - for instance we have lots of missing values, wish we can't pass directly to a random forest.
+`display_all(df_raw.isnull().sum().sort_index()/len(df_raw))`  
+```bash
+Backhoe_Mounting            0.803872
+Blade_Extension             0.937129
+Blade_Type                  0.800977
+Blade_Width                 0.937129
+Coupler                     0.466620
+Coupler_System              0.891660
+Differential_Type           0.826959
+Drive_System                0.739829
+Enclosure                   0.000810
+```  
+
