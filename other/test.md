@@ -21,5 +21,6 @@ Python 3.6 format string:
 df_raw = pd.read_csv(f'{PATH}Train.csv', low_memory=False, 
                      parse_dates=["saledate"])
 ```                     
+`low_memory=False` make it read more of the file to decide what the types are  
 
 
