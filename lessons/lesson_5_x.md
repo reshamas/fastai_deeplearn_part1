@@ -199,7 +199,9 @@ This is where the code is:  [model.py](https://github.com/fastai/fastai/blob/mas
             stop=False
             for cb in callbacks: stop = stop or cb.on_batch_end(debias_loss)
             if stop: return
- ```
+```
+Q: what if we want to squish the ratings between 0 and 5?  
+A: put rating through sigmoid function (which has range (0, 1) and multiply by 5; or multiply by 4 and add 1)
 
 ```python
 import torch.nn.functional as F
