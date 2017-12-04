@@ -34,7 +34,10 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 ### to find out where a particular function or class comes from
 * <kbd> function name </kbd>, then <kbd>Shift + Enter </kbd>  
   * Example of Input:  <kbd> ImageClassifierData </kbd> <kbd>Shift + Enter </kbd>
-  * Example of Output: `fastai.dataset.ImageClassifierData`
+    * Example of Output: `fastai.dataset.ImageClassifierData`
+  * Example of Input:  <kbd> display </kbd> <kbd>Shift + Enter </kbd>
+    * Example of Output: `<function IPython.core.display.display>`
+    
 
 ### to find out what parameters that the function can take, also shows default parameter options
 * Within function, <kbd>Shift + Tab </kbd> 
