@@ -87,4 +87,6 @@ Out[9]:
 Index(['High', 'Low', 'Medium'], dtype='object')
 In [10]:
 df_raw.UsageBand.cat.set_categories(['High', 'Medium', 'Low'], ordered=True, inplace=True)
-```
+```  
+In the background, the code is 0, 1, 2 for the categories which is what is used in Random Forest.  -1 is assigned to NA.
+
