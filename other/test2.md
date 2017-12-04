@@ -9,3 +9,6 @@ Notebook:  [lesson1-rf.ipynb](https://github.com/fastai/fastai/blob/master/cours
 ln -s ../../fastai ./
 ```  
 where `./` is the current directory
+  
+  
+Evaluation Metric is:  root mean squared log error  
