@@ -61,3 +61,7 @@ movie_pca = pca.fit(movie_emb.T).components_
 - nowadays, **unsupervised learning** is really **fake task labeled learning**
 - we need something where the type of relationships it's going to learn are the types we care about.
 
+## Fake Tasks
+- in computer vision, let's take an image and use an unusal data augmentation, such as recolor them too much, and ask neural net to predict augmented and non-augmented image
+
+
