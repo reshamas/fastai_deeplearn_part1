@@ -6,7 +6,9 @@ https://www.youtube.com/watch?v=uXt9vwlAPjc
 
 [Wiki: Lesson 6](   )  
 
-Notebooks:  [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb)
+Notebooks:  
+* [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb)
+* [lesson6-rnn.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-rnn.ipynb)
 
 ## Blogs to Review
 
