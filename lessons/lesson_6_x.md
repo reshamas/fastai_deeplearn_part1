@@ -52,5 +52,6 @@ movie_pca = pca.fit(movie_emb.T).components_
     - example:  replace "cat" with "justice"
     - sentence:  the cute little **CAT** sat on the fuzzy mat ---> **assign label = 1**
     - sentence:  the cute little **JUSTICE** sat on the fuzzy mat ---> **assign label = 0**
+    - ! now we have something we can build a machine learning model on
     
     
