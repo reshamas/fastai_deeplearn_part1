@@ -218,4 +218,7 @@ opt = optim.Adam(model.parameters(), 1e-2, weight_decay=wd)
 
 ## Neural Net version of Collaborative Filtering
 
+## Derivatives
+- Backpropagation is the same as "apply the chain rule to all the layers"
+- ReLU ---> same as saying replace the negatives with zero!
 
