@@ -1,7 +1,6 @@
 # Lesson 6
 
-[Livestream: Lesson 6](    )
-https://www.youtube.com/watch?v=uXt9vwlAPjc
+[Livestream: Lesson 6](https://www.youtube.com/watch?v=sHcLkfRrgoQ&feature=youtu.be)
 
 
 [Wiki: Lesson 6](   )  
