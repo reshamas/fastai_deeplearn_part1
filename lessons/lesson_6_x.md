@@ -63,5 +63,8 @@ movie_pca = pca.fit(movie_emb.T).components_
 
 ## Fake Tasks
 - in computer vision, let's take an image and use an unusal data augmentation, such as recolor them too much, and ask neural net to predict augmented and non-augmented image
+- use the best fake task you can
+- a bad "fake task" is an **auto-encoder**; reconstruct my input using neural net with some activations deleted; most uncreative task, but it works surprisingly well
+
 
 
