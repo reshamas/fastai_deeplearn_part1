@@ -226,3 +226,8 @@ SGD w/momentum vs ADAM
 student, Anand Saha, is working on prototype ADAMw, confirming he is getting faster performance and better accuracy.  
 
 ### Adaptive Learning Rate
+
+### Weight Decay
+- helpful regularizer
+
+
