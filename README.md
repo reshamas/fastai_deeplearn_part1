@@ -60,7 +60,8 @@ Email:   rs2715@stern.nyu.edu
 ## [Technical Tools](tools/)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
 * [tmux on AWS](tools/tmux.md)
-* [Kaggle CLI](tools/kaggle_cli.md)
+* [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
+* [Download data using Chrome and wget](tools/download_data_chrome_curlwget.md)
 * [Jupyter Notebook](tools/jupyter_notebook.md)
 
 ## Other Resources
