@@ -230,4 +230,9 @@ student, Anand Saha, is working on prototype ADAMw, confirming he is getting fas
 ### Weight Decay
 - helpful regularizer
 
+## Homework
+- practice the thing you're least familiar with
+
+Watch end of video a few times to understand  
+
 
