@@ -18,5 +18,8 @@ Notebooks:
 
 ## Summary of Course so Far
 - our penultimate lesson
-- here's the code you have to write
-- high level description of what code is doing 
+
+
+### Dimensions
+- we can compress high dimensional spaces to a few dimensions, using PCA (Principal Component Analysis)
+- 
