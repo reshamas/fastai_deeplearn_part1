@@ -39,4 +39,10 @@ movie_pca = pca.fit(movie_emb.T).components_
 - you can train a neural net with embeddings; everyone else in organization can chuck that into GBM or random forests or KNN
 - can give power of neural nets to everyone in organization without everyone having to do fastai table
 - embedding can be in SQL table
+- GBM and random forests learn a lot quicker than neural nets do
+- visualizing embeddings can be interesting
+  - first, see things you expect to see
+  - then, try seeing things that were not expected
+  
+  
 - 
