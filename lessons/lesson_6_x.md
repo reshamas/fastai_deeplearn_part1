@@ -50,7 +50,7 @@ movie_pca = pca.fit(movie_emb.T).components_
   - what they did in Word2vec is:  here's a sentence with 11 words in it: _ _ _ _ _ _ _ _ _ _ _ 
     - let's delete the middle word and replace it with a random word
     - example:  replace "cat" with "justice"
-    - sentence:  the cute little CAT sat on the fuzzy mat ---> assign label = 1
-    - sentence:  the cute little JUSTICE sat on the fuzzy mat ---> assign label = 0
+    - sentence:  the cute little **CAT** sat on the fuzzy mat ---> **assign label = 1**
+    - sentence:  the cute little **JUSTICE** sat on the fuzzy mat ---> **assign label = 0**
     
     
