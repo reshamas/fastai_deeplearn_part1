@@ -2,8 +2,7 @@
 
 [Livestream: Lesson 6](https://www.youtube.com/watch?v=sHcLkfRrgoQ&feature=youtu.be)
 
-
-[Wiki: Lesson 6](   )  
+[Wiki: Lesson 6](http://forums.fast.ai/t/wiki-lesson-6/8629)
 
 Notebooks:  
 * [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb)
