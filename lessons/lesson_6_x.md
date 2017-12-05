@@ -53,5 +53,11 @@ movie_pca = pca.fit(movie_emb.T).components_
     - sentence:  the cute little **CAT** sat on the fuzzy mat ---> **assign label = 1**
     - sentence:  the cute little **JUSTICE** sat on the fuzzy mat ---> **assign label = 0**
     - ! now we have something we can build a machine learning model on
+    - quick, shallow learning, end up with embeddings with linear characteristics
     
-    
+## NLP
+- for something more predictive, use neural net
+- we need to move past Word2Vec and GLoVe, these linear based methods; these embeddings are way less predictive than with embeddings learned with deep models
+- nowadays, **unsupervised learning** is really **fake task labeled learning**
+- we need something where the type of relationships it's going to learn are the types we care about.
+
