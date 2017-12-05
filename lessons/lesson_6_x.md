@@ -15,6 +15,8 @@ Notebooks:
 * [Optimization for Deep Learning Highlights in 2017](http://ruder.io/deep-learning-optimization-2017/index.html) by Sebastian Ruder (researcher, not USF student)  
   - this blog covers SGD, ADAM, weight decays :red_circle: (read it!)
 
+## Papers to Review
+* [Entity Embeddings of Categorical Variables](https://www.slideshare.net/sermakarevich/entity-embeddings-of-categorical-variables)
 
 ## Summary of Course so Far
 - our penultimate lesson
@@ -22,4 +24,13 @@ Notebooks:
 
 ### Dimensions
 - we can compress high dimensional spaces to a few dimensions, using PCA (Principal Component Analysis)
-- 
+- PCA is a linear technique
+- Rachel's computational linear algebra covers PCA
+- PCA similar to SVD (singular value decomposition)
+- find 3 linear combinations of the 50 dimensions which capture as much of the variation as possible, but different from each other
+```python
+from sklearn.decomposition import PCA
+pca = PCA(n_components=3)
+movie_pca = pca.fit(movie_emb.T).components_
+```
+
