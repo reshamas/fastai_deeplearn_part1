@@ -34,3 +34,9 @@ pca = PCA(n_components=3)
 movie_pca = pca.fit(movie_emb.T).components_
 ```
 
+### MAPE (Mean Average Percent Error)
+- can give folks at work random forest with embeddings without using neural networks
+- you can train a neural net with embeddings; everyone else in organization can chuck that into GBM or random forests or KNN
+- can give power of neural nets to everyone in organization without everyone having to do fastai table
+- embedding can be in SQL table
+- 
