@@ -11,10 +11,5 @@
 ## To Explore Later
 [byobu](http://byobu.co) Byobu is a GPLv3 open source text-based window manager and terminal multiplexer.
 
-## Competitions
 
-* [Kaggle](https://www.kaggle.com/competitions)
-* [crowdAI](https://www.crowdai.org)  
-* [Space Apps Challenges](https://2017.spaceappschallenge.org/challenges/)
-* [Datahacks](https://datahack.analyticsvidhya.com/contest/practice-problem-age-detection/)
 
