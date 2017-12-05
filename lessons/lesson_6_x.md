@@ -42,7 +42,12 @@ movie_pca = pca.fit(movie_emb.T).components_
 - GBM and random forests learn a lot quicker than neural nets do
 - visualizing embeddings can be interesting
   - first, see things you expect to see
-  - then, try seeing things that were not expected
-  
-  
-- 
+  - then, try seeing things that were not expected (some clusterings)
+- Q:  skipgrams, a type of embedding?
+  - A:  skipgrams for NLP
+  - say we have an unlabeled dataset, such as Google Books
+  - the best way, in my opinion to turn an unlabeled (or unsupervised) problem into a labeled problem is to invent some labels
+  - what they did in Word2vec is:  here's a sentence with 11 words in it: _ _ _ _ _ _ _ _ _ _ _ 
+    - let's delete the middle word and replace it with a random word
+    - example:  replace "cat" with "justice"
+    
