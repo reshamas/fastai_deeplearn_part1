@@ -63,6 +63,7 @@ Email:   rs2715@stern.nyu.edu
 * [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
 * [Download data using Chrome and wget](tools/download_data_chrome_curlwget.md)
 * [Jupyter Notebook](tools/jupyter_notebook.md)
+* [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
 
 ## Other Resources
 * [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
