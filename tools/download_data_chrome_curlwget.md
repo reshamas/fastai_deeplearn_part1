@@ -22,7 +22,4 @@ All the cookies, headers needed to download header are saved in the syntax.  Als
 Option 1:  `data` directory could be a sub-directory of where your Jupyter Notebook is located.  
 Option 2:  Use symlinks
 
-)
-
-
 
