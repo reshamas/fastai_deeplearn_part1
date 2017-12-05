@@ -13,6 +13,9 @@ Notebooks:
 * [Optimization for Deep Learning Highlights in 2017](http://ruder.io/deep-learning-optimization-2017/index.html) by Sebastian Ruder (researcher, not USF student)  
   - this blog covers SGD, ADAM, weight decays :red_circle: (read it!)
 
+* [Deep Learning #4: Why You Need to Start Using Embedding Layers](https://towardsdatascience.com/deep-learning-4-embedding-layers-f9a02d55ac12)
+
+
 ## Papers to Review
 * [Entity Embeddings of Categorical Variables](https://www.slideshare.net/sermakarevich/entity-embeddings-of-categorical-variables)
 
