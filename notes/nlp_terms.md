@@ -12,6 +12,14 @@ VBD = verb
 ### BLEU (bilingual evaluation understudy) 
 is an algorithm for evaluating the quality of text which has been machine-translated from one natural language to another. Quality is considered to be the correspondence between a machine's output and that of a human: "the closer a machine translation is to a professional human translation, the better it is" – this is the central idea behind BLEU.[1][2] BLEU was one of the first metrics to achieve a high correlation with human judgements of quality,[3][4] and remains one of the most popular automated and inexpensive metrics.
 
+### Word Embedding
+Word Embedding turns text into numbers.
+
+#### Types of Word Embedding
+1.  Bag of Words - each word is represented in the matrix, results in sparse matrices
+2.  GloVe - counts of co-occurrences
+3.  Word2Vec
+  - These models are shallow, two-layer neural networks that are trained to reconstruct linguistic contexts of words. Word2vec takes as its input a large corpus of text and produces a vector space, typically of several hundred dimensions, with each unique word in the corpus being assigned a corresponding vector in the space. Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.
 
 ### IE (Information Extraction)
 IE turns the unstructured information embedded in texts into structured data. 
