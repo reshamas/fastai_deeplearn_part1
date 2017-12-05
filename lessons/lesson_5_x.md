@@ -225,3 +225,4 @@ opt = optim.Adam(model.parameters(), 1e-2, weight_decay=wd)
 SGD w/momentum vs ADAM  
 student, Anand Saha, is working on prototype ADAMw, confirming he is getting faster performance and better accuracy.  
 
+### Adaptive Learning Rate
