@@ -233,6 +233,6 @@ student, Anand Saha, is working on prototype ADAMw, confirming he is getting fas
 ## Homework
 - practice the thing you're least familiar with
 
-Watch end of video a few times to understand  
+Watch end of video a few times to understand, at 01:30  
 
 
