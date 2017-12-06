@@ -8,6 +8,7 @@ Notebooks:
 * [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb)
 * [lesson6-rnn.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-rnn.ipynb)
 * [lesson3-rossman.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb)
+* https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-sgd.ipynb 
 
 ## Blogs to Review
 
@@ -77,6 +78,7 @@ movie_pca = pca.fit(movie_emb.T).components_
 - shallow learning means it doesn't have a hidden layer
 
 ## Recurrent Neural Networks
+https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-sgd.ipynb  
 
 
-
+* [lesson6-rnn.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-rnn.ipynb)
