@@ -17,7 +17,7 @@ Sample data:  https://www.kaggle.com/c/bluebook-for-bulldozers
 ## Setting up the Data Directory
 - <kbd> mkdir bulldozers </kbd>
 - <kbd> mv bulldozers.zip bulldozers/ </kbd>
-- <kbd> sudo apt install unzip or brew install unzip </kbd>
+- <kbd> sudo apt install unzip </kbd> or if on Mac:  <kbd> brew install unzip </kbd>
 - <kbd> cd bulldozers </kbd> 
 - <kbd> unzip bulldozers.zip </kbd>
 
