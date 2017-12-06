@@ -69,7 +69,11 @@ movie_pca = pca.fit(movie_emb.T).components_
 - a bad "fake task" is an **auto-encoder**; reconstruct my input using neural net with some activations deleted; most uncreative task, but it works surprisingly well
 - we may cover this unsupervised learning in Part 2, if there is interest
 
-https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb
+`41:00` back to Rossman notebook:  
+- https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb
+- lot of details of this notebook are covered in the ML course
 
-
+## Shallow Learning vs Deep Learning
+- shallow learning means it doesn't have a hidden layer
+- 
 
