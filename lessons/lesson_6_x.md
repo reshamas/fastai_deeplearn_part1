@@ -7,6 +7,7 @@
 Notebooks:  
 * [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb)
 * [lesson6-rnn.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-rnn.ipynb)
+* [lesson3-rossman.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb)
 
 ## Blogs to Review
 
@@ -66,6 +67,9 @@ movie_pca = pca.fit(movie_emb.T).components_
 - in computer vision, let's take an image and use an unusal data augmentation, such as recolor them too much, and ask neural net to predict augmented and non-augmented image
 - use the best fake task you can
 - a bad "fake task" is an **auto-encoder**; reconstruct my input using neural net with some activations deleted; most uncreative task, but it works surprisingly well
+- we may cover this unsupervised learning in Part 2, if there is interest
+
+https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb
 
 
 
