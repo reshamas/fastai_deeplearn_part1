@@ -73,7 +73,10 @@ movie_pca = pca.fit(movie_emb.T).components_
 - https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb
 - lot of details of this notebook are covered in the ML course
 
-## Shallow Learning vs Deep Learning
+#### Shallow Learning vs Deep Learning
 - shallow learning means it doesn't have a hidden layer
-- 
+
+## Recurrent Neural Networks
+
+
 
