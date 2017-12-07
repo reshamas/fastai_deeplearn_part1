@@ -87,5 +87,5 @@ https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-sgd.ipynb
 - Machine Learning course - building stuff up from the foundations  
 - Deep Learning course - best practices, top down  
 - Lessons 9, 10, 11 of ML course:  create a neural net layer from scratch
-
+- 
 
