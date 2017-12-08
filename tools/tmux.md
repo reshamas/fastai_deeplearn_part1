@@ -25,7 +25,7 @@
 ---
 ## <a name="section-b"></a>Part 2.  Getting Set Up
 
-#### Step 1:  A Background
+### Step 1:  A Background
 Note 1:  I am using fastai deep learning AMI  
 Note 2:  tmux is already installed.  
 Note 3:  **On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while selecting to copy to your local clipboard.**  
@@ -34,7 +34,7 @@ Note 4:  If tmux is not installed:
 - Linux:  <kbd> sudo apt-get install tmux </kbd>
 - see the Resource above for instructions
   
-#### Step 2:  Log into AWS Instance
+### Step 2:  Log into AWS Instance
 Note 1:  Log into [AWS Console](http://console.aws.amazon.com/ ) and check that instance is running  
 Note 2:  Ensure I am in the appropriate directory  
 
@@ -68,7 +68,7 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 (fastai) ubuntu@ip-172-31-10-243:~$ 
 ```
 
-#### update packages  
+### update packages  
 <kbd> sudo apt-get update </kbd>   
 >my example  
 ```bash
