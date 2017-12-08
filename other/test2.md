@@ -71,4 +71,9 @@ print_score(m)
 ## Grid Search
 - pass in list of hyperparameters we want to tune and values we want to try
 
+## Subsampling
+- The basic idea is this: rather than limit the total amount of data that our model can access, let's instead limit it to a different random subset per tree. That way, given enough trees, the model can still see all the data, but for each individual tree it'll be just as fast as if we had cut down our dataset as before.
+```python
+set_rf_samples(20000)
+```
 
