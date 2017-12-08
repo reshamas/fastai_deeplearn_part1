@@ -80,3 +80,21 @@ print_score(m)
 set_rf_samples(20000)
 ```
 
+## Important Takeaway / Tip
+- very few people in industry or academia do this
+- most people run all of their models on all of their data all of the time using their best parameters
+- do most of your models on a large enough sample size so your accuracy is reasonable, that takes a small number of seconds to train
+
+## Tree Building Parameters
+- `min_samples_leaf=1` this is the default
+- `min_samples_leaf=3` says stop training the tree further when your leaf node has 3 or less samples in; the numbers 1, 3, 5, 10, and 25 work well
+- `max_features="auto"` this is the default; If “auto”, then max_features=sqrt(n_features)
+- `max_features=0.5` the less correlated your trees are with each other, the better
+
+- 
+- 
+- 
+
+
+
+
