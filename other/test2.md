@@ -74,6 +74,8 @@ print_score(m)
 ## Subsampling
 - The basic idea is this: rather than limit the total amount of data that our model can access, let's instead limit it to a different random subset per tree. That way, given enough trees, the model can still see all the data, but for each individual tree it'll be just as fast as if we had cut down our dataset as before.
 - no dataset is too big for this technique (ex: 120 million rows for grocery store data of Kaggle competition)
+- need to set `oob_score = False` if using subsample approach of `set_rf_samples(20000)`
+- to turn it off, do `reset_rf_samples()`
 ```python
 set_rf_samples(20000)
 ```
