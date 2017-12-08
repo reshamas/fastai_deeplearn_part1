@@ -68,7 +68,7 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1039-aws x86_64)
 (fastai) ubuntu@ip-172-31-10-243:~$ 
 ```
 
-update packages  
+#### update packages  
 <kbd> sudo apt-get update </kbd>   
 >my example  
 ```bash
