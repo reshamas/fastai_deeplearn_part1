@@ -29,10 +29,10 @@
 Note 1:  I am using fastai deep learning AMI  
 Note 2:  tmux is already installed.  
 Note 3:  **On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while selecting to copy to your local clipboard.**  
-Note 4:  If tmux is not installed:  
-  - Mac:  <kbd> brew install tmux </kbd>
-  - Linux:  <kbd> sudo apt-get install tmux </kbd>
-  - see the Resource above for instructions
+Note 4:  If tmux is not installed:
+- Mac:  <kbd> brew install tmux </kbd>
+- Linux:  <kbd> sudo apt-get install tmux </kbd>
+- see the Resource above for instructions
   
 #### Step 2:  Log into AWS Instance
 Note 1:  Log into [AWS Console](http://console.aws.amazon.com/ ) and check that instance is running  
