@@ -35,7 +35,7 @@ sum{ [(ln(act) - ln(pred)]^2 }
 - Testing (second hold out set): I've done modeling, now I'll see how it works
 
 ## Random Forest Scores output
-[xxx, xxx, training R^2, validation R^2]
+[training RMSE , validation RMSE, training R^2, validation R^2]
 ```bash
 [0.1026724559118164, 0.33553753413792303, 0.9786895444439101, 0.79893791069374753]
 ```
