@@ -204,4 +204,8 @@ I opened the [Lesson 1 notebook](http://localhost:8888/notebooks/courses/dl1/les
 ### Note on Tmux
 On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while selecting to copy to your local clipboard.
 
+---
+
+## References
+* [AWS Pricing Worksheet](https://calculator.s3.amazonaws.com/index.html)  
 
