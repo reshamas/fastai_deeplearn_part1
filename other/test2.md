@@ -23,3 +23,6 @@ sum{ [(ln(act) - ln(pred)]^2 }
 - use function `proc_df` to replace categories with their numeric codes, handle missing continuous values, and split the dependent variable into a separate variable.
   >df, y, nas = proc_df(df_raw, 'SalePrice')
   - for continuous variables, missing values were replaced with the median
+
+## R^2
+- if you get an R^2 that is negative, it means your model is worse than predicting the mean
