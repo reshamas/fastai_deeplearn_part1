@@ -39,3 +39,9 @@ sum{ [(ln(act) - ln(pred)]^2 }
 ```bash
 [0.1026724559118164, 0.33553753413792303, 0.9786895444439101, 0.79893791069374753]
 ```
+
+## Bagging
+- statistical technique to create a random forest
+- Bag of Little Bootstraps, Michael Jordan
+  - create 5 different models which are not correlated --> they offer different insights
+  
