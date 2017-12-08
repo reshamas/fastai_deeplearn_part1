@@ -29,6 +29,7 @@ sum{ [(ln(act) - ln(pred)]^2 }
 - R^2 is not necessarily what you're trying to optimize
 - R^2 how good is your model vs the naive mean model?
 
-
+## Test and Validation Sets
 - Creating a validation set is the most important thing you'll do in machine learning.
-- 
+- Test Set (first hold out set): use this to determine what hyperparameters to use
+- Validation (second hold out set): I've done modeling, now I'll see how it works
