@@ -31,5 +31,5 @@ sum{ [(ln(act) - ln(pred)]^2 }
 
 ## Test and Validation Sets
 - Creating a validation set is the most important thing you'll do in machine learning.
-- Test Set (first hold out set): use this to determine what hyperparameters to use
-- Validation (second hold out set): I've done modeling, now I'll see how it works
+- Validation Set (first hold out set): use this to determine what hyperparameters to use
+- Testing (second hold out set): I've done modeling, now I'll see how it works
