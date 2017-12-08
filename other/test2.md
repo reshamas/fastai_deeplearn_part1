@@ -34,6 +34,13 @@ sum{ [(ln(act) - ln(pred)]^2 }
 - Validation Set (first hold out set): use this to determine what hyperparameters to use
 - Testing (second hold out set): I've done modeling, now I'll see how it works
 
+## Random Forest code
+- `n_estimators` = number of trees
+- `n_jobs=-1` --> means create a separate job for each CPU that you have  
+```python
+m = RandomForestRegressor(n_estimators=20, n_jobs=-1)
+```
+
 ## Random Forest Scores output
 [training RMSE , validation RMSE, training R^2, validation R^2]
 ```bash
@@ -60,4 +67,8 @@ print_score(m)
 ```bash
 [0.10198464613020647, 0.2714485881623037, 0.9786192457999483, 0.86840992079038759, 0.84831537630038534]
 ```
+
+## Grid Search
+- pass in list of hyperparameters we want to tune and values we want to try
+
 
