@@ -26,3 +26,4 @@ sum{ [(ln(act) - ln(pred)]^2 }
 
 ## R^2
 - if you get an R^2 that is negative, it means your model is worse than predicting the mean
+- R^2 is not necessarily what you're trying to optimize
