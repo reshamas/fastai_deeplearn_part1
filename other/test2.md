@@ -33,3 +33,9 @@ sum{ [(ln(act) - ln(pred)]^2 }
 - Creating a validation set is the most important thing you'll do in machine learning.
 - Validation Set (first hold out set): use this to determine what hyperparameters to use
 - Testing (second hold out set): I've done modeling, now I'll see how it works
+
+## Random Forest Scores output
+[xxx, xxx, training R^2, validation R^2]
+```bash
+[0.1026724559118164, 0.33553753413792303, 0.9786895444439101, 0.79893791069374753]
+```
