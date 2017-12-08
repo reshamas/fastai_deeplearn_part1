@@ -50,7 +50,7 @@ sum{ [(ln(act) - ln(pred)]^2 }
 - pick out n rows with replacement
 
 ## Out-of-Bag (OOB) Score
-- 
+- very useful when we have only a small dataset
 ```python
 m = RandomForestRegressor(n_estimators=40, n_jobs=-1, oob_score=True)
 m.fit(X_train, y_train)
