@@ -18,6 +18,6 @@ sum{ [(ln(act) - ln(pred)]^2 }
 ## Data Process  
 - we need all of our columns to be numbers
 - use function `add_datepart` to replace a date variable with all of its date parts
-- use function `train_cats` to convert strings to pandas categories
+- use function `train_cats` to convert strings to pandas categories (Notice: data type is not `string`, but `category`)
 - use function `set_categories` to re-order categories  
 
