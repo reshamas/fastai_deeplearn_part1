@@ -48,3 +48,16 @@ sum{ [(ln(act) - ln(pred)]^2 }
  
 ## Bootstrapping
 - pick out n rows with replacement
+
+## Out-of-Bag (OOB) Score
+- 
+```python
+m = RandomForestRegressor(n_estimators=40, n_jobs=-1, oob_score=True)
+m.fit(X_train, y_train)
+print_score(m)
+```
+[training RMSE , validation RMSE, training R^2, validation R^2, OOB R^2]
+```bash
+[0.10198464613020647, 0.2714485881623037, 0.9786192457999483, 0.86840992079038759, 0.84831537630038534]
+```
+
