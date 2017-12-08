@@ -15,7 +15,7 @@ where `./` is the current directory
 Evaluation Metric is:  root mean squared log error  
 sum{ [(ln(act) - ln(pred)]^2 }  
 
-Process  
+## Data Process  
 - we need all of our columns to be numbers
-- replace a data variable with all of its date parts: function `add_datepart`
-- 
+- use function `add_datepart` to replace a date variable with all of its date parts
+- use function `train_cats` to convert strings to pandas categories
