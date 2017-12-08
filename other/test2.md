@@ -44,4 +44,6 @@ sum{ [(ln(act) - ln(pred)]^2 }
 - statistical technique to create a random forest
 - Bag of Little Bootstraps, Michael Jordan
   - create 5 different models which are not correlated --> they offer different insights
-  
+ 
+## Bootstrapping
+- pick out n rows with replacement
