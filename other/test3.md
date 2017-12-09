@@ -43,6 +43,7 @@ df_trn, y_trn, nas = proc_df(df_raw, 'SalePrice')
 - median of missing values may be different in test set than in training set
 - `nas`:  Jeremy changed `proc_df` so it returns "NAs"; `nas` is a dictionary where keys are the names of the columns with missing values and the values of the dictionary are medians
 - you can pass `nas` as an additional argument to `proc_df` and it will make sure it uses those particular columns and gives those medians
+- Jeremy will update the rest of course notebooks to assign third output of "nas"
 - 
 
 
