@@ -6,6 +6,7 @@ Notebook:  [lesson1-rf.ipynb](https://github.com/fastai/fastai/blob/master/cours
 
 ---
 
+## Getting data using `curl`
 https://www.kaggle.com/c/bluebook-for-bulldozers
 
 - ML should help us understand a dataset, not just make predictions about it.
