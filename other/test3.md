@@ -86,6 +86,10 @@ types = {'id': 'int64',
 - this dataset has 125 million rows
 - use `head` function to look at small amount of data; determine the data types and set it up in a dictionary called "types" (see above)
 - can now read in data in less than 2 minutes
+```python
+%%time
+df_all = pd.read_csv(f'{PATH}train.csv', parse_dates = ['date'], dtype=types, infer_datetime_format = True)
+```
 
 
 
