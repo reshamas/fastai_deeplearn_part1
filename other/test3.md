@@ -21,8 +21,12 @@ Q:  When do I know to use random forests?
 A:  It's always worth trying.  
 
 Q:  In what situations should I try other things as well?
-A:  For unstructured data, such as NLP or images, will want to use deep learning  
-A:  will also want to use collaborative filtering  
+A:  For **unstructured data**, such as audio, NLP or images, will want to use deep learning  
+A:  Outside of that, will also want to use collaborative filtering modeling  (neither Random Forests or Deep Learning)  
+
+
+
+
 
 
 
