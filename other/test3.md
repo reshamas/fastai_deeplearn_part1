@@ -85,6 +85,7 @@ types = {'id': 'int64',
 ### Process
 - this dataset has 125 million rows
 - use `head` function to look at small amount of data; determine the data types and set it up in a dictionary called "types" (see above)
+  - or read in small dataset and let pandas figure it out for you
 - can now read in data in less than 2 minutes
 ```python
 %%time
