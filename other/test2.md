@@ -88,12 +88,9 @@ set_rf_samples(20000)
 ## Tree Building Parameters
 - `min_samples_leaf=1` this is the default
 - `min_samples_leaf=3` says stop training the tree further when your leaf node has 3 or less samples in; the numbers 1, 3, 5, 10, and 25 work well
-- `max_features="auto"` this is the default; If “auto”, then max_features=sqrt(n_features)
-- `max_features=0.5` the less correlated your trees are with each other, the better
-
-- 
-- 
-- 
+- `max_features=None` this is the default; then max_features=n_features (default is to use all the features)
+- `max_features=0.5` the less correlated your trees are with each other, the better; randomly choose half the features
+- `max_features` in practice, good values range from 0.5 to log2 or sqrt
 
 
 
