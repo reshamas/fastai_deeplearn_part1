@@ -92,6 +92,9 @@ set_rf_samples(20000)
 - `max_features=0.5` the less correlated your trees are with each other, the better; randomly choose half the features
 - `max_features` in practice, good values range from 0.5 to log2 or sqrt
 
+## Random Forest
+- hard to screw it up
+- great for out of box, even without tuning hyperparameters
 
 
 
