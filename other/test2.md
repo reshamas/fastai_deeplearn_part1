@@ -95,6 +95,21 @@ set_rf_samples(20000)
 ## Random Forest
 - hard to screw it up
 - great for out of box, even without tuning hyperparameters
+- tends to work on most datasets most of the time
+
+## Looking at categories
+- `df_raw.fiProductClassDesc.cat.categories`
+- `df_raw.fiProductClassDesc.cat.codes`  --> this is what the random forest sees
+
+## Homework
+- experiment
+- draw the trees
+- plot the errors
+- try different datasets
+- write your own R2
+- write your own versions of the datasets
+
+
 
 
 
