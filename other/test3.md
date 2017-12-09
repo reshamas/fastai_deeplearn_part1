@@ -63,6 +63,9 @@ Corporación Favorita has challenged the Kaggle community to build a model that 
 - key:  what are **independent** variables- how many units of each kind of product are sold on each store on each day during a 2 week period?
 - **dependent**, info we have to predict it:  how many units of each product of each store on each day was sold; 
 - what **metadata** is there (oil price) --> our **relational dataset**
+- Stars schema  https://www.kaggle.com/c/favorita-grocery-sales-forecasting/data
+- Snowflake schema:  might have more info on the items
+- Jeremy's notebook:  `tmp-grocery.ipynb`
 - 
 
 
