@@ -11,6 +11,9 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - random forests parameter tuning to make them better
 - we used Jupyter Notebook; can use Anaconda, AWS, Crestle, Paperspace
 
+## This Lesson
+- start with `git pull` for updates
+
 ## Interpreting Model
 - understand your data better using machine learning
 - not true that random forests are a "black box" 
@@ -26,9 +29,21 @@ A:  Outside of that, will also want to use collaborative filtering modeling  (ne
 
 Last week, saved dataframe to "feather" format; basically that is in same format as it is in RAM, but it is ridiculously fast to read and write stuff from feather format.  
 
-
-
-
+## Data Pre-Processing
+loading in last lesson:  
+```python
+PATH = "data/bulldozers/"
+df_raw = pd.read_feather('tmp/raw')
+df_trn, y_trn, nas = proc_df(df_raw, 'SalePrice')
+```
+### `proc_df` (pre-processing data)
+- find the numeric columns which have missing values and creates an additional boolean, replaces missing with medians
+- turns categorical objects into integer codes
+- test set may have missing values.  random forest will give an error if a column is missing
+- median of missing values may be different in test set than in training set
+- `nas`:  Jeremy changed `proc_df` so it returns "NAs"; `nas` is a dictionary where keys are the names of the columns with missing values and the values of the dictionary are medians
+- you can pass `nas` as an additional argument to `proc_df` and it will make sure it uses those particular columns and gives those medians
+- 
 
 
 
