@@ -54,7 +54,9 @@ The problem becomes more complex as retailers add new locations with unique need
 
 Corporación Favorita has challenged the Kaggle community to build a model that more accurately forecasts product sales. They currently rely on subjective forecasting methods with very little data to back them up and very little automation to execute plans. They’re excited to see how machine learning could better ensure they please customers by having just enough of the right products at the right time.
 
-#### Current Ecuador grocery store competition
+---
+
+## Current Ecuador grocery store competition
 * [Corporación Favorita Grocery Sales Forecasting](https://www.kaggle.com/c/favorita-grocery-sales-forecasting)
 - this is current, so we won't work on it as a group
 - predict items on shelf based on 
@@ -66,7 +68,20 @@ Corporación Favorita has challenged the Kaggle community to build a model that 
 - Stars schema  https://www.kaggle.com/c/favorita-grocery-sales-forecasting/data
 - Snowflake schema:  might have more info on the items
 - Jeremy's notebook:  `tmp-grocery.ipynb`
-- 
+
+## Notebook
+- read in data
+- limit memory = False --> use as much memory to figure out what kinds of data are here; you'll run out of memory here
+- to limit the amount of space, create a dictionary for each column names
+```python
+types = {'id': 'int64',
+'item_nbr': 'int32',
+'store_nbr': 'int8',
+'unit_sales': 'float32',
+'onpromotion': 'object'}
+```
+- `df = pd.read_csv('somefile.csv', low_memory=False)`
+
 
 
 
