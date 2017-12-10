@@ -128,3 +128,8 @@ In their first Kaggle competition, Rossmann is challenging you to predict 6 week
 
 ## Feature Importance
 
+### Data Leakage
+- there was an administrative burden to filling in the database
+- there is information in the dataset that J was modeling with which the university wouldn't have had when the decision was made to approve the grant
+
+
