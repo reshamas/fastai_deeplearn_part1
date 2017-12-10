@@ -91,6 +91,15 @@ types = {'id': 'int64',
 %%time
 df_all = pd.read_csv(f'{PATH}train.csv', parse_dates = ['date'], dtype=types, infer_datetime_format = True)
 ```
+```python
+set_rf_samples(1_000_000)
+```
+- there are 120 million records; we probably don't want to create a tree; would take a long time
+- can start with 10K or 100K; Jeremy found 1 million is good size, runs in < 1 minute
+- there is no relationship between how large a dataset is and how long it takes to build a random forest
+- relationship is between number of estimators times sample size
+- `n_jobs=8` number of cores it will use; Jeremy ran it on computer that had 60 cores, so make it smaller
+- `n_jobs=-1` means use every single core
 
 
 
