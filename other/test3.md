@@ -100,6 +100,17 @@ set_rf_samples(1_000_000)
 - relationship is between number of estimators times sample size
 - `n_jobs=8` number of cores it will use; Jeremy ran it on computer that had 60 cores, so make it smaller
 - `n_jobs=-1` means use every single core
+- Jeremy converted dataframe into array of float32; internally inside random forest code, they do that anyway
+- by doing it once, saves time in the background to convert it to float
+```python
+%time m.fit(x, y)
+%prun m.fit(x, y)
+```
+- `prun` runs **profiler**, tells you which line of code behind the scenes took the most time to run
+- **profiling** is a software engineering tool
+- cannot use `oob_score` when using `set_rf_samples`, because it will use 125 million - 1 million = 124 million too calculate oob_score, which will take forever
+- wants validation set, which is the most recent date samples
+- [training RMSE , validation RMSE, training R^2, validation R^2, OOB R^2]
 
 
 
