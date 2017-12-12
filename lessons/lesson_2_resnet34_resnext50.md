@@ -2,7 +2,7 @@
 
 (06-Nov-2017, live)
 
-[Livestream: Lesson 2](https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be)
+[Video: Lesson 2](https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be)
 
 
 [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)  
