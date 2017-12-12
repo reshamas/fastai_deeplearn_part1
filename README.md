@@ -33,7 +33,7 @@ Email:   rs2715@stern.nyu.edu
 * [Wiki: Lesson 4](http://forums.fast.ai/t/wiki-lesson-4/8112)
 * [Wiki: Lesson 5](http://forums.fast.ai/t/wiki-lesson-5/8408)
 * [Wiki: Lesson 6](http://forums.fast.ai/t/wiki-lesson-6/8629)
-* [Wiki: Lesson 7]
+* [Wiki: Lesson 7](http://forums.fast.ai/t/lesson-7-wiki-thread/8847/1)
 
 ## Livestreams
 * Livestream:  Lesson 1
@@ -44,7 +44,7 @@ Email:   rs2715@stern.nyu.edu
 * [Livestream: Lesson 4](https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be)
 * [Livestream: Lesson 5](https://www.youtube.com/watch?v=J99NV9Cr75I&feature=youtu.be)
 * [Livestream: Lesson 6](https://www.youtube.com/watch?v=sHcLkfRrgoQ&feature=youtu.be)
-* [Livestream: Lesson 7]
+* [Livestream: Lesson 7](https://www.youtube.com/watch?v=H3g26EVADgY&feature=youtu.be)
 
 ## [My Lesson Notes](lessons/) 
 * Lesson 1
