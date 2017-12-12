@@ -19,13 +19,28 @@ Email:   rs2715@stern.nyu.edu
 * Organizer of [NYC PyLadies meetup group](https://www.meetup.com/NYC-PyLadies/)
 
 ---
+
 ## Course Links
 * [GitHub: fastai](https://github.com/fastai/fastai) (public)
 * [Discourse:  part1-v2](http://forums.fast.ai/c/part1-v2) (private)
 * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg) (private)
 * [some fastai files](http://files.fast.ai)
 
-## Wiki's
+## [Technical Tools](tools/)
+* [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
+* [tmux on AWS](tools/tmux.md)
+* [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
+* [Download data using Chrome and wget](tools/download_data_chrome_curlwget.md)
+* [Jupyter Notebook](tools/jupyter_notebook.md)
+* [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
+
+## Resources
+* [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
+
+---
+## Course Info
+
+### Wiki's
 * [Wiki thread: Intro workshop](http://forums.fast.ai/t/wiki-thread-intro-workshop/6537)
 * [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)
 * [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)
@@ -35,7 +50,7 @@ Email:   rs2715@stern.nyu.edu
 * [Wiki: Lesson 6](http://forums.fast.ai/t/wiki-lesson-6/8629)
 * [Wiki: Lesson 7](http://forums.fast.ai/t/lesson-7-wiki-thread/8847/1)
 
-## Livestreams
+### Livestreams
 * Video:  Lesson 1
   - [Video: Lesson 1, Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
   - [Video: Lesson 1, Section 2](https://www.youtube.com/watch?v=ZDq5OXsLO3U)  
@@ -46,7 +61,7 @@ Email:   rs2715@stern.nyu.edu
 * [Video: Lesson 6](https://www.youtube.com/watch?v=sHcLkfRrgoQ&feature=youtu.be)
 * [Video: Lesson 7](https://www.youtube.com/watch?v=H3g26EVADgY&feature=youtu.be)
 
-## [My Lesson Notes](lessons/) 
+### [My Lesson Notes](lessons/) 
 * Lesson 1
   - [Lesson 1a: Course Intro](lessons/lesson_1a_course_intro.md)
   - [Lesson 1b: CNN and resnet Architecture](lessons/lesson_1b_cnn_tools.md)
@@ -57,13 +72,3 @@ Email:   rs2715@stern.nyu.edu
 * [Lesson 6:  ]
 * [Lesson 7:  ]
 
-## [Technical Tools](tools/)
-* [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
-* [tmux on AWS](tools/tmux.md)
-* [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
-* [Download data using Chrome and wget](tools/download_data_chrome_curlwget.md)
-* [Jupyter Notebook](tools/jupyter_notebook.md)
-* [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
-
-## Other Resources
-* [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
