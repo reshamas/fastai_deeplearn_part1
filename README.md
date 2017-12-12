@@ -36,15 +36,15 @@ Email:   rs2715@stern.nyu.edu
 * [Wiki: Lesson 7](http://forums.fast.ai/t/lesson-7-wiki-thread/8847/1)
 
 ## Livestreams
-* Livestream:  Lesson 1
-  - [Livestream: Lesson 1, Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
-  - [Livestream: Lesson 1, Section 2](https://www.youtube.com/watch?v=ZDq5OXsLO3U)  
-* [Livestream: Lesson 2](https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be)
-* [Livestream: Lesson 3](https://www.youtube.com/watch?v=9C06ZPF8Uuc&feature=youtu.be) 
-* [Livestream: Lesson 4](https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be)
-* [Livestream: Lesson 5](https://www.youtube.com/watch?v=J99NV9Cr75I&feature=youtu.be)
-* [Livestream: Lesson 6](https://www.youtube.com/watch?v=sHcLkfRrgoQ&feature=youtu.be)
-* [Livestream: Lesson 7](https://www.youtube.com/watch?v=H3g26EVADgY&feature=youtu.be)
+* Video:  Lesson 1
+  - [Video: Lesson 1, Section 1](https://www.youtube.com/watch?v=sNMHZM2U7I8)  
+  - [Video: Lesson 1, Section 2](https://www.youtube.com/watch?v=ZDq5OXsLO3U)  
+* [Video: Lesson 2](https://www.youtube.com/watch?v=JNxcznsrRb8&feature=youtu.be)
+* [Video: Lesson 3](https://www.youtube.com/watch?v=9C06ZPF8Uuc&feature=youtu.be) 
+* [Video: Lesson 4](https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be)
+* [Video: Lesson 5](https://www.youtube.com/watch?v=J99NV9Cr75I&feature=youtu.be)
+* [Video: Lesson 6](https://www.youtube.com/watch?v=sHcLkfRrgoQ&feature=youtu.be)
+* [Video: Lesson 7](https://www.youtube.com/watch?v=H3g26EVADgY&feature=youtu.be)
 
 ## [My Lesson Notes](lessons/) 
 * Lesson 1
