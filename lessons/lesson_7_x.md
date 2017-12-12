@@ -33,4 +33,9 @@ Notebooks:
 - creating a sentence, neural translation
 - creating an image, style transfer
 - moving from best practices to speculative practices
+- how to read a paper and implement from scratch
+- does not assume a particular math background, but be prepared to dig through notation and convert to code
+
+## RNN
+
 
