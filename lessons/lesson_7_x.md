@@ -37,5 +37,8 @@ Notebooks:
 - does not assume a particular math background, but be prepared to dig through notation and convert to code
 
 ## RNN
+- not so different
+- they are like a fully connected network
+
 
 
