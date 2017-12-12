@@ -30,7 +30,7 @@ Notebooks:
 
 ## Theme of Part 2
 - generative modeling
-- creating a sentence, neural translation
+- creating a sentence, image captioning, neural translation
 - creating an image, style transfer
 - moving from best practices to speculative practices
 - how to read a paper and implement from scratch
