@@ -1,6 +1,6 @@
 # Lesson 6
 
-[Livestream: Lesson 6](https://www.youtube.com/watch?v=sHcLkfRrgoQ&feature=youtu.be)
+[Video: Lesson 6](https://www.youtube.com/watch?v=sHcLkfRrgoQ&feature=youtu.be)
 
 [Wiki: Lesson 6](http://forums.fast.ai/t/wiki-lesson-6/8629)
 
