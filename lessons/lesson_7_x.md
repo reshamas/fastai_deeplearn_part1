@@ -21,3 +21,16 @@ Notebooks:
 - [Laptop recommendation](https://youtu.be/EKzSiuqiHNg?t=1h1m51s); [Surface Book 2 15 inch](https://www.cnet.com/products/microsoft-surface-book-2/review/)
 
 
+## Theme of Part 1
+- classification and regression with deep learning
+- identifying best practices
+- here are 3 lines of code for image classification
+- first 4 lessons were NLP, structured data, collaborative filtering
+- last 3 lessons were above topics in more detail, more detailed code
+
+## Theme of Part 2
+- generative modeling
+- creating a sentence, neural translation
+- creating an image, style transfer
+- moving from best practices to speculative practices
+
