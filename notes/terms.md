@@ -7,6 +7,7 @@
 `.cuda()` is we tell it manually to use the GPU  
 `md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
+`lo` = layer optimizer  
 `sz` = size (of photo)  
 `tfms` = transformations  
 `wds` = weight decays  
