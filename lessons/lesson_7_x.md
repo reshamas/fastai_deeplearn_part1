@@ -6,10 +6,8 @@ live 11-Dec-2017
 [Wiki: Lesson 7](http://forums.fast.ai/t/lesson-7-wiki-thread/8847/1)
 
 Notebooks:  
-* [lesson5-movielens.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson5-movielens.ipynb)
 * [lesson6-rnn.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-rnn.ipynb)
-* [lesson3-rossman.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb)
-* [lesson6-sgd.ipynb[(https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-sgd.ipynb) 
+* [lesson7-cifar10.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson7-cifar10.ipynb)
 
 ## Blogs to Review
 
