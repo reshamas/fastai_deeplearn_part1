@@ -2,6 +2,7 @@
 
 ---
 # fastai Terms
+`bptt` back propagation through time  
 `bs` = batch size  
 `sz` = size (of photo)  
 `tfms` = transformations  
