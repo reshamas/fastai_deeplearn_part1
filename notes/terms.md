@@ -29,6 +29,21 @@ An epoch is a complete pass through a given dataset.
 ### Stochastic gradient descent (SGD)
 Stochastic gradient descent (often shortened to SGD), also known as incremental gradient descent, is a stochastic approximation of the gradient descent optimization and iterative method for minimizing an objective function that is written as a sum of differentiable functions. In other words, SGD tries to find minima or maxima by iteration.
 
+
+### SGDR (Stochastic Gradient Descent with Restart)
+Restart techniques are common in gradient-free optimization to deal with multimodal
+functions. Partial restarts are also gaining popularity in gradient-based optimization
+to improve the rate of convergence in accelerated gradient schemes to
+deal with ill-conditioned functions. In this paper, we propose a simple restart technique
+for stochastic gradient descent to improve its anytime performance when
+training deep neural networks. We empirically study its performance on CIFAR-
+10 and CIFAR-100 datasets where we demonstrate new state-of-the-art results
+below 4% and 19%, respectively. Our source code is available at
+https://github.com/loshchil/SGDR.
+
+https://pdfs.semanticscholar.org/7edd/785cf90e5a218022904585208a1585d634e1.pdf
+
+
 ### ANN  (Artificial Neural Network)
 
 ### CNN / ConvNet (Convolutional Neural Network)
@@ -36,6 +51,8 @@ is a type of feed-forward artificial neural network in which the connectivity pa
 
 ### CUDA
 CUDA is a parallel computing platform and application programming interface (API) model created by Nvidia. ... When it was first introduced by Nvidia, the name CUDA was an acronym for Compute Unified Device Architecture, but Nvidia subsequently dropped the use of the acronym.
+
+### DNN (Deep Neural Networks)
 
 ### QRNNs (Quasi-Recurrent Neural Networks) 
 an approach to neural sequence modeling that alternates convolutional layers, which apply in parallel across timesteps, and a minimalist recurrent pooling function that applies in parallel across channels. Despite lacking trainable recurrent layers, stacked QRNNs have better predictive accuracy than stacked LSTMs of the same hidden size. Due to their increased parallelism, they are up to 16 times faster at train and test time. Experiments on language modeling, sentiment classification, and character-level neural machine translation demonstrate these advantages and underline the viability of QRNNs as a basic building block for a variety of sequence tasks.
