@@ -42,6 +42,6 @@ Notebooks:
 
 ## Batch Size
 `bs=64` means data is split into 65 chunks of data.  
-NOT batches of size 65!  
+NOT batches of size 64!  
 
 
