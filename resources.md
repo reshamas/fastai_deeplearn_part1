@@ -50,6 +50,9 @@
 * [Exploring Stochastic Gradient Descent with Restarts (SGDR)](https://medium.com/38th-street-studios/exploring-stochastic-gradient-descent-with-restarts-sgdr-fa206c38a74e) Mark Hoffman
 * [How do We Train Neural Networks?](https://towardsdatascience.com/how-do-we-train-neural-networks-edd985562b73) Vitaly Bushev
 
+### Reference Blogs
+* [Understanding LSTMs](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) Christopher Olah
+* [Recurrent Neural Network Tutorial, Part 4 – Implementing a GRU/LSTM RNN with Python and Theano](http://www.wildml.com/2015/10/recurrent-neural-network-tutorial-part-4-implementing-a-grulstm-rnn-with-python-and-theano/) Denny Britz
 
 ## Research Publications
 * [Visualizing and Understanding Convolutional Networks](http://www.matthewzeiler.com/wp-content/uploads/2017/07/arxive2013.pdf) Zeiler & Fergus, 2013
