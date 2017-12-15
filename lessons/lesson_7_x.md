@@ -44,4 +44,9 @@ Notebooks:
 `bs=64` means data is split into 65 chunks of data.  
 NOT batches of size 64!  
 
+## Data Augmentation for NLP
+- JH can't talk about that; doesn't know a good way
+- JH will do further study on that
+
+
 
