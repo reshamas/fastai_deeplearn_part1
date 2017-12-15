@@ -40,5 +40,8 @@ Notebooks:
 - not so different
 - they are like a fully connected network
 
+## Batch Size
+`bs=64` means data is split into 65 chunks of data.  
+NOT batches of size 65!  
 
 
