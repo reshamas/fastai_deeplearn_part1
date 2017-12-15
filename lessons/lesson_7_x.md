@@ -46,7 +46,19 @@ NOT batches of size 64!
 - JH will do further study on that
 
 ## CIFAR 10
-- well-known dataset in academia
+- well-known dataset in academia:  https://www.cs.toronto.edu/~kriz/cifar.html
+- small datasets are much more interesting than ImageNet
+- often, we're looking at 32x32 pixels (example:  lung cancer image)
+- often, it's more challenging, and more interesting
+- we can run algorithms much more quickly, and it's still challenging
+- you can get the data by:  `wget http://pjreddie.com/media/files/cifar.tgz` (provided in form we need)
+- this is mean, SD per channel; try to replicate on your own
+```python
+classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+stats = (np.array([ 0.4914 ,  0.48216,  0.44653]), np.array([ 0.24703,  0.24349,  0.26159]))
+```  
+- 
+
 
 
 
