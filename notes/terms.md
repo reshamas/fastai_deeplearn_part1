@@ -4,6 +4,7 @@
 # fastai Terms
 `bptt` back propagation through time  
 `bs` = batch size  
+`.cuda()` is we tell it manually to use the GPU  
 `md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
 `sz` = size (of photo)  
