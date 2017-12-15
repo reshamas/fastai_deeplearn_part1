@@ -34,6 +34,11 @@ is a type of feed-forward artificial neural network in which the connectivity pa
 ### CUDA
 CUDA is a parallel computing platform and application programming interface (API) model created by Nvidia. ... When it was first introduced by Nvidia, the name CUDA was an acronym for Compute Unified Device Architecture, but Nvidia subsequently dropped the use of the acronym.
 
+### quasi-recurrent neural networks (QRNNs)
+an approach to neural sequence modeling that alternates convolutional layers, which apply in parallel across timesteps, and a minimalist recurrent pooling function that applies in parallel across channels. Despite lacking trainable recurrent layers, stacked QRNNs have better predictive accuracy than stacked LSTMs of the same hidden size. Due to their increased parallelism, they are up to 16 times faster at train and test time. Experiments on language modeling, sentiment classification, and character-level neural machine translation demonstrate these advantages and underline the viability of QRNNs as a basic building block for a variety of sequence tasks.
+https://arxiv.org/abs/1611.01576  
+
+
 ### RNN  (Recurrent Neural Network)
 a class of artificial neural network where connections between units form a directed cycle. This creates an internal state of the network which allows it to exhibit dynamic temporal behavior. Unlike feedforward neural networks, RNNs can use their internal memory to process arbitrary sequences of inputs. 
 
