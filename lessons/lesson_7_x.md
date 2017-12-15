@@ -9,8 +9,7 @@ Notebooks:
 * [lesson6-rnn.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-rnn.ipynb)
 * [lesson7-cifar10.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson7-cifar10.ipynb)
 
-## Blogs to Review
-
+---
 ## Other links
 - WILD ML RNN Tutorial - http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/
 - Chris Olah on LSTM http://colah.github.io/posts/2015-08-Understanding-LSTMs/
@@ -45,6 +44,9 @@ NOT batches of size 64!
 ## Data Augmentation for NLP
 - JH can't talk about that; doesn't know a good way
 - JH will do further study on that
+
+## CIFAR 10
+- well-known dataset in academia
 
 
 
