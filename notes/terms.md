@@ -4,6 +4,7 @@
 # fastai Terms
 `bptt` back propagation through time  
 `bs` = batch size  
+`md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
 `sz` = size (of photo)  
 `tfms` = transformations  
