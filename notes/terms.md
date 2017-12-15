@@ -4,6 +4,7 @@
 # fastai Terms
 `bptt` back propagation through time  
 `bs` = batch size  
+`n_fac` = size of embedding  
 `sz` = size (of photo)  
 `tfms` = transformations  
 `wds` = weight decays  
