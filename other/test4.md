@@ -23,7 +23,7 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - name it with `tmp` prefix; this will then be ignored by `.gitignore`
 
 ## Hyperparameter `set_rf_samples()`  
-- question from Terence
+- pick up a subset of rows
 - summarize relationship between hyperparameters and its effects on overfitting, collinearity
 - reference:  https://github.com/fastai/fastai/blob/master/courses/ml1/lesson1-rf.ipynb
 - `set_rf_samples(20000)` determines how many rows of data in each tree
@@ -54,8 +54,24 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
   - we would expect each estimator to be less predictive, but also less correlated and result in less overfitting
 - could speed up training with one less level; could generalize better
 
-
 ## Hyperparameter `max_features`  
+- `max_features=0.5` at each point in the tree, we pick a different half of the features 
+- we do this because we want the trees to be as rich as possible
+- picking a random subset of features at every decision point
+- overall effect is that each individual tree will be less accurate, but the trees will be more varied
+  - imagine if you had one feature that was super-predictive, so predictive that every single sub-sample split on the same feature
+  - trees would have same intial split
+  - some trees would create other splits, show interactions
+  - gives more variation, creates more generalized trees
+
+## Things that don't impact our training
+- `n_jobs=-1` how many CPUs to run on
+  - making more than 8 may have diminishing returns
+  - -1 --> all cores
+  - 1  --> default
+- `oob=True` if you don't say "True", it won't print it out
+
+## Other Parameters
 - 
 
 
