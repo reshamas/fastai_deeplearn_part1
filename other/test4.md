@@ -80,7 +80,13 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 ## Other Parameters
 - there are more hyperparameters
 - the one's highlighted here are the ones that Jeremy has found useful
-- 
-
+- you can try others
 
 ## Random Forest Model Interpretation
+- fastai library is not available in Kaggle kernels
+- can look in `fastai.structured`; use `??fastai.structured` to look inside it
+- most of methods we use are a small number of lines of code; can copy functions and use whereever
+- can link to library; give credit to fastai
+- "Confidence based Tree Variance" does not exist anywhere else; is in fastai
+- "Feature Importance" exists in Kaggle kernels
+- 
