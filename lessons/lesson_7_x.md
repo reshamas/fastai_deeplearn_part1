@@ -59,7 +59,12 @@ stats = (np.array([ 0.4914 ,  0.48216,  0.44653]), np.array([ 0.24703,  0.24349,
 ```  
 - Kerem's notebook on how different optimizers work:  https://github.com/KeremTurgutlu/deeplearning/blob/master/Exploring%20Optimizers.ipynb
 - to improve model, we'll next replace our fully connected model (with 1 hidden layer) with a CNN
-- 
+- `nn.Conv2d(layers[i], layers[i + 1], kernel_size=3, stride=2)`
+  - `layers[i]` number of features coming in
+  - `layers[i + 1]` number of features coming out
+  - `stride=2` is a "stride 2 convolution"
+  - it has similar effect to `maxpooling`; reduces the size of the layers
+  
 
 
 
