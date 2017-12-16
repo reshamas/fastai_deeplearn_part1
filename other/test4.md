@@ -22,7 +22,7 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - make a copy of the notebook
 - name it with `tmp` prefix; this will then be ignored by `.gitignore`
 
-## Questions for Last Week's Lesson
+## Hyperparameter `set_rf_samples()`  
 - question from Terence
 - summarize relationship between hyperparameters and its effects on overfitting, collinearity
 - reference:  https://github.com/fastai/fastai/blob/master/courses/ml1/lesson1-rf.ipynb
@@ -40,12 +40,23 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
   - by decreasing the `set_rf_samples()` number, we are actually decreasing the power of the estimator and increasing the correlation
   - it may result in a better or worse validation set result; this is the compromise you have to figure out when you do ML models
  - `oob=True` whatever your subsample is, take all the remaining rows, and put them into a dataset and calculate the error on those (it doesn't impact the training set); it's a quasi-validation set
- - 
- 
- 
+
+## Information Gain
+- "Information" used to describe the amount of additional info we gain from splitting
+- how much better did the model get by adding another split point?
+
+## Hyperparameter `min_samples_leaf`  
+- Q:  if I change min_samples_leaf from 1 to 2, what would be my new **depth**?
+  - A:  log_2(20,000) - 1
+- Q:  how many leaf nodes would there be in that case?
+  - A:  10000
+- we have less depth, less decisions to make, and we have a smaller number of leaf nodes
+  - we would expect each estimator to be less predictive, but also less correlated and result in less overfitting
+- could speed up training with one less level; could generalize better
 
 
-## Random Forests / Hyperparameters
+## Hyperparameter `max_features`  
 - 
+
 
 ## Random Forest Model Interpretation
