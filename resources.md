@@ -68,5 +68,6 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 * [The wonderful and terrifying implications of computers that can learn](https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn) (Ted Talk by Jeremy Howard 2014)
 * [A Visual and Intuitive Understanding of Deep Learning](https://www.youtube.com/embed/Oqm9vsf_hvU?autoplay=1&feature=oembed&wmode=opaque) Otavio Good of Google, AI Conf SF Sep 2017
 * [Ian Goodfellow - Numerical Computation for Deep Learning - AI With The Best Oct 14-15, 2017](https://www.youtube.com/watch?v=XlYD8jn1ayE&t=5m40s)
+* [Ali Rahimi's talk at NIPS(NIPS 2017 Test-of-time award presentation)](https://www.youtube.com/watch?v=Qi1Yry33TQE)
 
 
