@@ -64,6 +64,11 @@ stats = (np.array([ 0.4914 ,  0.48216,  0.44653]), np.array([ 0.24703,  0.24349,
   - `layers[i + 1]` number of features coming out
   - `stride=2` is a "stride 2 convolution"
   - it has similar effect to `maxpooling`; reduces the size of the layers
+- `self.pool = nn.AdaptiveMaxPool2d(1)` 
+  - standard now for state-of-the-art algorithms
+  - I'm not going to tell you how big an area to pool, I will tell you how big a resolution to create
+  - starting with 28x28:  Do a 14x14 adaptive maxpool; same as 2x2 maxpool with a 14x14 output
+  
   
 
 
