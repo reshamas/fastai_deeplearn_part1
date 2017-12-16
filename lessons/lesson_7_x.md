@@ -72,8 +72,17 @@ stats = (np.array([ 0.4914 ,  0.48216,  0.44653]), np.array([ 0.24703,  0.24349,
  ## BatchNorm (Batch Normalization)
  - a couple of years old now
  - makes it easier to train deeper networks
- - 
 
 
-
-
+## Getting Ready for Part 2
+- assumes you have mastered all techniques introdued in Part 1
+- has same level of intensity as Part 1
+- people who did well in Part 2 last year watched each of the videos at least 3 times
+- make sure you get to the point where you can recreate the notebooks without watching the videos
+- try and recreate the notebooks using different datasets
+- keep up with the forum; recent papers, advances
+- you'll find less of it is mysterious; makes more sense; there will always be stuff you don't understand
+- Lessons 1 and 2 of Part 1 may seem trivial
+- people who succeed are those who keep working at it
+- hope to see you all in March
+- see you in the Forum
