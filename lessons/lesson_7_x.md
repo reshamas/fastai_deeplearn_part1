@@ -57,6 +57,8 @@ NOT batches of size 64!
 classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 stats = (np.array([ 0.4914 ,  0.48216,  0.44653]), np.array([ 0.24703,  0.24349,  0.26159]))
 ```  
+- Kerem's notebook on how different optimizers work:  https://github.com/KeremTurgutlu/deeplearning/blob/master/Exploring%20Optimizers.ipynb
+- to improve model, we'll next replace our fully connected model (with 1 hidden layer) with a CNN
 - 
 
 
