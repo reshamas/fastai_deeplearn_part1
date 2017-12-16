@@ -53,6 +53,8 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - we have less depth, less decisions to make, and we have a smaller number of leaf nodes
   - we would expect each estimator to be less predictive, but also less correlated and result in less overfitting
 - could speed up training with one less level; could generalize better
+- TRY these options
+  - 1, 3, 5, 10, 25, 100
 
 ## Hyperparameter `max_features`  
 - `max_features=0.5` at each point in the tree, we pick a different half of the features 
@@ -63,6 +65,10 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
   - trees would have same intial split
   - some trees would create other splits, show interactions
   - gives more variation, creates more generalized trees
+- TRY these options
+  - `None`
+  - `0.5`
+  - `sqrt`
 
 ## Things that don't impact our training
 - `n_jobs=-1` how many CPUs to run on
@@ -72,6 +78,8 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - `oob=True` if you don't say "True", it won't print it out
 
 ## Other Parameters
+- there are more hyperparameters
+- the one's highlighted here are the ones that Jeremy has found useful
 - 
 
 
