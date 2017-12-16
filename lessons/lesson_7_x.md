@@ -8,6 +8,7 @@ live 11-Dec-2017
 Notebooks:  
 * [lesson6-rnn.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson6-rnn.ipynb)
 * [lesson7-cifar10.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson7-cifar10.ipynb)
+* [lesson7-CAM.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson7-CAM.ipynb)
 
 ---
 ## Other links
