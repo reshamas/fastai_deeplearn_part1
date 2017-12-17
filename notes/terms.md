@@ -55,6 +55,21 @@ CUDA is a parallel computing platform and application programming interface (API
 
 ### DNN (Deep Neural Networks)
 
+### Dropout
+* Regularization technique in neural networks to prevent overfitting
+* dropping some neurons in a layer
+
+
+### Gradient Boosting
+Gradient boosting is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
+
+
+### GRU (Gated Recurrent Unit)
+
+### LSTM  (Long Short-Term Memory-Networks)
+* An LSTM unit is a recurrent network unit that excels at remembering values for either long or short durations of time. The key to this ability is that it uses no activation function within its recurrent components. Thus, the stored value is not iteratively squashed over time, and the gradient or blame term does not tend to vanish when Backpropagation through time is applied to train it.
+
+
 ### QRNNs (Quasi-Recurrent Neural Networks) 
 an approach to neural sequence modeling that alternates convolutional layers, which apply in parallel across timesteps, and a minimalist recurrent pooling function that applies in parallel across channels. Despite lacking trainable recurrent layers, stacked QRNNs have better predictive accuracy than stacked LSTMs of the same hidden size. Due to their increased parallelism, they are up to 16 times faster at train and test time. Experiments on language modeling, sentiment classification, and character-level neural machine translation demonstrate these advantages and underline the viability of QRNNs as a basic building block for a variety of sequence tasks.
 https://arxiv.org/abs/1611.01576  
@@ -63,11 +78,7 @@ https://arxiv.org/abs/1611.01576
 ### RNN  (Recurrent Neural Network)
 a class of artificial neural network where connections between units form a directed cycle. This creates an internal state of the network which allows it to exhibit dynamic temporal behavior. Unlike feedforward neural networks, RNNs can use their internal memory to process arbitrary sequences of inputs. 
 
-### Dropout
-* Regularization technique in neural networks to prevent overfitting
-* dropping some neurons in a layer
 
-### GRU (Gated Recurrent Unit)
 
 ### Reinforcement Learning
 
@@ -75,8 +86,6 @@ a class of artificial neural network where connections between units form a dire
 ### ReLU (Rectified Linear Unit)
 ReLU is an activation function, which is zero when x &lt 0 and then linear with slope 1 when x &gt 0. 
 
-### LSTM  (Long Short-Term Memory-Networks)
-* An LSTM unit is a recurrent network unit that excels at remembering values for either long or short durations of time. The key to this ability is that it uses no activation function within its recurrent components. Thus, the stored value is not iteratively squashed over time, and the gradient or blame term does not tend to vanish when Backpropagation through time is applied to train it.
 
 ### t-SNE (t-Distributed Stochastic Neighbor Embedding)
 is a (prize-winning) technique for dimensionality reduction that is particularly well suited for the visualization of high-dimensional datasets. The technique can be implemented via Barnes-Hut approximations, allowing it to be applied on large real-world datasets. We applied it on data sets with up to 30 million examples. 
