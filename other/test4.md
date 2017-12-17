@@ -89,4 +89,8 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - can link to library; give credit to fastai
 - "Confidence based Tree Variance" does not exist anywhere else; is in fastai
 - "Feature Importance" exists in Kaggle kernels
-- 
+
+## Feature Importance
+- works by randomly shuffling a column
+- `set_rf_samples()` to a number where you can run a model < 10 seconds or so.  Ex:  50,000
+- `rf_feat_importance` works by randomly shuffling a column
