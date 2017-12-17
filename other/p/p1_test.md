@@ -4,7 +4,7 @@
 % pwd
 /Users/reshamashaikh/.ssh
 % 
-ssh -i "id_rsa.pub.pem" root@ec2-107-22-140-44.compute-1.amazonaws.com
+ssh -i "id_rsa.pub" root@ec2-107-22-140-44.compute-1.amazonaws.com
 ```
 Please login as the user "ubuntu" rather than the user "root".
 
@@ -12,6 +12,6 @@ Please login as the user "ubuntu" rather than the user "root".
 % pwd
 /Users/reshamashaikh/.ssh
 % 
-ssh -i "id_rsa.pub.pem" ubuntu@ec2-107-22-140-44.compute-1.amazonaws.com
+ssh -i "id_rsa.pub" ubuntu@ec2-107-22-140-44.compute-1.amazonaws.com
 ```
 
