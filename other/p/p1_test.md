@@ -34,3 +34,11 @@ Solving package specifications: .
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
 
+```
+jupyter notebook list
+```
+
+list CPU GPU memory usage:  
+```
+htop
+```
