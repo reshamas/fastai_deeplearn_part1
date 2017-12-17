@@ -48,6 +48,8 @@ total 16
 
 ### Step 3:  import key files to AWS
 (Note:  Extra step for Windows users:  you will need to copy these files to your hardrive from Ubuntu.)  
-In AWS, go to **Key Pairs** in left menu and import `id_rsa`.  This step connects your local computer to AWS.  
+In AWS, go to **Key Pairs** in left menu and import `id_rsa.pub`.  This step connects your local computer to AWS.  
+Note for Mac Users:  can also `cat id_rsa.pub` in terminal, copy and paste it into AWS for "key contents".
+
 
  
