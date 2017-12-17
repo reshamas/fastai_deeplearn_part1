@@ -7,6 +7,10 @@
 
 ### Examples
 ```bash
+% scp -r . ubuntu@107.22.140.44:~/data/camelhorse 
+```
+
+```bash
 scp -i "path to .pem file" "file to be copied from local machine" username@amazoninstance: 'destination folder to copy file on remote machine'
 ```
 
