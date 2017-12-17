@@ -34,11 +34,20 @@ Solving package specifications: .
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
 
+#### get Jupyter Notebook sessions
 ```
 jupyter notebook list
 ```
 
-list CPU GPU memory usage:  
+#### list CPU GPU memory usage:  
 ```
 htop
 ```
+
+### `scp` Secure Copy
+```bash
+% scp -r . ubuntu@107.22.140.44:~/data/camelhorse 
+```
+
+
+
