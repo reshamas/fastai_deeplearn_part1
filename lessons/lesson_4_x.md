@@ -1,7 +1,5 @@
 # Lesson 4:  Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro
 (20-Nov-2017, live)  
-
-[Video: Lesson 4](https://www.youtube.com/watch?v=gbceqO8PpBg&feature=youtu.be)
  
 [Wiki: Lesson 4](http://forums.fast.ai/t/wiki-lesson-4/8112)
 
