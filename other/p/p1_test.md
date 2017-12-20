@@ -33,6 +33,7 @@ Solving package specifications: .
 #
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
+### `conda update --all`
 
 #### get Jupyter Notebook sessions
 ```
