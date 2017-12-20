@@ -1,4 +1,7 @@
 # tree
+```bash
+pip install tree
+```
 
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/data$ tree -d
