@@ -1,7 +1,6 @@
 # Lesson 7  
 live 11-Dec-2017
 
-[Video: Lesson 7](https://www.youtube.com/watch?v=H3g26EVADgY&feature=youtu.be)
 
 [Wiki: Lesson 7](http://forums.fast.ai/t/lesson-7-wiki-thread/8847/1)
 
