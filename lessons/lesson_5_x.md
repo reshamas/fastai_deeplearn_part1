@@ -1,6 +1,5 @@
 # Lesson 5
 
-[Video: Lesson 5](https://www.youtube.com/watch?v=J99NV9Cr75I&feature=youtu.be)
 
 [Wiki: Lesson 5](http://forums.fast.ai/t/wiki-lesson-5/8408)  
 
