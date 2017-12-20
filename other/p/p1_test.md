@@ -6,7 +6,7 @@ Please login as the user "ubuntu" rather than the user "root".
 % pwd
 /Users/reshamashaikh/.ssh
 % 
-ssh -i "id_rsa.pub" ubuntu@ec2-107-22-140-44.compute-1.amazonaws.com -L8888:localhost:8888
+ssh -i "id_rsa.pub" ubuntu@ec2-34-198-228-48.compute-1.amazonaws.com -L8888:localhost:8888
 ```
 
 ### `git pull` 
