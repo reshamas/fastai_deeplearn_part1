@@ -14,6 +14,24 @@ shuf -n 100 -e data/dogscats/valid/dogs/* | xargs -i cp {} data/dogscats_sample/
 ls camels | wc -l 
 ```
 
+```bash
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/camels | wc -l
+101
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/horses | wc -l
+101
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/train | wc -l
+2
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/train/camels | wc -l
+0
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/train/horses | wc -l
+0
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/valid/camels | wc -l
+0
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/valid/horses | wc -l
+0
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ 
+```
+
 In your notebook, change the PATH to PATH = "data/dogscats_sample/"
 The awesome command @jeremy shared on Twitter was this (please note the mv that you want to normally 
 use when creating the train / valid / test splits):
