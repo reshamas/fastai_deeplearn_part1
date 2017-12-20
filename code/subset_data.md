@@ -10,6 +10,10 @@ shuf -n 100 -e data/dogscats/valid/cats/* | xargs -i cp {} data/dogscats_sample/
 shuf -n 100 -e data/dogscats/valid/dogs/* | xargs -i cp {} data/dogscats_sample/valid/dogs
 ```
 
+```
+ls camels | wc -l 
+```
+
 In your notebook, change the PATH to PATH = "data/dogscats_sample/"
 The awesome command @jeremy shared on Twitter was this (please note the mv that you want to normally 
 use when creating the train / valid / test splits):
