@@ -15,6 +15,14 @@ ls camels | wc -l
 ```
 
 ```bash
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ cp horses/*.jpeg train/horses/
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ cp horses/*.jpeg valid/horses/
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ cp camels/*.jpeg train/camels/
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ cp camels/*.jpeg valid/camels/
+```
+
+
+```bash
 (fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/camels | wc -l
 101
 (fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/horses | wc -l
