@@ -36,6 +36,18 @@ ls camels | wc -l
 ```
 
 ```bash
+# make the sample data directory
+mkdir -p data/camelhorse/{valid,train}/{camel,horse}
+
+# split original data into train/test
+shuf -n 68 -e data/camelhorse/camels | xargs -i cp {} data/camelhorse/train/camel
+shuf -n 68 -e data/camelhorse/horses | xargs -i cp {} data/camelhorse/train/horse
+shuf -n 33 -e data/camelhorse/camels | xargs -i cp {} data/camelhorse/valid/camel
+shuf -n 33 -e data/camelhorse/horses | xargs -i cp {} data/camelhorse/valid/horse
+```
+
+
+```bash
 (fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/camels | wc -l
 101
 (fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/horses | wc -l
