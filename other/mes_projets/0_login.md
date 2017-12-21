@@ -1,5 +1,6 @@
+# logging in
 
-
+## login
 Please login as the user "ubuntu" rather than the user "root".
 
 ```bash
@@ -9,7 +10,7 @@ Please login as the user "ubuntu" rather than the user "root".
 ssh -i "id_rsa.pub" ubuntu@ec2-34-198-228-48.compute-1.amazonaws.com -L8888:localhost:8888
 ```
 
-### `git pull` 
+## `git pull` 
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~$ ls
 data  fastai  src
@@ -18,7 +19,7 @@ data  fastai  src
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
 
-### `conda env update`
+## `conda env update`
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$ conda env update
 Using Anaconda API: https://api.anaconda.org
@@ -33,21 +34,18 @@ Solving package specifications: .
 #
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
-### `conda update --all`
+## `conda update --all`
 
-#### get Jupyter Notebook sessions
+---
+
+### get list of Jupyter Notebook sessions
 ```
 jupyter notebook list
 ```
 
-#### list CPU GPU memory usage:  
+### list CPU GPU memory usage:  
 ```
 htop
-```
-
-### `scp` Secure Copy
-```bash
-% scp -r . ubuntu@107.22.140.44:~/data/camelhorse 
 ```
 
 
