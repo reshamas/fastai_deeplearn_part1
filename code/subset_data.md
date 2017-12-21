@@ -20,7 +20,20 @@ ls camels | wc -l
 (fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ cp camels/*.jpeg train/camels/
 (fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ cp camels/*.jpeg valid/camels/
 ```
-
+```bash
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls horses | wc -l 
+101
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls train/horses | wc -l
+101
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls valid/horses | wc -l
+101
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls camels | wc -l 
+101
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls train/camels | wc -l
+101
+(fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls valid/camels | wc -l
+101
+```
 
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/data/camelshorses$ ls ~/data/camelshorses/camels | wc -l
