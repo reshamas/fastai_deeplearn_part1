@@ -105,5 +105,8 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 
 ## Feature Importance in Random Forest
 - in this extremely high parameter, highly flexible functional form with few if any statisticial assumptions, this is your feature importance
+
+`41:00`  
+## Machinery Example 
+- we'll see 4 main important features
 - 
- 
