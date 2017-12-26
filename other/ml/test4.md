@@ -125,4 +125,7 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
   - move points closer to centroids, iterative process
 - another type clustering:  **hierarchical** or **agglomerative** (underused, was more popular 20-30 years ago)
   - look at every pair of objects and see which are closest.  remove 2 points and replace with their mean.
+  - keep doing that; we'll gradually reduce the number of points by pairwise combining
+  - 
+  
 
