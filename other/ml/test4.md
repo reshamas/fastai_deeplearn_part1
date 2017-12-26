@@ -100,5 +100,5 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - assuming linear relationships between Xvars and Y (with a possible link function that could be sigmoid)
 - determine feature importance by looking at weight vars, or coefficients (aX1 + bX2 + ... = Y); normalize first
 - Note: if you were missing an interaction, or a transformation, if pre-processing were imperfect, than coefficients would be wrong
-- Random Forest version:
+- Random Forest version
   - 
