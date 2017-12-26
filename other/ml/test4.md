@@ -119,4 +119,8 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 
 ## Removing Redundant Features
 - cluster analysis:  find which group of rows or columns are similar
+- a common type of clustering is: **k-means**
+  - 
+- another type clustering:  **hierarchical** or **agglomerative** (underused, was more popular 20-30 years ago)
+  - look at every pair of objects and see which are closest.  remove 2 points and replace with their mean.
 
