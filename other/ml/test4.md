@@ -115,5 +115,6 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - Case 2:  with one hot encoding, the random forest can split between 0 and 1; it has the ability in a single step, to pull the category level of significance
 - 1-hot encoding 
 - `max_n_cat=7` if column value is say, a zip code, which has > 7 values, it will be left as a number
+- always try 1-hot encoding for quite a few of your vars and look at feature importance
 
 
