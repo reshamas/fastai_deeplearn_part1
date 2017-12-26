@@ -117,4 +117,6 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - `max_n_cat=7` if column value is say, a zip code, which has > 7 values, it will be left as a number
 - always try 1-hot encoding for quite a few of your vars and look at feature importance
 
+## Removing Redundant Features
+- cluster analysis:  find which group of rows or columns are similar
 
