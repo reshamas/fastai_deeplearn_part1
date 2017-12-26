@@ -58,7 +58,7 @@ Email:   rs2715@stern.nyu.edu
 * [Lesson 2: resnet34, resnext50](lessons/lesson_2_resnet34_resnext50.md)
 * [Lesson 3: CNN Image Intro](lessons/)
 * [Lesson 4: Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro](lessons/)
-* [Lesson 5:  ]
-* [Lesson 6:  ]
-* [Lesson 7:  ]
+* [Lesson 5:  ](lessons/lesson_5_x.md)
+* [Lesson 6:  ](lessons/lesson_6_x.md)
+* [Lesson 7:  ](lessons/lesson_7_x.md)
 
