@@ -109,4 +109,9 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 `41:00`  
 ## Machinery Example 
 - we'll see 4 main important features
-- 
+
+## One Hot Encoding
+- Case 1:  multiple codes to one variable:  0, 1, 2, 3, 4, 5 (tree will have to do multiple splits to identify variable that has signifigance)
+- Case 2:  with one hot encoding, the random forest can split between 0 and 1; it has the ability in a single step, to pull the category level of significance
+- 1-hot encoding 
+
