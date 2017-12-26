@@ -13,6 +13,10 @@
 `wds` = weight decays  
 
 ---
+# Other Terms
+cardinality:  number of levels of a categorical variable
+
+---
 # Deep Learning Terms
 
 ### SoTA (State-of-the-Art)
