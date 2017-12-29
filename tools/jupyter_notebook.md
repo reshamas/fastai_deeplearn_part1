@@ -48,6 +48,8 @@ In [Kaggle 2017 data science survey](https://www.kaggle.com/surveys/2017) of 16K
 jupyter nbconvert --to <output format> <input notebook> 
 ```
 
+## Jupyter Notebook Gist Sharing
+- press the Gist share button (the yellow highlighted one). It will generate a link for your Jupyter notebook to share for trouble-shooting.
 
 ---
 ## Resources
