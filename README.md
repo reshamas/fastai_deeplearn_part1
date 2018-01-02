@@ -21,9 +21,9 @@ Email:   rs2715@stern.nyu.edu
 ---
 
 ## Course Links
-* [GitHub: fastai](https://github.com/fastai/fastai) (public)
-* [Discourse:  part1-v2](http://forums.fast.ai/c/part1-v2) (private)
-* [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg) (private)
+* [GitHub: fastai](https://github.com/fastai/fastai)
+* [Discourse:  part1-v2](http://forums.fast.ai/c/part1-v2)
+* [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg)
 * [some fastai files](http://files.fast.ai)
 
 ## [Technical Tools](tools/)
