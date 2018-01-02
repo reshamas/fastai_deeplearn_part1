@@ -129,6 +129,7 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - can use rank corrrelation to identify similar features  (function must be monotonic for rank correlation to work)
 
 ## Partial Dependence
+1:07:30  
 ```python
 from pdpdbox import pdp
 from plotnine import *
