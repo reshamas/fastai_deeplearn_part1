@@ -90,7 +90,7 @@ This is the current prompt:
 
 ---
 ## Part III:  Configuring the Machine
-- this will run a script which will set up the CUDA drivers, the special Python distribution Anaconda, libraries, courses, data  
+- this will run a script which will set up the CUDA drivers, the special Python distribution Anaconda, libraries, courses & data  
 ```bash
 curl http://files.fast.ai/setup/paperspace | bash
 ```
