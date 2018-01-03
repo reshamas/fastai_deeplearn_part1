@@ -28,7 +28,7 @@ These notes correspond to first 12 minutes of lesson 1 video
    - West Coast (California)
    - East Coast (New York)
    - Europe
-- pick the one closes to you; for me it is East Coast (NYC)
+- pick the one closest to you; for me it is East Coast (NYC)
 
 ### Step 4:  Choose OS (Operating System)
 - Select `Linux Template`
