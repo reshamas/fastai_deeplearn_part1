@@ -1,4 +1,5 @@
 # Paperspace for fast.ai
+These notes correspond to first 12 minutes of lesson 1 video  
 
 ## About
 * Paperspace is a **GPU** accelerated cloud platform
