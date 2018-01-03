@@ -196,8 +196,8 @@ learn.fit(0.01, 3)
 - AWS, Crestle:  12 GB RAM
 
 If you're using a GPU with less space, you may get errors; you will need to use a smaller batch size. Can change `bs` from 64 to 32.  
-In Jupyter Notebook:  hit Shift + Tab, aftere `(arch, sz), `
-change bs=32
+In Jupyter Notebook:  hit Shift + Tab, after `(arch, sz), `
+change `bs=32`  
 Error is:  CUDA error
 Change **batch size** and **restart kernel**.
 Once the Jupyter Notebook has one GPU error, use it does not recover gracefully from it.  
