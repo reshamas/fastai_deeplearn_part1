@@ -67,6 +67,7 @@ You can ssh into your new machine with the following command:ssh paperspace@184.
 Happy computing!
 - The Paperspace Team
 ```
+
 ---
 ## Part II:  Logging in to Machine
 - select the machine in Paperspace
@@ -90,7 +91,7 @@ This is the current prompt:
 
 ---
 ## Part III:  Configuring the Machine
-Note:  you can `ssh` into paperspace machine from your local computer and run the bash file that way too.  
+- you can `ssh` into paperspace machine from your local computer and run the bash file that way too.  
 >my example
 `ssh paperspace@184.105.6.151`  
 
@@ -98,6 +99,26 @@ Note:  you can `ssh` into paperspace machine from your local computer and run th
 ```bash
 curl http://files.fast.ai/setup/paperspace | bash
 ```
+
+>my example
+```bash
+% ssh paperspace@184.105.6.151
+The authenticity of host '184.105.6.151 (184.105.6.151)' can't be established.
+ECDSA key fingerprint is SHA256:IfjW8JQ/mQWlukNEaFDc5iE2fxwl5mIWaZXhPjKbL/k.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '184.105.6.151' (ECDSA) to the list of known hosts.
+paperspace@184.105.6.151's password: 
+Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-83-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Last login: Thu Jan  4 16:44:47 2018 from 192.168.60.13
+paperspace@psgyqmt1m:~$ ls
+paperspace@psgyqmt1m:~$ curl http://files.fast.ai/setup/paperspace | bash
+```
+
 - this takes about **30 to 60 minutes**
 - when that completes, you will have to reboot the Paperspace machine
   - select the "refresh" arrow
