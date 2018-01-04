@@ -92,7 +92,7 @@ This is the current prompt:
 ---
 ## Part III:  Configuring the Machine
 ### Step 1:  `ssh` from local machine
-- you can `ssh` into paperspace machine from your local computer and run the bash file that way too.  
+- `ssh` into paperspace machine from your local computer and run the bash file that way.  
 >my example
 `ssh paperspace@184.105.6.151`  
 
@@ -129,7 +129,7 @@ paperspace@psgyqmt1m:~$ curl http://files.fast.ai/setup/paperspace | bash
 
 
 ```
-
+### Step 4:  reboot Paperspace machine
 - when that completes, you will have to reboot the Paperspace machine
   - select the "refresh" arrow
 
