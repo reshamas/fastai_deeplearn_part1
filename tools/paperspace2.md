@@ -96,6 +96,7 @@ This is the current prompt:
 `ssh paperspace@184.105.6.151`  
 
 - this will run a script which will set up the CUDA drivers, the special Python distribution Anaconda, libraries, courses & data  
+- you can see the list of [bash commands](http://files.fast.ai/setup/paperspace) in the file
 ```bash
 curl http://files.fast.ai/setup/paperspace | bash
 ```
