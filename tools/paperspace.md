@@ -12,7 +12,7 @@ These notes correspond to first 12 minutes of lesson 1 video
 ## Summary of Charges
 - STORAGE:  `250 GB ($7/month)` or `50 GB ($5/month)` 
 - USAGE:  `$0.40/hr` (least expensive machine available)
-- IP ADDRESS:  `$3`
+- PUBLIC IP ADDRESS:  `$3/month` (single static IP address)
 
 ---
 ## Part I:  Creating a Machine
