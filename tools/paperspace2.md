@@ -147,43 +147,42 @@ paperspace@psgyqmt1m:~$
 
 ---
 ## Part IV:  Logging into Configured Machine
-- this is what machine looks like after it has been configured.  
-- Notice the prompt has changed to `(fastai) paperspace@psnqh1ltz:~$ `
+- this is what machine looks like after it has been configured. 
+- notice the prompt has changed to `(fastai) paperspace@psnqh1ltz:~$ `
+
 ```bash
-Warning: Permanently added '10.64.10.166' (ECDSA) to the list of known hosts.
-paperspace@10.64.10.166's password: 
+Warning: Permanently added '10.64.50.184' (ECDSA) to the list of known hosts.
+paperspace@10.64.50.184's password: 
 Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-104-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-Last login: Tue Jan  2 17:31:05 2018 from 10.64.0.1
-(fastai) paperspace@psnqh1ltz:~$ 
-
+Last login: Thu Jan  4 16:47:39 2018 from 67.250.186.103
+(fastai) paperspace@psgyqmt1m:~$ 
 ```
 
-- <kbd> ls -l </kbd> lists all the files
+### list the files
+- <kbd> ls  </kbd> lists all the files
 ```
-(fastai) paperspace@psnqh1ltz:~$ ls -l
-total 16
-drwxrwxr-x 22 paperspace paperspace 4096 Jan  2 17:42 anaconda3
-drwxrwxr-x  2 paperspace paperspace 4096 Jan  2 17:46 data
-drwxrwxr-x  2 paperspace paperspace 4096 Jan  2 17:39 downloads
-drwxrwxr-x  6 paperspace paperspace 4096 Jan  2 17:42 fastai
-(fastai) paperspace@psnqh1ltz:~$ 
+(fastai) paperspace@psgyqmt1m:~$ ls
+anaconda3  data  downloads  fastai
 ```
 
+### list the data files
 - <kbd> `ls data` </kbd> lists the data contents for first part of this course
 ```bash
-(fastai) paperspace@psnqh1ltz:~$ ls data
-dogscats.zip
+(fastai) paperspace@psgyqmt1m:~$ ls data
+dogscats  dogscats.zip
 ```
+
+### list fastai files
 - <kbd> ls fastai </kbd> lists everything for this course
 ```bash
-(fastai) paperspace@psnqh1ltz:~$ ls fastai
+(fastai) paperspace@psgyqmt1m:~$ ls fastai
 CODE-OF-CONDUCT.md  courses  environment.yml  fastai  LICENSE  MANIFEST  MANIFEST.in  README.md  README.rst  requirements.txt  setup.cfg  setup.py  tutorials
-(fastai) paperspace@psnqh1ltz:~$
+(fastai) paperspace@psgyqmt1m:~$
 ```
 
 ## :red_circle: Part V:  Updating fastai repo contents
@@ -214,7 +213,9 @@ Already up-to-date.
 ### Step 1:  `cd` into fastai directory
 - make sure you are here:  `/home/paperspace/fastai`
 ```bash
-cd fastai
+(fastai) paperspace@psgyqmt1m:~/fastai$ pwd
+/home/paperspace/fastai
+(fastai) paperspace@psgyqmt1m:~/fastai$
 ```
 
 ### Step 2:  open up firewall
