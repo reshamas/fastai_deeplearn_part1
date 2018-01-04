@@ -218,16 +218,7 @@ Already up-to-date.
 (fastai) paperspace@psgyqmt1m:~/fastai$
 ```
 
-### Step 2:  open up firewall
-<kbd> sudo ufw allow 8888:8898/tcp </kbd>
-```bash
-(fastai) paperspace@psnqh1ltz:~/fastai$ sudo ufw allow 8888:8898/tcp
-[sudo] password for paperspace: 
-Rule added
-Rule added (v6)
-```
-
-### Step 3:  Launch Jupyter Notebook
+### Step 2:  Launch Jupyter Notebook
 <kbd> jupyter notebook </kbd>  
 ```
 (fastai) paperspace@psgyqmt1m:~/fastai$ jupyter notebook
@@ -245,11 +236,11 @@ Rule added (v6)
         http://localhost:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
 ```
 
-### Step 4:  Get Notebook url
+### Step 3:  Get Notebook url
 - copy and paste url into your local browser (example:  Chrome, Firefox, Opera, etc)
 - for me it is, and it **WON'T WORK**:   
 http://localhost:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
-- I need to replace "localhost" section with my IP address.  This **DOES WORK**:
+- I need to replace "localhost" section with my IP address.  This **DOES WORK**:  
 http://184.105.6.151:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
 
 :boom:  It works!
