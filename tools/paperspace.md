@@ -46,7 +46,7 @@ These notes correspond to first 12 minutes of lesson 1 video
 - select `250 GB ($7/month)` option; you can also get by with `50 GB ($5/month)` option too
 
 ### Step 7:  Options
-- turn ON `Public IP` 
+- turn ON `Public IP` (cost is `$3/month`)
 - turn OFF `Auto Snapshot` to save money on doing back-ups
 
 ### Step 8:  Payment
