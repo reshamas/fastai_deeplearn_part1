@@ -91,12 +91,15 @@ This is the current prompt:
 
 ---
 ## Part III:  Configuring the Machine
+### Step 1:  `ssh` from local machine
 - you can `ssh` into paperspace machine from your local computer and run the bash file that way too.  
 >my example
 `ssh paperspace@184.105.6.151`  
 
+### Step 2:  run fastai/paperspace bash script
 - this will run a script which will set up the CUDA drivers, the special Python distribution Anaconda, libraries, courses & data  
 - you can see the list of [bash commands](http://files.fast.ai/setup/paperspace) in the file
+- this takes about **1 hour**
 ```bash
 curl http://files.fast.ai/setup/paperspace | bash
 ```
@@ -120,7 +123,13 @@ paperspace@psgyqmt1m:~$ ls
 paperspace@psgyqmt1m:~$ curl http://files.fast.ai/setup/paperspace | bash
 ```
 
-- this takes about **30 to 60 minutes**
+### Step 3:  confirm successful setup
+- you'll see this upon a successful set up:
+```bash
+
+
+```
+
 - when that completes, you will have to reboot the Paperspace machine
   - select the "refresh" arrow
 
