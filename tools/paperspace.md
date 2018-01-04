@@ -90,6 +90,10 @@ This is the current prompt:
 
 ---
 ## Part III:  Configuring the Machine
+Note:  you can `ssh` into paperspace machine from your local computer and run the bash file that way too.  
+>my example
+`ssh paperspace@184.105.6.151`  
+
 - this will run a script which will set up the CUDA drivers, the special Python distribution Anaconda, libraries, courses & data  
 ```bash
 curl http://files.fast.ai/setup/paperspace | bash
