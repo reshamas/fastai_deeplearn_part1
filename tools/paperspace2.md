@@ -230,60 +230,36 @@ Rule added (v6)
 ### Step 3:  Launch Jupyter Notebook
 <kbd> jupyter notebook </kbd>  
 ```
-(fastai) paperspace@psnqh1ltz:~/fastai$ pwd
-/home/paperspace/fastai
-(fastai) paperspace@psnqh1ltz:~/fastai$ jupyter notebook
-[I 18:57:08.482 NotebookApp] Serving notebooks from local directory: /home/paperspace/fastai
-[I 18:57:08.482 NotebookApp] 0 active kernels
-[I 18:57:08.482 NotebookApp] The Jupyter Notebook is running at:
-[I 18:57:08.482 NotebookApp] http://localhost:8888/?token=a6942d5fb64c5b17a7ea5a2206662a7c9098a903068a3778
-[I 18:57:08.482 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[W 18:57:08.482 NotebookApp] No web browser found: could not locate runnable browser.
-[C 18:57:08.482 NotebookApp] 
+(fastai) paperspace@psgyqmt1m:~/fastai$ jupyter notebook
+[I 17:16:50.591 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 17:16:51.110 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 17:16:51.122 NotebookApp] Serving notebooks from local directory: /home/paperspace/fastai
+[I 17:16:51.122 NotebookApp] 0 active kernels
+[I 17:16:51.122 NotebookApp] The Jupyter Notebook is running at:
+[I 17:16:51.122 NotebookApp] http://[all ip addresses on your system]:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
+[I 17:16:51.122 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:16:51.123 NotebookApp] 
     
     Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
-        http://localhost:8888/?token=a6942d5fb64c5b17a7ea5a2206662a7c9098a903068a3778
-[I 18:57:19.390 NotebookApp] 302 GET /?token=a6942d5fb64c5b17a7ea5a2206662a7c9098a903068a377 (::1) 0.60ms
+        http://localhost:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
 ```
 
 ### Step 4:  Get Notebook url
 - copy and paste url into your local browser (example:  Chrome, Firefox, Opera, etc)
 - for me it is, and it **WON'T WORK**:   
-http://localhost:8888/?token=a6942d5fb64c5b17a7ea5a2206662a7c9098a903068a3778
-- I need to replace "localhost" section with my IP address
-- **This is supposed to work, but it DOES NOT:**   
-http://184.105.6.151:8888/?token=a6942d5fb64c5b17a7ea5a2206662a7c9098a903068a3778
-
-### Step 5:  Mac fix
-The above urls did not work for me.  So, I looked in the Forums and found this link:  
-http://forums.fast.ai/t/paperspace-setup-help/9290/6
-
-#### Go to my local computer (for me, it is a Mac)
-- set up ssh tunnel to connect  
-<kbd> ssh -N -f -L localhost:8888:localhost:8888 paperspace@184.105.6.151 </kbd>  
->my example
-```bash
-% ssh -N -f -L localhost:8888:localhost:8888 paperspace@184.105.6.151 
-The authenticity of host '184.105.6.151 (184.105.6.151)' can't be established.
-ECDSA key fingerprint is SHA256:0LPwsJV42vubioUSQ5y6ks3TmqRg8vUbfgafJZYOI0Q.
-Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added '184.105.6.151' (ECDSA) to the list of known hosts.
-paperspace@184.105.6.151's password: 
-```
-
-#### Step 2:  Try Jupyter Notebook again
-<kbd> jupyter notebook </kbd>  
-this url works for me:   
-http://localhost:8888/?token=a6942d5fb64c5b17a7ea5a2206662a7c9098a903068a377
+http://localhost:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
+- I need to replace "localhost" section with my IP address.  This **DOES WORK**:
+http://184.105.6.151:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
 
 :boom:  It works!
 
 ---
 ## Part VII:  Workflow
-I opened the [Lesson 1 notebook](http://localhost:8888/notebooks/courses/dl1/lesson1.ipynb), made a copy with the name `tmp-reshama-lesson1.ipynb`  
+I opened the [Lesson 1 notebook](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb), made a copy with the name `tmp-reshama-lesson1.ipynb`  
 
-Note:  I did get errors while trying to run the notebook.  
+http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
+
 
 ---
 ## :red_circle: Part VIII:  Shutting down Notebook & Machine
