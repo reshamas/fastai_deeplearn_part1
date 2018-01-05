@@ -1,5 +1,5 @@
-# [fast.ai](http://www.fast.ai)
-Deep Learning (Part 1 v2):  **Oct - Dec 2017**  
+# [fast.ai](http://www.fast.ai) Deep Learning Part 1 v2
+**Oct - Dec 2017**  
 
 ---
 ## About
@@ -54,14 +54,14 @@ Email:   rs2715@stern.nyu.edu
 * [Wiki: Lesson 7](http://forums.fast.ai/t/lesson-7-wiki-thread/8847/1)
 
 
-### [Deep Learning 1: My Lesson Notes](courses/dl1/) 
+### [My Lesson Notes](lessons/) 
 * Lesson 1
-  - [Lesson 1a: Course Intro](courses/dl1/lesson_1a_course_intro.md)
-  - [Lesson 1b: CNN and resnet Architecture](courses/dl1/lesson_1b_cnn_tools.md)
-* [Lesson 2: resnet34, resnext50](courses/dl1/lesson_2_resnet34_resnext50.md)
-* [Lesson 3: CNN Image Intro](courses/dl1/lesson_3_x.md)
-* [Lesson 4: Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro](courses/dl1/lesson_4_x.md)
-* [Lesson 5:  ](courses/dl1/lesson_5_x.md)
-* [Lesson 6:  ](courses/dl1/lesson_6_x.md)
-* [Lesson 7:  ](courses/dl1/lesson_7_x.md)
+  - [Lesson 1a: Course Intro](lessons/lesson_1a_course_intro.md)
+  - [Lesson 1b: CNN and resnet Architecture](lessons/lesson_1b_cnn_tools.md)
+* [Lesson 2: resnet34, resnext50](lessons/lesson_2_resnet34_resnext50.md)
+* [Lesson 3: CNN Image Intro](lessons/)
+* [Lesson 4: Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro](lessons/)
+* [Lesson 5:  ](lessons/lesson_5_x.md)
+* [Lesson 6:  ](lessons/lesson_6_x.md)
+* [Lesson 7:  ](lessons/lesson_7_x.md)
 
