@@ -259,7 +259,7 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 - Paperspace has an option where you can choose to automatically shut down your machine at: 1 hr, 8 hrs, 1 day, 1 week
 - I chose the `8 hrs` option
 
-<img src="../images/paperspace.png" align="center"  height="400" width="550" >   
+<img src="../images/paperspace.png" align="center"  height="500" width="750" >   
 
 
 
