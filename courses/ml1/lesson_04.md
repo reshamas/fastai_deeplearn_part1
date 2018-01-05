@@ -134,6 +134,10 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 from pdpdbox import pdp
 from plotnine import *
 ```
+- is a powerful technique
+- not a lot of people know about it
+- for the features which are important, how are they related to the dependent variable?
+- 
 
 
 
