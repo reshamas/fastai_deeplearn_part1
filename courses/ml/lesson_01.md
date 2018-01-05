@@ -1,5 +1,5 @@
 
-# try 1 - random forests
+# Lesson 1 - random forests
 
 
 Notebook:  [lesson1-rf.ipynb](https://github.com/fastai/fastai/blob/master/courses/ml1/lesson1-rf.ipynb)  
