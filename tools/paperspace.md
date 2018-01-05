@@ -260,6 +260,7 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 
 - Paperspace has an option where you can choose to automatically shut down your machine at: 1 hr, 8 hrs, 1 day, 1 week
 - I chose the `8 hrs` option
+- :key: Note that the auto shut down works only for the browser console. **Paperspace will not shut down your server if you SSH to it.**
 
 <img src="../images/paperspace.png" align="center"  height="500" width="750" >   
 
