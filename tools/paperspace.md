@@ -14,6 +14,8 @@ These notes correspond to first 12 minutes of lesson 1 video
 - USAGE:  `$0.40/hr` (least expensive machine available)
 - PUBLIC IP ADDRESS:  `$3/month` (single static IP address)
 
+Note:  There is a **$15 credit code you can all use: FASTAI15**
+
 ---
 ## Part I:  Creating a Machine
 ### Step 1:  Where to start
@@ -50,7 +52,7 @@ These notes correspond to first 12 minutes of lesson 1 video
 - turn OFF `Auto Snapshot` to save money on doing back-ups
 
 ### Step 8:  Payment
-- add in a promo code if you have it
+- add in a promo code:  **$15 credit code you can all use: FASTAI15**
 - add in credit card information (required, even if you have a promo code)
 
 ### Step 9:  Create machine
