@@ -257,9 +257,9 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 ### :red_circle: Remember to shut the notebook down and STOP Instance! :moneybag: :red_circle:
 
 - Paperspace has an option where you can choose to automatically shut down your machine at: 1 hr, 8 hrs, 1 day, 1 week
-- I choose the 8 hrs option
+- I chose the `8 hrs` option
 
-<img src="../images/paperspace.png" align="center"  height="300" width="450" >   
+<img src="../images/paperspace.png" align="center"  height="400" width="550" >   
 
 
 
