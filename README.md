@@ -29,6 +29,7 @@ Email:   rs2715@stern.nyu.edu
 * [some fastai files](http://files.fast.ai)
 
 ## [Technical Tools](tools/)
+* [Paperspace setup](tools/paperspace.md)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
 * [tmux on AWS](tools/tmux.md)
 * [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
