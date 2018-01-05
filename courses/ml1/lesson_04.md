@@ -136,7 +136,8 @@ from plotnine import *
 ```
 - is a powerful technique
 - not a lot of people know about it
-- for the features which are important, how are they related to the dependent variable?
+- for the features which are important, how do they relate to the dependent variable?
+- look at relationships, and then ask "what happened?  what [external factor] could be causing this?
 - 
 
 
