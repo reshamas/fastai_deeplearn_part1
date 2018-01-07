@@ -40,8 +40,8 @@ Host paperspace
      User paperspace
 ```
 - here's the nano command for saving file
-<kbd> ctrl o </kbd>
-<kbd> <enter> </kbd>
+<kbd> ctrl o </kbd>  
+<kbd> <enter> </kbd>  
 
 - here's the nano command for exiting a file
 <kbd> ctrl x </kbd>
@@ -91,6 +91,6 @@ courses             fastai           MANIFEST  README.md    requirements.txt  se
         http://localhost:8888/?token=594036202395d8ea6324d33ecee448cd87e99a50b64918cb        
 ```
 
-## Cool~  no password required, and no need to update notebook url with IP address~
-- this is my url link, and it works~
+## Cool~  no password required, and no need to update notebook url with IP address
+- this is my url link, and it works! :boom:
 http://localhost:8888/?token=594036202395d8ea6324d33ecee448cd87e99a50b64918cb
