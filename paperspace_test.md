@@ -39,11 +39,11 @@ Host paperspace
      # StrictHostKeyChecking no  
      User paperspace
 ```
-- here's the nano command for saving file
+- here's the nano command for saving file  
 <kbd> ctrl o </kbd>  
 <kbd> <enter> </kbd>  
 
-- here's the nano command for exiting a file
+- here's the nano command for exiting a file  
 <kbd> ctrl x </kbd>
 >my example of config file
 ```bash
