@@ -126,7 +126,11 @@ paperspace@psgyqmt1m:~$ curl http://files.fast.ai/setup/paperspace | bash
 ```
 
 ### Step 3:  confirm successful setup
-- you'll see this upon a successful set up:
+- you'll see this upon a successful set up:  
+```text
+YOU NEED TO REBOOT YOUR PAPERSPACE COMPUTER NOW
+```
+>my example
 ```bash
 Requirement already satisfied: wcwidth in /home/paperspace/anaconda3/envs/fastai/lib/python3.6/site-packages (from prompt_toolkit<2.0.0,>=1.0.4->ipython>=4.0.0->ipywidgets)
 + jupyter nbextension enable --py widgetsnbextension --sys-prefix
