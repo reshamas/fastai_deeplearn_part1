@@ -16,7 +16,7 @@ brew install ssh-copy-id
 - if you don't have an `id_rsa.pub` file in your `~/.ssh` folder, create it (`ssh-keygen` and hit <kbd> Enter </kbd> 3 times)
 
 ### Step 3:  Copy public key to Paperspace
-Note:  replace IP address in syntax below with your own
+- replace IP address in syntax below with your own, and run command
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.6.151
 ```
