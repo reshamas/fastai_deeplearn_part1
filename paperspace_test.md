@@ -34,7 +34,7 @@ nano config
 - add these contents to you config file (replace IP address here with your Paperspace IP address)
 ```text
 Host paperspace
-     HostName 184.105.6.151
+     HostName 184.105.2.222
      IdentityFile ~/.ssh/id_rsa
      # StrictHostKeyChecking no  
      User paperspace
@@ -51,7 +51,7 @@ Host paperspace
 /Users/reshamashaikh/.ssh
 % cat config
 Host paperspace
-     HostName 184.105.6.151
+     HostName 184.105.2.222
      IdentityFile ~/.ssh/id_rsa
      # StrictHostKeyChecking no  
      User paperspace
@@ -68,7 +68,7 @@ jupyter notebook
 
 >my example
 ```bash
-Last login: Sun Jan  7 12:57:35 2018 from 67.250.186.103
+Last login: Sun Jan  7 12:57:35 2018 from 77.777.777.777
 (fastai) paperspace@psgyqmt1m:~$ ls
 anaconda3  data  downloads  fastai
 (fastai) paperspace@psgyqmt1m:~$ cd fastai
@@ -88,9 +88,9 @@ courses             fastai           MANIFEST  README.md    requirements.txt  se
     
     Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
-        http://localhost:8888/?token=594036202395d8ea6324d33ecee448cd87e99a50b64918cb        
+        http://localhost:8888/?token=77594036202395d8ea6324d33ecee448cd87e99a50b64918cb        
 ```
 
 ## Cool!  no password required, and no need to update notebook url with IP address
 - this is my url link, and it works! :boom:
-http://localhost:8888/?token=594036202395d8ea6324d33ecee448cd87e99a50b64918cb
+http://localhost:8888/?token=77594036202395d8ea6324d33ecee448cd87e99a50b64918cb
