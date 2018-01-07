@@ -249,7 +249,7 @@ http://localhost:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
 - I need to replace `localhost` section with my `IP address`.  This **DOES WORK**:  
 http://184.105.6.151:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
 
-:boom:  It works!
+:boom:  Hooray, it works! :smiley:
 
 ---
 ## Part VII:  Workflow
