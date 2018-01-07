@@ -66,5 +66,10 @@ jupyter notebook list
 htop
 ```
 
+file:  `.bashrc`  
+```
+export PYTHONPATH=$PYTHONPATH:~/fastai
+```
+
 
 
