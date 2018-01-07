@@ -10,7 +10,21 @@ Please login as the user "ubuntu" rather than the user "root".
 ssh -i "id_rsa.pub" ubuntu@ec2-34-198-228-48.compute-1.amazonaws.com -L8888:localhost:8888
 ```
 
-## `git pull` 
+## update Ubuntu: `sudo apt-get update`
+```bash
+sudo apt-get update
+```
+
+
+## update fastai repo:  `git pull` 
+```bash
+cd fastai
+```
+```bash
+git pull
+```
+
+>my example
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~$ ls
 data  fastai  src
@@ -19,7 +33,11 @@ data  fastai  src
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
 
-## `conda env update`
+## update Anaconda packages:  `conda env update`
+```bash
+conda env update
+```
+>my example
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$ conda env update
 Using Anaconda API: https://api.anaconda.org
