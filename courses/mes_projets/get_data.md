@@ -50,5 +50,8 @@ drwxrwxr-x 5 ubuntu ubuntu       4096 Jan  7 20:38 ..
 (fastai) ubuntu@ip-172-31-2-59:~/data/iceberg$
 ```
 
+```bash
+(fastai) ubuntu@ip-172-31-2-59:~/fastai/courses/dl1$ jupyter notebook
+```
 
 
