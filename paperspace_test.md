@@ -1,6 +1,7 @@
 
 
 ## Simplifying Logging In (skip password and updating IP address in Jupyter Notebook link)
+Note:  the below commands are run on **your local computer**
 
 ### Step 1:  Install `ssh-copy-id`
 If you don't have it already, here's how to install it (Mac):  
@@ -14,7 +15,7 @@ brew install ssh-copy-id
 - if you don't have an `id_rsa.pub` file in your `~/.ssh` folder, create it (`ssh-key` and hit <kbd> Enter </kbd> 3 times)
 
 ### Step 3:  Copy public key to Paperspace
-Note:  use your IP address in syntax below
+Note:  replace IP address in syntax below with your own
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.6.151
 ```
@@ -37,7 +38,12 @@ Host paperspace
      # StrictHostKeyChecking no  
      User paperspace
 ```
+- here's the nano command for saving file
+<kbd> ctrl o </kbd>
+<kbd> <enter> </kbd>
 
+- here's the nano command for exiting a file
+<kbd> ctrl x </kbd>
 >my example of config file
 ```bash
 % pwd
@@ -59,6 +65,8 @@ cd fastai
 jupyter notebook
 ```
 
+>my example
+```bash
 Last login: Sun Jan  7 12:57:35 2018 from 67.250.186.103
 (fastai) paperspace@psgyqmt1m:~$ ls
 anaconda3  data  downloads  fastai
