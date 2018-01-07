@@ -64,7 +64,7 @@ Note:  There is a **$15 credit code you can all use: `FASTAI15`**
 ```text
 Your temporary sign-in password for machine New Machine 1 is: *************
 
-You can ssh into your new machine with the following command:ssh paperspace@184.105.6.151
+You can ssh into your new machine with the following command:ssh paperspace@184.105.2.222
 
 Happy computing!
 - The Paperspace Team
@@ -96,7 +96,7 @@ This is the current prompt:
 ### Step 1:  `ssh` from local machine
 - `ssh` into paperspace machine from your local computer and run the bash file that way.  
 >my example
-`ssh paperspace@184.105.6.151`  
+`ssh paperspace@184.105.2.222`  
 
 ### Step 2:  run fastai/paperspace bash script
 - this will run a script which will set up the CUDA drivers, the special Python distribution Anaconda, libraries, courses & data  
@@ -109,10 +109,10 @@ curl http://files.fast.ai/setup/paperspace | bash
 >my example
 ```bash
 % ssh paperspace@184.105.6.151
-The authenticity of host '184.105.6.151 (184.105.6.151)' can't be established.
+The authenticity of host '184.105.6.151 (184.105.2.222)' can't be established.
 ECDSA key fingerprint is SHA256:IfjW8JQ/mQWlukNEaFDc5iE2fxwl5mIWaZXhPjKbL/k.
 Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added '184.105.6.151' (ECDSA) to the list of known hosts.
+Warning: Permanently added '184.105.2.222' (ECDSA) to the list of known hosts.
 paperspace@184.105.6.151's password: 
 Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-83-generic x86_64)
 
@@ -157,7 +157,7 @@ paperspace@psgyqmt1m:~$
 - notice the prompt has changed to `(fastai) paperspace@psnqh1ltz:~$ `
 
 ```bash
-Warning: Permanently added '10.64.50.184' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.64.22.222' (ECDSA) to the list of known hosts.
 paperspace@10.64.50.184's password: 
 Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-104-generic x86_64)
 
