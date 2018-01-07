@@ -1,6 +1,6 @@
 
 
-## Simplifying Logging In 
+## Simplifying Logging in to Paperspace
 ### (skip password and updating IP address in Jupyter Notebook link)
 Note:  the below commands are run on **your local computer**
 
