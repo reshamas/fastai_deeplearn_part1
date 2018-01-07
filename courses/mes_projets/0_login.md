@@ -1,6 +1,6 @@
 # logging in
 
-## login
+### login
 Please login as the user "ubuntu" rather than the user "root".
 
 ```bash
@@ -10,13 +10,13 @@ Please login as the user "ubuntu" rather than the user "root".
 ssh -i "id_rsa.pub" ubuntu@ec2-34-198-228-48.compute-1.amazonaws.com -L8888:localhost:8888
 ```
 
-## update Ubuntu: `sudo apt-get update`
+### update Ubuntu: `sudo apt-get update`
 ```bash
 sudo apt-get update
 ```
 
 
-## update fastai repo:  `git pull` 
+### update fastai repo:  `git pull` 
 ```bash
 cd fastai
 ```
@@ -33,7 +33,7 @@ data  fastai  src
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
 
-## update Anaconda packages:  `conda env update`
+### update Anaconda packages:  `conda env update`
 ```bash
 conda env update
 ```
