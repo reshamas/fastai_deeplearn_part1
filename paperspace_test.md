@@ -1,6 +1,7 @@
 
 
-## Simplifying Logging In (skip password and updating IP address in Jupyter Notebook link)
+## Simplifying Logging In 
+### (skip password and updating IP address in Jupyter Notebook link)
 Note:  the below commands are run on **your local computer**
 
 ### Step 1:  Install `ssh-copy-id`
