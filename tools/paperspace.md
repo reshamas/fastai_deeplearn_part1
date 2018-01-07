@@ -30,7 +30,7 @@ Note:  There is a **$15 credit code you can all use: `FASTAI15`**
    - West Coast (California)
    - East Coast (New York)
    - Europe
-- pick the one closest to you; for me it is East Coast (NYC)
+- pick the one closest to you; (for me it is East Coast (NYC))
 
 ### Step 4:  Choose OS (Operating System)
 - Select `Linux Template`
@@ -39,7 +39,7 @@ Note:  There is a **$15 credit code you can all use: `FASTAI15`**
 ### Step 5:  Choose machine
 - there are various machines with charges noted by the hour
 - Paperspace is cheaper than Crestle, with fast machines
-- if you choose the $0.65/hr machine, it may ask you to contact Paperspace asking why (anti-fraud step); let them know it is for **fast.ai** and they will get you up and running
+- if you choose the `$0.65/hr` machine, it may ask you to contact Paperspace asking why (anti-fraud step); let them know it is for **fast.ai** and they will get you up and running
 - select the `$0.40/hr`, the cheapest one
 
 ### Step 6:  Choose storage
