@@ -91,6 +91,6 @@ courses             fastai           MANIFEST  README.md    requirements.txt  se
         http://localhost:8888/?token=594036202395d8ea6324d33ecee448cd87e99a50b64918cb        
 ```
 
-## Cool~  no password required, and no need to update notebook url with IP address
+## Cool!  no password required, and no need to update notebook url with IP address
 - this is my url link, and it works! :boom:
 http://localhost:8888/?token=594036202395d8ea6324d33ecee448cd87e99a50b64918cb
