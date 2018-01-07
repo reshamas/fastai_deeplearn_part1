@@ -268,7 +268,7 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 
 <img src="../images/paperspace.png" align="center"  height="500" width="750" >   
 
---
+---
 
 # Optional Steps (skip password and updating IP address in Jupyter Notebook link)
 
