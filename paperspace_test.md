@@ -23,7 +23,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.6.151
 ### Step 4:  Add Paperspace info to `config` file
 - make sure you are in the right directory
 ```bash
-cd ~.ssh
+cd ~/.ssh
 ```
 
 - if you don't have a `config` file, create one
