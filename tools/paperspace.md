@@ -311,8 +311,8 @@ Host paperspace
      User paperspace
 ```
 - here's the nano command for saving file  
-<kbd> ctrl o </kbd>  
-<kbd> <enter> </kbd>  
+<kbd> ctrl o </kbd>    
+<kbd> Enter </kbd>  
 
 - here's the nano command for exiting a file  
 <kbd> ctrl x </kbd>
