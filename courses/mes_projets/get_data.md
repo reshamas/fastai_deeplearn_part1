@@ -18,3 +18,10 @@ pip install kaggle-cli --upgrade
 kg download -u "reshamashaikh" -p "xxx" -c statoil-iceberg-classifier-challenge
 ```
 
+```bash
+sudo apt-get install p7zip-full
+7z e test.json.7z
+ 
+
+
+
