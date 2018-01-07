@@ -14,7 +14,7 @@ These notes correspond to first 12 minutes of lesson 1 video
 - USAGE:  `$0.40/hr` (least expensive machine available)
 - PUBLIC IP ADDRESS:  `$3/month` (single static IP address)
 
-Note:  There is a **$15 credit code you can all use: FASTAI15**
+Note:  There is a **$15 credit code you can all use: `FASTAI15`**
 
 ---
 ## Part I:  Creating a Machine
