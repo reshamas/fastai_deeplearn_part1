@@ -272,7 +272,7 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 
 # Optional Steps (skip password and updating IP address in Jupyter Notebook link)
 
-## Simplifying Logging in to Paperspace
+## Setup:  Simplifying Logging in to Paperspace
 Note:  the below commands are run on **your local computer**
 
 ### Step 1:  Install `ssh-copy-id`
@@ -328,6 +328,11 @@ Host paperspace
      IdentityFile ~/.ssh/id_rsa
      # StrictHostKeyChecking no  
      User paperspace
+```
+
+## ssh into Paperspace from local computer
+```bash
+ssh -L 8888:localhost:8888 paperspace
 ```
 
 ## Back to Paperspace
