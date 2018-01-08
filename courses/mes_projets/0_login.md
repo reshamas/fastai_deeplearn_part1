@@ -86,3 +86,11 @@ drwxrwxr-x  8 ubuntu ubuntu 4096 Dec 21 01:53 camelhorse
 drwxrwxr-x  8 ubuntu ubuntu 4096 Dec 20 22:19 dogscats
 (fastai) ubuntu@ip-172-31-2-59:~/data$ 
 ```
+
+## launch Jupyter Notebook
+```bash
+(fastai) ubuntu@ip-172-31-2-59:~$ pwd
+/home/ubuntu
+(fastai) ubuntu@ip-172-31-2-59:~$ jupyter notebook
+```
+
