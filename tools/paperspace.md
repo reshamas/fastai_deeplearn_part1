@@ -289,7 +289,7 @@ brew install ssh-copy-id
 ### Step 3:  Copy public key to Paperspace
 - replace IP address in syntax below with your own, and run command
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.6.151
+ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.2.222
 ```
 ### Step 4:  Add Paperspace info to `config` file
 - make sure you are in the right directory
