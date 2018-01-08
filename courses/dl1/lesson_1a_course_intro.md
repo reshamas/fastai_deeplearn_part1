@@ -31,7 +31,7 @@ Being recorded and will become a fastai MOOC.
 ## Python
 * using Python 3.6
 
-## Platforms
+## Deep Learning GPU Platforms
 * [Crestle](https://www.crestle.com) built by [Anurag Goel](https://www.linkedin.com/in/anuragoel/)  
 * [Paperspace](https://www.paperspace.com)
 * [AWS](https://aws.amazon.com/console/)
