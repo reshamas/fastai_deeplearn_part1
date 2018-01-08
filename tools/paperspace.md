@@ -320,6 +320,8 @@ Host paperspace
 ```bash
 % pwd
 /Users/reshamashaikh/.ssh
+```
+```bash
 % cat config
 Host paperspace
      HostName 184.105.2.222
