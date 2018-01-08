@@ -6,8 +6,12 @@ Please login as the user "ubuntu" rather than the user "root".
 ```bash
 % pwd
 /Users/reshamashaikh/.ssh
+```
+
+Note:  create an alias in `.zshrc` to log into AWS computer
+```bash
 % 
-ssh -i "id_rsa.pub" ubuntu@ec2-34-198-228-48.compute-1.amazonaws.com -L8888:localhost:8888
+fastai
 ```
 
 ### update Ubuntu: `sudo apt-get update`
