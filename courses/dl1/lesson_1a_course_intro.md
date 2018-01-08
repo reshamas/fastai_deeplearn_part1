@@ -87,7 +87,7 @@ How do we get computers and humans to work better together?
 * way of giving machine data (examples) and having it figure out the problem that is represented in those examples
 
 ## What We Are Looking For:  Something That Has 3 Properties
-(3 Things that Give Us Modern Deep Learning)  
+### 3 Things that Give Us Modern Deep Learning
 We are looking for a **mathematical function** that is *so flexible* that it can solve any given problem.  
 1. Infinitely Flexible Functions
 2. All-Purpose Parameter Fitting (way to train the parameters)
@@ -96,7 +96,7 @@ We are looking for a **mathematical function** that is *so flexible* that it can
 
 Example of limitation:  linear regression is limited by the fact it can only represent linear functions.  
 
-Deep Learning has all 3 of above properties.  
+### Deep Learning has all 3 of above properties.  
 * functional form:  neural network
 * multiple layers allows more complex relationships
 * parameters of neural network can be found using gradient descent
