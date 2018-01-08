@@ -1,4 +1,4 @@
-# logging in
+# Logging in to AWS
 
 ### login
 Please login as the user "ubuntu" rather than the user "root".
@@ -20,7 +20,7 @@ sudo apt-get update
 ```
 
 ---
-## my projects
+## My Projects
 I'm working in this directory  
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ pwd
