@@ -89,7 +89,7 @@ What's next?
 - There are so many functions.
 - GPUs can do networks at scale; can do billions of operations a second.
 
-Note:  most students spend lecture listening, then watch the lecture during the week and follow along with code.
+### Learning Tip: most students spend lecture listening, then watch the lecture during the week and follow along with code.
 
 ## GPUs
 - we need an NVIDIA GPU.  An NVIDIA GPUs support CUDA.  CUDA is a particular way of doing compution on GPU that is not limited to computer games, but general purpose computations.
