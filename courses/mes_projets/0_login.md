@@ -19,14 +19,6 @@ fastai
 sudo apt-get update
 ```
 
----
-# My Projects
-I'm working in this directory  
-```bash
-(fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ pwd
-/home/ubuntu/git_repos/projects
-```
-
 ### update fastai repo:  `git pull` 
 ```bash
 cd fastai
@@ -64,6 +56,16 @@ Solving package specifications: .
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
 ## `conda update --all`
+
+
+---
+# My Projects
+I'm working in this directory  
+```bash
+(fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ pwd
+/home/ubuntu/git_repos/projects
+```
+
 
 ---
 
