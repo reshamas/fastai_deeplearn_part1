@@ -60,12 +60,29 @@ Solving package specifications: .
 
 ---
 # My Projects
-I'm working in this directory  
+
+## my code  
 ```bash
-(fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ pwd
+(fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ pwd 
 /home/ubuntu/git_repos/projects
+(fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ ls -l
+total 12
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jan  8 21:07 camels_h
+drwxrwxr-x 3 ubuntu ubuntu 4096 Jan  8 00:44 iceberg
+-rw-rw-r-- 1 ubuntu ubuntu   23 Jan  7 21:04 README.md
+(fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ 
 ```
 
-
----
-
+## my data
+```bash
+(fastai) ubuntu@ip-172-31-2-59:~/data$ pwd
+/home/ubuntu/data
+(fastai) ubuntu@ip-172-31-2-59:~/data$ ls -alt
+total 20
+drwxr-xr-x 20 ubuntu ubuntu 4096 Jan  8 21:11 ..
+drwxrwxr-x  2 ubuntu ubuntu 4096 Jan  7 20:44 iceberg
+drwxrwxr-x  5 ubuntu ubuntu 4096 Jan  7 20:38 .
+drwxrwxr-x  8 ubuntu ubuntu 4096 Dec 21 01:53 camelhorse
+drwxrwxr-x  8 ubuntu ubuntu 4096 Dec 20 22:19 dogscats
+(fastai) ubuntu@ip-172-31-2-59:~/data$ 
+```
