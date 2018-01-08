@@ -20,7 +20,7 @@ sudo apt-get update
 ```
 
 ---
-## My Projects
+# My Projects
 I'm working in this directory  
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ pwd
