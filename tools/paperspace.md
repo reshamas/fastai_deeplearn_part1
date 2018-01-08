@@ -335,11 +335,8 @@ Host paperspace
 ssh -L 8888:localhost:8888 paperspace
 ```
 
-## Back to Paperspace
-- go to `fastai` directory and launch Jupyter Notebook
-```bash
-cd fastai
-```
+## start Jupyter Notebook from local computer
+- launch Jupyter Notebook
 ```bash
 jupyter notebook
 ```
