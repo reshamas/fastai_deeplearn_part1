@@ -17,7 +17,11 @@
 * the other main architectures we'll look at in this course are:
   * Recurrent Neural Network
   * Fully Connected Neural Networks
-* **State of the art** approach in many, if not most areas:  image recognition, NLP, computer vision, speech recognition.
+* **State of the art** approach in many, if not most areas:  
+   * image recognition
+   * NLP
+   * computer vision
+   * speech recognition
 * this will be our focus:  best architecture for vast majority of applications
 * basic structure of the CNN is the convolution
 
