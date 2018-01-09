@@ -43,6 +43,9 @@ Email:   rs2715@stern.nyu.edu
 ---
 ## Course Info
 
+### Deep Learning Wiki
+http://forums.fast.ai/t/welcome-to-part-1-v2/5787
+
 ### Wiki's
 * [Wiki thread: Intro workshop](http://forums.fast.ai/t/wiki-thread-intro-workshop/6537)
 * [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)
