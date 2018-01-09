@@ -299,7 +299,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.2.222
 cd ~/.ssh
 ```
 
-- if you don't have a `config` file, create one
+- if you don't have a `config` file, create one.  This example creates file using nano editor.  
 ```bash
 nano config
 ```
