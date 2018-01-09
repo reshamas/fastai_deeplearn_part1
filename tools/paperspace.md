@@ -49,7 +49,7 @@ Note:  There is a **$15 credit code you can all use: `FASTAI15`**
 
 ### Step 7:  Options
 - turn ON `Public IP` (cost is `$3/month`)
-- turn OFF `Auto Snapshot` to save money on doing back-ups
+- turn OFF `Auto Snapshot` (to save money on doing back-ups)
 
 ### Step 8:  Payment
 - add in a promo code:  **$15 credit code you can all use: FASTAI15**
