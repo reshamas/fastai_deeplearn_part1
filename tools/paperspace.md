@@ -96,7 +96,9 @@ This is the current prompt:
 ### Step 1:  `ssh` from local machine
 - `ssh` into paperspace machine from your local computer and run the bash file that way.  
 >my example
-`ssh paperspace@184.105.2.222`  
+```bash
+ssh paperspace@184.105.2.222
+```
 
 ### Step 2:  run fastai/paperspace bash script
 - this will run a script which will set up the CUDA drivers, the special Python distribution Anaconda, libraries, courses & data  
