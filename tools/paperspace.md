@@ -272,7 +272,7 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 ---
 
 # Optional Steps 
-## skip password and updating IP address in Jupyter Notebook link
+## Skip password and updating IP address in Jupyter Notebook link
 
 ## Setup:  Simplifying Logging in to Paperspace
 Note:  the below commands are run on **YOUR LOCAL COMPUTER**
