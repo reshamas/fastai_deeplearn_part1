@@ -260,7 +260,6 @@ I opened the [Lesson 1 notebook](https://github.com/fastai/fastai/blob/master/co
 http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 
 
----
 ## :red_circle: Part VIII:  Shutting down Notebook & Machine
 ### :red_circle: Remember to shut the notebook down and STOP Instance! :moneybag: :red_circle:
 
@@ -272,10 +271,11 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 
 ---
 
-# Optional Steps (skip password and updating IP address in Jupyter Notebook link)
+# Optional Steps 
+## skip password and updating IP address in Jupyter Notebook link
 
 ## Setup:  Simplifying Logging in to Paperspace
-Note:  the below commands are run on **your local computer**
+Note:  the below commands are run on **YOUR LOCAL COMPUTER**
 
 ### Step 1:  Install `ssh-copy-id`
 If you don't have it already, here's how to install it (Mac):  
