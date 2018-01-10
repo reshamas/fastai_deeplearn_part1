@@ -7,10 +7,6 @@ Deep Learning (Part 1 v2):  **Oct - Dec 2017**
 ### Contact Info
 Reshama Shaikh  
 Blog:  https://reshamas.github.io  
-LinkedIn:  https://www.linkedin.com/in/reshamas   
-Twitter:  https://twitter.com/reshamas  
-GitHub:  https://github.com/reshamas  
-Email:   rs2715@stern.nyu.edu  
 
 ### About Me
 * Data Scientist (Statistician, MBA)
