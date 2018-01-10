@@ -210,3 +210,8 @@ On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while sele
 * [AWS Pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
 * [AWS Pricing Worksheet](https://calculator.s3.amazonaws.com/index.html)  
 
+---
+
+## Optional
+- create an elastic IP so your IP address remains static
+
