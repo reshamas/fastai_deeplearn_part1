@@ -21,12 +21,12 @@ If you change the default **location of your notebook**, you'll need to update y
 - for me, my notebooks are in a "projects" directory:  `~/projects`
 - my `fastai` repo is cloned at the root level, so it is here:  `~/fastai`
 
-file:  `.bashrc`  
+in the file `.bashrc`  add this path:
 ```
 export PYTHONPATH=$PYTHONPATH:~/fastai
 ```  
 **Reminder:** don't forget to run (or `source`) your `.bashrc` file:  
-1.  add path where fastai repo is to to `.bashrc`
+1.  add path where fastai repo is to `.bashrc`
 2.  save and exit
 3.  source it:  `source ~/.bashrc`
 
