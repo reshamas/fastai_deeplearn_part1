@@ -32,7 +32,7 @@ Note:  There is a **$15 credit code you can all use: `FASTAI15`**
    - Europe
 - pick the one closest to you; (for me it is East Coast (NYC))
 
-### Step 4:  Choose OS (Operating System) & Template
+### Step 4:  Choose template
 - Select `Public Templates`
 - Select icon for `fast.ai`
 
