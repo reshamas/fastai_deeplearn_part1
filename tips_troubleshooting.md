@@ -1,6 +1,6 @@
 # Solving Errors
 
-1.  Do `git pull` of [fastai library](https://github.com/fastai/fastai).  Updates may sort out some errors.
+1.  Do <kbd> git pull </kbd> of [fastai library](https://github.com/fastai/fastai).  Updates may sort out some errors.
 ```bash
 git pull
 ```
