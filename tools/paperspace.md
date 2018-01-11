@@ -47,8 +47,8 @@ Note:  There is a **$15 credit code you can all use: `FASTAI15`**
 
 ### Step 6:  Choose storage
 - note that you pay for storage as soon as you start the machine up
-- :red_circle: don't start and stop a lot of machines, because you'll pay for the **storage cost** for **EACH machine, EACH time**!
 - select `250 GB ($7/month)` option; you can also get by with `50 GB ($5/month)` option too
+- storage costs are pro-rated (like compute (or "usage") costs) 
 
 ### Step 7:  Options
 - turn ON `Public IP` (cost is `$3/month`)
