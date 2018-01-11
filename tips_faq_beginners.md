@@ -1,6 +1,10 @@
 # Fastai FAQs for Beginners
 
-## Q1:  Where can I put _my_ Jupter Notebook?
+## Q1:  How to ask for help for fastai
+http://wiki.fast.ai/index.php/How_to_ask_for_Help
+
+---
+## Q2:  Where can I put _my_ Jupter Notebook?
 
 ### Option 1 (default):  under /courses
 The default location is under the `dl1` folder, wherever you've cloned the repo on your GPU machine.
