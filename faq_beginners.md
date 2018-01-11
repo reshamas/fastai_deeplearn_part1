@@ -21,8 +21,8 @@ file:  `.bashrc`
 ```
 export PYTHONPATH=$PYTHONPATH:~/fastai
 ```  
-**Reminder:*** don't forget to run (or `source`) your `.bashrc` file:  
-1.  add path to `.bashrc`
+**Reminder:** don't forget to run (or `source`) your `.bashrc` file:  
+1.  add path where fastai repo is to to `.bashrc`
 2.  save and exit
 3.  source it:  `source ~/.bashrc`
 
