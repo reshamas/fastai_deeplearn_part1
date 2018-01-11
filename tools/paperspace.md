@@ -199,7 +199,7 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 ## Skip password and updating IP address in Jupyter Notebook link
 
 ## Setup:  Simplifying Logging in to Paperspace
-Note:  the below commands are run on **YOUR LOCAL COMPUTER**
+Note:  the below commands are run on * **YOUR LOCAL COMPUTER** *
 
 ### Step 1:  Install `ssh-copy-id`
 If you don't have it already, here's how to install it (Mac):  
