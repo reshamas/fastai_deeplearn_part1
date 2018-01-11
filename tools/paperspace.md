@@ -189,8 +189,8 @@ http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
 
 - Paperspace has an option where you can choose to automatically shut down your machine at: 1 hr, 8 hrs, 1 day, 1 week
 - I chose the `8 hrs` option
-- :key: Note that the auto shut down works only for the browser console. **Paperspace will not shut down your server if you SSH to it.**
-
+- :key: Note that the auto shut down works only for the browser console. **Paperspace will not auto shut down your server if you SSH to it.**
+- [How do I use Auto-Shutdown on my Linux machine when connecting through SSH?](https://paperspace.zendesk.com/hc/en-us/articles/115002807447-How-do-I-use-Auto-Shutdown-on-my-Linux-machine-when-connecting-through-SSH-)
 <img src="../images/paperspace.png" align="center"  height="500" width="750" >   
 
 ---
