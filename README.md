@@ -42,17 +42,6 @@ Blog:  https://reshamas.github.io
 ### Deep Learning Wiki
 http://forums.fast.ai/t/welcome-to-part-1-v2/5787
 
-### Wiki's
-* [Wiki thread: Intro workshop](http://forums.fast.ai/t/wiki-thread-intro-workshop/6537)
-* [Wiki: Lesson 1](http://forums.fast.ai/t/wiki-lesson-1/7011)
-* [Wiki: Lesson 2](http://forums.fast.ai/t/wiki-lesson-2/7452)
-* [Wiki: Lesson 3](http://forums.fast.ai/t/wiki-lesson-3/7809)
-* [Wiki: Lesson 4](http://forums.fast.ai/t/wiki-lesson-4/8112)
-* [Wiki: Lesson 5](http://forums.fast.ai/t/wiki-lesson-5/8408)
-* [Wiki: Lesson 6](http://forums.fast.ai/t/wiki-lesson-6/8629)
-* [Wiki: Lesson 7](http://forums.fast.ai/t/lesson-7-wiki-thread/8847/1)
-
-
 ### [Deep Learning 1: My Lesson Notes](courses/dl1/) 
 * Lesson 1
   - [Lesson 1a: Course Intro](courses/dl1/lesson_1a_course_intro.md)
