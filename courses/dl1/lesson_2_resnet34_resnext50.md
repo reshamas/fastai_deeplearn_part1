@@ -52,7 +52,6 @@ tfms = tfms_from_model(resnet34, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
 - another option:  `transforms_top_down`
 - can also create custom transforms
 - data augmentation is not exactly creating new data, but it's a different way of looking at it for the convolutional neural network
-- 
 
 ## Unfreeze Layers
 
@@ -78,9 +77,9 @@ tfms = tfms_from_model(resnet34, sz, aug_tfms=transforms_side_on, max_zoom=1.1)
 - every year, the libraries that are available and the best change
 - main thing to get out of this course is to get the **concepts**
   - learning rate
-  - how to learning rate annealing
+  - how to do learning rate annealing
   - why differential learning rates are important
-  - stochastic gradident descent with restart
+  - stochastic gradient descent with restart
 
 Pyro - Uber's new release
 
