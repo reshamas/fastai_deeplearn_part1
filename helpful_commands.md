@@ -11,10 +11,12 @@ jupyter notebook list
 htop
 ```
 
-file:  `.bashrc`  
+### see GPU usage
 ```
-export PYTHONPATH=$PYTHONPATH:~/fastai
+nvidia smi
 ```
+
+
 https://www.kaggle.com/devm2024/keras-model-for-beginners-0-210-on-lb-eda-r-d
 
 
