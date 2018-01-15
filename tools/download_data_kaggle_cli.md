@@ -126,10 +126,12 @@ ubuntu@ip-10-0-0-13:~/nbs/data$
 ---
 ## Kaggle - Submit Results
 ```bash
-kg submit <submission-file> -u <username> -p <password> -c <competition> -m "<message>"
-``` 
-
-
+kg submit <submission-file> -u <username> -p <password> -c <competition> -m "<message>"  
+```
+>my example
+```bash
+kg submit resnext50_sz150_zm13.csv -u 'reshamashaikh' -p 'xxx' -c statoil-iceberg-classifier-challenge
+```
 
 ---
 ### Jeremy’s Setup
