@@ -123,6 +123,15 @@ ubuntu@ip-10-0-0-13:~/nbs/data$ ls test1 | wc -l
 ubuntu@ip-10-0-0-13:~/nbs/data$ 
 ```
 
+---
+## Kaggle - Submit Results
+```bash
+kg submit <submission-file> -u <username> -p <password> -c <competition> -m "<message>"
+``` 
+
+
+
+---
 ### Jeremy’s Setup
 Good to copy 100 or so the sample directory; enough to check that the scripts are working
 
