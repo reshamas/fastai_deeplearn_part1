@@ -97,6 +97,12 @@ learn = ConvLearner.pretrained(arch, data)
 - when we are using precomputed activations, data augmentation does not work.  Because `precompute=True` is using the cached, non-augmented activations.
 - if you ask for data augmentation and have `precompute=True`, it doesn't actually do any data augmentation, because it is using the cached non-augmented activations
 
+### Freezing
+- after we run an architecture (say resnet34), by default, all the layers are frozen except the last one
+- when we `unfreeze`, we unfreeze all the layers prior to the last one
+- when we "re-train" or "learn again", we are updating the weights from the pre-trained model.
+- note that pre-trained weights are there from the architecture we've chosen
+
 #### Unfreezing    
 `learn.unfreeze()`
 - now unfreeze so we can train the whole thing
