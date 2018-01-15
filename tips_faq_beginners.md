@@ -32,3 +32,6 @@ export PYTHONPATH=$PYTHONPATH:~/fastai
 2.  save and exit
 3.  source it:  `source ~/.bashrc`
 
+### Option 3:  used `pip install`
+Note that if you did `pip install`, you don't need to specify the path (as in option 2, or you don't need to put in the courses folder, as in option 1).  
+However, fastai is still being updated so there is a delay in library available in pip
