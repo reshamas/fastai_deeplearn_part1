@@ -1,5 +1,5 @@
 
-## Browser extensions for getting data
+# Browser extensions for getting data
 
 ## [Chrome Extension:  CurlWget](https://chrome.google.com/webstore/detail/curlwget/jmocjfidanebdlinpbcdkcmgdifblncg?hl=en)
 
