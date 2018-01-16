@@ -1,4 +1,7 @@
-# [Chrome Extension:  CurlWget](https://chrome.google.com/webstore/detail/curlwget/jmocjfidanebdlinpbcdkcmgdifblncg?hl=en)
+
+## Browser extensions for getting data
+
+## [Chrome Extension:  CurlWget](https://chrome.google.com/webstore/detail/curlwget/jmocjfidanebdlinpbcdkcmgdifblncg?hl=en)
 
 Note:  This is a second way to download the data from Kaggle. The first way is using `kaggle-cli`.  
 
@@ -22,4 +25,5 @@ All the cookies, headers needed to download header are saved in the syntax.  Als
 Option 1:  `data` directory could be a sub-directory of where your Jupyter Notebook is located.  
 Option 2:  Use symlinks
 
-
+## Firefox browser extension
+https://addons.mozilla.org/en-US/firefox/addon/cliget/
