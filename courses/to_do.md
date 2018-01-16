@@ -11,5 +11,6 @@
 ## To Explore Later
 [byobu](http://byobu.co) Byobu is a GPLv3 open source text-based window manager and terminal multiplexer.
 
-
+## Reading
+[Kaggle Planet Competition: How to land in top 4%](https://medium.com/@irshaduetian/kaggle-planet-competition-how-to-land-in-top-4-a679ff0013ba)
 
