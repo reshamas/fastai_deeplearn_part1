@@ -24,14 +24,19 @@ Blog:  https://reshamas.github.io
 * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg)
 * [some fastai files](http://files.fast.ai)
 
-## [Technical Tools](tools/)
+## Platforms for fastai
 * [Paperspace setup](tools/paperspace.md)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
+* [Crestle](tools/crestle.md)
+* [Paperspace Docker Container](https://hub.docker.com/r/paperspace/fastai/)
+* [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
+
+## [Technical Tools](tools/)
 * [tmux on AWS](tools/tmux.md)
 * [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
 * [Download data using Chrome and wget](tools/download_data_chrome_curlwget.md)
 * [Jupyter Notebook](tools/jupyter_notebook.md)
-* [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
+
 
 ## Resources
 * [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
