@@ -39,7 +39,8 @@ Blog:  https://reshamas.github.io
 * [Jupyter Notebook](tools/jupyter_notebook.md)
 
 
-## Resources
+## Helpful Resources
+* [Directory of fastai and DL terms](fastai_dl_terms.md)
 * [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
 
 ---
