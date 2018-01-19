@@ -27,6 +27,7 @@ Blog:  https://reshamas.github.io
 ## Platforms for fastai
 * [Paperspace setup](tools/paperspace.md)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
+* [Google Cloud GPU Setup for fastai](https://medium.com/google-cloud/set-up-google-cloud-gpu-for-fast-ai-45a77fa0cb48)
 * [Crestle](tools/crestle_run.md)
 * [Paperspace Docker Container](https://hub.docker.com/r/paperspace/fastai/)
 * [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
