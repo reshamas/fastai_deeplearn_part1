@@ -18,6 +18,8 @@
 ### Stuctured Deep Learning
 * [Structured Deep Learning](https://towardsdatascience.com/structured-deep-learning-b8ca4138b848) Kerem Turgutlu (Masters' student at USF)
 
+### NLP
+* [Fine-tuned Language Models for Text Classification](https://arxiv.org/abs/1801.06146) by Jeremy Howard and Sebastian Ruder
 ### PyTorch
 * [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) Vishnu Subramanian (April 2017)
 * [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
