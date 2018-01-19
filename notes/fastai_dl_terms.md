@@ -8,6 +8,7 @@
 `md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
 `lo` = layer optimizer  
+`ps` = p's (percents for dropouts)
 `sz` = size (of photo)  
 `tfms` = transformations  
 `wds` = weight decays  
