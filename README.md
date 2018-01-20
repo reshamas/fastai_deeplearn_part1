@@ -24,7 +24,7 @@ Blog:  https://reshamas.github.io
 * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg)
 * [some fastai files](http://files.fast.ai)
 
-## Platforms for fastai
+## Platforms for Using fastai (GPU required)
 * [Paperspace setup](tools/paperspace.md)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
 * [Google Cloud GPU Setup for fastai](https://medium.com/google-cloud/set-up-google-cloud-gpu-for-fast-ai-45a77fa0cb48)
