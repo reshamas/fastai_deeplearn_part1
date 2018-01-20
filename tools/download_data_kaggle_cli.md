@@ -130,6 +130,10 @@ kg submit <submission-file> -u <username> -p <password> -c <competition> -m "<me
 ```
 >my example
 ```bash
+/home/ubuntu/data/iceberg/sub
+(fastai) ubuntu@ip-172-31-2-59:~/data/iceberg/sub$ 
+```
+```bash
 kg submit resnext50_sz150_zm13.csv -u 'reshamashaikh' -p 'xxx' -c statoil-iceberg-classifier-challenge
 ```
 
