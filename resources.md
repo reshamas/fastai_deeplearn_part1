@@ -20,6 +20,7 @@
 
 ### NLP
 * [Fine-tuned Language Models for Text Classification](https://arxiv.org/abs/1801.06146) by Jeremy Howard and Sebastian Ruder
+
 ### PyTorch
 * [Transfer Learning using PyTorch — Part 2](https://towardsdatascience.com/transfer-learning-using-pytorch-part-2-9c5b18e15551) Vishnu Subramanian (April 2017)
 * [A practitioner's guide to PyTorch](https://medium.com/@radekosmulski/a-practitioners-guide-to-pytorch-1d0f6a238040) by Radek 
@@ -40,9 +41,11 @@
 * [FastAI Kaggle Starter Kit ](https://www.kaggle.com/timolee/fastai-kaggle-starter-kit-lb-0-33) Tim Lee
 
 ### Jupyter Notebook 
+
 * [Debugging Jupyter notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
 
 ### and More
+
 * [Do smoother areas of the error surface lead to better generalization? (An experiment inspired by the first lecture of the fast.ai MOOC)](https://medium.com/@radekosmulski/do-smoother-areas-of-the-error-surface-lead-to-better-generalization-b5f93b9edf5b) Radek
 * [Contributing to fast.ai](https://medium.com/@wgilliam/86f2c05d72aa) Wayde Gilliam
 * [Getting Computers To See Better Than Humans](https://medium.com/@ArjunRajkumar/getting-computers-to-see-better-than-humans-346d96634f73) Arjun Rajkumar
@@ -53,10 +56,12 @@
 * [How do We Train Neural Networks?](https://towardsdatascience.com/how-do-we-train-neural-networks-edd985562b73) Vitaly Bushev
 
 ### Reference Blogs
+
 * [Understanding LSTMs](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) Christopher Olah
 * [Recurrent Neural Network Tutorial, Part 4 – Implementing a GRU/LSTM RNN with Python and Theano](http://www.wildml.com/2015/10/recurrent-neural-network-tutorial-part-4-implementing-a-grulstm-rnn-with-python-and-theano/) Denny Britz
 
 ## Research Publications
+
 * [Visualizing and Understanding Convolutional Networks](http://www.matthewzeiler.com/wp-content/uploads/2017/07/arxive2013.pdf) Zeiler & Fergus, 2013
 * [What’s your ML Test Score? A rubric for ML
 production systems](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45742.pdf)  (NIPS 2016)  
@@ -64,6 +69,7 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 * [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186) (WACV 2017) Leslie Smith
 * [Fixing Weight Decay Regularization in Adam](https://arxiv.org/abs/1711.05101) Ilya Loshchilov, Frank Hutter (Submitted on 14 Nov 2017)
 * [Learning Distributed Representations of Concepts](http://www.cs.toronto.edu/~hinton/absps/families.pdf) Geoffrey Hinton, 1986
+* [Using the Output Embedding to Improve Language Models](https://arxiv.org/abs/1608.05859)
 
 ## Videos
 
