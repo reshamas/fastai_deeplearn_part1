@@ -5,8 +5,7 @@ Deep Learning (Part 1 v2):  **Oct - Dec 2017**
 ## About
 
 ### Contact Info
-Reshama Shaikh - [About Me](  
-Blog:  https://reshamas.github.io  
+Reshama Shaikh blog: https://reshamas.github.io  
 
 ---
 
