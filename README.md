@@ -5,16 +5,8 @@ Deep Learning (Part 1 v2):  **Oct - Dec 2017**
 ## About
 
 ### Contact Info
-Reshama Shaikh  
+Reshama Shaikh - [About Me](  
 Blog:  https://reshamas.github.io  
-
-### About Me
-* Data Scientist (Statistician, MBA)
-* Organizer of WiMLDS meetup group
-     - [NYC Women in Machine Learning & Data Science](http://www.meetup.com/NYC-Women-in-Machine-Learning-Data-Science/)
-     - http://wimlds.org/
-* Organizer of [NYC PyLadies meetup group](https://www.meetup.com/NYC-PyLadies/)
-* Git workshops: I give Git workshops in NYC
 
 ---
 
@@ -23,6 +15,12 @@ Blog:  https://reshamas.github.io
 * [Discourse:  part1-v2](http://forums.fast.ai/c/part1-v2)
 * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg)
 * [some fastai files](http://files.fast.ai)
+
+## Helpful Resources
+* [Directory of fastai and DL terms](fastai_dl_terms.md)
+* [Solving the Most Common Errors](tips_troubleshooting.md)
+* [Fastai FAQs for Beginners](tips_faq_beginners.md)
+* [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
 
 ## Platforms for Using fastai (GPU required)
 * [Paperspace setup](tools/paperspace.md)
@@ -37,11 +35,6 @@ Blog:  https://reshamas.github.io
 * [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
 * [Download data using Chrome and wget](tools/download_data_chrome_curlwget.md)
 * [Jupyter Notebook](tools/jupyter_notebook.md)
-
-
-## Helpful Resources
-* [Directory of fastai and DL terms](fastai_dl_terms.md)
-* [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
 
 ---
 ## Course Info
