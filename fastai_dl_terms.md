@@ -4,7 +4,8 @@
 # fastai Terms
 `bptt` back propagation through time  
 `bs` = batch size  
-`.cuda()` is we tell it manually to use the GPU  
+`.cuda()` we tell it manually to use the (default number of) GPUs    
+`.cuda(2)` specify number of GPUs to use is 2  
 `md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
 `lo` = layer optimizer  
