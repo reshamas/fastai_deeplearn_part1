@@ -1,4 +1,4 @@
-# Helpful Commands
+# Helpful Linux Commands
 
 
 ### get list of Jupyter Notebook sessions
