@@ -9,3 +9,7 @@ mkdir toxic_comments
 kg download -c jigsaw-toxic-comment-classification-challenge
 ```
 
+<kbd> sudo apt install unzip </kbd>  
+<kbd> unzip train.zip </kbd>  
+<kbd> unzip -q test.zip </kbd> 
+
