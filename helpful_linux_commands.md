@@ -16,8 +16,9 @@ htop
 nvidia smi
 ```
 
+### list number of lines in a file
+`wc -l file.csv`  
 
-https://www.kaggle.com/devm2024/keras-model-for-beginners-0-210-on-lb-eda-r-d
-
+ 
 
 
