@@ -138,7 +138,9 @@ from plotnine import *
 - not a lot of people know about it
 - for the features which are important, how do they relate to the dependent variable?
 - look at relationships, and then ask "what happened?  what [external factor] could be causing this?
-- 
+- replacing whole column with constant.., 1961
+- plot all 500 predictions
+
 
 
 
