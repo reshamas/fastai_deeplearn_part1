@@ -23,9 +23,19 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
       2.  validation set
       3.  test
       
-### Kaggle splits the test set into 2 pieces:  Public, Private
+### How Kaggle Compute Their Validation Score
+- splits the test set into 2 pieces:  Public, Private
 - they don't tell you which is which
-- 
+- you submit your predictions to Kaggle
+- Kaggle selects a random 30% to tell you your Leaderboard score
+- at the end of the competition, that gets thrown away
+- then they use the other 70% to calculate your "real score"
+- making sure that you're not using the feedback from the Leaderboard to figure out some set of hyperparameters that do well but don't generalize
+- this is why it is good practice to use Kaggle; at the end of a competition, you may drop 100 places in a competition
+- good to practice on Kaggle than at a company where there are millions of dollars on the line
+
+
+
   
   
 
