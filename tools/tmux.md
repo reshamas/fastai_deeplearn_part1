@@ -113,6 +113,7 @@ Note:  A green bar will appear at the bottom
 ### Confirm tmux sessions are running
 <kbd> tmux ls </kbd>  
 
+
 ### tmux help commands 
 <kbd> ctrl+b ? </kbd>  
 
