@@ -13,3 +13,13 @@ kg download -c jigsaw-toxic-comment-classification-challenge
 <kbd> unzip -q train.zip </kbd>  
 <kbd> unzip -q test.zip </kbd> 
 
+```bash
+(fastai) ubuntu@ip-172-31-2-59:~/data/toxic_comments$ pwd
+/home/ubuntu/data/toxic_comments
+(fastai) ubuntu@ip-172-31-2-59:~/data/toxic_comments$ mkdir subm
+```
+```
+(fastai) ubuntu@ip-172-31-2-59:~/data/toxic_comments$ wget http://nlp.stanford.edu/data/glove.6B.zip
+```
+
+
