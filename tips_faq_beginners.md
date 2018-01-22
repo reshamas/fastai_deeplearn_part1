@@ -35,3 +35,36 @@ export PYTHONPATH=$PYTHONPATH:~/fastai
 ### Option 3:  used `pip install`
 Note that if you did `pip install`, you don't need to specify the path (as in option 2, or you don't need to put in the courses folder, as in option 1).  
 However, fastai is still being updated so there is a delay in library available in pip
+
+---
+## Q3:  What does my directory structure look like?
+>my path
+```bash
+PATH = "/home/ubuntu/data/dogscats/"
+```
+
+>looking at my directory structure
+```bash
+!tree {PATH} -d
+```
+```bash
+/home/ubuntu/data/dogscats/
+├── models
+├── sample
+│   ├── models
+│   ├── tmp
+│   ├── train
+│   │   ├── cats
+│   │   └── dogs
+│   └── valid
+│       ├── cats
+│       └── dogs
+├── test1
+├── train
+│   ├── cats
+│   └── dogs
+└── valid
+    ├── cats
+    └── dogs
+```
+
