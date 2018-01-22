@@ -113,6 +113,12 @@ Note:  A green bar will appear at the bottom
 ### Confirm tmux sessions are running
 <kbd> tmux ls </kbd>  
 
+### tmux commands
+* hit <kbd> ctrl </kbd> and <kbd> b </kbd> at the same time and then let go
+* then type subsequent command
+>example for creating two stacked windows   
+<kbd> ctrl </kbd> and <kbd> b </kbd>  (at same time)  
+<kbd>  % </kbd>
 
 ### tmux help commands 
 <kbd> ctrl+b ? </kbd>  
