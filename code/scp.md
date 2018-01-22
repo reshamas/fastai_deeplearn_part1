@@ -1,4 +1,5 @@
-# SCP
+# SCP 
+scp = secure copy; copies data from local computer to cloud computer
 
 ### copy all files from my current directory to my AWS instance
 ```bash
