@@ -72,6 +72,7 @@ PATH = "/home/ubuntu/data/dogscats/"
 * `sample` directory:  you create this with a small sub-sample, for testing code
 * `test` directory:  put any test data there if you have it
 * `train`/`test` directory:  you create these and separate the data using your own data sample
+* `tmp` directory:  if you have this, it was automatically created after running models
 * fastai / keras code automatically picks up the **label** of your categories based on your folders.  Hence, in this example, the two labels are:  dogs, cats
 
 ### Notes on image file names
