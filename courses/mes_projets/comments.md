@@ -1,3 +1,4 @@
+https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/kernels?sortBy=votes&group=everyone&pageSize=20&competitionId=8076
 
 ```
 (fastai) ubuntu@ip-172-31-2-59:~/data$ pwd
