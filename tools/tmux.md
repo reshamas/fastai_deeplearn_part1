@@ -94,10 +94,6 @@ Reading package lists... Done
 tmux 2.1
 ```
 
-### tmux help commands 
-<kbd> ctrl+b ? </kbd>  
-
-
 ### See what tmux sessions are running
 <kbd> tmux ls </kbd>  
 >my example
@@ -113,6 +109,13 @@ Note:  right now, I have no tmux sessions running.
 Note:  A green bar will appear at the bottom  
 
 ![tmux start](../images/tmux_start.png)
+
+### Confirm tmux sessions are running
+<kbd> tmux ls </kbd>  
+
+### tmux help commands 
+<kbd> ctrl+b ? </kbd>  
+
 
 
 ### tmux: create a second window (horizontal)
