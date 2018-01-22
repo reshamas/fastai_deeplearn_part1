@@ -40,7 +40,8 @@ Reshama Shaikh blog: https://reshamas.github.io
 ## Course Info
 
 ### Deep Learning Wiki
-http://forums.fast.ai/t/welcome-to-part-1-v2/5787
+* http://forums.fast.ai/t/welcome-to-part-1-v2/5787
+* http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826
 
 ### [Deep Learning 1: My Lesson Notes](courses/dl1/) 
 * Lesson 1
