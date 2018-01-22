@@ -87,6 +87,12 @@ downloading https://www.kaggle.com/c/dogs-vs-cats/download/train.zip
 
 train.zip 100% |#############################################################################################################################| Time: 0:00:17  31.4 MiB/s
 ```
+
+### Download Kaggle Data (another way)
+```bash
+kg download -u 'reshamashaikh' -p 'xxx' -c statoil-iceberg-classifier-challenge
+```
+
 ### Step 5:  Look at data that was downloaded
 <kbd> ls -alt </kdb>  
 ```bash
