@@ -68,6 +68,7 @@ PATH = "/home/ubuntu/data/dogscats/"
     └── dogs
 ```
 
+>looking at file counts
 ```bash
 # print number of files in each folder
 
