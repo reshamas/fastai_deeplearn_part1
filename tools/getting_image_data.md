@@ -13,7 +13,7 @@
 https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj
 - there should be extensions for other browsers such as Firefox, Opera, etc. 
 
-<img src="../images/image_downloader.png" align="center"  height="500" width="750" > 
+<img src="../images/image_downloader.png" align="center"  height="500" width="750" border="5" > 
  
 ---
 #### My Sample Data
