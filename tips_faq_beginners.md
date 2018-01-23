@@ -59,7 +59,7 @@ PATH = "/home/ubuntu/data/dogscats/"
 │   └── valid
 │       ├── cats
 │       └── dogs
-├── test1
+├── test
 ├── train
 │   ├── cats
 │   └── dogs
