@@ -1,4 +1,4 @@
-# Lesson 4
+# Lesson 4: RF Hyperparameters & Feature Importance
 
 Length: 01:40  
 
