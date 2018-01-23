@@ -13,7 +13,7 @@
 * Horses:  https://digitalcollections.nypl.org/search/index?&keywords=horses&sort=score+desc#/?scroll=150  
 * Camels:  https://digitalcollections.nypl.org/search/index?utf8=%E2%9C%93&keywords=camels#/?scroll=180
 
-3.  went over to Chrome  
+## Downloading Image Data using Chrome Plug in  
 Use this plugin, Image Downloader which downloads images:  
 https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj
 
