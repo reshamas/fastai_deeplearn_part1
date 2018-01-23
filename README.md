@@ -29,6 +29,14 @@ Reshama Shaikh blog: https://reshamas.github.io
 * [Paperspace Docker Container](https://hub.docker.com/r/paperspace/fastai/)
 * [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
 * [Microsoft Azure](https://medium.com/@manikantayadunanda/setting-up-deeplearning-machine-and-fast-ai-on-azure-a22eb6bd6429)
+* [manual: bash script for setup](http://files.fast.ai/setup/paperspace)
+  - the CUDA drivers
+  - Anaconda (special Python distribution)
+  - Python libraries
+  - fastai library
+  - courses
+  - data  
+
 
 ## [Technical Tools](tools/)
 * [tmux on AWS](tools/tmux.md)
