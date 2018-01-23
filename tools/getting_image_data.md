@@ -8,9 +8,12 @@
 - Example:  Search for images of horses
 
 ## Downloading Image Data using Chrome Plug in  
-Use this plugin, Image Downloader which downloads images:  
+- this extension lets you bulk download images from a website
+- Use this plugin, Image Downloader which downloads images:  
 https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj
+- there should be extensions for other browsers such as Firefox, Opera, etc. 
 
+<img src="../images/image_downloader.png" align="center"  height="500" width="750" > 
  
 ---
 #### My Sample Data
