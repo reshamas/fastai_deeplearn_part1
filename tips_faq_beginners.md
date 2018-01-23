@@ -1,5 +1,17 @@
 # Fastai FAQs for Beginners
 
+- [Q1:  How to ask for help for fastai](#q1---how-to-ask-for-help-for-fastai)
+- [Q2:  Where can I put _my_ Jupter Notebook?](#q2---where-can-i-put--my--jupter-notebook-)
+  * [Option 1 (default):  under /courses](#option-1--default----under--courses)
+  * [Option 2:  where you want](#option-2---where-you-want)
+  * [Option 3:  used `pip install`](#option-3---used--pip-install-)
+- [Q3:  What does my directory structure look like?](#q3---what-does-my-directory-structure-look-like-)
+  * [Notes on directories](#notes-on-directories)
+  * [Notes on image file names](#notes-on-image-file-names)
+- [Q4:  What is a good train/test/validation split?](#q4---what-is-a-good-train-test-validation-split-)
+
+
+---
 ## Q1:  How to ask for help for fastai
 http://wiki.fast.ai/index.php/How_to_ask_for_Help
 
@@ -117,4 +129,10 @@ test data
 - if you're creating a validation split:
     - can do `80/15/5` (train /test /validation)
     - can do `70/20/10` (train /test /validation)
+    
+    
+---
+(<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 
