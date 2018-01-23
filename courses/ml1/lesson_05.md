@@ -34,7 +34,16 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - this is why it is good practice to use Kaggle; at the end of a competition, you may drop 100 places in a competition
 - good to practice on Kaggle than at a company where there are millions of dollars on the line
 
+### Q:  case of not using a random sample for validation
+- Q:  When might I not be able to use a random set for validation?
+- cases:  in the case of temporal data, unbalanced data
+- Tyler:  we expect things close by in time to be related close to them.  If we destroy the order, ...
+- JH:  important to remember, when you buid a model, think that we are going to use the model at a time in the future
+- when you build a model, you always have a systematic error, that the model will be used at a later time, at which time the world will be different than it is now; there is a lag from when time model is built to time when it is used; even when building the model, data is much older; a lot of the time, _that matters_
+- if we're predicting who will buy toilet paper in NJ, and it takes us 2 weeks to put model in production, and we used data based on past 2 years, then by that time, things may look very different
+- particularly, our validation set (if we randomly sampled from a 4-yr period), then the vast majority of that data is over a year old, and it may be that the toilet paper buying habits of folks in NJ may have dramatically shifted
 
+- 
 
   
   
