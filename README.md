@@ -55,9 +55,9 @@ Reshama Shaikh blog: https://reshamas.github.io
 * [Lesson 7:  ](courses/dl1/lesson_7_x.md)
 
 ### [Intro to Machine Learning: My Lesson Notes](courses/ml1/) 
-* [Lesson 1:  ](courses/ml1/lesson_01.md)
-* [Lesson 2:  ](courses/ml1/lesson_02.md)
-* [Lesson 3:  ](courses/ml1/lesson_03.md)
+* [Lesson 1: Random Forests Part 1](courses/ml1/lesson_01.md)
+* [Lesson 2: Random Forests Part 2](courses/ml1/lesson_02.md)
+* [Lesson 3: Preprocessing Data](courses/ml1/lesson_03.md)
 * [Lesson 4:  ](courses/ml1/lesson_04.md)
 * [Lesson 5:  ] (courses/ml1/)
 * [Lesson 6:  ] (courses/ml1/)
