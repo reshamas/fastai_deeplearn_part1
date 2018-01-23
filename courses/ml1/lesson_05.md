@@ -42,6 +42,10 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - when you build a model, you always have a systematic error, that the model will be used at a later time, at which time the world will be different than it is now; there is a lag from when time model is built to time when it is used; even when building the model, data is much older; a lot of the time, _that matters_
 - if we're predicting who will buy toilet paper in NJ, and it takes us 2 weeks to put model in production, and we used data based on past 2 years, then by that time, things may look very different
 - particularly, our validation set (if we randomly sampled from a 4-yr period), then the vast majority of that data is over a year old, and it may be that the toilet paper buying habits of folks in NJ may have dramatically shifted
+  - maybe there is a terrible recession and they can't afford high quality paper
+  - maybe paper making industry has gone thru the roof and they're buying more paper because it's cheaper
+  - the world changes, if you use a random sample for your validation set, then you are actually checking:  how good are you at predicting things that are totally obsolete now?  how good are you at predicting things that happened 4 years ago?  That's actually not interesting.
+- What you want to do is, practice every time there is a temporal piece
 
 - 
 
