@@ -13,8 +13,10 @@
 https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj
 - there should be extensions for other browsers such as Firefox, Opera, etc. 
 
-<img src="../images/image_downloader.png" align="center"  height="500" width="750" border="5" > 
+<img style="border:10px solid black;" src="../images/image_downloader.png" align="center"  height="500" width="750"  > 
  
+
+
 ---
 #### My Sample Data
 * Horses:  https://digitalcollections.nypl.org/search/index?&keywords=horses&sort=score+desc#/?scroll=150  
