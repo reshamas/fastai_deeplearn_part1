@@ -1,47 +1,6 @@
 # Paperspace for fast.ai
 These notes correspond to first 12 minutes of lesson 1 video  
 
-  * [About](#about)
-  * [Summary of Charges](#summary-of-charges)
-  * [Part I:  Creating a Machine](#part-i---creating-a-machine)
-    + [Step 1:  Where to start](#step-1---where-to-start)
-    + [Step 2:  Create a new machine](#step-2---create-a-new-machine)
-    + [Step 3:  Choose region](#step-3---choose-region)
-    + [Step 4:  Choose template](#step-4---choose-template)
-    + [Step 5:  Choose machine](#step-5---choose-machine)
-    + [Step 6:  Choose storage](#step-6---choose-storage)
-    + [Step 7:  Options](#step-7---options)
-    + [Step 8:  Payment](#step-8---payment)
-    + [Step 9:  Create machine](#step-9---create-machine)
-  * [Part II:  Logging into Paperspace Fastami Image Machine](#part-ii---logging-into-paperspace-fastami-image-machine)
-    + [list the files](#list-the-files)
-    + [list the data files](#list-the-data-files)
-    + [list fastai files](#list-fastai-files)
-  * [:red_circle: Part III:  Updating fastai repo contents](#-red-circle--part-iii---updating-fastai-repo-contents)
-    + [Step 1:  go to directory](#step-1---go-to-directory)
-    + [Step 2:  update repo](#step-2---update-repo)
-    + [Step 3:  update Python / Anaconda libraries](#step-3---update-python---anaconda-libraries)
-  * [Part IV:  Paperspace & Jupyter Notebook](#part-iv---paperspace---jupyter-notebook)
-    + [Step 1:  `cd` into fastai directory](#step-1----cd--into-fastai-directory)
-    + [Step 2:  Launch Jupyter Notebook](#step-2---launch-jupyter-notebook)
-    + [Step 3:  Get Notebook url](#step-3---get-notebook-url)
-  * [Part V:  Workflow](#part-v---workflow)
-  * [:red_circle: Part VI:  Shutting down Notebook & Machine](#-red-circle--part-vi---shutting-down-notebook---machine)
-    + [:red_circle: Remember to shut the notebook down and STOP Instance! :moneybag: :red_circle:](#-red-circle--remember-to-shut-the-notebook-down-and-stop-instance---moneybag---red-circle-)
-- [Optional Steps](#optional-steps)
-  * [Skip password and updating IP address in Jupyter Notebook link](#skip-password-and-updating-ip-address-in-jupyter-notebook-link)
-  * [Setup:  Simplifying Logging in to Paperspace](#setup---simplifying-logging-in-to-paperspace)
-    + [Step 1:  Install `ssh-copy-id`](#step-1---install--ssh-copy-id-)
-    + [Step 2:  Ensure public keys are available](#step-2---ensure-public-keys-are-available)
-    + [Step 3:  Copy public key to Paperspace](#step-3---copy-public-key-to-paperspace)
-    + [Step 4:  Add Paperspace info to `config` file](#step-4---add-paperspace-info-to--config--file)
-  * [ssh into Paperspace from local computer](#ssh-into-paperspace-from-local-computer)
-  * [start Jupyter Notebook from local computer](#start-jupyter-notebook-from-local-computer)
-    + [Cool!  no password required, and no need to update notebook url with IP address](#cool---no-password-required--and-no-need-to-update-notebook-url-with-ip-address)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
----
 ## About
 * Paperspace is a **GPU** accelerated cloud platform
 * Paperspace login:  https://www.paperspace.com
