@@ -44,9 +44,19 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - particularly, our validation set (if we randomly sampled from a 4-yr period), then the vast majority of that data is over a year old, and it may be that the toilet paper buying habits of folks in NJ may have dramatically shifted
   - maybe there is a terrible recession and they can't afford high quality paper
   - maybe paper making industry has gone thru the roof and they're buying more paper because it's cheaper
-  - the world changes, if you use a random sample for your validation set, then you are actually checking:  how good are you at predicting things that are totally obsolete now?  how good are you at predicting things that happened 4 years ago?  That's actually not interesting.
-- What you want to do is, practice every time there is a temporal piece
-
+  - so, the world changes, if you use a random sample for your validation set, then you are actually checking:  how good are you at predicting things that are totally obsolete now?  how good are you at predicting things that happened 4 years ago?  That's _not_ interesting.
+- What we want to do in practice, any time there is some temporal piece, instead say (assuming we've ordered it by time), make the tail end of the data the **validation set**
+  - example: last 10% of data is the test set
+  - the 10% of the data prior to the test set is the validation set
+- we then build a model that still works on stuff that is later in time than what the model was built on; that it generalizes into the future
+- Q:  how do you get the validation set to be good?
+- `20:00` if it looks good on the **oob** then it means we are not overfitting in the statistical sense; it's working well on a random sample; but then it looks bad on the validation set; you somehow failed to predict the future; you predicted the past
+- Suraj idea: maybe we should train a recent period only; downside, we're using less data, create a less-rich model
+- most machine learning functions have ability to provide a weight to each row of data
+- for example for RF, instead of bootstrapping, could have a weight on each row and randomly pick that row with some probability, so the most recent rows have a higher probability of being selected; that can work very well; it's something you have to try, and if you don't have a validation set that represents the future (compared to what you're training on), then you have no way of knowing how your techniques are working
+  - you make a compromise between amount of data vs recency of data?
+- JH:  what Jeremy tends to do when he has temporal data, which is probably most of the time, he once he gets something working well on the validation set, he wouldn't just go and use the model on the test set, because the thing I've trained on is (test set) much more in the future; this time he would replicate building the model again, this time combine the train and validation sets, and retrain the model. - at that point, you've got no way to test against a validation set so you have to make sure you have a reproducible script or notebook that does exactly the same steps in exactly the same ways because if 
+- 
 - 
 
   
