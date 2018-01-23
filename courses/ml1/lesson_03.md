@@ -1,4 +1,4 @@
-# Lesson 3
+# Lesson 3:  Preprocessing Data & Feature Importance
 
 Length: 01:24  
 
