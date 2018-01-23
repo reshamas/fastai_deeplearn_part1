@@ -113,8 +113,8 @@ test data
 ```
 ---
 ## Q4:  What is a good train/test/validation split?
-- can do 80/20 (train / test)
+- can do `80/20` (train /test)
 - if you're creating a validation split:
-    - can do 80/15/5 (train/test/validation)
-    - can do 70/20/10 (train/test/validation)
+    - can do `80/15/5` (train /test /validation)
+    - can do `70/20/10` (train /test /validation)
 
