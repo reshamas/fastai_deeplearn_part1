@@ -42,7 +42,7 @@ Reshama Shaikh blog: https://reshamas.github.io
 * [tmux on AWS](tools/tmux.md)
 * [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
 * [Download data using Chrome and wget](tools/download_data_browser_curlwget.md)
-* [Jupyter Notebook](tools/jupyter_notebook.md)
+* [Jupyter Notebook Commands & Shortcuts](tools/jupyter_notebook.md)
 
 ---
 ## Course Info
