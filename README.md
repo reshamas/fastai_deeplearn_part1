@@ -19,7 +19,7 @@ Reshama Shaikh blog: https://reshamas.github.io
 * [Directory of fastai and DL terms](fastai_dl_terms.md)
 * [Solving the Most Common Errors](tips_troubleshooting.md)
 * [Fastai FAQs for Beginners](tips_faq_beginners.md)
-* [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
+* :red_circle: [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
 
 ## Platforms for Using fastai (GPU required)
 * [Paperspace setup](tools/paperspace.md)
