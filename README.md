@@ -41,7 +41,7 @@ Reshama Shaikh blog: https://reshamas.github.io
 ## [Technical Tools](tools/)
 * [tmux on AWS](tools/tmux.md)
 * [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
-* [Download data using Chrome and wget](tools/download_data_chrome_curlwget.md)
+* [Download data using Chrome and wget](tools/download_data_browser_curlwget.md)
 * [Jupyter Notebook](tools/jupyter_notebook.md)
 
 ---
