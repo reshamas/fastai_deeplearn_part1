@@ -112,12 +112,19 @@ test data
 12501
 ```
 ---
-## Q4:  What is a good train/test/validation split?
-- can do `80/20` (train /test)
-- if you're creating a validation split:
-    - can do `80/15/5` (train /test /validation)
-    - can do `70/20/10` (train /test /validation)
+## Q4:  What is a good train/validation/test split?
+- can do `80/20` (train/validation)
+- if you have or are creating a 'test' split:
+    - can do `80/15/5` (trainvalidation/test)
+    - can do `70/20/10` (train/validation/test)
     
+**Note:**  Depending on who the instructor is, they use various naming conventions:  
+- train/test and then **validation** for holdout data
+- train/validation and then **test** for holdout data
+
+It's important to understand that:  
+- in the case of train/test, the test set is used to test for **generalization**
+- the **holdout data** is a second test set
     
  
 
