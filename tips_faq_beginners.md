@@ -119,8 +119,6 @@ test data
     - can do `70/20/10` (train /test /validation)
     
     
----
-(<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>)
-
+ 
 
 
