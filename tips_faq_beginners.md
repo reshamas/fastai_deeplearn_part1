@@ -114,9 +114,10 @@ test data
 ---
 ## Q4:  What is a good train/validation/test split?
 - can do `80/20` (train/validation)
-- if you have or are creating a 'test' split:
-    - can do `80/15/5` (trainvalidation/test)
-    - can do `70/20/10` (train/validation/test)
+- if you have or are creating a 'test' split, use for (train/validation/test):
+    - can do `80/15/5`
+    - can do `70/20/10` 
+    - can do `60/20/20` 
     
 **Note:**  Depending on who the instructor is, they use various naming conventions:  
 - train/test and then **validation** for holdout data
