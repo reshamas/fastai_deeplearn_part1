@@ -1,4 +1,4 @@
-# Things That Are Important to Know Before Running Fastai Library
+# Things to Know Before Running Fastai Library
 
 
 ## Q1:  What is train/valid/test?
