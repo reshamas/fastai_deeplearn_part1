@@ -45,7 +45,7 @@ Instructions on using `kaggle-cli`:  [kaggle_cli.md](https://github.com/reshamas
 Kaggle Competition:  [Planet: Understanding the Amazon from Space](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space)
 
 #### Chrome CurlWget
-Instructions on using Chrome CurlWget:  [chrome_curlwget](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/chrome_curlwget.md)
+Instructions on using Chrome CurlWget:  [chrome_curlwget](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/download_data_browser_curlwget.md)
 
 ---
 ## Setting up data directory
