@@ -49,7 +49,7 @@ type learner object, and you can see the layers:
 
 `)`
 
-<img src="../images/softmax.png" align="left" height="280" width="700" >   <br> <br>
+<img src="images/softmax.png" align="left" height="280" width="700" >   <br> <br>
 
 ### Dropout of p = 0.5
 - p = probability of deleting the cell
