@@ -5,6 +5,7 @@
 `arch` architecture (such as resnet18, resnet34, resnext50)  
 `aug_tfms = transforms_side_on` data augmentation using flipping image on its side (horizontal, flip right to left)  
 `aug_tfms = transforms_top_down` data augmentation (flipping image top down)  
+`learn.bn_freeze`  Batch Norm Unfreeze
 `bptt` back propagation through time   
 `bs` = batch size  
 `.cuda()` we tell it manually to use the (default number of) GPUs    
