@@ -10,6 +10,7 @@
 `bs` = batch size  
 `.cuda()` we tell it manually to use the (default number of) GPUs    
 `.cuda(2)` specify number of GPUs to use is 2  
+`lr` learning rate  
 `lr_find()` learning rate finder  
 `md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
@@ -18,6 +19,7 @@
 `ps` = p's (percents for dropouts)  
 `sz` = size (of photo)  
 `tfms` = transformations  
+`.TTA()` Test Time Augmentation  
 `wds` = weight decays  
 
 ---
@@ -27,6 +29,12 @@ cardinality:  number of levels of a categorical variable
 ---
 # Deep Learning Terms
 
+### ADAM (Adaptive Moment Estimation) 
+- Adam is a stochastic gradient descent algorithm based on estimation of 1st and 2nd-order moments. The algorithm estimates 1st-order moment (the gradient mean) and 2nd-order moment (element-wise squared gradient) of the gradient using exponential moving average, and corrects its bias. The final weight update is proportional to learning rate times 1st-order moment divided by the square root of 2nd-order moment.
+- Adam takes 3 hyperparameters: the learning rate, the decay rate of 1st-order moment, and the decay rate of 2nd-order moment
+- [ADAM: A Method for Stochastic Optimization](https://theberkeleyview.wordpress.com/2015/11/19/berkeleyview-for-adam-a-method-for-stochastic-optimization/)
+
+
 ### SoTA (State-of-the-Art)
 
 ### TTA (Test Time Augmentation)
@@ -34,10 +42,8 @@ cardinality:  number of levels of a categorical variable
 ### Epoch
 An epoch is a complete pass through a given dataset.
 
-### ADAM (Adaptive Moment Estimation) 
-- Adam is a stochastic gradient descent algorithm based on estimation of 1st and 2nd-order moments. The algorithm estimates 1st-order moment (the gradient mean) and 2nd-order moment (element-wise squared gradient) of the gradient using exponential moving average, and corrects its bias. The final weight update is proportional to learning rate times 1st-order moment divided by the square root of 2nd-order moment.
-- Adam takes 3 hyperparameters: the learning rate, the decay rate of 1st-order moment, and the decay rate of 2nd-order moment
-- [ADAM: A Method for Stochastic Optimization](https://theberkeleyview.wordpress.com/2015/11/19/berkeleyview-for-adam-a-method-for-stochastic-optimization/)
+### FC (Fully Connected)
+fully connected neural network layer  
 
 ### Learning Rate Annealing
 Learning rate schedules try to adjust the learning rate during training by e.g. annealing, i.e. reducing the learning rate according to a pre-defined schedule or when the change in objective between epochs falls below a threshold. These schedules and thresholds, however, have to be defined in advance and are thus unable to adapt to a dataset's characteristics
