@@ -22,6 +22,7 @@ I am on Twitter:  https://twitter.com/reshamas
 * [Solving the Most Common Errors](tips_troubleshooting.md)
 * [Fastai FAQs for Beginners](tips_faq_beginners.md)
 * :red_circle: [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
+  - [Fastai Blog Posts (by Rachel Thomas & Jeremy Howard)](http://www.fast.ai/topics/)
 
 ## Platforms for Using fastai (GPU required)
 * [Paperspace setup](tools/paperspace.md)
