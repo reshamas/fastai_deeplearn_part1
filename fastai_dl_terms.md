@@ -6,7 +6,7 @@
 `aug_tfms = transforms_side_on` data augmentation using flipping image on its side (horizontal, flip right to left)  
 `aug_tfms = transforms_top_down` data augmentation (flipping image top down)  
 `do_scale=True`  scaling - neural nets really like input data to be ~N(0, 1)  
-`bptt` back propagation through time   
+`bptt` back propagation through time (Backpropagation is the same as "apply the chain rule to all the layers")  
 `bs` = batch size  
 `.cuda()` we tell it manually to use the (default number of) GPUs    
 `.cuda(2)` specify number of GPUs to use is 2   
@@ -18,13 +18,17 @@
 `md.nt` = number of unique tokens  
 `nas`  handles missing values; continuous - replace missing with median  
 `n_fac` = size of embedding  
+`n_factors=50` how big an embedding matrix we are choosing  
+`opt_fn=optim.Adam`  what optimizer to use
 `precompute=True`  we actually precalculate how much does this image have the features such as eyeballs, face, etc.  
 `proc_df`    process dataframe  
 `ps` = p's (percents for dropouts)  
 `sz` = size (of photo)  
 `tfms` = transformations  
 `.TTA()` Test Time Augmentation  
+`val_idxs`  what validation set indices to use
 `wds` = weight decays  
+`wd=2e-4`   weight decays; in ML, it is L2 Regularization
 
 ---
 # Other Terms
@@ -38,6 +42,8 @@ cardinality:  number of levels of a categorical variable
 - Adam takes 3 hyperparameters: the learning rate, the decay rate of 1st-order moment, and the decay rate of 2nd-order moment
 - [ADAM: A Method for Stochastic Optimization](https://theberkeleyview.wordpress.com/2015/11/19/berkeleyview-for-adam-a-method-for-stochastic-optimization/)
 
+### Backpropagation
+Backpropagation is the same as "apply the chain rule to all the layers"
 
 ### SoTA (State-of-the-Art)
 
@@ -101,6 +107,7 @@ A graphics processing unit (GPU) is a specialized electronic circuit designed to
 ### LSTM  (Long Short-Term Memory-Networks)
 * An LSTM unit is a recurrent network unit that excels at remembering values for either long or short durations of time. The key to this ability is that it uses no activation function within its recurrent components. Thus, the stored value is not iteratively squashed over time, and the gradient or blame term does not tend to vanish when Backpropagation through time is applied to train it.
 
+### MSE (Mean Squared Error)
 
 ### QRNNs (Quasi-Recurrent Neural Networks) 
 an approach to neural sequence modeling that alternates convolutional layers, which apply in parallel across timesteps, and a minimalist recurrent pooling function that applies in parallel across channels. Despite lacking trainable recurrent layers, stacked QRNNs have better predictive accuracy than stacked LSTMs of the same hidden size. Due to their increased parallelism, they are up to 16 times faster at train and test time. Experiments on language modeling, sentiment classification, and character-level neural machine translation demonstrate these advantages and underline the viability of QRNNs as a basic building block for a variety of sequence tasks.
