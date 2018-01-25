@@ -10,12 +10,13 @@
 `bs` = batch size  
 `.cuda()` we tell it manually to use the (default number of) GPUs    
 `.cuda(2)` specify number of GPUs to use is 2  
+`lo` = layer optimizer  
 `lr` learning rate  
 `lr_find()` learning rate finder  
 `md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
-`lo` = layer optimizer  
 `precompute=True`  we actually precalculate how much does this image have the features such as eyeballs, face, etc.  
+`proc_df`    process dataframe  
 `ps` = p's (percents for dropouts)  
 `sz` = size (of photo)  
 `tfms` = transformations  
