@@ -2,10 +2,14 @@
 
 ---
 # fastai Terms
-`bptt` back propagation through time  
+`arch` architecture (such as resnet18, resnet34, resnext50)  
+`aug_tfms = transforms_side_on` data augmentation using flipping image on its side (horizontal, flip right to left)  
+`aug_tfms = transforms_top_down` data augmentation (flipping image top down)  
+`bptt` back propagation through time   
 `bs` = batch size  
 `.cuda()` we tell it manually to use the (default number of) GPUs    
 `.cuda(2)` specify number of GPUs to use is 2  
+`lr_find()` learning rate finder  
 `md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
 `lo` = layer optimizer  
