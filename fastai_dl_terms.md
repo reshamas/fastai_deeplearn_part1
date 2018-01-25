@@ -19,14 +19,14 @@
 `nas`  handles missing values; continuous - replace missing with median  
 `n_fac` = size of embedding  
 `n_factors=50` how big an embedding matrix we are choosing  
-`opt_fn=optim.Adam`  what optimizer to use
+`opt_fn=optim.Adam`  what optimizer to use  
 `precompute=True`  we actually precalculate how much does this image have the features such as eyeballs, face, etc.  
 `proc_df`    process dataframe  
 `ps` = p's (percents for dropouts)  
 `sz` = size (of photo)  
 `tfms` = transformations  
 `.TTA()` Test Time Augmentation  
-`val_idxs`  what validation set indices to use
+`val_idxs`  what validation set indices to use  
 `wds` = weight decays  
 `wd=2e-4`   weight decays; in ML, it is L2 Regularization
 
