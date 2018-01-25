@@ -38,6 +38,9 @@ Learning rate schedules try to adjust the learning rate during training by e.g. 
 
 ref:  [An overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/)
 
+### NLP (Natural Language Processing)
+NLP is the science of teaching machines how to understand the language we humans speak and write.
+
 ### Stochastic gradient descent (SGD)
 Stochastic gradient descent (often shortened to SGD), also known as incremental gradient descent, is a stochastic approximation of the gradient descent optimization and iterative method for minimizing an objective function that is written as a sum of differentiable functions. In other words, SGD tries to find minima or maxima by iteration.
 
