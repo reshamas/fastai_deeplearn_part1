@@ -13,6 +13,7 @@
 `md.nt` = number of unique tokens  
 `n_fac` = size of embedding  
 `lo` = layer optimizer  
+`precompute=True`  we actually precalculate how much does this image have the features such as eyeballs, face, etc.  
 `ps` = p's (percents for dropouts)  
 `sz` = size (of photo)  
 `tfms` = transformations  
