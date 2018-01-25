@@ -11,7 +11,7 @@
 `.cuda()` we tell it manually to use the (default number of) GPUs    
 `.cuda(2)` specify number of GPUs to use is 2   
 `emb_szs`  builds an embedding matrix for each categorical feature of the datad  
-`learn.bn_freeze`  Batch Norm Unfreeze
+`learn.bn_freeze`  Batch Norm Unfreeze  
 `lo` = layer optimizer  
 `lr` learning rate  
 `lr_find()` learning rate finder  
