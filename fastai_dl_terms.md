@@ -33,6 +33,11 @@ An epoch is a complete pass through a given dataset.
 - Adam takes 3 hyperparameters: the learning rate, the decay rate of 1st-order moment, and the decay rate of 2nd-order moment
 - [ADAM: A Method for Stochastic Optimization](https://theberkeleyview.wordpress.com/2015/11/19/berkeleyview-for-adam-a-method-for-stochastic-optimization/)
 
+### Learning Rate Annealing
+Learning rate schedules try to adjust the learning rate during training by e.g. annealing, i.e. reducing the learning rate according to a pre-defined schedule or when the change in objective between epochs falls below a threshold. These schedules and thresholds, however, have to be defined in advance and are thus unable to adapt to a dataset's characteristics
+
+ref:  [An overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/)
+
 ### Stochastic gradient descent (SGD)
 Stochastic gradient descent (often shortened to SGD), also known as incremental gradient descent, is a stochastic approximation of the gradient descent optimization and iterative method for minimizing an objective function that is written as a sum of differentiable functions. In other words, SGD tries to find minima or maxima by iteration.
 
