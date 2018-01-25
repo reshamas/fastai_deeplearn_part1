@@ -15,6 +15,7 @@
 `lr` learning rate  
 `lr_find()` learning rate finder  
 `md.nt` = number of unique tokens  
+`nas`  handles missing values; continuous - replace missing with median  
 `n_fac` = size of embedding  
 `precompute=True`  we actually precalculate how much does this image have the features such as eyeballs, face, etc.  
 `proc_df`    process dataframe  
