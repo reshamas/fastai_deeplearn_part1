@@ -228,7 +228,7 @@ cd ~/.ssh
 nano config
 ```
 
-- add these contents to you config file (replace IP address here with your Paperspace IP address)
+- add these contents to your config file (replace IP address here with your Paperspace IP address)
 ```text
 Host paperspace
      HostName 184.105.2.222
