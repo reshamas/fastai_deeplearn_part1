@@ -3,6 +3,7 @@
 ## Data Sources
 * [New York Public Library Digital Collections](https://digitalcollections.nypl.org) referred by [Enigma](https://www.enigma.com). 
 * Google Images:  https://images.google.com/
+* ImageNet:  http://www.image-net.org
 
 ## Search for image of interest
 - Example:  Search for images of horses
