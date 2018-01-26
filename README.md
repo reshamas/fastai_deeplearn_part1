@@ -39,6 +39,8 @@ I am on Twitter:  https://twitter.com/reshamas
   - fastai library
   - courses
   - data  
+* Other
+  - [FloydHub](https://www.floydhub.com)
 
 
 ## [Technical Tools](tools/)
