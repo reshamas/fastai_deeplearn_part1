@@ -212,6 +212,6 @@ On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while sele
 
 ---
 
-## Optional
-- create an elastic IP so your IP address remains static
+## Optional:  Elastic IP
+- create an elastic IP so your IP address remains static:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
 
