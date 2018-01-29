@@ -56,11 +56,11 @@ I am on Twitter:  https://twitter.com/reshamas
 * http://forums.fast.ai/t/welcome-to-part-1-v2/5787
 * http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826
 * Latest coursework
-  * [Part 1 v2](http://course.fast.ai) * released Jan 2018
-  * [Part 2 v2] ()  * will be released ~ Jul 2018
+  * Version 2:  [Part 1 v2](http://course.fast.ai) * released Jan 2018
+  * Version 2:  [Part 2 v2] ()  * will be released ~ Jul 2018
 * Older coursework
-  * [Part 1 v1](http://course17.fast.ai)
-  * [Part 2 v1](http://course17.fast.ai/part2.html)
+  * Version 1:  [Part 1 v1](http://course17.fast.ai)
+  * Version 1:  [Part 2 v1](http://course17.fast.ai/part2.html)
 
 ### [Deep Learning 1: My Lesson Notes](courses/dl1/) 
 * Lesson 1
