@@ -261,8 +261,8 @@ Host paperspace
 ssh -L 8888:localhost:8888 paperspace
 ```
 
-## start Jupyter Notebook from local computer
-- launch Jupyter Notebook
+## start Jupyter Notebook from paperspace computer
+- launch Jupyter Notebook after logging into paperspace computer
 ```bash
 jupyter notebook
 ```
