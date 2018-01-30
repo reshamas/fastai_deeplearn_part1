@@ -260,23 +260,43 @@ Host paperspace
 ```bash
 ssh -L 8888:localhost:8888 paperspace
 ```
+>my example
+```bash
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-104-generic x86_64)
 
-### Step 6: start Jupyter Notebook from local computer
-- launch Jupyter Notebook
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Last login: Mon Jan 29 20:53:40 2018 from 10.64.48.1
+(fastai) paperspace@psgyqmt1m:~$
+```
+### Step 6: start Jupyter Notebook  (after logging into Paperspace computer via `ssh` from your local computer)
 ```bash
 jupyter notebook
 ```
+>my example
+```bash
+(fastai) paperspace@psgyqmt1m:~$ jupyter notebook
+```
+![paperspace_jupyter](../images/paperspace_jupyter.png)
 
+### Step 7: navigate around Paperspace machine 
 >my example
 ```bash
 Last login: Sun Jan  7 12:57:35 2018 from 77.777.777.777
 (fastai) paperspace@psgyqmt1m:~$ ls
 anaconda3  data  downloads  fastai
+```
+```bash
 (fastai) paperspace@psgyqmt1m:~$ cd fastai
+```
+```bash
 (fastai) paperspace@psgyqmt1m:~/fastai$ ls
 CODE-OF-CONDUCT.md  environment.yml  LICENSE   MANIFEST.in  README.rst        setup.cfg  tutorials
 courses             fastai           MANIFEST  README.md    requirements.txt  setup.py
-
+```
+```bash
 (fastai) paperspace@psgyqmt1m:~/fastai$ jupyter notebook
 [I 12:58:13.608 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
 [W 12:58:14.363 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
