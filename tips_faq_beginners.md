@@ -1,7 +1,8 @@
 # Fastai FAQs for Beginners
 
 ## Q1:  How to ask for help for fastai
-- http://forums.fast.ai/t/how-to-ask-for-help/10421
+- http://forums.fast.ai/t/how-to-ask-for-help/10421  
+
 - Make sure you enclose your code in triple back ticks.  Example:  
 
 >use this code - notice the 3 " ` " enclosing the code block:  
