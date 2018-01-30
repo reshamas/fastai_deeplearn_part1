@@ -10,11 +10,11 @@
 `mkdir .ssh` 
 
 ### Step 2:  create `id_rsa` files if needed
-If you do not have these two files (`id_rsa` and `id_rsa.pub`), create them by typing:  
-(Note:  this will create a special password for your computer to be able to log onto AWS.)  
-`ssh-keygen`
+**Note:**  these `id_rsa` files contain a special password for your computer to be able to log onto AWS.
 
-Hit `<enter>` 3 times
+If you do not have these two files (`id_rsa` and `id_rsa.pub`), create them by typing:  
+- `ssh-keygen`
+- Hit `<enter>` 3 times
 
 >my example
 ```bash
