@@ -62,6 +62,8 @@
 
 ## Research Publications
 
+* [A systematic study of the class imbalance problem
+in convolutional neural networks](https://arxiv.org/pdf/1710.05381.pdf)
 * [Visualizing and Understanding Convolutional Networks](http://www.matthewzeiler.com/wp-content/uploads/2017/07/arxive2013.pdf) Zeiler & Fergus, 2013
 * [What’s your ML Test Score? A rubric for ML
 production systems](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45742.pdf)  (NIPS 2016)  
