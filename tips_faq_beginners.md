@@ -6,7 +6,7 @@
 
 >use this code:  
 
-![triple_backticks](images/triple_backticks.jpg)
+![triple_backticks](images/triple_backticks.png)
 
 
 
