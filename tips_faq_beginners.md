@@ -1,7 +1,37 @@
 # Fastai FAQs for Beginners
 
 ## Q1:  How to ask for help for fastai
-http://forums.fast.ai/t/how-to-ask-for-help/10421
+- http://forums.fast.ai/t/how-to-ask-for-help/10421
+- Make sure you enclose your code in triple back ticks.  Example:  
+
+>use this code:  
+
+![triple_backticks](images/triple_backticks.jpg)
+
+
+
+
+
+>to render this:  
+
+```bash
+~/.conda/envs/tf-gpu/lib/python3.6/multiprocessing/popen_fork.py in __init__(self, process_obj)
+     18         sys.stderr.flush()
+     19         self.returncode = None
+---> 20         self._launch(process_obj)
+     21 
+     22     def duplicate_for_child(self, fd):
+
+~/.conda/envs/tf-gpu/lib/python3.6/multiprocessing/popen_fork.py in _launch(self, process_obj)
+     65         code = 1
+     66         parent_r, child_w = os.pipe()
+---> 67         self.pid = os.fork()
+     68         if self.pid == 0:
+     69             try:
+
+OSError: [Errno 12] Cannot allocate memory
+```
+
 
 ---
 ## Q2:  Where can I put _my_ Jupter Notebook?
