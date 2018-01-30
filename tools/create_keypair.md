@@ -6,6 +6,9 @@
 >my example
 `/Users/reshamashaikh/.ssh`
 
+**Note:**  If you do not have the `.ssh` directory, you can create it (make sure you are in your home directory):  
+`mkdir .ssh` 
+
 ### Step 2:  create `id_rsa` files if needed
 If you do not have these two files (`id_rsa` and `id_rsa.pub`), create them by typing:  
 (Note:  this will create a special password for your computer to be able to log onto AWS.)  
