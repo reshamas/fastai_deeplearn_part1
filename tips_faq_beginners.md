@@ -157,7 +157,7 @@ It's important to understand that:
 - the **holdout data** is a second test set
     
 ---
-## Q5:  How do I transfer files or data from my local computer to a cloud machine (Paperspace, AWS, etc)?
+## Q5:  How do I copy files or data from my local computer to a cloud machine (Paperspace, AWS, etc)?
 
 [instructions on using `scp` command to transfer files from platforms](
 https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/scp_xfer_files_local_to_aws.md)
