@@ -64,6 +64,9 @@ I am on Twitter:  https://twitter.com/reshamas
   * Version 1:  [Part 1 v1](http://course17.fast.ai)
   * Version 1:  [Part 2 v1](http://course17.fast.ai/part2.html)
 
+### Deep Learning Lesson Timelines
+* http://forums.fast.ai/t/part-1-v2-complete-collection-of-video-timelines/11183
+
 ### [Deep Learning 1: My Lesson Notes](courses/dl1/) 
 * Lesson 1
   - [Lesson 1a: Course Intro](courses/dl1/lesson_1a_course_intro.md)
