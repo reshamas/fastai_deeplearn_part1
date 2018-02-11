@@ -172,7 +172,8 @@ Already up-to-date.
 - copy and paste url into your local browser (example:  Chrome, Firefox, Opera, etc)
 - for me it is, and it **WON'T WORK**:   
 http://localhost:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
-- I need to replace `localhost` section with my `IP address`.  This **DOES WORK**:  
+- I need to replace `localhost` section with the public `IP address` of my Paperspace machine.  
+This **DOES WORK**:  
 http://184.105.6.151:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
 
 :boom:  Hooray, it works! :smiley:
@@ -314,7 +315,7 @@ courses             fastai           MANIFEST  README.md    requirements.txt  se
         http://localhost:8888/?token=77594036202395d8ea6324d33ecee448cd87e99a50b64918cb        
 ```
 
-### Cool!  no password required, and no need to update notebook url with IP address
+### Cool!  no password required, and no need to update notebook url with Paperspace IP address
 - this is my url link, and it works! :boom:  
 http://localhost:8888/?token=77594036202395d8ea6324d33ecee448cd87e99a50b64918cb
 
