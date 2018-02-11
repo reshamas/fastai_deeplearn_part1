@@ -194,7 +194,7 @@ http://localhost:8888/?token=<kbd>token_url </kbd>
 This notebook is running on AWS GPU machine.   
 The **p2 instance** costs **$0.90 per hour**  :moneybag:  
 The **p3 instance** costs **$3.00 per hour** :moneybag: :moneybag: :moneybag:  
-Storage:  ~ $3-4 per month for storing data files    
+Storage:  ~ $8 per month for storing data files (80GB GP2 SSD @ $0.10 GB/month) 
 ### :red_circle: Remember to shut the notebook down and STOP Instance! :moneybag: :red_circle:
 
 
@@ -208,7 +208,8 @@ On the fastai AWS AMI, tmux mouse mode is enabled, so hold down shift while sele
 
 ## References
 * [AWS Pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
-* [AWS Pricing Worksheet](https://calculator.s3.amazonaws.com/index.html)  
+* [AWS Pricing Worksheet](https://calculator.s3.amazonaws.com/index.html)
+* [EBS Pricing](https://aws.amazon.com/ebs/pricing/)
 
 ---
 
