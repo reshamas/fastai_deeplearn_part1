@@ -17,6 +17,12 @@ These notes correspond to first 12 minutes of lesson 1 video.
 
 Note:  There is a **$15 credit code you can all use: `FASTAI15`**
 
+## Paperspace Support
+- Technical support, email support@paperspace.com
+- Forum thread
+  - can post any questions here:  http://forums.fast.ai/t/paperspace-setup-help/9290
+  - can ping [@dillon](http://forums.fast.ai/u/dillon/summary)
+
 ---
 ## Part I:  Creating a Machine
 ### Step 1:  Where to start
