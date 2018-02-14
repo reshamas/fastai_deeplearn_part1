@@ -1,4 +1,8 @@
 # Copy Files from Local Computer to AWS Instance
+
+## Reference
+http://forums.fast.ai/t/lesson-1-part-1-v2-custom-images/10154/16
+
 `scp` = secure copy
 
 
