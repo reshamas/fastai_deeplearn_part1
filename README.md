@@ -47,6 +47,7 @@ I am on Twitter:  https://twitter.com/reshamas
 * [Download data using Chrome and wget](tools/download_data_browser_curlwget.md)
 * [Jupyter Notebook Commands & Shortcuts](tools/jupyter_notebook.md)
 * [How to Create a Keypair](tools/create_keypair.md)
+* [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
 ---
 ## Course Info
