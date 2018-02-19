@@ -1,19 +1,19 @@
 # Solving Errors
 
-1.  Do <kbd> git pull </kbd> of [fastai library](https://github.com/fastai/fastai).  Updates may sort out some errors.
+## Latest version of fastai library
+Do <kbd> git pull </kbd> of [fastai library](https://github.com/fastai/fastai).  Updates may sort out some errors.
 ```bash
 git pull
 ```
-
-2.  Update Anaconda packages
+## Update Anaconda packages
 ```bash
 conda env update
 conda update --all 
 ```
 
-3.  Delete `tmp` directory and rerun  
+## Delete `tmp` directory and rerun  
 
-4.  CUDA out of memory error:  
+## CUDA out of memory error:  
     - interrupt kernel
     - reduce batch size
     - **RESTART kernel**!
