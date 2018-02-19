@@ -13,10 +13,10 @@ conda update --all
 
 ## Delete `tmp` directory and rerun  
 
-## CUDA out of memory error:  
-    - interrupt kernel
-    - reduce batch size
-    - **RESTART kernel**!
+## CUDA out of memory error
+- interrupt kernel
+- reduce batch size
+- **RESTART kernel**!
 
 # Debugging
 Note from Jeremy:  
