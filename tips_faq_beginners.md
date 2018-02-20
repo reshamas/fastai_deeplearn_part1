@@ -62,7 +62,9 @@ export PYTHONPATH=$PYTHONPATH:~/fastai
 
 ### Option 3:  used `pip install`
 Note that if you did `pip install`, you don't need to specify the path (as in option 2, or you don't need to put in the courses folder, as in option 1).  
-However, fastai is still being updated so there is a delay in library being available in pip
+However, fastai is still being updated so there is a delay in library being available directly via pip.  
+Can try:  
+`pip install https://github.com/fastai/fastai/archive/master.zip`
 
 ---
 ## Q3:  What does my directory structure look like?
