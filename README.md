@@ -50,7 +50,7 @@ I am on Twitter:  https://twitter.com/reshamas
 * [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
 ---
-## Course Info
+## Deep Learning
 
 ### Deep Learning Wiki
 * http://forums.fast.ai/t/welcome-to-part-1-v2/5787
@@ -75,6 +75,10 @@ I am on Twitter:  https://twitter.com/reshamas
 * [Lesson 5:  ](courses/dl1/lesson_5_x.md)
 * [Lesson 6:  ](courses/dl1/lesson_6_x.md)
 * [Lesson 7:  ](courses/dl1/lesson_7_x.md)
+
+---
+## Machine Learning Videos
+http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826
 
 ### [Intro to Machine Learning: My Lesson Notes](courses/ml1/) 
 * [Lesson 1: Random Forests Part 1](courses/ml1/lesson_01.md)
