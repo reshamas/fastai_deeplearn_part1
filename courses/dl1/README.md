@@ -5,3 +5,4 @@ These are the recommended tasks:
 - choose a dataset of your own and replicate the notebook
 - get started on the Kaggle competitions
 - read [blogs](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/resources.md)
+- it is expected to watch the videos 2 to 4 times (from Lesson 1 to Lesson 7) to grasp concepts more fully
