@@ -37,7 +37,7 @@ Note:  There is a **$15 credit code you can all use: `FASTAI15`**
    - West Coast (California)
    - East Coast (New York)
    - Europe
-- pick the one closest to you; (for me it is East Coast (NYC))
+- pick the one closest to you; (for me it is East Coast (NYC));  if a region is unavailable, try another region.  (West Coast may be unavailable for some machines).  
 
 ### Step 4:  Choose template
 - Select `Public Templates`
