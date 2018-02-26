@@ -70,7 +70,7 @@ Note:  There is a **$15 credit code you can all use: `FASTAI15`**
 ### Step 9:  Create machine
 - select `Create your Paperspace` box
 - you'll see the new machine "provisioning"
-- it takes about a minute
+- It may take several hours to receive the confirmation email from Paperspace due to high demand
 - you'll receive an email with subject *"Your new Paperspace Linux machine is ready"*
   - a temporary password will be included in that email
 ```text
