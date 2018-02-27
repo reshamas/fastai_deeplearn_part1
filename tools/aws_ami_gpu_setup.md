@@ -163,7 +163,16 @@ Python 3.6.3 :: Anaconda, Inc.
 ```
 
 ---
-## Part III - Jupyter Notebook  
+## Part III - Jupyter Notebook 
+Create a Jupyter config
+
+<kbd> jupyter notebook --generate-config </kbd>
+
+Open the config file generated and add the following line
+```bash
+c.NotebookApp.ip = '*'
+```
+
 Launch Jupyter Notebook  
 <kbd> jupyter notebook </kbd>  
 >my example
