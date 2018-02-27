@@ -35,6 +35,10 @@ preds = np.mean(np.exp(log_preds),0)
 ```
 
 ---
+## Empty graph with learning rate finder
+- try increasing the batch size
+
+---
 
 # Debugging
 Note from Jeremy:  
