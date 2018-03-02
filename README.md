@@ -38,6 +38,7 @@ I am on Twitter:  https://twitter.com/reshamas
   - data  
 * Other
   - [FloydHub](https://www.floydhub.com)
+    - https://github.com/YuelongGuo/floydhub.fast.ai
   - [Google Colaboratory](https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/welcome.ipynb)
 
 
