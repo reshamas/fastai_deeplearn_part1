@@ -89,6 +89,8 @@ train.zip 100% |################################################################
 ```
 
 ### Download Kaggle Data (another way)
+Note:  sometimes setting up the configuration results in an error the next time you try to download another competition.  You may want to bypass configuration and directly include your user ID, password and competition name in one command line.
+
 ```bash
 kg download -u 'reshamashaikh' -p 'xxx' -c statoil-iceberg-classifier-challenge
 ```
