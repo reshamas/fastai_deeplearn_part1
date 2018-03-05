@@ -51,7 +51,7 @@ I am on Twitter:  https://twitter.com/reshamas
 * [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
 ---
-## Deep Learning
+# Deep Learning
 
 ## [Deep Learning Wiki](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
 * [Lesson 1 wiki](http://forums.fast.ai/t/wiki-lesson-1/9398)
