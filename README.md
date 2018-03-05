@@ -53,9 +53,17 @@ I am on Twitter:  https://twitter.com/reshamas
 ---
 ## Deep Learning
 
-### Deep Learning Wiki
-* http://forums.fast.ai/t/welcome-to-part-1-v2/5787
-* http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826
+## [Deep Learning Wiki](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
+* [Lesson 1 wiki](http://forums.fast.ai/t/wiki-lesson-1/9398)
+* [Lesson 2 wiki](http://forums.fast.ai/t/wiki-lesson-2/9399)
+* [Lesson 3 wiki](http://forums.fast.ai/t/wiki-lesson-3/9401)
+* [Lesson 4 wiki](http://forums.fast.ai/t/wiki-lesson-4/9402)
+* [Lesson 5 wiki](http://forums.fast.ai/t/wiki-lesson-5/9403)
+* [Lesson 6 wiki](http://forums.fast.ai/t/wiki-lesson-6/9404)
+* [Lesson 7 wiki](http://forums.fast.ai/t/wiki-lesson-7/9405)
+
+
+## Coursework
 * Latest coursework
   * **Version 2:**  [Part 1 v2](http://course.fast.ai) (released Jan 2018)
   * Version 2:  [Part 2 v2]    (will be released ~ Jul 2018)
