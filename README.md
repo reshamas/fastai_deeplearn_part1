@@ -87,7 +87,8 @@ I am on Twitter:  https://twitter.com/reshamas
 
 ---
 ## Machine Learning Videos
-http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826
+[ML Forum](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826)
+[ML video timelines](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826/321?u=ericpb)
 
 ### [Intro to Machine Learning: My Lesson Notes](courses/ml1/) 
 * [Lesson 1: Random Forests Part 1](courses/ml1/lesson_01.md)
