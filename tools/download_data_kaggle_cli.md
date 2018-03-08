@@ -167,3 +167,8 @@ Advice 2:  Do all of your work on sample data
 > ls sample/valid/cats | wc -l
 4
 ```
+---
+## Kaggle API
+Another option is to use the Kaggle API
+https://github.com/Kaggle/kaggle-api
+
