@@ -19,7 +19,7 @@ ImageNet is carefully curated so that photo has one main item in it
 
 
 ## Architectures: Winners of ImageNet
-
+- **SENet**, 2017 (Squeeze-and-Excitation Networks)
 - **ResNet**, 2016 (Microsoft)
 - **GoogLeNet**, 2015, Inception module
 - **VGG Net**, 2014 (Oxford Univ group)
