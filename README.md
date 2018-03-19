@@ -1,10 +1,11 @@
 # [fast.ai](http://www.fast.ai)
-Deep Learning (Part 1 v2):  **Oct - Dec 2017**  
-
+* Deep Learning (Part 1 v2):  **Oct - Dec 2017**  
+* Deep Learning (Part 2 v2):  **Mar - May 2018**
 ---
 ## About Me
-Reshama Shaikh blog: https://reshamas.github.io   
-I am on Twitter:  https://twitter.com/reshamas
+Reshama Shaikh  
+* Blog: https://reshamas.github.io   
+* Twitter:  https://twitter.com/reshamas
 
 ---
 
@@ -51,7 +52,7 @@ I am on Twitter:  https://twitter.com/reshamas
 * [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
 ---
-# Deep Learning
+# Deep Learning, Part 1
 
 ## [Deep Learning Wiki](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
 * [Lesson 1 wiki](http://forums.fast.ai/t/wiki-lesson-1/9398)
@@ -86,7 +87,8 @@ I am on Twitter:  https://twitter.com/reshamas
 * [Lesson 7:  ](courses/dl1/lesson_7_x.md)
 
 ---
-## Machine Learning Videos
+# Machine Learning
+## ML Videos
 [ML Forum](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826)
 [ML video timelines](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826/321?u=ericpb)
 
