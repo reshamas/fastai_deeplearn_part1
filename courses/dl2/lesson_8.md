@@ -1,7 +1,7 @@
 # Lesson 8:  xxx
 (19-Mar-2018, live)  
  
-[Wiki: Part 2 / Lesson 8] (http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
+[Wiki: Part 2 / Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
 
 Notebook:  
 *  [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
