@@ -8,6 +8,13 @@ Notebook:
 
 ---
 
+### Staff
+* Intro by [David Uminsky](https://www.usfca.edu/faculty/david-uminsky), Director of Data Institute of USF 
+
+
+
+---
+
 ## References
 * Ramesh's post on getting pascal data:  https://gist.github.com/sampathweb/780df25b076493d45cec5681d0c37a7d
 
