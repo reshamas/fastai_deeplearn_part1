@@ -8,7 +8,7 @@ Notebook:
 
 ---
 
-### Staff
+## Staff
 * Intro by [David Uminsky](https://www.usfca.edu/faculty/david-uminsky), Director of Data Institute of USF 
 * [Jeremy Howard](https://www.usfca.edu/data-institute/about-us/researchers), Distinguished Scholar in Deep Learning
 
@@ -18,10 +18,22 @@ Notebook:
 
 ---
 ## Object Detection
+* creating much richer convolutional structures
+* what is a picture of and where it is in the picture
 
 
----
+## Learning
+* Jeremy trying to pick topics that will help us learn foundational topics (richer CNN)
+* can't possibly cover hundreds of interesting things done with deep learning
+* 
 
-## References
-* Ramesh's post on getting pascal data:  https://gist.github.com/sampathweb/780df25b076493d45cec5681d0c37a7d
+## Park 1 Takeaways
+* we don't call this deep learning, but differential programming
+* Part 1 was setting up a differential function, a loss function and pressing Go
+* If you can configure a loss function that configures score, how good a task is, you're kind of done
+* [playground.tensorflow.org](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.71280&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
+
+### Transfer Learning
+* the most important thing to learn to do to use deep learning effectively
+* 
 
