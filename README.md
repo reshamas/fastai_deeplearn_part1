@@ -13,6 +13,7 @@ Reshama Shaikh
 * [GitHub: fastai](https://github.com/fastai/fastai)
 * [Discourse:  part1-v2](http://forums.fast.ai/c/part1-v2)
 * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg)
+* [Discourse:  part2-v2](http://forums.fast.ai/c/part2-v2)
 * [some fastai files](http://files.fast.ai)
 
 ## Helpful Resources
@@ -85,6 +86,11 @@ Reshama Shaikh
 * [Lesson 5:  ](courses/dl1/lesson_5_x.md)
 * [Lesson 6:  ](courses/dl1/lesson_6_x.md)
 * [Lesson 7:  ](courses/dl1/lesson_7_x.md)
+
+
+---
+# Deep Learning, Part 2
+* [Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
 
 ---
 # Machine Learning
