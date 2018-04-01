@@ -68,6 +68,7 @@ in convolutional neural networks](https://arxiv.org/pdf/1710.05381.pdf)
 * [What’s your ML Test Score? A rubric for ML
 production systems](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45742.pdf)  (NIPS 2016)  
 * [ADAM:  A Method for Stochastic Optimization](https://arxiv.org/pdf/1412.6980.pdf) (ICLR 2015)
+* [A disciplined approach to neural network hyper-parameters: Part 1 -- learning rate, batch size, momentum, and weight decay](https://arxiv.org/abs/1803.09820) Leslie Smith, March 2018
 * [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186) (WACV 2017) Leslie Smith
 * [Fixing Weight Decay Regularization in Adam](https://arxiv.org/abs/1711.05101) Ilya Loshchilov, Frank Hutter (Submitted on 14 Nov 2017)
 * [Learning Distributed Representations of Concepts](http://www.cs.toronto.edu/~hinton/absps/families.pdf) Geoffrey Hinton, 1986
