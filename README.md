@@ -91,6 +91,12 @@ Reshama Shaikh
 ---
 # Deep Learning, Part 2
 * [Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556) Object Detection
+* [Lesson 9](http://forums.fast.ai/t/part-2-lesson-9-in-class/14028) 
+* [Lesson 10](http://forums.fast.ai/t/part-2-lesson-10-in-class/14364)
+* [Lesson 11] ()
+* [Lesson 12] ()
+* [Lesson 13] ()
+* [Lesson 14] ()
 
 ---
 # Machine Learning
