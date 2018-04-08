@@ -50,9 +50,9 @@ Note:  There is a **$15 credit code you can use: `FASTAI3BDG`**.  **This code is
 - there are various machines with charges noted by the hour
 - Paperspace is cheaper than Crestle, with fast machines
 - if you choose the `$0.65/hr` machine, it may ask you to contact Paperspace asking why (anti-fraud step); let them know it is for **fast.ai** and they will get you up and running
-- Machines to choose
-  - the **P4000** `$0.40/hr` (cheapest one) are **NO LONGER AVAILABLE** (updated 26-Feb-2018)
-  - select the **P5000** `$0.65/hr` machine
+- Machines to choose (whichever you prefer and is available in your region of choice)
+  - the **P4000** `$0.40/hr` (cheapest one) 
+  - the **P5000** `$0.65/hr`
 
 ### Step 6:  Choose storage
 - note that you pay for storage as soon as you start the machine up
