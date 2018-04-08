@@ -115,19 +115,19 @@ PATH = "/home/ubuntu/data/dogscats/"
 # print number of files in each folder
 
 print("training data: cats")
-!ls -l {PATH}train/cats | grep ^[^d] | wc -l
+!ls -l {PATH}train/cats | grep ^[^dt] | wc -l
 
 print("training data: dogs")
-!ls -l {PATH}train/dogs | grep ^[^d] | wc -l
+!ls -l {PATH}train/dogs | grep ^[^dt] | wc -l
 
 print("validation data: cats")
-!ls -l {PATH}valid/cats | grep ^[^d] | wc -l
+!ls -l {PATH}valid/cats | grep ^[^dt] | wc -l
 
 print("validation data: dogs")
-!ls -l {PATH}valid/dogs | grep ^[^d] | wc -l
+!ls -l {PATH}valid/dogs | grep ^[^dt] | wc -l
 
 print("test data")
-!ls -l {PATH}test1 | grep ^[^d] | wc -l
+!ls -l {PATH}test1 | grep ^[^dt] | wc -l
 ```
 >my output
 ```bash
