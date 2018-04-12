@@ -11,6 +11,14 @@
   - CosmiQ Works, Radiant Solutions, and NVIDIA today announced the launch of their third SpaceNet™ competition, “Road Detection and Routing Challenge,” to derive road network and routing information from high-resolution satellite imagery. The competition, hosted on TopCoder, runs through February 2, 2018 and offers up to $50,000 in prizes for competitors to develop automated methods for extracting road networks from high-resolution satellite imagery.
 * [International Data Analytics Olympiad](http://idao.world/)
 
+## Conference Competitions / Tasks
+* [NIPS Competition](https://nips.cc/Conferences/2018/CallForCompetitions)
+* [American Statistical Association Data Expo](http://community.amstat.org/stat-computing/data-expo/data-expo-2018)
+* [http://alt.qcri.org/semeval2017/task9/](http://alt.qcri.org/semeval2017/task9/)
+* (https://www.i2b2.org/NLP/RDoCforPsychiatry/PreviousChallenges.php)
+* [Noisy User Generated Task (WNUT) Shared Tasks](http://noisy-text.github.io/2017/)
+
+
 ## Students
 * [Adobe Analytics Challenge](http://adobeanalyticschallenge.com/) (for university students)
 * [ASEAN Data Mining Competition](https://www.youthop.com/competitions/asean-date-science-competition-2018), Asia
