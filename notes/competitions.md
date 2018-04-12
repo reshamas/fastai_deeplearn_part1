@@ -8,7 +8,10 @@
 * [Road Detection and Routing](https://www.iqt.org/cosmiq-works-radiant-solutions-and-nvidia-announce-third-spacenettm-competition-road-detection-and-routing-challenge/#new_tab)
   - CosmiQ Works, Radiant Solutions, and NVIDIA today announced the launch of their third SpaceNet™ competition, “Road Detection and Routing Challenge,” to derive road network and routing information from high-resolution satellite imagery. The competition, hosted on TopCoder, runs through February 2, 2018 and offers up to $50,000 in prizes for competitors to develop automated methods for extracting road networks from high-resolution satellite imagery.
 * [International Data Analytics Olympiad](http://idao.world/)
+
+## Students
 * [Adobe Analytics Challenge](http://adobeanalyticschallenge.com/) (for university students)
+* [ASEAN Data Mining Competition](https://www.youthop.com/competitions/asean-date-science-competition-2018), Asia
 * [Data Mining Cup - International Student Competition](https://www.data-mining-cup.com/)
 
 
