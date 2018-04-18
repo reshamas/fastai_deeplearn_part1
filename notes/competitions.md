@@ -15,7 +15,7 @@
 * [NIPS Competition](https://nips.cc/Conferences/2018/CallForCompetitions)
 * [American Statistical Association Data Expo](http://community.amstat.org/stat-computing/data-expo/data-expo-2018)
 * [http://alt.qcri.org/semeval2017/task9/](http://alt.qcri.org/semeval2017/task9/)
-* (https://www.i2b2.org/NLP/RDoCforPsychiatry/PreviousChallenges.php)
+* [2016 NLP Shared Task](https://www.i2b2.org/NLP/RDoCforPsychiatry/PreviousChallenges.php)
 * [Noisy User Generated Task (WNUT) Shared Tasks](http://noisy-text.github.io/2017/)
 
 
