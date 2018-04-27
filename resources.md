@@ -77,6 +77,7 @@ production systems](https://static.googleusercontent.com/media/research.google.c
 * [Fixing Weight Decay Regularization in Adam](https://arxiv.org/abs/1711.05101) Ilya Loshchilov, Frank Hutter (Submitted on 14 Nov 2017)
 * [Learning Distributed Representations of Concepts](http://www.cs.toronto.edu/~hinton/absps/families.pdf) Geoffrey Hinton, 1986
 * [Using the Output Embedding to Improve Language Models](https://arxiv.org/abs/1608.05859)
+* [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf) Kaiming He 2015
 
 ## Videos
 
