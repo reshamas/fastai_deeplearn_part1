@@ -8,7 +8,8 @@
 * [Lesson 4 Notes](http://forums.fast.ai/t/deeplearning-lec4notes/8146) Tim Lee
 
 ## Blog Sites by Author
-[Anand Saha](http://teleported.in/)
+- [Anand Saha](http://teleported.in/)
+- [Apil Tamang](https://medium.com/@apiltamang)
 
 
 ## Blogs Written by (or recommended by) fastai Fellows 
