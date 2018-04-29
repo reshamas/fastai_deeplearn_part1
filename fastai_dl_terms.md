@@ -45,6 +45,9 @@ cardinality:  number of levels of a categorical variable
 ### Backpropagation
 Backpropagation is the same as "apply the chain rule to all the layers"
 
+#### BPTT
+Back propagation through time
+
 ### SoTA (State-of-the-Art)
 
 ### TTA (Test Time Augmentation)
