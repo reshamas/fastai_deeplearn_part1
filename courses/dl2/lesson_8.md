@@ -187,3 +187,19 @@ list(PATH.iterdir())
 ## Coding
 * requires tenacity
 
+## Editor
+* [Visual Studio Code](https://code.visualstudio.com) is a great editor out there, it is FREE
+
+You can use Visual Studio Code (vscode - open source editor that comes with recent versions of Anaconda, or can be installed separately), or most editors and IDEs, to find out all about the open_image function. vscode things to know:  
+* Command palette (Ctrl-shift-p)
+* Select interpreter (for fastai env)
+* Select terminal shell
+* Go to symbol (Ctrl-t)
+* Find references (Shift-F12)
+* Go to definition (F12)
+* Go back (alt-left)
+* View documentation
+* Hide sidebar (Ctrl-b)
+* Zen mode (Ctrl-k,z)
+
+
