@@ -1,4 +1,4 @@
-# Lesson 8:  xxx
+# Lesson 8:  Part 2 Intro, Object Detection
 (19-Mar-2018, live)  
  
 [Wiki: Part 2 / Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
@@ -111,6 +111,27 @@ embeddings allow us to use categorical data
   * CNNs beyond classification
   * NLP beyond classification
 * Large datasets
+
+### Part 1 output
+* number
+* category
+
+### Part 2 output
+* top left, bottom right of image
+* what object is
+* complete picture
+* enhanced version of input image
+* entire original input paragraph, translated into French
+
+### Notes
+* requires different way of thinking about things
+* almost all data will be text or image  (no audio yet, no more time series (most in ML course))
+* we will be looking at some larger datasets
+* don't be put off if you have limited computing resources
+  - can use smaller datasets
+  - can cut down on batch size
+  
+  
 
 
 <img src="../../images/lesson8_opps.png" align="center"  height="300" width="550" >   
