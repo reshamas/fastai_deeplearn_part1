@@ -51,5 +51,5 @@ Transfer learning or inductive transfer is a research problem in machine learnin
 ## Embeddings
 embeddings allow us to use categorical data
 
-<img src="../../images/lesson8_part1_2.png" align="center"  height="300" width="500" >   
+<img src="../../images/lesson8_part1_2.png" align="center"  height="300" width="600" >   
 
