@@ -100,6 +100,17 @@ embeddings allow us to use categorical data
 ## Opportunities in this Class
 * cutting edge research, almost no one else knows about 
 * write blogs, incorporate research into a library
+* communicating what you are doing is very helpful
+* can get feedback on draft blogs on the forums
+
+<img src="../../images/lesson8_opps.png" align="center"  height="300" width="550" >   
+
+
+## Part 2:  What We Will Study 
+* Generative Models
+  * CNNs beyond classification
+  * NLP beyond classification
+* Large datasets
 
 
 <img src="../../images/lesson8_opps.png" align="center"  height="300" width="550" >   
