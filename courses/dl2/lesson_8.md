@@ -25,7 +25,6 @@ Notebook:
 ## Learning
 * Jeremy trying to pick topics that will help us learn foundational topics (richer CNN)
 * can't possibly cover hundreds of interesting things done with deep learning
-* 
 
 ## Park 1 Takeaways
 * we don't call this deep learning, but differential programming
@@ -53,6 +52,17 @@ embeddings allow us to use categorical data
 <img src="../../images/lesson8_embeddings.png" align="center"  height="300" width="550" >   
 
 ## Part 1 to Part 2
+* rather than fastai and PyTorch being obscure, will learn enough to understand the source code
+* object oriented python important to study and understand
+* will introduce Python debugger, using editor to jump to code
+* details on coding technique
+* detailed walk-throughs of papers
+* if you come across something you don't know, it is not hard, it is something you need to learn
+* be careful of taking code from online resources, it may just good enough to have run their experiments, but difficult to generalize, be ready to do some debugging
 
 <img src="../../images/lesson8_part1_2.png" align="center"  height="300" width="550" >   
+
+## Motivation
+<img src="../../images/lesson8_motivation.png" align="center"  height="300" width="550" >   
+
 
