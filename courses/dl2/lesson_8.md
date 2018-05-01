@@ -183,3 +183,7 @@ embeddings allow us to use categorical data
 PATH = Path('data/pascal')
 list(PATH.iterdir())
 ```
+
+## Coding
+* requires tenacity
+
