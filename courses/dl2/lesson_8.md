@@ -63,6 +63,43 @@ embeddings allow us to use categorical data
 <img src="../../images/lesson8_part1_2.png" align="center"  height="300" width="550" >   
 
 ## Motivation
+* idea is to start with an empty notebook
+* don't copy and paste code from notebook; TYPE IT OUT
+* make sure you can repeat the process
+* practice, practice
+* if you don't understand a step, can ask on the forums, propose a hypothesis for why you think it doesn't work
+
 <img src="../../images/lesson8_motivation.png" align="center"  height="300" width="550" >   
 
 
+## Deep Learning Box
+* if you wish, and have financial resources, can build your own deep learning toolbox
+* if it is a good time, in your study cycle for it
+* budget:  $1000 - $1500 for your own box
+* RAM:  try to get 32GB
+* PCI Lanes:  don't need to have 16 lanes to feed your GPU, you need 8 lanes
+* Build:  you can buy the parts and put it together, or get someplace to do it for you
+
+<img src="../../images/lesson8_dl_box.png" align="center"  height="300" width="550" >   
+
+## Reading Papers
+* each week we will be reading papers
+* in academic papers, people love using Greek letters
+* Adam is momentum and momentum on the square of the gradient
+* papers include theoretical reasoning for why things work, lot of conferences and journals don't like to accept papers without theoretical justification
+* Jeffrey Hinton: a decade or 2 ago, no conferences would accept neural network papers, then 1 abstract theoretical result came out, and journals started accepting neural network research
+* we need to learn to read papers
+* take a paper, put in effort to understand it, and then write a blog to explain it in code and normal English
+* lots of people who do that get a following and great job offers
+* understanding papers --->  useful skill
+* it's hard to read or understand something that you cannot vocalize, which means if you don't know the names of the Greek letters, it's hard to follow
+* spend some time to understand Greek letters
+
+<img src="../../images/lesson8_papers.png" align="center"  height="300" width="550" >   
+
+## Opportunities in this Class
+* cutting edge research, almost no one else knows about 
+* write blogs, incorporate research into a library
+
+
+<img src="../../images/lesson8_opps.png" align="center"  height="300" width="550" >   
