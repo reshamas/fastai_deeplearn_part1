@@ -172,6 +172,8 @@ embeddings allow us to use categorical data
 * some people combine the two, need to be careful, there can be leakage between the validation datasets
 
 <img src="../../images/lesson8_nb_pascal.png" align="center"  height="300" width="550" >   
+
+---
 ### PATH
 * this gives you object oriented access to the files
 * pathlib object has an `open` method
