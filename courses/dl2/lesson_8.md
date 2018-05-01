@@ -46,4 +46,10 @@ Transfer learning or inductive transfer is a research problem in machine learnin
 * network that does thing A, remove last layer or so, replace it with a few random layers at the end, fine tune those layers to do thing B, taking advantage of the features the original network learned
 <img src="../../images/lesson8_transfer_learning.png" align="center"  height="300" width="500" >   
 
+---
+
+## Embeddings
+embeddings allow us to use categorical data
+
+<img src="../../images/lesson8_part1_2.png" align="center"  height="300" width="500" >   
 
