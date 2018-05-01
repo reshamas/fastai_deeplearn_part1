@@ -44,6 +44,6 @@ Transfer learning or inductive transfer is a research problem in machine learnin
 * it makes nearly everything easier, faster and more accurate
 * fastai library is all focused on transfer learning
 * network that does thing A, remove last layer or so, replace it with a few random layers at the end, fine tune those layers to do thing B, taking advantage of the features the original network learned
-<img src="../../images/lesson8_transfer_learning.png" align="center"  height="250" width="500" >   
+<img src="../../images/lesson8_transfer_learning.png" align="center"  height="300" width="500" >   
 
 
