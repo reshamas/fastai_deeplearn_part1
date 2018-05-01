@@ -95,7 +95,7 @@ embeddings allow us to use categorical data
 * it's hard to read or understand something that you cannot vocalize, which means if you don't know the names of the Greek letters, it's hard to follow
 * spend some time to understand Greek letters
 
-<img src="../../images/lesson8_papers.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson8_paper.png" align="center"  height="300" width="550" >   
 
 ## Opportunities in this Class
 * cutting edge research, almost no one else knows about 
