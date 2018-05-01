@@ -37,7 +37,7 @@ Notebook:
 ## Transfer Learning - definition
 Transfer learning or inductive transfer is a research problem in machine learning that focuses on storing knowledge gained while solving one problem and applying it to a different but related problem.[1] For example, knowledge gained while learning to recognize cars could apply when trying to recognize trucks. This area of research bears some relation to the long history of psychological literature on transfer of learning, although formal ties between the two fields are limited.
 
-<img src="../images/lesson8_transfer_learning.png" align="center"  height="400" width="650" >   
+<img src="../../images/lesson8_transfer_learning.png" align="center"  height="400" width="650" >   
 
 
 ### Transfer Learning
