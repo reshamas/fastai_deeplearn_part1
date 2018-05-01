@@ -130,8 +130,54 @@ embeddings allow us to use categorical data
 * don't be put off if you have limited computing resources
   - can use smaller datasets
   - can cut down on batch size
-  
-  
-
 
 <img src="../../images/lesson8_opps.png" align="center"  height="300" width="550" >   
+
+---
+# Object Detection
+* multiple items in an image we are classifying
+* saying what we see, we also have bounding boxes around what we see
+* bounding box:  box, rectangle, rectangle has the object entirely in it, but is no bigger than it has to be
+* bounding box around horse, slightly imperfect, to be expected
+* take data that is labeled this way and on labeled data, generate classes of object and bounding box
+* labeling this kind of data is generally more expensive
+* **ImageNet:**  here are the 1000 classes, tell me which it is
+* **Object Detection:**  here is a list of classes, tell me everything that is in the image and where it is
+
+<img src="../../images/lesson8_obj_det.png" align="center"  height="300" width="550" >   
+
+## Stage 1
+* classify and localize the largest object in each image
+1.  What it is
+2.  Where it is
+
+<img src="../../images/lesson8_stage1.png" align="center"  height="300" width="550" >   
+
+## Notebook:  Pascal
+* [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
+* all notebooks are in [dl2 folder](https://github.com/fastai/fastai/tree/master/courses/dl2)
+* `torch.cuda.set_device(3)` pick number of GPUs to use (of course, it depends on how many you have to use)
+
+## Dataset:  Pascal
+### The PASCAL VOC project:
+* Provides standardised image data sets for object class recognition
+* Provides a common set of tools for accessing the data sets and annotations
+* Enables evaluation and comparison of different methods 
+* Ran challenges evaluating performance on object class recognition (from 2005-2012, now finished)
+
+### Notes
+* Pascal VOC (Visual Object Classes):  http://host.robots.ox.ac.uk/pascal/VOC/
+* we're using 2007 version of data
+* you can use the 2012 version; it's bigger, will get better results
+* some people combine the two, need to be careful, there can be leakage between the validation datasets
+
+<img src="../../images/lesson8_nb_pascal.png" align="center"  height="300" width="550" >   
+### PATH
+* this gives you object oriented access to the files
+* pathlib object has an `open` method
+* load the .json files which don't contain the images, but the bounding boxes and the classes of the object
+* json - the most standard way to pass around hierarchical structured data
+```python
+PATH = Path('data/pascal')
+list(PATH.iterdir())
+```
