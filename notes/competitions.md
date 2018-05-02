@@ -16,6 +16,7 @@
 * [SemEval-2017 Task 9 (NLP)](http://alt.qcri.org/semeval2017/task9/)
 * [2016 Shared Task: Challenges in NLP for Clinical Data](https://www.i2b2.org/NLP/RDoCforPsychiatry/PreviousChallenges.php)
 * [Noisy User Generated Task (WNUT) Shared Tasks](http://noisy-text.github.io/2017/)
+* [SemEval-2017 Task 1 (Semantic Textual Similarity)](http://alt.qcri.org/semeval2017/task1/)
 
 
 ## Students
