@@ -99,12 +99,11 @@ Reshama Shaikh
 * [Lesson 7:  ](courses/dl1/lesson_7_x.md) CNN Architecture
 
 ---
-# Machine Learning
-## ML Videos
-[ML Forum](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826)
-[ML video timelines](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826/321?u=ericpb)
+# Machine Learning Course
+- [ML Forum](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826)
+- [ML video timelines](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826/321?u=ericpb)
 
-### [Intro to Machine Learning: My Lesson Notes](courses/ml1/) 
+## [Intro to Machine Learning: My Lesson Notes](courses/ml1/) 
 * [Lesson 1: Random Forests Part 1](courses/ml1/lesson_01.md)
 * [Lesson 2: Random Forests Part 2](courses/ml1/lesson_02.md)
 * [Lesson 3: Preprocessing Data](courses/ml1/lesson_03.md)
