@@ -74,7 +74,7 @@ Reshama Shaikh
 * [Lesson 6 wiki](http://forums.fast.ai/t/wiki-lesson-6/9404) RNNs
 * [Lesson 7 wiki](http://forums.fast.ai/t/wiki-lesson-7/9405) CNN Architecture
 
-# [Deep Learning, Part 2](http://www.fast.ai/2018/05/07/part2-launch/)
+## [Deep Learning, Part 2](http://www.fast.ai/2018/05/07/part2-launch/)
 * [Lesson 8](http://course.fast.ai/lessons/lesson8.html) Object Detection
 * [Lesson 9](http://course.fast.ai/lessons/lesson9.html) Single Shot Multibox Detector (SSD)
 * [Lesson 10](http://course.fast.ai/lessons/lesson10.html) NLP Classification and Translation
@@ -93,12 +93,12 @@ Reshama Shaikh
 * Lesson 1
   - [Lesson 1a: Course Intro](courses/dl1/lesson_1a_course_intro.md)
   - [Lesson 1b: CNN and resnet Architecture](courses/dl1/lesson_1b_cnn_tools.md)
-* [Lesson 2: resnet34, resnext50](courses/dl1/lesson_2_resnet34_resnext50.md)
-* [Lesson 3: CNN Image Intro](courses/dl1/lesson_3_x.md)
-* [Lesson 4: Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro](courses/dl1/lesson_4_x.md)
-* [Lesson 5:  ](courses/dl1/lesson_5_x.md)
-* [Lesson 6:  ](courses/dl1/lesson_6_x.md)
-* [Lesson 7:  ](courses/dl1/lesson_7_x.md)
+* [Lesson 2: resnet34, resnext50](courses/dl1/lesson_2_resnet34_resnext50.md) CNNs
+* [Lesson 3: CNN Image Intro](courses/dl1/lesson_3_x.md) Overfitting
+* [Lesson 4: Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro](courses/dl1/lesson_4_x.md) Embeddings
+* [Lesson 5:  ](courses/dl1/lesson_5_x.md) NLP
+* [Lesson 6:  ](courses/dl1/lesson_6_x.md) RNNs
+* [Lesson 7:  ](courses/dl1/lesson_7_x.md) CNN Architecture
 
 ---
 # Machine Learning
