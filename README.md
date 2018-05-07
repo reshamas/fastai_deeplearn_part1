@@ -1,5 +1,3 @@
-<img src="images/ncm_gephi.jpg" align="center"  height="150" width="250" >   
-
 # [fast.ai](http://www.fast.ai)
 * Deep Learning (Part 1 v2):  **Oct - Dec 2017**  
 * Deep Learning (Part 2 v2):  **Mar - May 2018**
