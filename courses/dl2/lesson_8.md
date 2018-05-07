@@ -1,11 +1,10 @@
 # Lesson 8:  Part 2 Intro, Object Detection
 (19-Mar-2018, live)  
  
-[Wiki: Part 2 / Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
-[Lesson 8 video](https://www.youtube.com/watch?v=b8D6Bwck9QM&feature=youtu.be)
-
-Notebook:  
-*  [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
+- [Wiki: Part 2 / Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
+- [Lesson 8 video](https://www.youtube.com/watch?v=b8D6Bwck9QM&feature=youtu.be)
+- Notebook:  
+   * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
 
 ---
 
