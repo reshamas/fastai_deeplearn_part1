@@ -99,6 +99,16 @@ Reshama Shaikh
 * [Lesson 7:  ](courses/dl1/lesson_7_x.md) CNN Architecture
 
 ---
+### [Deep Learning 2: My Lesson Notes](courses/dl2/) 
+* [Lesson 8](courses/dl2/lesson_8.md) Object Detection
+* [Lesson 9] ()
+* [Lesson 10] ()
+* [Lesson 11] ()
+* [Lesson 12] ()
+* [Lesson 13] ()
+* [Lesson 14] () 
+
+---
 # Machine Learning Course
 - [ML Forum](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826)
 - [ML video timelines](http://forums.fast.ai/t/another-treat-early-access-to-intro-to-machine-learning-videos/6826/321?u=ericpb)
