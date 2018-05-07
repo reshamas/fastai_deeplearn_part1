@@ -55,28 +55,39 @@ Reshama Shaikh
 * [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
 ---
-# Deep Learning, Part 1
-
-## [Deep Learning Wiki](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
-* [Lesson 1 wiki](http://forums.fast.ai/t/wiki-lesson-1/9398)
-* [Lesson 2 wiki](http://forums.fast.ai/t/wiki-lesson-2/9399)
-* [Lesson 3 wiki](http://forums.fast.ai/t/wiki-lesson-3/9401)
-* [Lesson 4 wiki](http://forums.fast.ai/t/wiki-lesson-4/9402)
-* [Lesson 5 wiki](http://forums.fast.ai/t/wiki-lesson-5/9403)
-* [Lesson 6 wiki](http://forums.fast.ai/t/wiki-lesson-6/9404)
-* [Lesson 7 wiki](http://forums.fast.ai/t/wiki-lesson-7/9405)
-
+# Deep Learning
 
 ## Coursework
 * Latest coursework
   * **Version 2:**  [Part 1 v2](http://course.fast.ai) (released Jan 2018)
-  * Version 2:  [Part 2 v2]    (will be released ~ Jul 2018)
+  * **Version 2:**  [Part 2 v2](http://www.fast.ai/2018/05/07/part2-launch/) (released May 2018)
 * Older coursework
   * Version 1:  [Part 1 v1](http://course17.fast.ai)
   * Version 1:  [Part 2 v1](http://course17.fast.ai/part2.html)
 
+## [Deep Learning Part 1](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
+* [Lesson 1 wiki](http://forums.fast.ai/t/wiki-lesson-1/9398) Image Recognition
+* [Lesson 2 wiki](http://forums.fast.ai/t/wiki-lesson-2/9399) CNNs
+* [Lesson 3 wiki](http://forums.fast.ai/t/wiki-lesson-3/9401) Overfitting
+* [Lesson 4 wiki](http://forums.fast.ai/t/wiki-lesson-4/9402) Embeddings
+* [Lesson 5 wiki](http://forums.fast.ai/t/wiki-lesson-5/9403) NLP 
+* [Lesson 6 wiki](http://forums.fast.ai/t/wiki-lesson-6/9404) RNNs
+* [Lesson 7 wiki](http://forums.fast.ai/t/wiki-lesson-7/9405) CNN Architecture
+
+# [Deep Learning, Part 2](http://www.fast.ai/2018/05/07/part2-launch/)
+* [Lesson 8](http://course.fast.ai/lessons/lesson8.html) Object Detection
+* [Lesson 9](http://course.fast.ai/lessons/lesson9.html) Single Shot Multibox Detector (SSD)
+* [Lesson 10](http://course.fast.ai/lessons/lesson10.html) NLP Classification and Translation
+* [Lesson 11](http://course.fast.ai/lessons/lesson11.html) Neural Translation
+* [Lesson 12](http://course.fast.ai/lessons/lesson12.html) Generative Adverarial Networks (GANS)
+* [Lesson 13](http://course.fast.ai/lessons/lesson13.html) Image Enhancement
+* [Lesson 14](http://course.fast.ai/lessons/lesson14.html) Super Resolution; Image Segmentation with UNET
+
+
 ### Deep Learning Lesson Timelines
 * http://forums.fast.ai/t/part-1-v2-complete-collection-of-video-timelines/11183
+
+---
 
 ### [Deep Learning 1: My Lesson Notes](courses/dl1/) 
 * Lesson 1
@@ -88,17 +99,6 @@ Reshama Shaikh
 * [Lesson 5:  ](courses/dl1/lesson_5_x.md)
 * [Lesson 6:  ](courses/dl1/lesson_6_x.md)
 * [Lesson 7:  ](courses/dl1/lesson_7_x.md)
-
-
----
-# Deep Learning, Part 2
-* [Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556) Object Detection
-* [Lesson 9](http://forums.fast.ai/t/part-2-lesson-9-in-class/14028) 
-* [Lesson 10](http://forums.fast.ai/t/part-2-lesson-10-in-class/14364)
-* [Lesson 11] ()
-* [Lesson 12] ()
-* [Lesson 13] ()
-* [Lesson 14] ()
 
 ---
 # Machine Learning
