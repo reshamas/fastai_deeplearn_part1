@@ -15,7 +15,7 @@ These notes correspond to first 12 minutes of lesson 1 video.
 - USAGE:  `$0.65/hr` (P5000)
 - PUBLIC IP ADDRESS:  `$3/month` (single static IP address)
 
-Note:  There is a **$15 credit code you can use: `FASTAI3BDG`**.  **This code is only for fastai students.**  
+Note:  There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is only for fastai students.**  
 
 ## Paperspace Support
 - Technical support, email support@paperspace.com
@@ -64,7 +64,7 @@ Note:  There is a **$15 credit code you can use: `FASTAI3BDG`**.  **This code is
 - turn OFF `Auto Snapshot` (to save money on doing back-ups)
 
 ### Step 8:  Payment
-- add in a promo code:  **$15 credit code you can all use: FASTAI3BDG**
+- add in promo code
 - add in credit card information (required, even if you have a promo code)
 
 ### Step 9:  Create machine
