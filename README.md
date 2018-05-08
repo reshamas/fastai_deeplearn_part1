@@ -20,6 +20,7 @@ Reshama Shaikh
 * [Directory of fastai and DL terms](fastai_dl_terms.md)
 * [Solving the Most Common Errors](tips_troubleshooting.md)
 * [Fastai FAQs for Beginners](tips_faq_beginners.md)
+* [30+ Best Practices](http://forums.fast.ai/t/30-best-practices/12344)
 * :red_circle: [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
   - [Fastai Blog Posts (by Rachel Thomas & Jeremy Howard)](http://www.fast.ai/topics/)
 
