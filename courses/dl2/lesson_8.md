@@ -241,8 +241,17 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 - younger students figure out the whole big solution they want, speculative ideas, spend 6 months on it, and day before presentation doesn't work
 - Kaggle approach:  half an hour each day, make it better than the day before
 - go through each of the bounding boxes in image and get the biggest one
-- 
+- lambda functions used everywhere, a one-off function
+- `sorted` python function
 
+
+```python
+
+def get_lrg(b):
+    if not b: raise Exception()
+    b = sorted(b, key=lambda x: np.product(x[0][-2:]-x[0][:2]), reverse=True)
+    return b[0]
+```
 <img src="../../images/lesson8_step1.png" align="center"  height="300" width="550" >   
 
 
