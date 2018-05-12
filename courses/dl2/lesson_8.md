@@ -235,4 +235,10 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 
 <img src="../../images/lesson8_matplotlib.png" align="center"  height="300" width="550" >   
 
+## Step 1:  Classifier
+
+<img src="../../images/lesson8_step1.png" align="center"  height="300" width="550" >   
+
+
 ## 
+
