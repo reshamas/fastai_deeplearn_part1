@@ -223,7 +223,7 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 - one of the reasons the fastai library is so amazingly fast is that we don't use multiple processsors for data augmentation, we use multiple threads, reason we can do multiple threads is that is we use open cv
 - unfortunately, open cv is a crappy API, poorly documented
 - for these reasons, don't use PyTorch or Pillow for your data augmentation
-- 
+
 
 ## Matplotlib
 - matplotlib so named because it was originally a clone of matlab's plotting library
@@ -243,8 +243,6 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 - go through each of the bounding boxes in image and get the biggest one
 - lambda functions used everywhere, a one-off function
 - `sorted` python function
-
-
 ```python
 
 def get_lrg(b):
@@ -252,6 +250,11 @@ def get_lrg(b):
     b = sorted(b, key=lambda x: np.product(x[0][-2:]-x[0][:2]), reverse=True)
     return b[0]
 ```
+- dictionary comprehension is like list comprehension but it goes inside curly brackets
+```python
+trn_lrg_anno = {a: get_lrg(b) for a,b in trn_anno.items()}
+```
+
 <img src="../../images/lesson8_step1.png" align="center"  height="300" width="550" >   
 
 
