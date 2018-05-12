@@ -123,6 +123,8 @@ embeddings allow us to use categorical data
 * enhanced version of input image
 * entire original input paragraph, translated into French
 
+<img src="../../images/lesson8_part2.png" align="center"  height="300" width="550" >   
+
 ### Notes
 * requires different way of thinking about things
 * almost all data will be text or image  (no audio yet, no more time series (most in ML course))
@@ -130,8 +132,6 @@ embeddings allow us to use categorical data
 * don't be put off if you have limited computing resources
   - can use smaller datasets
   - can cut down on batch size
-
-<img src="../../images/lesson8_opps.png" align="center"  height="300" width="550" >   
 
 ---
 # Object Detection
