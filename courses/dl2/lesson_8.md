@@ -296,7 +296,7 @@ md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 - main thing to know about a data loader is it is an iterator
 - each time you get the next iterator, you get a mini batch
 - by default, the batch size is 64
-- in python, the way to get the next item in iterator is with `next`
+- in python, the way to get the next item in iterator is with `next(iter`
 ```python
 x,y=next(iter(md.val_dl))
 ```
