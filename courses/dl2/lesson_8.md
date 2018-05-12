@@ -293,6 +293,14 @@ md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 - if you had very long or very tall images, that might be more difficult to model
 
 ### Model Loader
+- main thing to know about a data loader is it is an iterator
+- each time you get the next iterator, you get a mini batch
+- by default, the batch size is 64
+- in python, the way to get the next item in iterator is with `next`
+```python
+x,y=next(iter(md.val_dl))
+```
+
 
 <img src="../../images/lesson8_md.png" align="center"  height="300" width="550" >   
 
