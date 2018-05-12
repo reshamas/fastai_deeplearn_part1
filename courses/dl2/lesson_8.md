@@ -258,5 +258,7 @@ trn_lrg_anno = {a: get_lrg(b) for a,b in trn_anno.items()}
 <img src="../../images/lesson8_step1.png" align="center"  height="300" width="550" >   
 
 
-## 
+## Coding
+- lots of people write lines and lines of code, without checking what it is doing, and at the very end, they have an error and do not know where it is
+- 
 
