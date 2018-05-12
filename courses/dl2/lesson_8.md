@@ -226,7 +226,12 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 - 
 
 ## Matplotlib
-- matplotlib so named because it was originally a clone of matlab library
+- matplotlib so named because it was originally a clone of matlab's plotting library
+- unfortunately matlab's plotting library is awful, but what was used at the time
+- so, matplotlib added a second API, an object oriented library, but there's no tutorials on that
+- Jeremy will show us how to use this API and some simple tricks
+- `plt.subplots` is a handy wrapper, it returns 2 things, one is an axis object
+- instead of saying `plt.<>`, now say `ax.<>`  where `<>` is 'something'
 - 
 
 
