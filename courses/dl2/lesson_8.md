@@ -292,4 +292,7 @@ md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 - in this case, we definitely don't want to crop, so this perfect
 - if you had very long or very tall images, that might be more difficult to model
 
+### Model Loader
+
+<img src="../../images/lesson8_md.png" align="center"  height="300" width="550" >   
 
