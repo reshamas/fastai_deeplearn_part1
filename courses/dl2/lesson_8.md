@@ -273,3 +273,14 @@ df = pd.DataFrame({'fn': [trn_fns[o] for o in trn_ids],
 df.to_csv(CSV, index=False)
 ```
 - 
+
+## Back to "Dogs and Cats"!
+```python
+f_model = resnet34
+sz=224
+bs=64
+```
+```python
+tfms = tfms_from_model(f_model, sz, aug_tfms=transforms_side_on, crop_type=CropType.NO)
+md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
+```
