@@ -265,4 +265,11 @@ trn_lrg_anno = {a: get_lrg(b) for a,b in trn_anno.items()}
 (PATH/'tmp').mkdir(exist_ok=True)
 CSV = PATH/'tmp/lrg.csv'
 ```
+- why create a csv file?  makes it easy, create a csv, put in a temp folder and use what we already have
+- easiest way to create a csv file is to create a pandas dataframe
+```python
+df = pd.DataFrame({'fn': [trn_fns[o] for o in trn_ids],
+    'cat': [cats[trn_lrg_anno[o][1]] for o in trn_ids]}, columns=['fn','cat'])
+df.to_csv(CSV, index=False)
+```
 - 
