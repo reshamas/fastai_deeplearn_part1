@@ -240,6 +240,7 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 - find the biggest object in each image and classify it
 - younger students figure out the whole big solution they want, speculative ideas, spend 6 months on it, and day before presentation doesn't work
 - Kaggle approach:  half an hour each day, make it better than the day before
+- go through each of the bounding boxes in image and get the biggest one
 - 
 
 <img src="../../images/lesson8_step1.png" align="center"  height="300" width="550" >   
