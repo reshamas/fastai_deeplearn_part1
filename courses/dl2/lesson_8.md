@@ -267,6 +267,7 @@ CSV = PATH/'tmp/lrg.csv'
 ```
 - why create a csv file?  makes it easy, create a csv, put in a temp folder and use what we already have
 - easiest way to create a csv file is to create a pandas dataframe
+- code below:  dictionary does not have order, so order of columns matters here
 ```python
 df = pd.DataFrame({'fn': [trn_fns[o] for o in trn_ids],
     'cat': [cats[trn_lrg_anno[o][1]] for o in trn_ids]}, columns=['fn','cat'])
@@ -284,3 +285,5 @@ bs=64
 tfms = tfms_from_model(f_model, sz, aug_tfms=transforms_side_on, crop_type=CropType.NO)
 md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 ```
+- `crop_type=CropType.NO` this is different from before:  may remember the default strategy for 224x224 image, is to first resize it so the smallest side is 224, and then take a **random square crop** during training, and then during validation, we take a **center crop**, unless we do data augmentation, in which case we take a few center crops.
+
