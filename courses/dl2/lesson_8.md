@@ -232,8 +232,7 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 - Jeremy will show us how to use this API and some simple tricks
 - `plt.subplots` is a handy wrapper, it returns 2 things, one is an axis object
 - instead of saying `plt.<>`, now say `ax.<>`  where `<>` is 'something'
-- 
-
 
 <img src="../../images/lesson8_matplotlib.png" align="center"  height="300" width="550" >   
 
+## 
