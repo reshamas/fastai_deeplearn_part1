@@ -286,4 +286,6 @@ tfms = tfms_from_model(f_model, sz, aug_tfms=transforms_side_on, crop_type=CropT
 md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 ```
 - `crop_type=CropType.NO` this is different from before:  may remember the default strategy for 224x224 image, is to first resize it so the smallest side is 224, and then take a **random square crop** during training, and then during validation, we take a **center crop**, unless we do data augmentation, in which case we take a few center crops.
+- for **bounding boxes** we don't want to do that, unlike in Image Net where the thing we care about is pretty much in the middle and pretty big, a lot of the stuff in object detection is quite small and close to the edge
+- 
 
