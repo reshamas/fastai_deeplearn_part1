@@ -2,7 +2,7 @@
 (19-Mar-2018, live)  
  
 - [Wiki: Part 2 / Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
-- [Lesson 8 video](https://youtu.be/Z0ssNAbe81M)
+- [Lesson 8 video](https://youtu.be/Z0ssNAbe81M) 
 - Notebook:  
    * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
 
@@ -189,7 +189,15 @@ list(PATH.iterdir())
 
 ## Editor
 * [Visual Studio Code](https://code.visualstudio.com) is a great editor out there, it is FREE
+  - best editor out there (unless you are willing to put time in to learn Vim or Emacs)
+  - if you download a recent version of Anaconda, it will offer to download Visual Studio for you
+  - good choice of editor if you are not sure
 
+### Steps
+- do `git clone` of fastai library
+- File / Open Folder / open fastai github library
+- For interpreter: can select fastai environment
+  
 You can use Visual Studio Code (vscode - open source editor that comes with recent versions of Anaconda, or can be installed separately), or most editors and IDEs, to find out all about the open_image function. vscode things to know:  
 * Command palette (Ctrl-shift-p)
 * Select interpreter (for fastai env)
@@ -202,9 +210,25 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 * Hide sidebar (Ctrl-b)
 * Zen mode (Ctrl-k,z)
 
+### [OpenCV](https://opencv.org) open image
+`open_image` 
+- cv2 is the open cv library
+- torch vision library uses PyTorch tensors for all of its data augmentation
+- a lot of people use [PIL](http://python-pillow.org) (pillow - Python Imaging Library) that adds support for opening, manipulating, and saving many different image file formats.
+- Jeremy did a lot of testing; found open cv is 5-10x faster than Torch Vision
+- Jeremy did satellite competition with another student, Torch Vision was very slow
+- PIL is faster than Torch Vision, but not as fast as open cv; PIL is not as thread-safe
+- Python has GIL (global interpreter lock) which means that two threads cannot do pythonic things at the same time, which makes Python, not a great language, for modern programming
+- open cv releases the GIL
+- one of the reasons the fastai library is so amazingly fast is that we don't use multiple processsors for data augmentation, we use multiple threads, reason we can do multiple threads is that is we use open cv
+- unfortunately, open cv is a crappy API, poorly documented
+- for these reasons, don't use PyTorch or Pillow for your data augmentation
+- 
+
 ## Matplotlib
+- matplotlib so named because it was originally a clone of matlab library
+- 
 
 
-
-##
+<img src="../../images/lesson8_matplotlib.png" align="center"  height="300" width="550" >   
 
