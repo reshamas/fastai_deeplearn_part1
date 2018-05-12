@@ -260,5 +260,9 @@ trn_lrg_anno = {a: get_lrg(b) for a,b in trn_anno.items()}
 
 ## Coding
 - lots of people write lines and lines of code, without checking what it is doing, and at the very end, they have an error and do not know where it is
+- handy method for creaing a directory
+```python
+(PATH/'tmp').mkdir(exist_ok=True)
+CSV = PATH/'tmp/lrg.csv'
+```
 - 
-
