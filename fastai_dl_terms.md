@@ -128,7 +128,11 @@ a class of artificial neural network where connections between units form a dire
 ### ReLU (Rectified Linear Unit)
 ReLU is an activation function, which is zero when x &lt 0 and then linear with slope 1 when x &gt 0. 
 
+### SSD (Single Shot MultiBox Detector)
 
 ### t-SNE (t-Distributed Stochastic Neighbor Embedding)
 is a (prize-winning) technique for dimensionality reduction that is particularly well suited for the visualization of high-dimensional datasets. The technique can be implemented via Barnes-Hut approximations, allowing it to be applied on large real-world datasets. We applied it on data sets with up to 30 million examples. 
+
+### YOLO (You Only Look Once)
+
 
