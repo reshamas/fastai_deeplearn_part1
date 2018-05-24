@@ -157,12 +157,8 @@ test data
 It's important to understand that:  
 - in the case of train/test, the test set is used to test for **generalization**
 - the **holdout data** is a second test set
-    
+
 ---
 ## Q5:  How do I copy files or data from my local computer to a cloud machine (Paperspace, AWS, etc)?
 
-[instructions on using `scp` command to transfer files from platforms](
-https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/scp_xfer_files_local_to_aws.md)
- 
-
-
+[Instructions on using `scp` command to transfer files from platforms](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/copy_files_local_to_cloud.md)
