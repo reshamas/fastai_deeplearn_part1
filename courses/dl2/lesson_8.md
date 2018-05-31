@@ -3,6 +3,7 @@
  
 - [Wiki: Part 2 / Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
 - [Lesson 8 video](https://youtu.be/Z0ssNAbe81M) 
+- http://course.fast.ai/lessons/lesson8.html
 - Notebook:  
    * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
 
