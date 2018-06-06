@@ -162,3 +162,7 @@ It's important to understand that:
 ## Q5:  How do I copy files or data from my local computer to a cloud machine (Paperspace, AWS, etc)?
 
 [Instructions on using `scp` command to transfer files from platforms](https://github.com/reshamas/fastai_deeplearn_part1/blob/master/tools/copy_files_local_to_cloud.md)
+
+---
+## Q6:  Where do I put my sample images?
+[testing sample images after the model has been created](http://forums.fast.ai/t/wiki-lesson-1/9398/282)
