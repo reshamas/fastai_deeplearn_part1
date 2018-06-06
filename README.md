@@ -29,9 +29,10 @@ Reshama Shaikh
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
 * [Crestle](tools/crestle_run.md)
 * [Google Cloud GPU Setup for fastai](https://medium.com/google-cloud/set-up-google-cloud-gpu-for-fast-ai-45a77fa0cb48)
-* [Paperspace Docker Container](https://hub.docker.com/r/paperspace/fastai/)
 * [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
 * [Microsoft Azure](https://medium.com/@manikantayadunanda/setting-up-deeplearning-machine-and-fast-ai-on-azure-a22eb6bd6429)
+* [Running fast.ai notebooks with Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/running-fast-ai-notebooks-with-amazon-sagemaker/)
+* [Paperspace Docker Container](https://hub.docker.com/r/paperspace/fastai/)
 * [manual: bash script for setup](http://files.fast.ai/setup/paperspace)
   - the CUDA drivers
   - Anaconda (special Python distribution)
