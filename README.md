@@ -4,8 +4,8 @@
 ---
 ## About Me
 Reshama Shaikh  
-* Blog: https://reshamas.github.io   
-* Twitter:  https://twitter.com/reshamas
+* [My Blog](https://reshamas.github.io)   
+* Twitter: [@reshamas](https://twitter.com/reshamas)
 
 ---
 
