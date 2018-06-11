@@ -32,7 +32,9 @@ Reshama Shaikh
 * [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
 * [Microsoft Azure](https://medium.com/@manikantayadunanda/setting-up-deeplearning-machine-and-fast-ai-on-azure-a22eb6bd6429)
 * [Running fast.ai notebooks with Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/running-fast-ai-notebooks-with-amazon-sagemaker/)
-* [Paperspace Docker Container](https://hub.docker.com/r/paperspace/fastai/)
+* Docker
+    - [Paperspace Docker Container](https://hub.docker.com/r/paperspace/fastai/)
+    - [Fastai and Docker](https://nji-syd.github.io/2018/03/26/up-and-running-with-fast-ai-and-docker/)
 * [manual: bash script for setup](http://files.fast.ai/setup/paperspace)
   - the CUDA drivers
   - Anaconda (special Python distribution)
