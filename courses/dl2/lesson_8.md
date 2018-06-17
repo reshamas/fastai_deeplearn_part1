@@ -412,16 +412,24 @@ learn.load('clas_one')
 
 <img src="../../images/lesson_08/lesson8_visualize.png" align="center"  height="300" width="550" > 
 
-### Python Debugger
-- `pdb.set_trace()` to set a breakpoint  
-- `%debug` magic to trace an error
+## Python Debugger
+- unfortunately, no one teaches basic software development skills in an academic program
+- "wow, there's something that shows what your code does one step at a time!"
+- note:  all programming languages have a debugger
+- In Python, the standard debugger is called `pdb`
+- 
 
-#### Commands you need to know
+### 2 Ways to Use Python Debugger
+1.  `pdb.set_trace()` to set a breakpoint  
+2.  `%debug` magic to trace an error
+
+### Commands you need to know
 - s / n / c
 - u / d
 - p
 - l
 
+###
 
 
 
