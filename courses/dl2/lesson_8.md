@@ -3,7 +3,7 @@
  
 - [Wiki: Part 2 / Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
 - [Lesson 8 video](https://youtu.be/Z0ssNAbe81M) 
-  video length:  2:01:14
+  - video length:  2:01:14
 - http://course.fast.ai/lessons/lesson8.html
 - Notebook:  
    * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
@@ -307,18 +307,26 @@ x,y=next(iter(md.val_dl))
 ```
 <img src="../../images/lesson8_md.png" align="center"  height="300" width="550" >   
 
-- we can't send it straight to `shw_image`
+### Show Image 
+- we can't send it straight to `shw_img`
 ```python
-shw_image(md.val_ds.denorm(to_np(x))[0]);
+shw_img(md.val_ds.denorm(to_np(x))[0]);
 ```
+
 ### `x`
 - is not a numpy array
 - it is not on the CPU
-- shape is all wrong, should be `3 x 224 x 224`
+- its shape is all wrong, it's not `224x224x3` , it should be `3 x 224 x 224`
 - size is:  `torch.cuda.FloatTensor of size 64x3x224x224  (GPU 1)]`
-- these are not numbers between 0 and 1, 
+- these are not numbers between 0 and 1, because all the standard image nets expect our data to be standard normalized, with mean 0 and standard deviation of 1
 - all of our 
 
 <img src="../../images/lesson8_x.png" align="center"  height="300" width="550" >   
 
+### Function:  denormalize
+- `shw_img(md.val_ds.denorm(to_np(x))[0]);`
+- `.denorm` it doesn't just denormalize, also fixes up the dimension order
+- denormalization depends on the transform
+- `md.val_ds.denorm` :  `md` Model dataset --> takes some dataset, say `val_ds` --> 
+- 
  
