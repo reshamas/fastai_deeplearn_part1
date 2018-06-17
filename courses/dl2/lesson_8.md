@@ -348,6 +348,6 @@ lrf = learn.lr_find(1e-5, 100)
 ```python
 learn.sched.plot()
 ```
-<img src="../../images/lesson_08/lesson8_lr_find.png" align="center"  height="300" width="550" > 
-<img src="../../images/lesson_08/lesson8_lr_find2.png" align="center"  height="300" width="550" > 
+<img src="../../images/lesson_08/lesson08_lr_find.png" align="center"  height="300" width="550" > 
+<img src="../../images/lesson_08/lesson08_lr_find2.png" align="center"  height="300" width="550" > 
  
