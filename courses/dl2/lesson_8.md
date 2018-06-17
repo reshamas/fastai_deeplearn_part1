@@ -423,6 +423,18 @@ learn.load('clas_one')
 1.  `pdb.set_trace()` to set a breakpoint  
 2.  `%debug` magic to trace an error
 
+### Using the debugger
+- go inside your Python module, and add these lines: `pdb.set_trace()`
+- can set a conditional breakpoint, where error is occurring
+- fastai imports `pdb` for you
+- to import:  `import pdb`
+- it's not the most user-friendly experience
+- "holy shit, the debugger even works in a Jupyter notebook!"
+- it will also work in the terminal
+- when running in Jupyter notebook, and box pops up, type `h` for **help**
+- there are lots of tutorials there
+- 
+
 ### Commands you need to know
 - s / n / c
 - u / d
