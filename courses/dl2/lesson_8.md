@@ -262,7 +262,7 @@ trn_lrg_anno = {a: get_lrg(b) for a,b in trn_anno.items()}
 
 ## Coding
 - lots of people write lines and lines of code, without checking what it is doing, and at the very end, they have an error and do not know where it is
-- handy method for creaing a directory
+- handy method for creating a directory
 ```python
 (PATH/'tmp').mkdir(exist_ok=True)
 CSV = PATH/'tmp/lrg.csv'
@@ -417,7 +417,6 @@ learn.load('clas_one')
 - "wow, there's something that shows what your code does one step at a time!"
 - note:  all programming languages have a debugger
 - In Python, the standard debugger is called `pdb`
-- 
 
 ### 2 Ways to Use Python Debugger
 1.  `pdb.set_trace()` to set a breakpoint  
