@@ -343,11 +343,16 @@ lrf = learn.lr_find(1e-5, 100)
 - sometimes when you have very few mini-batches, that is not a good idea
 - a lot of people ask on forums how to fix it: `learn_sched.plot(n_skip=5, n_skip_end=1)`
 - second plot shows it 
-- if your dataset is really time, you can use a smaller batch size
+- if your dataset is really tiny, you can use a smaller batch size
 
 ```python
 learn.sched.plot()
 ```
 <img src="../../images/lesson_08/lesson08_lr_find.png" align="center"  height="300" width="550" > 
+
+```python
+learn_sched.plot(n_skip=5, n_skip_end=1)
+```
+
 <img src="../../images/lesson_08/lesson8_lr_find2.png" align="center"  height="300" width="550" > 
  
