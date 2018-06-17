@@ -356,3 +356,16 @@ learn_sched.plot(n_skip=5, n_skip_end=1)
 
 <img src="../../images/lesson_08/lesson8_lr_find2.png" align="center"  height="300" width="550" > 
  
+### Run
+#### Pick a learning rate
+```python
+lr = 2e-2
+```
+#### Fit, after one epoch, accuracy is 0.8048
+```python
+learn.fit(lr, 1, cycle_len=1)
+```
+
+
+<img src="../../images/lesson_08/lesson8_learning.png" align="center"  height="300" width="550" > 
+
