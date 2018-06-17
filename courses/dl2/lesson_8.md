@@ -3,6 +3,7 @@
  
 - [Wiki: Part 2 / Lesson 8](http://forums.fast.ai/t/part-2-lesson-8-in-class/13556)
 - [Lesson 8 video](https://youtu.be/Z0ssNAbe81M) 
+  video length:  2:01:14
 - http://course.fast.ai/lessons/lesson8.html
 - Notebook:  
    * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
@@ -286,9 +287,9 @@ bs=64
 tfms = tfms_from_model(f_model, sz, aug_tfms=transforms_side_on, crop_type=CropType.NO)
 md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 ```
-- `crop_type=CropType.NO` this is different from before:  may remember the default strategy for 224x224 image, is to first resize it so the smallest side is 224, and then take a **random square crop** during training, and then during validation, we take a **center crop**, unless we do data augmentation, in which case we take a few center crops.
+- `crop_type=CropType.NO` this is different from before:  may remember the default strategy for `224 x 224` image, is to first resize it so the smallest side is 224, and then take a **random square crop** during training, and then during validation, we take a **center crop**, unless we do data augmentation, in which case we take a few random/center crops.
 - for **bounding boxes** we don't want to do that, unlike in Image Net where the thing we care about is pretty much in the middle and pretty big, a lot of the stuff in object detection is quite small and close to the edge, so we could crop it out, and that would be bad.
-- `crop_type=CropType.NO` this means don't crop; to make it square instead, it squishes it
+- `crop_type = CropType.NO` this means don't crop; to make it square instead, it squishes it (picture can look strangely...)
 - generally speaking, a lot of computer vision models work better if you crop rather than squish, but they still work if you squish
 - in this case, we definitely don't want to crop, so this perfect
 - if you had very long or very tall images, that might be more difficult to model
@@ -302,6 +303,6 @@ md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 x,y=next(iter(md.val_dl))
 ```
 
-
 <img src="../../images/lesson8_md.png" align="center"  height="300" width="550" >   
 
+ 
