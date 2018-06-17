@@ -297,12 +297,28 @@ md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 ### Model Loader
 - main thing to know about a data loader is it is an iterator
 - each time you get the next iterator, you get a mini batch
-- by default, the batch size is 64
+- the mini batch you get is whatever size you asked for
+- by default, the batch size is 64; `bs = 64`
 - in python, the way to get the next item in iterator is with `next(iter`
+- for any python iterator, we have to say: *start at the beginning of the sequence, please*
+- if you want to grab just a single batch, here is the syntax:
 ```python
 x,y=next(iter(md.val_dl))
 ```
-
 <img src="../../images/lesson8_md.png" align="center"  height="300" width="550" >   
+
+- we can't send it straight to `shw_image`
+```python
+shw_image(md.val_ds.denorm(to_np(x))[0]);
+```
+### `x`
+- is not a numpy array
+- it is not on the CPU
+- shape is all wrong, should be `3 x 224 x 224`
+- size is:  `torch.cuda.FloatTensor of size 64x3x224x224  (GPU 1)]`
+- these are not numbers between 0 and 1, 
+- all of our 
+
+<img src="../../images/lesson8_x.png" align="center"  height="300" width="550" >   
 
  
