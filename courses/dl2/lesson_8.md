@@ -343,7 +343,7 @@ lrf = learn.lr_find(1e-5, 100)
 - sometimes when you have very few mini-batches, that is not a good idea
 - a lot of people ask on forums how to fix it: `learn_sched.plot(n_skip=5, n_skip_end=1)`
 - second plot shows it 
-- if your dataset is really tiny, you can use a smaller batch size
+- if your dataset is really tiny, you can use a smaller batch size, if you only have 3 or 4 batches worth, there is nothing to see
 
 ```python
 learn.sched.plot()
@@ -356,7 +356,7 @@ learn_sched.plot(n_skip=5, n_skip_end=1)
 
 <img src="../../images/lesson_08/lesson8_lr_find2.png" align="center"  height="300" width="550" > 
  
-### Run
+### Learning
 #### Pick a learning rate
 ```python
 lr = 2e-2
@@ -366,6 +366,36 @@ lr = 2e-2
 learn.fit(lr, 1, cycle_len=1)
 ```
 
-
+#### Unfreeze a couple of layers
+```python
+lrs = np.array([lr/1000, lr/100, lr])
+learn.freeze_to(-2)
+```
+```python
+lrf = learn.lr_find(lrs/1000)
+learn.sched.plot()
+```
+#### Fit, after another epoch, accuracy is 0.8210
+```python
+learn.fit(lrs/5, 1, cycle_len=1)
+```
 <img src="../../images/lesson_08/lesson8_learning.png" align="center"  height="300" width="550" > 
+
+
+#### Unfreeze the whole thing, accuracy is 0.8128 (not really improved
+```python
+learn.unfreeze()
+```
+```python
+learn.fit(lrs/5, 1, cycle_len=2)
+```
+
+#### Save model
+```python
+learn.save('clas_one')
+
+
+
+
+
 
