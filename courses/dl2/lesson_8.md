@@ -336,5 +336,17 @@ lean.opt_fn = optim.Adam
 
 lrf = learn.lr_find(1e-5, 100)
 ```
+- the first plot below looks a little weird, not particularly helpfuly
+- normally, we would see an uptick on the right side of plot
+- the reason we don't see it is because we intentionally removed the first two points and last two points
+- last few points shoot plot up to infinity, it's not very useful
+- sometimes when you have very few mini-batches, that is not a good idea
+- a lot of people ask on forums how to fix it: `learn_sched.plot(n_skip=5, n_skip_end=1)`
+- second plot shows it 
+- if your dataset is really time, you can use a smaller batch size
 
+```python
+learn.sched.plot()
+```
+<img src="../../images/lesson_08/lesson8_lr_finder.png" align="center"  height="300" width="550" > 
  
