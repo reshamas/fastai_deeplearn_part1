@@ -396,7 +396,7 @@ learn.fit(lrs/5, 1, cycle_len=2)
 - We need to be able to see the results
 - After working with this data for a while, Jeremy knows what the 20 classes are (person riding bike, dog on sofa, etc)
 
-#### Save model
+### Save model
 ```python
 learn.save('clas_one')
 ```
@@ -406,8 +406,14 @@ learn.load('clas_one')
 
 ### Visualize the data
 - if you don't understand the code, split it into separate lines, and run each line at a time
+- this is an OBVIOUS method, but many students don't do that when they don't follow the code; because if they had done that, they wouldn't be asking for help
+- another method is to use the Python debugger
 
 <img src="../../images/lesson_08/lesson8_visualize.png" align="center"  height="300" width="550" > 
+
+### Python Debugger
+```python
+pdb.set_trace()``` to set a breakpoint
 
 
 
