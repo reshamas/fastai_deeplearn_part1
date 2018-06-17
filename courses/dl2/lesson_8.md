@@ -389,11 +389,25 @@ learn.unfreeze()
 ```python
 learn.fit(lrs/5, 1, cycle_len=2)
 ```
+<img src="../../images/lesson_08/lesson8_learning2.png" align="center"  height="300" width="550" > 
+
+- Why are we stuck at 81% ?
+- It makes sense, unlike ImageNet or dogs vs cats, where each image has one major theme, a lot of the PASCAL datasets have lots of little things (items to classify), and so a largest classifier is not going to do great. 
+- We need to be able to see the results
+- After working with this data for a while, Jeremy knows what the 20 classes are (person riding bike, dog on sofa, etc)
 
 #### Save model
 ```python
 learn.save('clas_one')
+```
+```python
+learn.load('clas_one')
+```
 
+### Visualize the data
+- if you don't understand the code, split it into separate lines, and run each line at a time
+
+<img src="../../images/lesson_08/lesson8_visualize.png" align="center"  height="300" width="550" > 
 
 
 
