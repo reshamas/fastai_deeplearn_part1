@@ -408,12 +408,21 @@ learn.load('clas_one')
 - if you don't understand the code, split it into separate lines, and run each line at a time
 - this is an OBVIOUS method, but many students don't do that when they don't follow the code; because if they had done that, they wouldn't be asking for help
 - another method is to use the Python debugger
+- for those of you who don't know about the Python debugger, it is life-changing
 
 <img src="../../images/lesson_08/lesson8_visualize.png" align="center"  height="300" width="550" > 
 
 ### Python Debugger
-```python
-pdb.set_trace()``` to set a breakpoint
+- `pdb.set_trace()` to set a breakpoint  
+- `%debug` magic to trace an error
+
+#### Commands you need to know
+- s / n / c
+- u / d
+- p
+- l
+
+
 
 
 
