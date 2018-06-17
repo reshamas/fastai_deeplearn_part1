@@ -326,7 +326,15 @@ shw_img(md.val_ds.denorm(to_np(x))[0]);
 ### Function:  denormalize
 - `shw_img(md.val_ds.denorm(to_np(x))[0]);`
 - `.denorm` it doesn't just denormalize, also fixes up the dimension order
-- denormalization depends on the transform
-- `md.val_ds.denorm` :  `md` Model dataset --> takes some dataset, say `val_ds` --> 
-- 
+- denormalization depends on the transform, the dataset knows what transform what was used to create it
+- `md.val_ds.denorm(to_np(x)` :  `md` Model dataset --> takes some dataset, say `val_ds` --> pass it a mini-batch after turning it into a numpy array first
+
+### Learner
+```python
+learn = ConvLearner.pretrained(f_model, md, metrics=[accuracy])
+lean.opt_fn = optim.Adam
+
+lrf = learn.lr_find(1e-5, 100)
+```
+
  
