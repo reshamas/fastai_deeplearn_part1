@@ -111,6 +111,23 @@ ubuntu@ip-10-0-0-13:~/data$
 ### Step 6:  Unzip Files
 Note 1:  You will need to install and use `unzip` to unzip files.
 
+For Window users:
+1. First Download ubuntu from Window Microsoft Store
+
+2. Open PowerShell as Administrator and run:`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+
+3. Once the download has completed, select "Launch".This will open a console window. Wait for installation to complete then you will be prompted to create your LINUX user account.
+
+4. Create your LINUX username and password.
+
+5. Go to Control Panel and Turn on Developer Mode .
+
+6. Run `bash` from command-prompt. After that you can follow same as Linux users guide.
+
+
+For Linux Users:
+
+
 <kbd> sudo apt install unzip </kbd>  
 <kbd> unzip train.zip </kbd>  
 <kbd> unzip -q test.zip </kbd>  (Note:  `-q` means to unzip quietly, suppressing the printing)  
