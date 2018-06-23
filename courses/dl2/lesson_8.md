@@ -458,9 +458,14 @@ learn.load('clas_one')
 - Jeremy uses `%debug` all of the time, along with the idea of copying code out of the function to a different cell and running it step by step
 - there are similar things you can do inside of Visual Studio code, there is a Jupyter extension, which lets you select any line of code, and select option for running it in Jupyter, and create a little window showing you the output
 - Personnally, Jeremy thinks Jupyter notebook is better, and perhaps by the time you watch this on video, Jupyter Labs will be the main thing. it's the next version of Jupyter notebooks
-- 
-  
 
+  
+## Creating Bounding Boxes (`01:53`)
+- creating the bounding box around some object may seem like something you haven't done before, but actually, it's totally something you have done before
+- we know that we can create a regression rather than a classification neural net
+- in other words, a classification neural net is just one that has a sigmoid or softmax output and that we use a cross-entropy or binary cross-entropy negative Log Likelihood cost function, that's what makes it a classifier
+- if we don't have the softmax or sigmoid at the end, and we use Mean Squared Error as a loss function, it's now our regression model, and so now we can use it to predict a continuous number rather than a category
+- we also know that we can have multiple outputs 
 
 
 
