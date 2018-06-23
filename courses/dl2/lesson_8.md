@@ -533,7 +533,10 @@ x,y=next(iter(md.val_dl))
 - that is the simplest possible final layer that you could add
 - I stick that on top of my pretrained resnet34 model
 - optimize it with Adam
-- use a criteria of L1 loss
+- use a criteria of L1 loss (rather than MSE)
+- L1 loss means rather than adding up the squared error, add up the absolute values of the errors; it's normally what you want
+- adding up the squared error penalizes the bad misses by too much, so L1 loss is generally better to work with
+- 
 ```python
 head_reg4head_reg4 = nn.Sequential(Flatten(), nn.Linear(25088,4))
 learn = ConvLearner.pretrained(f_model, md, custom_head=head_reg4)
@@ -541,5 +544,9 @@ learn.opt_fn = optim.Adam
 learn.crit = nn.L1Loss()
 ```
 
+#### Jeremy will come back to this next week
+- do `lr_find`, find our learning rate, learn for a while, `freeze_to` to `(-2)`
+- `learn.freeze_to(-3)`, learn a bit more
+- you can see the validation loss is 
 
 
