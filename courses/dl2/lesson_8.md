@@ -45,13 +45,13 @@ Transfer learning or inductive transfer is a research problem in machine learnin
 * it makes nearly everything easier, faster and more accurate
 * fastai library is all focused on transfer learning
 * network that does thing A, remove last layer or so, replace it with a few random layers at the end, fine tune those layers to do thing B, taking advantage of the features the original network learned
-<img src="../../images/lesson8_transfer_learning.png" align="center"  height="300" width="500" >   
+<img src="../../images/lesson_08/lesson8_transfer_learning.png" align="center"  height="300" width="500" >   
 
 ---
 
 ## Embeddings
 embeddings allow us to use categorical data
-<img src="../../images/lesson8_embeddings.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_embeddings.png" align="center"  height="300" width="550" >   
 
 ## Part 1 to Part 2
 * rather than fastai and PyTorch being obscure, will learn enough to understand the source code
@@ -62,7 +62,7 @@ embeddings allow us to use categorical data
 * if you come across something you don't know, it is not hard, it is something you need to learn
 * be careful of taking code from online resources, it may just good enough to have run their experiments, but difficult to generalize, be ready to do some debugging
 
-<img src="../../images/lesson8_part1_2.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_part1_2.png" align="center"  height="300" width="550" >   
 
 ## Motivation
 * idea is to start with an empty notebook
@@ -71,7 +71,7 @@ embeddings allow us to use categorical data
 * practice, practice
 * if you don't understand a step, can ask on the forums, propose a hypothesis for why you think it doesn't work
 
-<img src="../../images/lesson8_motivation.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_motivation.png" align="center"  height="300" width="550" >   
 
 
 ## Deep Learning Box
@@ -82,7 +82,7 @@ embeddings allow us to use categorical data
 * PCI Lanes:  don't need to have 16 lanes to feed your GPU, you need 8 lanes
 * Build:  you can buy the parts and put it together, or get someplace to do it for you
 
-<img src="../../images/lesson8_dl_box.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_dl_box.png" align="center"  height="300" width="550" >   
 
 ## Reading Papers
 * each week we will be reading papers
@@ -97,7 +97,7 @@ embeddings allow us to use categorical data
 * it's hard to read or understand something that you cannot vocalize, which means if you don't know the names of the Greek letters, it's hard to follow
 * spend some time to understand Greek letters
 
-<img src="../../images/lesson8_paper.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_paper.png" align="center"  height="300" width="550" >   
 
 ## Opportunities in this Class
 * cutting edge research, almost no one else knows about 
@@ -105,7 +105,7 @@ embeddings allow us to use categorical data
 * communicating what you are doing is very helpful
 * can get feedback on draft blogs on the forums
 
-<img src="../../images/lesson8_opps.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_opps.png" align="center"  height="300" width="550" >   
 
 
 ## Part 2:  What We Will Study 
@@ -125,7 +125,7 @@ embeddings allow us to use categorical data
 * enhanced version of input image
 * entire original input paragraph, translated into French
 
-<img src="../../images/lesson8_part2.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_part2.png" align="center"  height="300" width="550" >   
 
 ### Notes
 * requires different way of thinking about things
@@ -146,14 +146,14 @@ embeddings allow us to use categorical data
 * **ImageNet:**  here are the 1000 classes, tell me which it is
 * **Object Detection:**  here is a list of classes, tell me everything that is in the image and where it is
 
-<img src="../../images/lesson8_obj_det.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_obj_det.png" align="center"  height="300" width="550" >   
 
 ## Stage 1
 * classify and localize the largest object in each image
 1.  What it is
 2.  Where it is
 
-<img src="../../images/lesson8_stage1.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_stage1.png" align="center"  height="300" width="550" >   
 
 ## Notebook:  Pascal
 * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
@@ -173,7 +173,7 @@ embeddings allow us to use categorical data
 * you can use the 2012 version; it's bigger, will get better results
 * some people combine the two, need to be careful, there can be leakage between the validation datasets
 
-<img src="../../images/lesson8_nb_pascal.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_nb_pascal.png" align="center"  height="300" width="550" >   
 
 ---
 ### PATH
@@ -235,7 +235,7 @@ You can use Visual Studio Code (vscode - open source editor that comes with rece
 - `plt.subplots` is a handy wrapper, it returns 2 things, one is an axis object
 - instead of saying `plt.<>`, now say `ax.<>`  where `<>` is 'something'
 
-<img src="../../images/lesson8_matplotlib.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_matplotlib.png" align="center"  height="300" width="550" >   
 
 ## Step 1:  Largest Item Classifier
 - Jeremy didn't have much experience in object detection before preparing for this course
@@ -257,7 +257,7 @@ def get_lrg(b):
 trn_lrg_anno = {a: get_lrg(b) for a,b in trn_anno.items()}
 ```
 
-<img src="../../images/lesson8_step1.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_step1.png" align="center"  height="300" width="550" >   
 
 
 ## Coding
@@ -305,7 +305,7 @@ md = ImageClassifierData.from_csv(PATH, JPEGS, CSV, tfms=tfms, bs=bs)
 ```python
 x,y=next(iter(md.val_dl))
 ```
-<img src="../../images/lesson8_md.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_md.png" align="center"  height="300" width="550" >   
 
 ### Show Image 
 - we can't send it straight to `shw_img`
@@ -321,7 +321,7 @@ shw_img(md.val_ds.denorm(to_np(x))[0]);
 - these are not numbers between 0 and 1, because all the standard image nets expect our data to be standard normalized, with mean 0 and standard deviation of 1
 - all of our 
 
-<img src="../../images/lesson8_x.png" align="center"  height="300" width="550" >   
+<img src="../../images/lesson_08/lesson8_x.png" align="center"  height="300" width="550" >   
 
 ### Function:  denormalize
 - `shw_img(md.val_ds.denorm(to_np(x))[0]);`
@@ -563,6 +563,7 @@ learn.crit = nn.L1Loss()
 - if you are a professional coder, there is probably not heaps of new stuff here for you; in that case, I would suggest practicing learning about bounding boxes and stuff
 - if you are not so experienced with things like debuggers, matplotlib API, and stuff like that, there is a LOT for you to practice, because we are going to be assuming you know that really well
 
+:clap:
 
 
 
