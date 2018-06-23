@@ -19,8 +19,10 @@
 - all of these are for a single object, the largest object in the image, and from there we will build up something which is closer to our final goal
 - you should go back and make sure you understand all the concepts from last week
 
-<img src="../../images/lesson_09/lesson9_know_these1.png" align="center"  height="300" width="500" >   
-<img src="../../images/lesson_09/lesson9_know_these2.png" align="center"  height="300" width="500" >   
+<img src="../../images/lesson_09/lesson9_know_these1.png" align="center"  height="400" width="600" >   
+<br>
+
+<img src="../../images/lesson_09/lesson9_know_these2.png" align="center"  height="400" width="600" >   
 
 
 
