@@ -5,7 +5,7 @@
 
 - Make sure you enclose your code in triple back ticks.  Example:  
 
->use this code - notice the 3 " ` " enclosing the code block:  
+>use this code - notice the 3 ` enclosing the code block:  
 
 ![triple_backticks](images/triple_backticks.png)
 
@@ -36,7 +36,7 @@ OSError: [Errno 12] Cannot allocate memory
 
 :red_circle: **NOTE:** Do NOT put your Jupyter Notebook under the `/data/` directory!  Here's [the link](http://forums.fast.ai/t/how-to-remove-ipynb-checkpoint/8532/2) for why.
 
-### Option 1 (default):  under /courses
+### Option 1 (default):  under `/courses`
 The default location is under the `dl1` folder, wherever you've cloned the repo on your GPU machine.
 >my example
 ```bash
