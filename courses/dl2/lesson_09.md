@@ -1,4 +1,4 @@
-# Lesson 9: Deep Learning Part 2 2018 - Multi-object detection
+# Lesson 9: Multi-object detection
 (26-Mar-2018, live)  
  
 - [Wiki: Part 2 / Lesson 9](http://forums.fast.ai/t/part-2-lesson-9-wiki/14028)
@@ -9,3 +9,10 @@
    * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
 
 ---
+
+## Start Class
+- today we will continue working on object detection, which means that for every object in a photo, we will 
+- we are going to figure out what the object is, and what the bounding box is
+- 
+- general approach is to start simple and gradully make it more complicated
+- we make it slightly more complex to turn it into 
