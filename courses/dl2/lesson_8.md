@@ -481,7 +481,27 @@ learn.load('clas_one')
 <img src="../../images/lesson_08/lesson8_bbox.png" align="center"  height="300" width="550" > 
 
 - we'll use a csv
-- 
+- if you remember from Part 1, to do a multiple label classification, your multiple labels have to space-separated:
+  - `000012.jpg, 96 155 269 350\n', `
+- your file name is comma-separated
+- so, I'll take my largest item dictionary, create a bunch of bounding boxes for each one, separated by a space, in list comprehension, create a dataframe like before, turn that into a csv, and now I've got something with a file name and 4 bounding box coordinates
+```python
+BB_CSV = PATH/'tmp/bb.csv'
+
+bb = np.array([trn_lrg_anno[o][0] for o in trn_ids])
+bbs = [' '.join(str(p) for p in o) for o in bb]
+
+df = pd.DataFrame({'fn': [trn_fns[o] for o in trn_ids], 'bbox': bbs}, columns=['fn','bbox'])
+df.to_csv(BB_CSV, index=False)
+```
+- output:
+```python
+['fn,bbox\n',
+ '000012.jpg,96 155 269 350\n',
+ '000017.jpg,77 89 335 402\n',
+ '000023.jpg,1 2 461 242\n',
+ '000026.jpg,124 89 211 336\n']['fn,bbo
+ ```
 
 
 
