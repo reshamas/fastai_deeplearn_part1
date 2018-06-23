@@ -496,14 +496,42 @@ df.to_csv(BB_CSV, index=False)
 ```
 - output:
 ```python
+BB_CSVBB_CSV..openopen()()..readlinesreadline ()[:5]
+```
+```python
 ['fn,bbox\n',
  '000012.jpg,96 155 269 350\n',
  '000017.jpg,77 89 335 402\n',
  '000023.jpg,1 2 461 242\n',
  '000026.jpg,124 89 211 336\n']['fn,bbo
  ```
+- we then pass that to `from_csv` 
+- use `crop_type=CropType.NO`
+- next week, we will looks at transforms:  `tfm_y=TfmType.COORD`; for now, just realize that when we are doing scaling and data augmentation, that needs to happen to the bounding boxes, not just the images
+```python
+tfms = tfms_from_model(f_model, sz, crop_type=CropType.NO, aug_tfms=augs)
+md = ImageClassifierData.from_csv(PATH, JPEGS, BB_CSV, tfms=tfms, continuous=True, bs=4)
+```
 
+- Next, we grab one mini-batch of data
+```python
+x,y=next(iter(md.val_dl))
+```
+- we can de-normalize it
+- we can turn the bounding box to height, width, so we can show it 
+- remember, we are not doing classification here, so there is no label, we are just putting a box around it
 
+## Convnet
+- next, I create a conv net based on resnet34
+- but, I don't want to add the standard set of fully connected layers that create a classifier
+- I want to add a single linear layer, with 4 outputs
+- fastai has this idea of `custom_head`, 
+```python
+head_reg4head_reg4 = nn.Sequential(Flatten(), nn.Linear(25088,4))
+learn = ConvLearner.pretrained(f_model, md, custom_head=head_reg4)
+learn.opt_fn = optim.Adam
+learn.crit = nn.L1Loss()
+```
 
 
 
