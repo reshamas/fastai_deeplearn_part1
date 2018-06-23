@@ -465,7 +465,15 @@ learn.load('clas_one')
 - we know that we can create a regression rather than a classification neural net
 - in other words, a classification neural net is just one that has a sigmoid or softmax output and that we use a cross-entropy or binary cross-entropy negative Log Likelihood cost function, that's what makes it a classifier
 - if we don't have the softmax or sigmoid at the end, and we use Mean Squared Error as a loss function, it's now our regression model, and so now we can use it to predict a continuous number rather than a category
-- we also know that we can have multiple outputs 
+- we also know that we can have multiple outputs like in the planet competition, we did a multiple object classification
+- what if we combined the two ideas and do a multiple column regression?
+- in this case, we have 4 numbers (top left x and y, bottom right x and y)
+- we can create a neural net with 4 activations 
+- we could have no softmax or sigmoid and use a mean squared error loss function 
+- this is kind of where you are thinking about it like differentiable programming
+- it's not like "how do I create a bounding box model?" | It is asking "what do I need? I need 4 numbers".  Therefore I need a neural network with 4 activations
+- that is half of what I need to know.  The other half is a loss function.  In other words, what is a function that when it is lower, that the 4 numbers are better? If I can do those two things, I am done.
+- If the x is close to the first activation
 
 
 
