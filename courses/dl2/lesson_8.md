@@ -472,8 +472,14 @@ learn.load('clas_one')
 - we could have no softmax or sigmoid and use a mean squared error loss function 
 - this is kind of where you are thinking about it like differentiable programming
 - it's not like "how do I create a bounding box model?" | It is asking "what do I need? I need 4 numbers".  Therefore I need a neural network with 4 activations
-- that is half of what I need to know.  The other half is a loss function.  In other words, what is a function that when it is lower, that the 4 numbers are better? If I can do those two things, I am done.
-- If the x is close to the first activation
+- that is half of what I need to know.  The other half I need to know is a loss function.  In other words, what is a function that when it is lower, means that the 4 numbers are better? If I can do those two things, I am done.
+- If the x is close to the first activation, and the y is close to the second, so forth, then I am done
+- so, that's it.  I just need to create a model with 4 activations with a mean squared error loss function and that should be it
+- let's try it
+
+## Bbox (`01:55:30`)
+- we'll use a csv
+- 
 
 
 
