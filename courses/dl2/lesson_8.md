@@ -440,7 +440,24 @@ learn.load('clas_one')
 - p
 - l
 
-###
+### more on debugging
+- `from IPython.core.debugger import set_trace`  (get pretty colors)
+- [Debugging Jupyter Notebooks](https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/)
+
+## Learn about other students
+- Isa / Britt
+  - using DL to build a Google Translate for animal communication
+  - using unsupervised machine neural translation, doing it on top of audio
+  - trying to get data from researchers; else build a living library of audio of the species of Earth
+  - may involve going out and collecting 100K hours of, say gelado monkey vocalization
+
+## back to Debugging (`01:50`)
+- debugging comes in handy with exceptions
+- `%debug` pops open the debugger at the point where the exception happened
+- Jeremy does all of his development, both of library and lessons, in Jupyter notebook, all interactively
+- Jeremy uses `%debug` all of the time, along with the idea of copying code out of the function to a different cell and running it step by step
+- there are similar things you can do inside of Visual Studio code
+  
 
 
 
