@@ -550,6 +550,20 @@ learn.crit = nn.L1Loss()
 - you can see the validation loss which is the absolute value mean of the absolute value with pixels we are off by, and it gets lower and lower
 - when we are done, we can print out the bounding boxes, and low and behold, it's done a damn good job 
 - we'll revise this a bit more next week, but you can see this idea of, If I said to you before this class "Do you know how to create a bounding box model?" you might have said "no, nobody has taught me that"
+- BUT, the question actually is:
+  - "can you create a model with 4 continuous outputs?"
+  - "can you create a loss function that is lower if those 4 outputs are near to 4 other numbers?
+- then you are done
+- if you see as Jeremy scrolls down, the model gets a bit crappy, anytime we have more than one object, and that is not surprising because for example, how do you decide which of 2 birds in an image ... it picks the middle of the two 
+- nonetheless, for the ones that are reasonably clear, it does a pretty good job
+
+### Conclusion
+- that's time for this week
+- it's been a kind of gentle introduction for the first lesson (of part 2)
+- if you are a professional coder, there is probably not heaps of new stuff here for you; in that case, I would suggest practicing learning about bounding boxes and stuff
+- if you are not so experienced with things like debuggers, matplotlib API, and stuff like that, there is a LOT for you to practice, because we are going to be assuming you know that really well
+
+
 
 
 
