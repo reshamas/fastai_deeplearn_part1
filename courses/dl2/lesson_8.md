@@ -525,7 +525,15 @@ x,y=next(iter(md.val_dl))
 - next, I create a conv net based on resnet34
 - but, I don't want to add the standard set of fully connected layers that create a classifier
 - I want to add a single linear layer, with 4 outputs
-- fastai has this idea of `custom_head`, 
+- fastai has this concept of a `custom_head`, if you see, my model has a custom head, the head being the thing that is added to the top of the model, then it is not going to create any of that fully connect network for you
+- it's not going to add the adaptive average pooling for you
+- but, instead, it will add whatever model you ask for
+- In this case, Jeremy has created a tiny model, it is a model that "flattens" out the previous layer, normally we would have a `7 x 7 x 512` in resnet34; it flattens that out into a single vector of length 25088.  
+- and then I add a linear layer that goes from 25088 to 4
+- that is the simplest possible final layer that you could add
+- I stick that on top of my pretrained resnet34 model
+- optimize it with Adam
+- use a criteria of L1 loss
 ```python
 head_reg4head_reg4 = nn.Sequential(Flatten(), nn.Linear(25088,4))
 learn = ConvLearner.pretrained(f_model, md, custom_head=head_reg4)
