@@ -478,6 +478,8 @@ learn.load('clas_one')
 - let's try it
 
 ## Bbox (`01:55:30`)
+<img src="../../images/lesson_08/lesson8_bbox.png" align="center"  height="300" width="550" > 
+
 - we'll use a csv
 - 
 
