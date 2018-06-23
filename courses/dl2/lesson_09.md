@@ -19,13 +19,6 @@
 - all of these are for a single object, the largest object in the image, and from there we will build up something which is closer to our final goal
 - you should go back and make sure you understand all the concepts from last week
 
-<img src="../../images/lesson_09/lesson9_know_these1.png" align="center"   >   
-<br>
-
-<img src="../../images/lesson_09/lesson9_know_these2.png" align="center">   
-
-
-
 ## Things to Know from Last Week
 - Pathlib; JSON
 - dictionary comprehensions
@@ -35,15 +28,24 @@
 - matplotlib API
 - Bounding box coordinates
 - Custom head; bounding box regression --> will come up in every lesson
+<br>
+<img src="../../images/lesson_09/lesson9_know_these1.png" align="center"   >   
+<br>
+<img src="../../images/lesson_09/lesson9_know_these2.png" align="center">   
+
 
 ## What You Should Know from Part 1 of Course
 - How to view model inputs from a DataLoader
 - How to view model outputs
-- 
+- need to know this to learn how to debug models
 
 <img src="../../images/lesson_09/lesson9_data_loader.png" align="center"  height="300" width="500" >   
 
 
-
-## Today's Lesson
+## Today's Lesson (`3:00`)
 - we were working through Pascal notebook
+- we had gone over creating bounding box over largest object without the classifer
+- Jeremy had skipped over augmentations last week
+
+### Augmentations
+
