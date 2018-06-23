@@ -544,9 +544,12 @@ learn.opt_fn = optim.Adam
 learn.crit = nn.L1Loss()
 ```
 
-#### Jeremy will come back to this next week
+#### Jeremy will come back to this next week (`01:58:50`)
 - do `lr_find`, find our learning rate, learn for a while, `freeze_to` to `(-2)`
 - `learn.freeze_to(-3)`, learn a bit more
-- you can see the validation loss is 
+- you can see the validation loss which is the absolute value mean of the absolute value with pixels we are off by, and it gets lower and lower
+- when we are done, we can print out the bounding boxes, and low and behold, it's done a damn good job 
+- we'll revise this a bit more next week, but you can see this idea of, If I said to you before this class "Do you know how to create a bounding box model?" you might have said "no, nobody has taught me that"
+
 
 
