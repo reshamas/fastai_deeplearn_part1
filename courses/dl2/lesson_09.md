@@ -11,7 +11,24 @@
 ---
 
 ## Start Class
-- today we will continue working on object detection, which means that for every object in a photo with 1 of 20 classes,
+- today we will continue working on object detection, which means that for every object in a photo with 1 of 20 classes...
 - we are going to figure out what the object is, and what its bounding box is such that we can apply that model to a new dataset with unlabeled data and add those labels to it
 - general approach is to start simple and gradually make it more complicated; we started last week with a simple classifier, 3 lines of code, 
-- we make it slightly more complex to turn it into 
+- we make it slightly more complex to turn it into a bounding box without a classifier
+- today, we will put those two pieces together to make a classifier plus a bounding box 
+- all of these are for a single object, the largest object in the image, and from there we will build up something which is closer to our final goal
+- you should go back and make sure you understand all the concepts from last week
+
+## Things to Know from Last Week
+- dictionary comprehensions
+- `defaultdict`
+- knowing how to jump around fastai source code is important
+- lambda functions --> they come up everywhere
+- matplotlib API
+- Bounding box coordinates
+- Custom head; bounding box regression --> will come up in every lesson
+
+## What You Should Know from Part 1 of Course
+- How to view model inputs from a DataLoader
+- How to view model outputs
+- 
