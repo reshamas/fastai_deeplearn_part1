@@ -88,3 +88,18 @@ augs = [RandomFlip(),
 <br>
 <img src="../../images/lesson_09/lesson9_bbox.png" align="center">   
 <br>
+
+- you will see, this lady in the photo has flipped image, contrast is changing, as we would expect
+- but you'll see the bounding box is the same each time in the photo and not moving AND is in the WRONG spot
+- this is the problem with data augmentation when your dependent variable is pixel values or is in some way connected to your independent variable; the two need to be augmented together
+- you can see from the printout that the numbers are bigger than 224 (bounding box coords), but these images are size 224
+- the images are not being scaled or cropped
+- you can see our dependent variable needs to go through all the same geometric transformations w/o independent variables
+- to do that, every transformation has an optional transform `Y` parameter, it takes a transform type `TfmType` 
+- `TfmType` has a few options, all of which will be covered in this course
+- reminder, hit tab after the `TfmType.` to get options
+```python
+augsaugs  ==  [[RandomFlipRandomFl (tfm_y=TfmType.COORD),
+        RandomRotate(30, tfm_y=TfmType.COORD),
+        RandomLighting(0.1,0.1, tfm_y=TfmType.COORD)]
+```
