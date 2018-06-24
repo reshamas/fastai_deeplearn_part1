@@ -103,4 +103,50 @@ augsaugs  ==  [[RandomFlipRandomFl (tfm_y=TfmType.COORD),
         RandomRotate(30, tfm_y=TfmType.COORD),
         RandomLighting(0.1,0.1, tfm_y=TfmType.COORD)]
 ```
-- (`7:33`) the `.COORD` option says that the y values represent 
+- (`7:33`) the `.COORD` option says that the y values represent coordinates, in this case, bounding box coordinates
+- therefore, if you flip, you need to change the coordinate to represent that flip or if you rotate, change the coordinate to represent that rotation
+- so, I can add transform type coord `tfm_y=TfmType.COORD` to all of my augmentations
+- I also have to add the exact same thing to my transforms from model function because that is the thing that does the cropping and/or zooming and padding and/or resizing, and all of those things need to happen to the dependent variable as well
+- so, if we add all of those together and rerun this, you'll see the bounding box changes each time with each augmented image
+- you'll see the bounding box is in the right spot now
+- you'll see sometimes it looks a little odd and the problem is this is just a constraint that the information we have
+- the bounding box does not tell us that actually her head isn't way over in the top left corner
+- but, actually, if you do a 30 degree rotation if her head was over in the top left corner, then the new bounding box would go really high
+- so, this is the correct bounding box based on the information it has available which is to say this is how it might have been
+- so, you have to be careful of not doing too high a rotations with bounding boxes because there is not enough information for them to stay totally accurate
+- just a fundamental limitation of the information we are given
+- if we were doing polygons or segmentations, or whatever else, we wouldn't have this problem
+- so, Jeremy is going to a **maximum of 3 degrees** rotation to avoid that problem
+- Jeremy is also only going to rotate half the time `p=0.5` 
+- here's the set of transformations Jeremy is using:
+```python
+tfm_ytfm_y  ==  TfmTypeTfmType..COORDCOORD
+ augsaugs  ==  [[RandomFlipRandomFl (tfm_y=tfm_y),
+        RandomRotate(3, p=0.5, tfm_y=tfm_y),
+        RandomLighting(0.05,0.05, tfm_y=tfm_y)]
+```
+
+### Custom Head Idea (`09:35`)
+- we briefly looked at this custom head idea but basically if you look at `learn.summary()` it does something cool, like runs a small batch of data through a model and prints out how big it is at every layer
+- we can see at the end of the convolutional section before we flatten, it is `512 x 7 x 7`
+- 
+```python
+learn..summary()
+```
+```python
+Out[170]:
+OrderedDict([('Conv2d-1',
+              OrderedDict([('input_shape', [-1, 3, 224, 224]),
+                           ('output_shape', [-1, 64, 112, 112]),
+                           ('trainable', False),
+                           ('nb_params', 9408)])),
+             ('BatchNorm2d-2',
+              OrderedDict([('input_shape', [-1, 64, 112, 112]),
+                           ('output_shape', [-1, 64, 112, 112]),
+                           ('trainable', False),
+                           ('nb_params', 128)])),
+             ('ReLU-3',
+              OrderedDict([('input_shape', [-1, 64, 112, 112]),
+                           ('output_shape', [-1, 64, 112, 112]),
+                           ('nb_params', 0)])),
+```
