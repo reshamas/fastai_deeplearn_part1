@@ -44,8 +44,21 @@
 
 ## Today's Lesson (`3:00`)
 - we were working through Pascal notebook
-- we had gone over creating bounding box over largest object without the classifer
+- we had gone over creating bounding box over largest object without a classifer
 - Jeremy had skipped over augmentations last week
 
-### Augmentations
-
+## Augmentations
+- data augmentations of `y`, the dependent variable
+- before proceeding, Jeremy wants to talk about something awkward `continuous=True` in the statement 
+```python
+tfmstfms  ==  tfms_from_modeltfms_fro (f_model, sz, crop_type=CropType.NO, tfm_y=TfmType.COORD, aug_tfms=augs)
+md = ImageClassifierData.from_csv(PATH, JPEGS, BB_CSV, tfms=tfms,
+   bs=bs, continuous=True, val_idxs=val_idxs)
+```
+- this makes no sense whatsoever because a classifier is a dependent variable as categorical or binomial as opposed to regression which is anything where the dependent variable is continuous
+- AND YET, this parameter here, `continuous=True`, says that the dependent variable is continuous
+- so this claims to be creating data for a classifier where the dependent is continous;
+- this is the kind of awkward rough edge that you see when we're kind of at the edge of the fastai code that is not quite solidified yet
+- probably by the time you watch this in the MOOC, it will be sorted out before you even regress it
+- Jeremy wanted to point out this issue; sometimes people get confused
+- 
