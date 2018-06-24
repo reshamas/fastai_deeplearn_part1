@@ -61,4 +61,30 @@ md = ImageClassifierData.from_csv(PATH, JPEGS, BB_CSV, tfms=tfms,
 - this is the kind of awkward rough edge that you see when we're kind of at the edge of the fastai code that is not quite solidified yet
 - probably by the time you watch this in the MOOC, it will be sorted out before you even regress it
 - Jeremy wanted to point out this issue; sometimes people get confused
-- 
+
+### Let's Create Some Data Augmentations (`4:40`)
+- normally when we create data augmentations, we tend to type in "transform side on" or "transforms top down"
+- file:  [transforms.py](https://github.com/fastai/fastai/blob/master/fastai/transforms.py)
+```python
+transforms_basic    = [RandomRotate(10), RandomLighting(0.05, 0.05)]
+transforms_side_on  = transforms_basic + [RandomFlip()]
+transforms_top_down = transforms_basic + [RandomDihedral()]
+```
+- but, if you look in the transforms.py module, you will see that they are simply defined as a list
+- transforms_basic --> is 10 degrees rotation plus 0.05 brightness and contrast
+- transforms_side_on --> adds to the basic transform and random horizontal flips
+- transforms_top_down --> adds to the basic transform and adds random dihedral group of symmetry which is flips which basically means every possible 90 degree rotation 
+- these are ones created by Jeremy; you can always create your own augmentations
+```python
+augs = [RandomFlip(), 
+        RandomRotate(30),
+        RandomLighting(0.1,0.1)]
+```
+- if you are not sure which augmentations are there, you can check the source code, or if you start typing "random" and tab for auto-complete, you will see the options
+- let's see what happens if we create some data augmentations
+- then, create a model data object; let's go through and re-run the iterator a bunch of times and we all do two things
+- we print out the bounding boxes and so you can see the value box is the same each time and we will also draw the pictures 
+
+<br>
+<img src="../../images/lesson_09/lesson9_bbox.png" align="center">   
+<br>
