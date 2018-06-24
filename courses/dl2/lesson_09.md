@@ -131,7 +131,7 @@ tfm_ytfm_y  ==  TfmTypeTfmType..COORDCOORD
 - we can see at the end of the convolutional section before we flatten, it is `512 x 7 x 7`
 - 
 ```python
-learn..summary()
+learn.summary()
 ```
 ```python
 Out[170]:
