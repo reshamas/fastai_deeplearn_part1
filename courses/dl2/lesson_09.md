@@ -103,4 +103,4 @@ augsaugs  ==  [[RandomFlipRandomFl (tfm_y=TfmType.COORD),
         RandomRotate(30, tfm_y=TfmType.COORD),
         RandomLighting(0.1,0.1, tfm_y=TfmType.COORD)]
 ```
-- the `.COORD` option says that the y values represent 
+- (`7:33`) the `.COORD` option says that the y values represent 
