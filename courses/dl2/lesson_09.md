@@ -167,4 +167,8 @@ learn.crit = nn.L1Loss()
   2.  we need to pick some kind of architecture
   3.  loss function - anything that says a lower number here is a better network using this data in this architecture
 - we are going to need to create the above 3 things for our classification plus bounding box regression
-- 
+- that means we need a model data object which has as independent, the images, and as the dependent, I want to have a tuple, first one of the tuples should be the bounding box coordinates, the second element of the tuple should be a class
+- there's lots of different ways you can do this
+- the particularly lazy and convenient way that Jeremy came up with was to create two mobile data objects, representing the two different dependent variables I want; so one with the bounding box coordinates and one with the classes
+- just using the csvs we went over before
+- now I am going to merge them together
