@@ -173,8 +173,12 @@ learn.crit = nn.L1Loss()
 - just using the csvs we went over before
 - now I am going to merge them together
 - so I create a new dataset class
-- a dataset class is anything which has a length and and index service or something that lets you use it like lists
-- in this case, I can have a constructor which takes an existing dataset ... and the second dependent that I want is 
+- a dataset class is anything which has a length and and index service or something that lets you use it in square brackets like lists
+- in this case, I can have a constructor which takes an existing dataset, so that's going to have both an independent and dependent, and the second dependent that I want is 
+- the length, that is obviously just the length of the dataset, the first dataset
+- and `getitem` is grab the `X` and the `y` from the dataset that I passed in and return that X and that Y and the i'th value of the second 
+- so, there's a dataset that basically adds in 
+- as I said, there are lots of ways to do this
 ```python
 class ConcatLblDataset(Dataset):
     def __init__(self, ds, y2): self.ds,self.y2 = ds,y2
@@ -183,4 +187,16 @@ class ConcatLblDataset(Dataset):
     def __getitem__(self, i):
         x,y = self.ds[i]
         return (x, (y,self.y2[i]))
+```
+- this is convenient because now I can create a training dataset and a validation dataset
+```python
+trn_ds2 = ConcatLblDataset(md.trn_ds, md2.trn_y)
+val_ds2 = ConcatLblDataset(md.val_ds, md2.val_y)
+```
+- here's an example
+```python
+val_ds2val_ds2[[00][][11]]
+```
+```python
+(array([   0.,   49.,  205.,  180.], dtype=float32), 14)
 ```
