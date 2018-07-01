@@ -194,6 +194,8 @@ trn_ds2 = ConcatLblDataset(md.trn_ds, md2.trn_y)
 val_ds2 = ConcatLblDataset(md.val_ds, md2.val_y)
 ```
 - here's an example
+- you can see it's got a couple of the bounding box coordinates in the class
+- we can then take the existing training and validation data loaders now so you replace their datasets
 ```python
 val_ds2val_ds2[[00][][11]]
 ```
