@@ -172,3 +172,15 @@ learn.crit = nn.L1Loss()
 - the particularly lazy and convenient way that Jeremy came up with was to create two mobile data objects, representing the two different dependent variables I want; so one with the bounding box coordinates and one with the classes
 - just using the csvs we went over before
 - now I am going to merge them together
+- so I create a new dataset class
+- a dataset class is anything which has a length and and index service or something that lets you use it like lists
+- in this case, I can have a constructor which takes an existing dataset ... and the second dependent that I want is 
+```python
+class ConcatLblDataset(Dataset):
+    def __init__(self, ds, y2): self.ds,self.y2 = ds,y2
+    def __len__(self): return len(self.ds)
+    
+    def __getitem__(self, i):
+        x,y = self.ds[i]
+        return (x, (y,self.y2[i]))
+```
