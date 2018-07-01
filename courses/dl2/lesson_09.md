@@ -129,7 +129,8 @@ tfm_ytfm_y  ==  TfmTypeTfmType..COORDCOORD
 ### Custom Head Idea (`09:35`)
 - we briefly looked at this custom head idea but basically if you look at `learn.summary()` it does something cool, like runs a small batch of data through a model and prints out how big it is at every layer
 - we can see at the end of the convolutional section before we flatten, it is `512 x 7 x 7`
-- 
+- 512x7x7 = 25,088, rank 3 tensor, if we flatten it out into a single rank=1 tensor (to a vector), it will be 25088 long
+- that's why we have this linear:  `nn.Linear(25088, 4)`, there are 4 bounding boxes
 ```python
 learn.summary()
 ```
@@ -150,3 +151,20 @@ OrderedDict([('Conv2d-1',
                            ('output_shape', [-1, 64, 112, 112]),
                            ('nb_params', 0)])),
 ```
+- stick that on top of a pretrained resnet
+- train it for a while 
+```python
+head_reg4head_reg4 = nn.Sequential(Flatten(), nn.Linear(25088,4))
+learn = ConvLearner.pretrained(f_model, md, custom_head=head_reg4)
+learn.opt_fn = optim.Adam
+learn.crit = nn.L1Loss()
+```
+
+## Single Object Detection
+- let's now put those two pieces together so we get something that **classifies** and does **bounding boxes**
+- there are 3 things that we need to do to train a neural network ever:
+  1.  we need to provide data
+  2.  we need to pick some kind of architecture
+  3.  loss function - anything that says a lower number here is a better network using this data in this architecture
+- we are going to need to create the above 3 things for our classification plus bounding box regression
+- 
