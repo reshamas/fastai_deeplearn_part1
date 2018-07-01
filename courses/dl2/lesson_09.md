@@ -202,3 +202,7 @@ val_ds2val_ds2[[00][][11]]
 ```python
 (array([   0.,   49.,  205.,  180.], dtype=float32), 14)
 ```
+
+video
+`13:36`  
+
