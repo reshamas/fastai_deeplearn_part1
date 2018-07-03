@@ -195,14 +195,25 @@ val_ds2 = ConcatLblDataset(md.val_ds, md2.val_y)
 ```
 - here's an example
 - you can see it's got a couple of the bounding box coordinates in the class
-- we can then take the existing training and validation data loaders now so you replace their datasets
+- we can then take the existing training and validation data loaders now so you replace their datasets with these and unknown
 ```python
 val_ds2val_ds2[[00][][11]]
 ```
 ```python
 (array([   0.,   49.,  205.,  180.], dtype=float32), 14)
 ```
+- we can now test it by grabbing a mini batch of data and checking it so it's ok
+
+### Architecture
+- we have the data, now we need an architecture
+- the architecture we will use will be the same ones used for the classifier and bounding box regression, but we're going to combine them
+- if there are "C" classes, then the number of activations we need in the final layer is:  4+C (4 for coordinates, C probabilities one per class)
+- this is the final layer, a linear layer that has 4 plus len of categories:  `nn.Linear(256, 4+len(cats)),`
 
 video
 `13:36`  
+<br>
+<img src="../../images/lesson_09/lesson9_archit.png" align="center">   
+<br>
+
 
