@@ -209,11 +209,27 @@ val_ds2val_ds2[[00][][11]]
 - the architecture we will use will be the same ones used for the classifier and bounding box regression, but we're going to combine them
 - if there are "C" classes, then the number of activations we need in the final layer is:  4+C (4 for coordinates, C probabilities one per class)
 - this is the final layer, a linear layer that has 4 plus len of categories:  `nn.Linear(256, 4+len(cats)),`
+- the first layer is:  `Flatten()`
+- we could just join those together, but, in general, I want my custom head to hopefully be capable of solving the problem I give it on its own, if the pretrained backbone is connected to is appropriate 
+- in this case, I am trying to do quite a bit here (in function `head_reg4`), two things: classifer and bounding box regression
+- so, just a single linear layer doesn't sound like enough, so Jeremy puts in a second linear layer: `nn.Linear(25088, 256),`
+- you can see we do:  nn.ReLU, nn.Dropout, nn.Linear(25088, 256), nn.ReLU, nn.BatchNorm1d, nn.Dropout, nn.Linear
+- if you are wondering why there is no `BatchNorm1d1` after the first ReLU, Jeremy checked the ResNet backbone; it already has a BatchNorm as its final layer
+- so, this is nearly the same custom head as before, it it's just got 2 linear layers rather than one, and the appropriate non-linearities (such as ReLU)
+- that's piece 2; we have got data, we've got architecture, now we need a **Loss Function**
 
-video
-`13:36`  
 <br>
 <img src="../../images/lesson_09/lesson9_archit.png" align="center">   
 <br>
 
+### Loss Function
+- the loss function needs to look at the "4+C" activations and decide, "are they good?"
+- are these numbers accurately reflecting the position and the class of the largest object in this image
+- we know how to do that 
+- for the first 4, we use the L1 Loss, just like we did in the bounding box regression before
+- 
 
+
+---
+video
+`13:36`
