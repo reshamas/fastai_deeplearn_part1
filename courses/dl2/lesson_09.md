@@ -229,7 +229,10 @@ val_ds2val_ds2[[00][][11]]
 - for the first 4, we use the **L1 loss**, just like we did in the bounding box regression before
 - remember, **L1 loss** is like **Mean Squared Error**, rather than *sum of absolute values* / *sum of absolute values*
 - the rest of activations, we can use **cross-entropy loss**
-- let's go ahed and do that
+- let's go ahead and do that; we're going to create something called "detection loss"
+- loss functions always take an **input** and a **target** --> that's why PyTorch calls them
+- input (activations; target (ground truth)
+- remember that our custom data set returns 
 ```python
 def detn_loss(input, target):
     bb_t,c_t = target
