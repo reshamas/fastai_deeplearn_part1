@@ -230,9 +230,18 @@ val_ds2val_ds2[[00][][11]]
 - remember, **L1 loss** is like **Mean Squared Error**, rather than *sum of absolute values* / *sum of absolute values*
 - the rest of activations, we can use **cross-entropy loss**
 - let's go ahead and do that; we're going to create something called "detection loss"
-- loss functions always take an **input** and a **target** --> that's why PyTorch calls them
+- loss functions always take an **input** and a **target** --> that's what PyTorch calls them
 - input (activations; target (ground truth)
-- remember that our custom data set returns 
+- remember that our custom data set returns a tuple containing the bounding box coordinate and the classes of the target
+- so we can destructure that, 
+- `bb_i,c_i = input[:, :4], input[:, 4:]` bounding boxes and the input are simply the first 4 elements of the input and the 4 elements onward
+- remember we've also got a batch dimension 
+- for the bounding boxes, we know they are going to be between 0 and 224 coordinates, because that's how big the images are
+- so, let's grab a sigmoid and force it betweeen 0 and 1, and multiply it by 224, and that's just helping our neural net get close to what we know it has to be 
+- Q:  as a general rule, is it better to put batch norm before or after ReLU?
+- A:  Jeremy suggests that you should put it after a ReLU because batch norm is meant to move towards a 0/ 1 random variable; if you put it after, you're truncating it at 0, so there's no way to create negative numbers, but if you put reLU and then batch norm, it does have that ability
+- that way of doing it gives slightly better results; having said that, it's not too big a deal either way, and you'll see during this part of the course most of the time, Jeremy goes ReLU and then batch norm, but sometimes it is batch norm and ReLU if JH is being consistent with a paper
+- 
 ```python
 def detn_loss(input, target):
     bb_t,c_t = target
