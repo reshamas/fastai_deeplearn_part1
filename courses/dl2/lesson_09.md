@@ -222,7 +222,7 @@ val_ds2val_ds2[[00][][11]]
 <img src="../../images/lesson_09/lesson9_archit.png" align="center">   
 <br>
 
-### Loss Function
+### Loss Function (`15:30`)
 - the loss function needs to look at the **"4+C"** activations and decide, "are they good?"
 - are these numbers accurately reflecting the position and the class of the largest object in this image
 - we know how to do that 
