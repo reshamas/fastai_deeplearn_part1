@@ -241,7 +241,9 @@ val_ds2val_ds2[[00][][11]]
 - Q:  as a general rule, is it better to put batch norm before or after ReLU?
 - A:  Jeremy suggests that you should put it after a ReLU because batch norm is meant to move towards a 0/ 1 random variable; if you put it after, you're truncating it at 0, so there's no way to create negative numbers, but if you put reLU and then batch norm, it does have that ability
 - that way of doing it gives slightly better results; having said that, it's not too big a deal either way, and you'll see during this part of the course most of the time, Jeremy goes ReLU and then batch norm, but sometimes it is batch norm and ReLU if JH is being consistent with a paper
-- 
+- `bb_i = F.sigmoid(bb_i)*224` so this is to force our data into the right range; if you can do stuff like that, it is easier to train
+- Rachel's question:  what's the intuition behind using dropout with p=0.5 after a batch norm? Doesn't batch norm already do a good job of regularizing?
+- JH answer:  batch norm does an okay job of regularizing, but if you think back to part 1, we have a list of things to do to avoid overfitting and adding batch norm is one of them, as is data augmentation, but it's perfectly possible that you'll still be ok.
 ```python
 def detn_loss(input, target):
     bb_t,c_t = target
