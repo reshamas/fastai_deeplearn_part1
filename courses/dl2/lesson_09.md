@@ -223,12 +223,36 @@ val_ds2val_ds2[[00][][11]]
 <br>
 
 ### Loss Function
-- the loss function needs to look at the "4+C" activations and decide, "are they good?"
+- the loss function needs to look at the **"4+C"** activations and decide, "are they good?"
 - are these numbers accurately reflecting the position and the class of the largest object in this image
 - we know how to do that 
-- for the first 4, we use the L1 Loss, just like we did in the bounding box regression before
-- 
+- for the first 4, we use the **L1 loss**, just like we did in the bounding box regression before
+- remember, **L1 loss** is like **Mean Squared Error**, rather than *sum of absolute values* / *sum of absolute values*
+- the rest of activations, we can use **cross-entropy loss**
+- let's go ahed and do that
+```python
+def detn_loss(input, target):
+    bb_t,c_t = target
+    bb_i,c_i = input[:, :4], input[:, 4:]
+    bb_i = F.sigmoid(bb_i)*224
+    # I looked at these quantities separately first then picked a multiplier
+    #   to make them approximately equal
+    return F.l1_loss(bb_i, bb_t) + F.cross_entropy(c_i, c_t)*20
 
+def detn_l1(input, target):
+    bb_t,_ = target
+    bb_i = input[:, :4]
+    bb_i = F.sigmoid(bb_i)*224
+    return F.l1_loss(V(bb_i),V(bb_t)).data
+
+def detn_acc(input, target):
+    _,c_t = target
+    c_i = input[:, 4:]
+    return accuracy(c_i, c_t)
+
+learn.crit = detn_loss
+learn.metrics = [detn_acc, detn_l1]
+```
 
 ---
 video
