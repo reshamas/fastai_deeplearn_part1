@@ -243,7 +243,12 @@ val_ds2val_ds2[[00][][11]]
 - that way of doing it gives slightly better results; having said that, it's not too big a deal either way, and you'll see during this part of the course most of the time, Jeremy goes ReLU and then batch norm, but sometimes it is batch norm and ReLU if JH is being consistent with a paper
 - `bb_i = F.sigmoid(bb_i)*224` so this is to force our data into the right range; if you can do stuff like that, it is easier to train
 - Rachel's question:  what's the intuition behind using dropout with p=0.5 after a batch norm? Doesn't batch norm already do a good job of regularizing?
-- JH answer:  batch norm does an okay job of regularizing, but if you think back to part 1, we have a list of things to do to avoid overfitting and adding batch norm is one of them, as is data augmentation, but it's perfectly possible that you'll still be ok.
+- JH answer:  batch norm does an okay job of regularizing, but if you think back to part 1, we have a list of things to do to avoid overfitting and adding batch norm is one of them, as is data augmentation, but it's perfectly possible that you'll still be ok.  One nice thing about dropout is it has a parameter to say how much to dropout and so that parameters are great; specifically, parameters that decide how much to regularize because it lets you build a nice big overparameterized model and then lets you decide how much to dropout
+- JH always tends to use dropout, starts with p=0, and then as he adds parameters, changes the dropout number without worrying about if he saved a model, if he's going to be able to load it back, but if he has dropout layers in one and not another, this way it stays consistent
+- moving on, the function calculates the L1 loss and adds the cross entropy
+- so that's our loss function, it's surprisingly easy perhaps
+- now of course, the L1 loss and the cross entropy may be wildly different scales, in which case the loss function, the larger one is going to dominate
+- JH ran the debugger, checked how big each of the two entities were, and found that if we multiply by 20, it makes them about the same scale
 ```python
 def detn_loss(input, target):
     bb_t,c_t = target
@@ -267,6 +272,22 @@ def detn_acc(input, target):
 learn.crit = detn_loss
 learn.metrics = [detn_acc, detn_l1]
 ```
+
+- as you are training, it is nice to print out the information as you go
+- JH also grabbed the L1 part and put it in a function and also created a function for accuracy, so he could make the metrics 
+- now we have something that is printing out our object detection loss, detection accuracy, and detection L1
+- then, train it for a while
+- `21:54` it's looking good, a detection accuracy in the low 80's, which is the same as it was before, that is not surprising because ResNet was designed to do classification, so JH wouldn't expect us to be able to improve things in such a simple way but it certainly wasn't designed to do bounding box regression
+- it was explicitly actually designed to not care about geometry, rather it takes that last 7x7 grid of activations and averages them all together and throws away all of the information that is going wrong
+- you can see that when we only train the last layer, the detection L1 is pretty bad (24.34), and then it improves a lot (18.3)
+- whereas the accuracy (0.83) doesn't improve, it stays exactly the same
+- interestingly, the L1, when we do accuracy and bounding box at the same time, is 18.55, seems like it is a little bit better, than when we *just do* bounding box regression: 19.92
+- if that is counter-intuitive to you, that's one of the main things to think about after this lesson, it is important learning
+- the idea is this, figuring out what the main object in an image is, is kind of the hard part, and figuring out exactly where the bounding box should be is and what class it is, is the "easy part", in a way
+- `23:45`
+- 
+- 
+
 
 ---
 video
