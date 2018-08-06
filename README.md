@@ -27,7 +27,7 @@ Reshama Shaikh
 ## Platforms for Using fastai (GPU required)
 * [Paperspace setup](tools/paperspace.md)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
-    - [How to setup fastai in an Amazon AWS region without fastai AMI like in Europe](how to setup fastai in an Amazon AWS region without fastai AMI like in Europe)
+    - [How to setup fastai in an Amazon AWS region without fastai AMI like in Europe](https://medium.com/@pierre_guillou/guide-install-fastai-in-any-aws-region-8f4fe29132e5)
 * [Crestle](tools/crestle_run.md)
 * [Google Cloud GPU Setup for fastai](https://medium.com/google-cloud/set-up-google-cloud-gpu-for-fast-ai-45a77fa0cb48)
 * [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
