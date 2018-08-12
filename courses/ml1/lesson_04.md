@@ -1,7 +1,7 @@
 # Lesson 4: RF Hyperparameters & Feature Importance
 
 Length: 01:40  
-Video:  [Lesson 4](https://www.youtube.com/watch?v=0v93qHDqq_g&feature=youtu.be)
+Video:  [Lesson 4](https://www.youtube.com/watch?v=0v93qHDqq_g&feature=youtu.be)  
 Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/blob/master/courses/ml1/lesson2-rf_interpretation.ipynb)  
 
 ---
@@ -127,6 +127,7 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
   - look at every pair of objects and see which are closest.  remove 2 points and replace with their mean.
   - keep doing that; we'll gradually reduce the number of points by pairwise combining
 - can use rank corrrelation to identify similar features  (function must be monotonic for rank correlation to work)
+- set `set_rf_samples=50000` to run things quickly
 
 ## Partial Dependence
 1:07:30  
@@ -140,6 +141,24 @@ from plotnine import *
 - look at relationships, and then ask "what happened?  what [external factor] could be causing this?
 - replacing whole column with constant.., 1961
 - plot all 500 predictions
+
+### Plot year made vs sale elapsed
+- note that year made = 1000 ---> go to client, they tell us that "1000" is for when we don't know the year of the make
+- in order to understand the plot better, remove the items that were made before 1930
+- next, let's look at the relationship between year made and sale price
+- 
+
+### ggplot
+- there's a great package called ggplot
+- it was originally in the R package
+- "gg" = **Grammar of Graphics**
+- powerful way of producing plots in a flexible way
+- can pip install, already part of fastai environment
+- similar Python API as in R (though R has better documentation)
+- when you do plots, most datasets you will use will be too big
+  - there are so many points, it will take forever, and may look like a big mess
+- that's why Jeremy uses `get_sample` first:
+
 
 ## Tree Interpreter
 - Contributions:  
