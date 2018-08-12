@@ -146,7 +146,6 @@ from plotnine import *
 - note that year made = 1000 ---> go to client, they tell us that "1000" is for when we don't know the year of the make
 - in order to understand the plot better, remove the items that were made before 1930
 - next, let's look at the relationship between year made and sale price
-- 
 
 ### ggplot
 - there's a great package called ggplot
@@ -182,7 +181,8 @@ ggplot(x_all, aes('YearMade', 'SalePrice')) + stat_smooth(se=True, method='loess
 - as data scientists working at a company, people will come to you with univariate charts: "what happened / why?"
   - most times, there is something else going on
 - ask this Q: what's the relationship between sale price and year made, all other things being equal?
-  - "all other things being equal" means if we sold something in 1980 vs 1990, 
+  - "all other things being equal" means if we sold something in 1980 vs 1990, it was exact same thing, to the exact same person, with exactly the same options, etc., what would be the difference in price?
+- 
   
  
 ## Tree Interpreter
