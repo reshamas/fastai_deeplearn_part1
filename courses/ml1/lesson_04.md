@@ -158,8 +158,33 @@ from plotnine import *
 - when you do plots, most datasets you will use will be too big
   - there are so many points, it will take forever, and may look like a big mess
 - that's why Jeremy uses `get_sample` first:
-
-
+  - this grabs 500 data points, using a random sample
+  - `aes` = aesthetic (way to set up columns in ggplot)
+- in ggplot `+` adds chart elements
+  - add a smoother
+  - a smoother creates a little linear regression for a subset of the graph, and then joins them 
+  - this allows us to see a nice smooth curve
+- this is the main way Jeremy looks at univariate relationships
+- by adding `se=True`, it also shows the confidence interval of the smoother
+```python
+x_all = get_sample(df_raw[df_raw.YearMade>1930], 500)
+ggplot(x_all, aes('YearMade', 'SalePrice')) + stat_smooth(se=True, method='loess')
+```
+### ggplot - interpretation
+- upon looking at the graph, it's all over the place
+- Jeremy would have expected that trucks sold more recently would be more expensive because of inflation and newer models
+- when you look at a linear relationship like this, there are a lot of interactions 
+- for example, why did the price drop between 1991 and 1997?
+  - are they less valuable?
+  - was there a recession then?
+  - or maybe people at that time were buying vehicles that were less expensive?
+`1:14:07`  
+- as data scientists working at a company, people will come to you with univariate charts: "what happened / why?"
+  - most times, there is something else going on
+- ask this Q: what's the relationship between sale price and year made, all other things being equal?
+  - 
+  
+ 
 ## Tree Interpreter
 - Contributions:  
 
