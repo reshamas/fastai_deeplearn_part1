@@ -181,11 +181,15 @@ ggplot(x_all, aes('YearMade', 'SalePrice')) + stat_smooth(se=True, method='loess
 - as data scientists working at a company, people will come to you with univariate charts: "what happened / why?"
   - most times, there is something else going on
 - ask this Q: what's the relationship between sale price and year made, all other things being equal?
-  - "all other things being equal" means if we sold something in 1980 vs 1990, it was exact same thing, to the exact same person, with exactly the same options, etc., what would be the difference in price?
-- 
+  - "all other things being equal" means if we sold something in 1980 vs 1990, it was exact same thing, to the exact same person, with exactly the same options, etc., what would be the difference in price? ---> use Partial Dependency
   
- 
-## Tree Interpreter
-- Contributions:  
+### Partial Dependence Plot (`01:15`)
+- nice library that is not well-known called `pdp` --> `pip install pdpbox` --> https://github.com/SauceCat/PDPbox
+- we have our sample dataset of 500 data points
+- we will do something very interesting:  
+  - using our data 500 x num_covariates
+  - in the column year_made, we will copy in the value "1960", for all 500 rows
+  - then, we will take take this data and pass to our random forest, to predict the **sale price**
+  - that will tell us, that for everything that was auctioned, how much was 
 
 
