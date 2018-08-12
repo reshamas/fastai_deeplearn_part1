@@ -182,7 +182,7 @@ ggplot(x_all, aes('YearMade', 'SalePrice')) + stat_smooth(se=True, method='loess
 - as data scientists working at a company, people will come to you with univariate charts: "what happened / why?"
   - most times, there is something else going on
 - ask this Q: what's the relationship between sale price and year made, all other things being equal?
-  - 
+  - "all other things being equal" means if we sold something in 1980 vs 1990, 
   
  
 ## Tree Interpreter
