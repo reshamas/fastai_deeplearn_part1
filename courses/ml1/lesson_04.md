@@ -1,7 +1,7 @@
 # Lesson 4: RF Hyperparameters & Feature Importance
 
 Length: 01:40  
-
+Video:  [Lesson 4](https://www.youtube.com/watch?v=0v93qHDqq_g&feature=youtu.be)
 Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/blob/master/courses/ml1/lesson2-rf_interpretation.ipynb)  
 
 ---
