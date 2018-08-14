@@ -190,6 +190,13 @@ ggplot(x_all, aes('YearMade', 'SalePrice')) + stat_smooth(se=True, method='loess
   - using our data 500 x num_covariates
   - in the column year_made, we will copy in the value "1960", for all 500 rows
   - then, we will take take this data and pass to our random forest, to predict the **sale price**
-  - that will tell us, that for everything that was auctioned, how much was 
+  - that will tell us, that for everything that was auctioned, how much do we think it would have been sold for, if that item was made in 1960?
+  - we will plot that (year=1960 by selling price), for each of the years
+  - we will run the model again, by setting each year now to 1961, etc.
+  - Q from student: to be clear, we have already fit the random forest and then we pass in new year and see what the price will be?
+  - A from JH:  Yes, this is a lot like how we did random forest, but rather than randomly shuffling the column, we replace the column with a constant value
+  - randomly shuffling a column tells us how accurate it is when you don't use that column anymore
+  - replacing the entire column with a constant tells us, or estimates for us, how much we would have sold that product for on that auction, on that day, in 1961
+  - 
 
 
