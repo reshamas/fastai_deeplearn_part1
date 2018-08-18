@@ -1,4 +1,4 @@
-# Lesson 9: Multi-object detection / Single Shot Multibox Detector (SSD)
+# Lesson 9: Single Shot Multibox Detector (SSD)
 (26-Mar-2018, live)  
  
 - [Wiki: Part 2 / Lesson 9](http://forums.fast.ai/t/part-2-lesson-9-wiki/14028)
@@ -322,15 +322,62 @@ learn.metrics = [detn_acc, detn_l1]
 
 ##### SSD Loss Function `1:10:00`
 - SSD = Single Shot Multibox Detector
+- `def ssd_1_loss(b_c, b_bb, bbox, clas, print_it=False)`
 - loops through each image in the mini-batch
 - and it calls SSD 1 loss:  `ssd_1_loss` for one image
 - so, we destructure our bounding box and class
-- `def get_y(bbox, clas)` --> a lot of code you find out there on the internet doesn't work well with mini-batches, it only does one thing at a time
-- in this case, with this code, it's not exactly a mini-batch.. it's on a whole bunch of ground truth object at a time and the data loader is being fed a mini-batch at a time to do the convolutional layers
-- because we could have different number of ground truth objects in each image but a **tensor** has to be a strict rectangular shape, fastai automatically pads it with zeroes --> anything that is not the same length
+- `def get_y(bbox, clas)` --> a lot of code you find out there on the internet doesn't work with mini-batches, it only does one thing at a time
+- in this case, with this code, it's not exactly a mini-batch.. it's on a whole bunch of ground truth objects at a time and the data loader is being fed a mini-batch at a time to do the convolutional layers
+- because we could have different numbers of ground truth objects in each image, but a **tensor** has to be a strict rectangular shape, fastai automatically pads it with zeroes --> anything that is not the same length
 - this is something JH fairly recently added
 - it is something that is super handy --> almost no other libraries do that
-- BUT, that does mean that you then have to make sure that you get rid of the zeroes, right? So, you can see here that I am checking to find all of the non-zeroes, and I'm only keeping those
+- BUT, that does mean that you then have to make sure that you get rid of the zeroes, right? So, you can see here that I am checking to find all of the non-zeroes, and I'm only keeping those, this is just getting rid of any of the bounding boxes that are just padding
+- check that there is an overlap greater than about 0.4 ---> `pos = gt_overlap > 0.4`
+- `01:10:30 `
+```python
+def get_y(bbox,clas):
+    bbox = bbox.view(-1,4)/sz
+    bb_keep = ((bbox[:,2]-bbox[:,0])>0).nonzero()[:,0]     # check here for non-zeroes
+    return bbox[bb_keep],clas[bb_keep]                     # only keeping the non-zero, getting rid of bounding boxes which are padding
+
+def actn_to_bb(actn, anchors):
+    actn_bbs = torch.tanh(actn)
+    actn_centers = (actn_bbs[:,:2]/2 * grid_sizes) + anchors[:,:2]
+    actn_hw = (actn_bbs[:,2:]/2+1) * anchors[:,2:]
+    return hw2corners(actn_centers, actn_hw)
+
+def map_to_ground_truth(overlaps, print_it=False):
+    prior_overlap, prior_idx = overlaps.max(1)
+    if print_it: print(prior_overlap)
+#     pdb.set_trace()
+    gt_overlap, gt_idx = overlaps.max(0)
+    gt_overlap[prior_idx] = 1.99
+    for i,o in enumerate(prior_idx): gt_idx[o] = i
+    return gt_overlap,gt_idx
+
+def ssd_1_loss(b_c,b_bb,bbox,clas,print_it=False):
+    bbox,clas = get_y(bbox,clas)                                   # get rid of the padding
+    a_ic = actn_to_bb(b_bb, anchors)                               # turn on the activations
+    overlaps = jaccard(bbox.data, anchor_cnr.data)                 # do the Jaccardi
+    gt_overlap,gt_idx = map_to_ground_truth(overlaps,print_it)     # do map to ground truth
+    gt_clas = clas[gt_idx]
+    pos = gt_overlap > 0.4                                         # ck there is an overlap ~ 0.4 (diff papers use diff values)
+    pos_idx = torch.nonzero(pos)[:,0]                              # find the things that match
+    gt_clas[1-pos] = len(id2cat)                                   # put the background class for those
+    gt_bbox = bbox[gt_idx]
+    loc_loss = ((a_ic[pos_idx] - gt_bbox[pos_idx]).abs()).mean()   # get the L1 loss with the localization part 
+    clas_loss  = loss_f(b_c, gt_clas)                              # get the binary cross entropy for the classification part
+    return loc_loss, clas_loss                                     # return the two pieces (localization + classification)
+
+def ssd_loss(pred,targ,print_it=False):
+    lcs,lls = 0.,0.
+    for b_c,b_bb,bbox,clas in zip(*pred,*targ):
+        loc_loss,clas_loss = ssd_1_loss(b_c,b_bb,bbox,clas,print_it)
+        lls += loc_loss
+        lcs += clas_loss
+    if print_it: print(f'loc: {lls.data[0]}, clas: {lcs.data[0]}')
+    return lls+lcs                                                 # finally, add them together
+```
 
 
 
