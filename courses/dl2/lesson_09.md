@@ -378,6 +378,21 @@ def ssd_loss(pred,targ,print_it=False):
     if print_it: print(f'loc: {lls.data[0]}, clas: {lcs.data[0]}')
     return lls+lcs                                                 # finally, add them together
 ```
+- that's a lot going on, and it may take a few watches of the video to fully understand it
+- the basic idea now is we have the things we need:  data, the architecture and the loss function
+- now that we've got those 3 things, we can **train!**
+```python
+learn.crit = ssd_loss
+lr = 3e-3
+lrs = np.array([lr/100, lr/10, lr])
+```
+- learning rate finder, train for a bit, we get down to 25. (training & validation loss)
+- we can then see the images with LOTS of bounding boxes on them
+- it isn't quite what we want, but it is on the right track
+- all of our anchor boxes were small, they were 4x4
+- so, to go from *here* to something that will be more accurate, all we will do is create way more ancho boxes
 
-
+###   `01:14:00`
+- Q from student:  confused, how are the bounding boxes and the anchor boxes not the same?
+- A from JH:  
 
