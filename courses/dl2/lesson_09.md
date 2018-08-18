@@ -7,6 +7,7 @@
 - http://course.fast.ai/lessons/lesson9.html
 - Notebook:  
    * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
+   * [pascal-multi.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal-multi.ipynb)
 
 ---
 
@@ -311,8 +312,17 @@ learn.metrics = [detn_acc, detn_l1]
       - if you understand what this is doing and more importantly, why we are doing this, that's a good test of your understanding of the material
       - if you don't understand, that is ok, this shows you that you need to go back and rewatch this part of the video, talk to some of your classmates, ask on the forum so that you understand what we are doing here
 
-#### reviewing code
-- 
-  2.  
+#### Section 3.3 reviewing code `1:09:30`
+- one hot embedding
+- BCE
+- there's a custom loss function
+- we've got the thing that calculates the Jaccard Index
+- the part that converts activations to a bounding box
+- part that does map to ground truth
+
+##### SSD Loss Function `1:10:00`
+- SSD = Single Shot Multibox Detector
+- loops through each image in the mini-batch
+
 
 
