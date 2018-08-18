@@ -323,6 +323,14 @@ learn.metrics = [detn_acc, detn_l1]
 ##### SSD Loss Function `1:10:00`
 - SSD = Single Shot Multibox Detector
 - loops through each image in the mini-batch
+- and it calls SSD 1 loss:  `ssd_1_loss` for one image
+- so, we destructure our bounding box and class
+- `def get_y(bbox, clas)` --> a lot of code you find out there on the internet doesn't work well with mini-batches, it only does one thing at a time
+- in this case, with this code, it's not exactly a mini-batch.. it's on a whole bunch of ground truth object at a time and the data loader is being fed a mini-batch at a time to do the convolutional layers
+- because we could have different number of ground truth objects in each image but a **tensor** has to be a strict rectangular shape, fastai automatically pads it with zeroes --> anything that is not the same length
+- this is something JH fairly recently added
+- it is something that is super handy --> almost no other libraries do that
+- BUT, that does mean that you then have to make sure that you get rid of the zeroes, right? So, you can see here that I am checking to find all of the non-zeroes, and I'm only keeping those
 
 
 
