@@ -1,4 +1,4 @@
-# Lesson 9: Multi-object detection
+# Lesson 9: Multi-object detection / Single Shot Multibox Detector (SSD)
 (26-Mar-2018, live)  
  
 - [Wiki: Part 2 / Lesson 9](http://forums.fast.ai/t/part-2-lesson-9-wiki/14028)
