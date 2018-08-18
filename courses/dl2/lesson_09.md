@@ -285,10 +285,21 @@ learn.metrics = [detn_acc, detn_l1]
 - if that is counter-intuitive to you, that's one of the main things to think about after this lesson, it is important learning
 - the idea is this, figuring out what the main object in an image is, is kind of the hard part, and figuring out exactly where the bounding box should be is and what class it is, is the "easy part", in a way
 - `23:45`
-- 
-- 
 
-### Binary Cross Entropy Loss `1:05`
-- 
+
+### Binary Cross Entropy Loss `1:05:45`
+- we don't use cross entropy here, we use **binary cross entropy loss**
+- BCE is what we normally use for multi-label classification, like in the planet/satellite competition
+- if we have multiple labels, we can't really use **softmax** because softmax encourages one item to have the highest probability
+- in our case, each anchor box can have only one item associated with it, it's not for that reason we are avoiding softmax, it's something else
+- which is, it is possible for an anchor box to have **nothing** associated with it
+- there are 2 ways to handle it:
+  1.  can say background is just a class, so let's use softmax and treat background like one of the classes, and softmax can predict it.
+      - a lot of people have done it that way; JH doesn't like that because that is a really hard thing to ask a neural network to do
+      - it's asking it: can you tell whether this grid cell doesn't have the other 20 objects I am interested in, in it, with a **Jaccard** overlap of > 0.50
+      - that's a **really hard** thing to put into a **single computation**
+      - on the other hand, what if we just had for each class, is it a motorbike/no, person/no, bird/no, dining table/no, and it can check each of those categories
+      - 
+  2.  
 
 
