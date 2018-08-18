@@ -299,7 +299,10 @@ learn.metrics = [detn_acc, detn_l1]
       - it's asking it: can you tell whether this grid cell doesn't have the other 20 objects I am interested in, in it, with a **Jaccard** overlap of > 0.50
       - that's a **really hard** thing to put into a **single computation**
       - on the other hand, what if we just had for each class, is it a motorbike/no, person/no, bird/no, dining table/no, and it can check each of those categories
-      - 
+      - if it is **no to *all* of them**, then it is **background**
+      - this is JH approach: it's not that we can have multiple true labels, but we can have **zero true labels**
+      - we take our target, we do our one-hot embedding, with `num_classes+1`, so at this stage, we do have the idea of **background**
+      - but then, we remove the last column `t = V(t[:, :-1].`
   2.  
 
 
