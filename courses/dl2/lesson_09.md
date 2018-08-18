@@ -288,7 +288,7 @@ learn.metrics = [detn_acc, detn_l1]
 - 
 - 
 
+### Binary Cross Entropy Loss `1:05`
+- 
 
----
-video
-`xx`
+
