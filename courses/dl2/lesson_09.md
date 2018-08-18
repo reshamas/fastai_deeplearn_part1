@@ -300,9 +300,19 @@ learn.metrics = [detn_acc, detn_l1]
       - that's a **really hard** thing to put into a **single computation**
       - on the other hand, what if we just had for each class, is it a motorbike/no, person/no, bird/no, dining table/no, and it can check each of those categories
       - if it is **no to *all* of them**, then it is **background**
-      - this is JH approach: it's not that we can have multiple true labels, but we can have **zero true labels**
+  2.  this is JH approach: it's not that we can have multiple true labels, but we can have **zero true labels**
       - we take our target, we do our one-hot embedding, with `num_classes+1`, so at this stage, we do have the idea of **background**
       - but then, we remove the last column `t = V(t[:, :-1].`
+      - so now that vector is all zeroes (meaning there is nothing there), or it has at most, one "1"
+      - then, we can use binary cross entropy:  `F.binary_cross_entropy_with_logits(x, t, w, size_average=False)/self.num_classes`
+      - this method here, is a minor tweak, BUT, it's the kind of minor tweak I want you to think about and understand, because
+         a)  it makes a big difference in practice, to your training
+         b)  it's the kind of thing you will see a lot of papers talk about, when there is some increment over a previous paper, something like this:  that trying to predict a background category is very difficult, what if we use binary cross entropy instead?
+      - if you understand what this is doing and more importantly, why we are doing this, that's a good test of your understanding of the material
+      - if you don't understand, that is ok, this shows you that you need to go back and rewatch this part of the video, talk to some of your classmates, ask on the forum so that you understand what we are doing here
+
+#### reviewing code
+- 
   2.  
 
 
