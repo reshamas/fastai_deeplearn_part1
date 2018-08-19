@@ -392,7 +392,25 @@ lrs = np.array([lr/100, lr/10, lr])
 - all of our anchor boxes were small, they were 4x4
 - so, to go from *here* to something that will be more accurate, all we will do is create way more ancho boxes
 
-###   `01:14:00`
+### Anchor Boxes  `01:14:00`
 - Q from student:  confused, how are the bounding boxes and the anchor boxes not the same?
-- A from JH:  
+  - A from JH:  **anchor boxes** are the fixed, square boxes in the image.  in our example, there were 4x4 = 16 anchor boxes
+    - they are in an exact, specific, unmoving location
+    - the **bounding boxes** are the ones surrounding an identified image
+- `01:14:50` we are going to create lots more anchor boxes!
+- there are 3 ways to do that
+1. create anchor boxes of different sizes and aspect ratios 
+   - here, you can see there is an upright rectangle
+   - there is a lying down rectangle (surrounding the bike photo)
+   - there's a square
+   
+- Q:  for the multi-label classification, wny aren't we multiplying the categorical loss by a constant like we did before?
+- A:  that's a great question.  because later on, it will turn out that we don't need to
+- we have got 3 aspect ratios, at 3 zoom levels (3 squares of different sizes, for each a lying down and upright rectangle)
+- that's one way to do this.  And, this is for the 1x1 grid, so in other words, if we added 2 more stratification layers, you eventually get to a 1x1 grid and this is for the 1x1 grid
+- another thing we could do is to use more convolutional layers as sources of anchor boxes so ..
+- I've randomly gated these a bit, so it's easier to see them
+- so, as well as our 16x16 grid cells, we've also got 2x2 grid cells, and we've also got the 1x1 grid cell
+- in other words, if we add 3 stride 2 convolutions to the end, we'll have 4x4, 2x2 and 1x1 sets of grid cells
+- 
 
