@@ -436,5 +436,12 @@ k
 - Q:  just to clarify, each set of 4 is one box?
 - A:  yes, exactly, 4 coordinates: top left, top right, bottom left, bottom right
 - that's what we printed here, what we called the ground truth.  there's no model, this is what we are told 
-- remember, anytime we train a neural net, we have a **dependent variable**, and then we have some **black box neural net**, that takes some **input** and spits out some **activation output** 
+- remember, anytime we train a neural net, we have a **dependent variable**, and then we have some **black box neural net**, that takes some **input** and spits out some **output activations**
+- we take those activations and we compare them to the ground truth 
+- we calculate a loss
+- we find the derivative of that and **adjust the weights** according to the **derivative** times a **learning rate**
+- the loss is calculated using a loss function
+- Rachel:  one of the challenges of this problem and what's going on here is that we're having to come up with an architecture that's letting us predict this ground truth, like it's not because you can have any number of objects in your picture -- it's not immediately obvious, like what's the correct architecture that is going to let us predict that sort of ground truth...
+- Jeremy:  I guess so, but I'm going to make this plain as we 
+
 
