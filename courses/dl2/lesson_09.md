@@ -449,9 +449,10 @@ k
 - Rachel:  I meant in terms of creating this idea of anchor boxes, with different locations and sizes, that's giving you a format that lets you get to the activations.  You're right, like high level
 - Jeremy:  that's really entirely in the loss function, not in the architecture.  And, if we use the YOLO architecture, where we had a fully connected layer, like literally, there would be no concept of geometry at all. So, I would suggest... kind of forgetting the architecture and just treat it as just a given thing that is spitting out 16 x (4 + c) activations
 - then, I would say our job is to figure out how to take those 16 x (4+c) activations and compare them to our ground truth, which is (4+1), but if it was one-hot encoded, it would be c, and I think that's easier to think about, so call it (4+c) times however many ground truth objects there are for that particular image, so let's call that m:  `m x (4+c)` 
-- so, we need a **loss function** that can take these 2 things and spit out a number that says how good are these activations, that's what we're trying to do
+- `01:22:00` so, we need a **loss function** that can take these 2 things and spit out a number that says how good are these activations, that's what we're trying to do
 - to do that, we need to take each one of these "m" ground truth objects and decide which set of 4+c activations is responsible for that object.  which one should we be comparing and saying, yes, it's the right class and yeah, it's false or not
 - and so the way we do that is to say, basically, okay, let's decide the first (4+c) activations are going to be responsible for predicting the bounding box of the thing that's closest to the top left and the last (4+c) will be predicting the furthest to the bottom right and kind of everything in between
-- so, this is matching and of course we are not using the YOLO approach where we have a single vector, we're using the SSD approach where we spit out convolutional output which means that it's not arbitrary as to which we match up, but we actually want to match up the set of activations whose receptive field most closely reflects the maximum density
+- so, this is matching and of course we are not using the YOLO approach where we have a single vector, we're using the SSD approach where we spit out a convolutional output which means that it's not arbitrary as to which we match up, but we actually want to match up the set of activations whose receptive field most closely reflects, has the maximum density from thi
+- 
 
 
