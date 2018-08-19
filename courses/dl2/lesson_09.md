@@ -442,6 +442,12 @@ k
 - we find the derivative of that and **adjust the weights** according to the **derivative** times a **learning rate**
 - the loss is calculated using a loss function
 - Rachel:  one of the challenges of this problem and what's going on here is that we're having to come up with an architecture that's letting us predict this ground truth, like it's not because you can have any number of objects in your picture -- it's not immediately obvious, like what's the correct architecture that is going to let us predict that sort of ground truth...
-- Jeremy:  I guess so, but I'm going to make this plain as we 
+- Jeremy:  I guess so, but I'm going to make this plain as we saw when we looked at the kind of YOLO vs SSD that there are only two possible architectures:
+  - the last layer is full connected, OR
+  - the last layer is convolutional, AND
+  - both of them work perfectly well
+- Rachel:  I meant in terms of creating this idea of anchor boxes, with different locations and sizes, that's giving you a format that lets you get to the activations.  You're right, like high level
+- Jeremy:  that's really entirely in the loss function, not in the architecture.  And, if we use the YOLO architecture, where we had a fully connected layer, like literally, there would be no concept of geometry at all. So, I would suggest... kind of forgetting the architecture and just treat it as just a given thing that is spitting out 16 x (4 + c) activations
+- then, I would say our job is to figure out how to take those 16 x (4+c) activations 
 
 
