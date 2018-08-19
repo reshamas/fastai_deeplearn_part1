@@ -436,4 +436,5 @@ k
 - Q:  just to clarify, each set of 4 is one box?
 - A:  yes, exactly, 4 coordinates: top left, top right, bottom left, bottom right
 - that's what we printed here, what we called the ground truth.  there's no model, this is what we are told 
+- remember, anytime we train a neural net, we have a **dependent variable**, and then we have some **black box neural net**, that takes some **input** and spits out some **activation output** 
 
