@@ -452,6 +452,6 @@ k
 - so, we need a **loss function** that can take these 2 things and spit out a number that says how good are these activations, that's what we're trying to do
 - to do that, we need to take each one of these "m" ground truth objects and decide which set of 4+c activations is responsible for that object.  which one should we be comparing and saying, yes, it's the right class and yeah, it's false or not
 - and so the way we do that is to say, basically, okay, let's decide the first (4+c) activations are going to be responsible for predicting the bounding box of the thing that's closest to the top left and the last (4+c) will be predicting the furthest to the bottom right and kind of everything in between
-- 
+- so, this is matching and of course we are not using the YOLO approach where we have a single vector, we're using the SSD approach where we spit out convolutional output which means that it's not arbitrary as to which we match up, but we actually want to match up the set of activations whose receptive field most closely reflects the maximum density
 
 
