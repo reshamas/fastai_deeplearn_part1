@@ -412,5 +412,19 @@ lrs = np.array([lr/100, lr/10, lr])
 - I've randomly gated these a bit, so it's easier to see them
 - so, as well as our 16x16 grid cells, we've also got 2x2 grid cells, and we've also got the 1x1 grid cell
 - in other words, if we add 3 stride 2 convolutions to the end, we'll have 4x4, 2x2 and 1x1 sets of grid cells, all of which have anchor boxes
-- 
+- and, for every one of those, we can have all of these different shapes and sizes
+- so, obviously those 2 combine with each other to create lots of anchor boxes, and if I try to print that on the screen, it is just one big blur of color
+```python
+anc_gridsanc_grids = [4,2,1]                    # these are the grid cell sizes
+# anc_grids = [2]
+anc_zooms = [0.7, 1., 1.3]
+# anc_zooms = [1.]
+anc_ratios = [(1.,1.), (1.,0.5), (0.5,1.)]
+# anc_ratios = [(1.,1.)]
+anchor_scales = [(anz*i,anz*j) for anz in anc_zooms for (i,j) in anc_ratios]
+k = len(anchor_scales)
+anc_offsets = [1/(o*2) for o in anc_grids]
+k
+```
+
 
