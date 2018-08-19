@@ -417,14 +417,23 @@ lrs = np.array([lr/100, lr/10, lr])
 ```python
 anc_gridsanc_grids = [4,2,1]                    # these are the grid cell sizes
 # anc_grids = [2]
-anc_zooms = [0.7, 1., 1.3]
+anc_zooms = [0.7, 1., 1.3]                      # zoom levels for the anchor boxes
 # anc_zooms = [1.]
-anc_ratios = [(1.,1.), (1.,0.5), (0.5,1.)]
+anc_ratios = [(1.,1.), (1.,0.5), (0.5,1.)]      # aspect ratios 
 # anc_ratios = [(1.,1.)]
 anchor_scales = [(anz*i,anz*j) for anz in anc_zooms for (i,j) in anc_ratios]
 k = len(anchor_scales)
 anc_offsets = [1/(o*2) for o in anc_grids]
 k
 ```
-
+- and the rest of the code creates the top right and bottom corners
+- and the anchor corner and the middle and height width 
+- you can go through the code and print out the anchors, the corners
+- `01:18:00` the key is to remember this basic idea that we have a vector of ground truth stuff, where that stuff is sets of 4 bounding boxes
+- this is what we were given, it would be in the json files, it's the ground truth, it's the dependent variable
+- sets of 4 bounding boxes, and for each one, also a **class**
+- so, this is a person in this location, this is a dog in this location, that's the ground truth that we were given
+- Q:  just to clarify, each set of 4 is one box?
+- A:  yes, exactly, 4 coordinates: top left, top right, bottom left, bottom right
+- that's what we printed here, what we called the ground truth.  there's no model, this is what we are told 
 
