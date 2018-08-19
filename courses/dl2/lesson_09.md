@@ -411,6 +411,6 @@ lrs = np.array([lr/100, lr/10, lr])
 - another thing we could do is to use more convolutional layers as sources of anchor boxes so ..
 - I've randomly gated these a bit, so it's easier to see them
 - so, as well as our 16x16 grid cells, we've also got 2x2 grid cells, and we've also got the 1x1 grid cell
-- in other words, if we add 3 stride 2 convolutions to the end, we'll have 4x4, 2x2 and 1x1 sets of grid cells
+- in other words, if we add 3 stride 2 convolutions to the end, we'll have 4x4, 2x2 and 1x1 sets of grid cells, all of which have anchor boxes
 - 
 
