@@ -471,7 +471,11 @@ k
      - once we've got every ground truth object matched with anchor box to a set of activations, we can then basically say, ok, what's the **cross-entropy loss** of the categorical part, what's the L1 loss of the coordinate.
      - so, really it's the matching part which is kind of, I don't know, kind of slightly surprising bit, and then this idea of picking those in a way that the convolution network gives it the best opportunity to calculate that part of the space is then the final cherry on top
 - This class is by far, going to be the most **conceptually challenging** and part of the reason for that is that after this, we're going to go and do some different stuff, and we'll come back to it Lesson 14 and do it again with some tweaks; we're going to add in some of the new stuff we learn afterwards
-- 
+- So, you will get a whole second run through for this material once we add some stuff at the end.  So, we'll revise it, as we normally do
+- Remember in Part 1, we went through computer vision, NLP, structured data, back to NLP, back to computer vision, so we revised everything from the start
+- It'll be kind of similar, so don't worry if a bit challenging at first... **You'll get there!**
+- So, for every grid cell, there can be different sizes, and we can have different orientations and zooms, representing different anchor boxes which are just conceptual ideas that basically every one of these (anchor boxes) is associated with one set of 4+c activations in our model
+- `01:30:00`
      
 
 
