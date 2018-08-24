@@ -462,6 +462,16 @@ k
 - Now, remember I told you before Part 2 that the stuff you learn in Part 2 is going to assume that you are extremely comfortable with everything you learned in Part 1.
 - And, for a lot of you, you might be realizing now that you weren't quite as familiar with stuff as you thought, and that's fine.  Just realize you may have to go back and think deeply and understand more what are the inputs and outputs to each convolutional layer, how big are they, what are their rank, exactly how are they calculated, so that you really fully understand the idea of receptive field and what's a loss function really, how does back propagation work exactly.  These things need to be like **deeply felt intuitions**.  Which you only get through **practice**. 
 - And once they are all deeply felt intuitions, then you can re-watch this video, and you'll be like "oh! I see... these activations need some way of understanding which task they are being given. And that is being done by the **loss function** and the loss function is **encoding a task**.  And, so the task of the SSD loss function is basically two parts:
-  1.  Figure out which **ground truth** object is closest to 
+  1.  Figure out which **ground truth** object is closest to which grid cell, which anchor box.  When we started doing this, the grid cells of the convolution and the anchor boxes were the same.  But now, we are starting to introduce the idea that we can have **multiple anchor boxes** per grid cell
+     - so it's a little more complicated
+     - every ground truth object, we have to figure out which anchor boxes are closes to
+     - every anchor box, we have to decide which ground truth object is it responsible for, if any
+     - once we've done that matching, it's trivial
+     - now we just basically go through and do ... going back to the single object detection... now it's just this:  `def detn_loss(input, target): `
+     - once we've got every ground truth object matched with anchor box to a set of activations, we can then basically say, ok, what's the **cross-entropy loss** of the categorical part, what's the L1 loss of the coordinate.
+     - so, really it's the matching part which is kind of, I don't know, kind of slightly surprising bit, and then this idea of picking those in a way that the convolution network gives it the best opportunity to calculate that part of the space is then the final cherry on top
+- This class is by far, going to be the most **conceptually challenging** and part of the reason for that is that after this, we're going to go and do some different stuff, and we'll come back to it Lesson 14 and do it again with some tweaks; we're going to add in some of the new stuff we learn afterwards
+- 
+     
 
 
