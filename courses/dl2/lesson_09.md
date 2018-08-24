@@ -459,5 +459,9 @@ k
 - that's basically what this loss function is trying to do
 - `01:24:50` Q:  so, is it purely coincidental that the 4x4 in the conv 2d the same thing as your 16?
 - A:  No, it is not all coincidental.  it's because though that 4x4 column is going to give us activations whose receptive field corresponds to those locations in the input image.  So, it's carefully designed to make that as effective as possible.
+- Now, remember I told you before Part 2 that the stuff you learn in Part 2 is going to assume that you are extremely comfortable with everything you learned in Part 1.
+- And, for a lot of you, you might be realizing now that you weren't quite as familiar with stuff as you thought, and that's fine.  Just realize you may have to go back and think deeply and understand more what are the inputs and outputs to each convolutional layer, how big are they, what are their rank, exactly how are they calculated, so that you really fully understand the idea of receptive field and what's a loss function really, how does back propagation work exactly.  These things need to be like **deeply felt intuitions**.  Which you only get through **practice**. 
+- And once they are all deeply felt intuitions, then you can re-watch this video, and you'll be like "oh! I see... these activations need some way of understanding which task they are being given. And that is being done by the **loss function** and the loss function is **encoding a task**.  And, so the task of the SSD loss function is basically two parts:
+  1.  Figure out which **ground truth** object is closest to 
 
 
