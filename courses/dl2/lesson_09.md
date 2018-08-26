@@ -475,7 +475,39 @@ k
 - Remember in Part 1, we went through computer vision, NLP, structured data, back to NLP, back to computer vision, so we revised everything from the start
 - It'll be kind of similar, so don't worry if a bit challenging at first... **You'll get there!**
 - So, for every grid cell, there can be different sizes, and we can have different orientations and zooms, representing different anchor boxes which are just conceptual ideas that basically every one of these (anchor boxes) is associated with one set of 4+c activations in our model
-- `01:30:00`
+- `01:30:00` so however many of these ground truth boxes we have, we need to have that, times (4+c) activations in the model
+- now that does not mean that each convolutional layer needs that many filters, right, because remember the 4x4 convolutional layer already has 16 sets of filters; the 2x2 convolutional layer already has 4 sets of activations and then finally the 1x1 has one set of activations
+- so we basically get 1 + 4 + 16 **for free** because that's how convolutions works.  it calculates things at different locations
+- so we actually only need to know `k` where `k` is the number of zooms by the number of aspect ratios whereas the grids we are going to get for free through our architecture, so let's check out that architecture
+
+### Architecture
+- so the model is nearly identical to what we had before
+- but we're going to have a number of stride 2 convolutions which is going to take us to 4x4, 2x2, 1x1, each stride 2 convolution network has grid size..
+- after we do our first convolution to get to 4x4, ...
+- we're going to grab a set of outputs from that, because we want to save away the 4x4 anchors and then we 
+```python
+class SSD_Head(nn.Module):
+    def __init__(self, k, bias):
+        super().__init__()
+        self.drop = nn.Dropout(0.25)
+        self.sconv0 = StdConv(512,256, stride=1)
+#         self.sconv1 = StdConv(256,256)
+        self.sconv2 = StdConv(256,256)
+        self.out = OutConv(k, 256, bias)
+        
+    def forward(self, x):
+        x = self.drop(F.relu(x))
+        x = self.sconv0(x)
+#         x = self.sconv1(x)
+        x = self.sconv2(x)
+        return self.out(x)
+
+head_reg4 = SSD_Head(k, -3.)
+models = ConvnetBuilder(f_model, 0, 0, 0, custom_head=head_reg4)
+learn = ConvLearner(md, models)
+learn.opt_fn = optim.Adam
+k
+```
      
 
 
