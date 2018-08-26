@@ -20,12 +20,18 @@
 - not enough students are reading the papers!  The papers are the real ground truth
 - a lot of people aren't reading the papers because they think they can't read the papers, but YOU ARE, because you are here
 
-### Match the Equations to the Code
-- [List of Mathematical Symbols](https://en.wikipedia.org/wiki/List_of_mathematical_symbols)
-
-
-###
+### Debugger
 ```python
 pdb.set_trace()
 ```
+
+### Match the Equations to the Code
+- [List of Mathematical Symbols](https://en.wikipedia.org/wiki/List_of_mathematical_symbols)
+
+### Re-create things (graphs) you see in the papers
+- "Try to recreate this chart, and make sure you understand what it's saying and why it matters"
+
+### We've moved from *torchtext* to *fastai.text*
+
+
 
