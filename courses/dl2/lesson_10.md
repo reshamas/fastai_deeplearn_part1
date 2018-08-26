@@ -16,6 +16,14 @@
 - there are quite a few in-class fastai students who are doing this full-time and some of them are struggling with this material
 - one of the reasons Jeremy had that content early on is we've got something to **cogitate** and think about and gradually work towards so by Lesson 14, you'll get a second crack at it
 
+## Reading Papers (Research Journal Publications)
+- not enough students are reading the papers!  The papers are the real ground truth
+- a lot of people aren't reading the papers because they think they can't read the papers, but YOU ARE, because you are here
+
+### Match the Equations to the Code
+- [List of Mathematical Symbols](https://en.wikipedia.org/wiki/List_of_mathematical_symbols)
+
+
 ###
 ```python
 pdb.set_trace()
