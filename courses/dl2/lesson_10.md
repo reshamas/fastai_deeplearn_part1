@@ -15,5 +15,9 @@
 - if you are finding the material difficult, that's ok
 - there are quite a few in-class fastai students who are doing this full-time and some of them are struggling with this material
 - one of the reasons Jeremy had that content early on is we've got something to **cogitate** and think about and gradually work towards so by Lesson 14, you'll get a second crack at it
-- 
+
+###
+```python
+pdb.set_trace()
+```
 
