@@ -8,7 +8,8 @@
 - Notebook:  
    * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
    * [pascal-multi.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal-multi.ipynb)
-
+- Paper:  
+   * [SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325)
 ---
 
 ## Start Class
