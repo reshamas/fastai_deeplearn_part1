@@ -515,3 +515,6 @@ k
 - https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html  
 Cross-entropy loss, or log loss, measures the performance of a classification model whose output is a probability value between 0 and 1. Cross-entropy loss increases as the predicted probability diverges from the actual label. So predicting a probability of .012 when the actual observation label is 1 would be bad and result in a high loss value. A perfect model would have a log loss of 0.
 
+## Homework This Week
+- go through code
+- go through research paper
