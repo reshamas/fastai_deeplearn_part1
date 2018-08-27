@@ -37,6 +37,10 @@ pdb.set_trace()
 - no obvious way to save intermediate calculations
 - somewhat convoluted API
 - looking at transformations to images and asking "how does that apply to NLP?"
+- in Part 1 we used the library, torchtext, but JH has found problems with it that are limiting; it's very slow because it's not doing parallel processing and doesn't remember what it did previously, so reruns it
+- refresher: look at lesson 4, IMDb reviews
+- we take sentences and turn them into numbers
+- 
 
 
 
