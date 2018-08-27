@@ -31,11 +31,12 @@ pdb.set_trace()
 ### Re-create things (graphs) you see in the papers
 - "Try to recreate this chart, and make sure you understand what it's saying and why it matters"
 
-### `00:14:00` We've moved from *torchtext* to *fastai.text*
+### `00:16:40` We've moved from *torchtext* to *fastai.text*
 - no parallel processing
 - hard to do simple things (like multi-label classification)
 - no obvious way to save intermediate calculations
 - somewhat convoluted API
+- looking at transformations to images and asking "how does that apply to NLP?"
 
 
 
