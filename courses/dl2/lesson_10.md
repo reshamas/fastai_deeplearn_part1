@@ -34,7 +34,8 @@ pdb.set_trace()
     - and see if it can learn to un-rotate it
     - and this is a super useful thing, Google photos has an option to automatically rotate photos for you
     - as Yang Lu showed here, you could build that network right now by doing exactly the same as our previous lesson, but your custom head is one that spits out a single number, which is how much to rotate by and your dataset has a dependent variable which is how much did you rotate by?  And your dataset has a dependent variable, which is how much did you rotate by?
-    - 
+- so, you suddenly realize the idea of a backbone with a custom head, you can do almost anything you can think about
+- Next, let's think about, how does that apply to NLP?
 
 
 ### Match the Equations to the Code
