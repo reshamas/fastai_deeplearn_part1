@@ -32,6 +32,9 @@ pdb.set_trace()
 - `00:15:35` YangLu said, what if we did a different kind of custom head? 
     - take original picture, rotate it, and then make our dependent variable the opposite of that rotation
     - and see if it can learn to un-rotate it
+    - and this is a super useful thing, Google photos has an option to automatically rotate photos for you
+    - as Yang Lu showed here, you could build that network right now by doing exactly the same as our previous lesson, but your custom head is one that spits out a single number, which is how much to rotate by
+    - 
 
 
 ### Match the Equations to the Code
