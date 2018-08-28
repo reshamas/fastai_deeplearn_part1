@@ -33,7 +33,7 @@ pdb.set_trace()
     - take original picture, rotate it, and then make our dependent variable the opposite of that rotation
     - and see if it can learn to un-rotate it
     - and this is a super useful thing, Google photos has an option to automatically rotate photos for you
-    - as Yang Lu showed here, you could build that network right now by doing exactly the same as our previous lesson, but your custom head is one that spits out a single number, which is how much to rotate by
+    - as Yang Lu showed here, you could build that network right now by doing exactly the same as our previous lesson, but your custom head is one that spits out a single number, which is how much to rotate by and your dataset has a dependent variable which is how much did you rotate by?
     - 
 
 
