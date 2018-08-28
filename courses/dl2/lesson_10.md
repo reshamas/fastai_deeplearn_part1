@@ -24,6 +24,12 @@
 ```python
 pdb.set_trace()
 ```
+### `00:14:20` NLP
+- we've seen the idea of taking a pre-trained model, whip off some stuff from the top, replace it with new stuff, get it to do something similar
+- we've dived a little bit deeper with that; with ConvLearner.pretrained, it had a standard way of sticking stuff on the top which does a particular thing, which was classification
+- and then we learned, we can stick any PyTorch module at the end and have it do anything we like with a custom head
+- suddenly you discover there are some interesting things we can do
+
 
 ### Match the Equations to the Code
 - [List of Mathematical Symbols](https://en.wikipedia.org/wiki/List_of_mathematical_symbols)
