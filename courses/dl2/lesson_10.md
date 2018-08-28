@@ -45,11 +45,19 @@ pdb.set_trace()
 - "Try to recreate this chart, and make sure you understand what it's saying and why it matters"
 
 ### `00:16:40` We've moved from *torchtext* to *fastai.text*
-- in the next lesson, we're going to go further and 
+#### NLP
+- in the next lesson, we're going to go further and say, if NLP and computer vision lets you do the same basic ideas, then how do we combine the two? and we're going to learn about a model that we'll learn to find word structures from images, OR images from word structures, OR images from images!
+- and that will form the basis, if you wanted to go further, of doing things from an image to a sentence, "image captioning", or going from a sentence to an image, which we will start to do "phrased image"
+- so, from there, we'll go deeper into computer vision to think about what other kinds of things we can do with this idea of pre-trained network + custom head
+- `00:17:45` we'll look at various kinds of image enhancement
+
+#### 4 Reasons Why..  *torchtext* to *fastai.text*
 - no parallel processing
 - hard to do simple things (like multi-label classification)
 - no obvious way to save intermediate calculations
 - somewhat convoluted API
+
+
 - looking at transformations to images and asking "how does that apply to NLP?"
 - in Part 1 we used the library, torchtext, but JH has found problems with it that are limiting; it's very slow because it's not doing parallel processing and doesn't remember what it did previously, so reruns it
 - refresher: look at lesson 4, IMDb reviews
