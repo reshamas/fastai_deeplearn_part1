@@ -29,6 +29,9 @@ pdb.set_trace()
 - we've dived a little bit deeper with that; with ConvLearner.pretrained, it had a standard way of sticking stuff on the top which does a particular thing, which was classification
 - and then we learned, we can stick any PyTorch module at the end and have it do anything we like with a custom head
 - suddenly you discover there are some interesting things we can do
+- `00:15:35` YangLu said, what if we did a different kind of custom head? 
+    - take original picture, rotate it, and then make our dependent variable the opposite of that rotation
+    - and see if it can learn to un-rotate it
 
 
 ### Match the Equations to the Code
