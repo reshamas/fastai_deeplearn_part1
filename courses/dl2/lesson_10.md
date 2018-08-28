@@ -51,7 +51,12 @@ pdb.set_trace()
 - so, from there, we'll go deeper into computer vision to think about what other kinds of things we can do with this idea of pre-trained network + custom head
 - `00:17:45` we'll look at various kinds of image enhancement, like:
   - increasing the resolution of a low-res photo to guess what was missing
-- or adding artistic filters on top of photos
+  - or adding artistic filters on top of photos
+  - or changing photos of horses into photos of zebras and stuff like that 
+- and finally, that will bring us all the way back to bounding boxes again
+- to get there, we will first learn about segmentation, which is not just figuring out where the bounding box is, but figuring out what every single pixel in an image is part of
+  - is this pixel part of a person, a car? 
+- and then we will use that idea, idea of **unet** and it turns out this idea from unet, we can apply the idea of bounding boxes, which are called **feature pyramids** (everything has to have a different name in every slightly different area
 - 
 
 #### 4 Reasons Why..  *torchtext* to *fastai.text*
