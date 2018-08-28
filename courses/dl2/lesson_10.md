@@ -66,13 +66,18 @@ pdb.set_trace()
 - no obvious way to save intermediate calculations
 - somewhat convoluted API
 
-#### `00:19:00` Section notes
-- 
-
-- looking at transformations to images and asking "how does that apply to NLP?"
-- in Part 1 we used the library, torchtext, but JH has found problems with it that are limiting; it's very slow because it's not doing parallel processing and doesn't remember what it did previously, so reruns it
+#### `00:18:55` Section notes
+- For NLP in Part 1, we relied on a pretty great library called torchtext, but as pretty great as it was, JH has 
+found problems with it that are limiting, too problematice to keep using it
+- as a lot of students complained on the forums, it's very slow because it's not doing parallel processing and doesn't remember what it did previously, so reruns it
+- and it's hard to do fairly simple things, a lot of students tried to the Kaggle Toxic Comment Challenge, 
 - refresher: look at lesson 4, IMDb reviews
 - we take sentences and turn them into numbers
+
+
+
+- looking at transformations to images and asking "how does that apply to NLP?"
+- in Part 1 we used the library, torchtext, but JH has 
 - 
 
 
