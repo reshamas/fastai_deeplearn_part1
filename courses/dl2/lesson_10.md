@@ -7,7 +7,7 @@
   - video length:  2:07:55
 - http://course.fast.ai/lessons/lesson10.html
 - Notebook:  
-   * [pascal.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/pascal.ipynb)
+   * [imdb.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/imdb.ipynb)
 
 ---
 
@@ -79,6 +79,8 @@ found problems with it that are limiting, too problematice to keep using it
   - a lot of the classes & functions have the same names, that is intentional
 - this is the non-torchtext version
 
+## IMDb data
+- Notebook:  [imdb.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/imdb.ipynb)
 - refresher: look at lesson 4, IMDb reviews
 - we take sentences and turn them into numbers
 - looking at transformations to images and asking "how does that apply to NLP?"
