@@ -56,15 +56,18 @@ pdb.set_trace()
 - and finally, that will bring us all the way back to bounding boxes again
 - to get there, we will first learn about segmentation, which is not just figuring out where the bounding box is, but figuring out what every single pixel in an image is part of
   - is this pixel part of a person, a car? 
-- and then we will use that idea, idea of **unet** and it turns out this idea from unet, we can apply the idea of bounding boxes, which are called **feature pyramids** (everything has to have a different name in every slightly different area
-- 
+- and then we will use that idea, idea of **U-Net** and it turns out this idea from unet, we can apply the idea of bounding boxes, which are called **feature pyramids** (everything has to have a different name in every slightly different area)
+- and we'll use that to get very good results with bounding boxes
+- that's our path from here, it all builds on each other, but take us into lots of different areas
 
-#### 4 Reasons Why..  *torchtext* to *fastai.text*
+### 4 Reasons Why..  *torchtext* to *fastai.text*
 - no parallel processing
 - hard to do simple things (like multi-label classification)
 - no obvious way to save intermediate calculations
 - somewhat convoluted API
 
+#### `00:19:00` Section notes
+- 
 
 - looking at transformations to images and asking "how does that apply to NLP?"
 - in Part 1 we used the library, torchtext, but JH has found problems with it that are limiting; it's very slow because it's not doing parallel processing and doesn't remember what it did previously, so reruns it
