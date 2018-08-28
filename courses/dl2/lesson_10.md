@@ -79,9 +79,18 @@ found problems with it that are limiting, too problematice to keep using it
   - a lot of the classes & functions have the same names, that is intentional
 - this is the non-torchtext version
 
-## IMDb data
+## IMDb data `00:20:30`
 - Notebook:  [imdb.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/imdb.ipynb)
-- refresher: look at lesson 4, IMDb reviews
+- we'll work with the IMDb again, for those of you who have forgotten, go check out lesson 4, IMDb reviews
+- this is a dataset of movie reviews, and you remember we used it to find out whether we might enjoy ?somebegeddon
+- we are going to use the same dataset
+- by default, it calls itself "aclImDB":  `data/aclImdb/')`  --> this is the raw dataset that you can download
+- as you can see:
+```python
+from fastai.text import *
+import html
+```
+
 - we take sentences and turn them into numbers
 - looking at transformations to images and asking "how does that apply to NLP?"
 
