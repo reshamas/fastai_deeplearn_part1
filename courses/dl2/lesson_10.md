@@ -100,6 +100,10 @@ PATH = Path('data/aclImdb/')
 - you'll remember, the basic path for **NLP** is we have to take sentences and turn them into numbers, and there are a couple of steps to get there
 - at the moment, somewhat intentionally, fastai.text doesn't provide that many helper functions, it's really designed more to let you handle things in a fairly flexible way  
 - as you can see here, I wrote something called `get_texts` which goes through each thing in "classes".  These are the 3 things they have in classes: negative, positive and unsupervised (stuff they haven't gotten around to labeling yet)
+- JH goes thru each one of those classes, find every file in that folder with that name, and I open it up and read it and chuck it into the end of the array `texts`
+- as you can see, with path lib, it's easy to grab stuff and read it in
+- and then the label is whatever class I'm up to
+- JH will go ahead and do it for the **train** bit and the **test** bit
 ```python
 CLASSES = ['neg', 'pos', 'unsup']
 
@@ -114,7 +118,19 @@ def get_texts(path):
 trn_texts,trn_labels = get_texts(PATH/'train')
 val_texts,val_labels = get_texts(PATH/'test')
 ```
-- 
+- so there are 75000 in train, 25000 in test (50,000 of the train are unsupervised); we won't actually be able to use them when we get to the classification piece
+- JH actually finds this easier than the torchtext approach of having lots of layers and wrappers and stuff, because at the end, reading text files is not that hard
+
+#### Sorting
+- one thing that is always a good idea is to sort things randomly
+- it's useful to know this simple trick for sorting things randomly
+```python
+np.random.seed(42)
+trn_idx = np.random.permutation(len(trn_texts))
+val_idx = np.random.permutation(len(val_texts))
+```
+
+###
 
 
 
