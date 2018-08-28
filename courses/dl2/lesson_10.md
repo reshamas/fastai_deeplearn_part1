@@ -45,6 +45,7 @@ pdb.set_trace()
 - "Try to recreate this chart, and make sure you understand what it's saying and why it matters"
 
 ### `00:16:40` We've moved from *torchtext* to *fastai.text*
+- in the next lesson, we're going to go further and 
 - no parallel processing
 - hard to do simple things (like multi-label classification)
 - no obvious way to save intermediate calculations
