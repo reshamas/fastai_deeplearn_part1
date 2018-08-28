@@ -69,8 +69,8 @@ pdb.set_trace()
 #### `00:18:55` Section notes
 - For NLP in Part 1, we relied on a pretty great library called torchtext, but as pretty great as it was, JH has 
 found problems with it that are limiting, too problematice to keep using it
-- as a lot of students complained on the forums, it's very slow because it's not doing parallel processing and doesn't remember what it did previously, so reruns it
-- and it's hard to do fairly simple things, a lot of students tried to the Kaggle Toxic Comment Challenge, 
+- as a lot of students complained on the forums, it's very slow because it's not doing parallel processing and doesn't remember what it did previously, so reruns it, does it all over from scratch
+- and it's hard to do fairly simple things, a lot of students tried to the Kaggle Toxic Comment Challenge, which was a multi-label problem, and doing that with torchtext, JH eventually got it working, but it took him a week to hack away
 - refresher: look at lesson 4, IMDb reviews
 - we take sentences and turn them into numbers
 
