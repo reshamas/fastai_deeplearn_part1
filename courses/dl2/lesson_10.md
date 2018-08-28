@@ -71,13 +71,18 @@ pdb.set_trace()
 found problems with it that are limiting, too problematice to keep using it
 - as a lot of students complained on the forums, it's very slow because it's not doing parallel processing and doesn't remember what it did previously, so reruns it, does it all over from scratch
 - and it's hard to do fairly simple things, a lot of students tried to the Kaggle Toxic Comment Challenge, which was a multi-label problem, and doing that with torchtext, JH eventually got it working, but it took him a week to hack away
+
+### fastai.text
+- `00:19:50` to fix all these problems, JH has created a new library called *fastai.text*
+- fastai.text is a replacement for the combination of torchtext and fastai.nlp.  **Don't use fastai.nlp anymore** --> that is obsolete
+  - it's slower, more confusing, less good in every way, but lot of overlaps, 
+  - a lot of the classes & functions have the same names, that is intentional
+- this is the non-torchtext version
+
 - refresher: look at lesson 4, IMDb reviews
 - we take sentences and turn them into numbers
-
-
-
 - looking at transformations to images and asking "how does that apply to NLP?"
-- in Part 1 we used the library, torchtext, but JH has 
+
 - 
 
 
