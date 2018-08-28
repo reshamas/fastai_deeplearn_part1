@@ -85,15 +85,35 @@ found problems with it that are limiting, too problematice to keep using it
 - this is a dataset of movie reviews, and you remember we used it to find out whether we might enjoy ?somebegeddon
 - we are going to use the same dataset
 - by default, it calls itself "aclImDB":  `data/aclImdb/')`  --> this is the raw dataset that you can download
-- as you can see:
+- as you can see (there is no torchtext, and I'm not using fastai.nlp):
 ```python
 from fastai.text import *
 import html
 ```
+- JH is using `Path` lib, as usual; we'll learn about the tags later
+```python
+BOS = 'xbos' # beginning-of-sentence tag
+FLD = 'xfld' # data field tag
 
-- we take sentences and turn them into numbers
-- looking at transformations to images and asking "how does that apply to NLP?"
+PATH = Path('data/aclImdb/')
+```
+- you'll remember, the basic path for **NLP** is we have to take sentences and turn them into numbers, and there are a couple of steps to get there
+- at the moment, somewhat intentionally, fastai.text doesn't provide that many helper functions, it's really designed more to let you handle things in a fairly flexible way  
+- as you can see here, I wrote something called `get_texts` which goes through each thing in "classes".  These are the 3 things they have in classes: negative, positive and unsupervised (stuff they haven't gotten around to labeling yet)
+```python
+CLASSES = ['neg', 'pos', 'unsup']
 
+def get_texts(path):
+    texts,labels = [],[]
+    for idx,label in enumerate(CLASSES):
+        for fname in (path/label).glob('*.*'):
+            texts.append(fname.open('r', encoding='utf-8').read())
+            labels.append(idx)
+    return np.array(texts),np.array(labels)
+
+trn_texts,trn_labels = get_texts(PATH/'train')
+val_texts,val_labels = get_texts(PATH/'test')
+```
 - 
 
 
