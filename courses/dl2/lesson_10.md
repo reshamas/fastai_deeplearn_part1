@@ -125,13 +125,15 @@ val_texts,val_labels = get_texts(PATH/'test')
 - one thing that is always a good idea is to sort things randomly
 - it's useful to know this simple trick for sorting things randomly, particularly when you've got multiple things that you have to sort the same way
 - in this case, you've got labels and texts
-- 
+- `np.random.permutation` if you give it an integer, it gives you a random list from 0 up to the number you give it (not including the number), in some random order, and so you can pass that in as an indexer.
 ```python
 np.random.seed(42)
 trn_idx = np.random.permutation(len(trn_texts))
 val_idx = np.random.permutation(len(val_texts))
 ```
-
+- to give you a list that is sorted in that random order
+- in this case, it will sort `trn_texts` and `trn_labels` in the same random way
+- that's a useful little idiom to use
 ```python
 trn_texts = trn_texts[trn_idx]
 val_texts = val_texts[val_idx]
