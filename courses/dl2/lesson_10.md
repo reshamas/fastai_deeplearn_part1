@@ -121,7 +121,7 @@ val_texts,val_labels = get_texts(PATH/'test')
 - so there are 75000 in train, 25000 in test (50,000 of the train are unsupervised); we won't actually be able to use them when we get to the classification piece
 - JH actually finds this easier than the torchtext approach of having lots of layers and wrappers and stuff, because at the end, reading text files is not that hard
 
-#### Sorting
+#### Sorting `00:23:20`
 - one thing that is always a good idea is to sort things randomly
 - it's useful to know this simple trick for sorting things randomly
 ```python
