@@ -146,10 +146,27 @@ val_labels = val_labels[val_idx]
 - Why am I doing this?  Because there is a somewhat standard approach starting to appear for text classication datasets, which is to have your training set as a csv file, 
   - with the labels first, and the text of the NLP document second   `col_names = ['labels', 'text']`
   - with a train.csv and a test.csv
-  - and a file called `classes.txt` which 
+  - and a file called `classes.txt` which just lists the classes
+  - it is somewhat standard
+  - in a reasonably recent academic paper, Yann LeCun and a team of researchers looked at quite a few datasets, and they used this format for all of them 
+  - that's what JH has started using as well for his recent papers
 ```python
 df_trndf_trn  ==  pdpd..DataFrameDataFrame({'text':trn_texts, 'labels':trn_labels}, columns=col_names)
 df_val = pd.DataFrame({'text':val_texts, 'labels':val_labels}, columns=col_names)
+```
+- **if you put your data into this format, you'll find that the whole notebook will work on your dataset, every time!**
+- so, rather than having a thousand different classes or formats or readers and writers or whatever; let's pick a standard format and your job is to put your data into that format which is a csv file
+- **the csv files have no header, by default**
+- you'll notice at the start, there are two different paths:
+  - one was the classification path
+  - other was the language model path
+  
+```python
+CLAS_PATH=Path('data/imdb_clas/')
+CLAS_PATH.mkdir(exist_ok=True)
+
+LM_PATH=Path('data/imdb_lm/')
+LM_PATH.mkdir(exist_ok=True)
 ```
 
 ###
