@@ -158,8 +158,13 @@ df_val = pd.DataFrame({'text':val_texts, 'labels':val_labels}, columns=col_names
 - so, rather than having a thousand different classes or formats or readers and writers or whatever; let's pick a standard format and your job is to put your data into that format which is a csv file
 - **the csv files have no header, by default**
 - you'll notice at the start, there are two different paths:
-  - one was the classification path
-  - other was the language model path
+  - one was the classification path --> contains info we'll use to create the sentiment analysis model
+  - other was the language model path (lm = language model) --> info to create language model
+- when we create the `CLAS_PATH/'train.csv'`, we remove everything that has a label of 2 (which is "unsupervised")
+- so that means the data we use will have 25K positive and 25K negative 
+- and the second difference is the labels we will use for the classification part are the actual labels
+- but, for the language model, there are no labels, so we just use a bunch of zero's
+- 
   
 ```python
 CLAS_PATH=Path('data/imdb_clas/')
