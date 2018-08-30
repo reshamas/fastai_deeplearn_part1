@@ -160,18 +160,22 @@ df_val = pd.DataFrame({'text':val_texts, 'labels':val_labels}, columns=col_names
 - you'll notice at the start, there are two different paths:
   - one was the classification path --> contains info we'll use to create the sentiment analysis model
   - other was the language model path (lm = language model) --> info to create language model
-- when we create the `CLAS_PATH/'train.csv'`, we remove everything that has a label of 2 (which is "unsupervised")
-- so that means the data we use will have 25K positive and 25K negative 
-- and the second difference is the labels we will use for the classification part are the actual labels
-- but, for the language model, there are no labels, so we just use a bunch of zero's
-- 
-  
+- when we create the `CLAS_PATH/'train.csv'`, we remove everything that has a label of 2 (which is "unsupervised")  
 ```python
 CLAS_PATH=Path('data/imdb_clas/')
 CLAS_PATH.mkdir(exist_ok=True)
 
 LM_PATH=Path('data/imdb_lm/')
 LM_PATH.mkdir(exist_ok=True)
+```
+- so that means the data we use will have 25K positive and 25K negative 
+- and the second difference is the labels we will use for the classification part are the actual labels
+- but, for the language model, there are no labels, so we just use a bunch of zero's; that just makes it easier so we can use a consistent dataframe, or csv format
+- now, the language model, we can create our own validation set, so you have probably come across by now `sklearn.model_selection.train_test_split(np.concatenate([trn_texts, val_texts]), test_size = 0.1)` which is a simple little function which grabs a dataset and randomly splits it into a training set and validation set, according to whatever proportion is specified by `test_size=0.1` (10%)
+- in this case, I concatenate my training and validation 
+```python
+trn_texts,val_texts = sklearn.model_selection.train_test_split(
+    np.concatenate([trn_texts,val_texts]), test_size=0.1)
 ```
 
 ###
