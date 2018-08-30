@@ -123,11 +123,21 @@ val_texts,val_labels = get_texts(PATH/'test')
 
 #### Sorting `00:23:20`
 - one thing that is always a good idea is to sort things randomly
-- it's useful to know this simple trick for sorting things randomly
+- it's useful to know this simple trick for sorting things randomly, particularly when you've got multiple things that you have to sort the same way
+- in this case, you've got labels and texts
+- 
 ```python
 np.random.seed(42)
 trn_idx = np.random.permutation(len(trn_texts))
 val_idx = np.random.permutation(len(val_texts))
+```
+
+```python
+trn_texts = trn_texts[trn_idx]
+val_texts = val_texts[val_idx]
+
+trn_labels = trn_labels[trn_idx]
+val_labels = val_labels[val_idx]
 ```
 
 ###
