@@ -141,6 +141,16 @@ val_texts = val_texts[val_idx]
 trn_labels = trn_labels[trn_idx]
 val_labels = val_labels[val_idx]
 ```
+- now, I've got my texts and labels sorted
+- I can go ahead and create a dataframe from them
+- Why am I doing this?  Because there is a somewhat standard approach starting to appear for text classication datasets, which is to have your training set as a csv file, 
+  - with the labels first, and the text of the NLP document second   `col_names = ['labels', 'text']`
+  - with a train.csv and a test.csv
+  - and a file called `classes.txt` which 
+```python
+df_trndf_trn  ==  pdpd..DataFrameDataFrame({'text':trn_texts, 'labels':trn_labels}, columns=col_names)
+df_val = pd.DataFrame({'text':val_texts, 'labels':val_labels}, columns=col_names)
+```
 
 ###
 
