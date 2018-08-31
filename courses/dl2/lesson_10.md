@@ -180,9 +180,22 @@ trn_texts,val_texts = sklearn.model_selection.train_test_split(
 - that's my basic setup, get my data in a standard format for my language model and my classifier
 
 ### Language Model Tokens `00:28:00`
-- 
+- the next thing we do is tokenization
+- tokenization means, for a document, we've got a big long string, and we want to turn it into a **list of tokens**, which are *kind of*, a list of words, but not quite.  For example "don't", we want it to be:  "do n't" and a period / "<full stop>" to also be a token, and so forth
+- so, tokenization is something we passed off to a terrific library called [spacy](https://spacy.io), partly terrific because an Australian wrote it, [Matthew Honnibal](https://twitter.com/honnibal), and partly terrific because it is good at what it does
+- we put some work on top of spacy, but the vast majority of work done has been by spacy
+- before we pass it to spacy, JH has written this simple 
 
+```python
+re1 = re.compile(r'  +')
 
+def fixup(x):
+    x = x.replace('#39;', "'").replace('amp;', '&').replace('#146;', "'").replace(
+        'nbsp;', ' ').replace('#36;', '$').replace('\\n', "\n").replace('quot;', "'").replace(
+        '<br />', "\n").replace('\\"', '"').replace('<unk>','u_n').replace(' @.@ ','.').replace(
+        ' @-@ ','-').replace('\\', ' \\ ')
+    return re1.sub(' ', html.unescape(x))
+```
 
 
 
