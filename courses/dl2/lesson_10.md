@@ -172,11 +172,12 @@ LM_PATH.mkdir(exist_ok=True)
 - and the second difference is the labels we will use for the classification part are the actual labels
 - but, for the language model, there are no labels, so we just use a bunch of zero's; that just makes it easier so we can use a consistent dataframe, or csv format
 - now, the language model, we can create our own validation set, so you have probably come across by now `sklearn.model_selection.train_test_split(np.concatenate([trn_texts, val_texts]), test_size = 0.1)` which is a simple little function which grabs a dataset and randomly splits it into a training set and validation set, according to whatever proportion is specified by `test_size=0.1` (10%)
-- in this case, I concatenate my training and validation 
+- in this case, I concatenate my classification training and validation together, so it is 100K together, split it by 10%, now I've got 90K training, 10K validation for my language model, so go ahead and save that
 ```python
 trn_texts,val_texts = sklearn.model_selection.train_test_split(
     np.concatenate([trn_texts,val_texts]), test_size=0.1)
 ```
+- that's my basic, get my data in a standard format
 
 ###
 
