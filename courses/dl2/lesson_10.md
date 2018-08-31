@@ -184,8 +184,8 @@ trn_texts,val_texts = sklearn.model_selection.train_test_split(
 - tokenization means, for a document, we've got a big long string, and we want to turn it into a **list of tokens**, which are *kind of*, a list of words, but not quite.  For example "don't", we want it to be:  "do n't" and a period / "<full stop>" to also be a token, and so forth
 - so, tokenization is something we passed off to a terrific library called [spacy](https://spacy.io), partly terrific because an Australian wrote it, [Matthew Honnibal](https://twitter.com/honnibal), and partly terrific because it is good at what it does
 - we put some work on top of spacy, but the vast majority of work done has been by spacy
-- before we pass it to spacy, JH has written this simple 
-
+- before we pass it to spacy, JH has written this simple **fixup** function which... each time JH opens a dataset, and has looked at *many*, everyone had different weird things that needed to be replaced.
+- Here are all the ones JH has come up with so far:
 ```python
 re1 = re.compile(r'  +')
 
@@ -196,6 +196,10 @@ def fixup(x):
         ' @-@ ','-').replace('\\', ' \\ ')
     return re1.sub(' ', html.unescape(x))
 ```
+- hopefully, this will help you out as well
+- `html_escape` all the entities
+- and then there's a bunch more things that get replaced
+- have a look at the result of the text you are using and make sure there are not more weird things in the data
 
 
 
