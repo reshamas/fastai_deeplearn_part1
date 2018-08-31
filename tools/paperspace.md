@@ -11,8 +11,13 @@ These notes correspond to first 12 minutes of lesson 1 video.
 * Paperspace runs on their own machines (unlike Crestle, which runs on top of AWS)
 
 ## Summary of Charges
-- STORAGE:  `250 GB ($7/month)` or `50 GB ($5/month)` 
-- USAGE:  `$0.65/hr` (P5000)
+- STORAGE
+    - `50 GB ($5/month)`
+    - `100 GB ($7/month)`
+    - `250 GB ($10/month)` 
+- USAGE
+    - P4000/GPU:  `$0.51/hr`
+    - P5000:  `$0.78/hr`
 - PUBLIC IP ADDRESS:  `$3/month` (single static IP address)
 
 Note:  There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is only for fastai students.**  
