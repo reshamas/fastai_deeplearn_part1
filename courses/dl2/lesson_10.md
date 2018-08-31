@@ -177,9 +177,10 @@ LM_PATH.mkdir(exist_ok=True)
 trn_texts,val_texts = sklearn.model_selection.train_test_split(
     np.concatenate([trn_texts,val_texts]), test_size=0.1)
 ```
-- that's my basic, get my data in a standard format
+- that's my basic setup, get my data in a standard format for my language model and my classifier
 
-###
+### Language Model Tokens `00:28:00`
+- 
 
 
 
