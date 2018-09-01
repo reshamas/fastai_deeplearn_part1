@@ -310,4 +310,26 @@ freq.most_common(25)
  ```
  - generally speaking, we don't want every unique token in our vocabulary
  - if it doesn't appear at least 2 times, then it might just be a spelling mistake, or a word, we can't learn anything about it if it doesn't appear that often
+ - also the stuff we're going to learn about in this part gets a bit clunky once you've got a vocabulary bigger than 60,000
+ - time permitting, we may look at some work I've been doing recently on handling larger vocabularies, otherwise that may come in a future course
+ - but, actually for classification I've discovered that doing more than 60,000 words doesn't seem to help anyway, so we're going to limit our vocabulary to 60K words and things that appear at least twice
+ ```python
+max_vocab = 60000
+min_freq = 2
+```
+- and here's a simple way to do that; use that `.most_common`
+- pass in the `max_vocab` size; that will sort it by the frequency, by the way
+- and if it appears less often than a specified minimum frequency, don't bother with it
+```python
+itositos  ==  [[oo  forfor  oo,,cc  inin  freqfreq..most_commo(max_vocab) if c>min_freq]
+itos.insert(0, '_pad_')
+itos.insert(0, '_unk_')
+```
+- that gives us "itos", that's the same name that torchtext used
+- that means "integer to string"
+- so this is just the list of tokens, unique tokens in the vocab
+- JH is going to insert 2 more tokens
+  - one for unknown
+  - one for padding
+- then, we can create 
  
