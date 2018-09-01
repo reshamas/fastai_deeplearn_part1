@@ -215,7 +215,7 @@ def get_texts(df, n_lbls=1):
 
 #### 
 - this function called `get_all` which will call `get_text` which calls `fixup`
-- let's look thru this because there are some interesting things I want to point out
+- let's look thru this because there are some interesting things to point out
 ```python
 def get_all(df, n_lbls):
     tok, labels = [], []
@@ -226,7 +226,9 @@ def get_all(df, n_lbls):
         labels += labels_
     return tok, labels
 ```
-
+- I'm going to use pandas to open our `train.csv` from the language model path (`LM_PATH`)
+- I am passing an extra parameter you may not have seen before `chunksize` 
+- Python and Pandas can both be pretty inefficient when it comes to 
 ```python
 df_trn = pd.read_csv(LM_PATH/'train.csv', header=None, chunksize=chunksize)
 df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
