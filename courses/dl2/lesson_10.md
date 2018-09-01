@@ -331,5 +331,27 @@ itos.insert(0, '_unk_')
 - JH is going to insert 2 more tokens
   - one for unknown
   - one for padding
-- then, we can create 
- 
+- then, we can create the dictionary which goes in the opposite direction, so it is `stoi` (string to INT), and that won't cover everything because we intentionally truncated it down to 60K words
+- and so if we come across something that is not in the dictionary, we want to replace it with zero for "unknown", so we can use a `defaultdict` for that with a lambda function that always returns 0 
+- so you can see all these things we're using that keep coming back up 
+```python
+stoi = collections.defaultdict(lambda:0, {v:k for k,v in enumerate(itos)})
+len(itos)
+```
+- `40:50` so not that we have our `stoi` dictionary defined, we can just call that for every word for every sentence
+```python
+trn_lm = np.array([[stoi[o] for o in p] for p in tok_trn])
+val_lm = np.array([[stoi[o] for o in p] for p in tok_val])
+```
+- and now here is our **numericalized version**
+```bash
+'40 41 42 39 279 320 13
+```
+- and so, of course the nice again is we can save that step as well
+- and each time we get to a step, we can save it. and these are not very big files, compared to what you are used to with images
+```python
+np.save(LM_PATH/'tmp'/'trn_ids.npy', trn_lm)
+np.save(LM_PATH/'tmp'/'val_ids.npy', val_lm)
+pickle.dump(itos, open(LM_PATH/'tmp'/'itos.pkl', 'wb'))
+```
+
