@@ -228,9 +228,12 @@ def get_all(df, n_lbls):
 ```
 - I'm going to use pandas to open our `train.csv` from the language model path (`LM_PATH`)
 - I am passing an extra parameter you may not have seen before `chunksize` 
-- Python and Pandas can both be pretty inefficient when it comes to 
+- Python and Pandas can both be pretty inefficient when it comes to storing and using text data
+- You will see that very few people working with NLP are using large corpuses, and I think part of the reason is that traditional tools have made it difficult; you run out of memory all the time
+- So, this process I am showing you today I have used on corpuses of over a billion words, successfully using this exact code
 ```python
 df_trn = pd.read_csv(LM_PATH/'train.csv', header=None, chunksize=chunksize)
 df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
 ```
+- 
 
