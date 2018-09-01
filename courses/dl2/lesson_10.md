@@ -236,5 +236,9 @@ df_trn = pd.read_csv(LM_PATH/'train.csv', header=None, chunksize=chunksize)
 df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
 ```
 - and so, one of the simple tricks is to use this thing called `chunksize` with pandas
-- what this means is pandas does not return a dataframe, but it returns an iterator which we can iterate thru chunks
+- what this means is pandas does not return a dataframe, but it returns an iterator which we can iterate thru chunks of a dataframe
+- that's why JH doesn't say `tok_trn` = get_texts; instead JH calls `get_all`, which loops through the dataframe; but what it is actually doing is **looping through chunks of the dataframe**.
+- each of those chunks is a dataframe representing subsets of the data
+- Rachel:  when I'm working with NLP data, many times I come across data with foreign text or characters.  Is it better to discard them or keep them?
+- JH:  No, definitely keep them.  And this whole process is unicode and JH has used it on Chinese text.  And it is designed to pretty much work on 
 
