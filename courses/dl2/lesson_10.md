@@ -258,7 +258,7 @@ df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
   - It's a really handy thing to have.  Now that the code is here, feel free to look inside it and take advantage of it for your own stuff
   - remember, we all have multi-processors, multiple cores even on our laptops and very few things in Python take advantage of it unless you make a bit of an effort to make it work
   
-### `00:35:30` 
+#### `00:35:30` 
 - so there a couple of tricks to get things working quickly and reliably
 - as it runs, it prints out how it's going
 - and so here's the result at the end, beginning of string token "xbos" and "xfld".  Here's the tokenized text.  You'll see that the punctuation on the whole is a separate token 
@@ -267,4 +267,47 @@ df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
 - so, how do you fix this so you both get the semantic impact of "I'M SHOUTING NOW" but not have every single word have to learn the shouted version vs the normal version
 - and so, the idea I came up with, and I'm sure other people have done this too, is to come up with a unique token t_up, to mean the next thing is all upper case
 - so, then I lower case it and then we can learn the semantic meaning of all upper case
-- and so, I've done a similar thing. If you've got 29 
+- and so, I've done a similar thing. If you've got like 29 exclamation marks in a row, we don't learn a separate token for 29 !, instead I put in a special token for "the next thing repeats lots of times", and then I put the number 29, and then the "!"
+- and so, there are a few little tricks like that. If you're interested in NLP, have a look at the code for tokenizer for these little tricks I've added in, because some of them are kind of fun.
+
+#### `00:37:40` Saving Tokenization
+- so, the nice thing with doing things this way, we can just `np.save` that and load it back up later
+- we don't have to recalculate all this stuff each time like we tend to have to do with torchtext or a lot of other libraries
+```python
+np.savesave((LM_PATHLM_PATH//'tmp''tmp'//'tok_trn.npy''tok_trn. , tok_trn)
+np.save(LM_PATH/'tmp'/'tok_val.npy', tok_val)
+```
+- load it later
+```python
+tok_trn = np.load(LM_PATH/'tmp'/'tok_trn.npy')
+tok_val = np.load(LM_PATH/'tmp'/'tok_val.npy')
+```
+
+####  `00:38:00` Turning Text into Numbers
+- we've not got it tokenized
+- the next thing is to turn the text into numbers which we call **numericalizing** it
+- and the way we numericalize it is very simple:  we make a list of all the words that appear, in some order.  
+- and then we replace every word with its index into that list
+- this list of all the words that appear, OR the **tokens** that appear, we call the **vocabulary**
+- here's an example of some of that vocabulary
+- the `Counter` class in Python is very handy for this.  It basically gives us a list of unique items and their counts
+- here is a list of the 25 most common tokens in the vocabulary
+```python
+freq = Counter(p for o in tok_trn for p in o)
+freq.most_common(25)
+```
+```bash
+[('the', 1207984),
+ ('.', 991762),
+ (',', 985975),
+ ('and', 587317),
+ ('a', 583569),
+ ('of', 524362),
+ ('to', 484813),
+ ('is', 393574),
+ ('it', 341627),
+ ('in', 337461),
+ ```
+ - generally speaking, we don't want every unique token in our vocabulary
+ - if it doesn't appear at least 2 times, then it might just be a spelling mistake, or a word, we can't learn anything about it if it doesn't appear that often
+ 
