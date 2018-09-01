@@ -235,5 +235,6 @@ def get_all(df, n_lbls):
 df_trn = pd.read_csv(LM_PATH/'train.csv', header=None, chunksize=chunksize)
 df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
 ```
-- 
+- and so, one of the simple tricks is to use this thing called `chunksize` with pandas
+- what this means is pandas does not return a dataframe, but it returns an iterator which we can iterate thru chunks
 
