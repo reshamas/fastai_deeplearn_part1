@@ -199,7 +199,32 @@ def fixup(x):
 - hopefully, this will help you out as well
 - `html_escape` all the entities
 - and then there's a bunch more things that get replaced
-- have a look at the result of the text you are using and make sure there are not more weird things in the data
+- have a look at the result of the text you are using and make sure there are not more weird tokens in there, it's amazing how many weird things people do to text
+- `get_texts` function
+```python
+def get_texts(df, n_lbls=1):
+    labels = df.iloc[:,range(n_lbls)].values.astype(np.int64)
+    texts = f'\n{BOS} {FLD} 1 ' + df[n_lbls].astype(str)
+    for i in range(n_lbls+1, len(df.columns)): texts += f' {FLD} {i-n_lbls} ' + df[i].astype(str)
+    texts = list(texts.apply(fixup).values)
+
+    tok = Tokenizer().proc_all_mp(partition_by_cores(texts))
+    return tok, list(labels)
+```
+
+#### 
+- this function called `get_all` which will call `get_text` which calls `fixup`
+- 
+```python
+def get_all(df, n_lbls):
+    tok, labels = [], []
+    for i, r in enumerate(df):
+        print(i)
+        tok_, labels_ = get_texts(r, n_lbls)
+        tok += tok_;
+        labels += labels_
+    return tok, labels
+```
 
 
 
