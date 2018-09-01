@@ -249,5 +249,9 @@ df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
   - ? Ditto, Devo is quite often text has multiple fields, like a title, abstract and then the main document.  And so, by the same token, I've got this thing here (`get_texts`) which actually lets us have multiple fields in our csv.  
   - So this process is designed to be very flexible, and again, at the start of each one we put a special field starts here token, followed by the number of the field that's starting here, for as many fields as we have
   - then we apply fixup to it, and then most importantly, we tokenize it, and we tokenize it by doing a process or multiprocessor, or multi-processing, I should say.  
-  - And, so, tokenizing tends to be pretty slow, but we've all got multiple cores on our machines now, and some of the better machines on AWS
+  - And, so, tokenizing tends to be pretty slow, but we've all got multiple cores on our machines now, and some of the better machines on AWS and stuff can have dozens of cores.  Here, on a university computer, we have 56 cores.
+  - Spacey is not very amenable to multi-processing, but I finally figured out how to get it to work. And the good news is it's all wrapped up in one function now.  `tok = Tokenizer().proc_all_mp(partition_by_cores(texts))`
+  - And so all you need to pass to that one function is a list of things to tokenize which each part of that list will be tokenized on a different core
+  - and so I've also created this function called `partition_by_cores` which takes a list, and splits it into sub-lists, where the number of sub-lists is the number of cores you have in your computer
+  
 
