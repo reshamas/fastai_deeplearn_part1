@@ -252,6 +252,19 @@ df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
   - And, so, tokenizing tends to be pretty slow, but we've all got multiple cores on our machines now, and some of the better machines on AWS and stuff can have dozens of cores.  Here, on a university computer, we have 56 cores.
   - Spacey is not very amenable to multi-processing, but I finally figured out how to get it to work. And the good news is it's all wrapped up in one function now.  `tok = Tokenizer().proc_all_mp(partition_by_cores(texts))`
   - And so all you need to pass to that one function is a list of things to tokenize which each part of that list will be tokenized on a different core
-  - and so I've also created this function called `partition_by_cores` which takes a list, and splits it into sub-lists, where the number of sub-lists is the number of cores you have in your computer
+  - and so I've also created this function called `partition_by_cores` which takes a list, and splits it into sub-lists, where the number of sub-lists is the number of cores that you have in your computer
+  - so, on my machine, without multi-processing, this takes about **1.5 hours**
+  - with multi-processing, it takes about **2 minutes**
+  - It's a really handy thing to have.  Now that the code is here, feel free to look inside it and take advantage of it for your own stuff
+  - remember, we all have multi-processors, multiple cores even on our laptops and very few things in Python take advantage of it unless you make a bit of an effort to make it work
   
-
+### `00:35:30` 
+- so there a couple of tricks to get things working quickly and reliably
+- as it runs, it prints out how it's going
+- and so here's the result at the end, beginning of string token "xbos" and "xfld".  Here's the tokenized text.  You'll see that the punctuation on the whole is a separate token 
+- you'll see there's a few interesting things.  one is this: "t_up mgm".  "mgm" was obviously originally capitalized.  but, the interesting this is that, normally people often lower case everything, or they leave the case as is.  Now, if you leave the case as is, then, "SCREW YOU" or "screw you" are two totally different sets of tokens that have to be learned from scratch
+- or, if you lower case them all, then there's no difference at all
+- so, how do you fix this so you both get the semantic impact of "I'M SHOUTING NOW" but not have every single word have to learn the shouted version vs the normal version
+- and so, the idea I came up with, and I'm sure other people have done this too, is to come up with a unique token t_up, to mean the next thing is all upper case
+- so, then I lower case it and then we can learn the semantic meaning of all upper case
+- and so, I've done a similar thing. If you've got 29 
