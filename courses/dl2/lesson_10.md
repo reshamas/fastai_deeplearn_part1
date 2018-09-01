@@ -240,5 +240,10 @@ df_val = pd.read_csv(LM_PATH/'test.csv', header=None, chunksize=chunksize)
 - that's why JH doesn't say `tok_trn` = get_texts; instead JH calls `get_all`, which loops through the dataframe; but what it is actually doing is **looping through chunks of the dataframe**.
 - each of those chunks is a dataframe representing subsets of the data
 - Rachel:  when I'm working with NLP data, many times I come across data with foreign text or characters.  Is it better to discard them or keep them?
-- JH:  No, definitely keep them.  And this whole process is unicode and JH has used it on Chinese text.  And it is designed to pretty much work on 
+- JH:  No, definitely keep them.  And this whole process is unicode and JH has used it on Chinese text.  And it is designed to pretty much work on anything;  
+- In general, most of the time it's not a good idea to **remove anything**.  Old fashioned NLP approaches tend to do things like lemmatization, and all these normalization steps to get rid of things, like lower case everything, etc.  
+- But, **that's throwing away information** which you don't know ahead of time whether it's useful or not. 
+- So, **don't throw away information**
+- `00:32:20` so, we go through each chunck, `get_all`, each of which is a dataframe;  we call `get_texts`.  `get_texts` is going to grab labels, make them into ints, it's going to then grab texts, and I'll point out a couple of things:
+  1.  the first is that before we include the text, we have the `\n{BOS}` beginning-of-stream token, which you might remember we used way back earlier.  
 
