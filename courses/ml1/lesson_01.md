@@ -1,8 +1,9 @@
 
 # Lesson 1 - random forests
 
-
-Notebook:  [lesson1-rf.ipynb](https://github.com/fastai/fastai/blob/master/courses/ml1/lesson1-rf.ipynb)  
+- Length:  01:18
+- Video:  https://www.youtube.com/watch?v=CzdWqFTmn0Y&feature=youtu.be
+- Notebook:  [lesson1-rf.ipynb](https://github.com/fastai/fastai/blob/master/courses/ml1/lesson1-rf.ipynb)  
 
 ---
 
