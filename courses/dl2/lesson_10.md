@@ -374,5 +374,19 @@ itos = pickle.load(open(LM_PATH/'tmp'/'itos.pkl', 'rb'))
 - Well, we're not going far enough, because IMDb movie reviews are not that different to any other English document
 - you know, compared to how different they are to a random string, or even to a Chinese document
 - So, just like ImageNet allowed us to train things that recognized stuff that kind of looks like pictures, and we could use it on stuff that was nothing to do with imagenet, like satellite images, why don't we train a **language model** that is good at English, and then fine tune it to be good at movie reviews?
-- this basic insight
-
+- `43:40` this basic insight led me to try building a language model on wikipedia
+- my friend Steven Merity (https://twitter.com/smerity?lang=en) has already processed wikipedia, found a subset of..nearly.. the most overt, but throwing away the stupid little articles, so most of the bigger articles, and he calls it wikitext 103.
+- so I grabbed wikitext103 and I trained a language model on it
+- and I used exactly the same approach I'm about to show you for training an IMDb model, but instead I've trained a wikitext103 model
+- and then I saved it, and I've made it available for anybody who wants to use it at this url: 
+```bash
+# ! wget -nH -r -np -P {PATH} http://files.fast.ai/models/wt103/# ! wge
+```
+- this is not a url for wikitext 103 the document, this is the wikitext103 **language model**
+- the idea is, let's train an IMDb language model, which starts with **these weights**
+```python
+PRE_PATHPRE_PAT  = PATH/'models'/'wt103'
+PRE_LM_PATH = PRE_PATH/'fwd_wt103.h5'
+```
+- hopefully to you folks, this is an extremely obvious, extremely non-controversial idea
+- 
