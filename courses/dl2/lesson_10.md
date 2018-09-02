@@ -370,5 +370,9 @@ itos = pickle.load(open(LM_PATH/'tmp'/'itos.pkl', 'rb'))
 ### `42:15` wikitext103 conversion
 - Instead of pretraining on ImageNet, **for NLP** we can pretrain on a large subset of Wikipedia
 - here's a kind of a new insight that is now new at all, which is that we'd like to pretrain something
-- we know from Lesson 4 that if we pretrain our classifier by first creating a language model
+- we know from Lesson 4 that if we pretrain our classifier by first creating a language model and then fine-tuning that as a classifier, that is helpful.  You remember, that actually got us a new state of the art result!  We got the best IMDb classifier result that had ever been published, *by quite a bit*
+- Well, we're not going far enough, because IMDb movie reviews are not that different to any other English document
+- you know, compared to how different they are to a random string, or even to a Chinese document
+- So, just like ImageNet allowed us to train things that recognized stuff that kind of looks like pictures, and we could use it on stuff that was nothing to do with imagenet, like satellite images, why don't we train a **language model** that is good at English, and then fine tune it to be good at movie reviews?
+- this basic insight
 
