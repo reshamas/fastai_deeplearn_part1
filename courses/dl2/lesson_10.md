@@ -348,10 +348,27 @@ val_lm = np.array([[stoi[o] for o in p] for p in tok_val])
 '40 41 42 39 279 320 13
 ```
 - and so, of course the nice again is we can save that step as well
-- and each time we get to a step, we can save it. and these are not very big files, compared to what you are used to with images
+- and each time we get to a step, we can save it. and these are not very big files, compared to what you are used to with images, text is generally pretty small
+- very important to also save that vocabulary
+- because this list of numbers means nothing, unless you know what each number refers to, and that's what 'itos' tells you
+- so you save those 3 things, and later on you can load them
 ```python
 np.save(LM_PATH/'tmp'/'trn_ids.npy', trn_lm)
 np.save(LM_PATH/'tmp'/'val_ids.npy', val_lm)
 pickle.dump(itos, open(LM_PATH/'tmp'/'itos.pkl', 'wb'))
 ```
+- load back in
+```python
+trn_lm = np.load(LM_PATH/'tmp'/'trn_ids.npy')
+val_lm = np.load(LM_PATH/'tmp'/'val_ids.npy')
+itos = pickle.load(open(LM_PATH/'tmp'/'itos.pkl', 'rb'))
+```
+- so, now our vocab size is 60,002 and our training language model has 90,000 documents in it
+- that's the pre-processing you can do.  we can wrap more of that in the utility functions if you want to, but it's all very straightforward 
+- basically that exact code will work for any dataset you have once you've got it in that csv format
+
+### `42:15` wikitext103 conversion
+- Instead of pretraining on ImageNet, **for NLP** we can pretrain on a large subset of Wikipedia
+- here's a kind of a new insight that is now new at all, which is that we'd like to pretrain something
+- we know from Lesson 4 that if we pretrain our classifier by first creating a language model
 
