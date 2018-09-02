@@ -1,8 +1,8 @@
 # Lesson 5
 
-Length: 01:40  
-
-Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/blob/master/courses/ml1/lesson2-rf_interpretation.ipynb)  
+- Length: 01:40  
+- Video:  https://www.youtube.com/watch?v=3jl2h9hSRvc&feature=youtu.be
+- Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/blob/master/courses/ml1/lesson2-rf_interpretation.ipynb)  
 
 ---
 ## Review
@@ -54,16 +54,10 @@ Notebook:  [lesson2-rf_interpretation.ipynb](https://github.com/fastai/fastai/bl
 - Suraj idea: maybe we should train a recent period only; downside, we're using less data, create a less-rich model
 - most machine learning functions have ability to provide a weight to each row of data
 - for example for RF, instead of bootstrapping, could have a weight on each row and randomly pick that row with some probability, so the most recent rows have a higher probability of being selected; that can work very well; it's something you have to try, and if you don't have a validation set that represents the future (compared to what you're training on), then you have no way of knowing how your techniques are working
-  - you make a compromise between amount of data vs recency of data?
-- JH:  what Jeremy tends to do when he has temporal data, which is probably most of the time, he once he gets something working well on the validation set, he wouldn't just go and use the model on the test set, because the thing I've trained on is (test set) much more in the future; this time he would replicate building the model again, this time combine the train and validation sets, and retrain the model. - at that point, you've got no way to test against a validation set so you have to make sure you have a reproducible script or notebook that does exactly the same steps in exactly the same ways because if you get something wrong then you're going to find on the test set that you've got a problem; so what I (JH) does in practice is I need to know is my validation set a truly representative of 
+  - `21:15` you make a compromise between amount of data vs recency of data?
+- JH:  what Jeremy tends to do when he has temporal data, which is probably most of the time, he once he gets something working well on the validation set, he wouldn't just go and use the model on the test set, because the thing I've trained on is (test set) much more in the future; this time he would replicate building the model again, this time combine the train and validation sets, and retrain the model. - at that point, you've got no way to test against a validation set so you have to make sure you have a reproducible script or notebook that does exactly the same steps in exactly the same ways because if you get something wrong then you're going to find on the test set that you've got a problem; 
+- `22:10` so what I (JH) does in practice is I need to know is my validation set a truly representative of 
 - 
-- 
-
-  
-  
 
 
 
----
-## Topics
--  
