@@ -413,4 +413,10 @@ wgts = torch.load(PRE_LM_PATH, map_location=lambda storage, loc: storage)
 ```
 - we don't normally use `torch.load` but that's the PyTorch way of grabbing the file
 - and it basically gives you a dictionary containing the name of the layer and a tensor of those weights, or an array of those weights
-- now, here's the problem.  That wikitext language model was built with a certain vocabulary which was not the same as this one was built on, 
+- now, here's the problem.  That wikitext language model was built with a certain vocabulary which was not the same as this one was built on, so, my number 40 is not the same as wikitext 103 model's number 40.  
+- we need to map one to the other.  That's very, very simple, because luckily I saved the `itos` for the wikitext vocab, right?  So, here's the list of what each word is when I train the wikitext 103 model.  And so we can do the same `defaultdict` trick to map it in reverse.  And I am going to use `-1` to mean that it's not in the wikitext dictionary.
+```python
+itos2 = pickle.load((PRE_PATH/'itos_wt103.pkl').open('rb'))
+stoi2 = collections.defaultdict(lambda:-1, {v:k for k,v in enumerate(itos2)})
+```
+- and now, we can just say, ok, my new set of weights
