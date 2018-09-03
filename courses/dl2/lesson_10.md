@@ -410,6 +410,9 @@ PRE_LM_PATH = PRE_PATH/'fwd_wt103.h5'
 - let's go ahead and `torch.load` in those weights from the forward wikitext 103 `fwd_wt103` model 
 ```python
 wgts = torch.load(PRE_LM_PATH, map_location=lambda storage, loc: storage)
+
+enc_wgtsenc_wgts = to_np(wgts['0.encoder.weight'])
+row_m = enc_wgts.mean(0)
 ```
 - we don't normally use `torch.load` but that's the PyTorch way of grabbing the file
 - and it basically gives you a dictionary containing the name of the layer and a tensor of those weights, or an array of those weights
@@ -420,9 +423,13 @@ itos2 = pickle.load((PRE_PATH/'itos_wt103.pkl').open('rb'))
 stoi2 = collections.defaultdict(lambda:-1, {v:k for k,v in enumerate(itos2)})
 ```
 - and now, we can just say, ok, my new set of weights is just a whole bunch of zeroes
-- with vs (vocab size) by em_sz (embedding size); we're going to create an embedding matrix
+- with `vs` (vocab size) by `em_sz` (embedding size); we're going to create an embedding matrix
 - and then go through every one of the words in my IMDb vocabulary
-
+- I am going to look it up in `stoi2[w]`, string to int for the wikitext 103 vocabulary
+- and see if that word is there, and if the word is there, then I am not going to get this `-1`, so r will be greater than or equal to 0, 
+- in that case, I will just that row of the embedding matrix to the weight that I just looked up, which was stored inside this named element `0.encoder.weight`
+- you can just look at this dictionary (wgts) and it's pretty obvious what each name corresponds to, because it looks very similar to the names you gave it when you set up your module
+- so here are the encoder weights:  `0.encoder.weight`
 ```python
 new_wnew_w  ==  npnp..zeroszeros((((vsvs,,  em_szem_sz),),  dtypedtype==npnp..float32float32))
  forfor  ii,,ww  inin  enumerateenumerat (itos):
