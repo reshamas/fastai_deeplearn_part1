@@ -413,4 +413,4 @@ wgts = torch.load(PRE_LM_PATH, map_location=lambda storage, loc: storage)
 ```
 - we don't normally use `torch.load` but that's the PyTorch way of grabbing the file
 - and it basically gives you a dictionary containing the name of the layer and a tensor of those weights, or an array of those weights
-- now, here's the problem.  That 
+- now, here's the problem.  That wikitext language model was built with a certain vocabulary which was not the same as this one was built on, 
