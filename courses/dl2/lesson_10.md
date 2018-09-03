@@ -393,4 +393,24 @@ PRE_LM_PATH = PRE_PATH/'fwd_wt103.h5'
 ### `46:05` using wikitext103
 - Here's how we do it.  
 - Grab the wikitext models
-- if you use `wget` and `-r` 
+- if you use `wget` and `-r`, it will recursively grab the whole directory; it's got a few things in it
+```python
+! wget -nH -r -np -P {PATH} http://files.fast.ai/models/wt103/
+```
+- we need to make sure that our language model has exactly the same **embedding size, number of hidden and number of layers** as my wikitext one did, otherwise we can't load the weights in 
+- so these are the numbers here
+```python
+em_sz,nh,nl = 400,1150,3
+```
+- here is our pre-trained path, and our pre-trained language model path
+```python
+PRE_PATHPRE_PAT  = PATH/'models'/'wt103'
+PRE_LM_PATH = PRE_PATH/'fwd_wt103.h5'
+```
+- let's go ahead and `torch.load` in those weights from the forward wikitext 103 `fwd_wt103` model 
+```python
+wgts = torch.load(PRE_LM_PATH, map_location=lambda storage, loc: storage)
+```
+- we don't normally use `torch.load` but that's the PyTorch way of grabbing the file
+- and it basically gives you a dictionary containing the name of the layer and a tensor of those weights, or an array of those weights
+- now, here's the problem.  That 
