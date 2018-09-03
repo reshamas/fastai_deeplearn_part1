@@ -419,4 +419,13 @@ wgts = torch.load(PRE_LM_PATH, map_location=lambda storage, loc: storage)
 itos2 = pickle.load((PRE_PATH/'itos_wt103.pkl').open('rb'))
 stoi2 = collections.defaultdict(lambda:-1, {v:k for k,v in enumerate(itos2)})
 ```
-- and now, we can just say, ok, my new set of weights
+- and now, we can just say, ok, my new set of weights is just a whole bunch of zeroes
+- with vs (vocab size) by em_sz (embedding size); we're going to create an embedding matrix
+- and then go through every one of the words in my IMDb vocabulary
+
+```python
+new_wnew_w  ==  npnp..zeroszeros((((vsvs,,  em_szem_sz),),  dtypedtype==npnp..float32float32))
+ forfor  ii,,ww  inin  enumerateenumerat (itos):
+    r = stoi2[w]
+    new_w[i] = enc_wgts[r] if r>=0 else row_m
+```
