@@ -428,11 +428,19 @@ stoi2 = collections.defaultdict(lambda:-1, {v:k for k,v in enumerate(itos2)})
 - I am going to look it up in `stoi2[w]`, string to int for the wikitext 103 vocabulary
 - and see if that word is there, and if the word is there, then I am not going to get this `-1`, so r will be greater than or equal to 0, 
 - in that case, I will just that row of the embedding matrix to the weight that I just looked up, which was stored inside this named element `0.encoder.weight`
-- you can just look at this dictionary (wgts) and it's pretty obvious what each name corresponds to, because it looks very similar to the names you gave it when you set up your module
-- so here are the encoder weights:  `0.encoder.weight`
+- these name...you can just look at this dictionary (wgts) and it's pretty obvious what each name corresponds to, because it looks very similar to the names you gave it when you set up your module
+- so here are the encoder weights:  `0.encoder.weight` -- so, grab it from the encoder weights `enc_wgts[r]` 
 ```python
-new_wnew_w  ==  npnp..zeroszeros((((vsvs,,  em_szem_sz),),  dtypedtype==npnp..float32float32))
- forfor  ii,,ww  inin  enumerateenumerat (itos):
+new_w = np.zeros((vs, em_sz), dtype=np.float32)
+for i,w in enumerate(itos):
     r = stoi2[w]
     new_w[i] = enc_wgts[r] if r>=0 else row_m
 ```
+- If I don't find it, then I will use the row mean.  In other words, here is the average `row_m = enc_wgts.mean(0)` embedding weight across all of the wikitext 103 things
+- so, that's pretty simple.  I'm going to end up with an embedding matrix for every word that's in both my vocabulary for IMDb and the wikitext 103 vocab, I will use the wikitext 103's embedding matrix weights.  For anything else, I will just use whatever was the average weight from wikitext 103 embedding matrix
+- and then I will go ahead and replace the embedding 
+
+
+
+
+
