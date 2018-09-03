@@ -452,5 +452,21 @@ wgts['1.decoder.weight'] = T(np.copy(new_w))
 
 ## Language Model `50:17`
 - let's go ahead and create our language model
-- 
+- the basic approach we are going to use, and I'm going to look into this in more detail in a moment...
+- the basic approach is I am going to concatenate all of the documents together... into a single list of tokens, of length 24,998,320 (24.98 million)
+```python
+t = len(np.concatenate(trn_lm))
+t, t//64
+```
+```bash
+(24998320, 390598)
+```
+- so, that's going to be what I pass in as my training set.  
+- for the language model, we basically just take all our documents, we concatenate them, back to back.  we continuously predict we're just going to concatenate 
+```python
+trn_dl = LanguageModelLoader(np.concatenate(trn_lm), bs, bptt)
+val_dl = LanguageModelLoader(np.concatenate(val_lm), bs, bptt)
+md = LanguageModelData(PATH, 1, vs, trn_dl, val_dl, bs=bs, bptt=bptt)
+```
+
 
