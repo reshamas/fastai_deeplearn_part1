@@ -382,11 +382,15 @@ itos = pickle.load(open(LM_PATH/'tmp'/'itos.pkl', 'rb'))
 ```bash
 # ! wget -nH -r -np -P {PATH} http://files.fast.ai/models/wt103/# ! wge
 ```
-- this is not a url for wikitext 103 the document, this is the wikitext103 **language model**
+- this is not a url for wikitext 103 the document, this is the wikitext103 **the language model**
 - the idea is, let's train an IMDb language model, which starts with **these weights**
 ```python
 PRE_PATHPRE_PAT  = PATH/'models'/'wt103'
 PRE_LM_PATH = PRE_PATH/'fwd_wt103.h5'
 ```
-- hopefully to you folks, this is an extremely obvious, extremely non-controversial idea
-- 
+- `45:00` hopefully to you folks, this is an extremely obvious, extremely non-controversial idea cause it's basically what we've done in nearly every class so far.  **But,** when I first mentioned this to people in the NLP community, I guess, June, July of last year, there couldn't have been less interest.  I asked on twitter, where a lot of the top (twitter) NLP researchers I follow and they follow me back, where I asked "hey, what about if we pre-trained a general language model?" --- no, no language is different... No, you can't do that... I don't know why you would bother anyway... I would talk to people at conferences and they say:  I'm pretty sure people have tried that, and it's stupid... There was just this, I don't know, weird ? past.  I guess because I am arrogant and [obstreperous](https://www.merriam-webster.com/dictionary/obstreperous) [definition: unruly, unmanageable], I ignored them even though they know much more about NLP than I do and just tried it anyway.  And let me show you what happened.
+
+### `46:05` using wikitext103
+- Here's how we do it.  
+- Grab the wikitext models
+- if you use `wget` and `-r` 
