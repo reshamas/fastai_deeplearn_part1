@@ -437,10 +437,20 @@ for i,w in enumerate(itos):
     new_w[i] = enc_wgts[r] if r>=0 else row_m
 ```
 - If I don't find it, then I will use the row mean.  In other words, here is the average `row_m = enc_wgts.mean(0)` embedding weight across all of the wikitext 103 things
-- so, that's pretty simple.  I'm going to end up with an embedding matrix for every word that's in both my vocabulary for IMDb and the wikitext 103 vocab, I will use the wikitext 103's embedding matrix weights.  For anything else, I will just use whatever was the average weight from wikitext 103 embedding matrix
-- and then I will go ahead and replace the embedding 
+- so, that's pretty simple.  I'm going to end up with an embedding matrix for every word that's in both my vocabulary for IMDb and the wikitext 103 vocab, I will use the wikitext 103's embedding matrix weights.  For anything else, I will just use whatever was the average weight from the wikitext 103 embedding matrix
+- and then I will go ahead and I will replace the encoder weights with that `['0.encoder.weight']  = T(new_w)`, turned into a tensor 
+```python
+wgts['0.encoder.weight'] = T(new_w)
+wgts['0.encoder_with_dropout.embed.weight'] = T(np.copy(new_w))
+wgts['1.decoder.weight'] = T(np.copy(new_w))
+```
+- we haven't talked much about weight tying, we might do so later
+- but, basically, the "decoder" `wgts['1.decoder.weight']`, the thing that turns the final prediction back into a word, uses exactly the same weights, so I pop it there as well
+- and then there is a bit of a weird thing with how we do embedding dropout, `wgts['1.decoder.weight'] = T(np.copy(new_w))`, that ends up with a whole separate copy of them for a reason that doesn't matter much
+- so, we just pop weights back where they need to go
+- this is now something, a dictionary, or a..., or a torch state we can load in
 
-
-
-
+## Language Model `50:17`
+- let's go ahead and create our language model
+- 
 
