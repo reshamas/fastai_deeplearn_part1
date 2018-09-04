@@ -490,5 +490,6 @@ learner.freeze_to(-1)
 - here, after 1 epoch (in Lesson 10), we have a **4.12 loss**
 - so, by pretraining on wikitext 103, in fact, let's go have a look (Lesson 4), we kept training and training at a different rate, eventually we got to 4.16
 - so by pre-training on wikitext 103, we have a better loss after 1 epoch, than the **best loss** we got for the language model otherwise
-- `52:40` Rachel: 
+- `52:40` Rachel: what is the wikitext 103 model?  Is it awdlstm again?  
+- JH:  yes, and we're about to dig into that again.  The way I trained it, it was literally the same lines of code as you see... here.., but without pre-training it on wikitext 103
 
