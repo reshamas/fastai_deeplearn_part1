@@ -496,4 +496,14 @@ learner.freeze_to(-1)
 ## `53:08` fastai doc project 
 - welcome back from break
 - before we go back into language models and NLP classifiers, a quick discussion about something pretty new at the moment, which is the fastai doc project: https://github.com/fastai/fastai/tree/master/docs
-- the goal of the fastai doc project is to create documentation that makes readers say, "wow
+- the goal of the fastai doc project is to create documentation that makes readers say, "wow, that's the most fantastic documentation I've ever read!"
+- and so, we have some specific ideas of how to do that, and it's the same kind of idea as top down, thoughtful, take full advantage of the medium approach, you know, interactive experimental code first that we are all familiar with
+- if you're interested in getting involved, the basic approach you can see in the docs directory
+https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
+- this is the README in the docs directory:  
+  - https://github.com/fastai/fastai/blob/master/docs/README.md
+- in there, amongst other things, there is a transforms template, transforms-tmpl.adoc
+- what the hell is "adoc"?  It is "ASCII doc"
+- how many people here have come across ASCII doc?  .... That's awesome
+- ASCII doc is ... people are laughing because there is one hand up... and it was someone in our study group here today who talked to me about ASCII doc.
+- It's like Markdown, but it's what Markdown needs to be to c
