@@ -462,11 +462,32 @@ t, t//64
 (24998320, 390598)
 ```
 - so, that's going to be what I pass in as my training set.  
-- for the language model, we basically just take all our documents, we concatenate them, back to back.  we continuously predict we're just going to concatenate 
+- for the language model, we basically just take all our documents, we concatenate them, back to back.  we are going to continuously predict... what's the next word after these words? what's the next word after these words?  
 ```python
 trn_dl = LanguageModelLoader(np.concatenate(trn_lm), bs, bptt)
 val_dl = LanguageModelLoader(np.concatenate(val_lm), bs, bptt)
 md = LanguageModelData(PATH, 1, vs, trn_dl, val_dl, bs=bs, bptt=bptt)
 ```
+- we'll look at these details in a moment
+- I'm going to set up a whole bunch of dropouts
+```python
+drops = np.array([0.25, 0.1, 0.2, 0.02, 0.15])*0.7
+```
+- once we've got a `ModelData` object, we can then grab the model from it, so, that's going to give us a **learner**
+```python
+learner= md.get_model(opt_fn, em_sz, nh, nl, 
+    dropouti=drops[0], dropout=drops[1], wdrop=drops[2], dropoute=drops[3], dropouth=drops[4])
+
+learner.metrics = [accuracy]
+learner.freeze_to(-1)
+```
+- `51:20` and then, as per usual, we can call `learner.fit`, so we've first of all, as per usual, just do a single epoch on the last layer, just to get that ok
+- and, the way I have it set up is the **last layer** is actually the **embedding words**
+- because that's obviously the thing that's going to be the most wrong, cause a lot of those embedding weights, didn't even exist in the vocab, so we're just going to train a single epoch, of just the embedding weights
+- and then, we'll start doing a few epochs of the full model
+- and, so how is that looking?
+- well, here's Lesson 4, which was our academic, world's best ever result, and after 14 epochs, we had a **4.23 loss**
+- here, after 1 epoch (in Lesson 10), we have a **4.12 loss**
+
 
 
