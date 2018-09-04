@@ -493,3 +493,7 @@ learner.freeze_to(-1)
 - `52:40` Rachel: what is the wikitext 103 model?  Is it awdlstm again?  
 - JH:  yes, and we're about to dig into that again.  The way I trained it, it was literally the same lines of code as you see... here.., but without pre-training it on wikitext 103
 
+## `53:08` fastai doc project 
+- welcome back from break
+- before we go back into language models and NLP classifiers, a quick discussion about something pretty new at the moment, which is the fastai doc project: https://github.com/fastai/fastai/tree/master/docs
+- the goal of the fastai doc project is to create documentation that makes readers say, "wow
