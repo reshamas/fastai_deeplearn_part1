@@ -538,4 +538,7 @@ https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
 - we're in the process of documenting the documentation template
   - there are basically 5 or 6 of these little curly bracket things you need to learn
   - but, for you to create a documentation of a class or method, you can just copy one that is there
-- idea is.. it will almost be like a book 
+- idea is.. it will almost be like a book, there will be tables and pictures and little video segments, and hyper links throughout and all that stuff
+- you may be wondering, what about doc strings?  But, I don't know if you've noticed.  If you look at the Python (https://github.com/fastai/fastai/blob/master/docs/README.md) standard library, and look at the docstring for regex compile, it's a single line:  `re.compile()` 
+- nearly every docstring in Python is a single line
+- and Python does exactly this:  they have a website 
