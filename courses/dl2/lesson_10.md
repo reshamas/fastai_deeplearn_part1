@@ -531,4 +531,11 @@ https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
   - and so on, and so forth
   - and, to make things even easier, rather than having to know that the argument list is meant to be smaller than the main part, or how do you create a cross reference, or how you meant to format the arguments to the method name, and list out each one of its arguments
 - we've created a special template
-  - 
+  - where you can write various stuff in curly brackets
+  - please put the arguments here, and here's an example of the argument
+  - and here is a cross reference, and here is a method
+  - and so forth
+- we're in the process of documenting the documentation template
+  - there are basically 5 or 6 of these little curly bracket things you need to learn
+  - but, for you to create a documentation of a class or method, you can just copy one that is there
+- idea is.. it will almost be like a book 
