@@ -523,4 +523,12 @@ https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
 == Class Transform [.small]#[tfm_y=TfmType.NO)#
 ```
 - `55:50` this AsciiDoc creates this html:
-- I didn't add any CSS or do anything else.  We literally started this project 4 hours ago
+- I didn't add any CSS or do anything else.  We literally started this project 4 hours ago, so this is just an example basically
+- so, you can see we've got a Table of Contents
+  - we can jump straight to a section
+  - we've got a cross-reference we can click on
+  - each method comes along with its details
+  - and so on, and so forth
+  - and, to make things even easier, rather than having to know that the argument list is meant to be smaller than the main part, or how do you create a cross reference, or how you meant to format the arguments to the method name, and list out each one of its arguments
+- we've created a special template
+  - 
