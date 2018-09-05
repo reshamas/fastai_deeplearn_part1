@@ -541,4 +541,6 @@ https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
 - idea is.. it will almost be like a book, there will be tables and pictures and little video segments, and hyper links throughout and all that stuff
 - you may be wondering, what about doc strings?  But, I don't know if you've noticed.  If you look at the Python (https://github.com/fastai/fastai/blob/master/docs/README.md) standard library, and look at the docstring for regex compile, it's a single line:  `re.compile()` 
 - nearly every docstring in Python is a single line
-- and Python does exactly this:  they have a website 
+- and Python then does exactly this:  they then have a website containing the documentation that says, hey this is what regular expressions are, and this is what you need to know about them, and if you want them to go faster, you'll need to use `compile` and here's the information about compile, and here's examples.  It's not in the docstring.
+- and that's how we're doing it as well.  our doc strings will be one line, unless like you need 2 sometimes; it's going to be very similar to Python, but even better
+- 
