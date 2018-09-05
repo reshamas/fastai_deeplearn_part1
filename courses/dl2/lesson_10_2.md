@@ -13,6 +13,9 @@
 
 ---
 
-## Language Model vs Word2Vec
+## Language Model vs Word2Vec `58:20`
 - one question that came up during break was: "How does this compare to word2vec?"
+- this is actually a great thing for you to spend time thinking about during the week, is how does this compare to word2vec?
+- I'll give you the summary now, but it's a very important conceptual difference
+- The main conceptual difference is, what is word2vec?
 - 
