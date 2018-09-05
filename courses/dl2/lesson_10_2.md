@@ -20,4 +20,4 @@
 - The main conceptual difference is, what is word2vec?
 - **word2vec** is a single embedding matrix.  Each word has a vector and that's it.  So, in other words, it's **a single layer** from a pre-trained model and, specifically, that layer is the input layer
 - And also, specifically, that pre-trained model is a linear model, that is pre-trained on something that is called a **co-occurrence** matrix
-- 
+- so we have no particular reason
