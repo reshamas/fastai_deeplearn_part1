@@ -506,4 +506,21 @@ https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
 - what the hell is "adoc"?  It is "ASCII doc"
 - how many people here have come across ASCII doc?  .... That's awesome
 - ASCII doc is ... people are laughing because there is one hand up... and it was someone in our study group here today who talked to me about ASCII doc.
-- It's like Markdown, but it's what Markdown needs to be to c
+- [What is AsciiDoc? Why do we need it?](https://asciidoctor.org/docs/what-is-asciidoc/)
+- ASCII is the most amazing project, it's like Markdown, but it's what Markdown needs to be to create actual books
+- A lot of actual books are written in AsciiDoc
+- it's as easy to use as Markdown, but there's way more cool stuff you can do with it.
+- In fact, here is an AsciiDoc file here:  https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
+- `55:00` as you'll see, it looks very normal.  there's a heading, and this is pre-formatted text, and there's lists and whatever else
+- it looks pretty standard
+- actually, I will show you a more complete AsciiDoc
+  - you can say, put a table of contents here:  `:toc:`
+  - `NO::`, `::` means put a definition list here
+  - `+` means this is a continuation of the previous list item
+  - so, there are just little things you can do which are super-handy, or like put this thing, or make it slightly smaller than everything else;  so, it's like turbo-charged Markdown
+```text
+[[Transform]]
+== Class Transform [.small]#[tfm_y=TfmType.NO)#
+```
+- `55:50` this AsciiDoc creates this html:
+- I didn't add any CSS or do anything else.  We literally started this project 4 hours ago
