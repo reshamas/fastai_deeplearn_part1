@@ -543,4 +543,5 @@ https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
 - nearly every docstring in Python is a single line
 - and Python then does exactly this:  they then have a website containing the documentation that says, hey this is what regular expressions are, and this is what you need to know about them, and if you want them to go faster, you'll need to use `compile` and here's the information about compile, and here's examples.  It's not in the docstring.
 - and that's how we're doing it as well.  our doc strings will be one line, unless like you need 2 sometimes; it's going to be very similar to Python, but even better
-- 
+- so, everybody is welcome to help contribute to the documentation.  And hopefully, by the time you are watching this on the MOOC, it'll be reasonably flushed out.  And we'll try to keep a list of things to do
+
