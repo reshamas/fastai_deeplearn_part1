@@ -32,5 +32,14 @@ em_sz, nh, nl = 400, 1150, 3
 - `1:00:15` Everything!  You know, they're very different levels of capability.  You will see when you try using a pre-trained language model vs a word2vec layer, you'll get very, very different results, for the vast majority of tasks
 - Rachel:  what if the numpy array does not fit in memory?  Is it possible to write a PyTorch data loader directly from a large csv file?
 - JH: It almost certainly won't come up, so I won't spend time on it.  These things are tiny, they're just ints, think about how many ints you would need to run out of memory.  It's not going to happen.  They don't have to fit in GPU memory, just in your memory.
-- So, I've actually done another Wikipedia model, which I called Giga Wiki
-- 
+- So, I've actually done another Wikipedia model, which I called Giga Wiki which is on *all* of Wikipedia and even that easily fits in there 
+- The reason I'm not using it [Giga Wiki] is because it turned out not to really help very much vs wikitext 103, but I've built a bigger model than anyone else I've found in the academic literature and it fits in memory on a single machine.  
+- Rachel:  What is the idea behind averaging the weights of the embeddings?
+- JH:  They're going to be set to something, you know.  There are words that weren't there, so other options is we could leave them at 0, but that seems like a very extreme thing to do, like zero is a *very extreme number*.  Why would it be 0? We could set it equal to some random numbers, but if so, what would be the mean and standard deviation of those random numbers? Or should they be uniform? If we just average the rest of the embeddings, than we have something that's a reasonable scale.
+- Rachel:  Just to clarify, this is how you're initializing words that didn't appear in the training?
+- JH:  Yes, that's right
+- Rachel: And, then, I think you've pretty much answered this one, but someone had asked if there is a specific advantage to creating our own pre-trained embedding over using glob or word2vec? 
+- JH: Yes, I think we have.  We're not creating a pre-trained embedding, we're creating a pre-trained model
+
+## Language Model `1:02:20`
+- ok, let's talk a little bit more... there's a ton of stuff you've seen before, but actually 
