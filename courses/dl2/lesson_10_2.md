@@ -29,4 +29,8 @@ em_sz, nh, nl = 400, 1150, 3
 - ASGD Weight-Dropped == AWD
 - ASGD = Asynchronous Stochastic Gradient Descent 
 - so, what's the difference between a single layer of a single linear model vs a 3-layer recurrent neural network?
+- `1:00:15` Everything!  You know, they're very different levels of capability.  You will see when you try using a pre-trained language model vs a word2vec layer, you'll get very, very different results, for the vast majority of tasks
+- Rachel:  what if the numpy array does not fit in memory?  Is it possible to write a PyTorch data loader directly from a large csv file?
+- JH: It almost certainly won't come up, so I won't spend time on it.  These things are tiny, they're just ints, think about how many ints you would need to run out of memory.  It's not going to happen.  They don't have to fit in GPU memory, just in your memory.
+- So, I've actually done another Wikipedia model, which I called Giga Wiki
 - 
