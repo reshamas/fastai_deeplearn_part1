@@ -90,4 +90,6 @@ class LanguageModelLoader():
 ```
 - `1:03:40` So, specifically, here is the `fit` function inside fastai.model.  This is where everything ends up eventually which goes through each epoch, and then it creates an iterator from the data loader and then just does for-loop through it
 - So anything you can do a for-loop through, can be a data loader.  Specifically, it needs to return tuples of mini-batches, independent and dependent variables, for mini-batches.  
+- Anything with a ?dunda iter method (`__iter__`), is something that can act as an iterator, and `yield` is a neat little Python keyword you should probably learn about if you don't already know it
+- [Python yield keyword explained](https://pythontips.com/2013/09/29/the-python-yield-keyword-explained/)
 - 
