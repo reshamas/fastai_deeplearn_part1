@@ -48,7 +48,7 @@ em_sz, nh, nl = 400, 1150, 3
 - https://github.com/fastai/fastai/blob/7ac2c490c22e2f0c0ffe983e593c4671d6beed2b/fastai/nlp.py
 - and, if it's a burden, please go back and try to learn those keyboard shortcuts in VS Code
 - you know, if your editor doesn't make it easy, don't use that editor anymore, ok?  There are lots of good free editors that make this easy
-- Here's the source code for `LanguageModelLoader` 
+- Here's the source code for `LanguageModelLoader`.  It's interesting to note that it is not doing anything particularly tricky.  It's not deriving from anything at all.  What makes it something that is capable of being a data loader is that it's something that you can iterate over.  
 ```python
 class LanguageModelLoader():
 
@@ -88,4 +88,6 @@ class LanguageModelLoader():
         seq_len = min(seq_len, len(source) - 1 - i)
         return source[i:i+seq_len], source[i+1:i+1+seq_len].view(-1)
 ```
+- `1:03:40` So, specifically, here is the `fit` function inside fastai.model.  This is where everything ends up eventually which goes through each epoch, and then it creates an iterator from the data loader and then just does for-loop through it
+- So anything you can do a for-loop through, can be a data loader.  Specifically, it needs to return tuples of mini-batches, independent and dependent variables, for mini-batches.  
 - 
