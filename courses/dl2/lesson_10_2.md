@@ -42,4 +42,50 @@ em_sz, nh, nl = 400, 1150, 3
 - JH: Yes, I think we have.  We're not creating a pre-trained embedding, we're creating a pre-trained model
 
 ## Language Model `1:02:20`
-- ok, let's talk a little bit more... there's a ton of stuff you've seen before, but actually 
+- ok, let's talk a little bit more... there's a ton of stuff you've seen before, but it's changed a little bit, it's actually a lot easier than it was in Part 1, but I want to go a little bit deeper into the language model loader.  
+- on slide:  "You can use any iterable that creates a stream of batches as a data loader"
+- So, this is the language model loader.  I really hope by now you've learned in your editor or IDE how to jump to symbols.  I don't want it to be a burden for you to find out what the source code of language model loader is, alright? 
+- https://github.com/fastai/fastai/blob/7ac2c490c22e2f0c0ffe983e593c4671d6beed2b/fastai/nlp.py
+- and, if it's a burden, please go back and try to learn those keyboard shortcuts in VS Code
+- you know, if your editor doesn't make it easy, don't use that editor anymore, ok?  There are lots of good free editors that make this easy
+- Here's the source code for `LanguageModelLoader` 
+```python
+class LanguageModelLoader():
+
+    def __init__(self, ds, bs, bptt, backwards=False):
+        self.bs,self.bptt,self.backwards = bs,bptt,backwards
+        text = sum([o.text for o in ds], [])
+        fld = ds.fields['text']
+        nums = fld.numericalize([text],device=None if torch.cuda.is_available() else -1)
+        self.data = self.batchify(nums)
+        self.i,self.iter = 0,0
+        self.n = len(self.data)
+
+    def __iter__(self):
+        self.i,self.iter = 0,0
+        return self
+
+    def __len__(self): return self.n // self.bptt - 1
+
+    def __next__(self):
+        if self.i >= self.n-1 or self.iter>=len(self): raise StopIteration
+        bptt = self.bptt if np.random.random() < 0.95 else self.bptt / 2.
+        seq_len = max(5, int(np.random.normal(bptt, 5)))
+        res = self.get_batch(self.i, seq_len)
+        self.i += seq_len
+        self.iter += 1
+        return res
+
+    def batchify(self, data):
+        nb = data.size(0) // self.bs
+        data = data[:nb*self.bs]
+        data = data.view(self.bs, -1).t().contiguous()
+        if self.backwards: data=flip_tensor(data, 0)
+        return to_gpu(data)
+
+    def get_batch(self, i, seq_len):
+        source = self.data
+        seq_len = min(seq_len, len(source) - 1 - i)
+        return source[i:i+seq_len], source[i+1:i+1+seq_len].view(-1)
+```
+- 
