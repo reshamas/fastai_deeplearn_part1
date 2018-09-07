@@ -111,8 +111,9 @@ trn_dltrn_dl  ==  LanguageModelLoaderLanguage (np.concatenate(trn_lm), bs, bptt)
 val_dl = LanguageModelLoader(np.concatenate(val_lm), bs, bptt)
 md = LanguageModelData(PATH, 1, vs, trn_dl, val_dl, bs=bs, bptt=bptt)
 ```
+#### Creating Your Own Learner and ModelData Classes is easy as this!
 - Now, generally speaking, we want to create a learner and the way we normally do that is by getting a model data object and by calling some kind of method which have various names but sometimes, often we call that method `md.get_model`.  So the idea is that the model data object has enough information to know what kind of model to give you.  So, we have to create that model data object:  
-`md = LanguageModelData(PATH, 1, vs, trn_dl, val_dl, bs=bs, bptt=bptt)` 
+`md = LanguageModelData(PATH, 1, vs, trn_dl, val_dl, bs=bs, bptt=bptt)` which means we need that class.  And that's very easy to do, right?
 ```python
 learner= md.get_model(opt_fn, em_sz, nh, nl, 
     dropouti=drops[0], dropout=drops[1], wdrop=drops[2], dropoute=drops[3], dropouth=drops[4])
@@ -120,3 +121,6 @@ learner= md.get_model(opt_fn, em_sz, nh, nl,
 learner.metrics = [accuracy]
 learner.freeze_to(-1)
 ```
+- So, here are all of the pieces. We are going to create a custom learner, a custom model data class and a custom model class
+- [nlp.py](https://github.com/fastai/fastai/blob/7ac2c490c22e2f0c0ffe983e593c4671d6beed2b/fastai/nlp.py)
+- A model data class, again this one doesn't inherit from anything, so you really see... there is almost nothing to do. You need to tell it, most importantly: what's your training set, give it a data loader `trn_dl`, what's the validation set `val_dl`, 
