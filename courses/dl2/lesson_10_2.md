@@ -100,4 +100,23 @@ class LanguageModelLoader():
 - Pretty much all the cool stuff in the language model is stolen from Steven Merity's AWD-LSTM, including this little trick here which is, if we always grab 70 at a time, and then we go back and do a new epoch, we're going to grab exactly the same batches every time -- there is no randomness.  
   - Reference: [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/pdf/1708.02182.pdf)
 - Now, normally, we shuffle our data, every time we do an epoch or every time we grab some data, we grab it at random.  But, you can't do that with a language model because this set has to join up with the previous set because it's trying to learn the sentence, right? And if you suddently jump somewhere else, then that doesn't make any sense as a sentence
-- So, Steven's idea is to say, ok, since we can't shuffle the order, 
+- So, Steven's idea is to say, ok, since we can't shuffle the order, let's instead randomly change the size, **the sequence length**.  So basically he says, 95% of the time we'll use bptt 70, *but* 5% of the time we will use half of that.  And then he says, you know what, I'm not even going to make that the sequence length, I'm going to create a normally distributed random number with that average and a standard deviation of 5, and I'll make that the sequence length, right? So the sequence length is 70'ish, and that means every time we go through, we're getting slightly different batches.  So, we've got that little bit of extra randomness.
+- I asked Steven Merity where he came up with this idea, did he think of it? And, he was like, I think I thought of it, but it seemed so obvious that I bet I didn't think of it.  Which is like true of like every time I come up with an idea in deep learning, you know, it always seems so obvious that somebody else has thought of it, but I think he thought of it.
+- So, yes, this is a nice thing to look at if you're trying to do something a bit unusual with the data loader, ok, here's a simple kind of raw (?role) model you can use as to creating a data loader from scratch, something that spits out batches of data
+
+## Language Model Loader (back to notebook) `1:09:10`
+- So our langauge model just took in all of the documents concatenated together, along with the batch size and bptt
+```python
+trn_dltrn_dl  ==  LanguageModelLoaderLanguage (np.concatenate(trn_lm), bs, bptt)
+val_dl = LanguageModelLoader(np.concatenate(val_lm), bs, bptt)
+md = LanguageModelData(PATH, 1, vs, trn_dl, val_dl, bs=bs, bptt=bptt)
+```
+- Now, generally speaking, we want to create a learner and the way we normally do that is by getting a model data object and by calling some kind of method which have various names but sometimes, often we call that method `md.get_model`.  So the idea is that the model data object has enough information to know what kind of model to give you.  So, we have to create that model data object:  
+`md = LanguageModelData(PATH, 1, vs, trn_dl, val_dl, bs=bs, bptt=bptt)` 
+```python
+learner= md.get_model(opt_fn, em_sz, nh, nl, 
+    dropouti=drops[0], dropout=drops[1], wdrop=drops[2], dropoute=drops[3], dropouth=drops[4])
+
+learner.metrics = [accuracy]
+learner.freeze_to(-1)
+```
