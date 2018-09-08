@@ -123,4 +123,16 @@ learner.freeze_to(-1)
 ```
 - So, here are all of the pieces. We are going to create a custom learner, a custom model data class and a custom model class
 - [nlp.py](https://github.com/fastai/fastai/blob/7ac2c490c22e2f0c0ffe983e593c4671d6beed2b/fastai/nlp.py)
-- A model data class, again this one doesn't inherit from anything, so you really see... there is almost nothing to do. You need to tell it, most importantly: what's your training set, give it a data loader `trn_dl`, what's the validation set `val_dl`, 
+- A model data class, again this one doesn't inherit from anything, so you really see... there is almost nothing to do. You need to tell it, most importantly: what's your training set, give it a data loader `trn_dl`, what's the validation set `val_dl`, give it a data loader, and optionally, give it a test set `test_dl1` data loader
+- `01:10:22` Plus anything else it needs to know. So, it might need to know the `bptt`
+```python
+class LanguageModelData():
+    def __init__(self, path, pad_idx, nt, trn_dl, val_dl, test_dl=None, bptt=70, backwards=False, **kwargs):
+        self.path, self.pad_idx, self.nt = path, pad_idx, nt
+        self.trn_dl, self.val_dl, self.test_dl = trn_dl, val_dl, test_dl
+    
+    def get_model(self, opt_fn, emb_sz, n_hid, n_layers, **kwargs):
+        m = get_language_model(self.nt, emb_sz, n_hid, n_layers, self.pad_idx, **kwargs)
+        model = LanguageModel(to_gpu(m))
+        return RNN_Learner(self, model, opt_fn=optn_fn)
+```
