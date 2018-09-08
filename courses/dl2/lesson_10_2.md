@@ -124,8 +124,22 @@ learner.freeze_to(-1)
 - So, here are all of the pieces. We are going to create a custom learner, a custom model data class and a custom model class
 - [nlp.py](https://github.com/fastai/fastai/blob/7ac2c490c22e2f0c0ffe983e593c4671d6beed2b/fastai/nlp.py)
 - A model data class, again this one doesn't inherit from anything, so you really see... there is almost nothing to do. You need to tell it, most importantly: what's your training set, give it a data loader `trn_dl`, what's the validation set `val_dl`, give it a data loader, and optionally, give it a test set `test_dl1` data loader
-- `01:10:22` Plus anything else it needs to know. So, it might need to know the `bptt`
+- `01:10:22` Plus anything else it needs to know. So, it might need to know the `bptt`, it needs to know the number of tokens(`nt`, that's the vocab size), it needs to know what is the padding (`pad_idx`) index.  And so that it can save temporary files in models, model data's always need to know the path (`path`)
+- and so we grab all of that stuff, and we dump it.  and that's it, that's the entire **initializer** (`__init__`), there's no logic there at all 
+- so then, all of the work happens inside `get_model`.  And so, `get_model` calls something that we will look at later which just grabs a normal PyTorch nn.module architecture, ok? 
+- and chucks it on the GPU:  `model = LanguageModel(to_gpu(m))`.  Note:  with PyTorch, normally we would say `.cuda()`.  With fast.ai, it's better to say `to_gpu`.  And the reason is that if you don't have a GPU, it will leave it on the CPU, and it also provides a global variable you can set to choose whether it goes on the GPU or not.  So, it's a better approach
+- So, we wrap the model in a language model and the language model is `class LanguageModel()`
+    - a Language Model is a sub-class of BasicModel
+    - it almost basically does nothing except it defines layer groups.  And so, remember how when we do discriminative learning rates where different layers have different learning rates or like we freeze different amounts, we don't provide a different learning rate for every layer, because there can be 1000 layers, **we provide a learning rate for EVERY LAYER GROUP**.  So, when you create a custom model, you just have to overwrite this one thing which returns a list of all of your layer groups.
+    - So, in this case, my last layer group contains the last part of the model and one bit of dropout:  `(self.model[1], m.dropouti)`
+    - And, the rest of it, this * here, means pull this apart, so this going to be 1 layer per RNN layer: `*zip(m.rnns, m.dropouths)`
+    - So, that's all that is 
 ```python
+class LanguageModel(BasicModel):
+    def get_layer_groups(self):
+        m = self.model[0]
+        return [*zip(m.rnns, m.dropouths), (self.model[1], m.dropouti)]
+        
 class LanguageModelData():
     def __init__(self, path, pad_idx, nt, trn_dl, val_dl, test_dl=None, bptt=70, backwards=False, **kwargs):
         self.path, self.pad_idx, self.nt = path, pad_idx, nt
@@ -135,4 +149,11 @@ class LanguageModelData():
         m = get_language_model(self.nt, emb_sz, n_hid, n_layers, self.pad_idx, **kwargs)
         model = LanguageModel(to_gpu(m))
         return RNN_Learner(self, model, opt_fn=optn_fn)
+
+class RNN_Leaner(Learner):
+    def __init__(self, data, models, **kwargs):
+        super().__init__(data, models, **kwargs)
+        self.crit = F.cross_entropy
 ```
+- And then, finally, turn that into a **learner**, and so a learner, you just pass in the model, and it turns it into a learner! `return RNN_Learner(self, model, opt_fn=optn_fn)`
+- In this case, we have overwritten learner; and the only thing we've done is to say, I've 
