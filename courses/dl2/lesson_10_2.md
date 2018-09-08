@@ -166,6 +166,9 @@ class RNN_Leaner(Learner):
 - JH: yes, this whole thing works in any language you like.  
 - Rachel: Obviously, would you have to retrain your language model on a corpus from that language?
 - JH: absolutely.  So, the wiki text 103 pre-trained language model knows English, right? You could use it maybe as a pre-trained start for a French or German model, start by retraining the embedding layer from scratch... might be helpful.  Chinese, maybe not so much.  But, given that a language model can be trained from any unlabeled documents at all, you'll never have to do that, right? Because, every, almost every language model in the world has, you know, plenty of documents.  You can grab newspapers, webpages, parliamentary records, whatever.  As long as you've got a few thousand documents showing somewhat normal usage of that language, you can create a language model.  So, I know some of our students, one of our students (his name I'll have to look up during the week, very embarrassing) tried this approach for Thai, he said the first model he built easily beat the first previous state-of-the-art Thai classifier.  For those of you that are international fellows, this is an easy way for you to kind of whip out a paper in which you either create the first every classifer in your language or beat everybody else's classifier in your language, and then you can tell them that you've been a student of deep learning for 6 months and piss off all the academics in your country. 
-- 
+
+### `01:16:45`
+- file:  https://github.com/fastai/fastai/blob/master/fastai/lm_rnn.py
+- Here is our RNN encoder.  It's just a standard `nn.Module`.  Most of the text in it is just documentation.  As you can see, it looks like there is more going on in there than there actually is
 - 
 
