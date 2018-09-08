@@ -160,6 +160,9 @@ class RNN_Leaner(Learner):
 - So this entire set of custom Model, custom Model Data, custom (RNN) Learner, all fits on a single screen, and they always basically look like this
 - So, that's a kind of dig inside this boring part of the code base
 - the **interesting** part of this **code base** is **get_language_model**.  Because `get_language_model` is the thing that gives us our **AWD LSTM** and it actually contains the big idea -- the big incredibly simple idea that everybody else here thinks is really obvious.  But everyone in the NLP community I spoke to thought was insane, which is basically, every model can be thought of... pretty much every model can be thought of as a backbone plus a head -- and if you pre-train the backbone and stick on a random head, you can do fine tuning and that's a good idea, right?  
-- So, here are 2 bits of code right here, literally right next to each other, this is kind of all there is inside of  
+- So, these 2 bits of code right here, literally right next to each other, this is kind of all there is inside this bit of fast.ai, ..? other than LM RNN. Here's get language model, here is get classifier.  `get_language_model` creates an RNN encoder, and then creates a sequential model that sticks on top of that a linear decoder.  Classifier creates an RNN encoder and then a sequential model that sticks on top of that a pooling linear classifier 
+- We'll see what these differences are in a moment, but you get the basic idea.  They are basically doing pretty much the same thing.  They've got this head, and they are sticking on this simple linear layer on top. So, that's worth digging in a little deeper and seeing what's going on here
+- Rachel:  
+- 
 - 
 
