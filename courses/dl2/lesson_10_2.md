@@ -156,4 +156,10 @@ class RNN_Leaner(Learner):
         self.crit = F.cross_entropy
 ```
 - And then, finally, turn that into a **learner**, and so a learner, you just pass in the model, and it turns it into a learner! `return RNN_Learner(self, model, opt_fn=optn_fn)`
-- In this case, we have overwritten learner; and the only thing we've done is to say, I've 
+- In this case, we have overwritten learner; and the only thing we've done is to say, I want the default loss function to be cross-entropy
+- So this entire set of custom Model, custom Model Data, custom (RNN) Learner, all fits on a single screen, and they always basically look like this
+- So, that's a kind of dig inside this boring part of the code base
+- the **interesting** part of this **code base** is **get_language_model**.  Because `get_language_model` is the thing that gives us our **AWD LSTM** and it actually contains the big idea -- the big incredibly simple idea that everybody else here thinks is really obvious.  But everyone in the NLP community I spoke to thought was insane, which is basically, every model can be thought of... pretty much every model can be thought of as a backbone plus a head -- and if you pre-train the backbone and stick on a random head, you can do fine tuning and that's a good idea, right?  
+- So, here are 2 bits of code right here, literally right next to each other, this is kind of all there is inside of  
+- 
+
