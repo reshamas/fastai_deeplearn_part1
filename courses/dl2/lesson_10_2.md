@@ -169,6 +169,13 @@ class RNN_Leaner(Learner):
 
 ### `01:16:45`
 - file:  https://github.com/fastai/fastai/blob/master/fastai/lm_rnn.py
-- Here is our RNN encoder.  It's just a standard `nn.Module`.  Most of the text in it is just documentation.  As you can see, it looks like there is more going on in there than there actually is
+- Here is our RNN encoder.  It's just a standard `nn.Module`.  Most of the text in it is just documentation.  As you can see, it looks like there is more going on in there than there actually is but really all there is we create an embedding layer, we create an LSTM for each layer that has been asked for.  And that's it, everything else in there is **dropout**, right?
+- Basically all of the interesting stuff in the **AWD-LSTM paper** is all of the places you can put **dropout**
+- And then the `def forward` is basically the same thing.  It's calling the embedding layer, add some dropout, go through each layer, call that RNN layer, append it to our list of outputs, add dropout, that's about it. It's really pretty straightforward
+
+### To remind yourself what all the dropout types, are read...
+- and the paper you want to be reading as I have been mentioned is the [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182)
+- it's well-written and pretty accessible and entirely implemented within fastai as well.  So you can see all of the code for that paper, and a lot of the code actually is, shamelessly plagiarized with Steven's permission from his excellent github repo (https://github.com/salesforce/awd-lstm-lm) in the process of which I fixed up some of his bugs as well, and I even told him about them.
+- So, I'm talking increasingly about, **please read the papers**, so here's the paper.  Pleaser read this paper, and it refers to other papers, so for things like "why is it that the encoder weight and the decoder weight are the same?".  It's because there's this thing called **tie weights**.  This is inside 
 - 
 
