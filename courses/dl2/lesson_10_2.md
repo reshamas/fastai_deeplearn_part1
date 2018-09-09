@@ -183,7 +183,10 @@ class RNN_Leaner(Learner):
   - on top of that stick a linear layer with dropout
   - and we're finished
   - so that's the language model
-- So, what dropout you choose matters a lot, and through a lot of experimentation, I found a bunch of dropouts and you can see here we've got... each of these corresponds to a particular argument
+- So, what dropout you choose matters a lot, and through a lot of experimentation, I found a bunch of dropouts and you can see here we've got... each of these corresponds to a particular argument, a bunch of dropouts that tends to work pretty well for language models
+- But, if you have **less data** for your language model, you will need **more dropout**.
+- If you have **more data** you can benefit from less dropout.  You don't want to **regularize** more than you have to.  It makes sense, right?  Rather than having to tune everyone of these 5 things, right, my claim is they're already pretty good ratios to each other, so just tune this number:  **0.7**.  I just multiply it all by something
+- So, there is really just **one number** you have to **tune**.  If you are **overfitting**, you will need to **increase this number**, if you're **underfitting**, you'll need to **decrease** this number. 
 ```python
 drops = np.array([0.25, 0.1, 0.2, 0.02, 0.15])*0.7
 ```
