@@ -176,6 +176,24 @@ class RNN_Leaner(Learner):
 ### To remind yourself what all the dropout types, are read...
 - and the paper you want to be reading as I have been mentioned is the [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182)
 - it's well-written and pretty accessible and entirely implemented within fastai as well.  So you can see all of the code for that paper, and a lot of the code actually is, shamelessly plagiarized with Steven's permission from his excellent github repo (https://github.com/salesforce/awd-lstm-lm) in the process of which I fixed up some of his bugs as well, and I even told him about them.
-- So, I'm talking increasingly about, **please read the papers**, so here's the paper.  Pleaser read this paper, and it refers to other papers, so for things like "why is it that the encoder weight and the decoder weight are the same?".  It's because there's this thing called **tie weights**.  This is inside 
+- So, I'm talking increasingly about, **please read the papers**, so here's the paper.  Pleaser read this paper, and it refers to other papers, so for things like "why is it that the encoder weight and the decoder weight are the same?".  It's because there's this thing called **tie weights**.  This is inside that `get_language_model`.  There's a thing called `tie_weights=True` that defaults to True and if it's true, then we actually tie, we literally use the same weight matrix for the encoder and the decoder.
+- So, they're literally pointing to the same block of memory if you like, and so why is that, what's the result of it, that's one of the citations in Steven's paper, which is also a well-written paper.  You can go and look it up and learn about weight ? time. There's a lot of cool stuff in it.  
+- So we have basically a standard RNN, the only way in which it is not standard is it has lots more types of dropouts in it, and then a sequential model on top of that we stick a linear decoder which is literally half a screen of code.  It's got a single linear layer. We initialize the weights to some range.  We add some dropout, and that's it.  So, it's a linear layer of dropout.  So, we've got:
+  - an RNN
+  - on top of that stick a linear layer with dropout
+  - and we're finished
+  - so that's the language model
+- So, what dropout you choose matters a lot, and through a lot of experimentation, I found a bunch of dropouts and you can see here we've got... each of these corresponds to a particular argument
+```python
+drops = np.array([0.25, 0.1, 0.2, 0.02, 0.15])*0.7
+```
+> in imdb notebook
+```python
+learnerlearner==  mdmd..get_modelget_mode (opt_fn, em_sz, nh, nl, 
+    dropouti=drops[0], dropout=drops[1], wdrop=drops[2], dropoute=drops[3], dropouth=drops[4])
+
+learner.metrics = [accuracy]
+learner.freeze_to(-1)
+```
 - 
 
