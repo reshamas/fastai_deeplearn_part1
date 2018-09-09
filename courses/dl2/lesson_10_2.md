@@ -186,7 +186,7 @@ class RNN_Leaner(Learner):
 - So, what dropout you choose matters a lot, and through a lot of experimentation, I found a bunch of dropouts and you can see here we've got... each of these corresponds to a particular argument, a bunch of dropouts that tends to work pretty well for language models
 - But, if you have **less data** for your language model, you will need **more dropout**.
 - If you have **more data** you can benefit from less dropout.  You don't want to **regularize** more than you have to.  It makes sense, right?  Rather than having to tune everyone of these 5 things, right, my claim is they're already pretty good ratios to each other, so just tune this number:  **0.7**.  I just multiply it all by something
-- So, there is really just **one number** you have to **tune**.  If you are **overfitting**, you will need to **increase this number**, if you're **underfitting**, you'll need to **decrease** this number. 
+- So, there is really just **one number** you have to **tune**.  If you are **overfitting**, you will need to **increase this number**, if you're **underfitting**, you'll need to **decrease** this number. Cause other than that, these ratios seem pretty good.
 ```python
 drops = np.array([0.25, 0.1, 0.2, 0.02, 0.15])*0.7
 ```
@@ -198,5 +198,7 @@ learnerlearner==  mdmd..get_modelget_mode (opt_fn, em_sz, nh, nl,
 learner.metrics = [accuracy]
 learner.freeze_to(-1)
 ```
-- 
 
+### `01:21:45` Measuring Accuracy
+- One important idea which may seem pretty minor, but again, it's incredibly controversial, is that we should measure accuracy when we look at a language model `learner.metrics = [accuracy]`
+- Normally [in] language models, we look at this loss value, "val_loss", which is just cross entropy loss, but specifically we normally always take 
