@@ -228,4 +228,15 @@ learner.freeze_to(-1)
 ELMo is a deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). These word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. They can be easily added to existing models and significantly improve the state of the art across a broad range of challenging NLP problems, including question answering, textual entailment and sentiment analysis
 
 ### `01:31:55`
-- you'll see there's two different 
+- you'll see there's two different versions of save: there's `save` and `save_encoder`.  `save` saves the whole model, as per usual.  `save_encoder` saves just `rnn_enc` part (not the LinearDecoder part, the bit that makes it into a language model, we don't care about in the classifier)
+- that's why we save 2 different models here
+```python
+learner.save('lm1')
+learner.save_encoder('lm1_end')
+learner.sched.plot_loss()
+```
+
+## Classifier Tokens `01:32:30`
+- so, let's now create the classifier.  And I'm going to go through this bit pretty quickly, because it's the same.  But, when you go back during the week and *look at the code*, convince yourself that it is the same.
+  - we do get all all, pd reads the csv again, chunksize again, get all again, save those tokens again
+  - we don't create a new `itos` vocabulary, we obviously want to use the same vocabulary again that we used in the language model, okay?  Because we're about to 
