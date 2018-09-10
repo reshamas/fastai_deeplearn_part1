@@ -246,6 +246,8 @@ learner.sched.plot_loss()
   - optimizer function 
   - **pick a batch size as big as you can that doesn't run out of memory**
 - These bits are interesting.  There is some fun stuff going on here.
+- The basic idea here is that for the classifier, we do really want to look at one, you know, document.  We need to say, is this document positive or negative? And so, we do want to shuffle the documents, right?  Because we like to shuffle things.  But, **those documents are different lengths**, and so if we stick them all into one batch, and this is a handy thing that fastai does for you, you can stick things of different lengths into a batch, and **it will automatically pad them** so you don't have to worry about that.
+- *But*, if they are wildly different lengths, then you're going to be wasting a lot of computation time.  There might be one thing there that is 2000 words and everything else is 50 words long.  And that means you end up with a 2005 wide tensor. --> That's pretty annoying.
 - 
 ```python
 trn_ds = TextDataset(trn_clas, trn_labels)
