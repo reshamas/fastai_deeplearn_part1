@@ -285,4 +285,5 @@ class TextDataset(Dataset):
 
     def __len__(self): return len(self.x)
 ```
-- `01:36:27` so to turn it into a data loader, you simple pass the dataset to the DataLoader constructor and it's now going to go ahead and give you a batch of that at a time.  Normally, you can say `shuffle=True` or `shuffle=False`.  It will decide whether to randomize it for you.  In this case, though, we're actually going to pass in a sampler parameter (`sampler=trn_samp`)
+- `01:36:27` so to turn it into a data loader, you simple pass the dataset to the DataLoader constructor and it's now going to go ahead and give you a batch of that at a time.  Normally, you can say `shuffle=True` or `shuffle=False`.  It will decide whether to randomize it for you.  In this case, though, we're actually going to pass in a sampler parameter (`sampler=trn_samp`).  Sampler is a class we're going to define that tells the data loader how to shuffle.
+- For the validation set, `val_samp`, we're going to define something that actually just sorts it.  It just deterministically sorts it, so all the shortest documents will be at the start, all the longest documents will be at the end, and that's going to minimize the amount of padding.
