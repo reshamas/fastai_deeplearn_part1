@@ -258,14 +258,15 @@ trn_dl = DataLoader(trn_ds, bs//2, transpose=True, num_workers=1, pad_idx=1, sam
 val_dl = DataLoader(val_ds, bs, transpose=True, num_workers=1, pad_idx=1, sampler=val_samp)
 md = ModelData(PATH, trn_dl, val_dl)
 ```
-- And, so I'll show you how I implemented that.  The first thing we need is a dataset.  We have a dataset passing in the documents and their labels. And, so here is a text dataset and it inherits from dataset (`class Dataset(object)`).  Here is dataset from Torch, PyTorch.  And actually, dataset doesn't do anything at all.  It says, you need to get item
+- And, so I'll show you how I implemented that.  The first thing we need is a dataset.  We have a dataset passing in the documents and their labels. And, so here is a text dataset and it inherits from dataset (`class Dataset(object)`).  Here is dataset from Torch, PyTorch.  And actually, dataset doesn't do anything at all.  It says, you need to `__getitem__`; if you don't have one, you will get an error.  You need a length, `__len__`; if you don't have one, you will get an error.
+- So, this is an **abstract class**.  
 ```python
 class Dataset(object):
-  def __get__item(self, index): raise NotImplementedError
+  def __getitem__(self, index): raise NotImplementedError
   def __len__(self): raise NotImplementedError
   def __add__(self, other): return ConcatDataset([self, other])
 ```
-
+- So, we're going to pass in our `X`, our `y`
 
 
 
