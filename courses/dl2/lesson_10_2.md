@@ -303,4 +303,4 @@ class SortSampler(Sampler):
 - JH:  Yes, Rachel.
 - RT:  Does the pre-trained LSTM depth bptt need to match with the new one we are training?
 - JH:  No, the bptt doesn't need to match at all.  That's just, how many things do we look at, at a time? It's got nothing to do with the architecture.
-- So, 
+- So, now we can call that function we saw before, `get_rnn_classifer`, it's going to create exactly the same encoder, more or less. And we're going to pass in the same architectural details as before.
