@@ -287,3 +287,15 @@ class TextDataset(Dataset):
 ```
 - `01:36:27` so to turn it into a data loader, you simple pass the dataset to the DataLoader constructor and it's now going to go ahead and give you a batch of that at a time.  Normally, you can say `shuffle=True` or `shuffle=False`.  It will decide whether to randomize it for you.  In this case, though, we're actually going to pass in a sampler parameter (`sampler=trn_samp`).  Sampler is a class we're going to define that tells the data loader how to shuffle.
 - For the validation set, `val_samp`, we're going to define something that actually just sorts it.  It just deterministically sorts it, so all the shortest documents will be at the start, all the longest documents will be at the end, and that's going to minimize the amount of padding.
+- For the training sampler, `trn_samp = SortishSampler(trn_clas, key=lambda, x: len(trn_clas[x]), bs=bs//2)`:
+  - we're going to create this thing I call a "Sortish Sampler" which also sorts'ish, right?  So, this is where I really like PyTorch is that they came up with this idea for an API for their data loader where we can like hook in new classes to make it behave in different ways.  So here's a sort sampler, `SortSampler` which is simply something, which again it has a length which is the length of the data source (`return len(self.data_source)`).  
+  - And it has an iterator which is simply an iterator which goes through the data source, sorted by length.  Well, the key, and I pass in as the key a lambda function which returns the length
+  - 
+- in [text.py](https://github.com/fastai/fastai/blob/3f2079f7bc07ef84a750f6417f68b7b9fdc9525a/fastai/text.py)
+```python
+class SortSampler(Sampler):
+    def __init__(self, data_source, key): self.data_source,self.key = data_source,key
+    def __len__(self): return len(self.data_source)
+    def __iter__(self):
+        return iter(sorted(range(len(self.data_source)), key=self.key, reverse=True))
+```
