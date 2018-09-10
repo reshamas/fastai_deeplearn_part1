@@ -248,7 +248,7 @@ learner.sched.plot_loss()
 - These bits are interesting.  There is some fun stuff going on here.
 - The basic idea here is that for the classifier, we do really want to look at one, you know, document.  We need to say, is this document positive or negative? And so, we do want to shuffle the documents, right?  Because we like to shuffle things.  But, **those documents are different lengths**, and so if we stick them all into one batch, and this is a handy thing that fastai does for you, you can stick things of different lengths into a batch, and **it will automatically pad them** so you don't have to worry about that.
 - *But*, if they are wildly different lengths, then you're going to be wasting a lot of computation time.  There might be one thing there that is 2000 words and everything else is 50 words long.  And that means you end up with a 2005 wide tensor. --> That's pretty annoying.
-- 
+- So, James Bradbury, who is actually one of Steven Merity's colleagues, and the guy who came up with TorchText, came up with a neat idea, which was: let's sort the dataset by length'ish, right?  So, kind of make it so the first things in the list on the whole shorter than the things at the end, but a little bit random as well.
 ```python
 trn_ds = TextDataset(trn_clas, trn_labels)
 val_ds = TextDataset(val_clas, val_labels)
@@ -258,4 +258,29 @@ trn_dl = DataLoader(trn_ds, bs//2, transpose=True, num_workers=1, pad_idx=1, sam
 val_dl = DataLoader(val_ds, bs, transpose=True, num_workers=1, pad_idx=1, sampler=val_samp)
 md = ModelData(PATH, trn_dl, val_dl)
 ```
-  - 
+- And, so I'll show you how I implemented that.  The first thing we need is a dataset.  We have a dataset passing in the documents and their labels. And, so here is a text dataset and it inherits from dataset (`class Dataset(object)`).  Here is dataset from Torch, PyTorch.  And actually, dataset doesn't do anything at all.  It says, you need to get item
+```python
+class Dataset(object):
+  def __get__item(self, index): raise NotImplementedError
+  def __len__(self): raise NotImplementedError
+  def __add__(self, other): return ConcatDataset([self, other])
+```
+
+
+
+
+[text.py](https://github.com/fastai/fastai/blob/3f2079f7bc07ef84a750f6417f68b7b9fdc9525a/fastai/text.py)
+```python
+class TextDataset(Dataset):
+    def __init__(self, x, y, backwards=False, sos=None, eos=None):
+        self.x,self.y,self.backwards,self.sos,self.eos = x,y,backwards,sos,eos
+
+    def __getitem__(self, idx):
+        x = self.x[idx]
+        if self.backwards: x = list(reversed(x))
+        if self.eos is not None: x = x + [self.eos]
+        if self.sos is not None: x = [self.sos]+x
+        return np.array(x),self.y[idx]
+
+    def __len__(self): return len(self.x)
+```
