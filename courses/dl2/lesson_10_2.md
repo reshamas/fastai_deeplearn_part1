@@ -239,4 +239,21 @@ learner.sched.plot_loss()
 ## Classifier Tokens `01:32:30`
 - so, let's now create the classifier.  And I'm going to go through this bit pretty quickly, because it's the same.  But, when you go back during the week and *look at the code*, convince yourself that it is the same.
   - we do get all all, pd reads the csv again, chunksize again, get all again, save those tokens again
-  - we don't create a new `itos` vocabulary, we obviously want to use the same vocabulary again that we used in the language model, okay?  Because we're about to 
+  - we don't create a new `itos` vocabulary, we obviously want to use the same vocabulary again that we used in the language model, okay?  Because we're about to reload the same encoder
+  - same `defaultdict`, same way of creating our numericalized list, which as per before, we can save... so that's all the same
+  - later one, we can reload those rather than having to rebuild them
+  - all of our hyperparameters are the same; well, not all of them.  The construction of the model hyperparameters are the same.  We can change the dropout
+  - optimizer function 
+  - **pick a batch size as big as you can that doesn't run out of memory**
+- These bits are interesting.  There is some fun stuff going on here.
+- 
+```python
+trn_ds = TextDataset(trn_clas, trn_labels)
+val_ds = TextDataset(val_clas, val_labels)
+trn_samp = SortishSampler(trn_clas, key=lambda x: len(trn_clas[x]), bs=bs//2)
+val_samp = SortSampler(val_clas, key=lambda x: len(val_clas[x]))
+trn_dl = DataLoader(trn_ds, bs//2, transpose=True, num_workers=1, pad_idx=1, sampler=trn_samp)
+val_dl = DataLoader(val_ds, bs, transpose=True, num_workers=1, pad_idx=1, sampler=val_samp)
+md = ModelData(PATH, trn_dl, val_dl)
+```
+  - 
