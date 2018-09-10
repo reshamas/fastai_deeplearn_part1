@@ -266,11 +266,11 @@ class Dataset(object):
   def __len__(self): raise NotImplementedError
   def __add__(self, other): return ConcatDataset([self, other])
 ```
-- So, we're going to pass in our `X`, our `y`
-
-
-
-[text.py](https://github.com/fastai/fastai/blob/3f2079f7bc07ef84a750f6417f68b7b9fdc9525a/fastai/text.py)
+- So, we're going to pass in our `X`, pass in our `y`, and `__getitem__` is going to grab the `X` and grab the `y` and return them.
+- It couldn't be much simpler, right?  Optionally, they could reverse it.  Optionally, it could stick a end of stream at the end.  Optionally, it could stick a stream at the beginning.  We're not doing any of those things, so literally all we're doing is putting in an `X`, putting in a `y`, and then grab an item, we're returning the `X` and `y` as a tuple
+- and the length is however long the `X` array is
+- that's all the `Dataset` is, something with a length that you can index  
+[text.py](https://github.com/fastai/fastai/blob/3f2079f7bc07ef84a750f6417f68b7b9fdc9525a/fastai/text.py)  
 ```python
 class TextDataset(Dataset):
     def __init__(self, x, y, backwards=False, sos=None, eos=None):
@@ -285,3 +285,4 @@ class TextDataset(Dataset):
 
     def __len__(self): return len(self.x)
 ```
+- `01:36:27` so to turn it into a data loader, you simple pass the dataset to the DataLoader constructor and it's now going to go ahead and give you a batch of that at a time.  Normally, you can say `shuffle=True` or `shuffle=False`.  It will decide whether to randomize it for you.  In this case, though, we're actually going to pass in a sampler parameter (`sampler=trn_samp`)
