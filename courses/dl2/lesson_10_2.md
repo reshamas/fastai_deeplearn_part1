@@ -290,7 +290,8 @@ class TextDataset(Dataset):
 - For the training sampler, `trn_samp = SortishSampler(trn_clas, key=lambda, x: len(trn_clas[x]), bs=bs//2)`:
   - we're going to create this thing I call a "Sortish Sampler" which also sorts'ish, right?  So, this is where I really like PyTorch is that they came up with this idea for an API for their data loader where we can like hook in new classes to make it behave in different ways.  So here's a sort sampler, `SortSampler` which is simply something, which again it has a length which is the length of the data source (`return len(self.data_source)`).  
   - And it has an iterator which is simply an iterator which goes through the data source, sorted by length.  Well, the key, and I pass in as the key a lambda function which returns the length
-  - 
+- And so, for the `SortishSampler`, I won't go through the details, but basically it does the same thing with a little bit of randomness.  It's a really beautiful, you know, just another of these beautiful little design things in PyTorch that I discovered I could take Jame Bradbury's ideas, which he had written a whole new set of classes around, and I could actually just use the in-built hooks inside PyTorch.
+- You will notice, data loader, it's not actually PyTorch's data loader, it's actually fastai's data loader.  But, it's basically almost entirely plagiarized from PyTorch but customized in some ways to make it faster, mainly by using multi-threading, instead of multi-processing.  
 - in [text.py](https://github.com/fastai/fastai/blob/3f2079f7bc07ef84a750f6417f68b7b9fdc9525a/fastai/text.py)
 ```python
 class SortSampler(Sampler):
@@ -299,3 +300,7 @@ class SortSampler(Sampler):
     def __iter__(self):
         return iter(sorted(range(len(self.data_source)), key=self.key, reverse=True))
 ```
+- JH:  Yes, Rachel.
+- RT:  Does the pre-trained LSTM depth bptt need to match with the new one we are training?
+- JH:  No, the bptt doesn't need to match at all.  That's just, how many things do we look at, at a time? It's got nothing to do with the architecture.
+- So, 
