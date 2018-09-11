@@ -307,7 +307,17 @@ class SortSampler(Sampler):
   - this is what the input to my classifier section, my head, is going to be: `em_sz*3`
   - this is the output of the first layer: `50`
   - this is the output of the second layer: `c`
-  - and you can add as many as you like
+  - and you can add as many as you like, so you can basically create a little multi-layer neural net classifier at the end 
+- And, ditto, these are the dropouts: `drops=[dps[4], 0.1]`
+  - to go after each of these layers
+- And, here are all of the **AWD-LSTM dropouts**:
+  - `dropouti=dps[0], wdrop=dps[1], dropoute=dps[2], dropouth=dps[3]`
+```python
+mm  ==  get_rnn_classifierget_rnn_ (bptt, 20*70, c, vs, emb_sz=em_sz, n_hid=nh, n_layers=nl, pad_token=1,
+          layers=[em_sz*3, 50, c], drops=[dps[4], 0.1],
+          dropouti=dps[0], wdrop=dps[1], dropoute=dps[2], dropouth=dps[3])
+``` 
+
 ```python
 mm  ==  get_rnn_classifierget_rnn_ (bptt, 20*70, c, vs, emb_sz=em_sz, n_hid=nh, n_layers=nl, pad_token=1,
           layers=[em_sz*3, 50, c], drops=[dps[4], 0.1],
