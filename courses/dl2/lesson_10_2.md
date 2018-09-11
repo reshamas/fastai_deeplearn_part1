@@ -418,4 +418,14 @@ Out[21]:
 
 ## `01:44:00` paper with Sebastian Ruder
 - Abstract:  Universal Language Model Fine-tuning for Text Classification
-- We turned this into a paper, and when I saw "we", I mean with this guy Sebastian Ruder.  Now, you might remember his name because in Lesson 5 I told you that I had actually shared Lesson 4 with Sebastian because I think he's an awesome researcher who I thought might like it.  I didn't know him personally at all.  And, much to my surprise, he actually watched the damn video.  I thought, what NLP researcher is going to watch some beginner's video?  *But*, he watched the whole video!
+- We turned this into a paper, and when I saw "we", I mean with this guy Sebastian Ruder.  Now, you might remember his name because in Lesson 5 I told you that I had actually shared Lesson 4 with Sebastian because I think he's an awesome researcher who I thought might like it.  I didn't know him personally at all.  And, much to my surprise, he actually watched the damn video.  I thought, what NLP researcher is going to watch some beginner's video?  *But*, he watched the whole video! And he was, like, *that's actually quite fantastic!* 
+- JH:  And I said, well, thank you very much, that's awesome coming from you.  
+- And he said, *hey, we should turn this into a paper.*  
+- JH:  And I said, I don't write papers. I don't care about papers.  I'm not interested in papers.  That sounds really boring.
+- And he said, *ok, how about I write the paper for you?* 
+- JH:  And I said, You can't really write a paper about this yet, because you would have to do studies to compare it to other things.  They're called ?oblation studies to see.. which if it actually works.  There's no rigor here.  I just put in everything that came in my head and chucked it all together and it happened to work.
+- And he said, *ok, what if I write all the paper and do all the oblation studies?  Then can we write the paper?*
+- JH: And I said, well, it's like a whole library that I haven't documented and like, you know, I'm not going to yet, and you don't know how it's all works.
+- And he said, *ok, if I write the paper and do he oblation studies, and figure out from scratch how the code works without bothering you, THEN can we write the paper?*
+- JH: And I said, yeah, if you did all those things, you can then write the paper.  And he said *ok*, and then 2 days later he comes back and he says he has done a draft of the paper.  So, I share this story to say, that if you are some student in Ireland (he's a student in Ireland), and you want to do good work, don't let anybody stop you.  I did not encourage him, to say the least, right?  But in the end, he said, *look, I want to do this work, I think it's going to be good, and I'll figure it out.* And he wrote a fantastic paper, and he did the oblation studies, and he figured out how fastai works.  And, now we're planning to write another paper together.
+- You've got to be a bit careful, right? Because sometimes I get messages from random people saying "I've got lots of good ideas, can we have coffee?" I don't want to... you know, I can have coffee in my office anytime, thank you.  
