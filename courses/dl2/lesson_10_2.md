@@ -405,3 +405,10 @@ epoch      trn_loss   val_loss   accuracy
 Out[21]:
 [0.14661488, 0.9479046703071374]
 ```
+- and **after 3 epochs**, we get **94.4%** accuracy
+
+#### `01:41:00` James Bradbury paper
+- [Learned in Translation:  Contextualized Word Vectors](https://arxiv.org/abs/1708.00107)
+- Here is the famous James Bradbury we are talking about
+- This was kind of the main attempt, before our paper came along, at using a pre-trained model.  What they did was they used a pre-trained translation model, but they didn't fine tune the whole thing.  They just took the activations of the translation model and when they tried IMDB, they got **91.8% accuracy**, which we beat easily after only fine-tuning one layer.  Ours was **92.87% accuracy**. 
+- They weren't state-of-the-art (SOTA).  Their **SOTA is 94.1%** (in the paper), which we beat after **fine-tuning the whole thing for 3 epochs, at 94.4% accuracy**.
