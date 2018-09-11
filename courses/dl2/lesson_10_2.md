@@ -416,6 +416,6 @@ Out[21]:
 - That's a **backward English language model** that learns to read English backwards!  So, if you redo this whole thing, put all the documents in reverse, and change `fwd` to `bwd`, you now have a second classifier which classifies things by positive or negative sentiment based on the reverse document.  If you then **take the two predictions and take the average** of them, you then basically have a **bi-directional model** that you've trained each bit separately.  That gets you to **95.4% accuracy**.  So, we've basically lowered it [the error] from 5.9% to 4.6%.  
 - So this sort of **20% change in State-of-the-Art**, it's almost unheard of!  You know, it's like you have to go back to Jeffrey Hinton's ImageNet computer vision thing where they drop 30% off the SOTA.  It doesn't happen very often!  And so, you can see this idea of just **use transfer learning**.  It's ridiculously powerful but every new field thinks their new field is too special and you can't do it, right?  So, it's **a big opportunity** for all of us.
 
-## `01:44:00` Sebastian Ruder
+## `01:44:00` paper with Sebastian Ruder
 - Abstract:  Universal Language Model Fine-tuning for Text Classification
-- 
+- We turned this into a paper, and when I saw "we", I mean with this guy Sebastian Ruder.  Now, you might remember his name because in Lesson 5 I told you that I had actually shared Lesson 4 with Sebastian because I think he's an awesome researcher who I thought might like it.  I didn't know him personally at all.  And, much to my surprise, he actually watched the damn video.  I thought, what NLP researcher is going to watch some beginner's video?  *But*, he watched the whole video!
