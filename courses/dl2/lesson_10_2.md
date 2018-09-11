@@ -346,7 +346,7 @@ learn.freeze_to(-1)
 learn.lr_find(lrs/1000)
 learn.sched.plot()
 ```
-- And, so we start out just training the last layer, and we get **92.87% accuracy**
+- And, so we start out just **training the last layer**, and we get **92.87% accuracy**
 ```python
 learn.fit(lrs, 1, wds=wd, cycle_len=1, use_clr=(8,3))
 ```
@@ -366,4 +366,42 @@ learn.load('clas_0')
 - Then, we **unfreeze one more layer**
 ```python
 learn.freeze_to(-2)
+```
+- And **we train**
+```python
+learn.fit(lrs, 1, wds=wd, cycle_len=1, use_clr=(8,3))
+```
+- And we get **93.31% accuracy**
+```bash
+A Jupyter Widget
+epoch      trn_loss   val_loss   accuracy                      
+    0      0.340473   0.17319    0.933125  
+
+Out[87]:
+[0.17319041, 0.9331253991245995]
+```
+- And then we **fine tune the whole thing**
+```python
+learn.fit(lrs, 1, wds=wd, cycle_len=14, use_clr=(32,10))
+```
+```bash
+A Jupyter Widget
+epoch      trn_loss   val_loss   accuracy                      
+    0      0.337347   0.186812   0.930782  
+    1      0.284065   0.318038   0.932062                      
+    2      0.246721   0.156018   0.941747                      
+    3      0.252745   0.157223   0.944106                      
+    4      0.24023    0.159444   0.945393                      
+    5      0.210046   0.202856   0.942858                      
+    6      0.212139   0.149009   0.943746                      
+    7      0.21163    0.186739   0.946553                      
+    8      0.186233   0.1508     0.945218                      
+    9      0.176225   0.150472   0.947985                      
+    10     0.198024   0.146215   0.948345                      
+    11     0.20324    0.189206   0.948145                      
+    12     0.165159   0.151402   0.947745                      
+    13     0.165997   0.146615   0.947905                      
+
+Out[21]:
+[0.14661488, 0.9479046703071374]
 ```
