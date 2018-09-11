@@ -1,5 +1,5 @@
 # Lesson 10:  NLP Classification and Translation
-### notes are continued from [lesson_10_1](lesson_10_2.md)
+### notes are continued from [lesson_10_1](lesson_10_1.md)
 
 (02-Apr-2018, live)  
 
