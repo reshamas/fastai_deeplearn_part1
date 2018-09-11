@@ -545,3 +545,4 @@ https://github.com/fastai/fastai/blob/master/docs/transforms-tmpl.adoc
 - and that's how we're doing it as well.  our doc strings will be one line, unless like you need 2 sometimes; it's going to be very similar to Python, but even better
 - so, everybody is welcome to help contribute to the documentation.  And hopefully, by the time you are watching this on the MOOC, it'll be reasonably flushed out.  And we'll try to keep a list of things to do
 
+### notes are continued in [lesson_10_2](lesson_10_2.md)
