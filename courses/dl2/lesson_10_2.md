@@ -303,4 +303,13 @@ class SortSampler(Sampler):
 - JH:  Yes, Rachel.
 - RT:  Does the pre-trained LSTM depth bptt need to match with the new one we are training?
 - JH:  No, the bptt doesn't need to match at all.  That's just, how many things do we look at, at a time? It's got nothing to do with the architecture.
-- So, now we can call that function we saw before, `get_rnn_classifer`, it's going to create exactly the same encoder, more or less. And we're going to pass in the same architectural details as before.
+- So, now we can call that function we saw before, `get_rnn_classifer`, it's going to create exactly the same encoder, more or less. And we're going to pass in the same architectural details as before.  But, this time, we can.. the head that we add on, you've got a few more things you can do.  One is you can add more than one hidden layer, so this `layers` here says:
+  - this is what the input to my classifier section, my head, is going to be: `em_sz*3`
+  - this is the output of the first layer: `50`
+  - this is the output of the second layer: `c`
+  - and you can add as many as you like
+```python
+mm  ==  get_rnn_classifierget_rnn_ (bptt, 20*70, c, vs, emb_sz=em_sz, n_hid=nh, n_layers=nl, pad_token=1,
+          layers=[em_sz*3, 50, c], drops=[dps[4], 0.1],
+          dropouti=dps[0], wdrop=dps[1], dropoute=dps[2], dropouth=dps[3])
+```      
