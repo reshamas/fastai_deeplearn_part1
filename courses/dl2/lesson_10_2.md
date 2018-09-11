@@ -310,16 +310,60 @@ class SortSampler(Sampler):
   - and you can add as many as you like, so you can basically create a little multi-layer neural net classifier at the end 
 - And, ditto, these are the dropouts: `drops=[dps[4], 0.1]`
   - to go after each of these layers
-- And, here are all of the **AWD-LSTM dropouts**:
+- And, here are all of the **AWD-LSTM dropouts**
   - `dropouti=dps[0], wdrop=dps[1], dropoute=dps[2], dropouth=dps[3]`
+  - which we're going to basically plagiarize that idea for our classifier
 ```python
 mm  ==  get_rnn_classifierget_rnn_ (bptt, 20*70, c, vs, emb_sz=em_sz, n_hid=nh, n_layers=nl, pad_token=1,
           layers=[em_sz*3, 50, c], drops=[dps[4], 0.1],
           dropouti=dps[0], wdrop=dps[1], dropoute=dps[2], dropouth=dps[3])
 ``` 
+- We're going to use the `RNN_learner` just like before 
+```python
+learnlearn  ==  RNN_LearnerRNN_Lear (md, TextModel(to_gpu(m)), opt_fn=opt_fn)
+learn.reg_fn = partial(seq2seq_reg, alpha=2, beta=1)
+learn.clip=.25
+learn.metrics = [accuracy]
+```
+- We're going to use **discriminative learning rates**
+  - actually the second set below is the one JH used here
+```python
+lr=3e-3
+lrm = 2.6
+lrs = np.array([lr/(lrm**4), lr/(lrm**3), lr/(lrm**2), lr/lrm, lr])
+
+lrslrs==npnp..arrayarray([([11ee--44,,11ee--44,,11ee--44,,11ee--33,,11ee--22])])
+```
+- You can try using **weight decay** or note.  I've been trying to fiddle around a bit with that to see what happens 
+```python
+wd = 1e-7
+wd = 0
+learn.load_encoder('lm1_enc')
+```
 
 ```python
-mm  ==  get_rnn_classifierget_rnn_ (bptt, 20*70, c, vs, emb_sz=em_sz, n_hid=nh, n_layers=nl, pad_token=1,
-          layers=[em_sz*3, 50, c], drops=[dps[4], 0.1],
-          dropouti=dps[0], wdrop=dps[1], dropoute=dps[2], dropouth=dps[3])
-```      
+learn.freeze_to(-1)
+learn.lr_find(lrs/1000)
+learn.sched.plot()
+```
+- And, so we start out just training the last layer, and we get **92.87% accuracy**
+```python
+learn.fit(lrs, 1, wds=wd, cycle_len=1, use_clr=(8,3))
+```
+```bash
+A Jupyter Widget
+epoch      trn_loss   val_loss   accuracy                      
+    0      0.365457   0.185553   0.928719  
+
+Out[82]:
+[0.18555279, 0.9287188090884525]
+```
+- Then, we **save the model**
+```python
+learn.save('clas_0')
+learn.load('clas_0')
+```
+- Then, we **unfreeze one more layer**
+```python
+learn.freeze_to(-2)
+```
