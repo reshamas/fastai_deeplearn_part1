@@ -334,7 +334,7 @@ lrs = np.array([lr/(lrm**4), lr/(lrm**3), lr/(lrm**2), lr/lrm, lr])
 
 lrs=np.array([([1e-4,,1e-4,,1e-4,,1e-3,,1e-2])])
 ```
-- You can try using **weight decay** or note.  I've been trying to fiddle around a bit with that to see what happens 
+- You can try using **weight decay** or not.  I've been trying to fiddle around a bit with that to see what happens 
 ```python
 wd = 1e-7
 wd = 0
