@@ -445,7 +445,27 @@ Out[21]:
 - Since he told me about it, actually it was just maybe 2 days ago, he wrote this amazing paper:  
 [A disciplined approach to neural network hyper-parameters: Part 1 -- learning rate, batch size, momentum, and weight decay](https://arxiv.org/abs/1803.09820)
 - [In this paper], he describes something very slightly different to this again, but the same basic idea.  This is a **must read paper!** It's got all the kinds of ideas that fastai talks about a lot in great depth and nobody else is talking about this stuff.  It's kind of a slog.  Unfortunately, Leslie had to go away on a trip before he really had time to edit it properly, so it's a little bit slow reading, but don't let that stop you.  It's amazing.
-- `01:51:20` [back to upside down V] So this triangle, this is the equation from my paper with Sebastian.  Sebastian was like, Jeremy, can you send me the math equation behind that code you're using?  I said, no [laughs], I just wrote the code, I could not turn that into math.  So he figured out the math for it.  
+- `01:51:20` [back to upside down V] So this triangle, this is the equation from my paper with Sebastian.  Sebastian was like, Jeremy, can you send me the math equation behind that code you wrote?  I said, no [laughs], I just wrote the code, I could not turn that into math.  So he figured out the math for it.  
 
 ## `01:51:35` Concat Pooling
-- You might have noticed the first layer of our classifier was equal to embedding size times 3, yx3.  Times 3 (x3) because, again this seems to be something which people haven't done before, so new idea.  **Concat pooling** 
+- You might have noticed the first layer of our classifier was equal to embedding size times 3. Why times 3?  Times 3 (x3) because, again this seems to be something which people haven't done before, so new idea.  **Concat pooling** which is that we take the average pooled (meanpool(H)), the average pooling over the sequence of activations, the max pooling (maxpool(H)) of the sequence over the activations, and the **final set of activations** (h_T) and just concatenate them all together.  Again, this is something which we talked about in Part 1, but doesn't seem to be in the literature before.  So, it's not called concat pooling and again it's now got an equation and everything but this is the entirety of the implementation:  
+  - Pool with average pool with max   
+  - Concatenate those two along with the final sequence 
+- so you can go through this paper and see how the fastai code implements each piece
+- [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/pdf/1801.06146.pdf), Jeremy Howard & Sebastian Ruder
+```text
+H = {h_1, h_2, ... h_T}:
+   h_c = [h_T, maxpool(H), meanpool(H)]     (4)
+
+where [ ] is concatenation
+```
+   
+
+
+
+
+
+
+
+
+
