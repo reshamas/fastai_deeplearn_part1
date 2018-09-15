@@ -459,6 +459,7 @@ H = {h_1, h_2, ... h_T}:
 
 where [ ] is concatenation
 ```
+- Then, to me, kind of one of the interesting pieces is the difference between RNN Encoder, which you've already seen, and **multi-batch RNN encoder**.  So what's the difference there?  The key difference is the normal RNN encoder for the language model, we could just do BPTT chunk at a time, right, no problem.  And predict the next word.  But,  
    
 
 
