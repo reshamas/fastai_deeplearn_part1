@@ -542,8 +542,7 @@ tightvncserver -kill :13
   - and you do nothing else at all
   - you don't have to add any metadata, any docstrings, anything at all
   - and you then call that script and automatically you now have a command line interface 
-- and that's it, that's a super fantastic easy way to run lots of different variations in a terminal and this ends up being easier 
-
+- and that's it, that's a super fantastic easy way to run lots of different variations in a terminal and this ends up being easier if you want to do lots of variations than using a notebook because you can just like have a bash script that tries all of them and spits them all out
 - [train_clas](https://github.com/fastai/fastai/blob/a7b9dc3afd39c31a415d475905e14abd90b5b895/courses/dl2/imdb_scripts/train_clas.py)
 ```python
 def train_clas(dir_path, cuda_id, lm_id='', clas_id=None, bs=64, cl=1, backwards=False, startat=0, unfreeze=True,
@@ -551,7 +550,7 @@ def train_clas(dir_path, cuda_id, lm_id='', clas_id=None, bs=64, cl=1, backwards
                use_regular_schedule=False, use_discriminative=True, last=False, chain_thaw=False,
                from_scratch=False, train_file_id=''):
 ```
-
+- `2:02:50` You'll find inside 
 
 
 
