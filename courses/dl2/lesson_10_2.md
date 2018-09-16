@@ -503,10 +503,33 @@ class MultiBatchRNN(RNN_Encoder):
 - And so he did these studies to check.
 
 
-### `01:58:30` 
-- I want to show you a couple 
+### `01:58:30` Trick 1:  Running Firefox on AWS/Paperspace/etc
+- I want to show you a couple of tricks as to how you can run these kinds of studies
+- The first trick is something which I know you are all going to find really handy.  I know you've all been annoyed when you are running something in Jupyter notebook and you lose your internet connection for long enough that it decides you've gone away and then your session disappears and you have to start it again from scratch.  So, what do you do?  There's a very simple cool thing called **VNC** where basically you can install on your AWS instance or Paperspace or whatever, **X Windows**, a lightweight window manager, a VNC server, Firefox, a terminal, and some fonts:  
+```bash
+sudo apt-get install xorg lxde-core tightvncserver firefox lxterminal xfonts-100dpi
+```
+- Chuck these lines at the end of your VNC X start-up configuration file:  
+```bash
+cat >> ~/.vnc/xstartup
+       lxterminal &
+       /usr/bin/lxsession -s LXDE &
+       <ctrl-d>
+```
+- and then run this command:  
+```bash
+tightvncserver :13 -geometry 1200x900
+```
+- it's now running a server where if you now run for... well, let me explain.  It's now running a server where you can then run the type VNC viewer, or any VNC viewer, on your computer and you point it at your server.  But, specifically, what you do is you use SSH port forwarding to port forward port 5913 to local host 5913.  And so then, you connect to port 5913 on localhost.  It will send it off to port 5913 on your server which is the VNC port, because you said `:13` here, and it will display an X Windows desktop! And then you can click on the Linux start-like button, and you can click on Firefox and you now have Firefox! And, so you can now run, and you can see here on Firefox, it says `localhost`.  Because this Firefox is running on our AWS server!  And so, you now run Firefox, you start your thing running, and then you close your VNC viewer, remembering that Firefox is like displaying on this virtual VNC display, not in the real display.  And so, later on that day, you log back into the VNC viewer, and it pops up again, so it's like a persistent desktop.  And, it's shockingly fast!  It works really well.  So, this trick, number 1.  And, there's lots of different VNC servers and clients and whatever, but this one works fine for me, so there you go.  So you can see here `2:01:20` I connect to localhost 5913 
+```bash
+jhoward@jhbook-2:/mnt/c/Users/j$ ssh -L5913:localhost:5913 usf2.mine.nu
+```
+```bash
+tightvncserver -kill :13
+```
 
-
+### `02:01:27` Trick 2: Create Python Scripts
+- Trick number 2 is to create Python scripts and this is what we ended up doing.  So I ended up creating like a little Python script for Sebastian to kind of say, this is the basic step
 
 
 
