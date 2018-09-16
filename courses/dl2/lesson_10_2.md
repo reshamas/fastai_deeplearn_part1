@@ -550,9 +550,18 @@ def train_clas(dir_path, cuda_id, lm_id='', clas_id=None, bs=64, cl=1, backwards
                use_regular_schedule=False, use_discriminative=True, last=False, chain_thaw=False,
                from_scratch=False, train_file_id=''):
 ```
-- `2:02:50` You'll find inside 
-
-
+- `2:02:50` You'll find inside the dl2 course directory there's now something called [imdb_scripts](https://github.com/fastai/fastai/tree/a7b9dc3afd39c31a415d475905e14abd90b5b895/courses/dl2/imdb_scripts) 
+- I've put there all of the scripts that Sebastian and I used.
+- You'll see because:
+  - we needed to tokenize every single dataset... 
+  - we had to turn every dataset...to numericalize every dataset
+  - we had to train a language model on every dataset 
+  - we had to train a classifier on every dataset
+  - and we had to do all of those things in a variety of different ways 
+- To compare them, we had a script for all those things
+- You can check out and see all of the scripts that we used 
+- When you're doing a lot of scripts and stuff, they've got different code all over the place.  Eventually, it might get frustrating that you want to, you know you don't want to symlink your fastai library again and again.  But, you probably don't want to pip install it because that version tends to be a little bit old.  We move so fast you want to use the current version in git.
+- If you say `pip install -e .` from the [location] `~/git/fastai`  
 
 
 
