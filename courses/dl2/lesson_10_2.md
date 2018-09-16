@@ -561,7 +561,24 @@ def train_clas(dir_path, cuda_id, lm_id='', clas_id=None, bs=64, cl=1, backwards
 - To compare them, we had a script for all those things
 - You can check out and see all of the scripts that we used 
 - When you're doing a lot of scripts and stuff, they've got different code all over the place.  Eventually, it might get frustrating that you want to, you know you don't want to symlink your fastai library again and again.  But, you probably don't want to pip install it because that version tends to be a little bit old.  We move so fast you want to use the current version in git.
-- If you say `pip install -e .` from the [location] `~/git/fastai`  
+- If you say `pip install -e .` from the [location] `~/git/fastai` , from the fastai repo base, it does something quite neat.  Which is, it basically creates a symlink to the fastai library, in your git installation right here, inside your site packages directory.  Your site packages directory is your main Python library.
+- If you do this, you can then access fastai from anywhere, but every time you do `git pull`, you've got the most recent version. 
+- One downside of this is that it installs any updated versions of packages from `pip` which can kind of confuse `conda` a little bit.  So, another alternative here is just to symlink the fastai library to your site packages library.  That works just as well.  Then you can use fastai again, from anywhere and it's quite handy when you want to kind of run scripts that use fastai from different directories on your system
+
+### `02:05:05` [sentencepiece](https://pypi.org/project/sentencepiece/)
+- [sentencepiece](https://github.com/google/sentencepiece) (github repo)
+- One more thing before we go which is something you can try if you like.  You don't have to tokenize words
+- Instead of tokenizing words, you can tokenize what are called sub word units.  
+  - for example, "unsupervised" could be tokenized as "un supervised" 
+  - "tokenizer" could be tokenized as "token izer"
+- And then you could do the same thing.  The language model that works on sub-word units, a classifier that works on sub-word units, etc.
+```text
+SentencePiece is an unsupervised text tokenizer and detokenizer mainly for Neural Network-based text generation systems where the vocabulary size is predetermined prior to the neural model training. SentencePiece implements subword units (e.g., byte-pair-encoding (BPE) [Sennrich et al.]) and unigram language model [Kudo.]) with the extension of direct training from raw sentences. SentencePiece allows us to make a purely end-to-end system that does not depend on language-specific pre/postprocessing.
+```
+- So, how well does that work?  I started playing with it and with not too much playing, I was getting classification results that were nearly as good as using word-level tokenization.  Not quite as good, but nearly as good. 
+- I suspect with more careful thinking and playing around maybe I could have gotten as good or better, but even if I couldn't, if you create a sub-word unit wikitext model, then IMDb model language model, and then classifier, forwards and backwards for sub-word units, and then ensemble it with the forwards and backwards word-level ones, *you should* be able to beat us, right.
+- So, here's an approach you may be able to beat our state-of-the-art result.  
+
 
 
 
