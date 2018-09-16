@@ -108,10 +108,11 @@ Reshama Shaikh
 ### [Deep Learning 2: My Lesson Notes](courses/dl2/) 
 * [Lesson 8](courses/dl2/lesson_08.md) Object Detection
 * [Lesson 9](courses/dl2/lesson_09.md) Multi-object Detection
-* [Lesson 10] NLP Classification and Translation
+* Lesson 10 NLP Classification and Translation
     - [Lesson 10_1](courses/dl2/lesson_10_1.md)
     - [Lesson 10_2](courses/dl2/lesson_10_2.md)
-* [Lesson 11] ()
+* Lesson 11 Neural Translation
+    - [Lesson 11_1](courses/dl2/lesson_11_1.md)
 * [Lesson 12] ()
 * [Lesson 13] ()
 * [Lesson 14] () 
