@@ -459,7 +459,32 @@ H = {h_1, h_2, ... h_T}:
 
 where [ ] is concatenation
 ```
-- Then, to me, kind of one of the interesting pieces is the difference between RNN Encoder, which you've already seen, and **multi-batch RNN encoder**.  So what's the difference there?  The key difference is the normal RNN encoder for the language model, we could just do BPTT chunk at a time, right, no problem.  And predict the next word.  But, for the classifier, we need to do the whole document. We need to do the whole movie review before we decide whether it's positive or negative.  And the whole movie review can easily be 2,000 words long and I can't fit 2,000 words worth of gradients in my GPU memory for every single one of my activations.  
+- Then, to me, kind of one of the interesting pieces is the difference between RNN Encoder, which you've already seen, and **multi-batch RNN encoder**.  So what's the difference there?  The key difference is the normal RNN encoder for the language model, we could just do BPTT chunk at a time, right, no problem.  And predict the next word.  But, for the classifier, we need to do the whole document. We need to do the whole movie review before we decide whether it's positive or negative.  And the whole movie review can easily be 2,000 words long and I can't fit 2,000 words worth of gradients in my GPU memory for every single one of my ~activations~, sorry, for every single one of my *weights*, so what do I do?
+- So, the idea was very simple, which is I go through my whole sequence length, one batch of `bptt` at a time:  `for i in range(0, sl, self.bptt):`
+- And I call `super().forward`, so in other words, the `RNN_Encoder`, I couldn't call the usual RNN Encoder, so I grab its outputs, and then I've got this maximum sequence length parameter, `if i>(sl-self.max_seq):`, where it says, okay, if you've... as long as you're doing no more than that sequence length, then start appending it, `raw_outputs.append(r)`, to my list of outputs
+- So, in other words, the thing that it sends back to 
+- [lm_rnn.py](https://github.com/fastai/fastai/blob/87d7a489c22fc5daa38fa92683df183f7c9bbe1c/fastai/lm_rnn.py)
+```python
+class MultiBatchRNN(RNN_Encoder):
+    def __init__(self, bptt, max_seq, *args, **kwargs):
+        self.max_seq,self.bptt = max_seq,bptt
+        super().__init__(*args, **kwargs)
+
+    def concat(self, arrs):
+        return [torch.cat([l[si] for l in arrs]) for si in range(len(arrs[0]))]
+
+    def forward(self, input):
+        sl,bs = input.size()
+        for l in self.hidden:
+            for h in l: h.data.zero_()
+        raw_outputs, outputs = [],[]
+        for i in range(0, sl, self.bptt):
+            r, o = super().forward(input[i: min(i+self.bptt, sl)])
+            if i>(sl-self.max_seq):
+                raw_outputs.append(r)
+                outputs.append(o)
+        return self.concat(raw_outputs), self.concat(outputs)
+```
    
 
 
