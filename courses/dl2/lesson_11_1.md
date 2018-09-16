@@ -7,7 +7,7 @@
   - video length:  2:15:57
 - http://course.fast.ai/lessons/lesson11.html
 - Notebook:  
-   * [imdb.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/imdb.ipynb)
+   * [translate.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/translate.ipynb)
 
 ---
 # Lesson Description
@@ -74,19 +74,39 @@ Also, the unexpected benefits of blogging: I will be presenting this technique a
 - Or taking a... well I don't know, I mean like you know basically anything where you are spitting out kind of an arbitrary sized output, very often that's a sentence.  So maybe taking a CT scan and spitting out a radiology report.  This is where you can use seq-to-seq learning. 
 
 ### `08:35` 4 Big Wins of Neural MT (Machine Translation)
-- So the important thing about a neural machine translation is... more slides from Chris.  And generally, seq-to-seq models is that there is no fussing around with heuristics and hackey feature engineering, whatever.  It's end to end training.  We are able to build these distributed representations which are shared by lots of kinds of concepts 
+- So the important thing about a neural machine translation is... more slides from Chris.  And generally, seq-to-seq models is that there is no fussing around with heuristics and hackey feature engineering, whatever.  It's end to end training.  We are able to build these distributed representations which are shared by lots of kinds of concepts within a single network.  We are able to use **Long Term State** in the **RNN** so use a lot more context rather than n-gram kind of approaches.  
+- And in the end, the text we are generating uses an RNN as well so we can build something that's more fluid. 
+
 - heuristic definition:  A heuristic technique (/hjʊəˈrɪstɪk/; Ancient Greek: εὑρίσκω, "find" or "discover"), often called simply a heuristic, is any approach to problem solving, learning, or discovery that employs a practical method, not guaranteed to be optimal, perfect, logical, or rational, but instead sufficient for reaching an immediate goal. Where finding an optimal solution is impossible or impractical, heuristic methods can be used to speed up the process of finding a satisfactory solution. 
 
 #### 1. End-to-end training
 All parameters are simultaneously optimized to minimize a loss function on the network's output.
 
-
 #### 2. Distributed representations share strength
 Better exploitation of word and phrase similiarities
-
 
 #### 3. Better exploitation of context
 NMT can use a much bigger context - both source and partial target text - to translate more accurately
 
 #### 4. More fluent text generation
 Deep learning text generation is much higher quality
+
+### `09:20` BiLSTMs(+Attn) not just for neural MT [slide]
+- Part of speech tagging
+- Named entity recognition
+- Syntactic parsing (constituency and dependency)
+- Reading comprehension
+- Question answering
+- Text summarization
+- ...
+
+#### `09:20` BiLSTMs(+Attn) not just for neural MT [class notes]
+- We are going to use a bi-directional LSTM with attention, well, actually we're going to use a bi-directional GRU with attention, but basically the same thing.  So you already know about bi-directional recurrent neural network and **attention** we are going to add on top today.  These general ideas you can use for lots of other things as well as Chris points out on slide [above].
+
+### `09:50` BiLSTMs CODE
+- So, let's jump into the code which is in the [translate.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/translate.ipynb), funnily enough.  
+- And so, we are going to try to translate French into English.  And so the basic idea is that we're going to try and make this look as much like a standard neural network approach as possible.
+
+
+
+
