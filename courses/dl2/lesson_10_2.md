@@ -463,9 +463,6 @@ where [ ] is concatenation
 - So, the idea was very simple, which is I go through my whole sequence length, one batch of `bptt` at a time:  `for i in range(0, sl, self.bptt):`
 - And I call `super().forward`, so in other words, the `RNN_Encoder`, I couldn't call the usual RNN Encoder, so I grab its outputs, and then I've got this maximum sequence length parameter, `if i>(sl-self.max_seq):`, where it says, okay, if you've... as long as you're doing no more than that sequence length, then start appending it, `raw_outputs.append(r)`, to my list of outputs
 - So, in other words, the thing that it sends back to this pooling is only as much, as many activations as we've asked it to keep.  And so that way, you can basically figure out how much, what is `max_seq`, do you..., can your particular GPU handle that? So, it's still using the whole document, but let's say `max_seq` is 1000 words, and your longest document length is 2000 words.  Then, it's still going through the RNN creating state for those first 1000 words.  But, it's not actually going to store the activations for the back-prop the first thousand.  It's only going to keep the last thousand, right.  So that it means that it can't back propagate the loss back to any decisions that any state that was created in the first thousand words.  Basically, that's now gone.  
-- So, it's a really simple piece of code.  And honestly, when I wrote it, it was like I didn't spend much time thinking about it.  It seems so obviously the only way that this could possibly work, but again, it seems to be a new thing.  
-- So, we now have **back-prop through time for text classification**.
-- So you see there are lots of little pieces in this paper.  So, what was the result?  The result was 
 - [lm_rnn.py](https://github.com/fastai/fastai/blob/87d7a489c22fc5daa38fa92683df183f7c9bbe1c/fastai/lm_rnn.py)
 ```python
 class MultiBatchRNN(RNN_Encoder):
@@ -488,7 +485,26 @@ class MultiBatchRNN(RNN_Encoder):
                 outputs.append(o)
         return self.concat(raw_outputs), self.concat(outputs)
 ```
-   
+
+- So, it's a really simple piece of code.  And honestly, when I wrote it, it was like I didn't spend much time thinking about it.  It seems so obviously the only way that this could possibly work, but again, it seems to be a new thing.  
+- So, we now have **back-prop through time for text classification**.
+- So you see there are lots of little pieces in this paper.  So, what was the result?  The result was, on every single dataet we tried, we got a better result than any previous academic paper for text classification.
+- `01:56:30` IMDB tracked 6, AG News, DBpedia, Yelp... all different types.  And, honestly, IMDB was the only one I spent any time trying to optimize the model, so most of them we just did it like whatever came up first.  So, if we actually spent time with it, I think these [numbers] would be a lot better.
+- And the things these are comparing to, most of them are, and you'll see, they're different on each table because they are optimized, you know, these are customized algorithms on the whole.  So, this is saying like one simple fine-tuning algorithm can beat these really customized algorithms.
+-  `01:57:00` And so, here's the... one of the really cool things that Sebastian did was his Ablation Studies.  Which is, I was really keen, that if you're going to publish a paper, we had to say, "why does it work?".  So Sebastian went through and tried, you know, removing all of those different contributions I mentioned.  
+  - So, what if we don't use **gradual freezing?** 
+  - What if we don't use **discriminative learning rates?**
+  - What if, instead of discriminative learning rates, we use **cosine annealing?**
+  - What if we don't do any **pre-training with Wikipedia?**  
+  - What if we don't do any **fine-tuning?**
+- And then, the really interesting one to me was, what's the validation error rate on IMDb, *if* we only use 100 training examples? [Referring to graph in paper]: versus 200, versus 500?  and you can see, you know very interestingly, the **full version** of this approach is nearly as accurate on just a hundred training examples as, like it's still very accurate, versus for 20,000 training examples.
+- Whereas if you're training from scratch on 100, it's like almost random, all right.  So, kind of like, it's what I expected.  You know, I've kind of said to Sebastian, **I really think this is most beneficial when you don't have much data, and this is like where fastai is most interested in contributing.**
+- There's like small data regimes, small compute regimes and so forth.  
+- And so he did these studies to check.
+
+
+### `01:58:30` 
+- I want to show you a couple 
 
 
 
