@@ -67,6 +67,24 @@ Also, the unexpected benefits of blogging: I will be presenting this technique a
 - So, we're kind of seeing machine translation starting down the path that we saw starting computer vision object classification in 2012.  I guess, we just surpassed state-of-the-art, and we are now zipping past it at a great rate.
 - It's very unlikely that anybody watching this is actually gonna build a machine translation model because you can go to translate.google.com and use it and it works quite well.
 - So, why are we learning about machine translation?  Well, the reason we're learning about machine translation is that the general idea of taking some kind of input like a sentence in French and transforming it into some other kind of output with arbitrary length, such as a sentence in English, is a really useful thing to do.  
-- For example, that thing that we just saw that Hamel...github did... takes github issues and turns them into summaries. 
-- Other examples is taking videos and turning them into descriptions.
-- Or taking a... well I don't know, I mean like you know basically anything where you are spitting out kind of 
+
+#### Applications of seq-to-seq (NLP)
+- For example, that thing that we just saw that Hamel...github did... **takes github issues and turns them into summaries.** 
+- Other examples is **taking videos and turning them into descriptions.**
+- Or taking a... well I don't know, I mean like you know basically anything where you are spitting out kind of an arbitrary sized output, very often that's a sentence.  So maybe taking a CT scan and spitting out a radiology report.  This is where you can use seq-to-seq learning. 
+
+### `08:35` 4 Big Wins of Neural MT (Machine Translation)
+
+#### 1. End-to-end training
+All parameters are simultaneously optimized to minimize a loss function on the network's output.
+
+
+#### 2. Distributed representations share strength
+Better exploitation of word and phrase similiarities
+
+
+#### 3. Better exploitation of context
+NMT can use a much bigger context - both source and partial target text - to translate more accurately
+
+#### 4. More fluent text generation
+Deep learning text generation is much higher quality
