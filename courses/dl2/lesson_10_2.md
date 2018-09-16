@@ -529,7 +529,30 @@ tightvncserver -kill :13
 ```
 
 ### `02:01:27` Trick 2: Create Python Scripts
-- Trick number 2 is to create Python scripts and this is what we ended up doing.  So I ended up creating like a little Python script for Sebastian to kind of say, this is the basic step
+- Trick number 2 is to create Python scripts and this is what we ended up doing.  So I ended up creating like a little Python script for Sebastian to kind of say, this is the basic steps you need to do and now you need to create different versions for everything else and I suggested to him that he try using this thing called **Google Fire.**
+- What Google Fire does is you create a function, with shitloads of parameters, and these are all the different things that Sebastian wanted to try doing:  
+  - different drop-out amounts
+  - different learning rates
+  - do I use pre-training or not?
+  - do I use CLR or not
+  - do I use discriminative learning rate or not
+  - do I go backwards or not?
+  - blah, blah, blah
+- So you create a function, and then you add:  `if __name__=='__main__': fire.Fire(train_clas)`
+  - and you do nothing else at all
+  - you don't have to add any metadata, any docstrings, anything at all
+  - and you then call that script and automatically you now have a command line interface 
+- and that's it, that's a super fantastic easy way to run lots of different variations in a terminal and this ends up being easier 
+
+- [train_clas](https://github.com/fastai/fastai/blob/a7b9dc3afd39c31a415d475905e14abd90b5b895/courses/dl2/imdb_scripts/train_clas.py)
+```python
+def train_clas(dir_path, cuda_id, lm_id='', clas_id=None, bs=64, cl=1, backwards=False, startat=0, unfreeze=True,
+               lr=0.01, dropmult=1.0, bpe=False, use_clr=True,
+               use_regular_schedule=False, use_discriminative=True, last=False, chain_thaw=False,
+               from_scratch=False, train_file_id=''):
+```
+
+
 
 
 
