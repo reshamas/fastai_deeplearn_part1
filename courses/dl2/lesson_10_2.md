@@ -462,7 +462,7 @@ where [ ] is concatenation
 - Then, to me, kind of one of the interesting pieces is the difference between RNN Encoder, which you've already seen, and **multi-batch RNN encoder**.  So what's the difference there?  The key difference is the normal RNN encoder for the language model, we could just do BPTT chunk at a time, right, no problem.  And predict the next word.  But, for the classifier, we need to do the whole document. We need to do the whole movie review before we decide whether it's positive or negative.  And the whole movie review can easily be 2,000 words long and I can't fit 2,000 words worth of gradients in my GPU memory for every single one of my ~activations~, sorry, for every single one of my *weights*, so what do I do?
 - So, the idea was very simple, which is I go through my whole sequence length, one batch of `bptt` at a time:  `for i in range(0, sl, self.bptt):`
 - And I call `super().forward`, so in other words, the `RNN_Encoder`, I couldn't call the usual RNN Encoder, so I grab its outputs, and then I've got this maximum sequence length parameter, `if i>(sl-self.max_seq):`, where it says, okay, if you've... as long as you're doing no more than that sequence length, then start appending it, `raw_outputs.append(r)`, to my list of outputs
-- So, in other words, the thing that it sends back to 
+- So, in other words, the thing that it sends back to this pooling is only as much, as many activations as we've asked it to keep.  
 - [lm_rnn.py](https://github.com/fastai/fastai/blob/87d7a489c22fc5daa38fa92683df183f7c9bbe1c/fastai/lm_rnn.py)
 ```python
 class MultiBatchRNN(RNN_Encoder):
