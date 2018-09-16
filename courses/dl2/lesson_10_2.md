@@ -578,6 +578,11 @@ SentencePiece is an unsupervised text tokenizer and detokenizer mainly for Neura
 - So, how well does that work?  I started playing with it and with not too much playing, I was getting classification results that were nearly as good as using word-level tokenization.  Not quite as good, but nearly as good. 
 - I suspect with more careful thinking and playing around maybe I could have gotten as good or better, but even if I couldn't, if you create a sub-word unit wikitext model, then IMDb model language model, and then classifier, forwards and backwards for sub-word units, and then ensemble it with the forwards and backwards word-level ones, *you should* be able to beat us, right.
 - So, here's an approach you may be able to beat our state-of-the-art result.  
+- Google has, as Sebastian told me about this particular project, is great.  Google has a project called Sentence Piece, which actually uses a neural net to figure out the optimal splitting up of words.  And so you end up with a vocabulary of sub-word units.  
+- In my playing around, I found that creating a vocabulary of about 30K sub-word units seems to be about optimal. 
+- So, if you're interested, there is something you can try.  It's a bit of a pain to install.  It's C++.  It doesn't have great error messages but it will work.  There is a Python library for it and if anybody tries this, I am happy to help them get it working.  There's been little, if any experiments with ensembling sub-word and word-level stuff classification, and I do think it should be best approach.
+- All right.  Thanks everybody.  Have a great week and see you next Monday.  [applause]
+
 
 
 
