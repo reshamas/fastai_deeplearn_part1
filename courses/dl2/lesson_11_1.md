@@ -169,3 +169,21 @@ For **bounding boxes**, all of the interesting stuff was in the **loss function*
 <br>
 <img src="../../images/lesson_11/lesson_11_charloop.png" align="center" width="75%" height="75%"  >   
 <br>
+- so remember, we had something that did exactly the same thing as this, but it just had 4 lines of code saying linear, linear, linear, linear, and we literally replaced it with a for-loop because that's nice to refactor.  So literally, that refactoring, which doesn't change any of the math, any of the ideas, any of the outputs.  That refactoring is an RNN, okay.  Turning a bunch of separate lines of code into a Python format.  And that's how we can draw it.
+- We could take the output, so it's not outside of the loop and put it *inside* the loop, like so, right.  And if we do that, we are now going to generate a separate output for every input 
+- [back to code slide] So in this case, this particular one here, the hidden state gets replaced each time and we end up just spitting out the final hidden state, so this one is this example [one with output outside of box], but if instead we had something that said you know, `hs.append(h)` and returned h's at the end, that would be this picture, yeah [?one with output inside box].  
+- So go back and re-look at that notebook if this is unclear.  The main thing to remember is when we say hidden state, we are referring to a vector, okay.  See here, here's the vector:  `h = V(torch.zeroes(bs, n_hidden).cuda())`.  Now, of course, it's a vector for each thing in the mini-batch, so it's a matrix.  But I'm...generally when I speak about these things, I ignore the mini-batch piece and treat it like a single item.
+- So it's just a vector of this length:  `n_hidden`
+
+#### `21:40` [slide]
+- We also learnt that you 
+
+
+<br>
+<img src="../../images/lesson_11/lesson_11_rnn_stacked.png" align="center" width="75%" height="75%"  >   
+<br>
+
+
+
+
+
