@@ -193,9 +193,9 @@ For **bounding boxes**, all of the interesting stuff was in the **loss function*
 - so that's the goal is to get to a point that we first of all have these XY pairs of sentences and we're going to do French to English
 - we're going to start by downloading this dataset.  
 - training a translation model takes a long time.  Google's translation model has 8 layers of RNNs stacked on top of each other.  There's no conceptual difference between 8 layers and 2 layers.  It's just like, if you're Google and you have more GPUs or CPUs than you know what to do with, then you are fine doing that.  Whereas in our case, it's pretty likely that the kind of sequence to sequence models we're building are not going to require that level of computation.  So to keep things simple, let's do a cut-down thing where rather than learning how to translate French into English for any sentence, let's learn to to translate French questions into English questions.  And specifically questions that start with "what where which when".  
+- [translate.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/translate.ipynb)
 - So you can see here I've got a regex which looks for things that start with "Wh" and ends with a "?"
 - So I go through the corpus 
-- [translate.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/translate.ipynb)
 ```python
 re_eq = re.compile('^(Wh[^?.!]+\?)')
 re_fq = re.compile('^([^?.!]+\?)')
