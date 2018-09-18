@@ -175,13 +175,40 @@ For **bounding boxes**, all of the interesting stuff was in the **loss function*
 - So go back and re-look at that notebook if this is unclear.  The main thing to remember is when we say hidden state, we are referring to a vector, okay.  See here, here's the vector:  `h = V(torch.zeroes(bs, n_hidden).cuda())`.  Now, of course, it's a vector for each thing in the mini-batch, so it's a matrix.  But I'm...generally when I speak about these things, I ignore the mini-batch piece and treat it like a single item.
 - So it's just a vector of this length:  `n_hidden`
 
-#### `21:40` [slide]
-- We also learnt that you 
-
+#### `21:40` [slide] Predicting chars 2 to n using chars 1 to n-1 using stacked RNNs
+- We also learnt that you can stack these layers on top of each other so rather than this first RNN spitting out output, they could just spit out inputs into a second RNN.  
+- If you are thinking at this point, "I think I understand this, but I'm not quite sure."  If you're anything like that, like me, that means you *don't understand this*.  And the only way you know and that you actually understand it is to go and write this in from scratch in PyTorch or Numpy. And if you can't do that, then you know, you don't understand it.  And you can go back and re-watch Lesson 6 and check out the notebook and copy some of the ideas until you can... it's really important that you can write that from scratch.  It's less than a screen of code, okay.  
+- So you want to make sure you can create a 2-layer RNN
 
 <br>
 <img src="../../images/lesson_11/lesson_11_rnn_stacked.png" align="center" width="75%" height="75%"  >   
 <br>
+
+#### `22:35` [slide] Unrolled stacked RNNs for sequences
+- And this is what it looks like if you unroll 
+<br>
+<img src="../../images/lesson_11/lesson_11_rnn_stacked2.png" align="center" width="75%" height="75%"  >   
+<br>
+
+- so that's the goal is to get to a point that we first of all have these XY pairs of sentences and we're going to do French to English
+- we're going to start by downloading this dataset.  
+- training a translation model takes a long time.  Google's translation model has 8 layers of RNNs stacked on top of each other.  There's no conceptual difference between 8 layers and 2 layers.  It's just like, if you're Google and you have more GPUs or CPUs than you know what to do with, then you are fine doing that.  Whereas in our case, it's pretty likely that the kind of sequence to sequence models we're building are not going to require that level of computation.  So to keep things simple, let's do a cut-down thing where rather than learning how to translate French into English for any sentence, let's learn to to translate French questions into English questions.  And specifically questions that start with "what where which when".  
+- So you can see here I've got a regex which looks for things that start with "Wh" and ends with a "?"
+- So I go through the corpus 
+- [translate.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/translate.ipynb)
+```python
+re_eq = re.compile('^(Wh[^?.!]+\?)')
+re_fq = re.compile('^([^?.!]+\?)')
+
+lines = ((re_eq.search(eq), re_fq.search(fq)) 
+         for eq, fq in zip(open(en_fname, encoding='utf-8'), open(fr_fname, encoding='utf-8')))
+
+qs = [(e.group(), f.group()) for e,f in lines if e and f]
+```
+
+
+
+
 
 
 
