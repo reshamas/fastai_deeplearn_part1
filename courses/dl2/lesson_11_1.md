@@ -161,7 +161,7 @@ For **bounding boxes**, all of the interesting stuff was in the **loss function*
 - `19:30` And so we can redraw that previous thing like this.
 
 <br>
-<img src="../../images/lesson_11/lesson_11_rnn2.png" align="center"   >   
+<img src="../../images/lesson_11/lesson_11_rnn2.png" align="center" width="75%" height="75%"  >   
 <br>
 
 - And so, not only did we re-draw it, but we took the, you know, 4 lines of linear, linear, linear
