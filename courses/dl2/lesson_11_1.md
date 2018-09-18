@@ -150,9 +150,20 @@ For **bounding boxes**, all of the interesting stuff was in the **loss function*
 ---
 
 ### `18:15` slide:  Predicting char 4 using chars 1, 2, 3
-- Very little of this will make sense unless you really understand Lesson 6 (How an RNN works).
-- So if some of this lesson doesn't make sense to you and you find yourself wondering, what does he mean by hidden state exactly? How's that working?  Go back and rewatch Lesson 6 to give you a very quick review.  We learnt that an RNN, at its heart, is a standard fully connected 
-
 <br>
 <img src="../../images/lesson_11/lesson_11_rnn.png" align="center"   >   
 <br>
+
+#### Review of RNN
+- Very little of this will make sense unless you really understand Lesson 6 (How an RNN works).
+- So if some of this lesson doesn't make sense to you and you find yourself wondering, what does he mean by hidden state exactly? How's that working?  Go back and rewatch Lesson 6 to give you a very quick review.  We learnt that an RNN, at its heart, is a standard fully connected network. So here is one with [count: 1, 2, 3, 4] 4 layers.  It takes an input and puts it through 4 layers but then at the second layer, it can just concatenate in the second input, third layer concatenate in a third input.
+- But we actually wrote this in Python as just literally a 4-layer neural network, okay.  So there's nothing else we used other than linear layers and values. We used the same weight matrix every time an input came in.  We used the same matrix every time we went from one of these states to the next.  And that's why these arrows are the same color.  
+- `19:30` And so we can redraw that previous thing like this.
+
+<br>
+<img src="../../images/lesson_11/lesson_11_rnn2.png" align="center"   >   
+<br>
+
+- And so, not only did we re-draw it, but we took the, you know, 4 lines of linear, linear, linear
+
+
