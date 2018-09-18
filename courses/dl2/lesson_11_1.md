@@ -144,14 +144,14 @@ For **bounding boxes**, all of the interesting stuff was in the **loss function*
 - We already know "sequence to equal length sequence" where corresponds to the same items, that's the language model, for example.  But, we don't know yet how to do a general purpose sequence to sequence, so that's the new thing today. 
   
 <br>
-<img src="../../images/lesson_11/lesson_11_nt.png" align="center"   >   
+<img src="../../images/lesson_11/lesson_11_nt.png" align="center" width="75%" height="75%"  >   
 <br>
 
 ---
 
 ### `18:15` slide:  Predicting char 4 using chars 1, 2, 3
 <br>
-<img src="../../images/lesson_11/lesson_11_rnn.png" align="center"   >   
+<img src="../../images/lesson_11/lesson_11_rnn.png" align="center" width="75%" height="75%"  >   
 <br>
 
 #### Review of RNN
