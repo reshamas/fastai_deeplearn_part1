@@ -164,6 +164,8 @@ For **bounding boxes**, all of the interesting stuff was in the **loss function*
 <img src="../../images/lesson_11/lesson_11_rnn2.png" align="center" width="75%" height="75%"  >   
 <br>
 
-- And so, not only did we re-draw it, but we took the, you know, 4 lines of linear, linear, linear
+- And so, not only did we re-draw it, but we took the, you know, 4 lines of linear, linear, linear, linear code in PyTorch and we replaced it with the following:
 
-
+<br>
+<img src="../../images/lesson_11/lesson_11_charloop.png" align="center" width="75%" height="75%"  >   
+<br>
