@@ -108,7 +108,13 @@ Deep learning text generation is much higher quality
 
 ### `09:50` BiLSTMs CODE
 - So, let's jump into the code which is in the [translate.ipynb](https://github.com/fastai/fastai/blob/master/courses/dl2/translate.ipynb), funnily enough.  
-- And so, we are going to try to translate French into English.  And so the basic idea is that we're going to try and make this look as much like a standard neural network approach as possible.
+- And so, we are going to try to translate French into English.  And so the basic idea is that we're going to try and make this look as much like a standard neural network approach as possible.  So we are going to need 3 things.  You will remember the 3 things:  
+1.  Data
+2.  suitable Architecture
+3.  suitable Loss Function
+Once you've got those 3 things, you run `fit` and all things going well, you end up with something that solves your problem.  
+1.  **Data**:  We generally need (x,y) pairs.  Because we need something we can feed into the loss function and say "I took my x-value which was my French sentence and the loss function says it was meant to generate this English sentence [Fr: x, Eng: y] and then you had your predictions which you would then compare and see how good it is. So, therefore, we need lots of these tuples of French sentences with their equivalent English sentence.  That's called a **parallel corpus**.  Obviously, this is harder to find than a corpus for a language model.  Because for a language model, we just need text in some language which you can basically all for any living language of which the people who use that language like use computers, there will be a few gigabytes at least of text floating around the internet.  
+2. 
 
 
 
