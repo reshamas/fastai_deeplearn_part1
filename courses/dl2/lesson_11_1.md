@@ -154,5 +154,5 @@ For **bounding boxes**, all of the interesting stuff was in the **loss function*
 - So if some of this lesson doesn't make sense to you and you find yourself wondering, what does he mean by hidden state exactly? How's that working?  Go back and rewatch Lesson 6 to give you a very quick review.  We learnt that an RNN, at its heart, is a standard fully connected 
 
 <br>
-<img src="../../images/lesson_11/lesson_11_nt.png" align="center"   >   
+<img src="../../images/lesson_11/lesson_11_rnn.png" align="center"   >   
 <br>
