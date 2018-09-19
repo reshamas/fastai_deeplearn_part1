@@ -227,7 +227,17 @@ qs[:5], len(qs)
    'Quelle sont les coordonnées (latitude et longitude) de Badger, à Terre-Neuve-etLabrador?')],
  52331)
 ```
-- So, this `qs` contains the tuples of French and English.  You can use this handy idiom, just pick `en_qs,fr_qs = zip(*qs)`
+- So, this `qs` contains the tuples of French and English.  You can use this handy idiom, `en_qs,fr_qs = zip(*qs)`, just pick them apart into a list of English questions and a list of French questions.
+- And then we **tokenize** the English questions and we **tokenize** the French questions.  So remember, that just means **splitting them up**
+```python
+en_token_tok  ==  TokenizerTokenize .proc_all_mp(partition_by_cores(en_qs))
+fr_tok = Tokenizer.proc_all_mp(partition_by_cores(fr_qs), 'fr')
+en_tok[0], fr_tok[0]
+```
+```bash
+(['what', 'is', 'light', '?'],
+ ['qu’', 'est', '-ce', 'que', 'la', 'lumière', '?'])
+ ```
 
 
 
