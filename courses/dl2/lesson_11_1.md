@@ -241,8 +241,14 @@ output:
 (['what', 'is', 'light', '?'],
  ['qu’', 'est', '-ce', 'que', 'la', 'lumière', '?'])
  ```
- - By default, the tokenizer that we have here and remember this is a wrapper around the Spacey tokenizer, which is a fantastic tokenizer.  This wrapper, be default, assumes English.  So to ask for French, you just add an extra parameter.  
-
+ - By default, the tokenizer that we have here and remember this is a wrapper around the Spacey tokenizer, which is a fantastic tokenizer.  This wrapper, be default, assumes English.  
+ - So to ask for French, you just add an extra parameter.  
+ - The first time you do this, you will get an error saying that you don't have the spacy French model installed, and you can google to get the command, something `python -m spacey ...` download French, or something like that, to grab the French model, ok
+```python
+en_tok = Tokenizer.proc_all_mp(partition_by_cores(en_qs))
+fr_tok = Tokenizer.proc_all_mp(partition_by_cores(fr_qs), 'fr')
+```
+- okay, I don't think any of you are going to have RAM problems here because this is not a particularly big corpus but I know that some of you were trying to train new language models during the week and were having RAM problems.  If you do, it's 
 
 
 
