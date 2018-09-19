@@ -248,7 +248,10 @@ output:
 en_tok = Tokenizer.proc_all_mp(partition_by_cores(en_qs))
 fr_tok = Tokenizer.proc_all_mp(partition_by_cores(fr_qs), 'fr')
 ```
-- okay, I don't think any of you are going to have RAM problems here because this is not a particularly big corpus but I know that some of you were trying to train new language models during the week and were having RAM problems.  If you do, it's 
+- okay, I don't think any of you are going to have RAM problems here because this is not a particularly big corpus but I know that some of you were trying to train new language models during the week and were having RAM problems.  If you do, it's worth knowing what these functions are actually doing.  So, for examples, these ones here, is processing every sentence across multiple processes is what the `mp` means.  
+```python
+??Tokenizer.proc_all_mp
+```
 
 
 
