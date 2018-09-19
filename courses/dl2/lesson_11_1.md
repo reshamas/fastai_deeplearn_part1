@@ -228,16 +228,20 @@ qs[:5], len(qs)
  52331)
 ```
 - So, this `qs` contains the tuples of French and English.  You can use this handy idiom, `en_qs,fr_qs = zip(*qs)`, just pick them apart into a list of English questions and a list of French questions.
-- And then we **tokenize** the English questions and we **tokenize** the French questions.  So remember, that just means **splitting them up**
+
+#### `25:00` Tokenizing 
+-  And then we **tokenize** the English questions and we **tokenize** the French questions.  So remember, that just means **splitting them up** into separate words or word-like things
 ```python
 en_token_tok  ==  TokenizerTokenize .proc_all_mp(partition_by_cores(en_qs))
 fr_tok = Tokenizer.proc_all_mp(partition_by_cores(fr_qs), 'fr')
 en_tok[0], fr_tok[0]
 ```
+output:  
 ```bash
 (['what', 'is', 'light', '?'],
  ['qu’', 'est', '-ce', 'que', 'la', 'lumière', '?'])
  ```
+ - By default, the tokenizer that we have here and remember this is a wrapper around the Spacey tokenizer, which is a fantastic tokenizer.  This wrapper, be default, assumes English.  So to ask for French, you just add an extra parameter.  
 
 
 
