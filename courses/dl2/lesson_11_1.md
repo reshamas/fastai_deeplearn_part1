@@ -206,10 +206,25 @@ lines = ((re_eq.search(eq), re_fq.search(fq))
 
 qs = [(e.group(), f.group()) for e,f in lines if e and f]
 ```
-- Dump them out into a pickle 
-
+- Dump that out as a pickle, so I don't have to do that again 
 ```python
 picklepickle..dumpdump((qsqs,,  ((PATHPATH//'fr-en-qs.pkl''fr-en-qs ).open('wb'))
+qs = pickle.load((PATH/'fr-en-qs.pkl').open('rb'))
+```
+```python
+qs[:5], len(qs)
+```
+- and so we now have ~ 52,000 sentences:  52,331
+- here are some examples with...well, sentence pairs, and here are some examples of those sentence pairs
+- one nice thing about this is that "what who where" questions tend to be fairly short, which is nice 
+```bash
+([('What is light ?', 'Qu’est-ce que la lumière?'),
+  ('Who are we?', 'Où sommes-nous?'),
+  ('Where did we come from?', "D'où venons-nous?"),
+  ('What would we do without it?', 'Que ferions-nous sans elle ?'),
+  ('What is the absolute location (latitude and longitude) of Badger, Newfoundland and Labrador?',
+   'Quelle sont les coordonnées (latitude et longitude) de Badger, à Terre-Neuve-etLabrador?')],
+ 52331)
 ```
 
 
