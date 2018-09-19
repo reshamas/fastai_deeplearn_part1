@@ -217,6 +217,7 @@ qs[:5], len(qs)
 - and so we now have ~ 52,000 sentences:  52,331
 - here are some examples with...well, sentence pairs, and here are some examples of those sentence pairs
 - one nice thing about this is that "what who where" questions tend to be fairly short, which is nice 
+- But, I would say the idea that we could learn from scratch with no previous understanding of the idea of language let alone of English or French, that we could create something that could translate from one to the other for any arbitrary question with only 50,000 sentences sounds like a ludicrously difficult thing to ask this to do, right.  So, I will be impressed if we can make any progress whatsoever.  There is very little data to do a very complex exercise.  
 ```bash
 ([('What is light ?', 'Qu’est-ce que la lumière?'),
   ('Who are we?', 'Où sommes-nous?'),
@@ -226,6 +227,7 @@ qs[:5], len(qs)
    'Quelle sont les coordonnées (latitude et longitude) de Badger, à Terre-Neuve-etLabrador?')],
  52331)
 ```
+- So, this `qs` contains the tuples of French and English.  You can use this handy idiom, just pick `en_qs,fr_qs = zip(*qs)`
 
 
 
