@@ -248,10 +248,21 @@ output:
 en_tok = Tokenizer.proc_all_mp(partition_by_cores(en_qs))
 fr_tok = Tokenizer.proc_all_mp(partition_by_cores(fr_qs), 'fr')
 ```
-- okay, I don't think any of you are going to have RAM problems here because this is not a particularly big corpus but I know that some of you were trying to train new language models during the week and were having RAM problems.  If you do, it's worth knowing what these functions are actually doing.  So, for examples, these ones here, is processing every sentence across multiple processes is what the `mp` means.  
+- okay, I don't think any of you are going to have RAM problems here because this is not a particularly big corpus but I know that some of you were trying to train new language models during the week and were having RAM problems.  If you do, it's worth knowing what these functions are actually doing.  
+- So, for examples, these ones here, is processing every sentence across multiple processes is what the `mp` means.  
 ```python
 ??Tokenizer.proc_all_mp
 ```
+- And remember, fastai code is designed to be pretty easy to read, so 3 or 4 lines of code.  So, here's the 3 lines of code to process all mp, find out how many CPUs you have, divide by 2 because normally with hyper-threading they don't all work in parallel
+- Then, in parallel, run this this process function: `Tokenizer.proc_all`
+- So, that's going to spit out a whole separate Python process for every CPU you have.  If you have a lot of cores, that's a lot of Python processes. Every one is going to load the whole, you know, all this data in and that can potentially use up all our RAM.  So you could replace that with just `proc_all` rather than `proc_all_mp` to use less RAM.  Or you could just use less cores, so, at the moment, we were calling this 
+```python
+@staticmethod
+    def proc_all_mp(ss, lang='en', ncpus = None):
+        ncpus = ncpus or num_cpus()//2
+        with ProcessPoolExecutor(ncpus) as e:
+            return sum(e.map(Tokenizer.proc_all, ss, [lang]*len(ss)), [])
+```            
 
 
 
