@@ -255,7 +255,6 @@ fr_tok = Tokenizer.proc_all_mp(partition_by_cores(fr_qs), 'fr')
 ```
 - And remember, fastai code is designed to be pretty easy to read, so 3 or 4 lines of code.  So, here's the 3 lines of code to process all mp, find out how many CPUs you have, divide by 2 because normally with hyper-threading they don't all work in parallel
 - Then, in parallel, run this this process function: `Tokenizer.proc_all`
-- So, that's going to spit out a whole separate Python process for every CPU you have.  If you have a lot of cores, that's a lot of Python processes. Every one is going to load the whole, you know, all this data in and that can potentially use up all our RAM.  So you could replace that with just `proc_all` rather than `proc_all_mp` to use less RAM.  Or you could just use less cores, so, at the moment, we were calling this 
 ```python
 @staticmethod
     def proc_all_mp(ss, lang='en', ncpus = None):
@@ -263,6 +262,11 @@ fr_tok = Tokenizer.proc_all_mp(partition_by_cores(fr_qs), 'fr')
         with ProcessPoolExecutor(ncpus) as e:
             return sum(e.map(Tokenizer.proc_all, ss, [lang]*len(ss)), [])
 ```            
+- So, that's going to spit out a whole separate Python process for every CPU you have.  If you have a lot of cores, that's a lot of Python processes. Every one is going to load the whole, you know, all this data in and that can potentially use up all our RAM.  So you could replace that with just `proc_all` rather than `proc_all_mp` to use less RAM.  Or you could just use less cores, so, at the moment, we were calling this function `partition_by_cores(a)` which calls `partition` on a list
+```python
+def partition_by_cores(a):
+    return partition(a, len(a)//num_cpus() + 1)
+```
 
 
 
