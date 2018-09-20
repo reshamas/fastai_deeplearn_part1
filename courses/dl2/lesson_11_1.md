@@ -262,11 +262,16 @@ fr_tok = Tokenizer.proc_all_mp(partition_by_cores(fr_qs), 'fr')
         with ProcessPoolExecutor(ncpus) as e:
             return sum(e.map(Tokenizer.proc_all, ss, [lang]*len(ss)), [])
 ```            
-- So, that's going to spit out a whole separate Python process for every CPU you have.  If you have a lot of cores, that's a lot of Python processes. Every one is going to load the whole, you know, all this data in and that can potentially use up all our RAM.  So you could replace that with just `proc_all` rather than `proc_all_mp` to use less RAM.  Or you could just use less cores, so, at the moment, we were calling this function `partition_by_cores(a)` which calls `partition` on a list
+- So, that's going to spit out a whole separate Python process for every CPU you have.  If you have a lot of cores, that's a lot of Python processes. Every one is going to load the whole, you know, all this data in and that can potentially use up all our RAM.  So you could replace that with just `proc_all` rather than `proc_all_mp` to use less RAM.  Or you could just use less cores, so, at the moment, we were calling this function `partition_by_cores(a)` (help: `??partition_by_cores`) which calls `partition` on a list and asks to split it into a number of equal length things according to how many CPUs you have so you could replace that, you know, splitting it into a smaller list and run it on less things.   
 ```python
 def partition_by_cores(a):
     return partition(a, len(a)//num_cpus() + 1)
 ```
+- `27:20` JH:  Yes, Rachel?
+- RT:  Was an attention layer tried in the language model, do you think it would be a good idea to try and add one?
+- JH:  We haven't learned about attention yet, so let's ask about things we have got to [laughs], not things we haven't.  The short answer is "no, I haven't tried it properly.  Yes, you should try it because it might help.
+- In general, there are going to be a lot of things we cover today which, if you've done some sequence to sequence stuff before, you'll want to know about something we haven't covered yet.  I'm going to cover all the sequence to sequence things, ok, so at the end of this if I haven't covered the thing you wanted to know about, please ask me then.  If you ask me before, I'll be answering something based on something that I'm about to teach you.  
+- So having tokenized the English and French, you can see how it gets split out and you can see the tokenization for French is quite different looking, because French loves their apostrophes and hyphens and stuff, right.  So, if you try to use an English tokenizer for a French sentence, you're going to get a pretty crappy outcome, So, like I don't find you need to know heaps of NLP ideas to use deep learning for NLP but just some basic stuff like, you know, use the right tokenizer for your language, is important.  And so some of the students this week in our study group have been trying to work, build language models for Chinese instance.  Which, of course, doesn't really have the concept of tokenizer in the same way, so we've been starting to look at it, briefly mentioned last week this google thing called sentence piece which basically splits things into arbitrary sub-word units.  And so when I say tokenize, if you're using a language that doesn't have spaces in, you should probably be checking out sentence piece or some other similar sub-word unit thing instead.  
 
 
 
