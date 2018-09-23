@@ -24,6 +24,16 @@ Reshama Shaikh
 * [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
 * [Fastai Blog Posts](http://www.fast.ai/topics/) (by Rachel Thomas & Jeremy Howard)
 
+
+## [Technical Tools](tools/)
+* [tmux on AWS](tools/tmux.md)
+* [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
+* [Download data using Chrome and wget](tools/download_data_browser_curlwget.md)
+* [Jupyter Notebook Commands & Shortcuts](tools/jupyter_notebook.md)
+* [How to Create a Keypair](tools/create_keypair.md)
+* [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
+
+
 ## Platforms for Using fastai (GPU required)
 * [Summary of Cloud GPU Vendors (with billing)](https://github.com/binga/cloud-gpus)
 * [Paperspace setup](tools/paperspace.md)
@@ -50,13 +60,6 @@ Reshama Shaikh
   - [Google Colaboratory](https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/welcome.ipynb)
 
 
-## [Technical Tools](tools/)
-* [tmux on AWS](tools/tmux.md)
-* [Download data using Kaggle CLI](tools/download_data_kaggle_cli.md)
-* [Download data using Chrome and wget](tools/download_data_browser_curlwget.md)
-* [Jupyter Notebook Commands & Shortcuts](tools/jupyter_notebook.md)
-* [How to Create a Keypair](tools/create_keypair.md)
-* [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
 
 ---
