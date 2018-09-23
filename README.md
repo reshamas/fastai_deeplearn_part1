@@ -1,13 +1,14 @@
 # [fast.ai](http://www.fast.ai)
 
-## About Me:  Reshama Shaikh  
-* [My Blog](https://reshamas.github.io)   
-* Twitter: [@reshamas](https://twitter.com/reshamas)
-
 ## fastai GitHub
 - [fastai](https://github.com/fastai/fastai)
 - [fastai_v1](https://github.com/fastai/fastai_v1) 
 - [some fastai files](http://files.fast.ai)
+
+
+## About Me 
+* [My Blog](https://reshamas.github.io) (Reshama Shaikh)
+* Twitter: [@reshamas](https://twitter.com/reshamas)
 
 ---
 ## Course:  Deep Learning (my outlines)
