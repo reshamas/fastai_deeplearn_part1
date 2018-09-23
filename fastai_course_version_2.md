@@ -10,21 +10,13 @@
 * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg)
 * [Discourse:  part2-v2](http://forums.fast.ai/c/part2-v2)
 
----
-
-## Course Links
-* GitHub
-    - [fastai](https://github.com/fastai/fastai)
-    - [fastai_v1](https://github.com/fastai/fastai_v1) 
-* [some fastai files](http://files.fast.ai)
 
 ---
-## Deep Learning Coursework
-* Version 2
-  * [Part 1 v2](http://course.fast.ai) (released Jan 2018)
-  * [Part 2 v2](http://www.fast.ai/2018/05/07/part2-launch/) (released May 2018)
+## Deep Learning Coursework (Version 2)
+* [Part 1 v2](http://course.fast.ai) (released Jan 2018)
+* [Part 2 v2](http://www.fast.ai/2018/05/07/part2-launch/) (released May 2018)
 
-## [Deep Learning Part 1](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
+### [Deep Learning Part 1](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
 * [Lesson 1 wiki](http://forums.fast.ai/t/wiki-lesson-1/9398) Image Recognition
 * [Lesson 2 wiki](http://forums.fast.ai/t/wiki-lesson-2/9399) CNNs
 * [Lesson 3 wiki](http://forums.fast.ai/t/wiki-lesson-3/9401) Overfitting
@@ -33,7 +25,7 @@
 * [Lesson 6 wiki](http://forums.fast.ai/t/wiki-lesson-6/9404) RNNs
 * [Lesson 7 wiki](http://forums.fast.ai/t/wiki-lesson-7/9405) CNN Architecture
 
-## [Deep Learning, Part 2](http://www.fast.ai/2018/05/07/part2-launch/)
+### [Deep Learning, Part 2](http://www.fast.ai/2018/05/07/part2-launch/)
 * [Lesson 8](http://course.fast.ai/lessons/lesson8.html) Object Detection
 * [Lesson 9](http://course.fast.ai/lessons/lesson9.html) Single Shot Multibox Detector (SSD)
 * [Lesson 10](http://course.fast.ai/lessons/lesson10.html) NLP Classification and Translation
