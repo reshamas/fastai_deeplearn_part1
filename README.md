@@ -7,15 +7,13 @@ Reshama Shaikh
 * Twitter: [@reshamas](https://twitter.com/reshamas)
 
 ---
-## Course Links
-* GitHub
-    - [fastai](https://github.com/fastai/fastai)
-    - [fastai_v1](https://github.com/fastai/fastai_v1) 
-* [some fastai files](http://files.fast.ai)
+## fastai GitHub
+- [fastai](https://github.com/fastai/fastai)
+- [fastai_v1](https://github.com/fastai/fastai_v1) 
+- [some fastai files](http://files.fast.ai)
 
 ---
-## Course Info
-### Deep Learning (my outlines)
+## Course:  Deep Learning (my outlines)
 - [Version 2](fastai_dl_course_v2.md)
 - [Version 1](fastai_dl_course_v1.md)   
 
