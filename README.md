@@ -1,7 +1,6 @@
 # [fast.ai](http://www.fast.ai)
 
-## About Me
-Reshama Shaikh  
+## About Me:  Reshama Shaikh  
 * [My Blog](https://reshamas.github.io)   
 * Twitter: [@reshamas](https://twitter.com/reshamas)
 
