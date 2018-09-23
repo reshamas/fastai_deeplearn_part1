@@ -1,12 +1,10 @@
 # [fast.ai](http://www.fast.ai)
 
----
 ## About Me
 Reshama Shaikh  
 * [My Blog](https://reshamas.github.io)   
 * Twitter: [@reshamas](https://twitter.com/reshamas)
 
----
 ## fastai GitHub
 - [fastai](https://github.com/fastai/fastai)
 - [fastai_v1](https://github.com/fastai/fastai_v1) 
