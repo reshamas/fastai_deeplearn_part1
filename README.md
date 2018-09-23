@@ -1,6 +1,7 @@
 # [fast.ai](http://www.fast.ai)
-* Deep Learning (Part 1 v2):  **Oct - Dec 2017**  
-* Deep Learning (Part 2 v2):  **Mar - May 2018**
+- Deep Learning Version 2 (Oct 2017 to Apr 2018)
+    - Part 1:  Oct - Dec 2017  
+    - Part 2:  Mar - May 2018
 ---
 ## About Me
 Reshama Shaikh  
@@ -10,11 +11,15 @@ Reshama Shaikh
 ---
 
 ## Course Links
-* [GitHub: fastai](https://github.com/fastai/fastai)
-* [Discourse:  part1-v2](http://forums.fast.ai/c/part1-v2)
-* [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg)
-* [Discourse:  part2-v2](http://forums.fast.ai/c/part2-v2)
+* GitHub
+    - [fastai](https://github.com/fastai/fastai)
+    - [fastai_v1](https://github.com/fastai/fastai_v1) 
 * [some fastai files](http://files.fast.ai)
+* Discourse
+    * [Discourse:  part1-v2](http://forums.fast.ai/c/part1-v2)
+    * [Discourse:  part1-v2 beginner](http://forums.fast.ai/c/part1v2-beg)
+    * [Discourse:  part2-v2](http://forums.fast.ai/c/part2-v2)
+
 
 ## Helpful Resources
 * [Directory of fastai and DL terms](fastai_dl_terms.md)
@@ -59,15 +64,13 @@ Reshama Shaikh
 * [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
 ---
-# Deep Learning
-
-## Coursework
-* Latest coursework
-  * **Version 2:**  [Part 1 v2](http://course.fast.ai) (released Jan 2018)
-  * **Version 2:**  [Part 2 v2](http://www.fast.ai/2018/05/07/part2-launch/) (released May 2018)
-* Older coursework
-  * Version 1:  [Part 1 v1](http://course17.fast.ai)
-  * Version 1:  [Part 2 v1](http://course17.fast.ai/part2.html)
+## Deep Learing Coursework
+* Version 2
+  * [Part 1 v2](http://course.fast.ai) (released Jan 2018)
+  * [Part 2 v2](http://www.fast.ai/2018/05/07/part2-launch/) (released May 2018)
+* Version 1
+  * [Part 1 v1](http://course17.fast.ai)
+  * [Part 2 v1](http://course17.fast.ai/part2.html)
 
 ## [Deep Learning Part 1](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
 * [Lesson 1 wiki](http://forums.fast.ai/t/wiki-lesson-1/9398) Image Recognition
