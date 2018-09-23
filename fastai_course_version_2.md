@@ -1,6 +1,6 @@
 # [Fastai](http://www.fast.ai) Course:  Version 2
 
-## Date of Course
+## Dates of Course
 - Deep Learning Version 2 (Oct 2017 to Apr 2018)
     - Part 1:  Oct - Dec 2017  
     - Part 2:  Mar - May 2018
