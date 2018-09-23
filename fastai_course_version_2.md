@@ -1,4 +1,4 @@
-# [Fastai](http://www.fast.ai) Course:  Version 2
+# [Fastai](http://www.fast.ai) Deep Learning Course:  Version 2
 
 ## Dates of Course
 - Deep Learning Version 2 (Oct 2017 to Apr 2018)
@@ -19,13 +19,10 @@
 * [some fastai files](http://files.fast.ai)
 
 ---
-## Deep Learing Coursework
+## Deep Learning Coursework
 * Version 2
   * [Part 1 v2](http://course.fast.ai) (released Jan 2018)
   * [Part 2 v2](http://www.fast.ai/2018/05/07/part2-launch/) (released May 2018)
-* Version 1
-  * [Part 1 v1](http://course17.fast.ai)
-  * [Part 2 v1](http://course17.fast.ai/part2.html)
 
 ## [Deep Learning Part 1](http://forums.fast.ai/t/welcome-to-part-1-v2/5787)
 * [Lesson 1 wiki](http://forums.fast.ai/t/wiki-lesson-1/9398) Image Recognition
