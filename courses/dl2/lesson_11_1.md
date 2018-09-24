@@ -293,7 +293,8 @@ def toks2ids(tok,pre):
     pickle.dump(itos, open(TMP_PATH/f'{pre}_itos.pkl', 'wb'))
     return ids,itos,stoi
 ```   
-- So, if we try to look up something
+- So, if we try to look up something that wasn't in the 40,000 most common, then we use a `defaultdict` to return "3" which is "unknown".
+- So, we can go ahead now and turn every token into an ID by putting it through the `stoi` (string to integer) dictionary we just created.  
 
 
 
