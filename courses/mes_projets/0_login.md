@@ -73,6 +73,13 @@ Solving package specifications: .
 ## Step 3:  Turn off AWS Instance after completing work!
 
 ---
+## `~/.bashrc` File
+```bash
+nano ~/.bashrc
+```
+
+
+---
 # My Projects
 
 ## Go to where my projects are
@@ -80,7 +87,12 @@ Solving package specifications: .
 cd /home/ubuntu/my_repos/
 ```
 
-## my code  
+### Project 1
+```bash
+/home/ubuntu/my_repos/llis_topicModel
+```
+
+### Project 2 
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ pwd 
 /home/ubuntu/git_repos/projects
@@ -92,7 +104,7 @@ drwxrwxr-x 3 ubuntu ubuntu 4096 Jan  8 00:44 iceberg
 (fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ 
 ```
 
-## my data
+## My data
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/data$ pwd
 /home/ubuntu/data
@@ -106,7 +118,7 @@ drwxrwxr-x  8 ubuntu ubuntu 4096 Dec 20 22:19 dogscats
 (fastai) ubuntu@ip-172-31-2-59:~/data$ 
 ```
 
-## launch Jupyter Notebook
+## Launch Jupyter Notebook
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~$ pwd
 /home/ubuntu
