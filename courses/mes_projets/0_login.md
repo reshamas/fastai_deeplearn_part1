@@ -12,7 +12,7 @@ alias fastai='ssh -i "id_rsa" ubuntu@ec2-88-888-888-88.compute-1.amazonaws.com -
 ```
 
 ## Step 1:  AWS Console
-- sign in here:  console.aws.amazon.com/
+- sign in here:  https://signin.aws.amazon.com/
 - start my `p2.xlarge` instance from before
 
 ## Step 2:  My terminal on my Mac (local computer)
