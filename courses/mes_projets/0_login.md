@@ -4,7 +4,7 @@
 Assuming:  
 - I have launched a p2 instance
 - I have set up my key pair
-- I have created an alias in my root `~/.bash_profile` or in my case, `~/.zshrc`
+- I have created an alias in my startup configuration file  `~/.bash_profile`.  In my case, I use `~/.zshrc`
 
 My alias:  
 ```bash
@@ -69,6 +69,8 @@ Solving package specifications: .
 ```
 ## Update Anaconda packages:  `conda update --all`
 
+
+## Step 3:  Turn off AWS Instance after completing work!
 
 ---
 # My Projects
