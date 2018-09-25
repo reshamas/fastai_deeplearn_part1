@@ -1,6 +1,6 @@
 # Logging in to AWS
 
-## Step 0:  
+## Step 0:  Initial Set-up Assumptions
 Assuming:  
 - I have launched a p2 instance
 - I have set up my key pair
