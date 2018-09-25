@@ -75,6 +75,11 @@ Solving package specifications: .
 ---
 # My Projects
 
+## Go to where my projects are
+```bash
+cd /home/ubuntu/my_repos/
+```
+
 ## my code  
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~/git_repos/projects$ pwd 
