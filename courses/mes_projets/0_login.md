@@ -67,7 +67,7 @@ Solving package specifications: .
 #
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
-## Update Anaconda packages:  `conda update --all`
+### Update Anaconda packages:  `conda update --all`
 
 
 ## Step 3:  Turn off AWS Instance after completing work!
