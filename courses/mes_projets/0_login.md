@@ -1,32 +1,45 @@
 # Logging in to AWS
 
-### login
-Please login as the user "ubuntu" rather than the user "root".
+## Step 0:  
+Assuming:  
+- I have launched a p2 instance
+- I have set up my key pair
+- I have created an alias in my root `~/.bash_profile` or in my case, `~/.zshrc`
 
+My alias:  
 ```bash
-% pwd
-/Users/reshamashaikh/.ssh
+alias fastai='ssh -i "id_rsa" ubuntu@ec2-88-888-888-88.compute-1.amazonaws.com -L8888:localhost:8888'
 ```
 
-Note:  create an alias in `.zshrc` to log into AWS computer
+## Step 1:  AWS Console
+- sign in here:  console.aws.amazon.com/
+- start my `p2.xlarge` instance from before
+
+## Step 2:  My terminal on my Mac (local computer)
+
+### Go to the appropriate directory
 ```bash
-% 
+cd /Users/reshamashaikh/.ssh
+```
+### Login to AWS
+Login as the user "ubuntu" rather than the user "root".
+
+```bash
 fastai
 ```
 
-### update Ubuntu: `sudo apt-get update`
+### Update Ubuntu: `sudo apt-get update`
 ```bash
 sudo apt-get update
 ```
 
-### update fastai repo:  `git pull` 
+### Update fastai repo:  `git pull` 
 ```bash
 cd fastai
 ```
 ```bash
 git pull
 ```
-
 >my example
 ```bash
 (fastai) ubuntu@ip-172-31-2-59:~$ ls
@@ -35,8 +48,7 @@ data  fastai  src
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$ git pull
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
-
-### update Anaconda packages:  `conda env update`
+### Update Anaconda packages:  `conda env update`
 ```bash
 conda env update
 ```
@@ -55,7 +67,7 @@ Solving package specifications: .
 #
 (fastai) ubuntu@ip-172-31-2-59:~/fastai$
 ```
-## `conda update --all`
+## Update Anaconda packages:  `conda update --all`
 
 
 ---
