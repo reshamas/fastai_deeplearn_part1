@@ -1,4 +1,4 @@
-# [Fastai](http://www.fast.ai) Machine Learning Course
+# [Fastai](http://www.fast.ai) Machine Learning [(ML)](http://www.fast.ai/2018/09/26/ml-launch/) Course
 
 ## Dates of Course
 - Machine Learning (Fall 2017)
