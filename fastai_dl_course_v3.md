@@ -16,7 +16,7 @@
 * [Discourse:  “Part 1 (v3)"] (http://forums.fast.ai/c/)
 
 ---
-## Deep Learning Coursework (Version 3) (website)
+## Coursework (fastai website)
 * [Part 1 v3] (http://course.fast.ai)  (released xxx)
 
 ---
