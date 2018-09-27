@@ -19,21 +19,9 @@
 ## Deep Learning Coursework (Version 3) (website)
 * [Part 1 v3] (http://course.fast.ai)  (released xxx)
 
-
-### [Deep Learning Part 1 v3] ( )
-* [Lesson 1 wiki] () Image Recognition
-* [Lesson 2 wiki] () CNNs
-* [Lesson 3 wiki] () Overfitting
-* [Lesson 4 wiki] () Embeddings
-* [Lesson 5 wiki] () NLP 
-* [Lesson 6 wiki] () RNNs
-* [Lesson 7 wiki] () CNN Architecture
-
-
-
 ---
 
-### [Deep Learning 1: My Lesson Notes](courses/dl1-v3/) 
+### [Deep Learning: My Lesson Notes](courses/dl1-v3/) 
 * [Lesson 1: ] (courses/dl1-v3/lesson_1_x.md) Image Recognition
 * [Lesson 2: ] (courses/dl1-v3/lesson_2_x.md) CNNs
 * [Lesson 3: ] (courses/dl1-v3/lesson_3_x.md) Overfitting
