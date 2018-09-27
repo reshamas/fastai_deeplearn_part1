@@ -11,6 +11,7 @@
 ## Courses (my outlines)
 
 ### Deep Learning
+- [Version 3](fastai_dl_course_v3.md)
 - [Version 2](fastai_dl_course_v2.md)
 - [Version 1](fastai_dl_course_v1.md)   
 
