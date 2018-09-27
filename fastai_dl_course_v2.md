@@ -46,7 +46,7 @@
   - [Lesson 1b: CNN and resnet Architecture](courses/dl1-v2/lesson_1b_cnn_tools.md)
 * [Lesson 2: resnet34, resnext50](courses/dl1-v2/lesson_2_resnet34_resnext50.md) CNNs
 * [Lesson 3: CNN Image Intro](courses/dl1-v2/lesson_3_x.md) Overfitting
-* [Lesson 4: Structured Neural Net Intro, Language RNN Intro, Collaborative Filtering Intro](courses/dl1/lesson_4_x.md) Embeddings
+* [Lesson 4: Embeddings](courses/dl1-v2/lesson_4_x.md) Embeddings
 * [Lesson 5:  ](courses/dl1-v2/lesson_5_x.md) NLP
 * [Lesson 6:  ](courses/dl1-v2/lesson_6_x.md) RNNs
 * [Lesson 7:  ](courses/dl1-v2/lesson_7_x.md) CNN Architecture
