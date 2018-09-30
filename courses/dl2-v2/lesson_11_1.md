@@ -299,12 +299,34 @@ def toks2ids(tok,pre):
 
 #### `31:18` Questions
 - RT:  Just heard him mention that we divide number of CPUs by 2.  Because of hyper-threading, we don't get a speed-up using all the hyper-threaded cores.  Is this based on practical experience, or is there some underlying reason why we wouldn't get additional speed-up?
-- JH:  Yeah, it's just practical experience, and it's like not all things kind of seem like this, but I definitely noticed with tokenization, hyper-threading seemed to slow things down a little bit.  Also, if I use all the cores, you know, like often I want to do something else at the same time.  Like generally run some interactive notebook and I don't have any spare room to do that.  It's a minor issue, yeah.
+- JH:  Yeah, it's just practical experience, and it's like not all things kind of seem like this, but I definitely noticed with tokenization, hyper-threading seemed to slow things down a little bit.  Also, if I use all the cores, you know, like often I want to do something else at the same time.  Like generally run some interactive notebook and I don't have any spare room to do that.  It's a minor issue... uh, yeah.
 
 ### `32:00` 
-- So now, for our English and our French we can now grab 
+- So now, for our English and our French we can grab our list of IDs (`en_ids` and `fr_ids`).  And when we do that, of course, we need to make sure that we also store the vocabulary.  There's no point having IDs if we don't know like what the number "5" represents -- there's no point in having a number "5".  So, that's our vocabulary (`en_itos`), it's a string.  And the reverse mapping `en_stoi` that we can use to convert more corpuses in the future.  
+```python
+en_ids, en_itos, en_stoi = toks2ids(en_tok,'en')
+fr_ids, fr_itos, fr_stoi = toks2ids(fr_tok,'fr')
+```
+- So, just to confirm it is working, we can 
+  - go through each ID:  `for o in fr_ids[0]`
+  - convert the INT to a string:  `fr_itos[o]`
+  - and spit that out and there we have our thing back with an `_eos_` marker at the end:  
+      `(['qu’', 'est', '-ce', 'que', 'la', 'lumière', '?', '_eos_'], 17573, 24793)`
+  - our English vocab is 17,573 (~17K) and our French vocab is 24,793 (~25K)
+  - so, you know, there's not too big... you know, too complex a vocab that you're dealing with, which is nice to know!
+```python
+[fr_itos[o] for o in fr_ids[0]], len(en_itos), len(fr_itos)
+```
+output:  
+```bash
+(['qu’', 'est', '-ce', 'que', 'la', 'lumière', '?', '_eos_'], 17573, 24793)
+```
 
-
-
+### `32:52` Word Vectors
+- So, we spent a lot of time on the forums during the week discussing how pointless word vectors are and how you should stop getting so excited about them.  And we are now going to use them.  Why is that?  Basically, all the stuff we've been learning about using language models and pre-trained proper models rather than pre-trained, you know, linear single layers which is what word vectors are...I think [that] applies equally well sequence-to-sequence.  But, I haven't tried it yet.  I haven't built it yet.  
+- So, Sebastian and I are, you know, starting to look at that, and slightly distracted by preparing this class at the moment. But after this class is done.
+- So, there's a whole thing, for anybody interested in creating some genuinely new, like highly publishable results, the entire area of sequence-to-sequence with pre-trained language models hasn't been touched yet.  And I strongly believe it's going to be just as good as classifications.
+- And if you, you now, work on this, and you get to the point where you have something that's looking exciting and you want help publishing it, you know, I'm very happy to help co-author papers, you know, on stuff that's looking good.  So, you know, feel free to reach out if and when you have some interesting results.  
+- `34:15` So at this stage we don't have any of that.  So, we're going to use, you know, very little fastai, actually.  And very little in terms of, kind of, fastai ideas. So we, you know, all we've got is word vectors.  Anyway, 
 
 
