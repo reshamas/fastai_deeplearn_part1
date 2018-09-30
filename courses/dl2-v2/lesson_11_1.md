@@ -295,7 +295,14 @@ def toks2ids(tok,pre):
 ```   
 - So, if we try to look up something that wasn't in the 40,000 most common, then we use a `defaultdict` to return "3" which is "unknown".
 - So, we can go ahead now and turn every token into an ID by putting it through the `stoi` (string to integer) dictionary we just created.
-- `30:20` And at the end of that, let's add the number "2", which is "end of string".  And you'll see like...the code you see here...is the code I write when I am iterating and experimenting.  Because 99% of the code I write I am iterating or experimenting turns out to be totally wrong or stupid or embarrassing and and you don't get to see it. But like there's no point, you know, refactoring that and making it beautiful when I'm writing it.  
+- `30:20` And at the end of that, let's add the number "2", which is "end of string".  And you'll see like...the code you see here...is the code I write when I am iterating and experimenting.  Because 99% of the code I write I am iterating or experimenting turns out to be totally wrong or stupid or embarrassing and and you don't get to see it. But like there's no point, you know, refactoring that and making it beautiful when I'm writing it.  So, I am kind of wanting you to see all the little shortcuts I have so rather than doing this properly and actually finding... you know, having some constant or something for end of string marker and using it... When I'm prototyping, I just do the easy stuff, you know.  I mean, not *so much* that I end up with broken code, you know, but I don't ... I try to find some mid ground between beautiful code and, you know, code that works.  
+
+#### `31:18` Questions
+- RT:  Just heard him mention that we divide number of CPUs by 2.  Because of hyper-threading, we don't get a speed-up using all the hyper-threaded cores.  Is this based on practical experience, or is there some underlying reason why we wouldn't get additional speed-up?
+- JH:  Yeah, it's just practical experience, and it's like not all things kind of seem like this, but I definitely noticed with tokenization, hyper-threading seemed to slow things down a little bit.  Also, if I use all the cores, you know, like often I want to do something else at the same time.  Like generally run some interactive notebook and I don't have any spare room to do that.  It's a minor issue, yeah.
+
+### `32:00` 
+- So now, for our English and our French we can now grab 
 
 
 
