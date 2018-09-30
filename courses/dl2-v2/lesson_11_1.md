@@ -450,9 +450,10 @@ len(en_trn),len(en_val)
 - In the decoder, in particular, I actually want my padding to be at the end, not at the start. Like, for a classifier, I want the padding at the start because I want that final token to represent the last word of the movie review.  But, in the decoder, as you'll see, it actually is going to work out a bit better to have the padding at the end. So, I say `pre_pad=False`.  
 - And then, finally, since we've got sentences of different lengths coming in, and they all have to be put together in a mini-batch to be the same size by padding, we would much prefer that the sentence in a mini-batch are of similar sizes already.  Because otherwise, it's going to be as long as the longest sentence and that's going to end up wasting time and memory.
 - So, therefore, I am going to use the sampler tricks that we learnt last time which is the validation set.  We're going to ask it to sort everything by length first.  And then, for the training set, we're going to ask it to randomize the order of things but to roughly make it so that things of simlar length are about in the same spot.  So, we've got our `SortSampler` and our `SortishSampler`.
-- And then at that point, we can create a model data object.  Remember a model data object really does one thing which is it says, I have a training set and a validation set and an optional test set and sticks them into a single object.  
+- And then at that point, we can create a **model data object**.  Remember a model data object really does one thing which is it says, I have a training set and a validation set and an optional test set and sticks them into a single object.  
 - `45:55` we also have a `PATH` so that it has somewhere to store temporary files, models, stuff like that, right. 
-- So, you know, we're doing... we're not using fastai very much at all in this example.  Just kind of a minimal set to show you like, you know, 
+- So, you know, we're doing... we're not using fastai for very much at all in this example.  Just kind of a *minimal* set to show you like, you know, how to, you know, kind of get your model data objects.  Because in the end, once you've got a model data object, you can then create a **learner** and then you can call **fit**.  
+- So, that's kind of like minimal amount of fastai stuff here.  This is a standard PyTorch compatible dataset class (`Seq2SeqDataset(Dataset):`).  This is a standard PyTorch compatible data loader.  Behind the scenes, it's actually using the fastai version because 
 
 ```python
 trn_dl = DataLoader(trn_ds, bs, transpose=True, transpose_y=True, num_workers=1, 
@@ -461,3 +462,5 @@ val_dl = DataLoader(val_ds, int(bs*1.6), transpose=True, transpose_y=True, num_w
                     pad_idx=1, pre_pad=False, sampler=val_samp)
 md = ModelData(PATH, trn_dl, val_dl)
 ```
+
+### `45:45` Initial Model
