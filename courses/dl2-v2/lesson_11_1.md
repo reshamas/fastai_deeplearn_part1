@@ -399,4 +399,5 @@ enlen_90,frlen_90
 ```bash
 (29, 33)
 ```
-
+- OK, so that's just truncating them.  So, we're nearly there.  We've got our tokenized numericalized English and French dataset.  We've got some word vectors.  
+- `37:35` So, now we need to get it ready for PyTorch.  So PyTorch expects a dataset object and hopefully by now, you all can tell me that a dataset
