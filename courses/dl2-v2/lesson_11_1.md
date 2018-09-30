@@ -427,10 +427,12 @@ class Seq2SeqDataset(Dataset):
 - `41:50` ok, so yeah I would say like at least 90% of deep learning code that I start looking at turns out to have like, you know, like deathly serious problems that make it completely unusable for anything. 
 - And, so, I kind of been telling people that I've been working with recently:  you know, if the repo you're looking at doesn't have a section on it saying "here's the test we did where we got the same results as the paper that this was meant to be implementing", that almost certainly means that they haven't got the same results in the paper they're implementing.  They probably haven't even check, ok.  And if you run it, it definitely won't get those results.  Because it's hard to get things right the first time.  It takes me 12 go's.  You know, it probably takes the normal smarter people than me 6 go's.  But, if they haven't tested it once, it almost certainly won't work.  
 - `42:42` ok, so there's our sequence to sequence dataset.  Let's get the training and validation sets.  Here's an easy way to do that.
+- [JH speaks very fast through this part.]
 - grab a bunch of random numbers, one for each row of your data:  `np.random.rand(len(en_ids_tr))>0.1`
-- see if they are bigger than 0.1 or not.  that gives you a list of BOOLS 
-- index into the array with your list of BOOLS
-
+- see if they are bigger than 0.1 or not.  that gives you a list of BOOLS. 
+- index into your array with that list of BOOLS to grab a training set
+- index into that array with the opposite of that list of BOOLS to get your validation set.  There's a nice easy way to [do it]. There's lots of ways of doing that.  I just like to do different ways to see a few approaches.
+- ok, so now we can create our dataset with our X's and our Y's, French and English.  If you want to translate instead English to French, switch these two around and you're done, ok.  
 ```python
 npnp..randomrandom..seedseed((4242))
  trn_keeptrn_kee  = np.random.rand(len(en_ids_tr))>0.1
@@ -438,4 +440,7 @@ en_trn,fr_trn = en_ids_tr[trn_keep],fr_ids_tr[trn_keep]
 en_val,fr_val = en_ids_tr[~trn_keep],fr_ids_tr[~trn_keep]
 len(en_trn),len(en_val)
 ```
+
+#### `43:20` Data Loaders
+- now we need to create data loaders 
 
