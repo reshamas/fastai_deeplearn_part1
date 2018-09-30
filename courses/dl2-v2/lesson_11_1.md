@@ -424,6 +424,18 @@ class Seq2SeqDataset(Dataset):
 - Like, another example.  Nearly every PyTorch convolutional neural network I found does not use an **adaptive pooling layer**.  So, in other words, the final layer is always average pool 7, 7, right.  So, they *assume* that the previous layer is 7 by 7, and if you use any other size input, you get an exception.  
 - And, therefore, nearly everybody I've spoken to that uses PyTorch thinks that there is a fundamental limitation of CNNs that they are tied to the input size. And **that has not been true since VGG**, right.  So every time we grab a new model, and stick it in the fastai repo, I have to go in, search for "pool" and add "adaptive" to the start and replace the "7" with a "1".
 - And now, it works on any sized object, right.  So, just be careful, you know.  It's still early days and, believe it or not, even though most of you have only started in the last year, your deep learning journey, you know quite a lot more about a lot of the more important practical aspects than the vast majority of people that are, like, publishing, and writing stuff in official repos and stuff. So, you kind of need to have a little more self-confidence than you might expect when it comes to reading other's people code.  If you find yourself thinking, "that looks odd", it's not necessarily you.  It *might* well be them.
-- `41:50` ok, so yeah I would say like at least 90% of deep learning code 
+- `41:50` ok, so yeah I would say like at least 90% of deep learning code that I start looking at turns out to have like, you know, like deathly serious problems that make it completely unusable for anything. 
+- And, so, I kind of been telling people that I've been working with recently:  you know, if the repo you're looking at doesn't have a section on it saying "here's the test we did where we got the same results as the paper that this was meant to be implementing", that almost certainly means that they haven't got the same results in the paper they're implementing.  They probably haven't even check, ok.  And if you run it, it definitely won't get those results.  Because it's hard to get things right the first time.  It takes me 12 go's.  You know, it probably takes the normal smarter people than me 6 go's.  But, if they haven't tested it once, it almost certainly won't work.  
+- `42:42` ok, so there's our sequence to sequence dataset.  Let's get the training and validation sets.  Here's an easy way to do that.
+- grab a bunch of random numbers, one for each row of your data:  `np.random.rand(len(en_ids_tr))>0.1`
+- see if they are bigger than 0.1 or not.  that gives you a list of BOOLS 
+- index into the array with your list of BOOLS
 
+```python
+npnp..randomrandom..seedseed((4242))
+ trn_keeptrn_kee  = np.random.rand(len(en_ids_tr))>0.1
+en_trn,fr_trn = en_ids_tr[trn_keep],fr_ids_tr[trn_keep]
+en_val,fr_val = en_ids_tr[~trn_keep],fr_ids_tr[~trn_keep]
+len(en_trn),len(en_val)
+```
 
