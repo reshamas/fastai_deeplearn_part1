@@ -328,6 +328,40 @@ output:
 - So, there's a whole thing, for anybody interested in creating some genuinely new, like highly publishable results, the entire area of sequence-to-sequence with pre-trained language models hasn't been touched yet.  And I strongly believe it's going to be just as good as classifications.
 - And if you, you now, work on this, and you get to the point where you have something that's looking exciting and you want help publishing it, you know, I'm very happy to help co-author papers, you know, on stuff that's looking good.  So, you know, feel free to reach out if and when you have some interesting results.  
 - `34:15` So at this stage we don't have any of that.  So, we're going to use, you know, very little fastai, actually.  And very little in terms of, kind of, fastai ideas. So we, you know, all we've got is word vectors.  
-- Anyway, so let's at least use decent word vectors.  So, word2Vec is very old, word vectors.  There are better word vectors now and fast text is a pretty good source of word vectors.  There's hundreds of languages available for them.  You language is likely to be represented 
+
+#### Fast text Word Vectors 
+- Anyway, so let's at least use decent word vectors.  So, word2Vec is very old, word vectors.  There are better word vectors now and fast text is a pretty good source of word vectors.  There's hundreds of languages available for them.  You language is likely to be represented.  
+- So, to grab them, you can click on this link:  https://fasttext.cc/docs/en/english-vectors.html 
+  - download word vectors for a language that you're interested in
+  - install the fastText Python library
+  - it's not available on [PyPI](https://pypi.org) [The Python Package Index (PyPI) is a repository of software for the Python programming language.]
+  - But, here's a handy trick.  If there's a GitHub repo that has like a `setup.py` in it and a `requirements.txt` in it, you can just chuck `git+` at the start and stick that in your `pip install` and it works!   
+    - `pip install git+https://github.com/facebookresearch/fastText.git`
+  - Like hardly anyone seems to know this and like it never even... like if you go to the [fastText](https://github.com/facebookresearch/fastText) repo, they won't tell you this.  They'll say you have to download it and `cd` into it, and blah, blah, blah.  But you don't.  You can just run that `pip..` command.
+- Which you can also use for the fastai library, by the way.  If you want to `pip install` the latest version of fastai, you can totally do this.
+- So you got the library.  Import it.  
+```python
+import fastText as ft
+```
+- Load the model.  So, here's my English model.  
+```python
+en_vecs = ft.load_model(str((PATH/'wiki.en.bin')))
+```
+- and here's my French model.
+```python
+fr_vecs = ft.load_model(str((PATH/'wiki.fr.bin')))
+```
+- You'll see there's a text version and a binary version.  The binary version's a bit faster.  We're going to use that.  The text version is also a big buggy.
+- And then, I'm going to convert it into a standard Python dictionary to make it a bit easier to work with
+  - so this is just going to go through each word `vecd = {w:ft_vecs.get_word_vector(w) for w in ft_vecs.get_words()}` with a dictionary comprehension 
+  - and save it as a pickled dictionary `pickle.dump(vecd, open(PATH/f'wiki.{lang}.pkl','wb'))`
+
+```python
+def get_vecs(lang, ft_vecs):
+    vecd = {w:ft_vecs.get_word_vector(w) for w in ft_vecs.get_words()}
+    pickle.dump(vecd, open(PATH/f'wiki.{lang}.pkl','wb'))
+    return vecd
+```
+
 
 
