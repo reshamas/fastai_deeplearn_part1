@@ -443,4 +443,6 @@ len(en_trn),len(en_val)
 
 #### `43:20` Data Loaders
 - now we need to create data loaders 
+- we can just grab our data loader and pass in our dataset and batch size
+- we actually have to transpose the arrays
 
