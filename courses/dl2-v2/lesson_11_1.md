@@ -390,7 +390,7 @@ en_vecs.mean(),en_vecs.std()
 ```
 
 ### `36:45` Model Data
-- often, corpuses have a pretty long-tailed distribution of sequence length. And it's the longest sequences that kind of tend to overwhelm how long things take and, you know, how much memory is used and stuff like that.  So, I'm going to grab, you know, in this case, the **99th** to **97th** percentile of the English and French [respectively].  
+- often, corpuses have a pretty long-tailed distribution of sequence length. And it's the longest sequences that kind of tend to overwhelm how long things take and, you know, how much memory is used and stuff like that.  So, I'm going to grab, you know, in this case, the **99th** to **97th** percentile of the English and French [respectively] and truncate them to that amount.  Originally I was using the 90th percentile, so these are poorly named variables, so apologies for that.      
 ```python
 enlen_90 = int(np.percentile([len(o) for o in en_ids], 99))
 frlen_90 = int(np.percentile([len(o) for o in fr_ids], 97))
