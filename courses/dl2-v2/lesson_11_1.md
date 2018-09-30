@@ -406,11 +406,19 @@ enlen_90,frlen_90
 - So, I started out writing this and I was like, ok, I need a seq-to-seq dataset.  And I started out writing it and I thought, ok, we're going to have to pass it our X's and Y's and store them away.  And then my indexer is going to need to return a numpy array of the X's at that point and a numpy array of the Y's at that point, and oh, that's it.
 - So, then after I wrote this I realized I haven't really written a seq-to-seq dataset.  I've just written a totally generic dataset so here's like the simplest possible dataset that works for any pair of arrays so it's now poorly named.  It's much more general than a seq-to-seq dataset, but that's what I needed it for.  
 - This `A` function, remember we've got `V` for **variables**, `T` for for **tensors**, `A` for **arrays**.
-- So this basically goes through each of the things you pass 
+- So this basically goes through each of the things you pass it.  If it's not already a numpy array, it converts it into a numpy array and returns back a tuple of all of the things that you passed it which are now guaranteed to be numpy arrays
+- So, that's A, V, T, three very handy functions
 ```python
 class Seq2SeqDataset(Dataset):
-    def __init__(self, x, y): self.x,self.y = x,y
-    def __getitem__(self, idx): return A(self.x[idx], self.y[idx])
-    def __len__(self): return len(self.x)
+    def __init__(self, x, y): 
+      self.x,self.y = x,y
+    def __getitem__(self, idx): 
+      return A(self.x[idx], self.y[idx])
+    def __len__(self): 
+      return len(self.x)
 ```
+- `39:00` so that's it.  That's our dataset.  So now we need to grab our English and French IDs and get a training set and a validation set.  And so, one of the things which is pretty disappointing about a lot of code out there on the internet is that they don't follow some simple best practices.  For example, if you go to the PyTorch website, they have an example section for seq-to-seq translation.  Their example does *not have* a separate validation set.  I tried it, training according to their settings, and I tested it with their validation set.  It turned out that it *overfit* massively.  So, this is not just a theoretical problem.  The actual PyTorch repo has the actual official sequence to sequence translation example which does not check for overfitting and overfits horribly.  
+- Also, it **fails to use mini-batches**, so it actually fails to utilize any of the efficiency of PyTorch whatsoever.
+- So, there's a lot of, like even if you find code in the official PyTorch repo, don't assume it's any good at all, right.
+- The other thing you'll notice is that everybody were...when they like pretty much every other sequence-to-sequence model I've found in PyTorch anywhere on the internet has clearly copied from that shitty PyTorch repo.  Cause all the same variable names, it has the same problems.  It has the same mistakes
 
