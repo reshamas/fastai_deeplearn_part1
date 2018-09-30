@@ -365,7 +365,38 @@ def get_vecs(lang, ft_vecs):
 en_vecd = get_vecs('en', en_vecs)
 fr_vecd = get_vecs('fr', fr_vecs)
 ```
-- So, now we've got our pickled dictionary.  We can go ahead and look up a word.  For example.  `,` [comma] and that will return a word vector 
+- [load in pickled dictionary]
+```python
+en_vecd = pickle.load(open(PATH/'wiki.en.pkl','rb'))
+fr_vecd = pickle.load(open(PATH/'wiki.fr.pkl','rb'))
+```
+- So, now we've got our pickled dictionary.  We can go ahead and look up a word.  For example.  `,` [comma] and that will return a vector.  The length of that vector is the dimensionality of this set of word vectors:  `dim_en_vecdim_en_v`
+- So in this case we've got 300 dimensional English and French words.  
+```python
+dim_en_vecdim_en_v  = len(en_vecd[','])
+dim_fr_vec = len(fr_vecd[','])
+dim_en_vec,dim_fr_vec
+```
+```bash
+(300, 300)
+```
+- for reasons that you'll see in a moment, I also want to find out what the mean of what my vectors are and the standard deviations of my vectors are.  So, the mean's about 0 and the standard deviation is about 0.3.  So, we'll remember that.  
+```python
+en_vecs = np.stack(list(en_vecd.values()))
+en_vecs.mean(),en_vecs.std()
+```
+```bash
+(0.0075652334, 0.29283327)
+```
 
-
+### `36:45` Model Data
+- often, corpuses have a pretty long-tailed distribution of sequence length. And it's the longest sequences that kind of tend to overwhelm how long things take and, you know, how much memory is used and stuff like that.  So, I'm going to grab, you know, in this case, the **99th** to **97th** percentile of the English and French [respectively].  
+```python
+enlen_90 = int(np.percentile([len(o) for o in en_ids], 99))
+frlen_90 = int(np.percentile([len(o) for o in fr_ids], 97))
+enlen_90,frlen_90
+```
+```bash
+(29, 33)
+```
 
