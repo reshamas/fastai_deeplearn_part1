@@ -294,7 +294,9 @@ def toks2ids(tok,pre):
     return ids,itos,stoi
 ```   
 - So, if we try to look up something that wasn't in the 40,000 most common, then we use a `defaultdict` to return "3" which is "unknown".
-- So, we can go ahead now and turn every token into an ID by putting it through the `stoi` (string to integer) dictionary we just created.  
+- So, we can go ahead now and turn every token into an ID by putting it through the `stoi` (string to integer) dictionary we just created.
+- `30:20` And at the end of that, let's add the number "2", which is "end of string".  And you'll see like...the code you see here...is the code I write when I am iterating and experimenting.  Because 99% of the code I write I am iterating or experimenting turns out to be totally wrong or stupid or embarrassing and and you don't get to see it. But like there's no point, you know, refactoring that and making it beautiful when I'm writing it.  
+
 
 
 
