@@ -355,13 +355,17 @@ fr_vecs = ft.load_model(str((PATH/'wiki.fr.bin')))
 - And then, I'm going to convert it into a standard Python dictionary to make it a bit easier to work with
   - so this is just going to go through each word `vecd = {w:ft_vecs.get_word_vector(w) for w in ft_vecs.get_words()}` with a dictionary comprehension 
   - and save it as a pickled dictionary `pickle.dump(vecd, open(PATH/f'wiki.{lang}.pkl','wb'))`
-
 ```python
 def get_vecs(lang, ft_vecs):
     vecd = {w:ft_vecs.get_word_vector(w) for w in ft_vecs.get_words()}
     pickle.dump(vecd, open(PATH/f'wiki.{lang}.pkl','wb'))
     return vecd
 ```
+```python
+en_vecd = get_vecs('en', en_vecs)
+fr_vecd = get_vecs('fr', fr_vecs)
+```
+- So, now we've got our pickled dictionary.  We can go ahead and look up a word.  For example.  `,` [comma] and that will return a word vector 
 
 
 
