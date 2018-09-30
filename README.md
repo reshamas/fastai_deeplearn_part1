@@ -2,7 +2,7 @@
 - [fastai docs](http://docs.fast.ai)
 - [fastai (on GitHub)](https://github.com/fastai/fastai)
 - [fastai_v1 (on GitHub)](https://github.com/fastai/fastai_v1) 
-- [some fastai data files](http://files.fast.ai)
+- [some fastai files](http://files.fast.ai)
 
 ## About Me 
 * [My Blog](https://reshamas.github.io) (Reshama Shaikh)
