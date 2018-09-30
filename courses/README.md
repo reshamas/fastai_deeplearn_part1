@@ -2,6 +2,7 @@
 
 
 ## Deep Learning 
+Note:  Best to use the *latest* version.
 
 #### Version 3
 * [Deep Learning 1](dl1-v3/)
