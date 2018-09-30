@@ -400,4 +400,8 @@ enlen_90,frlen_90
 (29, 33)
 ```
 - OK, so that's just truncating them.  So, we're nearly there.  We've got our tokenized numericalized English and French dataset.  We've got some word vectors.  
-- `37:35` So, now we need to get it ready for PyTorch.  So PyTorch expects a dataset object and hopefully by now, you all can tell me that a dataset
+- `37:35` So, now we need to get it ready for PyTorch.  So PyTorch expects a dataset object and hopefully by now, you all can tell me that a dataset object requires two things:
+  1.  a length
+  2.  an indexer
+- So, I started out writing this and I was like, ok, I need a seq-to-seq dataset.  And I started out writing it and I thought, ok, we're going to have to pass it our X's and Y's and store them away.  And then my indexer is going to need to return a numpy array of the X's at that point and a numpy array of the Y's at that point, and oh, that's it.
+- So, then after I wrote this I realized I haven't really written a seq-to-seq dataset.  I've just written a totally generic dataset
