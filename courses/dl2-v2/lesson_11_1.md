@@ -424,6 +424,6 @@ class Seq2SeqDataset(Dataset):
 - Like, another example.  Nearly every PyTorch convolutional neural network I found does not use an **adaptive pooling layer**.  So, in other words, the final layer is always average pool 7, 7, right.  So, they *assume* that the previous layer is 7 by 7, and if you use any other size input, you get an exception.  
 - And, therefore, nearly everybody I've spoken to that uses PyTorch thinks that there is a fundamental limitation of CNNs that they are tied to the input size. And **that has not been true since VGG**, right.  So every time we grab a new model, and stick it in the fastai repo, I have to go in, search for "pool" and add "adaptive" to the start and replace the "7" with a "1".
 - And now, it works on any sized object, right.  So, just be careful, you know.  It's still early days and, believe it or not, even though most of you have only started in the last year, your deep learning journey, you know quite a lot more about a lot of the more important practical aspects than the vast majority of people that are, like, publishing, and writing stuff in official repos and stuff. So, you kind of need to have a little more self-confidence than you might expect when it comes to reading other's people code.  If you find yourself thinking, "that looks odd", it's not necessarily you.  It *might* well be them.
-- `41:50` ok, so
+- `41:50` ok, so yeah I would say like at least 90% of deep learning code 
 
 
