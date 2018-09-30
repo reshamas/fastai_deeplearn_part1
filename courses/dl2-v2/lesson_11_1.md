@@ -427,7 +427,7 @@ class Seq2SeqDataset(Dataset):
 - `41:50` ok, so yeah I would say like at least 90% of deep learning code that I start looking at turns out to have like, you know, like deathly serious problems that make it completely unusable for anything. 
 - And, so, I kind of been telling people that I've been working with recently:  you know, if the repo you're looking at doesn't have a section on it saying "here's the test we did where we got the same results as the paper that this was meant to be implementing", that almost certainly means that they haven't got the same results in the paper they're implementing.  They probably haven't even check, ok.  And if you run it, it definitely won't get those results.  Because it's hard to get things right the first time.  It takes me 12 go's.  You know, it probably takes the normal smarter people than me 6 go's.  But, if they haven't tested it once, it almost certainly won't work.  
 - `42:42` ok, so there's our sequence to sequence dataset.  Let's get the training and validation sets.  Here's an easy way to do that.
-- [JH speaks very fast through this part.]
+- [very fast speaking through this part.]
 - grab a bunch of random numbers, one for each row of your data:  `np.random.rand(len(en_ids_tr))>0.1`
 - see if they are bigger than 0.1 or not.  that gives you a list of BOOLS. 
 - index into your array with that list of BOOLS to grab a training set
@@ -444,5 +444,16 @@ len(en_trn),len(en_val)
 #### `43:20` Data Loaders
 - now we need to create data loaders 
 - we can just grab our data loader and pass in our dataset and batch size
-- we actually have to transpose the arrays
+- we actually have to transpose the arrays.  I"m not going to go into the details about why.  We can talk about it during the week if you're interested.  But, have a think about why we might need to transpose their orientation.  
+- but, there's a few more things I want to do.  One is that since we've already done all the pre-processing, there's no point spawning off multiple workers to do like augmentation or whatever because there's not work to do. So, making `num_workers=1` will save you some time.  
+- We have to tell it what our padding index is. That's actually pretty important because what's going to happen is that we've got different length sentences.  And fastai is, I think, pretty much the only library that does this.  Fastai will just automatically stick them together and pad the shorter ones to be so they all end up equal length.  Because, remember that a **tensor has to be rectangular**. 
+- In the decoder, in particular, I actually want my padding to be at the end, not at the start. Like, for a classifier, I want the padding at the start because I want that final token to represent the last word of the movie review.  But, in the decoder, as you'll see, it actually is going to work out a bit better to have the padding at the end. So, I say `pre_pad=False`.  
+- And then, finally, since we've got sentences of different lengths coming in, and they all have to be put together in a mini-batch to be the same size by padding, we would much prefer that the sentence in a mini-batch are of similar sizes already.  
 
+```python
+trn_dl = DataLoader(trn_ds, bs, transpose=True, transpose_y=True, num_workers=1, 
+                    pad_idx=1, pre_pad=False, sampler=trn_samp)
+val_dl = DataLoader(val_ds, int(bs*1.6), transpose=True, transpose_y=True, num_workers=1, 
+                    pad_idx=1, pre_pad=False, sampler=val_samp)
+md = ModelData(PATH, trn_dl, val_dl)
+```
