@@ -404,7 +404,9 @@ enlen_90,frlen_90
   1.  a length
   2.  an indexer
 - So, I started out writing this and I was like, ok, I need a seq-to-seq dataset.  And I started out writing it and I thought, ok, we're going to have to pass it our X's and Y's and store them away.  And then my indexer is going to need to return a numpy array of the X's at that point and a numpy array of the Y's at that point, and oh, that's it.
-- So, then after I wrote this I realized I haven't really written a seq-to-seq dataset.  I've just written a totally generic dataset so here's like the simplest possible dataset that works for any pair of arrays so it's now poorly named.  It's much more general than a seq-to-seq dataset.
+- So, then after I wrote this I realized I haven't really written a seq-to-seq dataset.  I've just written a totally generic dataset so here's like the simplest possible dataset that works for any pair of arrays so it's now poorly named.  It's much more general than a seq-to-seq dataset, but that's what I needed it for.  
+- This `A` function, remember we've got `V` for **variables**, `T` for for **tensors**, `A` for **arrays**.
+- So this basically goes through each of the things you pass 
 ```python
 class Seq2SeqDataset(Dataset):
     def __init__(self, x, y): self.x,self.y = x,y
