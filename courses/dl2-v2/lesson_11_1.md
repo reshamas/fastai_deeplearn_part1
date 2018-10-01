@@ -470,4 +470,43 @@ md = ModelData(PATH, trn_dl, val_dl)
   - It's going to spit them in to a encoder or, you know, in kind of computer vision terms what we've been calling a backbone. You know, something that's going to try and turn this into some kind of representation.  So that's just going to be an RNN, okay.
 - That's going to spit out the **final hidden state** which for each sentence is just a vector, remember?  It's just a single vector.
 - And so that's all going to take... none of this is going to be new. That's all going to be using very direct simple techniques that we've already learnt.  And then, we're going to take that and we're going to spit it into a different RNN which is a decoder and that's going to have some new stuff because we need something that can go through one word at a time.  
-- `48:00` And it's going to keep going until it thinks it's finished the sentence.  It doesn't know how long the sentence is going to be ahead of time.  It keeps going until it thinks it's finished the sentence and then it stops 
+- `48:00` And it's going to keep going until it thinks it's finished the sentence.  It doesn't know how long the sentence is going to be ahead of time.  It keeps going until it thinks it's finished the sentence and then it stops and returns a sentence.
+- So, let's start with the encoder
+- So, in terms of variable naming here, there's basically identical variables for encoder and decoder 
+
+```python
+class Seq2SeqRNN(nn.Module):
+    def __init__(self, vecs_enc, itos_enc, em_sz_enc, vecs_dec, itos_dec, em_sz_dec, nh, out_sl, nl=2):
+        super().__init__()
+        self.nl,self.nh,self.out_sl = nl,nh,out_sl
+        self.emb_enc = create_emb(vecs_enc, itos_enc, em_sz_enc)
+        self.emb_enc_drop = nn.Dropout(0.15)
+        self.gru_enc = nn.GRU(em_sz_enc, nh, num_layers=nl, dropout=0.25)
+        self.out_enc = nn.Linear(nh, em_sz_dec, bias=False)
+        
+        self.emb_dec = create_emb(vecs_dec, itos_dec, em_sz_dec)
+        self.gru_dec = nn.GRU(em_sz_dec, em_sz_dec, num_layers=nl, dropout=0.1)
+        self.out_drop = nn.Dropout(0.35)
+        self.out = nn.Linear(em_sz_dec, len(itos_dec))
+        self.out.weight.data = self.emb_dec.weight.data
+        
+    def forward(self, inp):
+        sl,bs = inp.size()
+        h = self.initHidden(bs)
+        emb = self.emb_enc_drop(self.emb_enc(inp))
+        enc_out, h = self.gru_enc(emb, h)
+        h = self.out_enc(h)
+
+        dec_inp = V(torch.zeros(bs).long())
+        res = []
+        for i in range(self.out_sl):
+            emb = self.emb_dec(dec_inp).unsqueeze(0)
+            outp, h = self.gru_dec(emb, h)
+            outp = self.out(self.out_drop(outp[0]))
+            res.append(outp)
+            dec_inp = V(outp.data.max(1)[1])
+            if (dec_inp==1).all(): break
+        return torch.stack(res)
+    
+    def initHidden(self, bs): return V(torch.zeros(self.nl, bs, self.nh))
+```    
