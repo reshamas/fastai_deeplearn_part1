@@ -453,7 +453,9 @@ len(en_trn),len(en_val)
 - And then at that point, we can create a **model data object**.  Remember a model data object really does one thing which is it says, I have a training set and a validation set and an optional test set and sticks them into a single object.  
 - `45:55` we also have a `PATH` so that it has somewhere to store temporary files, models, stuff like that, right. 
 - So, you know, we're doing... we're not using fastai for very much at all in this example.  Just kind of a *minimal* set to show you like, you know, how to, you know, kind of get your model data objects.  Because in the end, once you've got a model data object, you can then create a **learner** and then you can call **fit**.  
-- So, that's kind of like minimal amount of fastai stuff here.  This is a standard PyTorch compatible dataset class (`Seq2SeqDataset(Dataset):`).  This is a standard PyTorch compatible data loader.  Behind the scenes, it's actually using the fastai version because 
+- So, that's kind of like minimal amount of fastai stuff here.  This is a standard PyTorch compatible dataset class (`Seq2SeqDataset(Dataset):`).  This is a standard PyTorch compatible data loader.  Behind the scenes, it's actually using the fastai version because I do need it to do this automatic padding for convenience. So there's a few tweaks in our version that are a bit faster and a bit more convenient.
+- The fastai samplers we're using. But, you know, there's not too much going on here.  
+- So, now we've got our model data object.  We can basically tick off number 1 (1.  Data , 2. Arch, 3. Loss).  
 
 ```python
 trn_dl = DataLoader(trn_ds, bs, transpose=True, transpose_y=True, num_workers=1, 
