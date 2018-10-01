@@ -472,8 +472,35 @@ md = ModelData(PATH, trn_dl, val_dl)
 - And so that's all going to take... none of this is going to be new. That's all going to be using very direct simple techniques that we've already learnt.  And then, we're going to take that and we're going to spit it into a different RNN which is a decoder and that's going to have some new stuff because we need something that can go through one word at a time.  
 - `48:00` And it's going to keep going until it thinks it's finished the sentence.  It doesn't know how long the sentence is going to be ahead of time.  It keeps going until it thinks it's finished the sentence and then it stops and returns a sentence.
 - So, let's start with the encoder
-- So, in terms of variable naming here, there's basically identical variables for encoder and decoder 
+- So, in terms of variable naming here, there's basically identical variables for encoder and decoder, well attributes, for encoder and decoder.  The encoder versions have `enc`; the decoder versions have `dec`
+- So, for the encoder, here's our embeddings.  And so, like I always try to mention like what the mnemonics are.  You know, rather than writing things out, you know, in too longhand.  So, you know, just remember `enc` is an encoder; `dec` is a decoder; `emb` is embedding. 
+- the final thing that comes out is `out`.
+- the RNN in this case is a GRU, not an LSTM.
+- `49:00` they're nearly the same thing.  So, don't worry about the difference.  You could replace it with an LSTM and you'll get basically the same results.  
+- To replace it with an LSTM, simply type `nn.LSTM`, rather than `nn.GRU`
+- So, we need to create an embedding layer to take because remember what we're being passed is the index of the words into a vocabulary.  And we want to grab their fastText embedding.  And then, over time, we might want to also fine tune to train that embedding into it.
+- So, to create an embedding, we'll call `create_emb` up here, so we'll just say `nn.Embedding`.  So, it's important that you know now how to set the rows and columns for your embedding so the number or rows has to be equal to your vocabulary size.  So each vocabulary item has a word vector.
+- And the.. how big is your embedding?  Well, in this case, it was determined by fastText and the fastText embedding size is 300.  So, we have to use size 300 as well.  Otherwise, we can't start out by using their embeddings.  
+- `50:10` Now, so what we want to do is... this is initially going to give us a random set of embeddings and so we're going to now go through each one of these and if we find it in fastText, we'll replace it with the fastTest embedding, ok.
+- So, again something that you should already know is that a PyTorch module that is learnable has a `weight` attribute.  And the `weight` attribute is a variable.  And that variables have a `data` attribute.  And the `data` attribute is a **tensor**:  `wgts = emb.weight.data`
+- `50:45` Now, you'll notice very often today I'm saying, "here is something you should know".  Not so that you think "oh, I don't know that. I'm a bad person", but so that you think "okay, this is a concept that I haven't learnt yet.  And Jeremy thinks I ought to know about and so I've got to write that down and I'm gonna go home and I'm gonna like Google because like this is a normal PyTorch attribute in every single learnable PyTorch module.  This is a normal PyTorch attribute in every single PyTorch variable. And so, if you don't know how to grab the weights out of a module or you don't know how to grab the tensor out of a variable, it's gonna be hard for you to build new things or to debug things or to maintain things or whatever, ok.  
+- So, if I say you ought to know this, and you're thinking "I don't know this", don't run away and hide.  Go home and learn the thing.  And if you're having trouble learning the thing because you can't find documentation about it, or you don't understand that documentation.  Or you don't know why Jeremy thought it was important you know it, jump on the forum and say like "please explain this thing.  Here's my best understanding of that thing as I have it at the moment.  Here's the resources I've looked at.  Help fill me in."
+- `51:53` and normally, if I respond, it's very likely I will not tell you the answer. But, I will instead give you the 
 
+```python
+defdef  create_embcreate_ (vecs, itos, em_sz):
+    emb = nn.Embedding(len(itos), em_sz, padding_idx=1)
+    wgts = emb.weight.data
+    miss = []
+    for i,w in enumerate(itos):
+        try: wgts[i] = torch.from_numpy(vecs[w]*3)
+        except: miss.append(w)
+    print(len(miss),miss[5:10])
+    return emb
+```
+```python
+nh,nl = 256,2
+```
 ```python
 class Seq2SeqRNN(nn.Module):
     def __init__(self, vecs_enc, itos_enc, em_sz_enc, vecs_dec, itos_dec, em_sz_dec, nh, out_sl, nl=2):
