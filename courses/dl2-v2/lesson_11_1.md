@@ -456,7 +456,6 @@ len(en_trn),len(en_val)
 - So, that's kind of like minimal amount of fastai stuff here.  This is a standard PyTorch compatible dataset class (`Seq2SeqDataset(Dataset):`).  This is a standard PyTorch compatible data loader.  Behind the scenes, it's actually using the fastai version because I do need it to do this automatic padding for convenience. So there's a few tweaks in our version that are a bit faster and a bit more convenient.
 - The fastai samplers we're using. But, you know, there's not too much going on here.  
 - So, now we've got our model data object.  We can basically tick off number 1 (1.  Data , 2. Arch, 3. Loss).  
-
 ```python
 trn_dl = DataLoader(trn_ds, bs, transpose=True, transpose_y=True, num_workers=1, 
                     pad_idx=1, pre_pad=False, sampler=trn_samp)
@@ -465,4 +464,10 @@ val_dl = DataLoader(val_ds, int(bs*1.6), transpose=True, transpose_y=True, num_w
 md = ModelData(PATH, trn_dl, val_dl)
 ```
 
-### `45:45` Initial Model
+### `47:00` Initial Model
+- So, as I said, most of the work is in the architecture and so the architecture is:  
+  - going to take our sequence of tokens. 
+  - It's going to spit them in to a encoder or, you know, in kind of computer vision terms what we've been calling a backbone. You know, something that's going to try and turn this into some kind of representation.  So that's just going to be an RNN, okay.
+- That's going to spit out the **final hidden state** which for each sentence is just a vector, remember?  It's just a single vector.
+- And so that's all going to take... none of this is going to be new. That's all going to be using very direct simple techniques that we've already learnt.  And then, we're going to take that and we're going to spit it into a different RNN which is a decoder and that's going to have some new stuff because we need something that can go through one word at a time.  
+- `48:00` And it's going to keep going until it thinks it's finished the sentence.  It doesn't know how long the sentence is going to be ahead of time.  It keeps going until it thinks it's finished the sentence and then it stops 
