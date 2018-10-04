@@ -1,7 +1,9 @@
 # [fast.ai](http://www.fast.ai)
 - [fastai docs](http://docs.fast.ai)
 - [fastai (on GitHub)](https://github.com/fastai/fastai)
-- [fastai_v1 (on GitHub)](https://github.com/fastai/fastai_v1) 
+- [fastai_v1 (on GitHub)](https://github.com/fastai/fastai_v1)
+    - [fastai v1: Launch Announcement](http://www.fast.ai/2018/10/02/fastai-ai/)
+    - [podcast on fastai_v1](https://twimlai.com/twiml-talk-186-the-fastai-v1-deep-learning-framework-with-jeremy-howard/)
 - [some fastai files](http://files.fast.ai)
 
 ## About Me 
