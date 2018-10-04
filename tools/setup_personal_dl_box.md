@@ -21,14 +21,19 @@ git clone https://github.com/fastai/fastai.git
 cd fastai/ 
 ```
 
+## Step 4: Install header files to build python extensions
+This step installs python3-dev package.
+```bash
+sudo apt-get install python3-dev
+```
 
-## Step 4:  Create the virtual environment
+## Step 5:  Create the virtual environment
 This step installs all of the dependencies.  
 ```bash
 conda env create -f environment.yml
 ```
 
-## Step 5:  Activate virtual environment 
+## Step 6:  Activate virtual environment 
 Do this step every time you login. Or else put it in your `.bashrc` file.  
 ```bash
 source activate fastai
