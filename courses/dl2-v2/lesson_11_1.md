@@ -489,7 +489,7 @@ md = ModelData(PATH, trn_dl, val_dl)
 - `52:22` ok, so now that we've got our weight tensor, we can just go through our vocabulary and we can look up the word in our pre-trained vectors `vecs` and if we find it, we will replace the random weights with that pre-trained vector.  
 - `52:50` the random weights have a standard deviation of 1.  Our pre-trained vectors, it turned out, had a standard deviation of about 0.3.  So, again, this is the kind of hackey thing I do when I am prototyping stuff, I just multiply it by 3.  Obviously, by the time you, you know, see the video of this, we will have put all the sequence-to-sequence into the fastai library, you won't find horrible hacks like that in there, we hope.  But, hack away, when you are prototyping.
 - Some things won't be in fasttext in which case we'll just keep track of it (`except: miss.append(w)`).  And I've just added this print statement:  ` print(len(miss),miss[5:10])` here just so that I can kind of see what's going... like why am I missing stuff.  Basically, when, you know, I'll probably comment it out when I actually commit this to GitHub.  That's why that's there.  okay.
-- So, we create those embeddings, and so when we actually create the sequence-to-sequence RNN, it will print out how many were missed.  And so remember, we had like about 30,000 words, so we're not missing too many.  And interesting, the things that are missing, well, there's a special token for uppercase.  Not surprising that's missing.  Also, remember, it's not token to vec, it's not token text.  It does words so `l'` and `d'` and `'s` 
+
 ```python
 defdef  create_embcreate_ (vecs, itos, em_sz):
     emb = nn.Embedding(len(itos), em_sz, padding_idx=1)
@@ -540,3 +540,16 @@ class Seq2SeqRNN(nn.Module):
     
     def initHidden(self, bs): return V(torch.zeros(self.nl, bs, self.nh))
 ```    
+
+- So, we create those embeddings, and so when we actually create the sequence-to-sequence RNN, it will print out how many were missed.  And so remember, we had like about 30,000 words, so we're not missing too many.  And interesting, the things that are missing, well, there's a special token for uppercase.  Not surprising that's missing.  Also, remember, it's not token to vec, it's not token text.  It does words so `l'` and `d'` and `'s` 
+
+```python
+rnn = Seq2SeqRNN(fr_vecd, fr_itos, dim_fr_vec, en_vecd, en_itos, dim_en_vec, nh, enlen_90)
+learn = RNN_Learner(md, SingleModel(to_gpu(rnn)), opt_fn=opt_fn)
+learn.crit = seq2seq_loss
+```
+
+```bash
+3097 ['l’', "d'", 't_up', 'd’', "qu'"]
+1285 ["'s", '’s', "n't", 'n’t', ':']
+```
