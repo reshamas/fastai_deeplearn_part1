@@ -584,4 +584,4 @@ learn.crit = seq2seq_loss
 - `59:40`  all right, so that `h` in the code is that `S` [in the diagram].  So it's a **hidden state**.  I guess Stephen [Manning] used "S" for state, and I used "h" for hidden, but there you go.  You would think the two Australians could agree on something like that but apparently not.  
 
 #### `59:58` new bit: decoder to softmax
-- So how do we now do the new bit, right?  And so, the basic idea of the new bit [decoder to softmax] is the same.  We're going to do exactly the same thing, but 
+- So how do we now do the new bit, right?  And so, the basic idea of the new bit [decoder to softmax] is the same.  We're going to do exactly the same thing, but we're going to write our own 
