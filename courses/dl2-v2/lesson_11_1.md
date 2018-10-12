@@ -562,7 +562,7 @@ learn.crit = seq2seq_loss
 - Person x:  So, I wonder, so if you're not touching a word, it's not going to change, right? Like even when we are fine-tuning, you are not...it's not hiding in memory.
 - JH:  right, it's in GPU RAM.  And you gotta remember, 3.5 million times 300 times the size of a single precision floating point vector **plus** all of the gradients for them, even if it's not touched, ... like they're... without being very careful and adding a lot more code and stuff, it is slow and hard and when we wouldn't touch it for now.  But, as I say, I think it's an interesting path of inquiry, but it's the kind of path of inquiry that leads to like multiple academic papers.  Not, you know, something you do on a weekend.  But, I think it would be very interesting for, yeah, maybe we can look at it some time, you know.  And, as I say, I have actually started doing some stuff around incorporating large vocabulary handling into fastai.  It's not finished, but hopefully by the time we get here this kind of stuff will be possible.
 
-#### back to notebook
+#### back to notebook:  Seq-to-Seq RNN code
 - `57:05` okay, so we create our encoder embedding:  `self.emb_enc = create_emb(vecs_enc, itos_enc, em_sz_enc)`
 - add a bit of dropout `self.emb_enc_drop = nn.Dropout(0.15)`
 - and then we create our RNN:  `self.gru_enc = nn.GRU(em_sz_enc, nh, num_layers=nl, dropout=0.25)`
@@ -571,4 +571,7 @@ learn.crit = seq2seq_loss
 - however many layers we want:  `num_layers=nl`
 - and some dropout inside the RNN as well:  `dropout=0.25`
 - So, this is all standard PyTorch stuff, you could use an LSTM here as well. 
-- And then, finally, we need to turn that into some output that we're going to feed a decoder
+- And then, finally, we need to turn that into some output that we're going to feed the decoder, so let's use a linear layer to conver the number of hidden into the decoder embedding size:  `self.out_enc = nn.Linear(nh, em_sz_dec, bias=False)`
+
+#### `57:50` `def forward`
+- ok, in the forward pass, here's how that's used 
