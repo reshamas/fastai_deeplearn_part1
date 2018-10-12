@@ -579,3 +579,5 @@ learn.crit = seq2seq_loss
 - so, we've not got a vector of zeroes which we.... and then we are going to take our input and put it through our embedding.  We're going to put that through dropout:  `emb = self.emb_enc_drop(self.emb_enc(inp))`
 - we then pass our currently zeroes hidden state, `h`, and our embeddings, `emb`, into our RNN
 `enc_out, h = self.gru_enc(emb, h)` and it's going to spit out the usual stuff that RNNs spit out, which includes the final hidden state. 
+- we're going to then take the final hidden state `h` and stick it through that linear layer `h = self.out_enc(h)` so we now have something of the right size to feed our decoder.  
+- so, that's it.  And again, this is like... ought to be very familiar and very comfortable.  It's like the most simple, possible RNN.  So, if it's not, go back to check out Lesson 6.  Make sure you can write it from scratch and that you understand what it does.  But, the key thing to know is that it takes our inputs and spits out a hidden vector that hopefully will learn to contain all of the information about what that sentence says and how it says it.  Because 
