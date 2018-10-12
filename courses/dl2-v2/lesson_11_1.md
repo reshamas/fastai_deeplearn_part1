@@ -541,15 +541,15 @@ class Seq2SeqRNN(nn.Module):
     def initHidden(self, bs): return V(torch.zeros(self.nl, bs, self.nh))
 ```    
 
-- So, we create those embeddings, and so when we actually create the sequence-to-sequence RNN, it will print out how many were missed.  And so remember, we had like about 30,000 words, so we're not missing too many.  And interesting, the things that are missing, well, there's a special token for uppercase.  Not surprising that's missing.  Also, remember, it's not token to vec, it's not token text.  It does words so `l'` and `d'` and `'s` 
-
+- So, we create those embeddings, and so when we actually create the sequence-to-sequence RNN, it will print out how many were missed.  And so remember, we had like about 30,000 words, so we're not missing too many.  And interesting, the things that are missing, well, there's a special token for uppercase.  Not surprising that's missing: `t_up`.  Also, remember, it's not token to vec, it's not token text.  It does words so `l'` and `d'` and `'s`, they're not appearing either.  So, that's interesting.  That does suggest that maybe we could have slightly better embeddings if we try to find some which would been tokenized the same way we tokenize, but that's okay. 
 ```python
 rnn = Seq2SeqRNN(fr_vecd, fr_itos, dim_fr_vec, en_vecd, en_itos, dim_en_vec, nh, enlen_90)
 learn = RNN_Learner(md, SingleModel(to_gpu(rnn)), opt_fn=opt_fn)
 learn.crit = seq2seq_loss
 ```
-
 ```bash
 3097 ['l’', "d'", 't_up', 'd’', "qu'"]
 1285 ["'s", '’s', "n't", 'n’t', ':']
 ```
+- JH:  Rachel?
+- `54:28` RT:  Do we just keep embedding vectors from training?  Why don't we keep all word embeddings in 
