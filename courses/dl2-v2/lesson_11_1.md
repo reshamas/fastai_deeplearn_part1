@@ -575,3 +575,5 @@ learn.crit = seq2seq_loss
 
 #### `57:50` `def forward`
 - ok, in the forward pass, here's how that's used 
+- we first of all, initialize our hidden state, `h = self.initHidden(bs)`, to a bunch of zeroes:  `return V(torch.zeros(self.nl, bs, self.nh))`
+- 
