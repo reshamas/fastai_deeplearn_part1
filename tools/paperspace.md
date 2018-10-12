@@ -142,6 +142,7 @@ CODE-OF-CONDUCT.md  courses  environment.yml  fastai  LICENSE  MANIFEST  MANIFES
 /home/paperspace/fastai
 (fastai) paperspace@psnqh1ltz:~/fastai$
 ```
+
 ### Step 2:  update repo 
 <kbd> git pull </kbd>  
 - from time to time, you should pull the latest `fastai` repo from GitHub
@@ -164,39 +165,55 @@ Already up-to-date.
 (fastai) paperspace@psgyqmt1m:~/fastai$
 ```
 
-### Step 2:  Launch Jupyter Notebook
-<kbd> jupyter notebook </kbd>  
+### Step 1.5: Fix Jupyter Notebook config file
+<kbd> jupyter notebook --generate-config </kbd>
+```bash
+(fastai) paperspace@psgyqmt1m:~/fastai$ jupyter notebook --generate-config
+Overwrite /home/paperspace/.jupyter/jupyter_notebook_config.py with default config? [y/N]
 ```
-(fastai) paperspace@psgyqmt1m:~/fastai$ jupyter notebook
-[I 17:16:50.591 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
-[W 17:16:51.110 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
-[I 17:16:51.122 NotebookApp] Serving notebooks from local directory: /home/paperspace/fastai
-[I 17:16:51.122 NotebookApp] 0 active kernels
-[I 17:16:51.122 NotebookApp] The Jupyter Notebook is running at:
-[I 17:16:51.122 NotebookApp] http://[all ip addresses on your system]:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
-[I 17:16:51.122 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 17:16:51.123 NotebookApp] 
-    
+
+### Step 2:  Launch Jupyter Notebook (now with more config!)
+<kbd> jupyter notebook --no-browser --port=8889 --NotebookApp.allow_remote_access=True</kbd>
+- the config settings can be written permanently into /home/paperspace/.jupyter/jupyter_notebook_config.py.
+- The config file was previously set up by default to allow remote access, but updated jupyter notebook breaks.
+- The reason to change port=8889 will be clear in a minute.
+
+```
+(fastai) paperspace@psgyqmt1m:~/fastai$ jupyter notebook --no-browser --port=8889 --NotebookApp.allow_remote_access=True
+[I 20:37:41.604 NotebookApp] Serving notebooks from local directory: /home/paperspace/.jupyter
+[I 20:37:41.605 NotebookApp] The Jupyter Notebook is running at:
+[I 20:37:41.605 NotebookApp] http://localhost:8889/?token=a7a724c1ba8d4c91132834c2d076298f517002227d4e8a72
+[I 20:37:41.605 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 20:37:41.605 NotebookApp]
+
     Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
-        http://localhost:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
+        http://localhost:8889/?token=a7a724c1ba8d4c91132834c2d076298f517002227d4e8a72
 ```
+
+### Step 2.5:  SSH into machine and redirect <i>local</i> localhost to machine localhost
+- open a terminal or cmd window on your <b>local</b> machine 
+- <kbd>ssh -N -L localhost:8888:localhost:8889 paperspace@your.public.ip.here</kbd>
+
+```
+C:\Users\Me>ssh -N -L localhost:8888:localhost:8889 paperspace@184.###.###.###
+paperspace@184.###.###.###'s password:
+
+```
+- keep this cmd window open. It appears to hang after enter on password, but all good.
+- this was sourced from https://hsaghir.github.io/data_science/jupyter-notebook-on-a-remote-machine-linux/
+- I have not tried it, but I assume this could be done with a .bat file, at least to some extent
 
 ### Step 3:  Get Notebook url
 - copy and paste url into your local browser (example:  Chrome, Firefox, Opera, etc)
-- for me it is, and it **WON'T WORK**:   
-http://localhost:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
-- I need to replace `localhost` section with the public `IP address` of my Paperspace machine.  
-This **DOES WORK**:  
-http://184.105.6.151:8888/?token=44cd3335e311c181531f38031095a217b01127d8152aa3fd
-
-:boom:  Hooray, it works! :smiley:
+- for me it is http://localhost:8889/?token=a7a724c1ba8d4c91132834c2d076298f517002227d4e8a72
+- and it <strike>**WON'T WORK**</strike> :boom:  Hooray, it works! :smiley::   
 
 ---
 ## Part V:  Workflow
 I opened the [Lesson 1 notebook](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson1.ipynb), made a copy with the name `tmp-reshama-lesson1.ipynb`  
 
-http://184.105.6.151:8888/notebooks/courses/dl1/lesson1.ipynb
+http://184.###.###.###:8888/notebooks/courses/dl1/lesson1.ipynb
 
 
 ## :red_circle: Part VI:  Shutting down Notebook & Machine
