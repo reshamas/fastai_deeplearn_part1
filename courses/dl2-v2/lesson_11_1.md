@@ -552,4 +552,9 @@ learn.crit = seq2seq_loss
 1285 ["'s", '’s', "n't", 'n’t', ':']
 ```
 - JH:  Rachel?
-- `54:28` RT:  Do we just keep embedding vectors from training?  Why don't we keep all word embeddings in 
+- `54:28` RT:  Do we just keep embedding vectors from training?  Why don't we keep all word embeddings in case you have new words in a test set?  
+- JH:  oh, I mean, we're going to be fine-tuning them, you know.  And so, yeah, I don't know.  I mean it's an interesting idea, maybe that would work.  I haven't tried it. I mean... obviously you wouldn't... so, can you use that? [?microphone]
+- Person x:  I asked the question, so you can also add random embedding to those and in the beginnning, just keep them random.  But, you're gonna have... it's going to make an effect in the sense that you are going to be using those words...
+- JH:  I think it's an interesting line of inquiry, but I will say this.  The vast majority of the time when you're kind of doing this in the real world, your vocabulary will be bigger than 40,000 and once your vocabulary is bigger than 40,000, using the standard techniques you... the embedding layer gets so big that it takes up all your memory.  It takes up all of the time in the backprop.  There are tricks to dealing with very large vocabularies.  I don't think we'll have time to handle them in this session but you definitely would not want to have all 3.5 million fast text vectors in an embedding layer.
+- Person x:  So, I wonder, so if you're not touching a word, it's not going to change, right? Like even when we are fine-tuning, you are not...it's 
+- JH:  it's in GPU RAM
