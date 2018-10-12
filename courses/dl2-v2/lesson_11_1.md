@@ -566,4 +566,8 @@ learn.crit = seq2seq_loss
 - `57:05` okay, so we create our encoder embedding:  `self.emb_enc = create_emb(vecs_enc, itos_enc, em_sz_enc)`
 - add a bit of dropout `self.emb_enc_drop = nn.Dropout(0.15)`
 - and then we create our RNN:  `self.gru_enc = nn.GRU(em_sz_enc, nh, num_layers=nl, dropout=0.25)`
-- this input to the RNN, obviously `em_sz_enc` 
+- this input to the RNN, obviously `em_sz_enc`, is the size of the embedding
+- `nh` number of hidden is whatever we want.  We set it to 256 for now.  `nh,nl = 256,2`
+- however many layers we want:  `num_layers=nl`
+- and some dropout inside the RNN as well:  `dropout=0.25`
+- So, this is all standard PyTorch stuff, you could use it 
