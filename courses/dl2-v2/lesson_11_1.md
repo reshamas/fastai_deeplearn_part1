@@ -570,4 +570,5 @@ learn.crit = seq2seq_loss
 - `nh` number of hidden is whatever we want.  We set it to 256 for now.  `nh,nl = 256,2`
 - however many layers we want:  `num_layers=nl`
 - and some dropout inside the RNN as well:  `dropout=0.25`
-- So, this is all standard PyTorch stuff, you could use it 
+- So, this is all standard PyTorch stuff, you could use an LSTM here as well. 
+- And then, finally, we need to turn that into some output that we're going to feed a decoder
