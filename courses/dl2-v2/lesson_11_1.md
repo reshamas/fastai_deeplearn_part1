@@ -584,4 +584,10 @@ learn.crit = seq2seq_loss
 - `59:40`  all right, so that `h` in the code is that `S` [in the diagram].  So it's a **hidden state**.  I guess Stephen [Manning] used "S" for state, and I used "h" for hidden, but there you go.  You would think the two Australians could agree on something like that but apparently not.  
 
 #### `59:58` new bit: decoder to softmax
-- So how do we now do the new bit, right?  And so, the basic idea of the new bit [decoder to softmax] is the same.  We're going to do exactly the same thing, but we're going to write our own 
+- So how do we now do the new bit, right?  And so, the basic idea of the new bit [decoder to softmax] is the same.  We're going to do exactly the same thing, but we're going to write our own for-loop `forward`, okay. And so, the `forward` is going to do exactly what the for-loop inside PyTorch does here, but we're going to do it manually.  
+```python
+        emb = self.emb_enc_drop(self.emb_enc(inp))
+        enc_out, h = self.gru_enc(emb, h)
+        h = self.out_enc(h)
+```
+- so, we've got to go through the for-loop and... how big is the for-loop?  It's an output sequence length.  Well, what is output sequence length?   That's something that got passed to the constructor and it is equal to the length of the largest English sentence, `enlen_90`.  So, we're going to do this for-loop as long as the largest English sentence because we're translating into English, right?  So, we can't possibly be longer than that.  At least not in this corpus.  If we then used it on some different corpus that was longer, this is going to fail, so... but, you could make this, you know, you could always pass in a different parameter, of course.  All right, so the basic idea is the same.  We're going to go through and put it through 
