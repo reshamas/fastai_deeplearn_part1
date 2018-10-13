@@ -13,7 +13,7 @@
   - Thu Dec 6
 
 ## Forums
-* [Discourse:  “Part 1 (v3)"] (http://forums.fast.ai/c/)
+* [Discourse: part1-v3](http://forums.fast.ai/c/part1-v3)
 
 ---
 ## Coursework (fastai website)
