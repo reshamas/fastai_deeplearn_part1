@@ -42,7 +42,7 @@
 
 
 ## Platforms for Using fastai (GPU required)
-* [Summary of Cloud GPU Vendors (with billing)](https://github.com/binga/cloud-gpus)
+[Summary of Cloud GPU Vendors (with billing)](https://github.com/binga/cloud-gpus)
 * [Paperspace setup](tools/paperspace.md)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
     - [How to setup fastai in an Amazon AWS region without fastai AMI like in Europe](https://medium.com/@pierre_guillou/guide-install-fastai-in-any-aws-region-8f4fe29132e5)
