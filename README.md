@@ -65,6 +65,7 @@
   - [FloydHub](https://www.floydhub.com)
     - https://github.com/YuelongGuo/floydhub.fast.ai
   - [Google Colaboratory](https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/welcome.ipynb)
+  - [Salamander](http://forums.fast.ai/t/setup-on-salamander-cheaper-easier-than-aws/25427)
 
 
 
