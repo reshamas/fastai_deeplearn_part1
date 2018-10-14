@@ -590,4 +590,20 @@ learn.crit = seq2seq_loss
         enc_out, h = self.gru_enc(emb, h)
         h = self.out_enc(h)
 ```
-- so, we've got to go through the for-loop and... how big is the for-loop?  It's an output sequence length.  Well, what is output sequence length?   That's something that got passed to the constructor and it is equal to the length of the largest English sentence, `enlen_90`.  So, we're going to do this for-loop as long as the largest English sentence because we're translating into English, right?  So, we can't possibly be longer than that.  At least not in this corpus.  If we then used it on some different corpus that was longer, this is going to fail, so... but, you could make this, you know, you could always pass in a different parameter, of course.  All right, so the basic idea is the same.  We're going to go through and put it through 
+- so, we've got to go through the for-loop and... how big is the for-loop?  It's an output sequence length, `out_sl`.  Well, what is output sequence length?   That's something that got passed to the constructor and it is equal to the length of the largest English sentence, `enlen_90`.  So, we're going to do this for-loop, as long as the largest English sentence because we're translating into English, right?  So, we can't possibly be longer than that.  At least not in this corpus.  If we then used it on some different corpus that was longer, this is going to fail, so... but, you could make this, you know, you could always pass in a different parameter, of course.  All right, so the basic idea is the same.  
+  - We're going to go through and put it through the embedding.  
+  - `1:01:12` We're going to stick it through the RNN
+  - We're going to stick it through the dropout
+  - And we're going to stick it through a linear layer
+- All right, so, the basic 4 steps are the same and once we've done that, we're then going to append `res.append(outp)` that output to a list `res = []`, and when we finish, we're going to stack that list up `return torch.stack(res)` into a single tensor and return it.
+```python
+        self.emb_enc = create_emb(vecs_enc, itos_enc, em_sz_enc)
+        self.emb_enc_drop = nn.Dropout(0.15)
+        self.gru_enc = nn.GRU(em_sz_enc, nh, num_layers=nl, dropout=0.25)
+        self.out_enc = nn.Linear(nh, em_sz_dec, bias=False)
+```
+- That's the basic idea.  Normally, our recurrent neural network, here's our decoder RNN `self.gru_dec`, works on a whole sequence at a time.  But, we've got a for-loop to go through each part of the sequence separately `for i in range(self.out_sl):` so we have to add a leading unit axis, `.unsqueeze(0)` to the start to basically say this is a sequence of length 1.  So, we're not really taking advantage of the recurrent net much at all.  We could easily rewrite this with a linear layer actually.  That would be an interesting experiment if you wanted to try it.
+- So we basically take our input `dec_inp` and we feed it into our embedding `embed_dec(dec_inp)` and we add something to the front saying treat this as a sequence of length 1 `.unsqueeze(0)` and then we pass that to our RNN `self.gru_dec(emb, h)`
+- We then get the output of that RNN `outp`, feed it into our dropout: `outp = self.out(self.out_drop(outp[0]))` and feed it into our linear layer `self.out`
+- So, there's two extra things now to be aware of.  Well, I guess it's really one thing.  The one thing is, what's this:  `dec_inp`?  What is the *input* to that embedding?
+
