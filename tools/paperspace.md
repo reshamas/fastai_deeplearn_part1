@@ -16,11 +16,12 @@ These notes correspond to first 12 minutes of lesson 1 video.
     - `100 GB ($7/month)`
     - `250 GB ($10/month)` 
 - USAGE
-    - P4000/GPU:  `$0.51/hr`
+    - M4000:  `$0.51/hr`
+    - P4000:  `$0.51/hr`
     - P5000:  `$0.78/hr`
 - PUBLIC IP ADDRESS:  `$3/month` (single static IP address)
-
-Note:  There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is only for fastai students.**  
+- Note: There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is only for fastai students.**
+    - If this code is unavailable, visit the fast.ai forums for user promo codes (generally $5).
 
 ## Paperspace Support
 - Technical support, email support@paperspace.com
@@ -47,6 +48,7 @@ Note:  There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is
 ### Step 4:  Choose template
 - Select `Public Templates`
 - Select icon for `fast.ai`
+- Ignore warning about contacting Paperspace about this template. It applies to the default selected, not fastai.
 
 <img src="../images/paperspace_fastai.png" align="center"  height="400" width="650" >   
 
@@ -54,15 +56,16 @@ Note:  There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is
 ### Step 5:  Choose machine
 - there are various machines with charges noted by the hour
 - Paperspace is cheaper than Crestle, with fast machines
-- if you choose the P5000 machine, it may ask you to contact Paperspace asking why (anti-fraud step); let them know it is for **fast.ai** and they will get you up and running
+- if you choose the P4000 or P5000 machine, it may ask you to contact Paperspace asking why (anti-fraud step); let them know it is for **fast.ai** and they will get you up and running (this may take several days...)
 - Machines to choose (whichever you prefer and is available in your region of choice)
-  - the **P4000**  (cheapest one) 
-  - the **P5000** 
+  - the **M4000**  (cheap, no paperspace authorization needed)
+  - the **P4000**  (~2x M4000 and same price, but must get authorization)
+  - the **P5000**  (better P4000, more expensive, need auth.)
 
 ### Step 6:  Choose storage
 - note that you pay for storage as soon as you start the machine up
-- select `250 GB` option; you can also get by with `50 GB` option too
-- storage costs are pro-rated (like compute (or "usage") costs) 
+- select `50 GB` option; unless you are sure you need more (applies to data storage only, not OS install)
+- storage costs are pro-rated (like compute (or "usage") costs)
 
 ### Step 7:  Options
 - turn ON `Public IP` (cost is `$3/month`)
@@ -75,21 +78,23 @@ Note:  There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is
 ### Step 9:  Create machine
 - select `Create your Paperspace` box
 - you'll see the new machine "provisioning"
-- It will take several hours (4-5 hrs) to receive the confirmation email from Paperspace due to high demand
+- It may take several hours (4-5 hrs) to receive the confirmation email from Paperspace due to high demand
 - you'll receive an email with subject *"Your new Paperspace Linux machine is ready"*
   - a temporary password will be included in that email
 ```text
 Your temporary sign-in password for machine New Machine 1 is: *************
 
-You can ssh into your new machine with the following command:ssh paperspace@184.105.2.222
+You can ssh into your new machine with the following command:ssh paperspace@184.###.###.###
 
 Happy computing!
 - The Paperspace Team
 ```
 
 ---
-## Part II:  Logging into Paperspace Fastami Image Machine
+## Part II:  Logging into Paperspace Fastai Image Machine
 - select the machine in Paperspace
+- press "Start"
+- press "Open" to use the Paperspace console, or use ssh from local machine terminal
 - copy password from email
 - paste in terminal
   - Windows: <kbd> Ctrl + Shft + v </kbd>
@@ -105,7 +110,7 @@ Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-104-generic x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-Last login: Thu Jan  4 16:47:39 2018 from 67.250.186.103
+Last login: Thu Jan  4 16:47:39 2018 from ###.###.###.###
 (fastai) paperspace@psgyqmt1m:~$ 
 ```
 
@@ -155,6 +160,24 @@ Already up-to-date.
 <kbd> conda env update </kbd>  
 - do this from time to time (every few weeks)
 
+### Step 4 (optional): Update password and apply root password
+<kbd>passwd</kbd> and <kbd>sudo passwd</kbd>
+- Current password = temp from Paperspace email
+- Root (sudo) currently has no password... we should set that too.
+```bash
+(fastai) paperspace@psjs5366a:~$ passwd
+Changing password for paperspace.
+(current) UNIX password:
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+(fastai) paperspace@psjs5366a:~$ sudo passwd
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+(fastai) paperspace@psjs5366a:~$
+```
+
 ---
 ## Part IV:  Paperspace & Jupyter Notebook
 ### Step 1:  `cd` into fastai directory
@@ -167,6 +190,7 @@ Already up-to-date.
 
 ### Step 1.5: Fix Jupyter Notebook config file
 <kbd> jupyter notebook --generate-config </kbd>
+- The config file was previously set up by default to allow remote access, but updated jupyter notebook breaks.
 ```bash
 (fastai) paperspace@psgyqmt1m:~/fastai$ jupyter notebook --generate-config
 Overwrite /home/paperspace/.jupyter/jupyter_notebook_config.py with default config? [y/N]
@@ -175,7 +199,6 @@ Overwrite /home/paperspace/.jupyter/jupyter_notebook_config.py with default conf
 ### Step 2:  Launch Jupyter Notebook (now with more config!)
 <kbd> jupyter notebook --no-browser --port=8889 --NotebookApp.allow_remote_access=True</kbd>
 - the config settings can be written permanently into /home/paperspace/.jupyter/jupyter_notebook_config.py.
-- The config file was previously set up by default to allow remote access, but updated jupyter notebook breaks.
 - The reason to change port=8889 will be clear in a minute.
 
 ```
@@ -197,17 +220,23 @@ Overwrite /home/paperspace/.jupyter/jupyter_notebook_config.py with default conf
 
 ```
 C:\Users\Me>ssh -N -L localhost:8888:localhost:8889 paperspace@184.###.###.###
+The authenticity of host '184.###.###.### (184.###.###.###)' can't be established.
+ECDSA key fingerprint is SHA256:bWbbhUD/7KFh+AM5CtmcSR8Z+n4rNp4p3D+V5q7P8Sw.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '184.###.###.###' (ECDSA) to the list of known hosts.
 paperspace@184.###.###.###'s password:
 
 ```
 - keep this cmd window open. It appears to hang after enter on password, but all good.
 - this was sourced from https://hsaghir.github.io/data_science/jupyter-notebook-on-a-remote-machine-linux/
-- I have not tried it, but I assume this could be done with a .bat file, at least to some extent
+- For a more permanent solution, see **Optional** section below
 
 ### Step 3:  Get Notebook url
-- copy and paste url into your local browser (example:  Chrome, Firefox, Opera, etc)
-- for me it is http://localhost:8889/?token=a7a724c1ba8d4c91132834c2d076298f517002227d4e8a72
-- and it <strike>**WON'T WORK**</strike> :boom:  Hooray, it works! :smiley::   
+- copy jupyter notebook URL <kbd>http://localhost:8889/?token=a7a724c1ba8d4c91132834c2d076298f517002227d4e8a72</kbd>
+- paste url into your local browser (example:  Chrome, Firefox, Opera, etc) and change port from 888**9** to 888**8**
+- :boom: Hooray, it works! :smiley:   
+- alternately, bookmark <kbd>localhost:8888</kbd> and use the token <kbd>a7a724c1ba8d4c91132834c2d076298f517002227d4e8a72</kbd> to log in.
+    - Note: the token changes each time you restart jupyter notebook on the Paperspace machine
 
 ---
 ## Part V:  Workflow
@@ -247,7 +276,7 @@ brew install ssh-copy-id
 ### Step 3:  Copy public key to Paperspace
 - replace IP address in syntax below with your own, and run command
 ```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.105.2.222
+ssh-copy-id -i ~/.ssh/id_rsa.pub paperspace@184.###.###.###
 ```
 ### Step 4:  Add Paperspace info to `config` file
 - make sure you are in the right directory
@@ -263,7 +292,7 @@ nano config
 - add these contents to your config file (replace IP address here with your Paperspace IP address)
 ```text
 Host paperspace
-     HostName 184.105.2.222
+     HostName 184.###.###.###
      IdentityFile ~/.ssh/id_rsa
      # StrictHostKeyChecking no  
      User paperspace
@@ -283,7 +312,7 @@ Host paperspace
 ```bash
 % cat config
 Host paperspace
-     HostName 184.105.2.222
+     HostName 184.###.###.###
      IdentityFile ~/.ssh/id_rsa
      # StrictHostKeyChecking no  
      User paperspace
