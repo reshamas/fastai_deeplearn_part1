@@ -612,5 +612,31 @@ learn.crit = seq2seq_loss
   - Pop through some dropout
   - Go through one linear layer in order to convert that into the correct size for our decoder embedding embedding matrix.  
   - Append that to our list of translated words and now we need to figure out what word that was because we need to feed it to the next time step.  We need to feed it to the next time step.  Okay, so remember, what we actually output here, and look at... use a debugger, `pdb.set_trace`, put it here.  What is `outp`?  `outp` is a tensor.  How big is the tensor?  So before you look it up in the debugger, try and figure it out from first principles and check you're right, so, `outp` is a tensor whose length is equal to the number of words in our English vocabulary.  And it contains the probability for every one of those words, that it is *that word*.  Does that make sense?
-- `01:05:38` So, then, if we now say `outp.data.max`, that looks in its tensor to find out which word has the highest probability.  And `max` in PyTorch returns 2 things.  The first thing is, what is that max probability?  and the second is, what is the index into the array of that max probability.  And so we want that second item, index number 1, which is the word index of the largest p.  So, now that `dec_inp` contains the word.  Well, the word index into our vocabulary of the word.  If it's a 1, right, `if (dec_inp==1)`, you might remember 1 was padding 
+- `01:05:38` So, then, if we now say `outp.data.max`, that looks in its tensor to find out which word has the highest probability.  And `max` in PyTorch returns 2 things.  The first thing is, what is that max probability?  and the second is, what is the index into the array of that max probability.  And so we want that second item, index number 1, which is the word index of the largest p.  So, now that `dec_inp` contains the word.  Well, the word index into our vocabulary of the word.  If it's a 1, right, `if (dec_inp==1)`, you might remember 1 was padding, then that means we're done, right.  That means we've reached the end because we finished with a bunch of padding.  Okay, if it's not 1, let's go back and continue.  Now, `dec_imp` is whatever the highest probability word was.  All right, so we keep looping through either until we get to the largest length of a sentence OR until everything in our mini-batch is padding.  And each time we've appended our outputs, each time.. not the word, but the probabilities to this list, which we stack up into a tensor, and we can now go ahead and feed that to a loss function.
+```python
+def forward(self, inp, y=None):
+        sl,bs = inp.size()
+        h = self.initHidden(bs)
+        emb = self.emb_enc_drop(self.emb_enc(inp))
+        enc_out, h = self.gru_enc(emb, h)
+        h = self.out_enc(h)
+
+        dec_inp = V(torch.zeros(bs).long())
+        res = []
+        for i in range(self.out_sl):
+            emb = self.emb_dec(dec_inp).unsqueeze(0)
+            outp, h = self.gru_dec(emb, h)
+            outp = self.out(self.out_drop(outp[0]))
+            res.append(outp)
+            dec_inp = V(outp.data.max(1)[1])
+            if (dec_inp==1).all(): break
+            if (y is not None) and (random.random()<self.pr_force):
+                if i>=len(y): break
+                dec_inp = y[i]
+        return torch.stack(res)
+ ```
+ ### `01:05:04` Loss Function
+ - So, before we go to a break, since we've done #1 and #2 (1=Data, 2=Arch), let's do #3 which is a **loss function**.
+ - The loss function is categorical, cross-entropy loss, ok?  
+ 
 
