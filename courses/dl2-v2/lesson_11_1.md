@@ -614,7 +614,7 @@ learn.crit = seq2seq_loss
   - Append that to our list of translated words and now we need to figure out what word that was because we need to feed it to the next time step.  We need to feed it to the next time step.  Okay, so remember, what we actually output here, and look at... use a debugger, `pdb.set_trace`, put it here.  What is `outp`?  `outp` is a tensor.  How big is the tensor?  So before you look it up in the debugger, try and figure it out from first principles and check you're right, so, `outp` is a tensor whose length is equal to the number of words in our English vocabulary.  And it contains the probability for every one of those words, that it is *that word*.  Does that make sense?
 - `01:05:38` So, then, if we now say `outp.data.max`, that looks in its tensor to find out which word has the highest probability.  And `max` in PyTorch returns 2 things.  The first thing is, what is that max probability?  and the second is, what is the index into the array of that max probability.  And so we want that second item, index number 1, which is the word index of the largest p.  So, now that `dec_inp` contains the word.  Well, the word index into our vocabulary of the word.  If it's a 1, right, `if (dec_inp==1)`, you might remember 1 was padding, then that means we're done, right.  That means we've reached the end because we finished with a bunch of padding.  Okay, if it's not 1, let's go back and continue.  Now, `dec_imp` is whatever the highest probability word was.  All right, so we keep looping through either until we get to the largest length of a sentence OR until everything in our mini-batch is padding.  And each time we've appended our outputs, each time.. not the word, but the probabilities to this list, which we stack up into a tensor, and we can now go ahead and feed that to a loss function.
 ```python
-def forward(self, inp, y=None):
+ def forward(self, inp):
         sl,bs = inp.size()
         h = self.initHidden(bs)
         emb = self.emb_enc_drop(self.emb_enc(inp))
@@ -630,13 +630,30 @@ def forward(self, inp, y=None):
             res.append(outp)
             dec_inp = V(outp.data.max(1)[1])
             if (dec_inp==1).all(): break
-            if (y is not None) and (random.random()<self.pr_force):
-                if i>=len(y): break
-                dec_inp = y[i]
         return torch.stack(res)
  ```
- ### `01:05:04` Loss Function
- - So, before we go to a break, since we've done #1 and #2 (1=Data, 2=Arch), let's do #3 which is a **loss function**.
- - The loss function is categorical, cross-entropy loss, ok?  
- 
+### `01:05:04` Loss Function
+- So, before we go to a break, since we've done #1 and #2 (1=Data, 2=Arch), let's do #3 which is a **loss function**.
+- The loss function is categorical, cross-entropy loss, okay.  We've got a list of probabilities for each of our classes, that the classes are all the words in our English vocab.  And we have a target, which is the correct class, which is the correct word at this location.  
+- There's 2 tweaks, which is why we need to write our own little loss function.  But you can see basically, it's going to be cross-entropy loss.  And the tweaks are as follows:
+  1.  we might have stopped a little bit early, `if sl>sl_in` and so the sequence length that we generated may be different to the sequence length of the target in which case we need to add some padding.  PyTorch padding function is weird, if you have a rank 3 tensor, which we do.  We have batch size by..sorry, we have sequence length by batch size by number of words in the vocab.  A rank 3 tensor requires a 6-tuple `(0,0,0,0,0,sl-sl_in)`, each pair of things in that tuple is the padding before and the padding after that dimension.  So, in this case, the first dimension has no padding, the second dimension has no padding, the third dimension has no padding on the left, and as much padding as required on the right, okay.  So, it's good to know how to use that function.  
+  2.  Now that we've added any padding that's necessary, the only other thing we need to do is.. cross-entropy loss expects a rank 2 tensor.  I mentioned? meant matrix, but we've got sequence length by batch size, so let's just flatten out the sequence length and batch size into a.... that's what that `-1` in view does, okay.  So, flatten that out for both of them and now we can go ahead and call cross-entropy.  That's it, so.    
+ ```python
+ def seq2seq_loss(input, target):
+    sl,bs = target.size()
+    sl_in,bs_in,nc = input.size()
+    if sl>sl_in: input = F.pad(input, (0,0,0,0,0,sl-sl_in))
+    input = input[:sl]
+    return F.cross_entropy(input.view(-1,nc), target.view(-1))#, ignore_index=1)
+```
+- `1:09:09` Now we can just use standard approach.  Here's our sequence to sequence RNN, that's this one here:
+```python
+opt_fn = partial(optim.Adam, betas=(0.8, 0.99))
+
+rnn = Seq2SeqRNN(fr_vecd, fr_itos, dim_fr_vec, en_vecd, en_itos, dim_en_vec, nh, enlen_90)
+learn = RNN_Learner(md, SingleModel(to_gpu(rnn)), opt_fn=opt_fn)
+learn.crit = seq2seq_loss
+```
+- this is a standard PyTorch module.  Stick it on the GPU.  Hopefully by now, you've noticed you can call `.CUDA`, but if you call to GPU, then it doesn't put it on the GPU if you don't have one.  You can also set fastai.core.useGPU to "False" to force it to not use GPU, and that can be super handy for debugging.  We then need something that tells it how to handle learning rates, learning rate groups.  So, there's a thing called single model that you can pass it to which treats the whole thing as a single learning rate group.  So, this is like the easiest way to turn a PyTorch module into a fastai model.  Here's the model data object we created before `md`.  
+- We could then just call `Learner` to turn that into a learner but if we call RNN learner, 
 
