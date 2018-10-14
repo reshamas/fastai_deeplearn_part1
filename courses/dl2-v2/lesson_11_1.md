@@ -655,5 +655,5 @@ learn = RNN_Learner(md, SingleModel(to_gpu(rnn)), opt_fn=opt_fn)
 learn.crit = seq2seq_loss
 ```
 - this is a standard PyTorch module.  Stick it on the GPU.  Hopefully by now, you've noticed you can call `.CUDA`, but if you call to GPU, then it doesn't put it on the GPU if you don't have one.  You can also set fastai.core.useGPU to "False" to force it to not use GPU, and that can be super handy for debugging.  We then need something that tells it how to handle learning rates, learning rate groups.  So, there's a thing called single model that you can pass it to which treats the whole thing as a single learning rate group.  So, this is like the easiest way to turn a PyTorch module into a fastai model.  Here's the model data object we created before `md`.  
-- We could then just call `Learner` to turn that into a learner but if we call RNN learner, 
+- We could then just call `Learner` to turn that into a learner but if we call RNN learner..., RNN learner is a learner.  It defines cross-entropy as the default criteria.  In thise case `class RNN_Learner`, we're overwriting that anyway so that's not what we care about.  But, it does add in these `save_encoder`
 
