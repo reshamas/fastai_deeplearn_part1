@@ -611,6 +611,6 @@ learn.crit = seq2seq_loss
   - We stick that through our RNN which gets, not only the fact that there's a zero in beginning of stream, but also the hidden state, which at this point, is whatever came out of our encoder.  So, this now, its job is to try and figure out what is the first word.  What's the first word to translate the sentence?  
   - Pop through some dropout
   - Go through one linear layer in order to convert that into the correct size for our decoder embedding embedding matrix.  
-  - Append that to our list of translated words and now we need to figure out what word that was because we need to feed it 
+  - Append that to our list of translated words and now we need to figure out what word that was because we need to feed it to the next time step.  We need to feed it to the next time step.  Okay, so remember, what we actually output here, and look at... use a debugger, `pdb.set_trace`, put it here.  What is `outp`?  `outp` is a tensor.  How big is the tensor?  So before you look it up in the debugger, try and figure it out from first principles and check you're right, so, `outp` is a tensor whose length is equal to the number of words in our English vocabulary.  And it contains the probability for every one of those words
 - 
 
