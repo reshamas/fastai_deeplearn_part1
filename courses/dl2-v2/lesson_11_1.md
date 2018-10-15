@@ -712,5 +712,7 @@ why or why not _eos_
 - So, amazingly enough, this kind of simplest, possible, written largely from scratch PyTorch module and only 50K sentences, is sometimes capable on a validation set, of giving you exactly the right answer.  Sometimes the right answer in slightly different wording.  And sometimes sentences that really are grammatically sensible or even have too many question marks.  So, we're well on the right track.  I think you would agree.  So, you know, even the simplest possible seq to seq, trained for a very small number of epochs, without any, you know, pre-training other than the use of word embeddings is surprisingly good.  So, I think, you know, the message here, and we're going to improve this in a moment after the break.  But, I think the message here is:  even sequence to sequence models that you think are simpler than could possibly work, even with less data than you think you could learn from, can be surprisingly effective and in certain situations this may even be enough for your needs.  
 - So we're going to learn a few tricks after the break which will make this much better.  So, let's come back at 7:50.  
 - `01:13:08`
-- 
+
+### Next
+- go to [lesson_11_2](lesson_11_2.md)
 
