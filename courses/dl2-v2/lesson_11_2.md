@@ -14,4 +14,4 @@
 
 ### `01:14:10`  Question
 - Person x (Yannet?):  Hello, what might be some ways of realizing? these sequence to sequence models besides dropout and weight decay?
-- JH:  Let me think about that during the week. Yeah, it's like you know, AWD LSTM, which we've been relying on a lot, has so many great.. I mean it's all dropout, well not all dropout,  there's dropout of many different kinds. There's 
+- JH:  Let me think about that during the week. Yeah, it's like you know, AWD LSTM, which we've been relying on a lot, has so many great.. I mean it's all dropout, well not all dropout,  there's dropout of many different kinds. And then there's the... we haven't talked about it very much, but there's also a kind of regularization 
