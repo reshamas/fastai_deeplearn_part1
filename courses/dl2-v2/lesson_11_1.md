@@ -655,5 +655,62 @@ learn = RNN_Learner(md, SingleModel(to_gpu(rnn)), opt_fn=opt_fn)
 learn.crit = seq2seq_loss
 ```
 - this is a standard PyTorch module.  Stick it on the GPU.  Hopefully by now, you've noticed you can call `.CUDA`, but if you call to GPU, then it doesn't put it on the GPU if you don't have one.  You can also set fastai.core.useGPU to "False" to force it to not use GPU, and that can be super handy for debugging.  We then need something that tells it how to handle learning rates, learning rate groups.  So, there's a thing called single model that you can pass it to which treats the whole thing as a single learning rate group.  So, this is like the easiest way to turn a PyTorch module into a fastai model.  Here's the model data object we created before `md`.  
-- We could then just call `Learner` to turn that into a learner but if we call RNN learner..., RNN learner is a learner.  It defines cross-entropy as the default criteria.  In thise case `class RNN_Learner`, we're overwriting that anyway so that's not what we care about.  But, it does add in these `save_encoder` and `load_encoder` things that can be handy sometimes.  So we could have, in this case, we really could have just said learner.  But, `RNN_Learner` also works.  So, here's how we turn our PyTorch module into a fastai model into a learner.  And once we have a learner, give it our new loss function, and then we can call `lr_find()`, and we can call fit, `learn.fit`, and it runs for a while.  And we can save it, you know, all the normal learn stuff now works.  Remember, the model attribute of the learner is a standard PyTorch model so we can pass that some x which we can grab out of our validation set, or you could use learn.predict_array, or whatever you like.  If you get some predictions, and then we can convert those predictions into words by grabbing `.max` [1] to grab the index of the highest probability words to get some predictions.  And then, we can go through a few examples and print out the French, the correct English and the predicted English.  
+- We could then just call `Learner` to turn that into a learner but if we call RNN learner..., RNN learner is a learner.  It defines cross-entropy as the default criteria.  In thise case `class RNN_Learner`, we're overwriting that anyway so that's not what we care about.  But, it does add in these `save_encoder` and `load_encoder` things that can be handy sometimes.  So we could have, in this case, we really could have just said learner.  But, `RNN_Learner` also works.  So, here's how we turn our PyTorch module into a fastai model into a learner.  And once we have a learner, give it our new loss function, and then we can call `lr_find()`, and we can call fit, `learn.fit`, and it runs for a while.  And we can save it, you know, all the normal learn stuff now works.  Remember, the model attribute of the learner is a standard PyTorch model so we can pass that some x which we can grab out of our validation set, or you could use learn.predict_array, or whatever you like.  If you get some predictions, and then we can convert those predictions into words by grabbing `.max` [1] to grab the index of the highest probability words to get some predictions.  And then, we can go through a few examples and print out the French, the correct English and the predicted English for things that are not padding.  And here we go!
+```python
+x,y = next(iter(val_dl))
+probs = learn.model(V(x))
+preds = to_np(probs.max(2)[1])
+
+for i in range(180,190):
+    print(' '.join([fr_itos[o] for o in x[:,i] if o != 1]))
+    print(' '.join([en_itos[o] for o in y[:,i] if o != 1]))
+    print(' '.join([en_itos[o] for o in preds[:,i] if o!=1]))
+    print()
+```    
+```text
+quels facteurs pourraient influer sur le choix de leur emplacement ? _eos_
+what factors influencetheir location ? _eos_
+what factors might might influence on the their ? ? _eos_
+
+qu’ est -ce qui ne peut pas changer ? _eos_
+what can not change ? _eos_
+what not change change ? _eos_
+
+que faites - vous ? _eos_
+what do you do ? _eos_
+what do you do ? _eos_
+
+qui réglemente les pylônes d' antennes ? _eos_
+who regulates antenna towers ? _eos_
+who regulates the doors doors ? _eos_
+
+où sont - ils situés ? _eos_
+where are they located ? _eos_
+where are the located ? _eos_
+
+quelles sont leurs compétences ? _eos_
+what are their qualifications ? _eos_
+what are their skills ? _eos_
+
+qui est victime de harcèlement sexuel ? _eos_
+who experiences sexual harassment ? _eos_
+who is victim sexual sexual ? ? _eos_
+
+quelles sont les personnes qui visitent les communautés autochtones ? _eos_
+who visits indigenous communities ? _eos_
+who are people people aboriginal aboriginal ? _eos_
+
+pourquoi ces trois points en particulier ? _eos_
+why these specific three ? _eos_
+why are these two different ? ? _eos_
+
+pourquoi ou pourquoi pas ? _eos_
+why or why not ? _eos_
+why or why not _eos_
+```
+#### `01:11:45`
+- So, amazingly enough, this kind of simplest, possible, written largely from scratch PyTorch module and only 50K sentences, is sometimes capable on a validation set, of giving you exactly the right answer.  Sometimes the right answer in slightly different wording.  And sometimes sentences that really are grammatically sensible or even have too many question marks.  So, we're well on the right track.  I think you would agree.  So, you know, even the simplest possible seq to seq, trained for a very small number of epochs, without any, you know, pre-training other than the use of word embeddings is surprisingly good.  So, I think, you know, the message here, and we're going to improve this in a moment after the break.  But, I think the message here is:  even sequence to sequence models that you think are simpler than could possibly work, even with less data than you think you could learn from, can be surprisingly effective and in certain situations this may even be enough for your needs.  
+- So we're going to learn a few tricks after the break which will make this much better.  So, let's come back at 7:50.  
+- `01:13:08`
+- 
 
