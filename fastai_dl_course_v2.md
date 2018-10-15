@@ -60,6 +60,7 @@
     - [Lesson 10_2](courses/dl2-v2/lesson_10_2.md)
 * Lesson 11 Neural Translation
     - [Lesson 11_1](courses/dl2-v2/lesson_11_1.md)
+    - [Lesson 11_2](courses/dl2-v2/lesson_11_2.md)
 * [Lesson 12] ()
 * [Lesson 13] ()
 * [Lesson 14] () 
