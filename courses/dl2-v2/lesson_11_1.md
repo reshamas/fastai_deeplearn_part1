@@ -1,4 +1,4 @@
-# Lesson 11:  Neural Translation
+# Lesson 11_1:  Neural Translation
 
 (09-Apr-2018, live)  
 
