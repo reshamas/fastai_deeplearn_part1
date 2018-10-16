@@ -4,7 +4,9 @@
     - [fastai v1: Launch Announcement](http://www.fast.ai/2018/10/02/fastai-ai/)
     - [podcast on fastai_v1](https://twimlai.com/twiml-talk-186-the-fastai-v1-deep-learning-framework-with-jeremy-howard/)
 - [fastai_old (on GitHub)](https://github.com/fastai/fastai_old) (old version)
-- [some fastai files](http://files.fast.ai)
+- Data
+    - [Fastai datasets](http://course.fast.ai/datasets)
+    - [some fastai files](http://files.fast.ai) (files, models, data)
 
 ## About Me 
 * [My Blog](https://reshamas.github.io) (Reshama Shaikh)
