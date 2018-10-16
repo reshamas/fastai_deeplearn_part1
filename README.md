@@ -5,7 +5,7 @@
     - [podcast on fastai_v1](https://twimlai.com/twiml-talk-186-the-fastai-v1-deep-learning-framework-with-jeremy-howard/)
     - [fastai_old (on GitHub)](https://github.com/fastai/fastai_old) (old version)
 - Data
-    - [Fastai datasets](http://course.fast.ai/datasets) :red_circle:
+    - [fastai Datasets](http://course.fast.ai/datasets) :red_circle:
     - [some fastai files](http://files.fast.ai) (files, models, data)
 
 ## About Me 
