@@ -6,6 +6,7 @@
     - [fastai_old (on GitHub)](https://github.com/fastai/fastai_old) (old version)
 - Data
     - [fastai Datasets](http://course.fast.ai/datasets) :red_circle:
+    - [Torrents](http://academictorrents.com/browse.php?search=fastai&page=0)
     - [some fastai files](http://files.fast.ai) (files, models, data)
 
 ## About Me 
