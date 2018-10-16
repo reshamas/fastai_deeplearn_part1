@@ -1,6 +1,6 @@
 # [fast.ai](http://www.fast.ai)
 - [fastai Documentation](http://docs.fast.ai) :red_circle:
-    [Documentation for Developers](http://docs-dev.fast.ai)
+    - [Documentation for Developers](http://docs-dev.fast.ai)
 - [fastai (on GitHub)](https://github.com/fastai/fastai) (* current version *) :red_circle:
     - [fastai v1: Launch Announcement](http://www.fast.ai/2018/10/02/fastai-ai/)
     - [podcast on fastai_v1](https://twimlai.com/twiml-talk-186-the-fastai-v1-deep-learning-framework-with-jeremy-howard/)
@@ -14,8 +14,8 @@
 * [My Blog](https://reshamas.github.io) (Reshama Shaikh)
 * Twitter: [@reshamas](https://twitter.com/reshamas)
 
-## Deep Learning: version 3
-- [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019):  :red_circle:
+## Deep Learning: version 3  :red_circle:
+- [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019):  
     - Jeremy:  Blog posts are welcome and recommended, but they mustn’t include the video until after the MOOC is released next year. Therefore, the blog posts need to stand alone and be useful without the video.
 
 
