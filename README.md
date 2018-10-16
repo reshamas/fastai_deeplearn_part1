@@ -1,5 +1,6 @@
 # [fast.ai](http://www.fast.ai)
 - [fastai Documentation](http://docs.fast.ai) :red_circle:
+    [Documentation for Developers](http://docs-dev.fast.ai)
 - [fastai (on GitHub)](https://github.com/fastai/fastai) (* current version *) :red_circle:
     - [fastai v1: Launch Announcement](http://www.fast.ai/2018/10/02/fastai-ai/)
     - [podcast on fastai_v1](https://twimlai.com/twiml-talk-186-the-fastai-v1-deep-learning-framework-with-jeremy-howard/)
