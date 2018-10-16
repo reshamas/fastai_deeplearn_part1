@@ -12,8 +12,14 @@ htop
 ```
 
 ### see GPU usage
-```
+```bash
 nvidia smi
+```
+```bash
+nvidia-smi dmon
+```
+```bash
+watch -n 1 nvidia-smi
 ```
 
 ### list number of lines in a file
