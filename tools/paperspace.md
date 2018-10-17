@@ -11,8 +11,9 @@ These notes correspond to first 12 minutes of lesson 1 video.
 * Paperspace runs on their own machines (unlike Crestle, which runs on top of AWS)
 
 ## Reference
-[Setup Fastai v1 on Paperspace](https://gist.github.com/tcvieira/d29d38068a6cd2c455baaaf0d183534b)
-
+- [Setup Fastai v1 on Paperspace](https://gist.github.com/tcvieira/d29d38068a6cd2c455baaaf0d183534b)
+- If you run into problems opening Jupyter Notebooks on Paperspace, this might help [(@Etrama)](https://github.com/Etrama):  
+https://medium.com/@kaushikmoudgalya/my-adventures-with-paperspace-day-1-connection-issues-ff7c390b1a48
 
 ## Summary of Charges
 - STORAGE
