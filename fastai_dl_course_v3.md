@@ -1,7 +1,7 @@
 # [Fastai](http://www.fast.ai) Deep Learning Course:  Version 3
 
 ## Part 1:  Dates of Course
-- [Application Announcement](http://forums.fast.ai/t/fast-ai-live-the-new-version-of-the-international-fellowship/22825)
+- [Application Announcement](http://forums.fast.ai/t/fast-ai-live-the-new-version-of-the-international-fellowship/22825):  CLOSED
 - Deep Learning Version 3 (Oct 2018 to Nov 2018)
 - Class is at the following time:
   - **6:30pm to 9:00pm PST** (Pacific Standard Time)
