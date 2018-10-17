@@ -7,13 +7,13 @@
   - **6:30pm to 9:00pm PST** (Pacific Standard Time)
   - 9:30pm to midnight EST
 - Class is on the following days:
-  - Mon Oct 22
-  - Tue Oct 30
-  - Thu Nov 8
-  - Tue Nov 13
-  - Mon Nov 19
-  - Tue Nov 27
-  - Thu Dec 6
+  - Lecture 1:  Mon Oct 22
+  - Lecture 2:  Tue Oct 30
+  - Lecture 3:  Thu Nov 8
+  - Lecture 4:  Tue Nov 13
+  - Lecture 5:  Mon Nov 19
+  - Lecture 6:  Tue Nov 27
+  - Lecture 7:  Wed Dec 12
 
 ## Forums
 * [Discourse: part1-v3](http://forums.fast.ai/c/part1-v3)
