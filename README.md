@@ -76,6 +76,8 @@
 
 ## Other Resources
 - [Publish notebooks as Github gists with a single button click!](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/gist_it/readme.html)
+- [Tips for building large image datasets](https://forums.fast.ai/t/tips-for-building-large-image-datasets/26688)
+
 
 
 
