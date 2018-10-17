@@ -10,6 +10,10 @@ These notes correspond to first 12 minutes of lesson 1 video.
   * click on confirmation email to activate account
 * Paperspace runs on their own machines (unlike Crestle, which runs on top of AWS)
 
+## Reference
+[Setup Fastai v1 on Paperspace](https://gist.github.com/tcvieira/d29d38068a6cd2c455baaaf0d183534b)
+
+
 ## Summary of Charges
 - STORAGE
     - `50 GB ($5/month)`
