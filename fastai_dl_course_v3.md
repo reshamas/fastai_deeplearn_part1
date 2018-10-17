@@ -2,7 +2,7 @@
 
 ## Part 1:  Dates of Course
 - [Application Announcement](http://forums.fast.ai/t/fast-ai-live-the-new-version-of-the-international-fellowship/22825)
-- Deep Learning Version 2 (Oct 2018 to Nov 2018)
+- Deep Learning Version 3 (Oct 2018 to Nov 2018)
 - Class is **6.30p to 9.00p** Pacific time on the following days:
   - Mon Oct 22
   - Tue Oct 30
