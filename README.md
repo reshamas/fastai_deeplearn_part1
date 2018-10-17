@@ -74,6 +74,9 @@
   - [Google Colaboratory](https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/welcome.ipynb)
   - [Salamander](http://forums.fast.ai/t/setup-on-salamander-cheaper-easier-than-aws/25427)
 
+## Other Resources
+- [Publish notebooks as Github gists with a single button click!](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/gist_it/readme.html)
+
 
 
 
