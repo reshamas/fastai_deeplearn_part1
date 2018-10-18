@@ -3,8 +3,6 @@
     - [Documentation for Developers](http://docs-dev.fast.ai)
 - [fastai (on GitHub)](https://github.com/fastai/fastai) (* current version *) :red_circle:
     - [fastai v1: Launch Announcement](http://www.fast.ai/2018/10/02/fastai-ai/)
-    - podcast with [Jeremy Howard on fastai_v1](https://twimlai.com/twiml-talk-186-the-fastai-v1-deep-learning-framework-with-jeremy-howard/)
-    - podcast with [Rachel Thomas](https://twimlai.com/twiml-talk-138-practical-deep-learning-with-rachel-thomas/)
     - [fastai_old (on GitHub)](https://github.com/fastai/fastai_old) (old version)
 - Data
     - [fastai Datasets](http://course.fast.ai/datasets) :red_circle:
@@ -38,6 +36,8 @@
 * [30+ Best Practices](http://forums.fast.ai/t/30-best-practices/12344)
 * [Resources](resources.md) (Blogs Written by fastai Fellows / Research Papers, etc)
 * [Fastai Blog Posts](http://www.fast.ai/topics/) (by Rachel Thomas & Jeremy Howard)
+    - podcast with [Jeremy Howard on fastai_v1](https://twimlai.com/twiml-talk-186-the-fastai-v1-deep-learning-framework-with-jeremy-howard/) :red_circle:
+    - podcast with [Rachel Thomas](https://twimlai.com/twiml-talk-138-practical-deep-learning-with-rachel-thomas/)
 
 
 ## [Technical Tools](tools/)
