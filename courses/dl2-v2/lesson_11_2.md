@@ -31,3 +31,5 @@
 - So, bidirectional means we had, you know, let's see how we got here, we got out to 3.58 cross-entropy loss.  With a single direction.  With bidirection, gets down to 3.51. So that improved it a bit.  That's good and as I say, it's the only... it shouldn't really slow things down too much.  You know, bidirectional does mean there's a little bit more sequential processing have to happen.  But, you know, generally it's a good win.  In the google translation model of the 8 layers, only the first layer is bidirectional because it allows it do more in parallel. So, if you create really deep models, you may need to think about which ones are bidirectional.  Otherwise, we have performance issues. okay, so 3.51
 
 ## `01:22:35` Teacher Forcing
+- Now, let's talk about teacher forcing.
+- So, teacher forcing is... I'm going to come back to this idea that when the model starts learning, it knows nothing about nothing. So, when the model starts learning, it is not going to spit out "Er" at this point [Reference:  slide on translating "He loved to eat."], it's going to spit out some random 
