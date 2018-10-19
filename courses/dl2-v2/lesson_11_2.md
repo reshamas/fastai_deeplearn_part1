@@ -78,5 +78,44 @@ def fit(model, data, epochs, opt, crit, metrics=None, callbacks=None, stepper=St
         
 ```
 - and calls `stepper.Step`.  And so `stepper.Step` is the thing that's responsible for calling the model, getting the loss, finding the loss function and calling the optimizer.  And so, by default, `stepper.Step` uses a particular class called `class Stepper():` which, there's a few things you don't know where ?, but basically it calls the model.  So the model ends up inside `m`. Zero is the gradient, `self.opt.zero_grad()`, calls the loss function `loss = raw_loss = self.crit(output, y)`, calls backwards `loss.backward()`, does gradient clippping if necessary `if self.clip:` and then calls the optimizer `self.opt.step()`
-- So, you know, they're the basic steps that back when we looked at kind of PyTorch from scratch, we had to do.  So the nice thing is, we can replace *that* with something else, rather than replacing the training loop.   
+- So, you know, they're the basic steps that back when we looked at kind of PyTorch from scratch, we had to do.  So the nice thing is, we can replace *that* with something else, rather than replacing the training loop.   So, if you inherit from `Stepper` (`class Stepper()`) and then write your own version of `step` (`def step`), you can just copy and paste the contents of step and add whatever you like.  Or if it's something that you're going to do before or afterwards, you could even call `super.step`.  In this case, I rather suspect I've been unnecessarily complicated here (`class Seq2SeqStepper(Stepper)`).  I probably could have replaced... commented out all that `01:29:20` and just said  `super().step(xs, y, epoch)` because I think this is an exact copy of everything, right.  But, you know, as I say, when I'm prototyping, I don't think carefully about how to minimize my code.  I copied and pasted the contents of the code from `step` and I added a single line to the top (`self.m.pr_force = (10-epoch)*0.1 if epoch<10 else 0`) which was to replace `pr_force` in my module with something that gradually decreased linearly for the first 10 epochs and after 10 epochs, it was 0.
+- `01:30:00` So, total hack, but good enough to try it out and so the nice thing what... is that I can now, you know, everything else is the same.  I've replaced... I've added these 3 lines of code (`if (y is not None)`...)
 
+```python
+
+class Seq2SeqRNN_TeacherForcing(nn.Module):
+    def __init__(self, vecs_enc, itos_enc, em_sz_enc, vecs_dec, itos_dec, em_sz_dec, nh, out_sl, nl=2):
+        super().__init__()
+        self.emb_enc = create_emb(vecs_enc, itos_enc, em_sz_enc)
+        self.nl,self.nh,self.out_sl = nl,nh,out_sl
+        self.gru_enc = nn.GRU(em_sz_enc, nh, num_layers=nl, dropout=0.25)
+        self.out_enc = nn.Linear(nh, em_sz_dec, bias=False)
+        self.emb_dec = create_emb(vecs_dec, itos_dec, em_sz_dec)
+        self.gru_dec = nn.GRU(em_sz_dec, em_sz_dec, num_layers=nl, dropout=0.1)
+        self.emb_enc_drop = nn.Dropout(0.15)
+        self.out_drop = nn.Dropout(0.35)
+        self.out = nn.Linear(em_sz_dec, len(itos_dec))
+        self.out.weight.data = self.emb_dec.weight.data
+        self.pr_force = 1.
+        
+    def forward(self, inp, y=None):
+        sl,bs = inp.size()
+        h = self.initHidden(bs)
+        emb = self.emb_enc_drop(self.emb_enc(inp))
+        enc_out, h = self.gru_enc(emb, h)
+        h = self.out_enc(h)
+
+        dec_inp = V(torch.zeros(bs).long())
+        res = []
+        for i in range(self.out_sl):
+            emb = self.emb_dec(dec_inp).unsqueeze(0)
+            outp, h = self.gru_dec(emb, h)
+            outp = self.out(self.out_drop(outp[0]))
+            res.append(outp)
+            dec_inp = V(outp.data.max(1)[1])
+            if (dec_inp==1).all(): break
+            if (y is not None) and (random.random()<self.pr_force):
+                if i>=len(y): break
+                dec_inp = y[i]
+        return torch.stack(res)
+```        
