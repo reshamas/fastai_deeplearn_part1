@@ -124,4 +124,4 @@ class Seq2SeqRNN_TeacherForcing(nn.Module):
 - So, that's good.  That's an improvement.  
 
 ## `01:31:00` Trick #3:  Attention Model
-- So, we've got another trick and this next trick is a... it's a bigger trick.  It's a pretty cool trick.  And it's called attention.  And the basic idea of attention is
+- So, we've got another trick and this next trick is a... it's a bigger trick.  It's a pretty cool trick.  And it's called attention.  And the basic idea of attention is this, which is: expecting the entirety of the sentence to be summarized into this single hidden vector, `s`, is asking a lot, you know.  It has to know what was said and how it was said and everything necessary to 
