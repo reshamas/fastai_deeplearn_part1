@@ -48,8 +48,10 @@
 * [How to Create a Keypair](tools/create_keypair.md)
 * [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
+## Platforms for Using Fastai (GPU required) v3
+*  [Setup (Local, AWS) and FAQ Part 1 v3](https://forums.fast.ai/t/setup-local-aws-and-faq/25298)
 
-## Platforms for Using fastai (GPU required)
+## Platforms for Using fastai (GPU required) v2
 [Summary of Cloud GPU Vendors (with billing)](https://github.com/binga/cloud-gpus)
 * [Paperspace setup](tools/paperspace.md)
 * [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
