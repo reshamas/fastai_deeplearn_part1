@@ -36,7 +36,47 @@
 - `01:24:25` So you can see how beautiful PyTorch is for this, right, because if you try to do this with some static graph thing like classic tensorflow...well, I tried, right.  Like one of the key reasons that we switched to PyTorch at this exact point in last year's class was because Jeremy tried to implement it ? forcing it in Keras and Tensorflow and went even more insane than he started.  *It was weeks of getting nowhere!*  And then I... literally on twitter, I think it was [Andrej Karpathy](https://twitter.com/karpathy) I saw announced and said something about "oh, there's this thing called PyTorch just came out and it's really cool" and I tried it that day.  By the next day, I had teaching forcing working.  And I was like "oh my gosh", you know, and all the stuff about debugging things.  It was suddenly so much easier.  And this kind of, you know dynamic stuff, is so much easier.  So this is a great example of like, "hey I get to use random numbers and if-statements" and stuff. 
 - `01:25:30` So, here's the basic idea is: at the start of training, let's set `pr_force` really high, right, so that nearly always that gets the actual correct, you know, previous word.  And so, it has a useful input.  And then as I train it a bit more, let's decrease `pr_force` so that by the end, `pr_force` is zero and it has to learn properly.  Which is fine because it's now actually feeding in sensible inputs most of the time anyway.
 - `01:26:04` So, let's now write something such that in the training loop, it gradually decreases `pr_force`.  So how do you do that?  Well, one approach would be to write our own training loop.  But, let's not do that because we already have a training that has progress bars and uses exponential weighted averages to smooth out the losses and keeps track of metrics.  And you know, it does a bunch of things which... they're not rocket science, but they're kind of convenient and they also kind of keep track of, you know, calling the reset for RNNs at the start of an epoch to make sure that the hidden states set to zeroes, and you know, little things like that.  We would rather not have to write that from scratch.  So what we've tended to find is that as I start to kind of write some new thing.  And I'm like, "oh, I need to kind of replace some part of the code", I then kind of add some little hook so we can all use that hook to make things easier.  In this particular case, there's a hook that I've ended up using all the damn time now.  Which is the hook called the "stepper" --> `class Seq2SeqStepper(Stepper):`. 
-- `01:27:10` So, if you look at our code, `model.py`, is where our `fit` function lives.  And so the `fit` function and `model.py` is kind of, we've seen it before I think.  It's like the lowest level thing that doesn't require a "Learner".  It doesn't really require anything much at all.  It just requires a standard PyTorch model and a model data object.  You just need to know how many epochs, our standard PyTorch optimizer
+- `01:27:10` So, if you look at our code, `model.py`, is where our `fit` function lives.  And so the `fit` function and `model.py` is kind of, we've seen it before I think.  It's like the lowest level thing that doesn't require a "Learner".  It doesn't really require anything much at all.  It just requires a standard PyTorch model and a model data object.  You just need to know how many epochs, our standard PyTorch optimizer (`opt`), and the standard PyTorch loss function (`crit`).  
 ```python
 def fit(model, data, epochs, opt, crit, metrics=None, callbacks=None, stepper=Stepper, **kwargs):
 ```
+- [model.py](https://github.com/fastai/fastai/blob/87e5b32f4826238c795f6fc8a9fac381048c110b/old/fastai/model.py)
+- `01:27:40` Right, so you can call... I don't... we've hardly ever used it in the class.  We normally call `learn.fit`, but `learn.fit` calls this (`def fit`), so this is our lowest level thing.  But, we filtered the source code here sometimes.  We've seen how it loops through each epoch and that loops through each thing in our batch:
+```python
+    for epoch in tnrange(tot_epochs, desc='Epoch'):
+        if phase >= len(n_epochs): break #Sometimes cumulated errors make this append.
+        model_stepper.reset(True)
+        cur_data = data[phase]
+        if hasattr(cur_data, 'trn_sampler'): cur_data.trn_sampler.set_epoch(epoch)
+        if hasattr(cur_data, 'val_sampler'): cur_data.val_sampler.set_epoch(epoch)
+        num_batch = len(cur_data.trn_dl)
+        t = tqdm(iter(cur_data.trn_dl), leave=False, total=num_batch, miniters=0)
+        if all_val: val_iter = IterBatch(cur_data.val_dl)
+        
+        for (*x,y) in t:
+            batch_num += 1
+            for cb in callbacks: cb.on_batch_begin()
+            loss = model_stepper.step(V(x),V(y), epoch)
+            avg_loss = avg_loss * avg_mom + loss * (1-avg_mom)
+            debias_loss = avg_loss / (1 - avg_mom**batch_num)
+            t.set_postfix(loss=debias_loss, refresh=False)
+            stop=False
+            los = debias_loss if not all_val else [debias_loss] + validate_next(model_stepper,metrics, val_iter)
+            for cb in callbacks: stop = stop or cb.on_batch_end(los)
+            if stop: return
+            if batch_num >= cnt_phases[phase]:
+                for cb in callbacks: cb.on_phase_end()
+                phase += 1
+                if phase >= len(n_epochs):
+                    t.close()
+                    break
+                for cb in callbacks: cb.on_phase_begin()
+                if isinstance(opt, LayerOptimizer): model_stepper.opt = opt.opt
+                if cur_data != data[phase]:
+                    t.close()
+                    break
+        
+```
+- and calls `stepper.Step`.  And so `stepper.Step` is the thing that's responsible for calling the model, getting the loss, finding the loss function and calling the optimizer.  And so, by default, `stepper.Step` uses a particular class called `class Stepper():` which, there's a few things you don't know where ?, but basically it calls the model.  So the model ends up inside `m`. Zero is the gradient, `self.opt.zero_grad()`, calls the loss function `loss = raw_loss = self.crit(output, y)`, calls backwards `loss.backward()`, does gradient clippping if necessary `if self.clip:` and then calls the optimizer `self.opt.step()`
+- So, you know, they're the basic steps that back when we looked at kind of PyTorch from scratch, we had to do.  So the nice thing is, we can replace *that* with something else, rather than replacing the training loop.   
+
