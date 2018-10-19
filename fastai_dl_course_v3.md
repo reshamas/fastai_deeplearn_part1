@@ -15,8 +15,9 @@
   - Lecture 6:  Tue Nov 27
   - Lecture 7:  Wed Dec 12
 
-## Forums
-* [Discourse: part1-v3](http://forums.fast.ai/c/part1-v3)
+## Forums (Discourse)
+* [part1-v3](http://forums.fast.ai/c/part1-v3)
+* [part1-v3-adv](https://forums.fast.ai/c/part1-v3/part1-v3-adv)
 
 ---
 ## Coursework (fastai website)
@@ -25,13 +26,13 @@
 ---
 
 ### [Deep Learning: My Lesson Notes](courses/dl1-v3/) 
-* [Lesson 1: ] (courses/dl1-v3/lesson_1_x.md) Image Recognition
-* [Lesson 2: ] (courses/dl1-v3/lesson_2_x.md) CNNs
-* [Lesson 3: ] (courses/dl1-v3/lesson_3_x.md) Overfitting
-* [Lesson 4: ] (courses/dl1-v3/lesson_4_x.md) Embeddings
-* [Lesson 5: ] (courses/dl1-v3/lesson_5_x.md) NLP
-* [Lesson 6: ] (courses/dl1-v3/lesson_6_x.md) RNNs
-* [Lesson 7  ] (courses/dl1-v3/lesson_7_x.md) CNN Architecture
+* [Lesson 1: ] (courses/dl1-v3/lesson_1_1.md) Image Recognition
+* [Lesson 2: ] (courses/dl1-v3/lesson_2_1.md) CNNs
+* [Lesson 3: ] (courses/dl1-v3/lesson_3_1.md) Overfitting
+* [Lesson 4: ] (courses/dl1-v3/lesson_4_1.md) Embeddings
+* [Lesson 5: ] (courses/dl1-v3/lesson_5_1.md) NLP
+* [Lesson 6: ] (courses/dl1-v3/lesson_6_1.md) RNNs
+* [Lesson 7  ] (courses/dl1-v3/lesson_7_1.md) CNN Architecture
 
 
 
