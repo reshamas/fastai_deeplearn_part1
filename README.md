@@ -15,11 +15,23 @@
 * [My Blog](https://reshamas.github.io) (Reshama Shaikh)
 * Twitter: [@reshamas](https://twitter.com/reshamas)
 
-## Deep Learning: version 3  :red_circle:
+---
+
+# Deep Learning:  Version 3 :red_circle:
+
+## Course Info
 - [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019):  
     - Jeremy:  Blog posts are welcome and recommended, but they mustn’t include the video until after the MOOC is released next year. Therefore, the blog posts need to stand alone and be useful without the video.
+
+
+## Platforms for Using Fastai (GPU required) v3
+*  [Setup (Local, AWS) and FAQ Part 1 v3](https://forums.fast.ai/t/setup-local-aws-and-faq/25298)
+
+## Helpful Resources
 - [Jeremy's PyTorch Tutorial](https://github.com/fastai/fastai_old/blob/master/dev_nb/001a_nn_basics.ipynb) 
 
+
+---
 ## Courses (my outlines)
 
 ### Deep Learning
@@ -49,9 +61,6 @@
 * [Jupyter Notebook Commands & Shortcuts](tools/jupyter_notebook.md)
 * [How to Create a Keypair](tools/create_keypair.md)
 * [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
-
-## Platforms for Using Fastai (GPU required) v3
-*  [Setup (Local, AWS) and FAQ Part 1 v3](https://forums.fast.ai/t/setup-local-aws-and-faq/25298)
 
 ## Platforms for Using fastai (GPU required) v2
 [Summary of Cloud GPU Vendors (with billing)](https://github.com/binga/cloud-gpus)
