@@ -18,7 +18,7 @@
 ## Deep Learning: version 3  :red_circle:
 - [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019):  
     - Jeremy:  Blog posts are welcome and recommended, but they mustn’t include the video until after the MOOC is released next year. Therefore, the blog posts need to stand alone and be useful without the video.
-
+- [Jeremy's PyTorch Tutorial](https://github.com/fastai/fastai_old/blob/master/dev_nb/001a_nn_basics.ipynb) 
 
 ## Courses (my outlines)
 
