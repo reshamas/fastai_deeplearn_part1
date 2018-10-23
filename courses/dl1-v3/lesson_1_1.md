@@ -44,3 +44,6 @@
 ## GCP
 https://cloud.google.com
 
+### Advice
+Pick one project, do it very well, and make it fantastic.
+
