@@ -41,3 +41,6 @@
   - $300 credits
 2.  AWS EC2 $0.90/hr  
 
+## GCP
+https://cloud.google.com
+
