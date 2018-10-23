@@ -5,7 +5,6 @@
     - [fastai](https://github.com/fastai/fastai) (* current version *) :red_circle:
         - [fastai v1: Launch Announcement](http://www.fast.ai/2018/10/02/fastai-ai/)
         - [fastai_old (on GitHub)](https://github.com/fastai/fastai_old) (old version)
-    - [course-v3](https://github.com/fastai/course-v3) (coming in 2019)
 - Data
     - [fastai Datasets](http://course.fast.ai/datasets) :red_circle:
     - [Torrents](http://academictorrents.com/browse.php?search=fastai&page=0)
