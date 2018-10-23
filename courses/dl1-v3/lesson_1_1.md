@@ -10,3 +10,7 @@
 --- 
 
 # Intro
+- slightly delayed, waiting for students to get through security
+- For in-class students in SF:
+  - get to know your group of 6
+  
