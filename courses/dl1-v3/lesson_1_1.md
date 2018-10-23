@@ -49,3 +49,5 @@ Pick one project, do it very well, and make it fantastic.
 
 doc(interp.plot_top_losses(
 - prediction, actual, loss, probability it was predicted
+- Don't be afraid to look at the source code.
+
