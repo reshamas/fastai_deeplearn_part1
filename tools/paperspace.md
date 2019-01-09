@@ -301,7 +301,7 @@ Host paperspace
      IdentityFile ~/.ssh/id_rsa
      # StrictHostKeyChecking no  
      User paperspace
-     LocalForward 8888 localhost:8888
+     LocalForward 8888 localhost:8889
 ```
 - here's the nano command for saving file  
 <kbd> ctrl o </kbd>    
