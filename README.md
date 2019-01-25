@@ -1,10 +1,10 @@
 # [fast.ai](http://www.fast.ai)
-- [fastai Documentation](http://docs.fast.ai) :red_circle:
+- [fastai Documentation](http://docs.fast.ai) 
     - [Documentation for Developers](http://docs-dev.fast.ai)
 - fastai on **GitHub**
-    - [fastai](https://github.com/fastai/fastai) (* current version *) :red_circle:
+    - [fastai](https://github.com/fastai/fastai) (* current version *)
 - Data
-    - [fastai Datasets](http://course.fast.ai/datasets) :red_circle:
+    - [fastai Datasets](http://course.fast.ai/datasets) 
     - [Torrents](http://academictorrents.com/browse.php?search=fastai&page=0)
     - [some fastai files](http://files.fast.ai) (files, models, data)
 
