@@ -1,6 +1,6 @@
 # [fast.ai](http://www.fast.ai)
 - latest course (v3):  https://course.fast.ai
-- fastai on **GitHub:**  [fastai](https://github.com/fastai/fastai) (* current version *)
+- fastai on **GitHub:**  [fastai](https://github.com/fastai/fastai) 
 - Data
     - [Torrents](http://academictorrents.com/browse.php?search=fastai&page=0)
     - [some fastai files](http://files.fast.ai) (files, models, data)
