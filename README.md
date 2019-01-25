@@ -61,31 +61,6 @@
 * [How to Create a Keypair](tools/create_keypair.md)
 * [Copy Files from Local PC to Cloud PC](tools/copy_files_local_to_cloud.md)
 
-## Platforms for Using fastai (GPU required) v2
-[Summary of Cloud GPU Vendors (with billing)](https://github.com/binga/cloud-gpus)
-* [Paperspace setup](tools/paperspace.md)
-* [AWS AMI GPU Setup](tools/aws_ami_gpu_setup.md)  
-    - [How to setup fastai in an Amazon AWS region without fastai AMI like in Europe](https://medium.com/@pierre_guillou/guide-install-fastai-in-any-aws-region-8f4fe29132e5)
-* [Crestle](tools/crestle_run.md)
-* [Google Cloud GPU Setup for fastai](https://medium.com/google-cloud/set-up-google-cloud-gpu-for-fast-ai-45a77fa0cb48)
-* [Set up personal deep learning box (home computer)](tools/setup_personal_dl_box.md)
-* [Microsoft Azure](https://medium.com/@manikantayadunanda/setting-up-deeplearning-machine-and-fast-ai-on-azure-a22eb6bd6429)
-* [Running fast.ai notebooks with Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/running-fast-ai-notebooks-with-amazon-sagemaker/)
-* Docker
-    - [Paperspace Docker Container](https://hub.docker.com/r/paperspace/fastai/)
-    - [Fastai and Docker](https://nji-syd.github.io/2018/03/26/up-and-running-with-fast-ai-and-docker/)
-* [manual: bash script for setup](http://files.fast.ai/setup/paperspace)
-  - the CUDA drivers
-  - Anaconda (special Python distribution)
-  - Python libraries
-  - fastai library
-  - courses
-  - data  
-* Other
-  - [FloydHub](https://www.floydhub.com)
-    - https://github.com/YuelongGuo/floydhub.fast.ai
-  - [Google Colaboratory](https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/welcome.ipynb)
-  - [Salamander](http://forums.fast.ai/t/setup-on-salamander-cheaper-easier-than-aws/25427)
 
 ## Other Resources
 - [Publish notebooks as Github gists with a single button click!](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/gist_it/readme.html)
