@@ -1,6 +1,5 @@
 # [fast.ai](http://www.fast.ai)
-- [fastai Documentation](http://docs.fast.ai) 
-    - [Documentation for Developers](http://docs-dev.fast.ai)
+- latest course:  https://course.fast.ai
 - fastai on **GitHub**
     - [fastai](https://github.com/fastai/fastai) (* current version *)
 - Data
@@ -11,13 +10,6 @@
 ## About Me 
 * [My Blog](https://reshamas.github.io) (Reshama Shaikh)
 * Twitter: [@reshamas](https://twitter.com/reshamas)
-
----
-
-# Deep Learning:  Version 3 :red_circle:
-
-## Course Info
-- [Version 3](https://course.fast.ai)  (Part 1:  Fall 2018)
 
 
 ---
