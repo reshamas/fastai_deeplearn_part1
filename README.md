@@ -1,9 +1,7 @@
 # [fast.ai](http://www.fast.ai)
-- latest course:  https://course.fast.ai
-- fastai on **GitHub**
-    - [fastai](https://github.com/fastai/fastai) (* current version *)
+- latest course (v3):  https://course.fast.ai
+- fastai on **GitHub:**  [fastai](https://github.com/fastai/fastai) (* current version *)
 - Data
-    - [fastai Datasets](http://course.fast.ai/datasets) 
     - [Torrents](http://academictorrents.com/browse.php?search=fastai&page=0)
     - [some fastai files](http://files.fast.ai) (files, models, data)
 
@@ -17,7 +15,7 @@
 ## Courses (my outlines)
 
 ### Deep Learning
-- [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019)
+- [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019) (* in progress)
 - [Version 2](fastai_dl_course_v2.md) (Fall 2017 to Spring 2018)
 - [Version 1](fastai_dl_course_v1.md) (Fall 2016 to Spring 2017)  
 
