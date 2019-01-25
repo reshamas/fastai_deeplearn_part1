@@ -8,3 +8,8 @@
 ## Deep Learing Coursework (Version 1)
 * [Part 1 v1](http://course17.fast.ai)
 * [Part 2 v1](http://course17.fast.ai/part2.html)
+
+
+## Other
+- [fastai v1: Launch Announcement](http://www.fast.ai/2018/10/02/fastai-ai/)
+- [fastai_old (on GitHub)](https://github.com/fastai/fastai_old) (old version)
