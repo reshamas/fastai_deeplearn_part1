@@ -21,7 +21,9 @@
 
 ---
 ## Coursework (fastai website)
-* [Part 1 v3] (http://course.fast.ai)  (released xxx)
+* Course release announcement:  https://www.fast.ai/2019/01/24/course-v3/
+* Videos:  [Part 1 v3](https://course.fast.ai/videos)  (released 24-Jan-2019)
+* Course docs:  https://course.fast.ai
 
 ---
 
