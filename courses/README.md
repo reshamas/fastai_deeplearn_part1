@@ -5,11 +5,11 @@
 Note:  Best to use the *latest* version.
 
 #### Version 3
-* [Deep Learning 1](dl1-v3/)
+* [Deep Learning 1](v3-dl1/)
 
 #### Version 2
-* [Deep Learning 1](dl1-v2/)
-* [Deep Learning 2](dl2-v2/)
+* [Deep Learning 1](v2-dl1/)
+* [Deep Learning 2](v2-dl2/)
 
 ## Machine Learning
 * [Machine Learning 1](ml1/)
