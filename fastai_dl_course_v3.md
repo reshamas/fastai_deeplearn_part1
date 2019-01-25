@@ -28,13 +28,13 @@
 ---
 
 ### [Deep Learning: My Lesson Notes](courses/dl1-v3/) 
-* [Lesson 1](courses/dl1-v3/lesson_1_1.md) Image Recognition
-* [Lesson 2] (courses/dl1-v3/lesson_2_1.md) CNNs
-* [Lesson 3] (courses/dl1-v3/lesson_3_1.md) Overfitting
-* [Lesson 4] (courses/dl1-v3/lesson_4_1.md) Embeddings
-* [Lesson 5] (courses/dl1-v3/lesson_5_1.md) NLP
-* [Lesson 6] (courses/dl1-v3/lesson_6_1.md) RNNs
-* [Lesson 7] (courses/dl1-v3/lesson_7_1.md) CNN Architecture
+* [Lesson 1](courses/v3-dl1/lesson_1_1.md) Image Recognition
+* [Lesson 2] (courses/v3-dl1/lesson_2_1.md) CNNs
+* [Lesson 3] (courses/v3-dl1/lesson_3_1.md) Overfitting
+* [Lesson 4] (courses/v3-dl1/lesson_4_1.md) Embeddings
+* [Lesson 5] (courses/v3-dl1/lesson_5_1.md) NLP
+* [Lesson 6] (courses/v3-dl1/lesson_6_1.md) RNNs
+* [Lesson 7] (courses/v3-dl1/lesson_7_1.md) CNN Architecture
 
 
 
