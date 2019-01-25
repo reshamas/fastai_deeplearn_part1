@@ -3,8 +3,6 @@
     - [Documentation for Developers](http://docs-dev.fast.ai)
 - fastai on **GitHub**
     - [fastai](https://github.com/fastai/fastai) (* current version *) :red_circle:
-        - [fastai v1: Launch Announcement](http://www.fast.ai/2018/10/02/fastai-ai/)
-        - [fastai_old (on GitHub)](https://github.com/fastai/fastai_old) (old version)
 - Data
     - [fastai Datasets](http://course.fast.ai/datasets) :red_circle:
     - [Torrents](http://academictorrents.com/browse.php?search=fastai&page=0)
@@ -19,21 +17,15 @@
 # Deep Learning:  Version 3 :red_circle:
 
 ## Course Info
-- [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019):  
-    - Jeremy:  Blog posts are welcome and recommended, but they mustn’t include the video until after the MOOC is released next year. Therefore, the blog posts need to stand alone and be useful without the video.
-
-
-## Platforms for Using Fastai (GPU required) v3
-*  [Setup (Local, AWS) and FAQ Part 1 v3](https://forums.fast.ai/t/setup-local-aws-and-faq/25298)
-
-## Helpful Resources
-- [Jeremy's PyTorch Tutorial](https://github.com/fastai/fastai_old/blob/master/dev_nb/001a_nn_basics.ipynb) 
+- [Version 3](https://course.fast.ai)  (Part 1:  Fall 2018)
 
 
 ---
+
 ## Courses (my outlines)
 
 ### Deep Learning
+- [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019)
 - [Version 2](fastai_dl_course_v2.md) (Fall 2017 to Spring 2018)
 - [Version 1](fastai_dl_course_v1.md) (Fall 2016 to Spring 2017)  
 
@@ -51,7 +43,7 @@
 * [Fastai Blog Posts](http://www.fast.ai/topics/) (by Rachel Thomas & Jeremy Howard)
     - podcast with [Jeremy Howard on fastai_v1](https://twimlai.com/twiml-talk-186-the-fastai-v1-deep-learning-framework-with-jeremy-howard/) :red_circle:
     - podcast with [Rachel Thomas](https://twimlai.com/twiml-talk-138-practical-deep-learning-with-rachel-thomas/)
-
+- [Jeremy's PyTorch Tutorial](https://github.com/fastai/fastai_old/blob/master/dev_nb/001a_nn_basics.ipynb) 
 
 ## [Technical Tools](tools/)
 * [tmux on AWS](tools/tmux.md)
