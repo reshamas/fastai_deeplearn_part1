@@ -8,11 +8,7 @@
 - GitHub [Udacity](https://github.com/udacity/deep-learning-v2-pytorch)
 
 ## Goals
-- want to make 12.5% progress every week to keep pace
-- by Saturday, 11/10:  12%
-- by Saturday, 11/17: 
-- Monday, 11/19: completed Lesson 2
-- Friday, 11/23: completed Lesson 3
+
 
 ## Lessons
 - [x] Setup:  slack, repo 
@@ -20,8 +16,8 @@
 - [x] Lesson 1 Intro to NN (2 hrs)
 - [x] Lesson 2 Talking PyTorch with Soumith (30 min)
 - [x] Lesson 3 Intro to PyTorch (2 hrs)
-- [ ] Lesson 4 CNN (5 hrs)
-- [ ] Lesson 5 Style Transfer (5 hrs)
+- [x] Lesson 4 CNN (5 hrs)
+- [x] Lesson 5 Style Transfer (5 hrs)
 - [ ] Lesson 6 RNN (5 hrs)
 - [ ] Lesson 7 Sentiment Prediction with RNN (2 hrs)
 - [ ] Lesson 8 Deploying PyTorch Models (30 min)
