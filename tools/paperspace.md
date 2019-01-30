@@ -25,7 +25,7 @@ https://medium.com/@kaushikmoudgalya/my-adventures-with-paperspace-day-1-connect
     - P4000:  `$0.51/hr`
     - P5000:  `$0.78/hr`
 - PUBLIC IP ADDRESS:  `$3/month` (single static IP address)
-- Note: There is a **$15 credit code you can use: `FASTAI6GKZ`**.  **This code is only for fastai students.**
+- Note: There is a **$15 credit code you can use: `FASTAI10TL`**.  **This code is only for fastai students.**
     - If this code is unavailable, visit the fast.ai forums for user promo codes (generally $5).
 
 ## Paperspace Support
