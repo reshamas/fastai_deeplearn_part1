@@ -61,9 +61,9 @@ In this course, you'll learn the basics of deep neural networks and how to build
 - [Joel Grus - Livecoding Madness - Let's Build a Deep Learning Library](https://www.youtube.com/watch?v=o64FV-ez6Gw)
 
 ## Recommendations from Udacity
-*1. Stanford NLP class (using PyTorch):* http://web.stanford.edu/class/cs224n/
-*2. UC-Berkeley CV Class (also using PyTorch* – will be published as open courseware): https://inst.eecs.berkeley.edu/~cs280/sp18/
-*3. Colab now supports native PyTorch* – give it a try by importing torch torchvision, etc.. and then changing to the GPU backend: https://colab.research.google.com/notebooks/welcome.ipynb#recent=true
+1. Stanford NLP class (using PyTorch):* http://web.stanford.edu/class/cs224n/
+2. UC-Berkeley CV Class (also using PyTorch* – will be published as open courseware): https://inst.eecs.berkeley.edu/~cs280/sp18/
+3. Colab now supports native PyTorch* – give it a try by importing torch torchvision, etc.. and then changing to the GPU backend: https://colab.research.google.com/notebooks/welcome.ipynb#recent=true
 4. EE-559 at EPFL (including slides, code, etc..) - https://fleuret.org/ee559/
 5. Ecosystem projects: https://pytorch.org/ecosystem
 6. Newer tutorial by Jeremy Howard and Rachel Thomas - https://pytorch.org/tutorials/beginner/nn_tutorial.html
