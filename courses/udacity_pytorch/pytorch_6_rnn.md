@@ -17,4 +17,6 @@ Andrej Karpathy's lecture on RNNs and LSTMs from CS231n
 ## Recurrent Layers
 Here is the documentation for the main types of recurrent layers in PyTorch. Take a look and read about the three main types: RNN, LSTM, and GRU.
 
+- The hidden state should have dimensions: (num_layers, batch_size, hidden_dim).
+
 ---
