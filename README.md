@@ -10,6 +10,9 @@
 * Twitter: [@reshamas](https://twitter.com/reshamas)
 
 
+## Projects
+- [Deploying Deep Learning Models On Web And Mobile](https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/) with [Nidhin Pattaniyil](https://www.linkedin.com/in/nidhinpattaniyil/)
+
 ---
 
 ## Courses (my outlines)
