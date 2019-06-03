@@ -17,3 +17,7 @@ t.stride(), t.shape
 ```python
 c.unsqueeze(1)
 ```
+
+### Einstein Summation Notation
+
+
