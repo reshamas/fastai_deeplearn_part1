@@ -1,4 +1,5 @@
 # fastai:  [NLP Course](https://www.fast.ai/2019/07/08/fastai-nlp/)
+- [YouTube Playlist](https://www.youtube.com/playlist?list=PLtmWHNX-gukKocXQOkQjuVxglSDYWsSh9)
 
 ## Lectures
 1. [What is NLP?]() 
