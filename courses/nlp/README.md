@@ -4,8 +4,8 @@
 
 ## Lectures
 1. [What is NLP?](www.youtube.com/watch?v=cce8ntxP_XI) (0:23)  (done 03-Mar-2020)
-2. [Topic Modeling with SVD & NMF (NLP video 2)](www.youtube.com/watch?v=tG3pUwmGjsc) (1:07)
-3.  (33:06)
+2. [Topic Modeling with SVD & NMF (NLP video 2)](www.youtube.com/watch?v=tG3pUwmGjsc) (1:07)  (done 03-Mar-2020)
+3. [Topic Modeling and SVD revisited](https://youtu.be/lRZ4aMaXPBI) (33:06)
 4.  (58:20)
 5. 
 ...
