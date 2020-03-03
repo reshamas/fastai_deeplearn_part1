@@ -24,4 +24,8 @@ To check time of a step:
 %time u, s, v = np.linalg.svd(vectors, full_matrices=False)
 ```
 
+## Lesson 3
+
+- stemming:  getting roots of words  (chops off end, "poor man's lemmatization")
+- lemmatization:  (fancier)
 
