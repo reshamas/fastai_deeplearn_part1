@@ -3,7 +3,7 @@
 - [Jupyter notebooks on GitHub](https://github.com/fastai/course-nlp)
 
 ## Lectures
-1. [What is NLP?](www.youtube.com/watch?v=cce8ntxP_XI) (0:23)
+1. [What is NLP?](www.youtube.com/watch?v=cce8ntxP_XI) (0:23)  (done 03-Mar-2020)
 2. [Topic Modeling with SVD & NMF (NLP video 2)](www.youtube.com/watch?v=tG3pUwmGjsc) (1:07)
 3.  (33:06)
 4.  (58:20)
