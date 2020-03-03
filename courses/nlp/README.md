@@ -16,4 +16,11 @@
 * spacy doesn't offer a stemmer, because it doesn't think it should be used
 * Google [sentencepiece](https://github.com/google/sentencepiece)
   * performs sub-word tokens
+* NMF (non-negative matrix factorization) is not unique, but can be more interpretable
+
+To check time of a step:  
+```python
+%time u, s, v = np.linalg.svd(vectors, full_matrices=False)
+```
+
 
