@@ -28,4 +28,8 @@ To check time of a step:
 
 - stemming:  getting roots of words  (chops off end, "poor man's lemmatization")
 - lemmatization:  (fancier)
+- lemmatization is more computationally expensive than stemming
+- stemming is quicker and easier
+- when you have less data, do this pre-processing
+- do you think
 
