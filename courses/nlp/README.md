@@ -30,6 +30,15 @@ To check time of a step:
 - lemmatization:  (fancier)
 - lemmatization is more computationally expensive than stemming
 - stemming is quicker and easier
+ 
+### Pre-processing
 - when you have less data, do this pre-processing
-- do you think
+- do you think your model can handle the complexity:  
+ - if you're using neural networks, don't do lemmatization, because that is throwing away information
+ - if you have a simpler model, can't learn as much complexity, so do this pre-processing
+
+### Factorization is analagous to matrix decomposition
+- 
+
+
 
