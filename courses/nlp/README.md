@@ -38,7 +38,14 @@ To check time of a step:
  - if you have a simpler model, can't learn as much complexity, so do this pre-processing
 
 ### Factorization is analagous to matrix decomposition
-- 
+
+### What are the nice properties that matrices in an SVD decomposition have?
+- A = USV
+- U:  orthonormal; columns or rows are orthonormal to each other; the columns are orthogonal and pairwise normalized.  (dot product of two columns is 0. dot product of column with itself gives us 1)
+- S:  diagonal matrix; everything off diagonals is 0; capture an idea of importance, singular values, descending order: capture biggest one first, non-negative, scale of U and V is both 1
+- V:  same properties as U, but transpose of rows are orthonormal to each other
+- NMF:  special property in decomposition is **non-negative** AND matrix is **sparse** (sparse means many of the values are zero)
+
 
 
 
