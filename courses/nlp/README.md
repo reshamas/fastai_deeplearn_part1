@@ -6,8 +6,8 @@
 
 1. [What is NLP?](www.youtube.com/watch?v=cce8ntxP_XI) (0:23)  (done 03-Mar-2020)
 2. [Topic Modeling with SVD & NMF (NLP video 2)](www.youtube.com/watch?v=tG3pUwmGjsc) (1:07)  (done 03-Mar-2020)
-3. [Topic Modeling and SVD revisited](https://youtu.be/lRZ4aMaXPBI) (33:06)
-4.  (58:20)
+3. [Topic Modeling and SVD revisited](https://youtu.be/lRZ4aMaXPBI) (33:06) (done 04-Mar-2020)
+4. [Sentiment Classification of Movie Reviews (using Naive Bayes, Logistic Regression, Ngrams](https://youtu.be/hp2ipC5pW4I) (58:20)
 5. 
 ...
 19.
@@ -76,5 +76,6 @@ To check time of a step:
  - SVD:  on a big matrix is **slow**
   - in example on a 10K by 10K matrix, it is very slow
   - one way to address this is to use **randomized SVD**
-  - 
- 
+
+### Full vs Reduced SVD
+- 
