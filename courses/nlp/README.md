@@ -46,6 +46,7 @@ To check time of a step:
 - V:  same properties as U, but transpose of rows are orthonormal to each other
 - NMF:  special property in decomposition is **non-negative** AND matrix is **sparse** (sparse means many of the values are zero)
 
+## Linear Algebra
 
 
 
