@@ -50,5 +50,17 @@ To check time of a step:
 - 3 Blue 1 Brown: Essence of Linear Algebra [playlist on YouTube](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab0
 - video Chapter 3 [Linear transformation and matrices](https://youtu.be/kYB8IZa5AuE)
 
-
-
+## Reviewing spreadsheet
+- first matrix:  TF-IDF (term document matrix)
+ - rows:  author_title
+ - cols:  words
+- use SVD to decompose TF-IDF matrix into 3 matrices
+ - U rows:  author_title
+ - U cols:  topics1 to x
+- S:  diagonal matrix  (singular values in descending order, most important one at (1, 1) position in matrix)
+ - S rows:  topics
+ - S cols:  topics
+- V:  
+ - V rows:  topics
+ - V cols:  words
+ 
