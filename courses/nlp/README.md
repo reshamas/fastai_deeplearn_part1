@@ -64,3 +64,17 @@ To check time of a step:
  - V rows:  topics
  - V cols:  words
  
+ ## Advantages / Disadvantages of SVD vs NMF
+ - NMF: non-negative values, can be more interpretable
+ - SVD: can have negative values for topic
+ - SVD: is an exact decomposition; can fully represent the input matrices
+ - NMF:  not exact
+ - NMF:  need to set the number of topics you want, that's hyperparameter that you are choosing; 
+ - SVD:  traditional SVD: you are getting as many singular values as you have documents, (assuming fewer documents than vocab words)
+ - SVD:  there is opportunity to look at singular values and see that when they get little, these topics may be so unimportant that I can ignore them and chop them off.  But that also means with SVD, you're doing extra work.  
+  - so it is both giving you more information and extra work
+ - SVD:  on a big matrix is **slow**
+  - in example on a 10K by 10K matrix, it is very slow
+  - one way to address this is to use **randomized SVD**
+  - 
+ 
