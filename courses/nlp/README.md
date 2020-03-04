@@ -47,6 +47,8 @@ To check time of a step:
 - NMF:  special property in decomposition is **non-negative** AND matrix is **sparse** (sparse means many of the values are zero)
 
 ## Linear Algebra
+- 3 Blue 1 Brown: Essence of Linear Algebra [playlist on YouTube](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab0
+- video Chapter 3 [Linear transformation and matrices](https://youtu.be/kYB8IZa5AuE)
 
 
 
