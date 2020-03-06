@@ -88,7 +88,7 @@ To check time of a step:
 ### 
 - in Jupyter notebook, type `?? URLs` to pull up documentation
 - `itos` = integer to string  [is type list]
-- `stoi` = string to integer  [is type dictionary]
+- `stoi` = string to integer  [is type dictionary], dict is good to search by string, 
 - `movie_reviews.vocab.itos[230:240]` are ordered by **frequency**
 - `movie_reviews.vocab.stoi['language']` gives 917
 - if you want human-readable, use strings
