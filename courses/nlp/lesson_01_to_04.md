@@ -84,3 +84,5 @@ To check time of a step:
  - we can have a lot of words mapping to "unknown", many things will map to capital letter, 
 
 ### Creating term document matrix
+- a matrix with lots of zeroes is called **sparse**
+- 
