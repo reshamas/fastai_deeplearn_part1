@@ -83,5 +83,18 @@ To check time of a step:
  - for S matrix (singular value), also adding some rows of pure zeroes
 - in practice, you are usually going to be using reduced SVD, it's quicker to calculate and you are often not needing to use/ turn it into an orthonormal basis
 
-## Lesson 4
+## Lesson 4 [Sentiment Classification of Movie Reviews (using Naive Bayes, Logistic Regression, Ngrams](https://youtu.be/hp2ipC5pW4I)
+
+### 
+- in Jupyter notebook, type `?? URLs` to pull up documentation
+- `itos` = integer to string  [is type list]
+- `stoi` = string to integer  [is type dictionary]
+- `movie_reviews.vocab.itos[230:240]` are ordered by **frequency**
+- `movie_reviews.vocab.stoi['language']` gives 917
+- if you want human-readable, use strings
+- if you want something the algorithm can process, use numbers
+- it's not a 1-to-1 mapping because several words can have the same index
+ - we can have a lot of words mapping to "unknown", many things will map to capital letter, 
+
+### Creating term document matrix
 
