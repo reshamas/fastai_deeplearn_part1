@@ -82,3 +82,6 @@ To check time of a step:
  - that involves making up some columns for U that don't directly depend on the data A
  - for S matrix (singular value), also adding some rows of pure zeroes
 - in practice, you are usually going to be using reduced SVD, it's quicker to calculate and you are often not needing to use/ turn it into an orthonormal basis
+
+## Lesson 4
+
