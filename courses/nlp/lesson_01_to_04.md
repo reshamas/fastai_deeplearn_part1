@@ -72,7 +72,7 @@ To check time of a step:
 
 ## Lesson 4 [Sentiment Classification of Movie Reviews (using Naive Bayes, Logistic Regression, Ngrams](https://youtu.be/hp2ipC5pW4I)
 
-### 
+### Word frequency count
 - in Jupyter notebook, type `?? URLs` to pull up documentation
 - `itos` = integer to string  [is type list]
 - `stoi` = string to integer  [is type dictionary], dict is good to search by string, 
@@ -85,4 +85,37 @@ To check time of a step:
 
 ### Creating term document matrix
 - a matrix with lots of zeroes is called **sparse**
-- 
+    - you can save a lot of memory by only storing the non-zero values
+- opposite of **sparse** matrices are **dense** matrices
+
+## Sparse matrix storage formats
+- we know most words don't show up in most reviews
+
+### coordinate-wise (scipy calls COO)
+    - store 3 values:  row in matrix, col in matrix and the value of that entry
+    - instead of full matrix size (say 10x10), you only store 3 items for each entry (x_i, y_i, entry)
+    - rows or columns need not be ordered in any way
+
+### compressed sparse row (CSR)
+- stores column and entry
+- assigns row pointer, and only changes it when it moves to next row
+- list of row pointers is shorter than for coordinate-wise storage
+- if you are accessing data by row a lot, this makes it easier
+- it's not as easy to access columns, and that would require more calculations
+
+### compressed sparse column (CSC)
+- similar to CSR, but uses column
+
+There are a lot of different **Sparse Matrix Compression Formats**.  
+- Coordinate format is the most intuitive
+
+Advantage of CSR method over Coordinate-wise method:  
+- the number of operations to perform matrix-vector multiplication in both storage method are the same ...
+- However: the number of **memory accesses** is reduced (by 2 to be exact) in the CSR method
+
+
+
+
+# Lesson 5:  [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g)
+
+
