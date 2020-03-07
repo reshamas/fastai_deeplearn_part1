@@ -114,8 +114,6 @@ Advantage of CSR method over Coordinate-wise method:
 - However: the number of **memory accesses** is reduced (by 2 to be exact) in the CSR method
 
 
-
-
 # Lesson 5:  [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g)
-
-
+[Notebook](https://github.com/fastai/course-nlp/blob/master/3-logreg-nb-imdb.ipynb)  
+- 
