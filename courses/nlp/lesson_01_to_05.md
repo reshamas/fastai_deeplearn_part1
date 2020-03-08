@@ -1,4 +1,4 @@
-# NLP:  Lessons 1 to 4
+# NLP:  Lessons 1 to 5
 
 ## Lesson 2 [Topic Modeling with SVD & NMF (NLP video 2)](www.youtube.com/watch?v=tG3pUwmGjsc)
 * spacy doesn't offer a stemmer, because it doesn't think it should be used
