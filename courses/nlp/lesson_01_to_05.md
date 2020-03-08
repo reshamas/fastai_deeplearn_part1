@@ -70,6 +70,8 @@ To check time of a step:
  - for S matrix (singular value), also adding some rows of pure zeroes
 - in practice, you are usually going to be using reduced SVD, it's quicker to calculate and you are often not needing to use/ turn it into an orthonormal basis
 
+---
+
 ## Lesson 4 [Sentiment Classification of Movie Reviews (using Naive Bayes, Logistic Regression, Ngrams](https://youtu.be/hp2ipC5pW4I)
 
 ### Word frequency count
@@ -114,6 +116,9 @@ Advantage of CSR method over Coordinate-wise method:
 - However: the number of **memory accesses** is reduced (by 2 to be exact) in the CSR method
 
 
+---
+
 # Lesson 5:  [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g)
 [Notebook](https://github.com/fastai/course-nlp/blob/master/3-logreg-nb-imdb.ipynb)  
-- 
+
+
