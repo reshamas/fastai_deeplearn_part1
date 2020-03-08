@@ -9,7 +9,7 @@
 3. [Topic Modeling and SVD revisited](https://youtu.be/lRZ4aMaXPBI) (33:06) (done 04-Mar-2020)
 4. [Sentiment Classification of Movie Reviews (using Naive Bayes, Logistic Regression, Ngrams](https://youtu.be/hp2ipC5pW4I) (58:20)
   - [notebook](https://github.com/fastai/course-nlp/blob/master/3-logreg-nb-imdb.ipynb) (done 04-Mar-2020)
-5. [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g) (52:00) (done 06-Mar-2020)
+5. [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g) (52:00) 
 6.
 ...
 19.
