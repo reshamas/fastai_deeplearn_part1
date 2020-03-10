@@ -10,7 +10,7 @@
 4. [Sentiment Classification of Movie Reviews (using Naive Bayes, Logistic Regression, Ngrams](https://youtu.be/hp2ipC5pW4I) (58:20)
   - [notebook](https://github.com/fastai/course-nlp/blob/master/3-logreg-nb-imdb.ipynb) (done 04-Mar-2020)
 5. [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g) (52:00) 
-6.
+6. [Derivation of Naive Bayes & Numerical Stability](https://youtu.be/z8-Tbrg1-rE) (24:00)
 ...
 19.
 
