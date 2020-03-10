@@ -1,6 +1,6 @@
 # NLP:  Lessons 1 to 5
 
-## Lesson 2 [Topic Modeling with SVD & NMF (NLP video 2)](www.youtube.com/watch?v=tG3pUwmGjsc)
+## Video 2 [Topic Modeling with SVD & NMF (NLP video 2)](www.youtube.com/watch?v=tG3pUwmGjsc)
 * spacy doesn't offer a stemmer, because it doesn't think it should be used
 * Google [sentencepiece](https://github.com/google/sentencepiece)
   * performs sub-word tokens
@@ -11,7 +11,7 @@ To check time of a step:
 %time u, s, v = np.linalg.svd(vectors, full_matrices=False)
 ```
 
-## Lesson 3
+## Video 3
 
 - stemming:  getting roots of words  (chops off end, "poor man's lemmatization")
 - lemmatization:  (fancier)
@@ -72,7 +72,7 @@ To check time of a step:
 
 ---
 
-## Lesson 4 [Sentiment Classification of Movie Reviews (using Naive Bayes, Logistic Regression, Ngrams](https://youtu.be/hp2ipC5pW4I)
+## Video 4 [Sentiment Classification of Movie Reviews (using Naive Bayes, Logistic Regression, Ngrams](https://youtu.be/hp2ipC5pW4I)
 
 ### Word frequency count
 - in Jupyter notebook, type `?? URLs` to pull up documentation
@@ -118,7 +118,7 @@ Advantage of CSR method over Coordinate-wise method:
 
 ---
 
-# Lesson 5:  [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g)
+# Video 5:  [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g)
 [Notebook](https://github.com/fastai/course-nlp/blob/master/3-logreg-nb-imdb.ipynb)  
 
 
