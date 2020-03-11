@@ -8,3 +8,5 @@
 - use `assert` to check test cases
 - instead of writing `0 1 2 3 4 5 6 7 8 9` we can write `[0-9]` or `\d`
 
+
+## Video 7:  [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw)
