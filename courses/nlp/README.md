@@ -11,8 +11,9 @@
   - [notebook](https://github.com/fastai/course-nlp/blob/master/3-logreg-nb-imdb.ipynb) (done 04-Mar-2020)
 5. [Sentiment Classification of Movie Reviews: NB, LR, Ngrams](https://youtu.be/dt7sArnLo1g) (52:00)   (done)
 6. [Derivation of Naive Bayes & Numerical Stability](https://youtu.be/z8-Tbrg1-rE) (24:00)   (done 11-Mar-2020)
-...
-7. [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw) (38:00)
+7. [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw) (38:00)  (done 12-Mar-2020)
+8.  [Intro to Language Modeling](https://youtu.be/PNNHaQUQqW8) (41:00)
+
   - ...
 19.
 
