@@ -10,3 +10,5 @@
 
 
 ## Video 7:  [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw)
+- revisiting Naive Bayes via spreadsheet
+- 
