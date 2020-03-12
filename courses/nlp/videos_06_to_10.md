@@ -12,3 +12,6 @@
 ## Video 7:  [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw)
 - revisiting Naive Bayes via spreadsheet
 - 
+
+## Video 8:  [Intro to Language Modeling](https://youtu.be/PNNHaQUQqW8)
+- notebook 5
