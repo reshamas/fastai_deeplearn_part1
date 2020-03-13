@@ -13,7 +13,7 @@
 6. [Derivation of Naive Bayes & Numerical Stability](https://youtu.be/z8-Tbrg1-rE) (24:00)   (done 11-Mar-2020)
 7. [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw) (38:00)  (done 12-Mar-2020)
 8.  [Intro to Language Modeling](https://youtu.be/PNNHaQUQqW8) (41:00)  (done 12-Mar-2020)
-9.  [Transfer learning](https://youtu.be/5gCQvuznKn0)
+9.  [Transfer learning](https://youtu.be/5gCQvuznKn0) (1:36:00)
   - ...
 19.
 
