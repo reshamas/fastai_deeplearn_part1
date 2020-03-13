@@ -16,3 +16,5 @@
 ## Video 8:  [Intro to Language Modeling](https://youtu.be/PNNHaQUQqW8)
 - notebook 5
 - 
+
+## Video 9:  [Transfer learning](https://youtu.be/5gCQvuznKn0)
