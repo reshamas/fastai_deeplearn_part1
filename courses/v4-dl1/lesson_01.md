@@ -14,6 +14,8 @@
 - at 9:40pm EST, there are **441** people watching
 - at 9:45pm EST, **465**
 - at 10:00pm EST, **483**
+- at 111:45pm EST, **434**
+- at 12am, **405**
 
 ## Forums
 - can select "none" to remove study group threads
@@ -80,7 +82,17 @@ You will be practicing things that are hard.  Requires:
   - Do questionnaire before moving on to each chapter
   - If you missed something, do go back and read it
   - If you do get stuck after a couple of times, then do move on to next chapter and you might understand it better later
-  - 
+  - File / Trust Notebook 
+- `jupyter labextension install @jupyter-widgets/jupyterlab-manager`
 
+## 
+- deep learning is a kind of machine learning
+- 
 
+## Limitations Inherent to Machine Learning
+- 
+
+## Consider how a model interacts with its environment
+- PROXY:  arrest is a proxy for crime [listen to this again]
+- 
 
