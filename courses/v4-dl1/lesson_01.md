@@ -96,3 +96,12 @@ You will be practicing things that are hard.  Requires:
 - PROXY:  arrest is a proxy for crime [listen to this again]
 - 
 
+## Homework
+1. spin up a GPU server
+2. run code
+3. search fastai docs
+4. try to get comfortable, know your way around
+5. read chapter of book
+6. go through questionnaire
+
+
