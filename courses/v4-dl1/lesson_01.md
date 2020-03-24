@@ -13,7 +13,7 @@
 - [x] run the code shown in the lecture
 - [x] use the documentation, use the doc function inside juypter notebook
 - [x] do some searching of the fast.ai docs
-- [ ] see if you can grab the fast.ai documentation notebooks and try running them
+- [ ] see if you can grab the fast.ai documentation notebooks and try running them: [doc notebooks](https://github.com/fastai/fastai2/tree/master/nbs)
 - [ ] read a chapter of the fast.ai book 11
 - [ ] do the questionnaire at the end of the chapter (not everything has been covered yet, answer only the questions that you can)
 - [ ] try to get comfortable with running code
