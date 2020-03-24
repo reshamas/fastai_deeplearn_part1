@@ -11,8 +11,8 @@
 - [x] make sure you can spin up a GPU server
 - [x] that you can shut it down when it is finished
 - [x] run the code shown in the lecture
-- [ ] use the documentation, use the doc function inside juypter notebook
-- [ ] do some searching of the fast.ai docs
+- [x] use the documentation, use the doc function inside juypter notebook
+- [x] do some searching of the fast.ai docs
 - [ ] see if you can grab the fast.ai documentation notebooks and try running them
 - [ ] read a chapter of the fast.ai book 11
 - [ ] do the questionnaire at the end of the chapter (not everything has been covered yet, answer only the questions that you can)
