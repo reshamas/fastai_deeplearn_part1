@@ -18,6 +18,13 @@
 - [ ] do the questionnaire at the end of the chapter (not everything has been covered yet, answer only the questions that you can)
 - [ ] try to get comfortable with running code
 
+### Ways to reference documentation in Jupyter Notebook
+- `?`
+- `??`
+- 
+- 
+- 
+
 ## Paperspace
 - fastai: [Getting Started with Gradient](https://course.fast.ai/start_gradient.html)
 - fastai: v4 [Paperspace (free, paid options)](https://forums.fast.ai/t/platform-paperspace-free-paid-options/65515)
