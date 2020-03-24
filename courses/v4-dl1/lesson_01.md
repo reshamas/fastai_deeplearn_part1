@@ -10,7 +10,7 @@
 
 - [x] make sure you can spin up a GPU server
 - [x] that you can shut it down when it is finished
-- [ ] run the code shown in the lecture
+- [x] run the code shown in the lecture
 - [ ] use the documentation, use the doc function inside juypter notebook
 - [ ] do some searching of the fast.ai docs
 - [ ] see if you can grab the fast.ai documentation notebooks and try running them
@@ -19,11 +19,69 @@
 - [ ] try to get comfortable with running code
 
 ### Ways to reference documentation in Jupyter Notebook
-- `?`
-- `??`
-- 
-- 
-- 
+- `?` interactive python guide 
+- `??` interactive python guide 
+- `?learn` gives
+```bash
+Signature:   learn(event_name)
+Type:        Learner
+String form: <fastai2.learner.Learner object at 0x7f5ffb61dfd0>
+File:        /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
+Docstring:   Group together a `model`, some `dls` and a `loss_func` to handle training
+```
+- `??learn` gives entire class info  (abbreviated here)
+```bash
+Signature:   learn(event_name)
+Type:        Learner
+String form: <fastai2.learner.Learner object at 0x7f5ffb61dfd0>
+File:        /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
+Source:     
+class Learner():
+    def __init__(self, dls, model, loss_func=None, opt_func=Adam, lr=defaults.lr, splitter=trainable_params, cbs=None,
+                 metrics=None, path=None, model_dir='models', wd=None, wd_bn_bias=False, train_bn=True,
+                 moms=(0.95,0.85,0.95)):
+        store_attr(self, "dls,model,opt_func,lr,splitter,model_dir,wd,wd_bn_bias,train_bn,metrics,moms")
+        self.training,self.create_mbar,self.logger,self.opt,self.cbs = False,True,print,None,L()
+        if loss_func is None:
+            loss_func = getattr(dls.train_ds, 'loss_func', None)
+            assert loss_func is not None, "Could not infer loss function from the data, please pass a loss function."
+        self.loss_func = loss_func
+        self.path = path if path is not None else getattr(dls, 'path', Path('.'))
+        self.add_cbs([(cb() if isinstance(cb, type) else cb) for cb in L(defaults.callbacks)+L(cbs)])
+        self.model.to(self.dls.device)
+        if hasattr(self.model, 'reset'): self.model.reset()
+        self.epoch,self.n_epoch,self.loss = 0,1,tensor(0.)
+
+    @property
+    def metrics(self): return self._metrics
+    @metrics.setter
+    def metrics(self,v): self._metrics = L(v).map(mk_metric)
+```
+- `?learn.predict` gives:
+```bash
+Signature: learn.predict(item, rm_type_tfms=None, with_input=False)
+Docstring: Return the prediction on `item`, fully decoded, loss function decoded and probabilities
+File:      /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
+Type:      method
+```
+
+- `??learn.predict` gives:
+```bash
+Signature: learn.predict(item, rm_type_tfms=None, with_input=False)
+Docstring: Return the prediction on `item`, fully decoded, loss function decoded and probabilities
+Source:   
+    def predict(self, item, rm_type_tfms=None, with_input=False):
+        dl = self.dls.test_dl([item], rm_type_tfms=rm_type_tfms)
+        inp,preds,_,dec_preds = self.get_preds(dl=dl, with_input=True, with_decoded=True)
+        dec = self.dls.decode_batch((*tuplify(inp),*tuplify(dec_preds)))[0]
+        i = getattr(self.dls, 'n_inp', -1)
+        dec_inp,dec_targ = map(detuplify, [dec[:i],dec[i:]])
+        res = dec_targ,dec_preds[0],preds[0]
+        if with_input: res = (dec_inp,) + res
+        return res
+File:      /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
+Type:      method
+```
 
 ## Paperspace
 - fastai: [Getting Started with Gradient](https://course.fast.ai/start_gradient.html)
