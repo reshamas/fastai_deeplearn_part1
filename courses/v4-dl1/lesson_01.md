@@ -126,6 +126,12 @@ Return the prediction on item, fully decoded, loss function decoded and probabil
 
 Show in docs
 ```
+- `ImageDataLoaders` + <kbd> shift </kbd> + <kbd> tab </kbd> 
+```text
+Init signature: ImageDataLoaders(*loaders, path='.', device=None)
+Docstring:      Basic wrapper around several `DataLoader`s with factory methods for computer vision problems
+File:           /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/vision/
+```
 
 ## Paperspace
 - fastai: [Getting Started with Gradient](https://course.fast.ai/start_gradient.html)
