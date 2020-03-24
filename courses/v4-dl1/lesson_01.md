@@ -47,7 +47,7 @@ Within IPython you have various way to access help:
 If you are in terminal IPython you can quit this screen by pressing `q`.
 ```
 
-- `?learn` gives (`learn?` works too)
+####  `?learn` gives (`learn?` works too)
 ```bash
 Signature:   learn(event_name)
 Type:        Learner
@@ -55,7 +55,8 @@ String form: <fastai2.learner.Learner object at 0x7f5ffb61dfd0>
 File:        /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
 Docstring:   Group together a `model`, some `dls` and a `loss_func` to handle training
 ```
-- `??learn` gives entire class info  (doc abbreviated here); (`learn??` works too)
+
+#### `??learn` gives entire class info  (doc abbreviated here); (`learn??` works too)
 ```bash
 Signature:   learn(event_name)
 Type:        Learner
@@ -83,7 +84,8 @@ class Learner():
     @metrics.setter
     def metrics(self,v): self._metrics = L(v).map(mk_metric)
 ```
-- `?learn.predict` gives:
+
+#### `?learn.predict` gives:
 ```bash
 Signature: learn.predict(item, rm_type_tfms=None, with_input=False)
 Docstring: Return the prediction on `item`, fully decoded, loss function decoded and probabilities
@@ -91,7 +93,7 @@ File:      /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
 Type:      method
 ```
 
-- `??learn.predict` gives:
+#### `??learn.predict` gives:
 ```bash
 Signature: learn.predict(item, rm_type_tfms=None, with_input=False)
 Docstring: Return the prediction on `item`, fully decoded, loss function decoded and probabilities
@@ -109,7 +111,7 @@ File:      /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
 Type:      method
 ```
 
-- `doc(learn)` gives
+#### `doc(learn)` gives
 
 ```text
 Learner object at 0x7f5ffb61dfd0>[source]
@@ -117,6 +119,8 @@ Learner object at 0x7f5ffb61dfd0>(event_name)
 
 Group together a model, some dls and a loss_func to handle training
 ```
+#### `doc(learn` and getting to source code
+Can click on "[source]" after typing `doc(learn)` to bring you to the fastai code in GitHub repo
 
 - `doc(learn.predict)` gives
 ```text
@@ -127,7 +131,8 @@ Return the prediction on item, fully decoded, loss function decoded and probabil
 
 Show in docs
 ```
-- `ImageDataLoaders` + <kbd> shift </kbd> + <kbd> tab </kbd> 
+
+#### `ImageDataLoaders` + <kbd> shift </kbd> + <kbd> tab </kbd> 
 ```text
 Init signature: ImageDataLoaders(*loaders, path='.', device=None)
 Docstring:      Basic wrapper around several `DataLoader`s with factory methods for computer vision problems
