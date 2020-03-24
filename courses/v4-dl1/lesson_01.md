@@ -119,7 +119,7 @@ Learner object at 0x7f5ffb61dfd0>(event_name)
 
 Group together a model, some dls and a loss_func to handle training
 ```
-#### `doc(learn` and getting to source code
+#### `doc(learn)` and getting to source code
 Can click on "[source]" after typing `doc(learn)` to bring you to the fastai code in GitHub repo
 
 - `doc(learn.predict)` gives
