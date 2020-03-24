@@ -46,7 +46,7 @@ Within IPython you have various way to access help:
 If you are in terminal IPython you can quit this screen by pressing `q`.
 ```
 
-- `?learn` gives
+- `?learn` gives (`learn?` works too)
 ```bash
 Signature:   learn(event_name)
 Type:        Learner
@@ -54,7 +54,7 @@ String form: <fastai2.learner.Learner object at 0x7f5ffb61dfd0>
 File:        /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
 Docstring:   Group together a `model`, some `dls` and a `loss_func` to handle training
 ```
-- `??learn` gives entire class info  (abbreviated here)
+- `??learn` gives entire class info  (doc abbreviated here); (`learn??` works too)
 ```bash
 Signature:   learn(event_name)
 Type:        Learner
