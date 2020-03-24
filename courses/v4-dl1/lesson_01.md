@@ -6,7 +6,17 @@
 - book: [Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD ](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
 
 ## Homework
-- [Lesson 1 Homework](https://forums.fast.ai/t/did-you-do-the-homework/660340
+- [Lesson 1 Homework](https://forums.fast.ai/t/did-you-do-the-homework/660340)
+
+- [x] make sure you can spin up a GPU server
+- [x] that you can shut it down when it is finished
+- [ ] run the code shown in the lecture
+- [ ] use the documentation, use the doc function inside juypter notebook
+- [ ] do some searching of the fast.ai docs
+- [ ] see if you can grab the fast.ai documentation notebooks and try running them
+- [ ] read a chapter of the fast.ai book 11
+- [ ] do the questionnaire at the end of the chapter (not everything has been covered yet, answer only the questions that you can)
+- [ ] try to get comfortable with running code
 
 ## Paperspace
 - fastai: [Getting Started with Gradient](https://course.fast.ai/start_gradient.html)
