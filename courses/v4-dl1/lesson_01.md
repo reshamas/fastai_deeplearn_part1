@@ -19,7 +19,7 @@
 - [ ] try to get comfortable with running code
 
 ## Referencing Documentation in Jupyter Notebook
-- `?` gives interactive python guide  (abbreviated. [full doc output](doc_01_reference.md))
+- `?` OR `??` gives interactive python guide  (abbreviated. [full doc output](doc_01_reference.md))
 
 ```text
 IPython -- An enhanced Interactive Python
@@ -45,7 +45,7 @@ Within IPython you have various way to access help:
 
 If you are in terminal IPython you can quit this screen by pressing `q`.
 ```
-- `??` interactive python guide 
+
 - `?learn` gives
 ```bash
 Signature:   learn(event_name)
