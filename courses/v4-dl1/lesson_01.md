@@ -19,7 +19,8 @@
 - [ ] try to get comfortable with running code
 
 ## Referencing Documentation in Jupyter Notebook
-- `?` OR `??` gives interactive python guide  (abbreviated output below. [full doc output](doc_01_reference.md))
+
+#### `?` OR `??` gives interactive python guide  (abbreviated output below. [full doc output](doc_01_reference.md))
 
 ```text
 IPython -- An enhanced Interactive Python
