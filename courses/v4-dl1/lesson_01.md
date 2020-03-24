@@ -5,6 +5,8 @@
 - supposed to be the official version (now **v4**)
 - book: [Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD ](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
 
+## Homework
+- [Lesson 1 Homework](https://forums.fast.ai/t/did-you-do-the-homework/660340
 
 ## Logistics
 - edited video will be available in 1-2 days
