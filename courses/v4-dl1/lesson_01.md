@@ -18,7 +18,7 @@
 - [ ] do the questionnaire at the end of the chapter (not everything has been covered yet, answer only the questions that you can)
 - [ ] try to get comfortable with running code
 
-### Ways to reference documentation in Jupyter Notebook
+## Referencing Documentation in Jupyter Notebook
 - `?` interactive python guide 
 - `??` interactive python guide 
 - `?learn` gives
@@ -81,6 +81,25 @@ Source:
         return res
 File:      /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/learner.py
 Type:      method
+```
+
+- `doc(learn)` gives
+
+```text
+Learner object at 0x7f5ffb61dfd0>[source]
+Learner object at 0x7f5ffb61dfd0>(event_name)
+
+Group together a model, some dls and a loss_func to handle training
+```
+
+- `doc(learn.predict)` gives
+```text
+Learner.predict[source]
+Learner.predict(item, rm_type_tfms=None, with_input=False)
+
+Return the prediction on item, fully decoded, loss function decoded and probabilities
+
+Show in docs
 ```
 
 ## Paperspace
