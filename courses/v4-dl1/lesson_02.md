@@ -19,4 +19,5 @@
 
 ## Notes
 fastai/fastbook:  book in O'Reilly
-- ​"The loss function is used to optimize your model. (...) A metric is used to judge the performance of your model."
+- "The loss function is used to optimize your model. (...) A metric is used to judge the performance of your model."
+- model zoo: look for pretrained models
