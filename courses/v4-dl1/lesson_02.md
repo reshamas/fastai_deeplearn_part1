@@ -152,4 +152,5 @@ The statement has short paragraphs elaborating on each principle.
 
 ## Bing image search
 - bing image search: 7 days of high quota for free; limit to 3 transactions per second
+- [Bing image search](https://www.bing.com/images/trending?FORM=ILPTRD&wlexpsignin=1)
 
