@@ -36,6 +36,23 @@ dls = ImageDataLoaders.from_name_func(
 learn = cnn_learner(dls, resnet34, metrics=error_rate)
 learn.fine_tune(1)
 ```
+- `def is_cat(x): return x[0].isupper()` returns something that is True or False
+- `dls` = data loaders
+- `valid_pct=0.2` creates a validation set  (default is 20% of data is set to validation set)
+- A **regression model** is one which attempts to predict one or more numeric quantities such as temperature or location.
+
+### learner
+- `learn = cnn_learner(dls, resnet34, metrics=error_rate)`
+- `resnet` is architecture; `34` is number of layers in that architecture
+- **epoch** is when you look at every single image in the dataset once
+- `metrics=error_rate` the percent of validation set are being incorrectly classified by model
+- `metrics=accuracy` is 1 - error_rate 
+- **loss function** is a performance measurement
+  - need a loss function where if you change the parameters by just a little bit up or just a little bit down you can see if the loss gets a little bit better or a little bit worse and it turns out that error rate and accuracy doesn't tell you that at all
+- loss and metric are closely related, but metric is what you care about
+- loss:  is what computer is using as measurement of performance to decide howto update your parameters
+- **measuring overfitting** 
+
 
 - "The loss function is used to optimize your model. (...) A metric is used to judge the performance of your model."
 - model zoo: look for pretrained models
