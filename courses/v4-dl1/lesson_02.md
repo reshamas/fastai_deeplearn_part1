@@ -91,16 +91,59 @@ learn.fine_tune(1)
   - what is deep learning good at, at the moment?
 - pre-trained weights
   - there are a lot of pretrained models
-  - 
+  - not as wide a variety as Jeremy would like
+  - example: medical imaging: there are hardly any pretrained models
+  - lots of opportunities to create domain specific models; not a lot of people are working on transfer learning
 
 ## Deep Learning Applications
 - Vision:  detection, classification
 - Text:  classification, conversation
+  - good for classification and translation
+  - terrible for conversation; conversation bots not great
+  - it's good at providing things that *sound* accurate and compelling; we don't have great ways at making sure it's correct
 - Tabular: high cardinality; GPU (rapids)
+  - spreadsheets and database:  deep learning isn't always the best
+  - good for things involving high cardinality (involving lots of discrete variables, like zip code or product ID)
 - Recsys:  prediction NE (<>) recommendation
+  - also known as collaborative filtering
+  - deep learning is good at making predictions, but that doesn't mean it creates *useful* recommendations
+  - Amazon:  example:  buying Terry Pratchett book and then it recommends for months for someone to buy it
+  - Amazon is **showing collaborative filtering predictions rather than optimizing recommendations**
+  - an optimized recommendation:  what local bookseller might do, let me recommend other sci-fi authors
+  - difference between predictions and recommendations is important
 - Multi-modal: labeling, captioning, human in the loop
+  - good when you have multiple different types of data such as text, tabular and image and some collaborative filtering
+  - example:  putting captions on photos is something DL is good at, although it's not good at being accurate (it might say it's a picture of 2 birds when it's actually a photo of 3 birds)
 - Other: NLP -> protein
+  - can be creative using DL for other applications
+  - ULMFIT: also great at doing protein analysis; think of proteins as different words
+  - ULMFIT = Universal Language Model Fine-tuning
+
+- Question:  will deep learning work well for my application?
+- Answer:  have to try and see
+
+## Paper
+- [High Temperature and High Humidity Reduce the Transmission of COVID-19](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3551767) Mar 2020
+- important paper:  if this is a seasonal disease, then it will have massive policy implications
+- R: transmissibility of the virus
+- 
+
+## pvalues
+- [ASA statement on p-values](https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf)
+The statement’s six principles, many of which address misconceptions and misuse of the pvalue, are the following:
+1. P-values can indicate how incompatible the data are with a specified statistical model.
+2. P-values do not measure the probability that the studied hypothesis is true, or the
+probability that the data were produced by random chance alone.
+3. Scientific conclusions and business or policy decisions should not be based only on
+whether a p-value passes a specific threshold.
+4. Proper inference requires full reporting and transparency.
+5. A p-value, or statistical significance, does not measure the size of an effect or the
+importance of a result.
+6. By itself, a p-value does not provide a good measure of evidence regarding a model or
+hypothesis.
+The statement has short paragraphs elaborating on each principle. 
 
 
-
+## Optimization
+- 
 
