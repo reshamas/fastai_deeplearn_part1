@@ -52,8 +52,9 @@ learn.fine_tune(1)
 - loss and metric are closely related, but metric is what you care about
 - loss:  is what computer is using as measurement of performance to decide howto update your parameters
 - **measuring overfitting** 
-
-
 - "The loss function is used to optimize your model. (...) A metric is used to judge the performance of your model."
 - model zoo: look for pretrained models
 - bing image search: 7 days of high quota for free; limit to 3 transactions per second
+- **test set** third set: not used for training or metrics (used on Kaggle) 
+- training loss vs validation loss:  
+
