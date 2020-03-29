@@ -58,3 +58,49 @@ learn.fine_tune(1)
 - **test set** third set: not used for training or metrics (used on Kaggle) 
 - training loss vs validation loss:  
 
+### transfer learning
+- `learn.fine_tune(1)`
+- fine tuning is a transfer learning technique where the parameters of a pretrained model are trained for additional epochs for a different task
+- update later layers of a pretrained model
+- techniques for computer visio can be used for **sound**, turn sounds into pictures by showing their frequencies over time, which results in an image
+- example of Splunk:  using computer vision to create an anti-fraud model
+  - [Splunk and Tensorflow for Security: Catching the Fraudster with Behavior Biometrics](https://www.splunk.com/en_us/blog/security/deep-learning-with-splunk-and-tensorflow-for-security-catching-the-fraudster-in-neural-networks-with-behavioral-biometrics.html)
+  - it worked so well Splunk patented a new model
+- example:  turn viruses into pictures
+ 
+### Metrics
+- loss function: a measure of performance, when we adjust our hyperparameters up and down, how it changes
+  - a measure of performance that the algorithm uses to try to make the algorithm better.  
+  - as you change the parameters a bit, the loss should always change
+- error:  is one kind of metric
+- metric:  
+- parameter:  things which change what the model or architecture does.  start with neural network which is infinitely flexible. 
+  - pass in:  numbers that represent input (pixels)
+  - pass in:  learned parameters
+  - numbers which change what the model does
+- hyperparameter:  choices about which numbers we pass to model for fitting function
+
+- filters: are they independent? if they are fine-tuned, do they lose some information?
+  - **catastrophic forgetting** in literature
+  - if you want to fine tune something which is good at new task and continues to be good at previous task, need to continue to put in examples of previous task as well
+- pacing of course:  we will cover what we can in 7 lessons;  whole book will be covered in 2 or 3 courses; book is 500 pages
+  - so will be 14 or 21 lessons to get through whole book
+- part of course:  putting things into production
+  - what are capabilities and limitations?
+  - first 2 or 3 lessons of course are for coders and everyone; what are practical things you need to know?
+  - what is deep learning good at, at the moment?
+- pre-trained weights
+  - there are a lot of pretrained models
+  - 
+
+## Deep Learning Applications
+- Vision:  detection, classification
+- Text:  classification, conversation
+- Tabular: high cardinality; GPU (rapids)
+- Recsys:  prediction NE (<>) recommendation
+- Multi-modal: labeling, captioning, human in the loop
+- Other: NLP -> protein
+
+
+
+
