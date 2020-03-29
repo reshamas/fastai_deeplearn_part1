@@ -153,6 +153,7 @@ The statement has short paragraphs elaborating on each principle.
 - bing image search: 7 days of high quota for free; limit to 3 transactions per second
 - [Bing Image Search](https://www.bing.com/images/trending?FORM=ILPTRD&wlexpsignin=1)
 - will create an application and host it
+- sign up process not easy
 - 
 
 
