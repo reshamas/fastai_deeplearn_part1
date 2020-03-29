@@ -143,6 +143,12 @@ importance of a result.
 hypothesis.
 The statement has short paragraphs elaborating on each principle. 
 
+- practical vs statistical significance
+- [Designing Great Data Products](https://www.oreilly.com/radar/drivetrain-approach-data-products/) 2012, Jeremy Howard
+  - based on 10 years of work at company called Optimal Decisions Group
+  - insurance companies had focused on predictive modeling
+  - turning predictive models into actions
+  - 
 
 ## Optimization
 - 
