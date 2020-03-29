@@ -54,7 +54,6 @@ learn.fine_tune(1)
 - **measuring overfitting** 
 - "The loss function is used to optimize your model. (...) A metric is used to judge the performance of your model."
 - model zoo: look for pretrained models
-- bing image search: 7 days of high quota for free; limit to 3 transactions per second
 - **test set** third set: not used for training or metrics (used on Kaggle) 
 - training loss vs validation loss:  
 
@@ -143,13 +142,14 @@ importance of a result.
 hypothesis.
 The statement has short paragraphs elaborating on each principle. 
 
+## Optimization
 - practical vs statistical significance
 - [Designing Great Data Products](https://www.oreilly.com/radar/drivetrain-approach-data-products/) 2012, Jeremy Howard
   - based on 10 years of work at company called Optimal Decisions Group
   - insurance companies had focused on predictive modeling
   - turning predictive models into actions
-  - 
+  
 
-## Optimization
-- 
+## Bing image search
+- bing image search: 7 days of high quota for free; limit to 3 transactions per second
 
