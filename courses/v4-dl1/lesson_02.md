@@ -91,7 +91,7 @@ learn.fine_tune(1)
 - pre-trained weights
   - there are a lot of pretrained models
   - not as wide a variety as Jeremy would like
-  - example: medical imaging: there are hardly any pretrained models
+  - example: **medical imaging: there are hardly any pretrained models**
   - lots of opportunities to create domain specific models; not a lot of people are working on transfer learning
 
 ## Deep Learning Applications
@@ -149,8 +149,10 @@ The statement has short paragraphs elaborating on each principle.
   - insurance companies had focused on predictive modeling
   - turning predictive models into actions
   
-
 ## Bing image search
 - bing image search: 7 days of high quota for free; limit to 3 transactions per second
-- [Bing image search](https://www.bing.com/images/trending?FORM=ILPTRD&wlexpsignin=1)
+- [Bing Image Search](https://www.bing.com/images/trending?FORM=ILPTRD&wlexpsignin=1)
+- will create an application and host it
+- 
+
 
