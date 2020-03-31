@@ -40,4 +40,9 @@ root@51ae9bcde285:/notebooks/storage/fowl# ls
 root@51ae9bcde285:/notebooks/storage/fowl# pwd
 /notebooks/storage/fowl
 ```
+Tried:  `wget` and `curl` but urls were not working
+10. Go to Jupyter notebook in Paperspace
+- navigate to `storage` folder
+- use **upload** to upload files
+
 
