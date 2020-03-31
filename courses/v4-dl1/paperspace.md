@@ -45,4 +45,21 @@ Tried:  `wget` and `curl` but urls were not working
 - navigate to `storage` folder
 - use **upload** to upload files
 
-
+## Data
+```bash
+root@3b9d9da72ac6:/notebooks/storage/fowl_data# pwd
+/notebooks/storage/fowl_data
+root@3b9d9da72ac6:/notebooks/storage/fowl_data# ls -alt
+total 2104240
+drwxr-xr-x 6 root root       4096 Mar 31 19:48 ..
+-rw-r--r-- 1 root root 1407124233 Mar 31 16:26 Train.zip
+-rw-r--r-- 1 root root  743620991 Mar 31 16:12 Test.zip
+drwxr-xr-x 3 root root       4096 Mar 31 15:12 .
+drwxr-xr-x 2 root root       4096 Mar 31 15:12 .ipynb_checkpoints
+-rw-r--r-- 1 root root    3815649 Mar 31 15:12 StarterNotebook.ipynb
+-rw-r--r-- 1 root root       2391 Mar 31 15:11 authors.csv
+-rw-r--r-- 1 root root      80027 Mar 31 15:11 SampleSubmission.csv
+-rw-r--r-- 1 root root      48594 Mar 31 15:11 Train.csv
+-rw-r--r-- 1 root root      13679 Mar 31 15:11 Test.csv
+root@3b9d9da72ac6:/notebooks/storage/fowl_data#
+```
