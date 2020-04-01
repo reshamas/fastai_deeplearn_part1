@@ -141,7 +141,7 @@ File:           /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/visio
 
 #### inside ( of function; shift + tab
 
-[image](/image/transform.png)
+[image](/image/transforms.png)
 
 
 ## Paperspace
