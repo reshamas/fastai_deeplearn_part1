@@ -20,6 +20,10 @@
 
 ## Referencing Documentation in Jupyter Notebook
 
+#### inside ( of function; shift + tab
+
+![image](image/transforms.png)
+
 #### `?` OR `??` gives interactive python guide  (abbreviated output below. [full doc output](doc_01_reference.md))
 
 ```text
@@ -139,9 +143,7 @@ Docstring:      Basic wrapper around several `DataLoader`s with factory methods 
 File:           /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/vision/
 ```
 
-#### inside ( of function; shift + tab
 
-[image](image/transforms.png)
 
 
 ## Paperspace
