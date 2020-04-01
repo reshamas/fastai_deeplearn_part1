@@ -139,6 +139,11 @@ Docstring:      Basic wrapper around several `DataLoader`s with factory methods 
 File:           /opt/conda/envs/fastai/lib/python3.7/site-packages/fastai2/vision/
 ```
 
+#### inside ( of function; shift + tab
+
+[image](/image/transform.png)
+
+
 ## Paperspace
 - fastai: [Getting Started with Gradient](https://course.fast.ai/start_gradient.html)
 - fastai: v4 [Paperspace (free, paid options)](https://forums.fast.ai/t/platform-paperspace-free-paid-options/65515)
