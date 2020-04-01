@@ -2,8 +2,9 @@
 - Live:  31-Mar-2020
 - Time: 6:30 to 9pm PST  (9:30pm to midnight EST)
 
-- 9:30pm   viewing
-- 10:00pm 3 viewing
+- 9:30pm  144 viewing
+- 9:45pm  263 viewing
+- 10:00pm  viewing
 
 ## Homework
 - [Lesson 3 Homework] ()
@@ -23,3 +24,7 @@
 - [fastai/course-v4](https://github.com/fastai/course-v4) 
   - same notebooks with prose stripped away
   - do practice coding here
+
+## 
+- using notebook:  https://github.com/fastai/fastbook/blob/master/02_production.ipynb
+- 
