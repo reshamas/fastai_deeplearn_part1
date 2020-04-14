@@ -3,6 +3,11 @@
 - Time: 6:30 to 9pm PST  (9:30pm to midnight EST)
 - Lesson 5 thread:  https://forums.fast.ai/t/lesson-5-official-topic/68039
 
+NOTE:  finished watching lecture on 14-Apr-2020
+
+## Ethics Course
+- full USF ethics course by Rachel Thomas will be released before July 2020
+
 
 ## Case Study
 1. Feedback loop
