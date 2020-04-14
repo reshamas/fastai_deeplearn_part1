@@ -19,3 +19,7 @@
 - disproportionate African names were getting ads for criminal records
 - bias in advertising shows up a lot
 
+
+Resources:
+- [Georgetown Law:  Center for Privacy and Technology](https://forums.fast.ai/t/lesson-5-official-topic/68039)
+
