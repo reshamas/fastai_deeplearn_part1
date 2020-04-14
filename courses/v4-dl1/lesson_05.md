@@ -22,4 +22,5 @@
 
 Resources:
 - [Georgetown Law:  Center for Privacy and Technology](https://forums.fast.ai/t/lesson-5-official-topic/68039)
+- How to Fact Check:  https://www.notion.so/Check-Please-Starter-Course-ae34d043575e42828dc2964437ea4eed
 
