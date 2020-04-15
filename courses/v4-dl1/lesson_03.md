@@ -23,4 +23,29 @@
 ## 
 - using notebook:  https://github.com/fastai/fastbook/blob/master/02_production.ipynb
 - look at getting model into production
+- `DataBlock` API
+```python
+bears = DataBlock(
+    blocks=(ImageBlock, CategoryBlock), 
+    get_items=get_image_files, 
+    splitter=RandomSplitter(valid_pct=0.3, seed=42),
+    get_y=parent_label,
+    item_tfms=Resize(128))
+```
+- default: it grabs the center of image
 - 
+
+- `.new`: creates a new DataBlock object
+
+```python
+bears = bears.new(item_tfms=Resize(128, ResizeMethod.Squish))
+dls = bears.dataloaders(path)
+dls.valid.show_batch(max_n=4, nrows=1)
+```
+- `ResizeMethod.Pad` adds black bars to side, avoids squishing image
+- `pad_mode='zeros'` can have `pad_mode='reflect'`
+`bears = bears.new(item_tfms=Resize(128, ResizeMethod.Pad, pad_mode='zeros'))`
+- `ResizeMethod.Squish` most efficient
+- `tem_tfms=RandomResizedCrop` most popular one
+`bears = bears.new(item_tfms=RandomResizedCrop(128, min_scale=0.3))`
+
