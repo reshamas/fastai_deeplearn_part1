@@ -63,4 +63,8 @@ learn_inf.dls.vocab
 (#3) ['black','grizzly','teddy']
 ```
 
+## Making a GUI; web app for predictions (25:00)
+- `!pip install voila`
+- can use binder for making it publicly available
+- 
 
