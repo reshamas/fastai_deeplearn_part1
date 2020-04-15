@@ -32,11 +32,10 @@ bears = DataBlock(
     get_y=parent_label,
     item_tfms=Resize(128))
 ```
+
+## Data Augmentation
 - default: it grabs the center of image
-- 
-
 - `.new`: creates a new DataBlock object
-
 ```python
 bears = bears.new(item_tfms=Resize(128, ResizeMethod.Squish))
 dls = bears.dataloaders(path)
@@ -46,6 +45,12 @@ dls.valid.show_batch(max_n=4, nrows=1)
 - `pad_mode='zeros'` can have `pad_mode='reflect'`
 `bears = bears.new(item_tfms=Resize(128, ResizeMethod.Pad, pad_mode='zeros'))`
 - `ResizeMethod.Squish` most efficient
-- `tem_tfms=RandomResizedCrop` most popular one
+- `tem_tfms=RandomResizedCrop` most popular one; `min_scale=0.3` pick 30% of pixels of orig image each time
 `bears = bears.new(item_tfms=RandomResizedCrop(128, min_scale=0.3))`
 
+- Item transforms vs Batch transforms
+```python
+bears = bears.new(item_tfms=Resize(128), batch_tfms=aug_transforms(mult=2))
+dls = bears.dataloaders(path)
+dls.train.show_batch(max_n=8, nrows=2, unique=True)
+```
