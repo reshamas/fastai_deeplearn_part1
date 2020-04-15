@@ -2,6 +2,7 @@
 ## Referencing Documentation in Jupyter Notebook
 
 #### inside ( of function; shift + tab
+Note:  go inside the parenthesis of a functio and hit Shift+Tab to see options
 
 ![image](image/transforms.png)
 
