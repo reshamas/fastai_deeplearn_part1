@@ -11,12 +11,7 @@
 
 - [ ] read blog: [](https://www.fast.ai/2016/12/29/uses-of-ai/)
 - [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+
 
 ## Notes
 - [fastai/fastbook](https://github.com/fastai/fastbook)
@@ -27,4 +22,5 @@
 
 ## 
 - using notebook:  https://github.com/fastai/fastbook/blob/master/02_production.ipynb
+- look at getting model into production
 - 
