@@ -55,4 +55,12 @@ dls = bears.dataloaders(path)
 dls.train.show_batch(max_n=8, nrows=2, unique=True)
 ```
 - fastai will avoid doing data augmentation on the validation dataset
-- 
+- show name of cateogories:
+```python
+learn_inf.dls.vocab
+```
+```bash
+(#3) ['black','grizzly','teddy']
+```
+
+
