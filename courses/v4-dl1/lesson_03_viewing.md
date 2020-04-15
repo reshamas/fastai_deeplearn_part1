@@ -10,7 +10,7 @@
 - [Lesson 3 Homework] ()
 
 - [ ] read blog: [](https://www.fast.ai/2016/12/29/uses-of-ai/)
-- [ ] 
+- [ ] create your own application
 
 
 ## Notes
@@ -66,5 +66,8 @@ learn_inf.dls.vocab
 ## Making a GUI; web app for predictions (25:00)
 - `!pip install voila`
 - can use binder for making it publicly available
-- 
+
+## *out of domain* data (domain shift)
+
+
 
