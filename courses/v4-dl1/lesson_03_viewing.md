@@ -69,5 +69,7 @@ learn_inf.dls.vocab
 
 ## *out of domain* data (domain shift)
 
+## Python broadcasting
+
 
 
