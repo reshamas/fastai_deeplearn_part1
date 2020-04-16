@@ -6,6 +6,8 @@
 - 9:45pm  263 viewing
 - 10:00pm  viewing
 
+Note:  finished watching Apr 16, 2020.
+
 ## Homework
 - [Lesson 3 Homework] ()
 
