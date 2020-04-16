@@ -67,9 +67,12 @@ learn_inf.dls.vocab
 - `!pip install voila`
 - can use binder for making it publicly available
 
-## *out of domain* data (domain shift)
+### *out of domain* data (domain shift)
 
-## Python broadcasting
+### Python broadcasting
+
+## MNIST: baseline + calculating gradient
+- notebook:  https://github.com/fastai/fastbook/blob/master/04_mnist_basics.ipynb
 
 
 
