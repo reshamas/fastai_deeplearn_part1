@@ -102,3 +102,11 @@ root@6c4a45f4bab8:/notebooks/storage/fowl_data#
 conda install -c conda-forge ffmpeg
 ```
 
+```bash
+apt-get install htop
+```
+```bash
+htop
+```
+
+
