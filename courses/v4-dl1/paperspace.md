@@ -18,6 +18,14 @@
 4.  Actions / Open
 5.  New / terminal
 
+## updating packages on Paperspace
+```bash
+apt-get update
+```
+```bash
+apt-get install libsndfile1-dev
+```
+
 
 ## Adding a data folder and data
 
