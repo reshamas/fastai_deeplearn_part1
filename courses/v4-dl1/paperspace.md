@@ -98,3 +98,7 @@ root@6c4a45f4bab8:/notebooks/storage/fowl_data# mv Train/ train/
 root@6c4a45f4bab8:/notebooks/storage/fowl_data# mv Test/ test/
 root@6c4a45f4bab8:/notebooks/storage/fowl_data#
 ```
+```bash
+conda install -c conda-forge ffmpeg
+```
+
