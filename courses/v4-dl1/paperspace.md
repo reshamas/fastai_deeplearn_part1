@@ -17,6 +17,10 @@
 3.  Actions / Start
 4.  Actions / Open
 5.  New / terminal
+
+
+## Adding a data folder and data
+
 6.  use bash shell:  `# bash`
 7.  going to `storage` folder
 ```bash
