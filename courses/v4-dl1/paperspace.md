@@ -26,6 +26,21 @@ apt-get update
 apt-get install libsndfile1-dev
 ```
 
+## unzip files
+```
+   10  cd storage
+   11  ls
+   12  cd fowl_data/
+   13  ls
+   14  unzip Test.zip
+   15  pwd
+   16  clear
+   17  history
+```
+```bash
+root@6c4a45f4bab8:/notebooks/storage/fowl_data# unzip -q Train.zip
+```
+
 
 ## Adding a data folder and data
 
