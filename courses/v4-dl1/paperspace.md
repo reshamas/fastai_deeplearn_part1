@@ -92,3 +92,9 @@ drwxr-xr-x 2 root root       4096 Mar 31 15:12 .ipynb_checkpoints
 -rw-r--r-- 1 root root      13679 Mar 31 15:11 Test.csv
 root@3b9d9da72ac6:/notebooks/storage/fowl_data#
 ```
+### rename directories
+```bash
+root@6c4a45f4bab8:/notebooks/storage/fowl_data# mv Train/ train/
+root@6c4a45f4bab8:/notebooks/storage/fowl_data# mv Test/ test/
+root@6c4a45f4bab8:/notebooks/storage/fowl_data#
+```
