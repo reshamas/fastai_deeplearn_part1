@@ -6,3 +6,6 @@
 - [Lesson 4 Homework] ()
 - [ ] 
 - [ ] 
+
+## Notes
+`pets1.summary(path/"images"` helps with debugging
