@@ -61,6 +61,16 @@ learn.fine_tune(6, freeze_epochs=3)
 - dataset:  PASCAL
   - http://host.robots.ox.ac.uk/pascal/VOC/
   - https://gluon-cv.mxnet.io/build/examples_datasets/pascal_voc.html
-  
+- create a **Data Block** and **DataLoaders**
+
+## Example
+```python
+a = list(enumerate(string.ascii_lowercase))
+a[0], len(a)
+```
+```bash
+((0, 'a'), 26)
+```
+
 
 
