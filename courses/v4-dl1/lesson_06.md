@@ -9,3 +9,12 @@
 - [ ] 
 
 ## Notes
+- [fastai/fastbook](https://github.com/fastai/fastbook)
+  - full notebooks that contain text of O'Reilly book
+- [fastai/course-v4](https://github.com/fastai/course-v4) 
+  - same notebooks with prose stripped away
+  - do practice coding here
+  
+## Topics
+- pet breeds; multiple classification
+
