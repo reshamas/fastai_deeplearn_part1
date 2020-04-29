@@ -17,4 +17,10 @@
   
 ## Topics
 - pet breeds; multiple classification
+- good learning rate finder questions and answers
+- unfreezing and transfer learning
+>what we would
+really like is to have a small learning
+rate for the early layers and a bigger
+learning rate for the later layers
 
