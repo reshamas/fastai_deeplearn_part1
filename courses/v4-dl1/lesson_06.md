@@ -62,7 +62,6 @@ learn.fine_tune(6, freeze_epochs=3)
   - http://host.robots.ox.ac.uk/pascal/VOC/
   - https://gluon-cv.mxnet.io/build/examples_datasets/pascal_voc.html
 
-## creating: **Datasets**, **Data Block** and **DataLoaders**
 
 ## Example
 ```python
@@ -72,6 +71,12 @@ a[0], len(a)
 ```bash
 ((0, 'a'), 26)
 ```
+
+## creating: **Datasets**, **Data Block** and **DataLoaders**
+- serialization: means saving something
+- best to use functions over lambda (because in Python, it doesn't save object created using lambda)
+- 
+
 
 
 
