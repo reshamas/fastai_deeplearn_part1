@@ -18,9 +18,49 @@
 ## Topics
 - pet breeds; multiple classification
 - good learning rate finder questions and answers
+
+## Computer Vision Problem: Pet Breed
+
+### Discriminative Learning Rates
+- Notebook:  https://github.com/fastai/course-v4/blob/master/nbs/05_pet_breeds.ipynb
 - unfreezing and transfer learning
 >what we would
 really like is to have a small learning
 rate for the early layers and a bigger
 learning rate for the later layers
+- slicing
+```python
+learn.fit_one_cycle(6, lr_max=1e-5)
+```
+#### our own version of fine-tuning here
+```python
+learn = cnn_learner(dls, resnet34, metrics=error_rate)
+learn.fit_one_cycle(3, 3e-3)
+learn.unfreeze()
+learn.fit_one_cycle(12, lr_max=slice(1e-6,1e-4))
+```
+#### how do you make it better now?
+- 5.4% error on 37 categories is pretty good (for pet breed data)
+- can use a deeper architecture
+- `Cuda runtime error: out of memory` is out of memory on your GPU
+  - restart notebook
+  - can use less precise numbers to save memory
+```python
+from fastai2.callback.fp16 import *
+learn = cnn_learner(dls, resnet50, metrics=error_rate).to_fp16()
+learn.fine_tune(6, freeze_epochs=3)
+```
+- increasing number of layers (or more complex architecture) doesn't always improve the error rate
+- requires experimentation
+- trick:  use small models for as long as possible (to do cleaning and testing); then try bigger models because they will take longer
+- "always assume you can do better [with error rate] because you never know"
+
+## Multi-label Classification
+- notebook:  https://github.com/fastai/course-v4/blob/master/nbs/06_multicat.ipynb
+- determining multiple labels per image (Ex: contains car, bike person, etc)
+- dataset:  PASCAL
+  - http://host.robots.ox.ac.uk/pascal/VOC/
+  - https://gluon-cv.mxnet.io/build/examples_datasets/pascal_voc.html
+  
+
 
