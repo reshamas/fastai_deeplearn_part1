@@ -75,7 +75,45 @@ a[0], len(a)
 ## creating: **Datasets**, **Data Block** and **DataLoaders**
 - serialization: means saving something
 - best to use functions over lambda (because in Python, it doesn't save object created using lambda)
+- one-hot encoding for multiple labels
 - 
+```python
+def splitter(df):
+    train = df.index[~df['is_valid']].tolist()
+    valid = df.index[df['is_valid']].tolist()
+    return train,valid
+
+dblock = DataBlock(blocks=(ImageBlock, MultiCategoryBlock),
+                   splitter=splitter,
+                   get_x=get_x, 
+                   get_y=get_y)
+
+dsets = dblock.datasets(df)
+dsets.train[0]
+```
+## path
+```python
+Path.BASE_PATH = None
+path
+```
+```python
+(path/'01').ls()
+```
+### Important to know
+1. create a learner
+2. grab a batch of data
+3. pass it to the model
+4. see the shape; recognize why the shape is
+```python
+learn = cnn_learner(dls, resnet18)
+```
+```python
+x,y = dls.train.one_batch()
+activs = learn.model(x)
+activs.shape
+```
+>torch.Size([64, 20])
+
 
 
 
