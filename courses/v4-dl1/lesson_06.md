@@ -114,7 +114,10 @@ activs.shape
 ```
 >torch.Size([64, 20])
 
+### Binary cross entropy
 
+## Note
+- **Accuracy** only works for single label datasets, like MNIST
 
 
 
