@@ -120,5 +120,8 @@ activs.shape
 - **Accuracy** only works for single label datasets, like MNIST
 
 ## Collaborative Filtering Deep Dive
+- applications:  what kind of other diagnosis, figure out where someone will click next
+- anything where you are trying to learn from past behavior
 - 
+
 
