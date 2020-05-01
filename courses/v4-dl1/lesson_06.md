@@ -119,5 +119,6 @@ activs.shape
 ## Note
 - **Accuracy** only works for single label datasets, like MNIST
 
-
+## Collaborative Filtering Deep Dive
+- 
 
