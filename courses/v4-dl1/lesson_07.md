@@ -5,5 +5,16 @@
 - 9:30pm 101 watching
 - 10:30pm 177 watching
 
-## Notes
+## Topics
 - weight decay, regularization
+- embedding
+- PyTorch code
+
+## Notebook
+- Collaborative filtering:  https://github.com/fastai/course-v4/blob/5a9fca472f55a8186e62a21111deab119001e0df/nbs/08_collab.ipynb
+
+## Regularization
+- use for **overfitting**
+- **weight decay** is also known as **L2 Regularization**
+- in general, big coefficients are going to cause a big swing in the loss
+- 
