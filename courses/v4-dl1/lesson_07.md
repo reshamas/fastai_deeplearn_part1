@@ -19,4 +19,14 @@
 - use for **overfitting**
 - **weight decay** is also known as **L2 Regularization**
 - in general, big coefficients are going to cause a big swing in the loss
-- 
+
+## Embeddings
+- index lookup into an array
+  - computational shortcut to one hot encoding
+- cardinality: number of levels of a variable
+
+## Dataset 
+- Blue Book for Bulldozers Kaggle Competition
+
+
+
