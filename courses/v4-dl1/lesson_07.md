@@ -9,9 +9,11 @@
 - weight decay, regularization
 - embedding
 - PyTorch code
+- Tablular
 
 ## Notebook
 - Collaborative filtering:  https://github.com/fastai/course-v4/blob/5a9fca472f55a8186e62a21111deab119001e0df/nbs/08_collab.ipynb
+- Tabular:  https://github.com/fastai/course-v4/blob/5a9fca472f55a8186e62a21111deab119001e0df/nbs/09_tabular.ipynb
 
 ## Regularization
 - use for **overfitting**
