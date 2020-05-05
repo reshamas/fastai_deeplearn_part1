@@ -28,5 +28,13 @@
 ## Dataset 
 - Blue Book for Bulldozers Kaggle Competition
 
+## Random Forests:  Bagging
+- to improve the random forests, use **bagging**
+- randomly select subsets of data and train it
+- then average the different versions of the models
 
-
+Here is the procedure that Breiman is proposing:
+1. Randomly choose a subset of the rows of your data (i.e., "bootstrap replicates of your learning set")
+2. Train a model using this subset
+3. Save that model, and then return to step one a few times
+4. This will give you a number of trained models. To make a prediction, predict using all of the models, and then take the average of each of those model's predictions.
