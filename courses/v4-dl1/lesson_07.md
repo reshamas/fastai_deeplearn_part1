@@ -46,4 +46,8 @@ it means that we can improve the accuracy of nearly any kind of machine learning
 ## Leo Breiman: Random Forest
 In 2001 Leo Breiman went on to demonstrate that this approach to building models, when applied to decision tree building algorithms, was particularly powerful. He went even further than just randomly choosing rows for each model's training, but also randomly selected from a subset of columns when choosing each split in each decision tree. He called this method the random forest
 
+## OOB:  out-of-box
+- review: remove each variable and how it impacts the R MSE
+
+## Partial Dependence Plot
 
