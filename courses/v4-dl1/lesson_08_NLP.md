@@ -10,3 +10,5 @@
 ## Notebook
 - [10_nlp](https://github.com/fastai/fastbook/blob/master/10_nlp.ipynb)
 - [12_nlp_dive](https://github.com/fastai/fastbook/blob/master/12_nlp_dive.ipynb)
+
+## AR and TAR Regularization
