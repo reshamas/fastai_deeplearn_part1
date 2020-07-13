@@ -18,7 +18,8 @@
 ## Courses (my outlines)
 
 ### Deep Learning
-- [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019) (* in progress)
+- [Version 3] (fastai_dl_course_v4.md) (Spring 2020) 
+- [Version 3](fastai_dl_course_v3.md) (Fall 2018 to Spring 2019) 
 - [Version 2](fastai_dl_course_v2.md) (Fall 2017 to Spring 2018)
 - [Version 1](fastai_dl_course_v1.md) (Fall 2016 to Spring 2017)  
 
